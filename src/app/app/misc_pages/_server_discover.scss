@@ -1,0 +1,30 @@
+@import "../../material/card";
+
+$header-height: 6;
+
+.header-1URtb6 {
+	color: var(--header-color);
+}
+
+.sidebar-2K8pFh > .scrollerBase-289Jih {
+	background-color: var(--navdrawer-color);
+	border-right: 1px solid var(--navdrawer-separator);
+	// inset offset box shadow for depth 2
+	.theme-light & {
+		box-shadow: inset 2px 3px 1px -2px rgba(0, 0, 0, 0.2),
+					inset 2px 2px 2px 0px rgba(0, 0, 0, 0.14),
+					inset 2px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	}
+}
+.pageWrapper-1PgVDX {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+
+.card-3DjzTQ {
+	@include card($header-height);
+}

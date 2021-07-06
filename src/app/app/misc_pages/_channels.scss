@@ -1,0 +1,20 @@
+.platform-win .sidebar-2K8pFh,
+.platform-mac .sidebar-2K8pFh,
+.platform-linux .sidebar-2K8pFh {
+	border-radius: 0;
+}
+.scroller-1JbKMe, .privateChannels-1nO12o {
+	background-color: var(--navdrawer-color);
+}
+.channel-2QD9_O {
+	max-width: var(--channels-width);
+}
+.bannerImage-3KhIJ6, .animatedContainer-1NSq4T {
+	width: var(--channels-width);
+	height: calc(0.5625 * var(--channels-width));
+}
+.scroller-1JbKMe, .scroller-RmtA4e {
+	& .content-3YMskv div[style*="height: 84px"]:first-child {
+		height: calc(0.5625 * var(--channels-width) - 51px) !important;
+	}
+}

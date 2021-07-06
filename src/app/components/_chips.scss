@@ -1,0 +1,70 @@
+.botTagRegular-2HEhHi,
+.akaBadge-1M-1Gw,
+.role-2irmRk,
+.role-1P70N6,
+.botTagRegular-2HEhHi,
+.akaBadge-1M-1Gw, .role-2irmRk {
+	background: var(--chip);
+	color: var(--chip-text);
+	border: none;
+	z-index: 1;
+}
+.px-10SIf7.botTag-2WPJ74,
+.akaBadge-1M-1Gw,
+.role-2irmRk,
+.px-10SIf7.botTag-2WPJ74,
+.role-1P70N6,
+.botTagRegular-2HEhHi,
+.akaBadge-1M-1Gw, .role-2irmRk
+{
+	height: 24px;
+	line-height: 24px;
+	border-radius: 12px;
+	padding: 0 12px;
+
+	.nameAndDecorators-5FJ2dg & {
+		height: .9375rem;
+		line-height: .9375rem;
+		border-radius: .46875rem;
+		padding: 0 .46875rem;
+	}
+}
+.rem-2m9HGf.botTag-2WPJ74 {
+	height: .9375rem;
+	line-height: .9375rem;
+	border-radius: .46875rem;
+	padding: 0 .46875rem;
+}
+.roleColor-fHISxl,
+.roleCircle-3xAZ1j {
+	overflow: visible;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+}
+.roleRemoveIcon-2-TeGW
+{
+	width: 24px;
+	height: 24px;
+	display: block;
+	opacity: 0;
+	cursor: pointer;
+
+	transition: opacity 140ms ease-in-out;
+
+	path[d="M18.4 4L12 10.4L5.6 4L4 5.6L10.4 12L4 18.4L5.6 20L12 13.6L18.4 20L20 18.4L13.6 12L20 5.6L18.4 4Z"]
+	{
+		d: path("M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z");
+		fill: rgba(0,0,0,.87);
+	}
+}
+.roleRemoveIcon-2-TeGW:hover {
+	opacity: 1;
+}
+.theme-light .actionButton-VzECiy,
+.theme-dark .actionButton-VzECiy {
+	padding: 0;
+}
+.role-3UN8jj:hover {
+	background: var(--chip);
+}

@@ -1,0 +1,28 @@
+@import '../../material/card';
+
+.feature-2w65J5 {
+	@include card(4);
+}
+.header-1RC2Wb {
+	@include card(4);
+}
+.body-SKIE6r {
+	@include card(2, $background: false);
+}
+.card-7JP0BX {
+	overflow: visible;
+}
+.guild-Hq0WWA {
+	@include card(4);
+}
+.guildSubscriptionSlots-JPXXvN,
+.guildHeader-3nh5RK {
+	background-color: transparent;
+}
+.guildName-1B3vm5 {
+	font-weight: var(--header-weight);
+}
+.guildSubscriptionDuration-z1eXWb,
+.guildSubscriptionCreationDate-2b_pKA {
+	font-weight: var(--subtitle-weight);
+}

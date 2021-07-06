@@ -1,0 +1,64 @@
+@import "../material/card";
+
+$radius: 8px;
+$padding: 24px;
+
+// Classic inline (aka ```html ... ```)
+.markup-2BOw-j code {
+	padding: $padding $padding $padding $padding/2;
+	border-radius: $radius;
+	border-color: var(--navdrawer-separator);
+	background-color: var(--baseline);
+}
+.powercord-codeblock-lang {
+	font-family: var(--font-header);
+}
+.powercord-codeblock-copy-btn {
+	color: var(--channels-default);
+	font-family: var(--font-header);
+	.theme-dark & {
+		font-weight: 800;
+	}
+}
+.powercord-codeblock-table td:first-child,
+.powercord-codeblock-lang {
+	border-color: var(--navdrawer-separator);
+}
+
+// File viewer
+.textContainer-C0szpm, .modalTextContainer-ITvzbi {
+	padding: $padding $padding $padding/2 $padding;
+	border-radius: $radius $radius 0 0;
+	border-color: var(--navdrawer-separator);
+	background-color: var(--baseline);
+}
+.footer-2yA7Ep {
+	padding: 0 $padding;
+	border-radius: 0 0 $radius $radius;
+	border-color: var(--navdrawer-separator);
+	background-color: var(--baseline);
+}
+.codeView-1JPDeA, .modalTextContainer-ITvzbi {
+	&::-webkit-scrollbar-track {
+		background-color: var(--baseline);
+	}
+	&::-webkit-scrollbar-thumb {
+		.theme-light & {
+			background-color: rgb(223, 223, 223);
+		}
+		.theme-dark & {
+			background-color: var(--navdrawer-separator);
+		}
+	}
+}
+.formattedSize-2PXVec {
+	font-weight: 500;
+	font-size: 12.5px;
+	.theme-light & {
+		color: rgb(183, 183, 183);
+	}
+	.theme-dark & {
+		font-weight: 700;
+		color: rgb(119, 119, 119);
+	}
+}

@@ -1,0 +1,46 @@
+@import '../../material/card';
+
+.wrapper-3D2qGf,
+.nowPlayingColumn-2sl4cE .outer-1AjyKL {
+	@include card(4);
+	transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	margin-bottom: 16px;
+}
+
+.section-2gLsgF {
+	@include card(2);
+}
+
+.outer-1AjyKL.active-1xchHY,
+.outer-1AjyKL.interactive-3B9GmY:hover {
+	.theme-light &,
+	.theme-dark  & {
+		@include card(8);
+	}
+}
+
+.body-1ld4H7 .separator-XqIyoz,
+.body-1ld4H7 .separator-XqIyoz {
+	.theme-light &,
+	.theme-dark  & {
+		background-color: transparent;
+		height: var(--card-padding);
+	}
+}
+.inset-3sAvek {
+	.theme-light &,
+	.theme-dark  & {
+		background-color: transparent;
+	}
+}
+
+// hover things
+.peopleListItem-2nzedh.active-rhSpJJ, .peopleListItem-2nzedh:hover {
+	@include card(3);
+}
+
+.actionButton-uPB8Fs.highlight-Lf97TE,
+.peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
+.peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
+	@include card(8);
+}

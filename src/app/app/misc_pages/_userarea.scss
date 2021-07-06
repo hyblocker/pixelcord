@@ -1,0 +1,38 @@
+@import '../../material/card';
+
+$height: 8;
+
+.panels-j1Uci_
+{
+	@include card($height);
+}
+
+.wrapper-1F5TKx,
+.wrapper-3vR61M
+{
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+}
+
+.panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5 {
+	.theme-light & {
+		background-color: cardbg($height, false);
+	}
+	.theme-dark & {
+		background-color: cardbg($height, true);
+	}
+}
+.platform-win .sidebar-2K8pFh {
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+.subtext-3CDbHg {
+	line-height: 14px;
+}
+.nameTag-3uD-yy.canCopy-2VBT7N {
+	user-select: none;
+}

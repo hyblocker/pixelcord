@@ -1,0 +1,164 @@
+@use "sass:color";
+@import "../material/card";
+
+.wrapper-3WhCwL {
+	color: var(--accent);
+	background-color: transparent;
+}
+.interactive:hover {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}
+
+.theme-light .path-92Hmty,
+.theme-dark .path-92Hmty {
+	stroke: var(--accent);
+}
+
+// Picture-in-picture
+.pictureInPictureVideo-2iKsGg {
+	width: var(--pip-width);
+	height: calc(var(--pip-width) * 0.5625);
+}
+.theme-light .elevationHigh-3A9Xbf {
+	@include card(24, $background: false);
+	border-radius: var(--pip-radius);
+}
+.pictureInPictureWindow-1B5qSe {
+	overflow: visible;
+}
+
+.members-1998pB, .members-1998pB>div {
+	// border-radius: 0 var(--pip-radius) var(--pip-radius) 0;
+	border-radius: 0;
+}
+
+.privateChannels-1nO12o {
+	margin: calc(-1 * var(--card-padding));
+	padding: var(--card-padding);
+}
+
+// Draggable title bar
+.container-1r6BKw.themed-ANHk51, .container-1r6BKw.transparent-2ZlE3R {
+	-webkit-app-region: drag;
+}
+.topPill-30KHOu .item-PXvHYJ, .container-1r6BKw.transparent-2ZlE3R .button-38aScr, .title-29uC1r, .title-29uC1r, .toolbar-1t6TWx {
+	-webkit-app-region: none;
+}
+
+.wrapper-39oAo3 {
+	@include card(6);
+}
+
+// Emote auto-complete
+.autocomplete-1vrmpx {
+	@include card(8);
+}
+.base-1pYU8j {
+	transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out;
+}
+.selected-1Tbx07 {
+	@include card(16);
+}
+
+.iconBadge-2NuvG9 {
+	@include card(4, $background: false);
+}
+
+.members-1998pB, .members-1998pB>div
+{
+	background-color: var(--navdrawer-color);
+}
+.form-2fGMdU {
+	.theme-light &:before {
+		background: -webkit-gradient(linear,left top,left bottom,from(color.change(cardbg(0, false), $alpha: 0)),to(cardbg(0, false)));
+		background: linear-gradient(180deg,color.change(cardbg(0, false), $alpha: 0) 0,cardbg(0, false))
+	}
+	.theme-dark &:before {
+		background: -webkit-gradient(linear,left top,left bottom,from(color.change(cardbg(0, true ), $alpha: 0)),to(cardbg(0, true )));
+		background: linear-gradient(180deg,color.change(cardbg(0, true ), $alpha: 0) 0,cardbg(0, true ))
+	}
+}
+.auto-Ge5KZx::-webkit-scrollbar-track {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+.auto-Ge5KZx::-webkit-scrollbar-thumb {
+	.theme-light & {
+		background-color: rgb(223, 223, 223);
+	}
+	.theme-dark & {
+		background-color: cardbg(24, true);
+	}
+}
+
+// VC border radius
+.wrapper-2qzCYF, .gradientTop-3UWg3T, .gradientBottom-3X4SdK {
+	border-top-left-radius: var(--card-roundedness);
+	border-top-right-radius: var(--card-roundedness);
+}
+
+// VC Headers force dark mode, so lets use some fuckery to detect if we truly have dark mode enabled:
+.theme-light .container-1r6BKw.transparent-2ZlE3R.theme-dark {
+	//Truly light theme
+	box-shadow: elevation-shadow(2, $baseline-color);
+	background-color: white;
+	--header-primary: #060607;
+	--interactive-normal: #4f5660;
+	--interactive-hover: #2e3338;
+	--interactive-active: #060607;
+	--interactive-muted: #c7ccd1;
+	& .controlIcon-35oS15 {
+		color: var(--interactive-normal);
+	}
+	& .playingText-3KIkt6 {
+		color: var(--header-primary);
+	}
+}
+.notice-3bPHh- {
+	@include card(8, $background: false);
+	border-radius: var(--card-roundedness);
+}
+
+.callContainer-3UuV6S {
+	& .scroller-1SuHJo {
+		border-radius: var(--card-roundedness);
+	}
+}
+
+.chat-3bRxxu .wrapper-2qzCYF.minimum-28Z35l+.content-yTz4x3:nth-child(3) {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+
+.wrapper-2aW0bm {
+	@include card(6);
+}
+.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
+	background-color: var(--accent);
+}
+
+body::before {
+	color: var(--danger);
+}
+
+.inline-136HKr .pro-1T8RK7,
+.inline-136HKr .tip-2ab612 {
+	&[style*="color: hsl(139, "] {
+		color: var(--online) !important;
+	}
+}
+.required-7sPBq3,
+.powercord-settings-item .description-3_Ncsb strong strong {
+	color: var(--danger) !important;
+}
+.errorImage-1StK2r {
+	background-image: none;
+	-webkit-mask-image: url(/assets/c4e2488e2b572c805ffc3cce9ca92376.svg);
+	background-color: var(--danger);
+}

@@ -1,0 +1,89 @@
+@import "../../config";
+
+@if $hoverchannels
+{
+	.sidebar-2K8pFh {
+		@if $animations
+		{
+			transition: 0.2s ease;
+		}
+		width: 0px;
+		& .container-1giJp5,
+		& .panel-24C3ux {
+			padding: 0;
+			@if $animations
+			{
+				transition: 0.2s ease;
+			}
+		}
+		& .button-14-BFJ,
+		& .badge-1JXQev {
+			width: 0;
+			@if $animations
+			{
+				transition: 0.2s ease;
+			}
+		}
+		& .searchBar-6Kv8R2,
+		& .badge-1JXQev {
+			padding: 0;
+			@if $animations
+			{
+				transition: 0.2s ease;
+			}
+		}
+		& .button-38aScr {
+			padding: 0;
+			@if $animations
+			{
+				transition: 0.2s ease;
+			}
+		}
+		& .icon-3Oovq9 {
+			opacity: 0;
+			@if $animations
+			{
+				transition: 0.2s ease-in-out;
+			}
+		}
+		& .container-3baos1 .button-38aScr,
+		& .container-3baos1 .button-14-BFJ {
+			padding: unset;
+			width: 32px;
+		}
+	}
+	.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh,
+	.sidebar-2K8pFh:hover {
+		width: var(--channels-width);
+		& .container-1giJp5,
+		& .panel-24C3ux {
+			padding: 8px;
+		}
+		& .button-14-BFJ {
+			width: 32px;
+		}
+		& .searchBar-6Kv8R2 {
+			padding: 0 10px;
+		}
+		& .button-38aScr {
+			padding: 2px 16px;
+		}
+		& .badge-1JXQev{
+			padding: 2px;
+			width: 14px;
+		}
+		& .icon-3Oovq9 {
+			opacity: 1;
+		}
+		& .container-3baos1 .button-14-BFJ {
+			padding: unset;
+			width: 32px;
+		}
+	}
+}
+@else
+{
+	.sidebar-2K8pFh {
+		width: var(--channels-width);
+	}
+}

@@ -1,0 +1,48 @@
+.tooltipContent-bqVLWK {
+	background-color: var(--tooltip-bg);
+	border-radius: 2px;
+	padding: 8px;
+	line-height: 14px;
+	font-weight: 500;
+	color: var(--tooltip-text);
+}
+
+.theme-dark  .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK,
+.theme-light .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK {
+	border-top-color: var(--tooltip-bg);
+}
+
+.theme-dark  .tooltipPrimary-1d1ph4,
+.theme-light .tooltipPrimary-1d1ph4 {
+	background-color: transparent;
+}
+
+.guildNameText-74xXQn,
+.guildNameText-3Zwx4p {
+	color: var(--tooltip-text);
+	font-weight: 600;
+}
+// Green tooltip
+.tooltipGreen-WdeQwd {
+	.theme-dark &,
+	.theme-light & {
+		& .tooltipContent-bqVLWK {
+			background-color: var(--online);
+		}
+		& .tooltipPointer-3ZfirK {
+			border-top-color: var(--online);
+		}
+	}
+}
+// Red tooltip
+.tooltipRed-8-9NeP {
+	.theme-dark &,
+	.theme-light & {
+		& .tooltipContent-bqVLWK {
+			background-color: var(--danger);
+		}
+		& .tooltipPointer-3ZfirK {
+			border-top-color: var(--danger);
+		}
+	}
+}

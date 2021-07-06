@@ -1,0 +1,72 @@
+@import '../material/card';
+
+$radius: 4px;
+
+// Combo drop down
+.popout-VcNcHB[role="listbox"],
+.css-3vaxre-menu,
+.css-1x99fvh-menu {
+	border-radius: $radius;
+	@include card(4);
+	@if $animations {
+		transform-origin: top;
+		animation: spawn-anim 0.15s ease-in-out;
+	}
+}
+
+// Selection thing
+
+// focused
+.lookFilled-22uAsw.select-2fjwPw.open-kZ53_U,
+.dropdown-2fxkrS .select-2fjwPw.open-kZ53_U,
+.css-1ou54ee-control,
+.css-1ou54ee-control:hover,
+.css-6fzn47-control:hover,
+.css-6fzn47-control {
+	position: relative;
+	border-radius: $radius;
+	background-color: transparent;
+	border: 2px solid var(--accent);
+	transition: border 0.1s ease-in;
+	& .css-ku6vh5-indicatorContainer svg,
+	& .css-myto3z-indicatorContainer svg {
+		transform: rotate(180deg);
+	}
+}
+
+.css-4h5swf-singleValue,
+.css-1yg49vj-singleValue {
+	position: absolute;
+	left: 8px;
+}
+.select-2fjwPw .icons-2E-yxr,
+.css-ku6vh5-indicatorContainer svg,
+.css-myto3z-indicatorContainer svg {
+	transform: rotate(0);
+	transition: color 150ms ease 0s, transform 150ms ease 0s;
+}
+.select-2fjwPw.open-kZ53_U .icons-2E-yxr {
+	transform: rotate(180deg);
+}
+.select-2fjwPw.open-kZ53_U .icons-2E-yxr path[d="M7.41 16.0001L12 11.4201L16.59 16.0001L18 14.5901L12 8.59006L6 14.5901L7.41 16.0001Z"] {
+	d: path("M16.59 8.59003L12 13.17L7.41 8.59003L6 10L12 16L18 10L16.59 8.59003Z");
+}
+
+// unfocused
+.lookFilled-22uAsw.select-2fjwPw,
+.lookFilled-22uAsw.select-2fjwPw
+.dropdown-2fxkrS .select-2fjwPw[aria-expanded="false"],
+.css-x3hllb-control,
+.css-17e1tep-control,
+.css-gvi9bl-control {
+	position: relative;
+	border-radius: $radius;
+	background-color: transparent;
+	border: 1px solid var(--combobox-outline);
+	transition: border 0.1s ease-in;
+}
+
+.theme-light .quickSelectPopout-X1hvgV,
+.theme-dark .quickSelectPopout-X1hvgV {
+	@include card(4);
+}

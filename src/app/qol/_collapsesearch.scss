@@ -1,0 +1,35 @@
+// Collapsing search
+
+// Based on https://canary.discord.com/channels/538759280057122817/755005803303403570/824363024701063198
+
+@import "../../config";
+
+@if $collapse_search {
+	
+	.search-2oPWTC:not(.open-6_Y_aH) .searchBar-3dMhjb
+	{
+		width: 27px;
+		transition: 0.25s;
+		background-color: transparent;
+	}
+	.search-2oPWTC:not(.open-6_Y_aH):hover .searchBar-3dMhjb
+	{
+		width: 240px;
+		transition: 0.25s;
+		background-color: transparent;
+		// background-color: var(--background-tertiary);
+	}
+	.search-2oPWTC:not(.open-6_Y_aH) .iconContainer-O4O2CN
+	{
+		transform: scale(1.2);
+		transition: 0.25s;
+	}
+	.search-2oPWTC:not(.open-6_Y_aH):hover .iconContainer-O4O2CN
+	{
+		transform: scale(1);
+		transition: 0.25s;
+	}
+	.icon-3cZ1F_ {
+		color: var(--interactive-normal);
+	}
+}

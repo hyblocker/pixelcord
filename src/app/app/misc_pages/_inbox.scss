@@ -1,0 +1,43 @@
+@import "../../material/card";
+@import "../../../config";
+
+$popout-height: 8;
+$header-height: 2;
+$msg-height: 4;
+
+.layer-v9HyYc div[role=dialog] {
+	@if $animations {
+		animation: spawn-anim 0.2s ease-in-out;
+		transform-origin: top right;
+		& .messagesPopoutWrap-1MQ1bW {
+			animation: none;
+		}
+	}
+}
+.messages-3G3erD,
+.messageContainer-gbhlwo {
+	@include card($msg-height);
+	@if $animations {
+		animation: spawn-anim 0.2s ease-in-out;
+		transform-origin: top center;
+	}
+}
+.channelHeader-3Gd2xq {
+	padding: 12px 9px 12px 32px;
+	margin: 0 -9px 0 -16px;
+	& .collapseButton-2ZsEjz {
+		left: 3px;
+		@if $animations {
+			transition: transform 0.2s ease;
+		}
+	}
+}
+.channelHeader-3Gd2xq,
+.container-enaOkj {
+	.theme-light & {
+		background-color: cardbg($popout-height, false);
+	}
+	.theme-dark & {
+		background-color: cardbg($popout-height, true);
+	}
+}

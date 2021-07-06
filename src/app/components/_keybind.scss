@@ -1,0 +1,12 @@
+@import '../material/card';
+
+.powercord-keybind,
+.container-1nZlH6 {
+	@include card(4);
+}
+.powercord-keybind-input {
+	color: var(--header-primary) !important;
+}
+.powercord-keybind-button {
+	background: var(--background-modifier-selected) !important;
+}

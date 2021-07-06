@@ -1,0 +1,40 @@
+@import "../../config";
+
+@if $collapse_stagehouse {
+
+	.channelNotice-2bJINM {
+		height: 20px;
+		margin: 0;
+		padding: 16px;
+		transition: 0.2s ease-in-out;
+
+		& .textBlock-2FWDjE {
+			height: 0;
+			opacity: 0;
+			margin: 0;
+			transition: 0.3s ease-in-out;
+		}
+		& button {
+			height: 0;
+			opacity: 0;
+			margin: 0;
+			padding: 0;
+			transition: 0.3s ease-in-out;
+		}
+
+		&:hover {
+			height: 152px;
+			& .textBlock-2FWDjE {
+				height: 16px;
+				margin: 4px auto;
+				opacity: 1;
+			}
+			& button {
+				height: 32px;
+				margin: unset;
+				padding: unset;
+				opacity: 1;
+			}
+		}
+	}
+}

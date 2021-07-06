@@ -1,0 +1,60 @@
+@import "../../../config";
+@import "../../material/card";
+
+$header-height: 6;
+
+$popout-height: 8;
+$header-height: 2;
+$msg-height: 4;
+
+// APP LAYOUT
+.threadSidebar-1o3BTy,
+.chat-3bRxxu.threadSidebarOpen-vdkwIh {
+	border-radius: 0;
+}
+
+// Shadow separator
+.threadSidebar-1o3BTy {
+	&::before {
+		content: "";
+		height: calc(100% - 48px);
+		width: 8px;
+		position: absolute;
+		left: -8px;
+		top: 48px;
+		@include card($header-height);
+		z-index: 1;
+	}
+	&::after {
+		content: "";
+		height: 48px;
+		width: 8px;
+		position: absolute;
+		left: -8px;
+		top: 0px;
+		z-index: 101;
+		
+		.theme-light & {
+			background-color: cardbg($header-height, false);
+		}
+		.theme-dark & {
+			background-color: cardbg($header-height, true);
+		}
+	}
+	overflow: visible;
+}
+
+// Chat
+.container-3hZ-gs {
+	@include card(4);
+}
+
+// Create thread dialog
+.textAreaThreadCreation-3zmvce {
+	min-height: 44px;
+}
+.channelTextAreaInner-1WnnRS {
+	border-color: transparent;
+}
+
+// Threads dialog

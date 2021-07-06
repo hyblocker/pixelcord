@@ -1,0 +1,23 @@
+@import 'misc_pages/import';
+@import 'misc';
+@import 'status';
+@import 'modals';
+@import 'skin';
+@import 'mentions';
+@import 'reactions';
+@import 'goosemod';
+
+@import '../../config';
+
+@if $animations {
+	@keyframes spawn-anim {
+		from {
+			transform: scale(0);
+			opacity: 0;
+		}
+		to {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}

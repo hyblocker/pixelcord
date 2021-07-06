@@ -1,0 +1,87 @@
+@import 'variables';
+
+@function elevation-shadow(
+	$z-value,
+  	$color: $baseline-color,
+  	$opacity-boost: 0
+)
+{
+	@if $z-value < 0 or $z-value > 24 {
+		@error "$z-value must be between 0 and 24, but received '#{$z-value}'";
+	}
+	  
+	//$color: theme-color.prop-value($color);
+
+	$umbra-z-value: map-get($umbra-map, $z-value);
+	$penumbra-z-value: map-get($penumbra-map, $z-value);
+	$ambient-z-value: map-get($ambient-map, $z-value);
+
+	$umbra-color: rgba($color, $umbra-opacity + $opacity-boost);
+	$penumbra-color: rgba($color, $penumbra-opacity + $opacity-boost);
+	$ambient-color: rgba($color, $ambient-opacity + $opacity-boost);
+
+	$box-shadow: (
+		#{'#{$umbra-z-value} #{$umbra-color}'},
+		#{'#{$penumbra-z-value} #{$penumbra-color}'},
+		#{$ambient-z-value} $ambient-color
+	);
+
+	@return $box-shadow;
+}
+
+@function cardbg(
+	$z-value,
+	$darkmode: false
+)
+{
+	@if $z-value < 0 or $z-value > 24 {
+		@error "$z-value must be between 0 and 24, but received '#{$z-value}'";
+	}
+	
+	@if $darkmode == false
+	{
+		@return white;
+	}
+	@else
+	{
+		@return map-get($brightness-map-dark, $z-value);
+	}
+}
+
+@mixin card(
+	$z-value,
+	$color: $baseline-color,
+	$background: true
+)
+{
+	@if $z-value < 0 or $z-value > 24 {
+		@error "$z-value must be between 0 and 24, but received '#{$z-value}'";
+	}
+	
+	.theme-light & {
+		@if ($background)
+		{
+			background-color: cardbg($z-value, false);
+		}
+		box-shadow: elevation-shadow($z-value, $color);
+	}
+	.theme-dark & {
+		@if ($background)
+		{
+			background-color: cardbg($z-value, true);
+		}
+		@if $z-value == 1 {
+			box-shadow: 0 0 0 1px #333333;
+		}
+	}
+}
+
+@mixin nocard()
+{
+	.theme-light & {
+		box-shadow: none;
+	}
+	.theme-dark & {
+		box-shadow: none;
+	}
+}

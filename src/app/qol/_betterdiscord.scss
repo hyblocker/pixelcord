@@ -1,0 +1,53 @@
+@import "../../config";
+
+ul.tree-2wKJdG:focus {
+    outline-color: transparent;
+}
+// Fix for web not inheriting color
+.bsi-clientStatuses svg, .bsi-statusIcon {
+    color: inherit;
+}
+
+// unread second monitor experience
+html:not(.app-focused) .isUnread-3Ef-o9 {
+    border-color: transparent;
+}
+.isUnread-3Ef-o9 {
+    transition: 0.2s;
+}
+
+// stock light theme is shit
+.theme-light .headerNormal-T_seeN .headerTag-2pZJzA {
+    color: #848484;
+}
+
+// Fix for more status indicators thing being misaligned and fucking up your ocd
+.bsi-clientStatuses svg, .bsi-statusIcon {
+    margin-top: -4px;
+}
+
+// Light theme improvements
+.theme-light .keybind-KpFkfr,
+.theme-light .text-GwUZgS,
+.theme-light .title-2BxgL2 {
+    color: var(--text-semidark);
+}
+
+// Dark theme improvements
+.theme-dark .gemWithoutLabel-7-ZvB_ {
+    color: var(--text-muted);
+}
+
+// Hide stagehouse discovery
+@if $remove_stagehouse_discovery {
+    .container-2Pjhx-[href*="/discovery"] {
+        display: none;
+    }
+}
+
+// Hide nitro tab - you have settings
+@if $remove_nitro_in_dms {
+    .container-2Pjhx-[href*="/store"] {
+        display: none;
+    }
+}

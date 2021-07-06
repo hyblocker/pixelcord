@@ -1,0 +1,64 @@
+.sidebar-2K8pFh .container-3w7J-x {
+	background-color: var(--navdrawer-color);
+}
+.clickable-1JJAn8:hover .layout-2DM8Md {
+    background-color: var(--navdrawer-hover);
+}
+.clickable-1JJAn8:active .layout-2DM8Md,
+.selected-aXhQR6 .layout-2DM8Md {
+    background-color: var(--navdrawer-active);
+}
+.scroller-1JbKMe .container-2ax-kl:not(:first-child)::before,
+.scroller-RmtA4e .containerDefault-3tr_sE:not(:nth-child(2))::before {
+	content: '';
+	height: 1px;
+	width: 100%;
+	background-color: var(--navdrawer-separator);
+	position: absolute;
+    margin-top: -8px;
+	left: 0;
+}
+.content-1x5b-n,
+.channel-2QD9_O, .layout-2DM8Md {
+	margin-left: 0;
+	border-radius: 0;
+}
+.content-1x5b-n, .layout-2DM8Md {
+	padding-left: 16px;
+}
+.container-2ax-kl, .wrapper-PY0fhH {
+	color: var(--title-color);
+}
+.modeSelected-346R90 .icon-1DeIlz,
+.modeSelected-346R90:hover .icon-1DeIlz {
+	color: var(--accent);
+}
+/*
+.name-23GUGE,.icon-1DeIlz {
+	color: var(--list-color);
+}
+*/
+.icon-1DeIlz {
+	color: var(--channels-default);
+}
+.modeUnread-1qO3K1 .icon-1DeIlz, .modeUnread-1qO3K1:hover .icon-1DeIlz {
+	color: var(--list-color);
+}
+// Yeet spacing between dms to mimic the material list control better
+.container-2Pjhx-, .wrapper-2jXpOf {
+	padding: 0;
+}
+.layout-2DM8Md {
+	height: 44px;
+}
+.content-1x5b-n {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+.listRow-hutiT_ {
+	margin: 0;
+	padding: 5px 8px 5px 16px;
+}
+.listRow-hutiT_, .container-2Pjhx- {
+	border-radius: 0;
+}

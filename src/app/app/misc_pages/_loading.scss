@@ -1,0 +1,15 @@
+@import "../../material/card";
+
+.container-16j22k {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+.tipTitle-GL9qAt {
+	font-weight: var(--section-weight);
+	font-size: 14px;
+	color: var(--header-color);
+}

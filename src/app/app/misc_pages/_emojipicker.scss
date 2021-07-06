@@ -1,0 +1,39 @@
+@import "../../material/card";
+@import "../../../config";
+
+@if $animations {
+	.drawerSizingWrapper-17Mss4 {
+		animation: spawn-anim 0.186s ease-in-out;
+		transform-origin: bottom right;
+	}
+}
+
+// Highlight is accent
+.stickerInspected-2EM4w- .inspectedIndicator-59EII8,
+.emojiItem-14v6tW.emojiItemSelected-1aLkfV {
+	background-color: var(--accent);
+}
+.wrapper-2Gsate {
+	@include card(8);
+}
+.inspector-S2gM3e {
+	@include card(6);
+	overflow: visible
+}
+.contentWrapper-SvZHNd,
+.header-1TOWci,
+.header-2k4I2o,
+.header-8ilj5e {
+	@include card(2);
+}
+.wrapper-1-Fsb8 {
+	.theme-light & {
+		background-color: cardbg(2, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(2, true);
+	}
+}
+.diversitySelectorOptions-4YM-vX {
+	@include card(4);
+}

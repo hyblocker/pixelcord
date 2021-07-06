@@ -1,0 +1,80 @@
+@import '../../material/card';
+
+$highlight: 6;
+$normal: 4;
+
+.background-1QDuV2 {
+	@include card($highlight, $background: false);
+	.theme-dark {
+		background-color: cardbg($highlight, true);
+	}
+}
+.avatar-1uQSZT {
+	.theme-light & {
+		border-color: cardbg($highlight, false);
+		background-color: cardbg($highlight, false);
+	}
+	.theme-dark & {
+		border-color: cardbg($highlight, true);
+		background-color: cardbg($highlight, true);
+	}
+}
+.cardPrimary-1Hv-to,
+.cardPrimaryEditable-3KtE4g,
+.accountProfileCard-1XCH88
+{
+	@include card($highlight);
+}
+.cardPrimaryOutline-29Ujqw,
+.premiumSubscriptionAccountCredit-25i0tQ,
+.guilds-3A5wi_ .cardWrapper-2Min21 {
+	@include card($normal);
+}
+.cardPrimaryOutline-29Ujqw {
+	border-color: transparent;
+}
+
+// fix the color on the voice notches being default discord
+.notches-1sAcEM.gray-3_LNYR {
+	.theme-light & {
+		background-image:none;
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-image:none;
+		background-color: cardbg(0, true);
+	}
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='hsl(220, 7.7%25, 22.9%25)'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E");
+	mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='hsl(220, 7.7%25, 22.9%25)'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E");
+}
+
+// videos card
+.userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+	.theme-light & {
+		border-color:transparent;
+	}
+	.theme-dark & {
+		border-color:transparent;
+	}
+	@include card(4);
+}
+.userSettingsVoice-iwdUCU .previewContainer-37c2Si {
+	overflow: visible;
+}
+.defaultValue-3gC7yw .markValue-2DwdXI {
+	color: var(--accent);
+}
+
+// Powercord license thing
+.modal-yWgWj- {
+	@include card(4);
+}
+.powercord-product-license-modal-data.conditions span:before {
+	background-color: var(--accent) !important;
+}
+.powercord-product-license-modal-data.limitations span:before {
+	background-color: var(--danger) !important;
+}
+.powercord-product-license-modal-data.permissions span:before {
+	background-color: var(--online) !important;
+}

@@ -1,0 +1,13 @@
+@import "../../material/card";
+
+.stageSection-3mAD8V {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+.container-S9SaVf {
+	@include card(4);
+}

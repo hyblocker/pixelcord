@@ -1,0 +1,62 @@
+// Turns dialogs like "Jump to present" and "Mark as read" to floating action buttons!
+
+// Based on https://canary.discord.com/channels/538759280057122817/755005803303403570/821960077132038184
+@import '../material/ripple';
+@import '../material/card';
+@import "../../config";
+
+@if $floating_action_button_chat_buttons {
+
+    .jumpToPresentBar-G1R9s6 {
+        visibility: hidden;
+        bottom: 15px;
+    }
+    .newMessagesBar-265mhP {
+        visibility: hidden;
+        top: 15px;
+    }
+    .barButtonBase-2uLO1z {
+        @include rippleimg(var(--accent-highlight), 64px, 64px, $leftname: right, $top: -12px);
+        height: 42px;
+        &::after {
+            visibility: visible;
+        }
+    }
+    .barButtonIcon-3t4V3d {
+        visibility: visible;
+        padding: 11px;
+        background-color: var(--accent);
+        border-radius: 50%;
+        box-shadow: elevation-shadow(6);
+    }
+    .theme-light
+    {
+        & .closeButton-1tv5uR {
+            background-color: cardbg(6);
+            border-color: transparent;
+            box-shadow: elevation-shadow(6);
+            @include ripple(var(--ripple-default), 64px, 64px, $leftname: left, $left: -12px, $top: -12px);
+            transition: 0.2s;
+        }
+        & .closeButton-1tv5uR:hover {
+            background-color: cardbg(8);
+            border-color: transparent;
+            box-shadow: elevation-shadow(6);
+        }
+    }
+    .theme-dark
+    {
+        & .closeButton-1tv5uR {
+            background-color: cardbg(6, true);
+            border-color: transparent;
+            box-shadow: elevation-shadow(6);
+            @include ripple(var(--ripple-default), 64px, 64px, $leftname: left, $left: -12px, $top: -12px);
+            transition: 0.2s;
+        }
+        & .closeButton-1tv5uR:hover {
+            background-color: cardbg(8, true);
+            border-color: transparent;
+            box-shadow: elevation-shadow(6);
+        }
+    }
+}

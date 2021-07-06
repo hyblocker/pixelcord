@@ -1,0 +1,134 @@
+@use "sass:color";
+@import "../../material/card";
+@import "../../material/ripple";
+
+$header-height: 6;
+
+// header
+.container-1r6BKw.themed-ANHk51,
+.searchBar-6Kv8R2 {
+	@include card($header-height);
+}
+.sidebar-2K8pFh .container-3w7J-x .container-1taM1r:not(.hasBanner-2SrLR3) {
+	&.theme-light {
+		background-color: cardbg($header-height, false);
+		box-shadow: elevation-shadow($header-height, $baseline-color);
+	}
+	&.theme-dark {
+		background-color: cardbg($header-height, true);
+	}
+}
+
+.children-19S4PO::after {
+	.theme-dark & {
+		background: -webkit-gradient(linear,left top,right top,from(color.change(cardbg($header-height, true), $alpha: 0)),to(cardbg($header-height, true)));
+		background: linear-gradient(90deg,color.change(cardbg($header-height, true), $alpha: 0) 0,cardbg($header-height, true));
+	}
+	.theme-light & {
+		background: -webkit-gradient(linear,left top,right top,from(color.change(cardbg($header-height, false), $alpha: 0)),to(cardbg($header-height, false)));
+		background: linear-gradient(90deg,color.change(cardbg($header-height, false), $alpha: 0) 0,cardbg($header-height, false));
+	}
+}
+
+// channel scroller border for easier differentiation of elements
+.scroller-1JbKMe,
+.scroller-RmtA4e {
+	border-right: 1px solid var(--navdrawer-separator);
+}
+.divider-JfaTT5 {
+	border-color: var(--navdrawer-separator);
+}
+.divider-3FBTu8 {
+	background: var(--navdrawer-separator);
+}
+
+
+// Background primary
+.app-2rEoOp,
+.appMount-3lHmkl, body,
+.chat-3bRxxu,
+.threadSidebar-1o3BTy,
+.scroller-9moviB,
+.container-3Mxszk,
+.container-1D34oG,
+.nowPlayingColumn-2sl4cE,
+.container-lRFx4q,
+.scroller-1IIF0A,
+.header-39GIC8,
+.scroller-2XE8rp,
+.layer-3QrUeG,
+.content-1o0f9g {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+
+// Placeholder is bold
+.placeholder-37qJjk {
+	.theme-light & {
+		font-weight: 500;
+	}
+	.theme-dark & {
+		font-weight: 600;
+	}
+}
+
+.thin-1ybCId::-webkit-scrollbar-thumb {
+	background-color: var(--navdrawer-separator);
+}
+// Disable selection of usernames
+.setIdentityLink-1t8Ahd,
+.botText-1526X_,
+.username-1A8OIy {
+	 user-select: none;
+}
+// Disable selection of system messages
+.ephemeralMessage-1fEWtQ,
+.message-2qnXI6.systemMessage-1I9LCe.isSystemMessage-2MkNHd .messageContent-2qWWxC,
+.message-2qnXI6.systemMessage-1I9LCe.isSystemMessage-2MkNHd.wrapper-2a6GCs .systemMessageContainer-2ddkN3 {
+	user-select: none;
+}
+
+
+// Ripple on message click
+.message-2qnXI6 {
+	@include rippleimg;
+}
+// ripple appearing on top of images and embeds fix
+.container-1ov-mD {
+	z-index: 1;
+}
+
+// Fix ripple conflicts with discord CSS
+// Move discord CSS to ::before
+.cozy-3raOZG.hasThread-2k82W0::before {
+	top: 28px;
+}
+.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::before {
+	border-left: 2px solid var(--background-accent);
+	border-bottom: 2px solid var(--background-accent);
+	border-bottom-left-radius: 8px;
+	bottom: 29px;
+	content: "";
+	left: 35px;
+	position: absolute;
+	top: 48px;
+	width: 31px;
+}
+// Reset css
+.cozy-3raOZG.hasThread-2k82W0::after {
+	top: 0px;
+}
+.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::after {
+	border-left: none;
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	bottom: unset;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}

@@ -1,0 +1,55 @@
+@import "../../material/card";
+
+$header-height: 6;
+
+.scroller-1Bvpku,
+.circleIconButton-1QV--U,
+.childWrapper-anI2G9 {
+	.theme-light & {
+		background-color: cardbg($header-height, false);
+	}
+	.theme-dark & {
+		background-color: cardbg($header-height, true);
+	}
+}
+.scroller-1JbKMe, .scroller-RmtA4e {
+	// inset ofset box shadow for depth 2
+	.theme-light & {
+		box-shadow: inset 2px 3px 1px -2px rgba(0, 0, 0, 0.2),
+					inset 2px 2px 2px 0px rgba(0, 0, 0, 0.14),
+					inset 2px 1px 5px 0px rgba(0, 0, 0, 0.12);
+	}
+}
+.hasBanner-2SrLR3 ~ .scroller-RmtA4e{
+	box-shadow:
+		inset 2px -3px 1px -2px rgba(0, 0, 0, 0.2),
+		inset 2px -2px 2px 0px rgba(0, 0, 0, 0.14),
+		inset 2px -1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+
+// Topbar
+.bg-h5JY_x {
+	// normal: depth of 6
+	.theme-light & {
+		background-color: cardbg($header-height, false);
+	}
+	.theme-dark & {
+		background-color: cardbg($header-height, true);
+	}
+
+	// in settings: depth of 0
+	div[style="position: fixed; opacity: 0; pointer-events: none;"][tabindex="0"] ~ .app-1q1i1E & {
+		
+		.theme-light & {
+			background-color: cardbg(0, false);
+		}
+		.theme-dark & {
+			background-color: cardbg(0, true);
+		}
+	}
+}
+
+.guildSeparator-33mFX6 {
+	background-color: var(--navdrawer-separator);
+}

@@ -1,0 +1,29 @@
+// Unread pill
+.isUnread-3Ef-o9 {
+    border-color: var(--danger);
+}
+.unreadPill-2HyYtt {
+    background-color: var(--danger);
+}
+.unreadPillCapStroke-7rkHbg {
+    color: var(--danger);
+    fill: var(--danger);
+}
+
+// Red dot on pin = var(--danger)
+.iconBadge-qZ4Ksk, .mention-1f5kbO {
+	background-color: var(--danger);
+}
+.numberBadge-2s8kKX[style*="background-color: rgb(240, 71, 71)"] {
+	background-color: var(--danger) !important;
+}
+
+// End call using --danger
+.colorable-1bkp8v.red-33-Lnk,
+.lookFilled-1Gx00P.colorRed-1TFJan {
+	background-color: var(--danger);
+	color: white;
+}
+.container-3baos1 .redIcon-2uP7Ej {
+	color: var(--danger);
+}

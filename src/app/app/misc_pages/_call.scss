@@ -1,0 +1,10 @@
+@import "../../../config";
+
+.root-2sELX6 {
+	background-color: black;
+}
+@if $animations {
+	.wrapper-2qzCYF.video--KPXCT {
+		transition: height .2s ease-in-out;
+	}
+}

@@ -1,0 +1,34 @@
+// Optimization
+$animations: true;
+$animate_badges: true; // Animates badges like hypesquad, nitro, server booster and more
+
+// Functions
+$hoverchannels: false; // Channels collapse and uncollapse on hover, giving you more room to read
+$powerclock_in_titlebar: true; // Centers powerclock in the title bar
+
+// Enhancements
+$fix_blurry_connection_icons: true; // Fix the connection icons (GitHub, Steam, Twitter, etc.) being blurry by using SVG versions
+$white-badges: false; // White badges like hypesquad, nitro, server booster and more
+$channel_icons: false; // Make channels change icon based on what they're called! (eg #github would have a github icon instead of #)
+$floating_action_button_chat_buttons: true; // Turns the youre reading old messages and new mesages pills to floating buttons, like on mobile
+
+// Remove buttons from the top bar
+$remove_help_button: true;
+$remove_gif_button: true;
+$remove_gift_button: true;
+$remove_sticker_button: true;
+$remove_video_call_button: true;
+
+// Clear the list of stickies in DMs
+$remove_nitro_in_dms: true;
+$remove_stagehouse_discovery: true;
+// Note: you can hide the library tab by going to
+//     Settings -> Advanced -> Hide Library
+
+// Misc
+$google_icons: true; // Replace all discord icons with Google Icons
+$settings_icons: true; // Add icons to settings!
+$collapse_search: true; // Collapses search to save space
+$collapse_settings: true; // Collapses settings to save space
+$collapse_stagehouse: true; // Collapses stagehouses to save space
+$macOS_window_buttons: true; // Replaces window buttons with macOS style buttons (Windows)

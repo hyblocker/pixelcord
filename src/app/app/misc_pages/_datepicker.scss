@@ -1,0 +1,27 @@
+@import '../../material/card';
+@import '../../../config';
+
+.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--next,
+.calendarPicker-2yf6Ci .react-datepicker__navigation.react-datepicker__navigation--previous {
+	.theme-light &,
+	.theme-dark & {
+		border-color: transparent;
+	}
+}
+
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected,
+.calendarPicker-2yf6Ci .react-datepicker__current-month {
+	font-weight: var(--section-weight);
+	font-size: 14px;
+	color: var(--header-color);
+}
+.datePicker--XZbmJ .datePickerHint-3Q1Udw .hint-165cR4 {
+	.theme-light &,
+	.theme-dark & {
+		color: var(--text-muted);
+	}
+}
+.calendarPicker-2yf6Ci .react-datepicker__month {
+	border-radius: 3px;
+	@include card(4);
+}

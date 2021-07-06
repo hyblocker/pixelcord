@@ -1,0 +1,40 @@
+// Only shows the settings icon, and shows all other icons on hover
+
+// Base on https://canary.discord.com/channels/538759280057122817/755005803303403570/821887263851675698
+
+$width: 32px;
+@import '../material/card';
+@import "../../config";
+
+@if $collapse_settings {
+
+    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
+        position: absolute;
+        flex-direction: column;
+        bottom: var(--settings-padding);
+        left: calc(var(--channels-width) - var(--settings-padding) - (#{$width} + 10px));
+        z-index: 2;
+        padding: 5px;
+        border-radius: 4px;
+        max-height: $width;
+        transition: max-height 0.2s ease-in-out, box-shadow 0.3s ease;
+        box-shadow: none;
+
+        &:hover {
+            max-height: 500px;
+            @include card(4);
+        }
+    }
+    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5>:not(:last-child){
+        height: 0;
+        opacity: 0;
+        transition: opacity 0.2s linear, height 0.2s ease-in-out;
+    }
+    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5:hover>:not(:last-child){
+        height: 32px;
+        opacity: 1;
+    }
+    .nameTag-3uD-yy {
+        margin-right: 25px;
+    }
+}

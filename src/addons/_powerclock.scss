@@ -1,0 +1,68 @@
+@import "../app/material/card";
+@import "../config";
+
+$header-height: 6;
+
+.powerclock {
+	color: var(--logo-color) !important;
+	font-kerning: none;
+	letter-spacing: 100%;
+}
+.powerclock.sticky {
+	.theme-light & {
+		background-color: cardbg($header-height, false);
+		box-shadow: 0 -4px cardbg($header-height, false);
+	}
+	.theme-dark & {
+		background-color: cardbg($header-height, true);
+		box-shadow: 0 -4px cardbg($header-height, true);
+	}
+}
+
+@if $powerclock_in_titlebar {
+	.platform-win .powerclock:not(.sticky){
+		position: fixed;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%,5px);
+		padding: 0;
+		font-size: 1rem;
+		z-index: 3001;
+		padding: 0;
+	}
+	.platform-win .layer-3QrUeG:first-child:not(:last-child){
+		opacity: 1 !important;
+		transform: none !important;
+		will-change: unset;
+		z-index: 1;
+	}
+	.platform-win .layer-3QrUeG:last-child:not(:first-child){
+		will-change: unset;
+		z-index: 100;
+	}
+	html:not(.platform-win) .powerclock:not(.sticky){
+		position: fixed;
+		top: 0;
+		right: 0;
+		transform: translate(-50%,19px);
+		padding: 0;
+		font-size: 1rem;
+		z-index: 3001;
+		padding: 0;
+	}
+	.guilds-1SWlCJ .scroller-1Bvpku {
+		contain: unset;
+	}
+	html:not(.platform-win) .layer-3QrUeG:first-child:not(:last-child){
+		opacity: 1 !important;
+		transform: none !important;
+		will-change: unset;
+	}
+	html:not(.platform-win) .layer-3QrUeG:last-child:not(:first-child){
+		will-change: unset;
+		z-index: 100;
+	}
+	html:not(.platform-win) .toolbar-1t6TWx{
+	  margin-right: 64px;
+	}
+}

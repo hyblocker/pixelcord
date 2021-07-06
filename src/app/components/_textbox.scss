@@ -1,0 +1,128 @@
+@import '../../config';
+
+.inputWrapper-31_8H8,
+.searchBar-3dMhjb,
+.searchBar-1YE5UV,
+.searchBar-5di9mG,
+.searchBar--fTZYa,
+.searchBar-TUoVPN,
+.searchBox-3Y2Vi7,
+.wrapper-1cBijl,
+.gameName-1RiWHm,
+.phoneField-38N1bJ,
+.popoutListInput-1l9TUI,
+.searchBar-1Vaz-O .searchBarComponent-yxeVIL,
+.searchContainer-3pUVEQ,
+.container-cMG81i.medium-1LLV3p
+{
+	position: relative;
+	border-radius: 0;
+
+	&:after {
+		background-color: var(--accent);
+		bottom: 0;
+		content: '';
+		height: 2px;
+		position: absolute;
+		@if $animations {
+			left: calc(50% - 5px);
+			transition-duration: .2s;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			visibility: hidden;
+			width: 10px;
+		}
+		@else {
+			left: calc(0px);
+			visibility: visible;
+			width: 100%;
+		}
+	}
+  
+	@if $animations {
+		&:focus-within::after {
+			left: calc(0px);
+			visibility: visible;
+			width: 100%;
+		}
+	}
+}
+// Special variant cuz main textbox
+.slateTextArea-1Mkdgw
+{
+	position: relative;
+	border-radius: 0;
+
+	&:after {
+		background-color: var(--accent);
+		bottom: 0;
+		content: '';
+		height: 2px;
+		position: absolute;
+		@if $animations {
+			left: calc((100% + 90px) / 2 - 50px);
+			transition-duration: .2s;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			visibility: hidden;
+			width: 10px;
+		}
+		@else {
+			left: -56px;
+			visibility: visible;
+			width: calc(100% + 90px)
+		}
+	}
+  
+	@if $animations {
+		&:focus-within::after {
+			left: -56px;
+			visibility: visible;
+			width: calc(100% + 90px)
+		}
+	}
+}
+
+.scrollableContainer-2NUZem,
+.input-cIJ7To,
+.searchBar-3dMhjb,
+.searchBar-1YE5UV,
+.searchBar-5di9mG,
+.searchBar--fTZYa,
+.wrapper-1cBijl,
+.container-cMG81i,
+.searchBox-3Y2Vi7 .inputWrapper-31_8H8::after,
+.searchBar-6Kv8R2 .searchBarComponent-32dTOx ,
+.channelTextArea-rNsIhG,
+.searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO,
+.searchBar-1Vaz-O .searchBarComponent-yxeVIL
+{
+	background-color: transparent;
+}
+.wrapper-1cBijl,
+.input-cIJ7To,
+.input-cIJ7To.focused-1mmYsC,
+.input-cIJ7To:focus,
+.input-cIJ7To:hover,
+.input-cIJ7To.disabled-2BKQFm,
+.theme-light .gameNameInput-385LoS:focus, .theme-light .gameNameInput-385LoS:hover,
+.theme-dark .gameNameInput-385LoS:focus, .theme-dark .gameNameInput-385LoS:hover,
+.searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO:focus,
+.searchPage-3GKAdT .search-1iTphC .searchBox-2_mAlO:focus-within
+{
+	border-color: transparent;
+}
+.search-1iTphC .searchBox-2_mAlO:focus, .search-1iTphC .searchBox-2_mAlO:focus-within,
+.theme-light .elevationLow-2lY09M, .theme-dark .elevationLow-2lY09M {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-color: transparent;
+}
+.libraryFilter-31ZUa2 {
+	transition: 0.25s;
+}
+
+.search-1iTphC .searchBox-2_mAlO, .scrollableContainer-2NUZem {
+	border-radius: 0;
+}
+.searchBox-2_mAlO .size12-3cLvbJ {
+	font-weight: var(--header-weight);
+}

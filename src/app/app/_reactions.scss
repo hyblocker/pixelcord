@@ -1,0 +1,22 @@
+@use "sass:color";
+
+.reaction-1hd86g {
+	border-radius: .25rem;
+	border: none;
+}
+.theme-light,
+.theme-dark {
+	& .reaction-1hd86g.reactionMe-wv5HKu {
+		$accent: #1a73e8;
+		$accent-highlight: #0095ff;
+		background-color: color.change($accent, $alpha: 0.25);
+		color: var(--accent);
+
+		&:hover {
+			background-color: color.change($accent-highlight, $alpha: 0.25);
+		}
+	}
+	& .reaction-1hd86g.reactionMe-wv5HKu .reactionCount-2mvXRV {
+		color: var(--accent);
+	}
+}

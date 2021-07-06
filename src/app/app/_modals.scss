@@ -1,0 +1,83 @@
+@import "../material/card";
+@import "../../config";
+
+// Powercord toasts
+.powercord-toast {
+	@include card(8);
+}
+.powercord-toast .header {
+	@include card(2, $background: false);
+}
+.powercord-toast .contents .inner {
+	@include card(1, $background: false);
+}
+
+// Emoji popout
+.emojiSection-3Fb9ix {
+	@include card(8);
+}
+
+// Upload modal
+.uploadModal-2ifh8j, .root-1gCeng {
+	@include card(2);
+}
+.uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC, .footer-2gL1pp {
+	@include card(8);
+}
+
+// Generic Modal
+.root-1gCeng,
+.quickswitcher-3JagVE {
+	@include card(8);
+}
+.scroller-zPkAnE {
+	background-color: transparent;
+}
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc.error-kKl9o2 {
+	background-color: var(--danger);
+}
+
+// Modal insert animation
+@if $animations {
+	.modal-3c3bKg {
+		animation: spawn-anim 0.2s ease-in-out;
+	}
+	.menu-3sdvDG {
+		animation: spawn-anim 0.2s ease-in-out;
+		transform-origin: center;
+		
+		&#message-actions {
+			transform-origin: top right;
+		}
+		&#channel-attach {
+			transform-origin: bottom left;
+		}
+		&#friend-row {
+			transform-origin: center left;
+		}
+		&#guild-settings-role-context,
+		&#user-profile-actions {
+			transform-origin: top left;
+		}
+		&#guild-header-popout {
+			transform-origin: top center;
+		}
+	}
+	.layer-v9HyYc .popoutWrapper-3TSaaB[role=dialog] {
+		transform-origin: bottom left;
+	}
+	.layer-v9HyYc .userPopout-xaxa6l[role=dialog] {
+		transform-origin: center;
+	}
+	.layer-v9HyYc .container-3XJ8ns[role=dialog] {
+		transform-origin: top center;
+	}
+}
+.uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC {
+	overflow-y: hidden;
+}
+
+// Open link in browser disable word wrap
+.downloadLink-1ywL9o {
+	width: 128px;
+}

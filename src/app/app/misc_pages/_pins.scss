@@ -1,0 +1,31 @@
+@import "../../material/card";
+@import "../../../config";
+
+$popout-height: 8;
+$header-height: 2;
+$msg-height: 4;
+
+.messageGroupWrapper-o-Zw7G {
+	@include card($msg-height);
+}
+.header-ykumBX {
+	@include card($header-height);
+	z-index: 11;
+}
+.messagesPopoutWrap-1MQ1bW {
+	@include card($popout-height);
+	@if $animations {
+		animation: spawn-anim 0.2s ease-in-out;
+		transform-origin: top right;
+	}
+}
+.footer-1kmXd4 {
+	background-color: transparent;
+}
+.base-1x0h_U[style*="color: hsl(139, "] {
+	color: var(--online) !important;
+}
+// Fix the note clipping or not having much padding on langs other than english
+.footer-1kmXd4 {
+	height: auto;
+}

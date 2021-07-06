@@ -1,0 +1,64 @@
+[data-popout-root].newBrand,
+html.newBrand,
+:root {
+	--snackbar-bg: #333;
+	--snackbar-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+	--snackbar-radius: 4px;
+	--snackbar-height: 32px;
+	--snackbar-padding: 14px 16px;
+
+    --switch-knob-color: #ECECEC;
+    --switch-slider-color: rgba(135, 135, 135,0.65);
+
+	--button-radius: 4px;
+
+	--background-blur-intensity: 10px;
+
+	--header-weight: 600;
+	--subtitle-weight: 500;
+	--section-weight: 900;
+	--font-header: 'Google Sans', 'Migu 1M', sans-serif;
+	--font-code: 'Roboto Mono', monospace;
+
+	// Default aliases
+	--font-primary: var(--font-header);
+	--font-secondary: var(--font-header);
+	--font-display: var(--font-header);
+
+	--card-padding: 12px;
+	--channels-width: 300px; //DMS, Channel names
+
+	// Picture in picture settings!
+	--pip-width: 320px;
+	--pip-radius: 12px;
+
+	// Tooltips
+	--tooltip-bg: #2a2a2a;
+	--tooltip-text: #ffffff;
+
+	// Checkmark
+	--checkbox-size: 15px;
+
+	// Settings
+	--settings-list-width: 316px;
+	--settings-padding: 8px;
+
+	// Ripple things
+	--mouseX: 0px;
+	--mouseY: 0px;
+}
+
+// Override new colors from rebrand
+:root, html, [data-popout-root].oldBrand, html.oldBrand,
+       html, [data-popout-root].newBrand, html.newBrand {
+	
+	--text-positive: var(--online);
+	--brand-experiment: var(--accent);
+	--brand-experiment-500: var(--accent);
+	--brand-experiment-560: var(--accent);
+	--control-brand-foreground: var(--accent);
+}
+.theme-light,
+.theme-dark {
+	--text-link: var(--accent);
+}

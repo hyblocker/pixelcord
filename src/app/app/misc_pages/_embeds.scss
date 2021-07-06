@@ -1,0 +1,31 @@
+// Embeds means both literal embeds and attachments (more commonly known as files)
+@import '../../material/card';
+
+.attachment-33OFj0 {
+	@include card(6);
+	overflow: visible;
+}
+
+.wrapperAudio-1jDe0Q,
+.embedFull-2tM8-- {
+	@include card(6);
+	transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out;
+	&:hover {
+		@include card(12);
+	}
+}
+
+// Nitro gift
+.embedHorizontal-WknQ2-,
+.embedVertical-W5-T0m,
+.tile-2OwFgW,
+
+// Server invite
+.wrapper-35wsBm {
+	@include card(8);
+	transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out;
+
+	&:hover {
+		@include card(12);
+	}
+}

@@ -1,0 +1,160 @@
+@import '../../../config';
+
+// Pages
+.endButton-m5h5Sr {
+	& .contents-18-Yxp {
+		content: '';
+		& span {
+			content: '';
+			color: transparent;
+		}
+	}
+	&.button-38aScr {
+		border-radius: 50%;
+	}
+}
+
+.endButton-m5h5Sr:first-child {
+	// left arrow
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z'/%3E%3C/svg%3E");
+	background-size: 38px 38px;
+	width: 38px;
+}
+
+.endButton-m5h5Sr:last-child {
+	// right arrow
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z'/%3E%3C/svg%3E");
+	background-size: 38px 38px;
+	width: 38px;
+}
+
+.pageControl-xGOf_S>div:nth-child(5):not(.pageButton-2ruNwd) {
+
+	cursor: text;
+	
+	// literally taken from _textbox.scss
+
+	position: relative;
+	border-radius: 0;
+
+	&:after {
+		background-color: var(--accent);
+		bottom: 0;
+		content: '';
+		height: 2px;
+		position: absolute;
+		@if $animations {
+			left: calc(50% - 5px);
+			transition-duration: .2s;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			visibility: hidden;
+			width: 10px;
+		}
+		@else {
+			left: calc(0px);
+			visibility: visible;
+			width: 100%;
+		}
+	}
+
+	@if $animations {
+		&:hover::after {
+			left: calc(0px);
+			visibility: visible;
+			width: 100%;
+		}
+	}
+	& .gap-3lIf-M {
+		cursor: text;
+		@if $animations {
+			transition: font-size 0.2s ease-in-out;
+		}
+	}
+	@if $animations {
+		&:hover .gap-3lIf-M {
+			font-size: 0;
+		}
+	}
+}
+
+// Cards
+.searchResult-9tQ1uo {
+	@include card(2);
+}
+
+// BG
+.searchResultsWrap-3-pOjs {
+	@include card(8);
+}
+.searchHeader-2XoQg7 {
+	@include card(2);
+}
+.channelName-1JRO3C {
+	.theme-light & {
+		background-color: cardbg(8, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(8, true);
+	}
+}
+
+// Search popout
+.container-3ayLPN {
+	@include card(4);
+	@if $animations {
+		animation: spawn-anim 0.18s ease-in-out;
+		transform-origin: top;
+	}
+}
+.resultsGroup-r_nuzN .header-2N-gMV {
+	font-weight: var(--section-weight);
+	font-size: 14px;
+	color: var(--header-color);
+}
+.resultsGroup-r_nuzN .header-2N-gMV,
+.resultsGroup-r_nuzN .plusIcon-v0BTrL,
+.resultsGroup-r_nuzN .searchClearHistory-2cSSMO,
+.resultsGroup-r_nuzN .searchLearnMore-3SQUAj a {
+	.theme-light & {
+		color: var(--header-color);
+	}
+	.theme-dark & {
+		color: var(--header-color);
+	}
+}
+
+// Center the search spinner because of my OCD
+$spinner-size: 48px;
+
+.totalResults--dyAxF {
+	& .spinnerWrapper-3hIs5I {
+		position: absolute;
+		width: $spinner-size;
+		height: $spinner-size;
+		left: calc(50% - #{$spinner-size} * 0.5);
+		top: calc(50vh - #{$spinner-size} * 0.5 - 7px);
+		justify-content: center;
+
+		& .inner-1gJC7_ {
+			width: $spinner-size;
+			height: $spinner-size;
+		}
+		.platform-win & {
+			top: calc(50vh - #{$spinner-size} * 0.5 - 7px);
+		}
+	}
+}
+
+.queryContainer-RKFJW- {
+	@include card(2);
+}
+
+// gradient shit
+.theme-dark .option-96V44q:after {
+	background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),color-stop(80%,cardbg(4, true)));
+	background: linear-gradient(90deg,rgba(54,57,63,0),cardbg(4, true) 80%);
+}
+.theme-light .option-96V44q:after {
+	background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),color-stop(80%,cardbg(4, false)));
+	background: linear-gradient(90deg,rgba(54,57,63,0),cardbg(4, false) 80%);
+}

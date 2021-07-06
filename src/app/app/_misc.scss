@@ -1,0 +1,177 @@
+// General QOL things that just make Discord a little more pleasant to use
+// Fix dragging by disabling it :omegalul:
+a {
+	-webkit-user-drag: none;
+	user-drag: none;
+}
+// Disable selection of dates in messages
+.timestamp-3ZCmNB {
+	user-select: none;
+}
+
+
+// IMPORTS
+@import '../material/ripple';
+@import '../material/card';
+@import '../../config';
+
+// Modal background blur
+.backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
+	backdrop-filter: blur(var(--background-blur-intensity));
+	&[style*="opacity: 0.85; background: hsl(0,"] {
+		background: hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.85) !important;
+		opacity: 1 !important;
+	}
+	@if $animations {
+		transition: opacity 0.1s ease-in-out;
+	}
+}
+
+// Settings ripple
+.item-PXvHYJ {
+	@include ripple;
+}
+
+// DMS List ripple
+.channel-2QD9_O {
+	@include ripple;
+}
+
+// Server channels / vc ripple
+.content-1x5b-n {
+	@include ripple;
+}
+
+// User list ripple
+.container-2Pjhx- {
+	@include ripple;
+}
+
+// Mutual Friends / Servers ripple
+.listRow-hutiT_ {
+	@include rippleimg(var(--ripple-default), 100%, 48px, false);
+}
+
+// Quickswitcher Ripple
+.resultFocused-3aIoYe {
+	@include rippleimg;
+}
+
+/* Fonts | Google Sans */
+@import url("https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700");
+
+/* Fonts | Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+// Fonts
+::placeholder, body, button, input, select, textarea, ::-webkit-input-placeholder {
+    font-family: var(--font-header);
+}
+.textContainer-C0szpm pre, code, .multiInputLast-33BbRU input {
+    font: 14px/20px var(--font-code) !important;
+    font-weight: 400;
+    font-stretch: 100%;
+}
+
+// Bold headers
+.name-uJV0GL, .username-1A8OIy, .title-eS5yk3, .title-29uC1r, .modalTitle-37O4n6 .content-2Add9f {
+	font-weight: var(--header-weight);
+}
+
+.keybindShortcut-1BD6Z1 span {
+	font-weight: 600;
+}
+
+// Apply accent color everywhere
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9, .notice-2X5hT5 {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}
+.foreground-2aE44H {
+	stroke: var(--accent);
+}
+.colorBrand-ROmMP1,
+.colorBrand-2tjs5J,
+.operations-36ENbA>a {
+	color: var(--accent);
+}
+.avatarUploaderInner-3UNxY3,
+.theme-dark .activeButton-rvKcqq,
+.theme-dark .activeButton-rvKcqq:hover,
+.theme-light .activeButton-rvKcqq,
+.theme-light .activeButton-rvKcqq:hover,
+.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb,
+.navButtonActive-1MkytQ {
+	background-color: var(--accent);
+}
+
+.mention-1f5kbO {
+	opacity: 1;
+}
+
+.connectedAccount-36nQx7 {
+	border-color: transparent;
+	@include card(2, transparent);
+}
+.folder-1hbNCn, .folderIconWrapper-1_bOZe svg {
+	color: var(--accent) !important;
+}
+.progressBar-3u8FBM.small-1CUeBa.animating-3Qqqzp {
+	background-color: var(--accent) !important;
+}
+.lookLink-9FtZy-.colorBrand-3pXr91 {//}, .selected-aXhQR6.container-2Pjhx-, .modeSelected-346R90 .name-23GUGE {
+	color: var(--accent);
+}
+
+// Fix ripple being scuffed
+.container-2Pjhx- {
+    position: relative;
+}
+
+.theme-dark .categoryFadeBlurple-1j72_A,.theme-light .categoryFadeBlurple-1j72_A {
+    background-color: var(--accent);
+	opacity: 0.8;
+}
+.theme-dark .categoryFadeBlurple-1j72_A:hover,.theme-light .categoryFadeBlurple-1j72_A:hover {
+    background-color: var(--accent);
+	opacity: 0.95;
+}
+.theme-light .focused-1En8bG:after, .theme-light .result-3w1ZcL:hover:after {
+	-webkit-box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 3px #dcddde;
+	box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 3px #dcddde;
+}
+
+//.channelName-2YrOjO,
+.subtitle-3V1p2E,
+.name-uJV0GL {
+	font-weight: 400;
+	//color: var(--list-color);
+	.modeMuted-onO3r- & {
+		color: var(--interactive-muted);
+	}
+	.modeUnread-1qO3K1 & {
+		color: var(--interactive-muted);
+	}
+}
+.wrapper-2jXpOf.modeSelected-346R90 .channelName-2YrOjO,
+.wrapper-2jXpOf.modeSelected-346R90 .subtitle-3V1p2E,
+.selected-aXhQR6.container-2Pjhx- .name-uJV0GL {
+	font-weight: 500;
+}
+.wrapper-2jXpOf.modeSelected-346R90 .channelName-2YrOjO,
+.wrapper-2jXpOf.modeSelected-346R90 .subtitle-3V1p2E,
+// .selected-aXhQR6.container-2Pjhx- .name-uJV0GL,
+{
+	color: var(--accent);
+}
+// Boosts selection text
+.tierTitle-y7BLPl,
+.tierRequirements-dGesMA,
+.tierUnlocked-25K6Kv,
+.textBadge-1iylP6  {
+	user-select: none;
+}
+// BETA
+.betaTag-F_ncuo[style*="background-color: hsl(227,"] {
+	background-color: var(--accent) !important;
+}

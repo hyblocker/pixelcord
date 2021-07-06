@@ -1,0 +1,57 @@
+@import '../material/ripple';
+
+.checkbox-1ix_J3 svg {
+	position: absolute;
+	width: 7.2px;
+	height: 14px;
+	border-style: solid;
+	border-top: none;
+	border-left: none;
+	border-right-width: calc(2/15 * var(--checkbox-size));
+	border-bottom-width: calc(2/15 * var(--checkbox-size));
+	border-color: var(--checkmark-color, white);
+	transform-origin: 9.4px 7.2px;
+	box-sizing: content-box;
+	transition: 140ms;
+	transform: scale(0, 0) rotate(0deg);
+}
+.checkbox-1ix_J3.checked-3_4uQ9 svg {
+	transform: scale(1, 1) rotate(45deg);
+}
+
+.checkbox-1ix_J3 path {
+	d: path("") !important;
+}
+
+.checkbox-1ix_J3.checked-3_4uQ9 {
+	border-color: var(--accent) !important;
+	background-color: var(--accent) !important;
+}
+
+.checkbox-1ix_J3 {
+    -webkit-transition: background-color 140ms, border-color 140ms;
+    transition: background-color 140ms, border-color 140ms;
+    -webkit-transition-duration: var(--animation-duration, 140ms);
+    transition-duration: var(--animation-duration, 140ms);
+	@include ripple(var(--accent-highlight), 256px, 256px, true, -119px, -113px, $ripple-size: 1, $hoverclass: ".checked-3_4uQ9");
+}
+
+@-webkit-keyframes checkmark-expand {
+	0% {
+	  -webkit-transform: scale(0, 0) rotate(45deg);
+	}
+	
+	100% {
+	  -webkit-transform: scale(1, 1) rotate(45deg);
+	}
+}
+	
+@keyframes checkmark-expand {
+	0% {
+	  transform: scale(0, 0) rotate(45deg);
+	}
+	
+	100% {
+	  transform: scale(1, 1) rotate(45deg);
+	}
+}

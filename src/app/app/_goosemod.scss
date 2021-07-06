@@ -1,0 +1,136 @@
+@import "../../config";
+
+// Goosemod specific patches
+// Fixes bugs with some plugins, and adds support for Goosemod
+
+.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6,
+.theme-light .defaultIndicator-G3c16x,
+.base-PmTxvP {
+	color: white;
+}
+.theme-light .paymentText-2vaF7U {
+	color: var(--text);
+}
+.theme-dark .premiumIndicator-1XvbfM,
+.theme-light .premiumIndicator-1XvbfM {
+	background-color: var(--accent);
+	color: white;
+}
+.theme-light .bottomDivider-1K9Gao {
+	border-color: var(--navdrawer-separator);
+}
+.gemIndicatorContainer-2jdECl {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+.wrapper-3nSjSv {
+	& .colorStandard-2KCXvj,
+	& .base-1x0h_U {
+		color: var(--accent-text);
+	}
+	color: white;
+}
+.lookInverted-2D7oAl.colorBrand-3pXr91 {
+	background-color: var(--online);
+	color: white;
+}
+.bannerVisible-2ZE_qG .iconBackgroundTierOne-2OQMBY, .bannerVisible-2ZE_qG .iconBackgroundTierThree-FWlUL9, .bannerVisible-2ZE_qG .iconBackgroundTierTwo-Eab9L6, .iconTierOne-s_oiRb, .iconTierTwo-1JOWNK,
+.perkAvailabilityIcon-1FFCXW {
+	color: white;
+}
+.theme-light {
+	& .css-4h5swf-singleValue {
+		color: rgb(46, 51, 56);
+	}
+	// Normal
+	& .css-1yz4bi9-option {
+		color: rgb(46, 51, 56);
+	}
+	// Hover
+	& .css-rzbxvl-option {
+		color: rgb(46, 51, 56);
+	}
+	// Selected
+	& .css-1ba14n5-option {
+		color: rgb(46, 51, 56);
+	}
+}
+// Fix overflow bug in themes store
+.gm-store-category > :nth-child(2) {
+	overflow-y: hidden;
+}
+// Store
+#gm-settings-inject {
+	.theme-light & {
+		background-color: cardbg(0, false) !important;
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true) !important;
+	}
+	& .gm-store-card > :nth-child(1) {
+		background-color: transparent
+	}
+}
+.gm-store-card .title-31JmR4:nth-child(2) {
+	color: rgb(235, 235, 235);
+}
+
+.gm-store-card {
+	@include card(4);
+}
+
+// Home: animation collapse
+// Ideally goosemod would shove both the home and store pages into a div for easier styling but that isnt how goosemod works, so we make due with what we got and :pain:
+#gm-home-plugins,
+#gm-home-themes {
+	&[style*="display: block;"],
+	&[style*="display: none;"] {
+		display: block !important;
+		opacity: 1;
+		height: 44px;
+		@if $animations {
+			transition: opacity 0.25s ease-in-out, height 150ms ease-in-out;
+		}
+	}
+	&[style*="display: none;"] {
+		height: 0;
+		opacity: 0;
+	}
+}
+.h5-18_1nd[id*=gm-settings-header] {
+	cursor: pointer;
+}
+
+@if $animations {
+	.privateChannelsHeaderContainer-3NB1K1 {
+		& .privateChannelRecipientsInviteButtonIcon-3A3uTc {
+			transition: transform 150ms ease-in,
+						left 150ms ease-in,
+						top 150ms ease-in;
+		}
+	}
+	@if $animations {
+		.vertical-V37hAW,
+		.container-2_Tvc_ {
+			&[style*="display: block;"],
+			&[style*="display: none;"] {
+				display: block !important;
+				opacity: 1;
+				height: auto;
+				max-height: 100000px;
+				@if $animations {
+					transition: 150ms ease-in-out;
+				}
+			}
+			&[style*="display: none;"] {
+				height: 0;
+				opacity: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

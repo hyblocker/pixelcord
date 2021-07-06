@@ -1,0 +1,9 @@
+@import "../../material/card";
+
+.optionContainer-15srkc {
+	@include card(2);
+}
+.container-2Uhd6d {
+	border-color: transparent;
+	@include card(6);
+}

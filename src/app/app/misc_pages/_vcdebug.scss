@@ -1,0 +1,16 @@
+@import "../../material/card";
+
+$popout-height: 8;
+$header-height: 2;
+$msg-height: 4;
+
+.container-2x5lvQ section {
+	@include card($popout-height);
+}
+.container-2x5lvQ .header-2C89wJ {
+	@include card($header-height);
+}
+.theme-light .debugButton-1Zec0y,
+.theme-dark .debugButton-1Zec0y {
+	color: var(--accent);
+}
