@@ -31,7 +31,9 @@ cd powercord/src/Powercord/themes && git clone https://github.com/hyblocker/pixe
 
 Please submit any bugs on GitHub or on Discord (ping me)
 
+## Locally building
 
+Modify the manifests to point to `dist.css` instead of `index.css`
 
 ## License
 
