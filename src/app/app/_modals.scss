@@ -13,6 +13,7 @@
 }
 
 // Emoji popout
+.popoutContainer-1MXdqN,
 .emojiSection-3Fb9ix {
 	@include card(8);
 }
@@ -80,4 +81,32 @@
 // Open link in browser disable word wrap
 .downloadLink-1ywL9o {
 	width: 128px;
+}
+
+// Context menus dont layer properly because its too hard to add proper z-indexing
+.layerContainer-yqaFcK .layer-v9HyYc {
+	& .layer-v9HyYc {
+		z-index: 1003;
+		& .layer-v9HyYc {
+			z-index: 1004;
+			& .layer-v9HyYc {
+				z-index: 1005;
+				& .layer-v9HyYc {
+					z-index: 1006;
+					& .layer-v9HyYc {
+						z-index: 1007;
+						& .layer-v9HyYc {
+							z-index: 1008;
+							& .layer-v9HyYc {
+								z-index: 1009;
+								& .layer-v9HyYc {
+									z-index: 1010;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

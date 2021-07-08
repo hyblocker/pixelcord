@@ -58,3 +58,17 @@ $msg-height: 4;
 }
 
 // Threads dialog
+.container-7uh5fX {
+	@include card($msg-height);
+}
+.header-1VS4tm {
+	@include card($header-height);
+	z-index: 11;
+}
+.container-2I9Hud {
+	@include card($popout-height);
+	@if $animations {
+		animation: spawn-anim 0.2s ease-in-out;
+		transform-origin: top right;
+	}
+}

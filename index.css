@@ -1,9 +1,16 @@
 /* IMPORT THEME */
 @import url(https://hekkerstech.tips/pixelcord/dist.css);
 
-/* Globals - These dont change based on theme */
-[data-popout-root].newBrand, html.newBrand, :root
-{
+/* MODULES */
+@import url("https://nyri4.github.io/Discolored/main.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css");
+@import url(https://mr-miner1.github.io/Better-Badges/src/BadgesEverywhere.css);
+@import url(https://mr-miner1.github.io/Better-Badges/src/coloredbadges.css);
+
+/* VARIABLES */
+
+/* GLOBALS */
+[data-popout-root].newBrand,html.newBrand,:root {
   --snackbar-bg: #333;
   --snackbar-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
   --snackbar-radius: 4px;
@@ -30,25 +37,11 @@
   --checkbox-size: 15px;
   --settings-list-width: 316px;
   --settings-padding: 8px;
+  --mouseX: 0px;
+  --mouseY: 0px;
 }
-
-/* Material design palette, feel free to change */
-:root {
-  --primary-900: #1f41b6;
-  --primary-800: #1d61d5;
-  --primary-700: #1a73e8;
-  --primary-600: #1386fc;
-  --primary-500: #0095ff;
-  --primary-400: #34a4ff;
-  --primary-300: #5cb5ff;
-  --primary-200: #8dcaff;
-  --primary-100: #bbdeff;
-  --primary-50: #e3f2ff;
-}
-
-/* Dark mode */
-.callContainer-36WRfH, .theme-dark
-{
+/* DARK MODE */
+.callContainer-36WRfH,.theme-dark {
   --accent: var(--primary-400);
   --accent-highlight: var(--primary-200);
   --accent-text: white;
@@ -76,8 +69,7 @@
   --stream: #9176c1;
   --offline: #868d96;
 }
-
-/* Light mode */
+/* LIGHT MODE */
 .theme-light {
   --accent: var(--primary-700);
   --accent-highlight: var(--primary-500);

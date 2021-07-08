@@ -200,3 +200,9 @@ $speaking-val: var(--accent);
         fill: var(--online);        
     }
 }
+.pruneLink-3V7wes {
+    .theme-dark &,
+    .theme-light & {
+        color: var(--danger);
+    }
+}

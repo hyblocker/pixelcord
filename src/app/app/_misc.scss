@@ -164,6 +164,8 @@ a {
 {
 	color: var(--accent);
 }
+// Server Avatar
+.baseAvatar-3Nvk7n,
 // Boosts selection text
 .tierTitle-y7BLPl,
 .tierRequirements-dGesMA,
@@ -174,4 +176,8 @@ a {
 // BETA
 .betaTag-F_ncuo[style*="background-color: hsl(227,"] {
 	background-color: var(--accent) !important;
+}
+// VC Debug
+.valueIcon-2LbNu6 {
+	margin-right: 6px;
 }

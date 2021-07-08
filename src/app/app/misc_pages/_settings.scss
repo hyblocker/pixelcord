@@ -157,13 +157,15 @@
 }
 
 // GUILD
+.theme-dark .tierHeaderUnlocked-3lTDnP,
 .tierHeaderUnlocked-3lTDnP {
 	@include card(4);
-	color: var(--header);
+	color: var(--header-color);
 }
+.theme-dark .tierHeaderLocked-3S508x,
 .tierHeaderLocked-3S508x {
 	@include card(2);
-	color: var(--header);
+	color: var(--header-color);
 }
 .emojiRow-zIc7ZX .emojiAliasInput-1y-NBz .emojiInput-1aLNse,
 .emojiRow-zIc7ZX:focus-within .emojiAliasInput-1y-NBz .emojiInput-1aLNse, .emojiRow-zIc7ZX:hover .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
@@ -172,6 +174,8 @@
 .emojiAliasPlaceholder-3H_iZA {
 	opacity: 0;
 }
+.tierBody-3aUxuc,
+.tierBody-3aUxuc,
 .upsellContainer-L9xv7w,
 .checklistContainer-mFJZEJ,
 .developerPortalCtaWrapper-2XNafh,
@@ -201,4 +205,9 @@
 }
 .upsellContainer-3UlEOE .base-1x0h_U {
 	color: white;
+}
+
+// Funny svgs
+.descriptionIcon-36p1fN circle[fill*="hsl(0,"] {
+	fill: transparent;
 }
