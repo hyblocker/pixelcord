@@ -3,7 +3,25 @@
 *A Discord theme that's based on Material Design!*
 *And features way too many animations!!!*
 
-`// TODO: Preview image`
+***Animations (Featuring Ripple)***
+
+[![Animations](https://github.com/hyblocker/pixelcord/blob/main/screenshots/animations.gif?raw=true)](https://github.com/hyblocker/pixelcord/blob/main/screenshots/animations.gif?raw=true)
+
+***Settings***
+
+[![Settings Panel](https://github.com/hyblocker/pixelcord/blob/main/screenshots/settings.png?raw=true)](https://github.com/hyblocker/pixelcord/blob/main/screenshots/settings.png?raw=true)
+
+***User Popout***
+
+[![User Popout](https://github.com/hyblocker/pixelcord/blob/main/screenshots/user_popout.png?raw=true)](https://github.com/hyblocker/pixelcord/blob/main/screenshots/user_popout.png?raw=true)
+
+***Light Mode Support***
+
+[![Light Mode Support](https://github.com/hyblocker/pixelcord/blob/main/screenshots/light_mode.png?raw=true)](https://github.com/hyblocker/pixelcord/blob/main/screenshots/light_mode.png?raw=true)
+
+***Supports Goosemod***
+
+[![Goosemod Support](https://github.com/hyblocker/pixelcord/blob/main/screenshots/goosemod.png?raw=true)](https://github.com/hyblocker/pixelcord/blob/main/screenshots/goosemod.png?raw=true)
 
 > This theme is not yet finished, it is currently being polished! Any feedback is appreciated
 
