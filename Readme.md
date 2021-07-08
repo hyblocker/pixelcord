@@ -1,4 +1,5 @@
-# Pixelcord
+
+[![Pixelcord](https://github.com/hyblocker/pixelcord/blob/main/screenshots/logo.png?raw=true)](https://github.com/hyblocker/pixelcord/blob/main/screenshots/logo.png?raw=true)
 
 *A Discord theme that's based on Material Design!*
 *And features way too many animations!!!*
