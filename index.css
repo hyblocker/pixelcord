@@ -1,16 +1,31 @@
-/* IMPORT THEME */
-@import url(https://hekkerstech.tips/pixelcord/dist.css);
-
-/* MODULES */
+/*
+    SETTINGS
+*/
+/* Enhancements | Modal Blur (blurs the black tinted background behind modals like image previews if enabled) */
+/* @import url(https://hekkerstech.tips/pixelcord/modules/enhancements/background_blur.css); */
+/*
+    MODULES
+*/
+/* Add-Ons | Discolored - Colorize Discord's boring SVGs! */
 @import url("https://nyri4.github.io/Discolored/main.css");
+/* Add-Ons | Google Emojis */
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css");
+/* Add-Ons | BadgesEverywhere (CORE) - Add animated badges everywhere */
 @import url(https://mr-miner1.github.io/Better-Badges/src/BadgesEverywhere.css);
+/* Add-Ons | BadgesEverywhere - Colored Badges */
 @import url(https://mr-miner1.github.io/Better-Badges/src/coloredbadges.css);
-
-/* VARIABLES */
-
-/* GLOBALS */
-[data-popout-root].newBrand,html.newBrand,:root {
+/* Add-Ons | BadgesEverywhere - White Badges */
+/* @import url(https://mr-miner1.github.io/Better-Badges/src/whitebadges/whitebadges.css); */
+/*
+    DO NOT REMOVE
+*/
+@import url(https://hekkerstech.tips/pixelcord/dist.css);
+/*
+    VARIABLES
+*/
+[data-popout-root].newBrand,
+html.newBrand,
+:root {
   --snackbar-bg: #333;
   --snackbar-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
   --snackbar-radius: 4px;
@@ -40,36 +55,7 @@
   --mouseX: 0px;
   --mouseY: 0px;
 }
-/* DARK MODE */
-.callContainer-36WRfH,.theme-dark {
-  --accent: var(--primary-400);
-  --accent-highlight: var(--primary-200);
-  --accent-text: white;
-  --baseline: #272a2b;
-  --chip: #595A5E;
-  --chip-active: #595A5E;
-  --chip-text: white;
-  --navdrawer-color: #222222;
-  --navdrawer-hover: rgba(255, 255, 255, 0.05);
-  --navdrawer-active: rgba(255, 255, 255, 0.1);
-  --navdrawer-separator: rgba(255, 255, 255, 0.1);
-  --combobox-outline: rgba(255, 255, 255, 0.1);
-  --title-color: #aaa;
-  --list-color: #fff;
-  --logo-color: #fff;
-  --header-color: #fff;
-  --interactive-muted: #8f8f8f;
-  --channels-default: #9b9fa5;
-  --ripple-default: rgba(255, 255, 255, 0.36);
-  --danger: rgb(207, 102, 121);
-  --danger-highlight: rgb(255, 118, 118);
-  --online: #66c296;
-  --idle: #fbec52;
-  --dnd: var(--danger);
-  --stream: #9176c1;
-  --offline: #868d96;
-}
-/* LIGHT MODE */
+
 .theme-light {
   --accent: var(--primary-700);
   --accent-highlight: var(--primary-500);
@@ -98,4 +84,34 @@
   --dnd: var(--danger);
   --stream: #643da7;
   --offline: #636b75;
+}
+
+.callContainer-36WRfH,
+.theme-dark {
+  --accent: var(--primary-400);
+  --accent-highlight: var(--primary-200);
+  --accent-text: white;
+  --baseline: #272a2b;
+  --chip: #595A5E;
+  --chip-active: #595A5E;
+  --chip-text: white;
+  --navdrawer-color: #222222;
+  --navdrawer-hover: rgba(255, 255, 255, 0.05);
+  --navdrawer-active: rgba(255, 255, 255, 0.1);
+  --navdrawer-separator: rgba(255, 255, 255, 0.1);
+  --combobox-outline: rgba(255, 255, 255, 0.1);
+  --title-color: #aaa;
+  --list-color: #fff;
+  --logo-color: #fff;
+  --header-color: #fff;
+  --interactive-muted: #8f8f8f;
+  --channels-default: #9b9fa5;
+  --ripple-default: rgba(255, 255, 255, 0.36);
+  --danger: rgb(207, 102, 121);
+  --danger-highlight: rgb(255, 118, 118);
+  --online: #66c296;
+  --idle: #fbec52;
+  --dnd: var(--danger);
+  --stream: #9176c1;
+  --offline: #868d96;
 }

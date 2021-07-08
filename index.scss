@@ -1,2 +1,40 @@
-// FINAL IMPORT URL
-// @import url(https://hyblocker.github.io/pixelcord/dist.css);
+// TODO: make this nicer to look at lmao this looks like pain!
+
+/*
+    SETTINGS
+*/
+
+/* Enhancements | Modal Blur (blurs the black tinted background behind modals like image previews if enabled) */
+/* @import url(https://hekkerstech.tips/pixelcord/modules/enhancements/background_blur.css); */
+
+/*
+    MODULES
+*/
+
+/* Add-Ons | Discolored - Colorize Discord's boring SVGs! */
+@import url("https://nyri4.github.io/Discolored/main.css");
+
+/* Add-Ons | Google Emojis */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css");
+
+/* Add-Ons | BadgesEverywhere (CORE) - Add animated badges everywhere */
+@import url(https://mr-miner1.github.io/Better-Badges/src/BadgesEverywhere.css);
+
+/* Add-Ons | BadgesEverywhere - Colored Badges */
+@import url(https://mr-miner1.github.io/Better-Badges/src/coloredbadges.css);
+
+/* Add-Ons | BadgesEverywhere - White Badges */
+/* @import url(https://mr-miner1.github.io/Better-Badges/src/whitebadges/whitebadges.css); */
+
+/*
+    DO NOT REMOVE
+*/
+@import url(https://hekkerstech.tips/pixelcord/dist.css);
+
+/*
+    VARIABLES
+*/
+
+@import "src/app/theme/global";
+@import "src/app/theme/light";
+@import "src/app/theme/dark";

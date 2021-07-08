@@ -1,0 +1,14 @@
+// Override new colors from rebrand
+:root, html, [data-popout-root].oldBrand, html.oldBrand,
+       html, [data-popout-root].newBrand, html.newBrand {
+	
+	--text-positive: var(--online);
+	--brand-experiment: var(--accent);
+	--brand-experiment-500: var(--accent);
+	--brand-experiment-560: var(--accent);
+	--control-brand-foreground: var(--accent);
+}
+.theme-light,
+.theme-dark {
+	--text-link: var(--accent);
+}

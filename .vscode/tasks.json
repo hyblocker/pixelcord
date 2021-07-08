@@ -1,0 +1,80 @@
+// Sass configuration
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Scss Compile Dev [DEBUG]",
+			"type": "shell",
+			"command": "sass dist.scss dist.css --embed-source-map --style expanded",
+			"group": "build",
+			"problemMatcher": [
+				"$node-sass"
+			]
+		},
+		{
+			"label": "Scss Compile Dev [DIST]",
+			"type": "shell",
+			"command": "sass dist.scss dist.css  --no-source-map", // compressed ideally but it seems to break :smolsadgesit:
+			"group": "build",
+			"problemMatcher": [
+				"$node-sass"
+			]
+		},
+		{
+			"label": "Scss Compile Dist [DEBUG]",
+			"type": "shell",
+			"command": "sass dist.scss dist.css --embed-source-map",
+			"group": "build",
+			"problemMatcher": [
+				"$node-sass"
+			]
+		},
+		{
+			"label": "Scss Compile Dist [DIST]",
+			"type": "shell",
+			"command": "sass dist.scss dist.css  --no-source-map --style compressed",
+			"group": "build",
+			"problemMatcher": [
+				"$node-sass"
+			]
+		},
+		{
+			"label": "Scss Compile [DEBUG]",
+			"type": "shell",
+			"group": "build",
+			"dependsOn": ["Scss Compile Dist [DEBUG]", "Scss Compile Dev [DEBUG]"],
+			"problemMatcher": [
+				"$node-sass"
+			]
+		},
+		{
+			"label": "Scss Compile [DIST]",
+			"type": "shell",
+			"group": "build",
+			"dependsOn": ["Scss Compile Dist [DIST]", "Scss Compile Dev [DIST]"],
+			"problemMatcher": [
+				"$node-sass"
+			]
+		},
+		{
+			"label": "Scss Compile MODULES [DEV]",
+			"type": "shell",
+			"group": "build",
+			"command": "sass dist.scss:dist.css index.scss:index.css modules:modules --embed-source-map --style expanded",
+			"problemMatcher": [
+				"$node-sass"
+			]
+		},
+		{
+			"label": "Scss Compile MODULES [DIST]",
+			"type": "shell",
+			"group": "build",
+			"command": "sass dist.scss:dist.css modules:modules --no-source-map --style compressed; sass index.scss:index.css --no-source-map --style expanded",
+			"problemMatcher": [
+				"$node-sass"
+			]
+		}
+	]
+  }

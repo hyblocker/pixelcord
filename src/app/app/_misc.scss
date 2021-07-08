@@ -17,7 +17,6 @@ a {
 
 // Modal background blur
 .backdrop-1wrmKB, .backdropWithLayer-3_uhz4 {
-	backdrop-filter: blur(var(--background-blur-intensity));
 	&[style*="opacity: 0.85; background: hsl(0,"] {
 		background: hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0.85) !important;
 		opacity: 1 !important;
