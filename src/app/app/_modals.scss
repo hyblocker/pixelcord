@@ -38,6 +38,14 @@
 	background-color: var(--danger);
 }
 
+// Status thing has the emoji button under the textbox, use z-index hacks to fix it!!!
+.emojiButtonContainer-3d6DFV {
+	z-index: 1;
+	& .button-38aScr {
+		overflow: visible;
+	}
+}
+
 // Modal insert animation
 @if $animations {
 	.modal-3c3bKg {
