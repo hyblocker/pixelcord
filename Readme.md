@@ -44,7 +44,7 @@ cd powercord/src/Powercord/themes && git clone https://github.com/hyblocker/pixe
 
 ## Installation for Goosemod
 
-> Awaiting addition to the theme store
+Install `Pixelcord` from the Goosemod theme store
 
 ## Issues / Bugs
 
