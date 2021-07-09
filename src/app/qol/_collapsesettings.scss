@@ -8,12 +8,17 @@ $width: 32px;
 
 @if $collapse_settings {
 
+    // Edge case
+    .container-35XQWE {
+        z-index: 1;
+    }
+
     .panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
         position: absolute;
         flex-direction: column;
         bottom: var(--settings-padding);
         left: calc(var(--channels-width) - var(--settings-padding) - (#{$width} + 10px));
-        z-index: 2;
+        z-index: 12;
         padding: 5px;
         border-radius: 4px;
         max-height: $width;
