@@ -16,6 +16,13 @@
 	}
 	@include card(1, $background: false);
 }
+.lookInverted-2D7oAl.colorBrand-3pXr91:hover {
+    background-color: var(--online);
+	transform: scale(1.05);
+	@if $animations {
+		transition: 250ms transform ease-in-out;
+	}
+}
 // Context menu colors
 .colorDefault-2K3EoJ.focused-3afm-j {
 	background-color: var(--accent);

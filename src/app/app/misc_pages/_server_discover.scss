@@ -28,3 +28,14 @@ $header-height: 6;
 .card-3DjzTQ {
 	@include card($header-height);
 }
+
+// Welcome prompt
+.guildSidebar-2OCzWB {
+	@include card($header-height);
+}
+.modal-f02hVt {
+	@include card(4);
+}
+.formFieldWrapper-malor5, .settingsFormFieldWrapper-3Y77Pr {
+	@include card(2);
+}

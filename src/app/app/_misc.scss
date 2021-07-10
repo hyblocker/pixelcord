@@ -56,31 +56,6 @@ a {
 	@include rippleimg;
 }
 
-/* Fonts | Google Sans */
-@import url("https://fonts.googleapis.com/css?family=Google+Sans:300,400,500,700");
-
-/* Fonts | Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
-// Fonts
-::placeholder, body, button, input, select, textarea, ::-webkit-input-placeholder {
-    font-family: var(--font-header);
-}
-.textContainer-C0szpm pre, code, .multiInputLast-33BbRU input {
-    font: 14px/20px var(--font-code) !important;
-    font-weight: 400;
-    font-stretch: 100%;
-}
-
-// Bold headers
-.name-uJV0GL, .username-1A8OIy, .title-eS5yk3, .title-29uC1r, .modalTitle-37O4n6 .content-2Add9f {
-	font-weight: var(--header-weight);
-}
-
-.keybindShortcut-1BD6Z1 span {
-	font-weight: 600;
-}
-
 // Apply accent color everywhere
 .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9, .wrapper-1BJsBx:hover .childWrapper-anI2G9, .notice-2X5hT5 {
 	background-color: var(--accent);
