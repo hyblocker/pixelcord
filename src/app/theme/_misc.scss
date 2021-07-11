@@ -12,3 +12,10 @@
 .theme-dark {
 	--text-link: var(--accent);
 }
+// idk why light mode looks broken as fuck
+.theme-light {
+	& .icon-2aINcz,
+	& .text-2e2ZyG {
+		color: white;
+	}
+}

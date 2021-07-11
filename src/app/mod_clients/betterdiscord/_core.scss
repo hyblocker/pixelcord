@@ -1,0 +1,19 @@
+@import "../../material/ripple";
+@import "../../material/card";
+
+#bd-pub-button:hover {
+	background-color: var(--accent);
+	color: var(--accent-text);
+	@include ripple(var(--accent-highlight));
+}
+#bd-pub-button:active {
+	background-color: var(--accent-highlight);
+}
+.bd-server-tag {
+	background: var(--accent);
+}
+.bd-button {
+	background-color: var(--accent);
+	color: var(--accent-text);
+	@include ripple(var(--accent-highlight));
+}
