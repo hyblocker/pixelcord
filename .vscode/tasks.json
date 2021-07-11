@@ -62,7 +62,7 @@
 			"label": "Scss Compile MODULES [DEV]",
 			"type": "shell",
 			"group": "build",
-			"command": "sass dist.scss:dist.css index.scss:index.css modules:modules --embed-source-map --style expanded",
+			"command": "sass dist.scss:dist.css index.scss:index.css betterdiscord_dev.scss:Pixelcord.theme.css modules:modules --embed-source-map --style expanded;$a, ${c:Pixelcord.theme.css} = Get-Content .\\Pixelcord.theme.css",
 			"problemMatcher": [
 				"$node-sass"
 			]
@@ -71,7 +71,7 @@
 			"label": "Scss Compile MODULES [DIST]",
 			"type": "shell",
 			"group": "build",
-			"command": "sass dist.scss:dist.css modules:modules --no-source-map --style compressed; sass index.scss:index.css --no-source-map --style expanded",
+			"command": "sass dist.scss:dist.css modules:modules --no-source-map --style compressed; sass index.scss:index.css betterdiscord.scss:Pixelcord.theme.css --no-source-map --style expanded;$a, ${c:Pixelcord.theme.css} = Get-Content .\\Pixelcord.theme.css",
 			"problemMatcher": [
 				"$node-sass"
 			]
