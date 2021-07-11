@@ -217,14 +217,17 @@ $speaking-val: var(--accent);
 
 .powercord-updater .icon path {
     &[fill="#f04747"] {
-        fill: var(--danger);        
+        fill: var(--danger);
     }
     &[fill="#7289da"] {
-        fill: var(--accent);        
+        fill: var(--accent);
     }
     &[fill="#43b581"] {
-        fill: var(--online);        
+        fill: var(--online);
     }
+}
+.powercord-toast[data-toast-type=danger] .icon {
+    color: var(--danger) !important;
 }
 .pruneLink-3V7wes {
     .theme-dark &,
