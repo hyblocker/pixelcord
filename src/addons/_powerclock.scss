@@ -20,49 +20,53 @@ $header-height: 6;
 }
 
 @if $powerclock_in_titlebar {
-	.platform-win .powerclock:not(.sticky){
-		position: fixed;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%,5px);
-		padding: 0;
-		font-size: 1rem;
-		z-index: 3001;
-		padding: 0;
-	}
-	.platform-win .layer-3QrUeG:first-child:not(:last-child){
-		opacity: 1 !important;
-		transform: none !important;
-		will-change: unset;
-		z-index: 1;
-	}
-	.platform-win .layer-3QrUeG:last-child:not(:first-child){
-		will-change: unset;
-		z-index: 100;
-	}
-	html:not(.platform-win) .powerclock:not(.sticky){
-		position: fixed;
-		top: 0;
-		right: 0;
-		transform: translate(-50%,19px);
-		padding: 0;
-		font-size: 1rem;
-		z-index: 3001;
-		padding: 0;
-	}
-	.guilds-1SWlCJ .scroller-1Bvpku {
-		contain: unset;
-	}
-	html:not(.platform-win) .layer-3QrUeG:first-child:not(:last-child){
-		opacity: 1 !important;
-		transform: none !important;
-		will-change: unset;
-	}
-	html:not(.platform-win) .layer-3QrUeG:last-child:not(:first-child){
-		will-change: unset;
-		z-index: 100;
-	}
-	html:not(.platform-win) .toolbar-1t6TWx{
-	  margin-right: 64px;
+	.platform-web,
+	.platform-mac,
+	.platform-win {
+		& .powerclock:not(.sticky){
+			position: fixed;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%,5px);
+			padding: 0;
+			font-size: 1rem;
+			z-index: 3001;
+			padding: 0;
+		}
+		& .layer-3QrUeG:first-child:not(:last-child){
+			opacity: 1 !important;
+			transform: none !important;
+			will-change: unset;
+			z-index: 1;
+		}
+		& .layer-3QrUeG:last-child:not(:first-child){
+			will-change: unset;
+			z-index: 100;
+		}
+		.guilds-1SWlCJ .scroller-1Bvpku {
+			contain: unset;
+		}
+		html:not(&) .powerclock:not(.sticky){
+			position: fixed;
+			top: 0;
+			right: 0;
+			transform: translate(-50%,19px);
+			padding: 0;
+			font-size: 1rem;
+			z-index: 3001;
+			padding: 0;
+		}
+		html:not(&) .layer-3QrUeG:first-child:not(:last-child){
+			opacity: 1 !important;
+			transform: none !important;
+			will-change: unset;
+		}
+		html:not(&) .layer-3QrUeG:last-child:not(:first-child){
+			will-change: unset;
+			z-index: 100;
+		}
+		html:not(&) .toolbar-1t6TWx {
+		  margin-right: 64px;
+		}
 	}
 }

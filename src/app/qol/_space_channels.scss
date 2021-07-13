@@ -1,6 +1,6 @@
 @import "../../config";
 
-@if $space-dash {
+@if $space_dash {
 		
 	// Font which replaces dash with space
 	@font-face {
@@ -16,19 +16,27 @@
 	}
 
 	// One mention => channel
-	.wrapper-3WhCwL[class*="wrapper-3WhCwL mention"] {
+	.wrapper-3WhCwL[class="wrapper-3WhCwL mention interactive"] {
 		font-family: 'No Dash', var(--font-header);
 	}
 
 	// Autocomplete
-	.autocompleteRowVertical-q1K4ky[data-list-item-id*="channel-autocomplete"] .colorInteractiveActive-3Ip9Eu {
+	.autocompleteRowVertical-q1K4ky[data-list-item-id*="channel-autocomplete"] .autocompleteRowContentPrimary-238PvP:last-child .colorInteractiveActive-3Ip9Eu {
 		font-family: 'No Dash', var(--font-header);
 	}
 
 	// Quickswitcher
+	// CSS Limitation: we cant select properly bc we need a look ahead selector or something
 	.quickswitcher-3JagVE .result-oB0z-- .match-38WbBN {
 		font-family: 'No Dash', var(--font-header);
 	}
+
+	// New channel
+	.content-3YMskv .emptyChannelIcon-cc932w ~ .size32-o_H79z {
+		font-family: 'No Dash', var(--font-header);
+	}
+
+	// We cant do the description because we cant select text nodes using CSS...
 
 	.title-3qD0b- {
 		&[aria-label='Channel header'],
