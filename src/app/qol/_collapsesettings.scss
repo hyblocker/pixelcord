@@ -11,6 +11,10 @@ $width: 32px;
     // Edge case
     .container-35XQWE {
         z-index: 1;
+        // Fix unread pills breaking because of this
+        &.unread-15xhX5 {
+            z-index: 2;
+        }
     }
 
     .panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
@@ -41,5 +45,17 @@ $width: 32px;
     }
     .nameTag-3uD-yy {
         margin-right: 25px;
+    }
+
+    // Fix tooltips
+    .layer-v9HyYc.disabledPointerEvents-1ptgTB {
+        &[style="position: absolute; left: 271px; bottom: 53px;"],
+        &[style="position: absolute; left: 288px; bottom: 85px;"],
+        &[style="position: absolute; left: 311px; bottom: 117px;"],
+        &[style="position: absolute; left: 263px; bottom: 149px;"] {
+            & .tooltip-2QfLtc.tooltipTop-XDDSxx.tooltipPrimary-1d1ph4.tooltipDisablePointerEvents-3eaBGN {
+
+            }
+        }
     }
 }
