@@ -246,3 +246,22 @@ $speaking-val: var(--accent);
 .dotOnline-2wEpt_ {
     background-color: var(--online);
 }
+.ownerIcon-2NH9FM {
+    color: var(--idle);
+}
+
+// BD Status indicators
+.PI-icon_desktop,
+.PI-icon_mobile,
+.PI-icon_web
+{
+    &[style*="color: hsl(139,"] {
+        color:  var(--online) !important;
+    }
+    &[style*="color: hsl(38,"] {
+        color:  var(--idle) !important;
+    }
+    &[style*="color: hsl(359,"] {
+        color:  var(--danger) !important;
+    }
+}

@@ -1,5 +1,10 @@
 @import "../../material/ripple";
 @import "../../material/card";
+@import "../../../config";
+
+$popout-height: 8;
+$header-height: 2;
+$msg-height: 4;
 
 #bd-pub-button:hover {
 	background-color: var(--accent);
@@ -13,7 +18,69 @@
 	background: var(--accent);
 }
 .bd-button {
+	position: relative;
 	background-color: var(--accent);
 	color: var(--accent-text);
 	@include ripple(var(--accent-highlight));
+	&::hover {
+		background-color: var(--accent-highlight);
+	}
+}
+.bd-button.bd-button-danger {
+	background-color: var(--danger);
+	@include ripple(var(--danger-highlight));
+	&::hover {
+		background-color: var(--danger-highlight);
+	}
+}
+.button-coQXfM {
+	@if $animations {
+		transition: 150ms color ease-in-out,
+					150ms background-color ease-in-out;
+	}
+}
+
+.button-coQXfM[style*="background-color: var(--bdfdb-blurple)"] {
+	background-color: var(--accent) !important;
+	color: var(--accent-text);
+	@include ripple(var(--accent-highlight));
+	&::hover {
+		background-color: var(--accent-highlight);
+	}
+}
+.button-coQXfM[style*="background-color: var(--bdfdb-green)"] {
+	background-color: var(--online) !important;
+	color: var(--accent-text);
+	@include ripple(var(--online-highlight));
+	&::hover {
+		background-color: var(--online-highlight);
+	}
+}
+.button-coQXfM[style*="background-color: var(--bdfdb-red)"] {
+	background-color: var(--danger) !important;
+	color: var(--accent-text);
+	@include ripple(var(--danger-highlight));
+	&::hover {
+		background-color: var(--danger-highlight);
+	}
+}
+
+// Unable to fetch preview:
+.coverWrapper-J-mDGJ {
+	background-size: cover;
+	// We use the full URL here because otherwise it would load from the github smh
+	.theme-dark & {
+		background-image: url(https://canary.discord.com/assets/d03d90cb6f12a7ea06274b278dfa4160.svg);
+	}
+	.theme-light & {
+		background-image: url(https://canary.discord.com/assets/7b6ed225050df29a07cb5db712d35a73.svg);
+	}
+}
+
+// Plugin / Theme cards
+.bd-addon-list .bd-addon-card {
+	@include card($msg-height);
+}
+.bd-addon-list .bd-addon-header {
+	@include card($header-height);
 }

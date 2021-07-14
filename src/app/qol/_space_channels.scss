@@ -20,15 +20,17 @@
 		font-family: 'No Dash', var(--font-header);
 	}
 
+	// CSS Limitation: we cant select properly bc we need a look ahead selector or something
+	// Thus both autocomplete and quickswitcher disabled until we can find a suitable workaround
+
 	// Autocomplete
 	.autocompleteRowVertical-q1K4ky[data-list-item-id*="channel-autocomplete"] .autocompleteRowContentPrimary-238PvP:last-child .colorInteractiveActive-3Ip9Eu {
-		font-family: 'No Dash', var(--font-header);
+		// font-family: 'No Dash', var(--font-header);
 	}
 
 	// Quickswitcher
-	// CSS Limitation: we cant select properly bc we need a look ahead selector or something
 	.quickswitcher-3JagVE .result-oB0z-- .match-38WbBN {
-		font-family: 'No Dash', var(--font-header);
+		// font-family: 'No Dash', var(--font-header);
 	}
 
 	// New channel

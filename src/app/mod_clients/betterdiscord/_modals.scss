@@ -1,3 +1,8 @@
+@import "../../material/card";
+
+.bd-addon-error {
+	@include card(4);
+}
 .bd-addon-error-stack code {
 	
 }

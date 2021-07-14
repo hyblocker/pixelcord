@@ -26,15 +26,19 @@
 // Context menu colors
 .colorDefault-2K3EoJ.focused-3afm-j {
 	background-color: var(--accent);
+	color: var(--accent-text);
 }
 .colorDanger-2qLCe1.focused-3afm-j {
 	background-color: var(--danger);
+	color: var(--accent-text);
 }
 .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
 	background-color: var(--accent-highlight);
+	color: var(--accent-text);
 }
 .colorDanger-2qLCe1:active:not(.hideInteraction-1iHO1O) {
 	background-color: var(--danger-highlight);
+	color: var(--accent-text);
 }
 
 // Context menu ripple

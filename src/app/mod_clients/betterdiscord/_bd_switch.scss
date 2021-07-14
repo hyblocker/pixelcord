@@ -1,0 +1,47 @@
+@import '../../material/ripple';
+
+.bd-switch input {
+	left: 0;
+}
+
+.bd-switch-body {
+	width: 32px;
+	height: 14px;
+	overflow: visible;
+
+	.bd-switch input:checked+& {
+		background-color: transparent !important;
+		
+		&::before {
+			content: '';
+			display: inline-block;
+			background-color: var(--accent) !important;
+			opacity: 0.3;
+			width: 32px;
+			height: 14px;
+			border-radius: 14px;
+			pointer-events: none;
+		}
+		& .bd-switch-slider {
+			background-color: var(--accent) !important;
+			box-shadow: 0 3px 4px 0 RGB(0 0 0 / 14%), 0 3px 3px -2px RGB(0 0 0 / 20%), 0 1px 8px 0 RGB(0 0 0 / 12%);
+		}
+	}
+	background-color: var(--switch-slider-color) !important;
+
+	& .bd-switch-slider {
+		width: 20px;
+		height: 20px;
+		top: -3px;
+		margin: 0;
+		border-radius: 50%;
+		background-color: var(--switch-knob-color) !important;
+		box-shadow: 0 2px 2px 0 RGB(0 0 0 / 14%), 0 3px 1px -2px RGB(0 0 0 / 20%), 0 1px 5px 0 RGB(0 0 0 / 12%);
+		
+			rect, svg {
+			display: none;
+		}
+	}
+	
+	@include rippleimg(var(--accent-highlight), 256px, 256px, true, -119px, -113px, $ripple-size: 1);
+}
