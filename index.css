@@ -35,6 +35,7 @@ html.newBrand,
   --switch-slider-color: rgba(135, 135, 135,0.65);
   --button-radius: 4px;
   --background-blur-intensity: 10px;
+  --chatbox-top-padding: 16px;
   --header-weight: 600;
   --subtitle-weight: 500;
   --section-weight: 900;
@@ -80,6 +81,7 @@ html.newBrand,
   --danger: rgb(255, 70, 70);
   --danger-highlight: rgb(255, 118, 118);
   --online: #43b581;
+  --online-highlight: #66c296;
   --idle: #faa61a;
   --dnd: var(--danger);
   --stream: #643da7;
@@ -110,8 +112,11 @@ html.newBrand,
   --danger: rgb(207, 102, 121);
   --danger-highlight: rgb(255, 118, 118);
   --online: #66c296;
+  --online-highlight: #43b581;
   --idle: #fbec52;
   --dnd: var(--danger);
   --stream: #9176c1;
   --offline: #868d96;
 }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22index.scss%22,%22src/app/theme/_global.scss%22,%22src/app/theme/_light.scss%22,%22src/app/theme/_dark.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAEA;AAAA;AAAA;AAIA;AACA;AAEA;AAAA;AAAA;AAIA;AACQ;AAER;AACQ;AAER;AACQ;AAER;AACQ;AAER;AACA;AAEA;AAAA;AAAA;AAGQ;AAER;AAAA;AAAA;ACjCA;AAAA;AAAA;EAGC;EACA;EACA;EACA;EACA;EAEG;EACA;EAEH;EAEA;EAGA;EAEA;EACA;EACA;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EAGA;EACA;EAGA;EACA;EAGA;EAGA;EACA;EAGA;EACA;;;AC/CD;EACC;EACA;EACA;EAEA;EAEA;EAEA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EAEA;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;;;ACpCD;AAAA;EAEC;EACA;EACA;EAEA;EAEA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EAEA;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22index.css%22%7D */

@@ -51,6 +51,19 @@
 			padding: unset;
 			width: 32px;
 		}
+	
+		@if $collapse_settings {
+			// Fix the settings icon being out of place
+			& .container-3baos1>.flex-1xMQg5 {
+				opacity: 0;
+				left: 0;
+				pointer-events: none;
+				@if $animations
+				{
+					transition: 0.2s ease-in-out;
+				}
+			}
+		}
 	}
 	.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh,
 	.sidebar-2K8pFh:hover {
@@ -78,6 +91,15 @@
 		& .container-3baos1 .button-14-BFJ {
 			padding: unset;
 			width: 32px;
+		}
+	
+		@if $collapse_settings {
+			// Fix the settings icon being out of place
+			& .container-3baos1>.flex-1xMQg5 {
+				pointer-events: unset;
+				opacity: 1;
+				left: calc(var(--channels-width) - var(--settings-padding) - (#{$width} + 10px));
+			}
 		}
 	}
 }

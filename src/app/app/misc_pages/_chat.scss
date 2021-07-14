@@ -132,3 +132,18 @@ $header-height: 6;
 	top: 0px;
 	width: 100%;
 }
+.messagesWrapper-1sRNjr::after {
+	content: "";
+	width: 100%;
+	height: var(--chatbox-top-padding);
+	position: absolute;
+	bottom: 0px;
+	z-index: 2;
+
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
