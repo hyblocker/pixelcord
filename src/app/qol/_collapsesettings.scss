@@ -49,12 +49,22 @@ $width: 32px;
 
     // Fix tooltips
     .layer-v9HyYc.disabledPointerEvents-1ptgTB {
-        &[style="position: absolute; left: 271px; bottom: 53px;"],
-        &[style="position: absolute; left: 288px; bottom: 85px;"],
-        &[style="position: absolute; left: 311px; bottom: 117px;"],
-        &[style="position: absolute; left: 263px; bottom: 149px;"] {
+        &[style*="bottom: 53px;"],
+        &[style*="bottom: 85px;"],
+        &[style*="bottom: 117px;"],
+        &[style*="bottom: 149px;"] {
             & .tooltip-2QfLtc.tooltipTop-XDDSxx.tooltipPrimary-1d1ph4.tooltipDisablePointerEvents-3eaBGN {
-
+                transform: translate(calc(-50% - 30px), 40px) !important;
+                & .tooltipPointer-3ZfirK {
+                    margin-left: -1px;
+                    left: unset;
+                    margin-top: -5px;
+                    left: 100%;
+                    top: 50%;
+                    border-right-width: 5px;
+                    -webkit-transform: rotate(270deg);
+                    transform: rotate(270deg);
+                }
             }
         }
     }

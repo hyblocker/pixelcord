@@ -41,40 +41,41 @@
 	// We cant do the description because we cant select text nodes using CSS...
 
 	.title-3qD0b- {
-		&[aria-label='Channel header'],
-		&[aria-label='频道标题'],
-		&[aria-label='頻道表頭'],
-		&[aria-label='Hlavička kanálu'],
-		&[aria-label='Kanaloverskrift'],
-		&[aria-label='Kanaalheader'],
-		&[aria-label='En-tête du salon'],
-		&[aria-label='Kanalüberschrift'],
-		&[aria-label='Τίτλος καναλιού'],
-		&[aria-label='Csatornafejléc'],
-		&[aria-label='Intestazione canale'],
-		&[aria-label='チャンネルのヘッダー'],
-		&[aria-label='채널 헤더'],
-		&[aria-label='Nagłówek kanału'],
-		&[aria-label='Cabeçalho do canal'],
-		&[aria-label='Заголовок канала'],
-		&[aria-label='Encabezado del canal'],
-		&[aria-label='Kanalrubrik'],
-		&[aria-label='Kanal başlığı'],
-		&[aria-label='Заглавие на канал'],
-		&[aria-label='Заголовок каналу'],
-		&[aria-label='Kanavan otsikko'],
-		&[aria-label='Zaglavlje kanala'],
-		&[aria-label='Antetul canalului'],
-		&[aria-label='Kanalo antraštė'],
-		&[aria-label='ส่วนหัวของช่อง'],
-		&[aria-label='Tiêu đề kênh'],
-		&[aria-label='चैनल हैडर']
-		{
-			// Textbox
-			& ~ .content-yTz4x3 .placeholder-37qJjk,
-			// title
-			& .iconWrapper-2OrFZ1 + .title-29uC1r {
-				font-family: 'No Dash', var(--font-header);
+		// Textbox
+		& ~ .content-yTz4x3 form > div > div[aria-controls*="popout_"] .placeholder-37qJjk,
+		// title
+		& .iconWrapper-2OrFZ1 {
+			&[aria-label='Channel header'],
+			&[aria-label='频道标题'],
+			&[aria-label='頻道表頭'],
+			&[aria-label='Hlavička kanálu'],
+			&[aria-label='Kanaloverskrift'],
+			&[aria-label='Kanaalheader'],
+			&[aria-label='En-tête du salon'],
+			&[aria-label='Kanalüberschrift'],
+			&[aria-label='Τίτλος καναλιού'],
+			&[aria-label='Csatornafejléc'],
+			&[aria-label='Intestazione canale'],
+			&[aria-label='チャンネルのヘッダー'],
+			&[aria-label='채널 헤더'],
+			&[aria-label='Nagłówek kanału'],
+			&[aria-label='Cabeçalho do canal'],
+			&[aria-label='Заголовок канала'],
+			&[aria-label='Encabezado del canal'],
+			&[aria-label='Kanalrubrik'],
+			&[aria-label='Kanal başlığı'],
+			&[aria-label='Заглавие на канал'],
+			&[aria-label='Заголовок каналу'],
+			&[aria-label='Kanavan otsikko'],
+			&[aria-label='Zaglavlje kanala'],
+			&[aria-label='Antetul canalului'],
+			&[aria-label='Kanalo antraštė'],
+			&[aria-label='ส่วนหัวของช่อง'],
+			&[aria-label='Tiêu đề kênh'],
+			&[aria-label='चैनल हैडर'] {
+				& + .title-29uC1r {
+					font-family: 'No Dash', var(--font-header);
+				}
 			}
 		}
 	}

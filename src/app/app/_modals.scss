@@ -124,5 +124,60 @@
 	background-color: var(--danger);
 	border-radius: var(--snackbar-radius);
 	height: var(--snackbar-height);
-	
+}
+
+// Transactions have a funny non skinned
+.table-39R0Oe {
+	@include card(4);
+}
+
+// Invite server modal is cucked on dark mode
+.theme-dark .theme-light {
+	& div[style="position: relative; overflow: hidden; width: 440px; height: 558px;"]  {
+		& .base-1x0h_U {
+			color: white;
+		}
+		& .colorStandard-2KCXvj {
+			color: #dcddde;
+		}
+		& .colorHeaderSecondary-3Sp3Ft {
+			color: #b9bbbe;
+		}
+		& .close-hZ94c6 {
+			color: #dcddde;
+			&::hover {
+				color: #b9bbbe;
+			}
+		}
+	}
+
+	// TODO: Get the hover shit to work im not bothered atm
+	& .container-UC8Ug1 {
+		& .arrow-hynWUl {
+			// right arrow
+			box-sizing: border-box;
+			-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z'/%3E%3C/svg%3E");
+			-webkit-mask-size: 38px 38px;
+			width: 38px;
+			height: 38px;
+			padding-left: 38px;
+			background-color: #dcddde;
+		}
+		&::hover .arrow-hynWUl {
+			//background-color: #b9bbbe;
+			background-color: red;
+		}
+	}
+}
+
+// Emoji popout funny animations
+.layerContainer-yqaFcK .layer-v9HyYc {
+	transition: top		100ms ease-in-out,
+				bottom	100ms ease-in-out,
+				left	100ms ease-in-out,
+				right	100ms ease-in-out;
+}
+.popoutContainer-1MXdqN {
+	transition: width	150ms ease-in-out,
+				height	150ms ease-in-out;
 }

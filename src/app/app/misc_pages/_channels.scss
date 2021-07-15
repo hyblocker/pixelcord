@@ -1,3 +1,6 @@
+@import "../../material/card";
+
+$header-height: 6;
 .platform-win .sidebar-2K8pFh,
 .platform-mac .sidebar-2K8pFh,
 .platform-linux .sidebar-2K8pFh {
@@ -17,4 +20,7 @@
 	& .content-3YMskv div[style*="height: 84px"]:first-child {
 		height: calc(0.5625 * var(--channels-width) - 51px) !important;
 	}
+}
+.container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw {
+	@include card($header-height);
 }
