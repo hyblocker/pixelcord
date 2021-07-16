@@ -211,3 +211,13 @@
 .descriptionIcon-36p1fN circle[fill*="hsl(0,"] {
 	fill: transparent;
 }
+
+// Ruoli
+.scroller-305q3I {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}

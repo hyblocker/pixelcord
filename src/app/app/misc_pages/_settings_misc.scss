@@ -19,6 +19,15 @@ $normal: 4;
 		background-color: cardbg($highlight, true);
 	}
 }
+.descriptionIcon-36p1fN {
+	& path[fill*="hsl(139, "] {
+		fill: var(--online);
+	}
+	& path[fill*="hsl(359, "] {
+		fill: var(--danger);
+	}
+}
+.settingCard-3w2mVL,
 .cardPrimary-1Hv-to,
 .cardPrimaryEditable-3KtE4g,
 .accountProfileCard-1XCH88
