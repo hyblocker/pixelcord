@@ -160,7 +160,7 @@ a {
 .info-1VyQPT:last-child {
 	position: relative;
 	&::after {
-		content: "Pixelcord v3.0.2";
+		content: $version;
 		font-size: 12px;
 		line-height: 16px;
 		color: var(--text-muted);
