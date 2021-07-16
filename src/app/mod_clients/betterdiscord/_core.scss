@@ -84,3 +84,31 @@ $msg-height: 4;
 .bd-addon-list .bd-addon-header {
 	@include card($header-height);
 }
+
+// Colors
+.fixed-3zCC84 {
+	color: var(--danger);
+}
+
+// Twitch bullshit
+.bd-emote-header {
+	.theme-light & {
+		background-color: cardbg(2, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(2, true);
+	}
+}
+.bd-emote-item:hover {
+	background-color: var(--accent);
+}
+
+// Settings
+.repoHeader-2KfNvH {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
