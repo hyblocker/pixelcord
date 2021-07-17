@@ -1,0 +1,20 @@
+@import "../../material/card";
+
+// Descriptions can overflow making the card look bad
+.gm-settings-note-markdown {
+    max-height: 110px;
+	&::after {
+		content: "";
+		height: 1rem;
+		width: 4rem;
+		position: absolute;
+		right: 70px;
+		bottom: 58px;
+		.theme-light & {
+			background: linear-gradient(90deg, transparent, cardbg(0, false));
+		}
+		.theme-dark & {
+			background: linear-gradient(90deg, transparent, cardbg(0, true));
+		}
+	}
+}
