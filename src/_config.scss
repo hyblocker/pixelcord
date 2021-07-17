@@ -3,7 +3,7 @@ $animations: true;
 $animate_badges: true; // Animates badges like hypesquad, nitro, server booster and more
 
 // Functions
-$hoverchannels: false; // Channels collapse and uncollapse on hover, giving you more room to read
+$hover_channels: false; // Channels collapse and uncollapse on hover, giving you more room to read
 $powerclock_in_titlebar: true; // Centers powerclock in the title bar
 
 // Enhancements
@@ -34,5 +34,5 @@ $collapse_settings: true; // Collapses settings to save space
 $collapse_stagehouse: true; // Collapses stagehouses to save space
 $macOS_window_buttons: false; // Replaces window buttons with macOS style buttons (Windows)
 
-// CONSTANTS
-$version: "Pixelcord v3.0.4";
+// DO NOT REMOVE
+@import "./constants"

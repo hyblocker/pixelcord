@@ -1,8 +1,10 @@
 /*
     SETTINGS
 */
-/* Enhancements | Modal Blur (blurs the black tinted background behind modals like image previews if enabled) */
+/* Enhancements | Modal Blur - Blurs the black tinted background behind modals like image previews if enabled */
 /* @import url(https://hekkerstech.tips/pixelcord/modules/enhancements/background_blur.css); */
+/* Enhancements | Collapsing members list - Members list collapses and uncollapses on hover, giving you more room to read */
+/* @import url(https://hekkerstech.tips/pixelcord/modules/enhancements/hover_members.css); */
 /*
     MODULES
 */

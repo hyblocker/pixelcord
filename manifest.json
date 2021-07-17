@@ -1,9 +1,9 @@
 {
-    "name": "Pixelcord",
+    "name": "Pixelcord (DEV)",
     "description": "Material Design Theme with numerous enhancements for Discord",
-    "version": "3.0.4",
+    "version": "v3.0.5",
     "license": "GPL-2",
-    "theme": "index.css",
+    "theme": "dist.css",
     "consent": "false",
     "splashTheme": "splash.css",
     "author": "Hyblocker"

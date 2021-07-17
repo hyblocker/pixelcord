@@ -49,10 +49,10 @@ $width: 32px;
 
     // Fix tooltips
     .layer-v9HyYc.disabledPointerEvents-1ptgTB {
-        &[style*="bottom: 53"],
-        &[style*="bottom: 85"],
-        &[style*="bottom: 117"],
-        &[style*="bottom: 149"] {
+        &[style*="bottom: 53"][style^="position: absolute; left: 2"],
+        &[style*="bottom: 85"][style^="position: absolute; left: 2"],
+        &[style*="bottom: 117"][style^="position: absolute; left: 2"],
+        &[style*="bottom: 149"][style^="position: absolute; left: 2"] {
             & .tooltip-2QfLtc.tooltipTop-XDDSxx.tooltipPrimary-1d1ph4.tooltipDisablePointerEvents-3eaBGN {
                 transform: translate(calc(-50% - 30px), 40px) !important;
                 & .tooltipPointer-3ZfirK {

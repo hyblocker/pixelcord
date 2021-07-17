@@ -3,6 +3,9 @@
        html, [data-popout-root].newBrand, html.newBrand {
 	
 	--text-positive: var(--online);
+	--status-positive-background: var(--online);
+	--status-positive-text: var(--accent-text
+	);
 	--brand-experiment: var(--accent);
 	--brand-experiment-500: var(--accent);
 	--brand-experiment-560: var(--accent);
