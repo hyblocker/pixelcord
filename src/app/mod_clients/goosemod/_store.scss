@@ -11,10 +11,10 @@
 		right: 70px;
 		bottom: 58px;
 		.theme-light & {
-			background: linear-gradient(90deg, transparent, cardbg(0, false));
+			background: linear-gradient(90deg, transparent, cardbg(4, false));
 		}
 		.theme-dark & {
-			background: linear-gradient(90deg, transparent, cardbg(0, true));
+			background: linear-gradient(90deg, transparent, cardbg(4, true));
 		}
 	}
 }
