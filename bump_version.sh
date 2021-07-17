@@ -7,7 +7,7 @@ read versione
 nomeDellaDirectory=${PWD##*/}
 nomeDellaTema="Pixelcord"
 
-if [ $nomeDellaDirectory == "Pixelcord - Release" ]
+if [ "$nomeDellaDirectory" = "PixelCord - Release" ]
 then
 nomeDellaTema="Pixelcord"
 else
