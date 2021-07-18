@@ -1,0 +1,57 @@
+
+.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6,
+.theme-light .defaultIndicator-G3c16x,
+.base-PmTxvP {
+	color: white;
+}
+.theme-light .paymentText-2vaF7U {
+	color: var(--text);
+}
+.theme-dark .premiumIndicator-1XvbfM,
+.theme-light .premiumIndicator-1XvbfM {
+	background-color: var(--accent);
+	color: white;
+}
+.theme-light .bottomDivider-1K9Gao {
+	border-color: var(--navdrawer-separator);
+}
+.gemIndicatorContainer-2jdECl {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+.wrapper-3nSjSv {
+	& .colorStandard-2KCXvj,
+	& .base-1x0h_U {
+		color: var(--accent-text);
+	}
+	color: white;
+}
+.lookInverted-2D7oAl.colorBrand-3pXr91 {
+	background-color: var(--online);
+	color: white;
+}
+.bannerVisible-2ZE_qG .iconBackgroundTierOne-2OQMBY, .bannerVisible-2ZE_qG .iconBackgroundTierThree-FWlUL9, .bannerVisible-2ZE_qG .iconBackgroundTierTwo-Eab9L6, .iconTierOne-s_oiRb, .iconTierTwo-1JOWNK,
+.perkAvailabilityIcon-1FFCXW {
+	color: white;
+}
+.theme-light {
+	& .css-4h5swf-singleValue {
+		color: rgb(46, 51, 56);
+	}
+	// Normal
+	& .css-1yz4bi9-option {
+		color: rgb(46, 51, 56);
+	}
+	// Hover
+	& .css-rzbxvl-option {
+		color: rgb(46, 51, 56);
+	}
+	// Selected
+	& .css-1ba14n5-option {
+		color: rgb(46, 51, 56);
+	}
+}

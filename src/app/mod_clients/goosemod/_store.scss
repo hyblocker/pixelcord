@@ -18,3 +18,26 @@
 		}
 	}
 }
+
+// Change previews on goosemod stores
+.gm-store-card > div:first-child {
+	&:not(:empty) {
+		font-size: 0;
+		background-size: cover;
+		// We use the full URL here because otherwise it would load from the github smh
+		.theme-dark & {
+			background-image: url(https://canary.discord.com/assets/d03d90cb6f12a7ea06274b278dfa4160.svg);
+		}
+		.theme-light & {
+			background-image: url(https://canary.discord.com/assets/7b6ed225050df29a07cb5db712d35a73.svg);
+		}
+	}
+	&:empty {
+		cursor: pointer;
+	}
+}
+
+// Refresh animation is slow
+.updateAvailable-qNqOs7 {
+	animation: 1s linear 0s infinite normal none running spin-3elCWT;
+}

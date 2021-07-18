@@ -51,3 +51,9 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
         display: none;
     }
 }
+
+// Why is this not properly centered wtf
+// https://canary.discord.com/channels/538759280057122817/755005803303403570/865924297977102365
+.assetsLargeMaskVoiceChannel-2k1oGM {
+    -webkit-mask-size: cover;
+}
