@@ -147,3 +147,11 @@ $header-height: 6;
 		background-color: cardbg(0, true);
 	}
 }
+
+// New guild cards (invite, hi, etc)
+.card-3RzMcx {
+	@include card(4);
+}
+.checkmark-3rush5 {
+	background-color: var(--online);
+}
