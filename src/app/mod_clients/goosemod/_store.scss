@@ -1,4 +1,29 @@
+@import "../../../config";
 @import "../../material/card";
+
+// Fix overflow bug in themes store
+.gm-store-category > :nth-child(2) {
+	overflow-y: hidden;
+}
+// Store
+#gm-settings-inject {
+	.theme-light & {
+		background-color: cardbg(0, false) !important;
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true) !important;
+	}
+	& .gm-store-card > :nth-child(1) {
+		background-color: transparent
+	}
+}
+.gm-store-card .title-31JmR4:nth-child(2) {
+	color: rgb(235, 235, 235);
+}
+
+.gm-store-card {
+	@include card(4);
+}
 
 // Descriptions can overflow making the card look bad
 .gm-settings-note-markdown {
@@ -40,4 +65,23 @@
 // Refresh animation is slow
 .updateAvailable-qNqOs7 {
 	animation: 1s linear 0s infinite normal none running spin-3elCWT;
+}
+
+// Home: animation collapse
+// Ideally goosemod would shove both the home and store pages into a div for easier styling but that isnt how goosemod works, so we make due with what we got and :pain:
+#gm-home-plugins,
+#gm-home-themes {
+	&[style*="display: block;"],
+	&[style*="display: none;"] {
+		display: block !important;
+		opacity: 1;
+		height: 44px;
+		@if $animations {
+			transition: opacity 0.25s ease-in-out, height 150ms ease-in-out;
+		}
+	}
+	&[style*="display: none;"] {
+		height: 0;
+		opacity: 0;
+	}
 }
