@@ -190,3 +190,51 @@ a {
 	width: 100%;
 	height: 24px;
 }
+
+.isUnread-3Ef-o9 .content-1o0f9g {
+	color: var(--danger);
+}
+.ownerIcon-2NH9FM {
+    color: var(--idle);
+}
+
+// Unread badge (channels)
+.numberBadge-2s8kKX[style*="background-color: hsl(359"],
+.status-1WEaea {
+    background-color: var(--danger) !important;
+}
+
+.statusOffline-37RKt7 {
+	background-color: var(--offline);
+}
+
+::spelling-error {
+    text-decoration: wavy var(--danger);
+}
+
+// Stream badge
+.iconBadge-3qSJIw {
+    background-color: var(--offline);
+    &.participating-1NvRVd {
+    	background-color: var(--online);
+    }
+}
+
+// Update icon
+.updateIconForeground-3tnNZn {
+    fill: var(--online);
+}
+
+// other stuff that needs desaturated color
+.circleIconButton-1QV--U.selected-1JjBPm,
+.statusOnline-8PnF5L {
+	background-color: var(--online);
+}
+.base-PmTxvP {
+    &[style*="background-color: hsl(359, "] {
+        background-color: var(--danger) !important;
+    }
+}
+.roleFlare-TnQbP8[style*="background-color: hsl(139, "] {
+    background-color: var(--online) !important;
+}

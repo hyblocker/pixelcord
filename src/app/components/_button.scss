@@ -86,3 +86,24 @@
 .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV {
 	color: white;
 }
+.colorDanger-2qLCe1,
+.colorDanger-2qLCe1 .checkbox-3s5GYZ,
+.colorDanger-2qLCe1 .radioSelection-1HmrQS,
+.button-1ZiXG9.dangerous-2r8KxV
+{
+    color: var(--danger);
+}
+.colorable-1bkp8v.green-plH-Mj,
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+	background-color: var(--online);
+}
+.colorable-1bkp8v.green-plH-Mj.active-1QRrIS,
+.colorable-1bkp8v.green-plH-Mj:hover {
+	background-color: var(--online-highlight);
+}
+.pruneLink-3V7wes {
+    .theme-dark &,
+    .theme-light & {
+        color: var(--danger);
+    }
+}

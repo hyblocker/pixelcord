@@ -1,0 +1,15 @@
+// BD Status indicators
+.PI-icon_desktop,
+.PI-icon_mobile,
+.PI-icon_web
+{
+    &[style*="color: hsl(139,"] {
+        color:  var(--online) !important;
+    }
+    &[style*="color: hsl(38,"] {
+        color:  var(--idle) !important;
+    }
+    &[style*="color: hsl(359,"] {
+        color:  var(--danger) !important;
+    }
+}

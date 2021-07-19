@@ -1,0 +1,86 @@
+.winButton-iRh8-Z {
+
+	// Common
+	width: 14px;
+	height: 14px;
+	margin: 4px;
+	border-radius: 11px;
+	position: relative;
+	transition: 	background-color ease-in-out 0.1s;
+		
+	&::after {
+		content: "";
+		width: 14px;
+		height: 14px;
+		display: block;
+		position: fixed;
+		opacity: 0;
+
+		transition: opacity ease-in-out 0.2s,
+			background-color ease-in-out 0.1s;
+	}
+
+	&:focus::after,
+	&:hover::after {
+		opacity: 1;
+	}
+
+	// Disable the default SVGs
+	& svg {
+		width: 0;
+		height: 0;
+	}
+
+	// Minimize
+	&:nth-child(4) {
+		background-color: #fac536;
+		&::after {
+			-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Crect ry='1' y='6' x='3' height='2' width='8'/%3E%3C/svg%3E");
+			background-color: #7D631B;
+			&:focus {
+				background-color: #DA9E10;
+				&::after {
+					background-color: #6D4F08;
+				}
+			}
+		}
+	}
+
+	// Maximise
+	&:nth-child(3) {
+		background-color: #39ea49;
+		.powercord.maximized & {
+			&::after {
+				-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath fill='%231D7525' d='M11.214 6.862H7.819A.821.821 0 017 6.043V2.648l4.214 4.214m-8.428 0h3.395c.45 0 .819.369.819.819v3.395L2.786 6.862'/%3E%3C/svg%3E");
+				background-color: #1D7525;
+			}
+		}
+		.powercord:not(.maximized) & {
+			&::after {
+				-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath fill='%231D7525' d='M5.414 3.862L10 8.448V4.862c0-.415-.585-1-1-1zM4 5.276v3.586c0 .416.585 1 1 1h3.586z'/%3E%3C/svg%3E");
+				background-color: #1D7525;
+			}
+		}
+		&:focus {
+			background-color: #13C11E;
+			&::after {
+				background-color: #0A610F;
+			}
+		}
+	}
+
+	// Close
+	&:nth-child(2) {
+		background-color: #f25056;
+		&::after {
+			-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14'%3E%3Cpath fill='%2379282B' d='M4.172 4.034a.998.998 0 000 1.414l1.414 1.414-1.414 1.414a.998.998 0 000 1.415.998.998 0 001.414 0L7 8.276l1.414 1.415a.998.998 0 001.414 0 .998.998 0 000-1.415L8.414 6.862l1.414-1.414a.998.998 0 000-1.414.998.998 0 00-1.414 0L7 5.448 5.586 4.034a.998.998 0 00-1.414 0z'/%3E%3C/svg%3E");
+			background-color: #79282B;
+		}
+		&:focus {
+			background-color: #D52735;
+			&::after {
+				background-color: #6B141B;
+			}
+		}
+	}
+}

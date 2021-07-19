@@ -50,3 +50,13 @@ div[role="radiogroup"]
 	padding: 10px 10px 0 10px !important;
 }
 
+.colorDefault-2K3EoJ[aria-checked="true"] {
+	& .icon-LYJorE {
+		color: var(--accent);
+	}
+	&.focused-3afm-j {
+		& .icon-LYJorE {
+			color: var(--accent-text);
+		}
+	}
+}

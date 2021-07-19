@@ -9,31 +9,45 @@
 	height: 14px;
 	overflow: visible;
 
-	&[style*="background-color: hsl(227"], &[style*="background-color: hsl(226"], &[style*="background-color: hsl(225"], &[style*="background-color: hsl(224"], &[style*="background-color: hsl(223"], &[style*="background-color: hsl(222"], &[style*="background-color: hsl(221"], &[style*="background-color: hsl(220"], &[style*="background-color: hsl(219"], &[style*="background-color: hsl(136"], &[style*="background-color: hsl(137"], &[style*="background-color: hsl(138"], &[style*="background-color: hsl(139"], &[style*="background-color: hsl(140"], &[style*="background-color: hsl(141"], &[style*="background-color: hsl(142"], &[style*="background-color: hsl(143"], &[style*="background-color: hsl(144"], &[style*="background-color: hsl(145"], &[style*="background-color: hsl(146"], &[style*="background-color: hsl(147"], &[style*="background-color: hsl(148"], &[style*="background-color: hsl(149"], &[style*="background-color: hsl(150"], &[style*="background-color: hsl(151"], &[style*="background-color: hsl(152"], &[style*="background-color: hsl(153"], &[style*="background-color: hsl(154"], &[style*="background-color: hsl(155"], &[style*="background-color: hsl(156"], &[style*="background-color: hsl(157"], &[style*="background-color: hsl(158"], &[style*="background-color: hsl(159"], &[style*="background-color: hsl(160"], &[style*="background-color: hsl(161"], &[style*="background-color: hsl(162"], &[style*="background-color: hsl(163"], &[style*="background-color: hsl(164"], &[style*="background-color: hsl(165"], &[style*="background-color: hsl(166"], &[style*="background-color: hsl(167"], &[style*="background-color: hsl(168"], &[style*="background-color: hsl(169"], &[style*="background-color: hsl(170"], &[style*="background-color: hsl(171"], &[style*="background-color: hsl(172"], &[style*="background-color: hsl(173"], &[style*="background-color: hsl(174"], &[style*="background-color: hsl(175"], &[style*="background-color: hsl(176"], &[style*="background-color: hsl(177"], &[style*="background-color: hsl(178"] {
-		background-color: transparent !important;
-		
-		&::before {
-			content: '';
-			display: inline-block;
-			background-color: var(--accent) !important;
-			opacity: 0.3;
-			width: 32px;
-			height: 14px;
-			border-radius: 14px;
-			pointer-events: none;
-		}
-		.slider-TkfMQL {
-			background-color: var(--accent) !important;
-			box-shadow: 0 3px 4px 0 RGB(0 0 0 / 14%), 0 3px 3px -2px RGB(0 0 0 / 20%), 0 1px 8px 0 RGB(0 0 0 / 12%);
+	@mixin switchOn($i) {
+		&[style*="background-color: hsl(#{$i}"] {
+			background-color: transparent !important;
+			
+			&::before {
+				content: '';
+				display: inline-block;
+				background-color: var(--accent) !important;
+				opacity: 0.3;
+				width: 32px;
+				height: 14px;
+				border-radius: 14px;
+				pointer-events: none;
+			}
+			.slider-TkfMQL {
+				background-color: var(--accent) !important;
+				box-shadow: 0 3px 4px 0 RGB(0 0 0 / 14%), 0 3px 3px -2px RGB(0 0 0 / 20%), 0 1px 8px 0 RGB(0 0 0 / 12%);
+			}
 		}
 	}
 
-	&[style*="background-color: hsl(218"], &[style*="background-color: hsl(217"], &[style*="background-color: hsl(216"], &[style*="background-color: hsl(215"], &[style*="background-color: hsl(214"], &[style*="background-color: hsl(213"], &[style*="background-color: hsl(212"], &[style*="background-color: hsl(211"], &[style*="background-color: hsl(210"], &[style*="background-color: hsl(209"], &[style*="background-color: hsl(208"], &[style*="background-color: hsl(207"], &[style*="background-color: hsl(206"], &[style*="background-color: hsl(205"], &[style*="background-color: hsl(204"], &[style*="background-color: hsl(203"], &[style*="background-color: hsl(202"], &[style*="background-color: hsl(201"], &[style*="background-color: hsl(200"], &[style*="background-color: hsl(199"], &[style*="background-color: hsl(198"], &[style*="background-color: hsl(197"], &[style*="background-color: hsl(196"], &[style*="background-color: hsl(195"], &[style*="background-color: hsl(194"], &[style*="background-color: hsl(193"], &[style*="background-color: hsl(192"], &[style*="background-color: hsl(191"], &[style*="background-color: hsl(190"], &[style*="background-color: hsl(189"], &[style*="background-color: hsl(188"], &[style*="background-color: hsl(187"], &[style*="background-color: hsl(186"], &[style*="background-color: hsl(185"], &[style*="background-color: hsl(184"], &[style*="background-color: hsl(183"], &[style*="background-color: hsl(182"], &[style*="background-color: hsl(181"], &[style*="background-color: hsl(180"], &[style*="background-color: hsl(179"] {
-		background-color: var(--switch-slider-color) !important;
-		
-		.slider-TkfMQL {
-			background-color: var(--switch-knob-color) !important;
-			box-shadow: 0 2px 2px 0 RGB(0 0 0 / 14%), 0 3px 1px -2px RGB(0 0 0 / 20%), 0 1px 5px 0 RGB(0 0 0 / 12%)
+	// bd range
+	@for $i from 219 through 227 {
+		@include switchOn($i);
+	}
+	// vanilla shitcord
+	@for $i from 126 through 178 {
+		@include switchOn($i);
+	}
+	
+	// off state
+	@for $i from 179 through 218 {
+		&[style*="background-color: hsl(#{$i}"] {
+			background-color: var(--switch-slider-color) !important;
+			
+			.slider-TkfMQL {
+				background-color: var(--switch-knob-color) !important;
+				box-shadow: 0 2px 2px 0 RGB(0 0 0 / 14%), 0 3px 1px -2px RGB(0 0 0 / 20%), 0 1px 5px 0 RGB(0 0 0 / 12%)
+			}
 		}
 	}
 

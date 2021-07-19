@@ -3,10 +3,12 @@
 */
 /* Enhancements | Modal Blur - Blurs the black tinted background behind modals like image previews if enabled */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/enhancements/background_blur.css); */
-/* Enhancements | Collapsing members list - Members list collapses and uncollapses on hover, giving you more room to read */
-/* @import url(https://hyblocker.github.io/pixelcord/modules/enhancements/hover_members.css); */
+/* Functions | Collapsing members list - Members list collapses and uncollapses on hover, giving you more room to read */
+/* @import url(https://hyblocker.github.io/pixelcord/modules/functions/hover_members.css); */
+/* Functions | macOS Buttons - Replaces window buttons with macOS style buttons (Windows) */
+/* @import url(https://hyblocker.github.io/pixelcord/modules/functions/macos_buttons.css); */
 /*
-    MODULES
+    EXTERNAL MODULES
 */
 /* Add-Ons | Discolored - Colorize Discord's boring SVGs! */
 @import url("https://nyri4.github.io/Discolored/main.css");

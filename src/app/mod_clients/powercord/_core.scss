@@ -1,0 +1,30 @@
+
+// Change colors to Pixelcord desaturated colors
+.powercord-toast[data-toast-type=online] .icon {
+    color: var(--online);
+}
+.powercord-toast[data-toast-type=idle] .icon {
+    color: var(--idle);
+}
+.powercord-toast[data-toast-type=danger] .icon {
+    color: var(--danger);
+}
+
+#F8settings #desc>strong {
+    color: var(--danger) !important;
+}
+
+.powercord-updater .icon path {
+    &[fill="#f04747"] {
+        fill: var(--danger);
+    }
+    &[fill="#7289da"] {
+        fill: var(--accent);
+    }
+    &[fill="#43b581"] {
+        fill: var(--online);
+    }
+}
+.powercord-toast[data-toast-type=danger] .icon {
+    color: var(--danger) !important;
+}

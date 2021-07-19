@@ -221,3 +221,14 @@
 		background-color: cardbg(0, true);
 	}
 }
+
+// Make green, yellow and red use the theme equivalents
+.radioBar-bMNUI-[style*="--radio-bar-accent-color:hsl(139, "] {
+    --radio-bar-accent-color: var(--online) !important;
+}
+.radioBar-bMNUI-[style*="--radio-bar-accent-color:hsl(37, "] {
+    --radio-bar-accent-color: var(--idle) !important;
+}
+.radioBar-bMNUI-[style*="--radio-bar-accent-color:hsl(359, "] {
+    --radio-bar-accent-color: var(--danger) !important;
+}
