@@ -238,3 +238,10 @@ a {
 .roleFlare-TnQbP8[style*="background-color: hsl(139, "] {
     background-color: var(--online) !important;
 }
+
+// why is light mode broken
+.theme-light {
+    & .bannerVisible-2ZE_qG .header-2V-4Sw {
+        color: white;
+    }
+}

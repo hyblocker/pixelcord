@@ -1,0 +1,25 @@
+.sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+
+	// BETTERDISCORD
+	&[aria-controls=Settings-tab]::after {
+		content: "Better Discord Settings";
+	}
+	&[aria-controls=Emotes-tab]::after {
+		content: "Emotes";
+	}
+	&[aria-controls=customcss-tab]::after {
+		content: "Custom CSS";
+	}
+	&[aria-controls=plugins-tab]::after {
+		content: "Plugins";
+	}
+	&[aria-controls=themes-tab]::after {
+		content: "Themes";
+	}
+	&[aria-controls=pluginrepo-tab]::after {
+		content: "Plugin Repository";
+	}
+	&[aria-controls=themerepo-tab]::after {
+		content: "Theme Repository";
+	}
+}

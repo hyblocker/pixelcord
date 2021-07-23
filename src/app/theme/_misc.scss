@@ -4,8 +4,7 @@
 	
 	--text-positive: var(--online);
 	--status-positive-background: var(--online);
-	--status-positive-text: var(--accent-text
-	);
+	--status-positive-text: var(--accent-text);
 	--brand-experiment: var(--accent);
 	--brand-experiment-500: var(--accent);
 	--brand-experiment-560: var(--accent);
@@ -18,7 +17,25 @@
 // idk why light mode looks broken as fuck
 .theme-light {
 	& .icon-2aINcz,
+	& .lookFilled-1Gx00P.colorGreen-29iAKY,
 	& .text-2e2ZyG {
 		color: white;
 	}
+	& .avatarUploaderIndicator-2G-aIZ {
+		background-color: #fff;
+		top: 0;
+		right: 0;
+		left: auto;
+		width: 28px;
+		height: 28px;
+	}
+}
+// Funny hack to persist dark theme vars into light theme (for new guild modal)
+.theme-dark {
+	--faded-text-interactive-normal: var(--interactive-normal);
+	--accento: var(--accent);
+}
+.theme-dark .theme-light {
+	--interactive-normal: var(--faded-text-interactive-normal);
+	--accent: var(--accento);
 }

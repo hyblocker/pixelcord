@@ -1,0 +1,20 @@
+.sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+
+	// POWERCORD
+	&[aria-controls=pc-general-tab]::after {
+		content: "Powercord Settings";
+	}
+	&[aria-controls=pc-moduleManager-plugins-tab]::after {
+		content: "Plugins";
+	}
+	&[aria-controls=pc-moduleManager-themes-tab]::after {
+		content: "Themes";
+	}
+	&[aria-controls=pc-updater-tab]::after {
+		content: "Updater";
+	}
+	&[aria-controls=pc-emojiUtility-tab]::after {
+		content: "Emoji Utility";
+	}
+
+}

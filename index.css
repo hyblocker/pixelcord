@@ -11,9 +11,9 @@
     EXTERNAL MODULES
 */
 /* Add-Ons | Discolored - Colorize Discord's boring SVGs! */
-@import url("https://nyri4.github.io/Discolored/main.css");
+@import url(https://nyri4.github.io/Discolored/main.css);
 /* Add-Ons | Google Emojis */
-@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css");
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css);
 /* Add-Ons | BadgesEverywhere (CORE) - Add animated badges everywhere */
 @import url(https://mr-miner1.github.io/Better-Badges/src/BadgesEverywhere.css);
 /* Add-Ons | BadgesEverywhere - Colored Badges */
@@ -57,12 +57,14 @@ html.newBrand,
   --checkbox-size: 15px;
   --settings-list-width: 316px;
   --settings-padding: 8px;
+  --settings-header-height: 84px;
   --mouseX: 0px;
   --mouseY: 0px;
 }
 
 .theme-light {
   --accent: var(--primary-700);
+  --accent-selected-highlight: rgba(28, 116, 233, 12%);
   --accent-highlight: var(--primary-500);
   --accent-text: white;
   --text-semidark: rgb(149, 149, 149);
@@ -95,6 +97,7 @@ html.newBrand,
 .callContainer-36WRfH,
 .theme-dark {
   --accent: var(--primary-400);
+  --accent-selected-highlight: rgba(52, 164, 255, 12%);
   --accent-highlight: var(--primary-200);
   --accent-text: white;
   --baseline: #272a2b;
@@ -110,7 +113,7 @@ html.newBrand,
   --list-color: #fff;
   --logo-color: #fff;
   --header-color: #fff;
-  --interactive-muted: #8f8f8f;
+  --interactive-muted: #6b6b6b;
   --channels-default: #9b9fa5;
   --ripple-default: rgba(255, 255, 255, 0.36);
   --danger: rgb(207, 102, 121);

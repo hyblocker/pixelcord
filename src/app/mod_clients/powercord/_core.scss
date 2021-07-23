@@ -28,3 +28,16 @@
 .powercord-toast[data-toast-type=danger] .icon {
     color: var(--danger) !important;
 }
+
+// Settings consistent shit
+.h2-2gWE-o:first-child {
+    font-size: 20px;
+	line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+// FUNNY CARD HAHAHAHAHHAHAHAH
+.powercord-entities-manage-tabs {
+    @include card(4);
+}

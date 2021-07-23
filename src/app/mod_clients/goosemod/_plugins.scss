@@ -55,3 +55,8 @@
 		color: rgb(46, 51, 56);
 	}
 }
+
+// Delete messages
+.ephemeral-1PsL1r.gm-deleted-message::before {
+	background-color: var(--danger);
+}

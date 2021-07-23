@@ -41,3 +41,6 @@ $msg-height: 4;
 		background-color: cardbg($popout-height, true);
 	}
 }
+.tutorial-3w5I9h {
+	@include card(4);
+}

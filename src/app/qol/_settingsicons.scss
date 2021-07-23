@@ -1,5 +1,6 @@
 .sidebarRegion-VFTUkN {
-	--settings-icon-color: var(--interactive-normal);
+	//--settings-icon-color: var(--interactive-normal);
+	--settings-icon-color: currentColor;
 	--settings-subscriptions: var(--accent);
 	--settings-hypesquad: var(--idle);
 	--settings-logout: var(--danger);
@@ -297,10 +298,10 @@
 .side-8zPYf6 > .item-PXvHYJ[data-item-id=pc-labs]:not(.role-3wi9Tf)::before {
 	--icon: url("data:image/svg+xml,%3Csvg fill='%23FFF' width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 22a3 3 0 01-3-3c0-.6.18-1.16.5-1.63L9 7.81V6a1 1 0 01-1-1V4a2 2 0 012-2h4a2 2 0 012 2v1a1 1 0 01-1 1v1.81l5.5 9.56c.32.47.5 1.03.5 1.63a3 3 0 01-3 3H6m-1-3a1 1 0 001 1h12a1 1 0 001-1c0-.21-.07-.41-.18-.57l-2.29-3.96L14 17l-5.07-5.07-3.75 6.5c-.11.16-.18.36-.18.57m8-9a1 1 0 00-1 1 1 1 0 001 1 1 1 0 001-1 1 1 0 00-1-1z'/%3E%3C/svg%3E");
 }
-.side-8zPYf6 > .item-PXvHYJ[data-item-id=Experiments]:not(.role-3wi9Tf)::before {
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=Experiments-tab]:not(.role-3wi9Tf)::before {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' fill='%23fff' width='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M7 19c-1.1 0-2 .9-2 2h14c0-1.1-.9-2-2-2h-4v-2h3c1.1 0 2-.9 2-2h-8c-1.66 0-3-1.34-3-3 0-1.09.59-2.04 1.46-2.56C8.17 9.03 8 8.54 8 8c0-.21.04-.42.09-.62A5.01 5.01 0 005 12c0 2.76 2.24 5 5 5v2H7z'/%3E%3Cpath d='M10.56 5.51C11.91 5.54 13 6.64 13 8c0 .75-.33 1.41-.85 1.87l.59 1.62.94-.34.34.94 1.88-.68-.34-.94.94-.34-2.74-7.53-.94.34-.34-.94-1.88.68.34.94-.94.35.56 1.54z'/%3E%3Ccircle cx='10.5' cy='8' r='1.5'/%3E%3C/svg%3E");
 }
-.side-8zPYf6 > .item-PXvHYJ[data-item-id=DeveloperOptions]:not(.role-3wi9Tf)::before {
+.side-8zPYf6 > .item-PXvHYJ[aria-controls="Developer Options-tab"]:not(.role-3wi9Tf)::before {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' fill='%23fff' width='24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z'/%3E%3C/svg%3E");
 }
 // GOOSEMOD HACK:

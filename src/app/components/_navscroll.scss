@@ -6,7 +6,20 @@
 }
 .clickable-1JJAn8:active .layout-2DM8Md,
 .selected-aXhQR6 .layout-2DM8Md {
-    background-color: var(--navdrawer-active);
+    //background-color: var(--navdrawer-active);
+    background-color: var(--accent-selected-highlight);
+	color: var(--accent);
+}
+.modeSelected-346R90 .content-1x5b-n,
+.modeSelected-346R90:hover .content-1x5b-n {
+    //background-color: var(--navdrawer-active);
+    background-color: var(--accent-selected-highlight);
+	& .actionIcon-PgcMM2 {
+		color: var(--accent);
+	}
+}
+.wrapper-2jXpOf:hover .icon-1DeIlz {
+	color: var(--interactive-hover);
 }
 .scroller-1JbKMe .container-2ax-kl:not(:first-child)::before,
 .scroller-RmtA4e .containerDefault-3tr_sE:not(:nth-child(2))::before {
@@ -33,11 +46,6 @@
 .modeSelected-346R90:hover .icon-1DeIlz {
 	color: var(--accent);
 }
-/*
-.name-23GUGE,.icon-1DeIlz {
-	color: var(--list-color);
-}
-*/
 .icon-1DeIlz {
 	color: var(--channels-default);
 }
@@ -62,3 +70,7 @@
 .listRow-hutiT_, .container-2Pjhx- {
 	border-radius: 0;
 }
+// IDK
+//.name-23GUGE,.icon-1DeIlz {
+//	color: var(--list-color);
+//}

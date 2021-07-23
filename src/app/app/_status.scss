@@ -1,4 +1,6 @@
 // Status on users
+.bsi-clientStatuses svg path,
+.bsi-statusIcon path,
 .status-1XNdyw rect,
 .wrapper-3t9DeA rect
 {
@@ -28,7 +30,7 @@
     &[style*="background-color: hsl(139, "] {
         background-color: var(--online) !important;
     }
-    &[style*="background-color: hsl(37, "] {
+    &[style*="background-color: hsl(38, "] {
         background-color: var(--idle) !important;
     }
     &[style*="background-color: hsl(359, "] {
@@ -36,5 +38,11 @@
     }
     &[style*="background-color: hsl(214, "] {
         background-color: var(--offline) !important;
+    }
+}
+
+.theme-light {
+    & .dots-3Bkt3k {
+        color: white;
     }
 }

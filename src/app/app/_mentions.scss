@@ -4,6 +4,7 @@
 }
 .unreadPill-2HyYtt {
     background-color: var(--danger);
+	color: white;
 }
 .unreadPillCapStroke-7rkHbg {
     color: var(--danger);
@@ -26,4 +27,14 @@
 }
 .container-3baos1 .redIcon-2uP7Ej {
 	color: var(--danger);
+}
+
+// Actual mentions
+.theme-light .wrapper-3WhCwL,
+.theme-dark .wrapper-3WhCwL {
+	background-color: var(--accent-selected-highlight);
+	color: var(--accent);
+	&:hover {
+		color: var(--accent-highlight);
+	}
 }

@@ -3,6 +3,11 @@
 
 $connected-account-height: 4;
 
+// New loading popout
+.loadingPopout-qYljDW {
+	@include card(6);
+}
+
 .headerFill-adLl4x {
 	background-color: transparent;
 }

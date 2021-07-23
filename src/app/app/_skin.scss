@@ -58,7 +58,14 @@
 	transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out;
 }
 .selected-1Tbx07 {
-	@include card(16);
+	//@include card(16);
+	.theme-light &,
+	.theme-dark & {
+		background-color: var(--accent-selected-highlight);
+		& .colorInteractiveActive-3Ip9Eu {
+			color: var(--accent);
+		}
+	}
 }
 
 .iconBadge-2NuvG9 {

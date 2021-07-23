@@ -1,0 +1,16 @@
+.sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+	// Mod client specific ones
+
+	// GOOSEMOD
+	&[aria-controls=gm-general-tab]::after {
+		content: "Goosemod Settings";
+	}
+	&[aria-controls=gm-changelog-tab]::after {
+		content: "Goosemod Change Log";
+	}
+	&[aria-controls="gm-Custom CSS-tab"]::after {
+		content: "Custom CSS";
+	}
+
+	// Temporary hacks until i find a way to yeet the gm- and -tab :/
+}

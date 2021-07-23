@@ -4,6 +4,7 @@
 .callContainer-36WRfH,
 .theme-dark {
 	--accent: var(--primary-400);
+	--accent-selected-highlight: rgba(52, 164, 255, 12%);
 	--accent-highlight: var(--primary-200);
 	--accent-text: white;
 	
@@ -24,7 +25,7 @@
 	--list-color: #fff;
 	--logo-color: #fff;
 	--header-color: #fff;
-	--interactive-muted: #8f8f8f;
+	--interactive-muted: #6b6b6b;
 	--channels-default: #9b9fa5;
 	
 	--ripple-default: rgba(255, 255, 255, 0.36);

@@ -4,3 +4,21 @@
 	border-color: transparent;
 	@include card(4);
 }
+
+.theme-dark .theme-light {
+
+	& .lookBlank-3eh9lL, .theme-light .lookLink-9FtZy- {
+		color: var(--faded-text-interactive-normal);
+	}
+	& .input-cIJ7To {
+		color: white;
+	}
+	& .iconContainer-2B0ixr {
+		& circle {
+			fill: var(--accent);
+		}
+		& path[d="M73.3332 11.4075H68.5924V6.66675H67.4072V11.4075H62.6665V12.5927H67.4072V17.3334H68.5924V12.5927H73.3332V11.4075Z"] {
+			color: var(--accent-text);
+		}
+	}
+}

@@ -31,6 +31,18 @@
 .quickswitcher-3JagVE {
 	@include card(8);
 }
+// Screenshare cards
+.selectorButton-EEUWed,
+.card-2Mz_4z {
+	@include card(2);
+}
+.selectorButtonSelected-t5V9On {
+	.theme-light &,
+	.theme-dark & {
+		background-color: var(--accent);
+		color: var(--accent-text);
+	}
+}
 .scroller-zPkAnE {
 	background-color: transparent;
 }
@@ -188,4 +200,9 @@
 }
 .dotOnline-2wEpt_ {
     background-color: var(--online);
+}
+
+// Delete message message preview is a different card class ffs
+.message-2qRu38 {
+	@include card(2);
 }

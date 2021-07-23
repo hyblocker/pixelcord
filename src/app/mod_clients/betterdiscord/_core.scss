@@ -38,6 +38,7 @@ $msg-height: 4;
 		transition: 150ms color ease-in-out,
 					150ms background-color ease-in-out;
 	}
+	position: relative;
 }
 
 .button-coQXfM[style*="background-color: var(--bdfdb-blurple)"] {
@@ -85,11 +86,6 @@ $msg-height: 4;
 	@include card($header-height);
 }
 
-// Colors
-.fixed-3zCC84 {
-	color: var(--danger);
-}
-
 // Twitch bullshit
 .bd-emote-header {
 	.theme-light & {
@@ -110,5 +106,13 @@ $msg-height: 4;
 	}
 	.theme-dark & {
 		background-color: cardbg(0, true);
+	}
+}
+
+// Colors for changelog
+.fixed-3zCC84 {
+	color: var(--danger);
+	&::after {
+		background-color: var(--danger);
 	}
 }

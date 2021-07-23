@@ -5,9 +5,12 @@ $normal: 4;
 
 .background-1QDuV2 {
 	@include card($highlight, $background: false);
-	.theme-dark {
-		background-color: cardbg($highlight, true);
+	.theme-dark & {
+		background-color: cardbg($normal, true);
 	}
+}
+.theme-dark .fieldList-21DyL8 {
+	background-color: cardbg($normal, true);
 }
 .avatar-1uQSZT {
 	.theme-light & {
@@ -88,6 +91,40 @@ $normal: 4;
 	background-color: var(--online) !important;
 }
 .permissionCheckmark-1SeKr2 {
-	-webkit-mask-image: url(/assets/718074e12775def7df7e2a01d6bf2bf8.svg) no-repeat;
+	-webkit-mask: url(https://canary.discord.com/assets/718074e12775def7df7e2a01d6bf2bf8.svg) no-repeat;
 	background: var(--online);
+}
+
+// Disable dragging of nitro upsell previews
+.featureImage-2L9kA0, .featureTitle-W5O6R1, .hero-EvfTTA {
+	-webkit-user-drag: none;
+}
+
+// Game Activity Red
+.overlayToggleIconOff-1kT42w .fill-1ugeBG {
+	fill: var(--danger);
+	&+rect {
+		fill: var(--danger);
+	}
+}
+
+// Verified
+.flowerStar-1GeTsn path {
+	fill: var(--accent);
+	&+.childContainer-1wxZNh path {
+		fill: var(--accent-text);
+	}
+}
+
+// Analytics
+.trendingArrow-18JKWi {
+	& path[fill^="hsl(139,"] {
+		fill: var(--online);
+	}
+	& path[fill^="hsl(359,"] {
+		fill: var(--danger);
+	}
+	& path[fill^="hsl(38,"] {
+		fill: var(--idle);
+	}
 }

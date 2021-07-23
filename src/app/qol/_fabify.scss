@@ -26,37 +26,8 @@
         visibility: visible;
         padding: 11px;
         background-color: var(--accent);
+        color: var(--accent-text);
         border-radius: 50%;
         box-shadow: elevation-shadow(6);
-    }
-    .theme-light
-    {
-        & .closeButton-1tv5uR {
-            background-color: cardbg(6);
-            border-color: transparent;
-            box-shadow: elevation-shadow(6);
-            @include ripple(var(--ripple-default), 64px, 64px, $leftname: left, $left: -12px, $top: -12px);
-            transition: 0.2s;
-        }
-        & .closeButton-1tv5uR:hover {
-            background-color: cardbg(8);
-            border-color: transparent;
-            box-shadow: elevation-shadow(6);
-        }
-    }
-    .theme-dark
-    {
-        & .closeButton-1tv5uR {
-            background-color: cardbg(6, true);
-            border-color: transparent;
-            box-shadow: elevation-shadow(6);
-            @include ripple(var(--ripple-default), 64px, 64px, $leftname: left, $left: -12px, $top: -12px);
-            transition: 0.2s;
-        }
-        & .closeButton-1tv5uR:hover {
-            background-color: cardbg(8, true);
-            border-color: transparent;
-            box-shadow: elevation-shadow(6);
-        }
     }
 }
