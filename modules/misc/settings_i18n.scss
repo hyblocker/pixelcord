@@ -975,7 +975,6 @@
 		}
 	}
 
-
 	// CHANNELS
 	& {
 		&[aria-controls=PERMISSIONS-tab]::after {
@@ -1010,6 +1009,76 @@
 			html[lang=th] & { content: "การอนุญาต"; }
 			html[lang=vi] & { content: "Quyền hạn"; }
 			html[lang=hi] & { content: "परमिशन"; }
+		}
+	}
+
+	// VC DEBUG
+	& {
+		&[aria-controls*=TRANSPORT] {
+			html[lang^=en-] & { content: "Transport"; }
+			html[lang=zh-CN] & { content: "传输"; }
+			html[lang=zh-TW] & { content: "傳輸"; }
+			html[lang=cs] & { content: "Transport"; }
+			html[lang=da] & { content: "Transport"; }
+			html[lang=nl] & { content: "Vervoer"; }
+			html[lang=fr] & { content: "Transport"; }
+			html[lang=de] & { content: "Übertragung"; }
+			html[lang=el] & { content: "Μεταφορά δεδομένων"; }
+			html[lang=hu] & { content: "Átvitel"; }
+			html[lang=it] & { content: "Traffico"; }
+			html[lang=ja] & { content: "輸送"; }
+			html[lang=ko] & { content: "전송"; }
+			html[lang=pl] & { content: "Przesyłanie"; }
+			html[lang=pt-PT] & { content: "Transport"; }
+			html[lang=pt-BR] & { content: "Transporte"; }
+			html[lang=ru] & { content: "Передача данных"; }
+			html[lang=sk] & { content: "Transport"; }
+			html[lang=es-ES] & { content: "Transporte"; }
+			html[lang=sv-SE] & { content: "Transport"; }
+			html[lang=tr] & { content: "Transfer"; }
+			html[lang=bg] & { content: "Транспорт"; }
+			html[lang=uk] & { content: "Перемістити"; }
+			html[lang=fi] & { content: "Tietoliikenne"; }
+			html[lang=no] & { content: "Transport"; }
+			html[lang=hr] & { content: "Prijenos"; }
+			html[lang=ro] & { content: "Transportă"; }
+			html[lang=lt] & { content: "Perdavimas"; }
+			html[lang=th] & { content: "เคลื่อนย้าย"; }
+			html[lang=vi] & { content: "Vận chuyển"; }
+			html[lang=hi] & { content: "ट्रांसपोर्ट"; }
+		}
+		&[aria-controls*=OUTBOUND] {
+			html[lang^=en-] & { content: "Outbound"; }
+			html[lang=zh-CN] & { content: "上传"; }
+			html[lang=zh-TW] & { content: "發出"; }
+			html[lang=cs] & { content: "Odchozí"; }
+			html[lang=da] & { content: "Udgående"; }
+			html[lang=nl] & { content: "Uitgaand"; }
+			html[lang=fr] & { content: "Sortant"; }
+			html[lang=de] & { content: "Ausgehend"; }
+			html[lang=el] & { content: "Εξερχόμενη"; }
+			html[lang=hu] & { content: "Kimenő"; }
+			html[lang=it] & { content: "In uscita"; }
+			html[lang=ja] & { content: "アウトバウンド"; }
+			html[lang=ko] & { content: "나가는 연결"; }
+			html[lang=pl] & { content: "Wychodzące"; }
+			html[lang=pt-PT] & { content: "Outbound"; }
+			html[lang=pt-BR] & { content: "Saída"; }
+			html[lang=ru] & { content: "Исходящие"; }
+			html[lang=sk] & { content: "Outbound"; }
+			html[lang=es-ES] & { content: "Saliente"; }
+			html[lang=sv-SE] & { content: "Utgående"; }
+			html[lang=tr] & { content: "Giden"; }
+			html[lang=bg] & { content: "Изходящ"; }
+			html[lang=uk] & { content: "Вихідні"; }
+			html[lang=fi] & { content: "Lähtevä"; }
+			html[lang=no] & { content: "Utgående"; }
+			html[lang=hr] & { content: "Izlazni"; }
+			html[lang=ro] & { content: "Ieșire"; }
+			html[lang=lt] & { content: "Išsiunčiamasis"; }
+			html[lang=th] & { content: "ขาออก"; }
+			html[lang=vi] & { content: "Hướng ra"; }
+			html[lang=hi] & { content: "आउटबाउंड"; }
 		}
 	}
 }

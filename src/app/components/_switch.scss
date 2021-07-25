@@ -31,7 +31,7 @@
 	}
 
 	// bd range
-	@for $i from 219 through 227 {
+	@for $i from 219 through 235 {
 		@include switchOn($i);
 	}
 	// vanilla shitcord

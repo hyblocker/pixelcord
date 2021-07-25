@@ -62,7 +62,9 @@
 	.theme-light &,
 	.theme-dark & {
 		background-color: var(--accent-selected-highlight);
-		& .colorInteractiveActive-3Ip9Eu {
+		& .colorInteractiveActive-3Ip9Eu,
+		& .colorInteractiveNormal-PB7JN3,
+		& .icon-3ZzoN7 {
 			color: var(--accent);
 		}
 	}

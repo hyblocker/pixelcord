@@ -6,16 +6,11 @@
 }
 
 .added-3gEorX{
-	/*color: var(--online);
-	&::after {
-		background-color: var(--online);
-	}*/
 	@include changelog(var(--online));
 }
 .progress-3VSXTd {
 	@include changelog(var(--idle));
-	//background-color: var(--idle);
 }
-.added-3gEorX {
-	//background-color: var(--danger);
+.fixed-17NtPk {
+	@include changelog(var(--danger));
 }

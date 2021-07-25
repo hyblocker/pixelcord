@@ -97,6 +97,7 @@
 .lookFilled-1Gx00P.colorGreen-29iAKY {
 	background-color: var(--online);
 }
+.lookFilled-1Gx00P.colorGreen-29iAKY:hover,
 .colorable-1bkp8v.green-plH-Mj.active-1QRrIS,
 .colorable-1bkp8v.green-plH-Mj:hover {
 	background-color: var(--online-highlight);
@@ -106,4 +107,8 @@
     .theme-light & {
         color: var(--danger);
     }
+}
+.lookOutlined-3sRXeN.colorGreen-29iAKY {
+	color: var(--online);
+	border-color: var(--online);
 }

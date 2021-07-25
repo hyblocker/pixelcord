@@ -25,9 +25,18 @@
         fill: var(--online);
     }
 }
+
+// Modals
 .powercord-toast[data-toast-type=danger] .icon {
     color: var(--danger) !important;
 }
+.powercord-toast[data-toast-type=success] .icon {
+    color: var(--online) !important;
+}
+.powercord-toast .contents .inner {
+    @include card(4);
+}
+
 
 // Settings consistent shit
 .h2-2gWE-o:first-child {

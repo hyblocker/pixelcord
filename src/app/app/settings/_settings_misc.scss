@@ -111,6 +111,7 @@ $normal: 4;
 // Verified
 .flowerStar-1GeTsn path {
 	fill: var(--accent);
+	opacity: 0.5;
 	&+.childContainer-1wxZNh path {
 		fill: var(--accent-text);
 	}

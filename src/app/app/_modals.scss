@@ -206,3 +206,11 @@
 .message-2qRu38 {
 	@include card(2);
 }
+.inviteRow-2L02ae {
+	@include card(2);
+	transition: background-color	150ms ease-in-out,
+				box-shadow			150ms ease-in-out,;
+	&:hover {
+		@include card(4);
+	}
+}

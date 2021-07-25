@@ -56,6 +56,9 @@ $msg-height: 4;
 .channelTextAreaInner-1WnnRS {
 	border-color: transparent;
 }
+.channelTextArea-3O-WhA {
+	background-color: transparent;
+}
 
 // Threads dialog
 .container-7uh5fX {
@@ -71,4 +74,9 @@ $msg-height: 4;
 		animation: spawn-anim 0.2s ease-in-out;
 		transform-origin: top right;
 	}
+}
+
+// Turn the funny notif on top to a pill
+.chatHeaderBar-4vZS1x {
+	// TODO: FUCK
 }

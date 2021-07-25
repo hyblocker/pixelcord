@@ -271,21 +271,26 @@ $animtime: 0.34s;
 }
 
 // Header bar
-.sidebarRegionScroller-3MXcoP::before {
-	content: "";
-	width: 100%;
-	height: var(--settings-header-height);
-	display: inline-block;
-	z-index: 3003;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color:  var(--accent);
-	transition: $settings-transition;
-	box-shadow: none;
+.sidebarRegionScroller-3MXcoP{
+	&::before {
+		content: "";
+		width: 100%;
+		height: var(--settings-header-height);
+		display: inline-block;
+		z-index: 3003;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color:  var(--accent);
+		transition: $settings-transition;
+		box-shadow: none;
 
-	.theme-light & {
-		box-shadow: elevation-shadow(16, black);
+		.theme-light & {
+			box-shadow: elevation-shadow(16, black);
+		}
+	}
+	&::after {
+		
 	}
 }
 // Fix pfps rendering on top
@@ -364,6 +369,14 @@ $animtime: 0.34s;
 .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover {
 	background-color: var(--accent-selected-highlight);
 	color: var(--accent);
+}
+.list-wek7hJ .tabBar-wS4pjJ .tab-17bjMB.active-3JUHqX,
+.header-1VS4tm .tabBar-31Wimb .tab-PQvTH4.active-30vPlA {
+	.theme-dark &,
+	.theme-light & {
+		background-color: var(--accent-selected-highlight);
+		color: var(--accent);
+	}
 }
 
 // Turn the close button into a back button

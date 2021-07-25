@@ -1,1 +1,37 @@
-.membersWrap-2h-GB4{min-width:25px;width:25px}.membersWrap-2h-GB4 .members-1998pB{width:1px}.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe{opacity:0}.membersWrap-2h-GB4 .members-1998pB .membersGroup-v9BXpm{opacity:0}.membersWrap-2h-GB4:hover{width:240px}.membersWrap-2h-GB4:hover .members-1998pB{width:240px}.membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe{opacity:1}.membersWrap-2h-GB4:hover .members-1998pB .membersGroup-v9BXpm{opacity:1}.membersWrap-2h-GB4{transition:.2s ease .175s}.membersWrap-2h-GB4 .members-1998pB{transition:.2s ease .175s}.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe,.membersWrap-2h-GB4 .members-1998pB .membersGroup-v9BXpm{transition:.2s ease-in-out .175s}
+.membersWrap-2h-GB4 {
+  min-width: 25px;
+  width: 25px;
+}
+.membersWrap-2h-GB4 .members-1998pB {
+  width: 1px;
+}
+.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+  opacity: 0;
+}
+.membersWrap-2h-GB4 .members-1998pB .membersGroup-v9BXpm {
+  opacity: 0;
+}
+.membersWrap-2h-GB4:hover {
+  width: 240px;
+}
+.membersWrap-2h-GB4:hover .members-1998pB {
+  width: 240px;
+}
+.membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
+  opacity: 1;
+}
+.membersWrap-2h-GB4:hover .members-1998pB .membersGroup-v9BXpm {
+  opacity: 1;
+}
+
+.membersWrap-2h-GB4 {
+  transition: 0.2s ease 0.175s;
+}
+.membersWrap-2h-GB4 .members-1998pB {
+  transition: 0.2s ease 0.175s;
+}
+.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe, .membersWrap-2h-GB4 .members-1998pB .membersGroup-v9BXpm {
+  transition: 0.2s ease-in-out 0.175s;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22hover_members.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAGA;EACC;EACA;;AAEA;EACC;;AACA;EACC;;AAED;EACC;;AAIF;EACC;;AACA;EACC;;AACA;EACC;;AAED;EACC;;;AAOH;EACC;;AACA;EACC;;AACA;EAEC%22,%22file%22:%22hover_members.css%22%7D */
