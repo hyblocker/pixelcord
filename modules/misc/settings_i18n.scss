@@ -445,7 +445,7 @@
 			html[lang=hi] & { content: "Windows सेटिंग"; }
 		}
 		&[aria-controls=MacOS-tab]::after {
-			content: "macOS";
+			content: "macOS" !important;
 		}
 		&[aria-controls=Linux-tab]::after {
 			html[lang=en-US] & { content: "Linux Settings"; }
@@ -618,16 +618,16 @@
 		}
 
 		&[aria-controls="Hypesquad Online-tab"]::after {
-			content: "HypeSquad";
-			html[lang=el] & { content: "Ομάδα Δημοσιότητας HypeSquad"; }
+			content: "HypeSquad" !important;
+			html[lang=el] & { content: "Ομάδα Δημοσιότητας HypeSquad" !important; }
 		}
 
 		&[aria-controls=Experiments-tab]::after {
-			content: "Experiments";
+			content: "Experiments" !important;
 		}
 
 		&[aria-controls="Developer Options-tab"]::after {
-			content: "Developer Options";
+			content: "Developer Options" !important; 
 		}
 	}
 

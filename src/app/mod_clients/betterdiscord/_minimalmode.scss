@@ -1,0 +1,14 @@
+$minimal-width: 256px;
+
+.bd-minimal {
+	& .sidebarRegion-VFTUkN {
+		flex: none;
+		max-width: $minimal-width;
+	}
+	& .sidebarRegionScroller-3MXcoP {
+		max-width: $minimal-width;
+	}
+	& .sidebar-CFHs9e {
+		width: calc(var(--settings-list-width) - 48px);
+	}
+}

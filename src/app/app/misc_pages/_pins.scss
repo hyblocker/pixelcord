@@ -15,7 +15,7 @@ $msg-height: 4;
 .messagesPopoutWrap-1MQ1bW {
 	@include card($popout-height);
 	@if $animations {
-		animation: spawn-anim 0.2s ease-in-out;
+		animation: pixelcord-spawn-anim 0.2s ease-in-out;
 		transform-origin: top right;
 	}
 }

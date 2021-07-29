@@ -105,7 +105,7 @@
 .container-3ayLPN {
 	@include card(4);
 	@if $animations {
-		animation: spawn-anim 0.18s ease-in-out;
+		animation: pixelcord-spawn-anim 0.18s ease-in-out;
 		transform-origin: top;
 	}
 }

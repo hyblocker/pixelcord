@@ -5,6 +5,9 @@ $height: 8;
 .panels-j1Uci_
 {
 	@include card($height);
+	.theme-light & {
+		border-right: 1px solid var(--navdrawer-separator);
+	}
 }
 
 .wrapper-1F5TKx,

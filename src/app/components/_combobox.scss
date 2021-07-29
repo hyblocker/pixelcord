@@ -10,7 +10,7 @@ $radius: 4px;
 	@include card(4);
 	@if $animations {
 		transform-origin: top;
-		animation: spawn-anim 0.15s ease-in-out;
+		animation: pixelcord-spawn-anim 0.15s ease-in-out;
 	}
 }
 

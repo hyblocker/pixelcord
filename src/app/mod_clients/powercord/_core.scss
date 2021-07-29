@@ -50,3 +50,28 @@
 .powercord-entities-manage-tabs {
     @include card(4);
 }
+
+// Powercord toasts
+.powercord-toast {
+	@include card(8);
+}
+.powercord-toast .header {
+	@include card(2, $background: false);
+}
+.powercord-toast .contents .inner {
+	@include card(1, $background: false);
+}
+
+// Powercord license thing
+.modal-yWgWj- {
+	@include card(4);
+}
+.powercord-product-license-modal-data.conditions span:before {
+	background-color: var(--accent) !important;
+}
+.powercord-product-license-modal-data.limitations span:before {
+	background-color: var(--danger) !important;
+}
+.powercord-product-license-modal-data.permissions span:before {
+	background-color: var(--online) !important;
+}

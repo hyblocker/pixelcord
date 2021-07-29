@@ -59,18 +59,6 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 	}
 }
 
-.sidebarRegion-VFTUkN::before {
-	content: "";
-	width: calc(var(--settings-list-width) + 36px);
-    max-width: calc(var(--settings-list-width) + 36px);
-	height: calc(100%);
-	display: inline-block;
-	@include card(8);
-	z-index: 3001;
-	position: fixed;
-	top: 0;
-	left: 0;
-}
 .contentRegionScroller-26nc1e,
 .titleContainer-2CXtJo {
 	background-color: transparent
@@ -290,7 +278,14 @@ $animtime: 0.34s;
 		}
 	}
 	&::after {
-		
+		content: "";
+		background-color: var(--accent);
+		display: inline-block;
+		z-index: 3003;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
 	}
 }
 // Fix pfps rendering on top
@@ -323,15 +318,25 @@ $animtime: 0.34s;
 		font-weight: var(--header-weight);
 		font-kerning: normal;
 		font-feature-settings: "kern";
-		text-transform: capitalize;
 		color: var(--accent-text);
 		
 		// Render ontop
-		display: inline-block;
+		display: block;
 		position: fixed;
 		z-index: 3003;
 	}
-}	
+}
+// Uppercase plugin titles and shit
+.sidebar-CFHs9e .themed-OHr7kt.item-PXvHYJ {
+	// not clean bc of all the not chaining but u do what u gotta do
+	&[aria-controls=pc-updater-tab] ~ .item-PXvHYJ:not([aria-controls=changelog-tab]):not([aria-controls="Hypesquad Online-tab"]):not([aria-controls=Experiments-tab]):not([aria-controls="Developer Options-tab"]):not([aria-controls=logout-tab]),
+	&[aria-controls^=gm-]
+	{
+		&::after {
+			text-transform: capitalize;
+		}
+	}
+}
 // Realign settings contents
 .contentRegion-3nDuYy {
 	height: 100%;
@@ -371,6 +376,7 @@ $animtime: 0.34s;
 	color: var(--accent);
 }
 .list-wek7hJ .tabBar-wS4pjJ .tab-17bjMB.active-3JUHqX,
+.header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
 .header-1VS4tm .tabBar-31Wimb .tab-PQvTH4.active-30vPlA {
 	.theme-dark &,
 	.theme-light & {
@@ -420,6 +426,10 @@ $animtime: 0.34s;
 
 	visibility: hidden;
 	font-size: 0;
+
+	&::after {
+		// TODO: Arrow TOOLTIP
+	}
 
 	&::before {
 		visibility: visible;

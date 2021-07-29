@@ -17,11 +17,16 @@ $width: 32px;
         }
     }
 
+    .container-3baos1 {
+        position: relative;
+    }
+
     .panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
         position: absolute;
         flex-direction: column;
         bottom: var(--settings-padding);
-        left: calc(var(--channels-width) - var(--settings-padding) - (#{$width} + 10px));
+        //left: calc(var(--channels-width) - var(--settings-padding) - (#{$width} + 10px));
+        right: var(--settings-padding);
         z-index: 12;
         padding: 5px;
         border-radius: 4px;
@@ -49,11 +54,10 @@ $width: 32px;
 
     // Fix tooltips
     .layer-v9HyYc.disabledPointerEvents-1ptgTB {
-        &[style*="bottom: 53"][style^="position: absolute; left: 2"],
-        &[style*="bottom: 85"][style^="position: absolute; left: 2"],
-        &[style*="bottom: 117"][style^="position: absolute; left: 2"],
-        &[style*="bottom: 117"][style^="position: absolute; left: 3"],
-        &[style*="bottom: 149"][style^="position: absolute; left: 2"] {
+        &[style*="bottom: 54"][style^="position: absolute; left: 2"],
+        &[style*="bottom: 86"][style^="position: absolute; left: 2"],
+        &[style*="bottom: 118"][style^="position: absolute; left: 3"],
+        &[style*="bottom: 150"][style^="position: absolute; left: 2"] {
             & .tooltip-2QfLtc.tooltipTop-XDDSxx.tooltipPrimary-1d1ph4.tooltipDisablePointerEvents-3eaBGN {
                 transform: translate(calc(-50% - 30px), 40px) !important;
                 & .tooltipPointer-3ZfirK {

@@ -4,13 +4,27 @@
 $header-height: 6;
 
 $popout-height: 8;
-$header-height: 2;
 $msg-height: 4;
+$min-thread-panel-width: 400px;
 
 // APP LAYOUT
 .threadSidebar-1o3BTy,
 .chat-3bRxxu.threadSidebarOpen-vdkwIh {
 	border-radius: 0;
+}
+.chat-3bRxxu.threadSidebarOpen-vdkwIh {
+	resize: horizontal;
+	min-width: 400px;
+	// NB: This is not elegant bc its dependant on window width but CSS is hacky af so you live with this dogshit hell
+	max-width: calc(70% - #{$min-thread-panel-width});
+}
+.chat-3bRxxu:not(.threadSidebarOpen-vdkwIh) {
+	width: unset !important;
+	flex: 1 1 auto;
+}
+.threadSidebar-1o3BTy {
+	width: unset;
+	flex: 1 1 auto;
 }
 
 // Shadow separator
@@ -64,6 +78,14 @@ $msg-height: 4;
 .container-7uh5fX {
 	@include card($msg-height);
 }
+.modal-2DCYwU {
+	.theme-light & {
+		background-color: cardbg($msg-height, false) !important;
+	}
+	.theme-dark & {
+		background-color: cardbg($msg-height, true) !important;
+	}
+}
 .header-1VS4tm {
 	@include card($header-height);
 	z-index: 11;
@@ -71,7 +93,7 @@ $msg-height: 4;
 .container-2I9Hud {
 	@include card($popout-height);
 	@if $animations {
-		animation: spawn-anim 0.2s ease-in-out;
+		animation: pixelcord-spawn-anim 0.2s ease-in-out;
 		transform-origin: top right;
 	}
 }
@@ -79,4 +101,13 @@ $msg-height: 4;
 // Turn the funny notif on top to a pill
 .chatHeaderBar-4vZS1x {
 	// TODO: FUCK
+	margin: 12px;
+	padding: 6px 24px;
+	border-radius: 24px;
+	@include card(8);
+}
+
+// Collapse threads
+.container-3JKcAb {
+	//height: 0;
 }

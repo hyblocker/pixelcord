@@ -18,9 +18,9 @@
 }
 .lookInverted-2D7oAl.colorBrand-3pXr91:hover {
     background-color: var(--online);
-	transform: scale(1.05);
+	transform: scale(1.025);
 	@if $animations {
-		transition: 250ms transform ease-in-out;
+		transition: 200ms transform ease-in-out;
 	}
 }
 // Context menu colors
@@ -111,4 +111,8 @@
 .lookOutlined-3sRXeN.colorGreen-29iAKY {
 	color: var(--online);
 	border-color: var(--online);
+}
+.lookInverted-2D7oAl.colorBrand-3pXr91 {
+	background-color: var(--online);
+	color: white;
 }

@@ -1203,7 +1203,7 @@ html[lang=hi] .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-co
   content: "Windows सेटिंग";
 }
 .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-controls=MacOS-tab]::after {
-  content: "macOS";
+  content: "macOS" !important;
 }
 html[lang=en-US] .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-controls=Linux-tab]::after {
   content: "Linux Settings";
@@ -1671,16 +1671,16 @@ html[lang=hi] .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-co
   content: "गेम ओवरले";
 }
 .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-controls="Hypesquad Online-tab"]::after {
-  content: "HypeSquad";
+  content: "HypeSquad" !important;
 }
 html[lang=el] .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-controls="Hypesquad Online-tab"]::after {
-  content: "Ομάδα Δημοσιότητας HypeSquad";
+  content: "Ομάδα Δημοσιότητας HypeSquad" !important;
 }
 .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-controls=Experiments-tab]::after {
-  content: "Experiments";
+  content: "Experiments" !important;
 }
 .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-controls="Developer Options-tab"]::after {
-  content: "Developer Options";
+  content: "Developer Options" !important;
 }
 html[lang^=en-] .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ[aria-controls=OVERVIEW-tab]::after {
   content: "Overview";

@@ -1,21 +1,12 @@
 @import "../material/card";
 @import "../../config";
 
-// Powercord toasts
-.powercord-toast {
-	@include card(8);
-}
-.powercord-toast .header {
-	@include card(2, $background: false);
-}
-.powercord-toast .contents .inner {
-	@include card(1, $background: false);
-}
+$modal-height: 8;
 
 // Emoji popout
 .popoutContainer-1MXdqN,
 .emojiSection-3Fb9ix {
-	@include card(8);
+	@include card($modal-height);
 }
 
 // Upload modal
@@ -23,13 +14,13 @@
 	@include card(2);
 }
 .uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC, .footer-2gL1pp {
-	@include card(8);
+	@include card($modal-height);
 }
 
 // Generic Modal
 .root-1gCeng,
 .quickswitcher-3JagVE {
-	@include card(8);
+	@include card($modal-height);
 }
 // Screenshare cards
 .selectorButton-EEUWed,
@@ -61,10 +52,10 @@
 // Modal insert animation
 @if $animations {
 	.modal-3c3bKg {
-		animation: spawn-anim 0.2s ease-in-out;
+		animation: pixelcord-spawn-anim 0.2s ease-in-out;
 	}
 	.menu-3sdvDG {
-		animation: spawn-anim 0.2s ease-in-out;
+		animation: pixelcord-spawn-anim 0.2s ease-in-out;
 		transform-origin: center;
 		
 		&#message-actions {
@@ -207,10 +198,14 @@
 	@include card(2);
 }
 .inviteRow-2L02ae {
-	@include card(2);
+	@include card($modal-height);
 	transition: background-color	150ms ease-in-out,
 				box-shadow			150ms ease-in-out,;
 	&:hover {
 		@include card(4);
+	}
+	.theme-light &:not(:hover) {
+		box-shadow: none;
+		background-color: transparent;
 	}
 }

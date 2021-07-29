@@ -77,19 +77,6 @@ $normal: 4;
 	color: var(--accent);
 }
 
-// Powercord license thing
-.modal-yWgWj- {
-	@include card(4);
-}
-.powercord-product-license-modal-data.conditions span:before {
-	background-color: var(--accent) !important;
-}
-.powercord-product-license-modal-data.limitations span:before {
-	background-color: var(--danger) !important;
-}
-.powercord-product-license-modal-data.permissions span:before {
-	background-color: var(--online) !important;
-}
 .permissionCheckmark-1SeKr2 {
 	-webkit-mask: url(https://canary.discord.com/assets/718074e12775def7df7e2a01d6bf2bf8.svg) no-repeat;
 	background: var(--online);
@@ -128,4 +115,9 @@ $normal: 4;
 	& path[fill^="hsl(38,"] {
 		fill: var(--idle);
 	}
+}
+
+// Threads
+.box-J4N4jE {
+	@include card(4);
 }
