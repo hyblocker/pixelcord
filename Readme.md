@@ -1,8 +1,9 @@
-
 [![Pixelcord](https://github.com/hyblocker/pixelcord/blob/main/screenshots/logo.png?raw=true)](https://github.com/hyblocker/pixelcord/blob/main/screenshots/logo.png?raw=true)
 
 *A Discord theme that's based on Material Design!*
 *And features way too many animations!!!*
+
+*Supports* ***all*** *languages (excluding plugins)*
 
 ***Animations (Featuring Ripple)***
 
@@ -30,7 +31,25 @@
 
 This theme is best paired with the complementary plugin [Discord Theme Helper](https://github.com/hyblocker/discord-theme-helper). It allows the ripple effect to move with your mouse!
 
-This plugin is customisable. A lot can be changed via CSS variables (See index.css), but a sizable portion can be customisable at compile time (I use NodeSASS to compile this theme). A refactoring of the theme is planned sometime in the near future to get around this issue!
+This plugin is customisable. A lot can be changed via CSS variables (See `index.css`), but a sizable portion can be customisable at compile time (I use NodeSASS to compile this theme). A refactoring of the theme is planned sometime in the near future to get around this issue!
+
+### Modules
+
+| Name                              | Category     | Description                                                  | Enabled |
+| --------------------------------- | ------------ | ------------------------------------------------------------ | ------- |
+| Modal Blur                        | Enhancements | Blurs the black tinted background behind modals like image previews if enabled | ❎       |
+| Collapsing channels list          | Functions    | Channels list collapses and uncollapses on hover, giving you more room to read | ❎       |
+| Collapsing members list           | Functions    | Members list collapses and uncollapses on hover, giving you more room to read | ❎       |
+| macOS Buttons                     | Functions    | Replaces window buttons with macOS style buttons (Windows)   | ❎       |
+| Discolored                        | Add-Ons      | Colorize Discord's boring SVGs!                              | ✅       |
+| Google Emojis                     | Add-Ons      | Replaces default (Twemoji) emojis with Noto (Google) Emojis  | ✅       |
+| BadgesEverywhere (CORE)           | Add-Ons      | Required for Badges Everywhere                               | ✅       |
+| BadgesEverywhere - Colored Badges | Add-Ons      | Badges Everywhere (Colorful)                                 | ✅       |
+| BadgesEverywhere - White Badges   | Add-Ons      | Badges Everywhere (White)                                    | ❎       |
+
+### Variables
+
+See `index.css`
 
 ## Installation for Powercord
 
@@ -46,6 +65,10 @@ cd powercord/src/Powercord/themes && git clone https://github.com/hyblocker/pixe
 
 Install `Pixelcord` from the Goosemod theme store
 
+## Installation for BetterDiscord
+
+Install the `Pixelcord.theme.css` file into your themes folder.
+
 ## Issues / Bugs
 
 Please submit any bugs on GitHub or on Discord (ping me)
@@ -57,3 +80,4 @@ Modify the manifests to point to `dist.css` instead of `index.css`
 ## License
 
 This plugin is licensed under GPL-2
+
