@@ -3,10 +3,10 @@ $transition_duration: 0.2s;
 
 .membersWrap-2h-GB4 {
 	min-width: 25px;
-	width: 25px;
+	width: 25px !important;
 	// Actual container
 	& .members-1998pB {
-		width: 1px;
+		width: 1px !important;
 		& .member-3-YXUe {
 			opacity: 0;
 		}
@@ -16,9 +16,9 @@ $transition_duration: 0.2s;
 	}
 
 	&:hover {
-		width: 240px;
+		width: var(--members-width) !important;
 		.members-1998pB {
-			width: 240px;
+			width: var(--members-width) !important;
 			& .member-3-YXUe {
 				opacity: 1;
 			}

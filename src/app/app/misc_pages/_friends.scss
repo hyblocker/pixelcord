@@ -45,3 +45,7 @@
 .peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
 	@include card(8);
 }
+// Accept fr
+.actionButton-uPB8Fs.actionAccept-LV-szU:hover {
+	color: var(--online);
+}

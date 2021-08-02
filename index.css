@@ -58,6 +58,7 @@ html.newBrand,
   --settings-list-width: 316px;
   --settings-padding: 8px;
   --settings-header-height: 84px;
+  --members-width: 240px;
   --mouseX: 0px;
   --mouseY: 0px;
 }
@@ -124,4 +125,8 @@ html.newBrand,
   --dnd: var(--danger);
   --stream: #9176c1;
   --offline: #868d96;
+}
+
+:root {
+  --chip-height: 24px;
 }

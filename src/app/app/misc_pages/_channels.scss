@@ -23,13 +23,11 @@ $header-height: 6;
 	width: 100%;
 	padding-top: 56.25%;
 	height: 0;
-	//height: calc(0.5625 * var(--channels-width));
 }
 .scroller-1JbKMe, .scroller-RmtA4e {
 	& .content-3YMskv div[style*="height: 84px"]:first-child {
 		height: 0 !important;
 		padding-top: calc(56.25% - 51px);
-		//height: calc(0.5625 * var(--channels-width) - 51px) !important;
 	}
 }
 .container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw {
@@ -39,4 +37,15 @@ $header-height: 6;
 // Fix shitty bug with scrolling
 .scrolling-1Cdwk- .content-3YMskv {
 	pointer-events: all;
+}
+
+// Members list
+.membersWrap-2h-GB4 {
+    width: var(--members-width);
+}
+.members-1998pB {
+	width: var(--members-width);
+}
+.member-3-YXUe {
+	max-width: var(--members-width);
 }

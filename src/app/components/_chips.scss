@@ -1,26 +1,22 @@
 .botTagRegular-2HEhHi,
-.akaBadge-1M-1Gw,
 .role-2irmRk,
 .role-1P70N6,
-.botTagRegular-2HEhHi,
-.akaBadge-1M-1Gw, .role-2irmRk {
+.akaBadge-1M-1Gw {
 	background: var(--chip);
 	color: var(--chip-text);
 	border: none;
 	z-index: 1;
 }
 .px-10SIf7.botTag-2WPJ74,
-.akaBadge-1M-1Gw,
 .role-2irmRk,
-.px-10SIf7.botTag-2WPJ74,
 .role-1P70N6,
 .botTagRegular-2HEhHi,
-.akaBadge-1M-1Gw, .role-2irmRk
+.akaBadge-1M-1Gw
 {
-	height: 24px;
-	line-height: 24px;
-	border-radius: 12px;
-	padding: 0 12px;
+	height: var(--chip-height);
+	line-height: var(--chip-height);
+	border-radius: calc(var(--chip-height) * 0.5);
+	padding: 0 calc(var(--chip-height) * 0.5);
 
 	.nameAndDecorators-5FJ2dg & {
 		height: .9375rem;
@@ -34,18 +30,31 @@
 	line-height: .9375rem;
 	border-radius: .46875rem;
 	padding: 0 .46875rem;
+
+	// only if we are in a header
+	.headerText-3Uvj1Y & {
+		height: var(--chip-height);
+		line-height: var(--chip-height);
+		border-radius: calc(var(--chip-height) * 0.5);
+		padding: 0 calc(var(--chip-height) * 0.5);
+	}
+}
+.username-1A8OIy:not(:only-child) {
+	height: var(--chip-height);
+	display: inline-block;
+    line-height: var(--chip-height);
 }
 .roleColor-fHISxl,
 .roleCircle-3xAZ1j {
 	overflow: visible;
-	width: 24px;
-	height: 24px;
-	margin-left: -12px;
+	width: var(--chip-height);
+	height: var(--chip-height);
+	margin-left: calc(var(--chip-height) * -0.5);;
 }
 .roleRemoveIcon-2-TeGW
 {
-	width: 24px;
-	height: 24px;
+	width: var(--chip-height);
+	height: var(--chip-height);
 	display: block;
 	opacity: 0;
 	cursor: pointer;
