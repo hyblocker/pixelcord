@@ -7,3 +7,17 @@
 	border-color: transparent;
 	@include card(6);
 }
+.notice-18685F {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}
+.button-2TV-eO:hover {
+	background-color: var(--accent-highlight);
+	color: var(--accent-text);
+}
+.item-2J2GlB[aria-disabled="false"] {
+	cursor: pointer;
+	& .checkboxWrapper-SkhIWG {
+		cursor: pointer;
+	}
+}

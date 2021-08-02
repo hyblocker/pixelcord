@@ -1,15 +1,12 @@
 @import "../config";
 
-@if $animate_badges {
-	:root{
-		--badge-size: 22px; //discord defualt = 18px, theme defualt = 22px;
-		--badge-margin: 1.5px; //discord default = 2px, theme defualt = 1.5px
-		--badges-everywhere-size:16px; //defualt = 16px
-	}
-
-	//@import url(https://mr-miner1.github.io/Better-Badges/src/BadgesEverywhere.css);
-	//@import url(https://mr-miner1.github.io/Better-Badges/src/coloredbadges.css);
+:root{
+	--badge-size: 22px; //discord defualt = 18px, theme defualt = 22px;
+	--badge-margin: 1.5px; //discord default = 2px, theme defualt = 1.5px
+	--badges-everywhere-size:15px; //defualt = 15px
 }
-@if $white-badges {
-	//@import url(https://mr-miner1.github.io/Better-Badges/src/whitebadges.css);
+
+.userPopout-xaxa6l[aria-label="mr_miner"] .headerText-1vVs-U::after {
+	font-family: var(--font-header);
+	font-weight: var(--subtitle-weight);
 }

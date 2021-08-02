@@ -35,17 +35,16 @@ This plugin is customisable. A lot can be changed via CSS variables (See `index.
 
 ### Modules
 
-| Name                              | Category     | Description                                                  | Enabled |
-| --------------------------------- | ------------ | ------------------------------------------------------------ | ------- |
-| Modal Blur                        | Enhancements | Blurs the black tinted background behind modals like image previews if enabled | ❎       |
-| Collapsing channels list          | Functions    | Channels list collapses and uncollapses on hover, giving you more room to read | ❎       |
-| Collapsing members list           | Functions    | Members list collapses and uncollapses on hover, giving you more room to read | ❎       |
-| macOS Buttons                     | Functions    | Replaces window buttons with macOS style buttons (Windows)   | ❎       |
-| Discolored                        | Add-Ons      | Colorize Discord's boring SVGs!                              | ✅       |
-| Google Emojis                     | Add-Ons      | Replaces default (Twemoji) emojis with Noto (Google) Emojis  | ✅       |
-| BadgesEverywhere (CORE)           | Add-Ons      | Required for Badges Everywhere                               | ✅       |
-| BadgesEverywhere - Colored Badges | Add-Ons      | Badges Everywhere (Colorful)                                 | ✅       |
-| BadgesEverywhere - White Badges   | Add-Ons      | Badges Everywhere (White)                                    | ❎       |
+| Name                           | Category     | Description                                                  | Enabled |
+| ------------------------------ | ------------ | ------------------------------------------------------------ | ------- |
+| Modal Blur                     | Enhancements | Blurs the black tinted background behind modals like image previews if enabled | ❎       |
+| Collapsing channels list       | Functions    | Channels list collapses and uncollapses on hover, giving you more room to read | ❎       |
+| Collapsing members list        | Functions    | Members list collapses and uncollapses on hover, giving you more room to read | ❎       |
+| macOS Buttons                  | Functions    | Replaces window buttons with macOS style buttons (Windows)   | ❎       |
+| Discolored                     | Add-Ons      | Colorize Discord's boring SVGs!                              | ✅       |
+| Google Emojis                  | Add-Ons      | Replaces default (Twemoji) emojis with Noto (Google) Emojis  | ✅       |
+| Better Badges - Colored Badges | Add-Ons      | Better Badges (Colorful)                                     | ✅       |
+| Better Badges - White Badges   | Add-Ons      | Better Badges (White)                                        | ❎       |
 
 ### Variables
 
@@ -71,7 +70,7 @@ Install the `Pixelcord.theme.css` file into your themes folder.
 
 ## Issues / Bugs
 
-Please submit any bugs on GitHub or on Discord (ping me)
+Please submit any bugs on GitHub or [in the support server](https://discord.gg/pSAfU6enyH)
 
 ## Locally building
 

@@ -235,6 +235,9 @@ $animtime: 0.34s;
 .baseLayer-35bLyl.animating-rRxada,
 .baseLayer-35bLyl.stop-animations {
 	transform: scale(1) !important;
+	&:only-child {
+		opacity: 1 !important;
+	}
 }
 .layers-3iHuyZ>.layer-3QrUeG.animating-rRxada *,
 .layers-3iHuyZ>.layer-3QrUeG.animating-rRxada {

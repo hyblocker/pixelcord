@@ -16,12 +16,10 @@
 @import url(https://nyri4.github.io/Discolored/main.css);
 /* Add-Ons | Google Emojis */
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css);
-/* Add-Ons | BadgesEverywhere (CORE) - Add animated badges everywhere */
-@import url(https://mr-miner1.github.io/Better-Badges/src/BadgesEverywhere.css);
 /* Add-Ons | BadgesEverywhere - Colored Badges */
-@import url(https://mr-miner1.github.io/Better-Badges/src/coloredbadges.css);
+@import url(https://mr-miner1.github.io/Better-Badges/src/badges.css);
 /* Add-Ons | BadgesEverywhere - White Badges */
-/* @import url(https://mr-miner1.github.io/Better-Badges/src/whitebadges/whitebadges.css); */
+/* @import url(https://mr-miner1.github.io/Better-Badges/src/whitebadges.css); */
 /*
     DO NOT REMOVE
 */

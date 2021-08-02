@@ -29,3 +29,53 @@
 .perk-2WeBWW {
 	@include card(4);
 }
+.planOptionDiscount-cS8uaO {
+	background-color: var(--online);
+}
+
+// Boosts menu
+.tierMarkerBackground-3q29am, // The boost icons have a funny circle near them
+.perksModal-fSYqOq {
+	.theme-light & {
+		background-color: cardbg(0, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(0, true);
+	}
+}
+.ctaBar-2UsjF2 {
+	@include card(4);
+}
+
+// Become modal
+.root-3R2ngo {
+	border-radius: 8px;
+	transform: unset;
+	&::before {
+		content: "";
+		position: fixed;
+		background-color: black;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		opacity: 0.85;
+		pointer-events: none;
+		-webkit-app-region: none;
+	}
+	& .perksModal-fSYqOq {
+		width: 960px;
+		height: 80vh;
+		left: calc(50% - 480px);
+		top: 10%;
+	}
+	& .closeIcon-3_iQ6l {
+		right: calc(100% + 64px);
+	}
+	& .closeContent-I3JbQJ {
+		top: calc(10% + 32px);
+	}
+	& .carousel-18mXWH {
+		left: 24px !important;
+	}
+}

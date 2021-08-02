@@ -121,3 +121,20 @@ $normal: 4;
 .box-J4N4jE {
 	@include card(4);
 }
+
+// Guilds
+.deny-3nAuT6 {
+	color: var(--danger);
+	&.selected-2YhbGh {
+		background-color: var(--danger);
+	}
+}
+.allow-1PzSY3 {
+	color: var(--online);
+	&.selected-2YhbGh {
+		background-color: var(--online);
+	}
+}
+.item-1yAxl1 {
+	cursor: pointer;
+}

@@ -126,6 +126,19 @@
 	}
 }
 
+// Stick bottom thing
+.container-NdaZbY {
+	position: sticky;
+	bottom: 0;
+	z-index: 2;
+	.theme-light & {
+		background-color: cardbg(8, false);
+	}
+	.theme-dark & {
+		background-color: cardbg(8, true);
+	}
+}
+
 // Center the search spinner because of my OCD
 $spinner-size: 48px;
 
