@@ -32,14 +32,14 @@
 	padding: 0 .46875rem;
 
 	// only if we are in a header
-	.headerText-3Uvj1Y & {
+	.cozy-3raOZG .headerText-3Uvj1Y & {
 		height: var(--chip-height);
 		line-height: var(--chip-height);
 		border-radius: calc(var(--chip-height) * 0.5);
 		padding: 0 calc(var(--chip-height) * 0.5);
 	}
 }
-.username-1A8OIy:not(:only-child) {
+.cozy-3raOZG .username-1A8OIy:not(:only-child) {
 	height: var(--chip-height);
 	display: inline-block;
     line-height: var(--chip-height);

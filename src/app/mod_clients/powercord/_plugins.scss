@@ -1,4 +1,15 @@
+// Unread badges
+
+// fix the badge color using ping color for unread msgs
 .ucbadge.numberBadge-2s8kKX {
 	background-color: var(--accent) !important;
 	margin-left: 6px;
+}
+
+// Shiki Codeblocks
+
+// disable selection
+.vpc-shiki-lang,
+.vpc-shiki-btns {
+	user-select: none;
 }

@@ -1,7 +1,7 @@
 /**
  * @name Pixelcord
  * @author Hyblocker
- * @version 3.2.5
+ * @version 3.2.7
  * @description Material Design Theme with numerous enhancements for Discord
  * @source https://github.com/hyblocker/pixelcord
  * @updateUrl https://raw.githubusercontent.com/hyblocker/pixelcord/main/Pixelcord.theme.css
@@ -66,6 +66,7 @@ html.newBrand,
   --settings-list-width: 316px;
   --settings-padding: 8px;
   --settings-header-height: 84px;
+  --members-width: 240px;
   --mouseX: 0px;
   --mouseY: 0px;
 }
@@ -132,4 +133,8 @@ html.newBrand,
   --dnd: var(--danger);
   --stream: #9176c1;
   --offline: #868d96;
+}
+
+:root {
+  --chip-height: 24px;
 }
