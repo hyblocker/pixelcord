@@ -1,3 +1,19 @@
+// Topbar
+.typeMacOS-3EmCyP,
+.bg-h5JY_x {
+	// normal: depth of 6
+	.theme-light & {
+		background-color: cardbg($header-height, false);
+	}
+	.theme-dark & {
+		background-color: cardbg($header-height, true);
+	}
+}
+// Fix clipping so that transitions work better :decrement
+.layers-3iHuyZ {
+	overflow: visible;
+}
+
 // Sidebar extend to window top
 .layer-3QrUeG.baseLayer-35bLyl:not(.stop-animations):not(.animating-rRxada) {
 	& .sidebar-2K8pFh.theme-dark {
@@ -17,7 +33,6 @@
 		}
 	}
 }
-
 
 .wordmarkWindows-1v0lYD {
 	color: var(--logo-color);
@@ -42,4 +57,7 @@ path[d="M14.7489 7.07812C13.97 7.41719 12.9986 7.42635 12.2014 7.07812V11.7792H1
 }
 
 // In settings we want to make the windows icons brighter
-// TODO:
+.winButton-iRh8-Z {
+	color: white;
+	filter: contrast(1);
+}

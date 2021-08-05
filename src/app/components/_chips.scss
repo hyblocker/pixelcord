@@ -77,3 +77,10 @@
 .role-3UN8jj:hover {
 	background: var(--chip);
 }
+.addButton-pcyyf6 {
+	background-color: transparent;
+	color: var(--chip);
+	&:hover {
+		color: var(--chip-active);
+	}
+}

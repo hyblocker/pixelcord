@@ -3,6 +3,8 @@
 */
 /* Enhancements | Modal Blur - Blurs the black tinted background behind modals like image previews if enabled */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/enhancements/background_blur.css); */
+/* Enhancements | Rounded Corners - Adds rounded corners to the Discord window (assuming either Glasscord or Acryllic are present) */
+/* @import url(https://hyblocker.github.io/pixelcord/modules/enhancements/rounded_corners.css); */
 /* Functions | Collapsing channels list - Channels list collapses and uncollapses on hover, giving you more room to read */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/functions/hover_channels.css); */
 /* Functions | Collapsing members list - Members list collapses and uncollapses on hover, giving you more room to read */
@@ -30,6 +32,8 @@
 [data-popout-root].newBrand,
 html.newBrand,
 :root {
+  /* Rounded corners required for this setting to have effect */
+  --window-roundedness: 12px;
   --snackbar-bg: #333;
   --snackbar-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
   --snackbar-radius: 4px;
@@ -71,7 +75,7 @@ html.newBrand,
   --text-semidark: rgb(149, 149, 149);
   --baseline: #f8f9fa;
   --chip: #D7D7D7;
-  --chip-active: #D7D7D7;
+  --chip-active: #c7c7c7;
   --chip-text: #363536;
   --navdrawer-color: white;
   --navdrawer-hover: rgba(0, 0, 0, 0.05);
@@ -103,7 +107,7 @@ html.newBrand,
   --accent-text: white;
   --baseline: #272a2b;
   --chip: #595A5E;
-  --chip-active: #595A5E;
+  --chip-active: #737479;
   --chip-text: white;
   --navdrawer-color: #222222;
   --navdrawer-hover: rgba(255, 255, 255, 0.05);
@@ -129,4 +133,9 @@ html.newBrand,
 
 :root {
   --chip-height: 24px;
+}
+
+:root {
+  --verzjoni_0: none;
+  --verzjoni_1: none;
 }

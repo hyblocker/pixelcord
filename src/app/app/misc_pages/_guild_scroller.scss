@@ -27,29 +27,6 @@ $header-height: 6;
 		inset 2px -1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
-
-// Topbar
-.bg-h5JY_x {
-	// normal: depth of 6
-	.theme-light & {
-		background-color: cardbg($header-height, false);
-	}
-	.theme-dark & {
-		background-color: cardbg($header-height, true);
-	}
-
-	// in settings: depth of 0
-	div[style="position: fixed; opacity: 0; pointer-events: none;"][tabindex="0"] ~ .app-1q1i1E & {
-		
-		.theme-light & {
-			background-color: cardbg(0, false);
-		}
-		.theme-dark & {
-			background-color: cardbg(0, true);
-		}
-	}
-}
-
 .guildSeparator-33mFX6 {
 	background-color: var(--navdrawer-separator);
 }

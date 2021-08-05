@@ -1,0 +1,46 @@
+@import "../../src/app/material/card";
+
+:root {
+	// Actual window radius
+	--window-roundedness: 12px;
+	
+	// Glasscord
+	--glasscord-win-blur: transparent;
+	--glasscord-blur-corner-radius: var(--window-roundedness);
+	--glasscord-titlebar: native;
+}
+
+// Acryllic
+.theme-light .titleBar-AC4pGV {
+	background-color: cardbg(6, false);
+}
+.theme-dark .titleBar-AC4pGV {
+	background-color: cardbg(6, true);
+}
+
+// Removed rounded corners if we are maximized
+// Powercord exclusive feature
+.maximized {
+	--window-roundedness: 0;
+}
+html,
+body,
+#app-mount {
+    background-color: transparent !important;
+}
+body,
+#app-mount,
+.bg-h5JY_x,
+.backdrop-1wrmKB,
+.backdropWithLayer-3_uhz4 {
+    border-radius: var(--window-roundedness);
+	transition: border-radius 150ms ease-in-out;
+}
+.sidebarRegion-VFTUkN::before,
+.sidebarRegionScroller-3MXcoP::before {
+    border-top-left-radius: var(--window-roundedness);
+	transition: border-top-left-radius 150ms ease-in-out;
+}
+.sidebarRegionScroller-3MXcoP::before {
+    border-top-right-radius: var(--window-roundedness);
+}

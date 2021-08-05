@@ -4,11 +4,11 @@ echo -e "Version to bump to:"
 read versione
 
 # Check if we're on DEV
-nomeDellaDirectory=${PWD##*/}
+nomeDellaCartella=${PWD##*/}
 nomeDellaTema="Pixelcord"
 filePtr="index.css"
 
-if [ "$nomeDellaDirectory" = "PixelCord - Release" ]
+if [ "$nomeDellaCartella" = "PixelCord - Release" ]
 then
 nomeDellaTema="Pixelcord"
 filePtr="index.css"

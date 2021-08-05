@@ -1,0 +1,7 @@
+@import "../../constants";
+
+:root {
+	@for $i from 0 through $current_version {
+		--verzjoni_#{$i}: none;
+	}
+}

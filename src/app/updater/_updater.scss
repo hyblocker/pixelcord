@@ -1,0 +1,20 @@
+@import "../../constants";
+/*
+
+:root {
+	--verzjoni_#{$current_version}: none;
+}
+
+//body:not(.powercord) 
+.app-2rEoOp::before {
+	content: "Your version of Pixelcord is outdated. Please download the newest version from: https://betterdiscord.app/theme/Pixelcord";
+	display: var(--verzjoni_#{$current_version}, block);
+	background-color: var(--accent);
+	color: var(--accent-text);
+	font-size: 14px;
+	line-height: 36px;
+	font-weight: 500;
+	text-align: center;
+	z-index: 101;
+}
+*/

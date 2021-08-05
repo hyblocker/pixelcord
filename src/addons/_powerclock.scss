@@ -21,7 +21,7 @@ $header-height: 6;
 
 @if $powerclock_in_titlebar {
 	.platform-web,
-	.platform-mac,
+	.platform-osx,
 	.platform-win {
 		& .powerclock:not(.sticky){
 			position: fixed;
@@ -64,9 +64,6 @@ $header-height: 6;
 		html:not(&) .layer-3QrUeG:last-child:not(:first-child){
 			will-change: unset;
 			z-index: 100;
-		}
-		html:not(&) .toolbar-1t6TWx {
-		  margin-right: 64px;
 		}
 	}
 }
