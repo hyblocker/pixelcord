@@ -1,11 +1,26 @@
 // Topbar
-.typeMacOS-3EmCyP,
 .bg-h5JY_x {
 	// normal: depth of 6
 	.theme-light & {
 		background-color: cardbg($header-height, false);
 	}
 	.theme-dark & {
+		background-color: cardbg($header-height, true);
+	}
+}
+// Fix the macOS bar thing being fucked
+.guilds-1SWlCJ {
+	.platform-osx &::before {
+		content: "";
+		height: 32px;
+		width: 72px;
+		position: absolute;
+	}
+	// normal: depth of 6
+	.theme-light.platform-osx & {
+		background-color: cardbg($header-height, false);
+	}
+	.theme-dark.platform-osx & {
 		background-color: cardbg($header-height, true);
 	}
 }
