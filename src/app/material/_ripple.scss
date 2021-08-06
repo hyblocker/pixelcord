@@ -28,13 +28,13 @@
 			height: $height;
 			@if ($pos == true)
 			{
-				top: calc(#{$top} + var(--mouseY));
-				#{$leftname}: calc(#{$left} + var(--mouseX));
+				top: calc(#{$top} + var(--clickY));
+				#{$leftname}: calc(#{$left} + var(--clickX));
 			}
 			@else
 			{
-				margin-top: calc(#{$top} + var(--mouseY));
-				margin-left: calc(#{$left} + var(--mouseX));
+				margin-top: calc(#{$top} + var(--clickY));
+				margin-left: calc(#{$left} + var(--clickX));
 			}
 			transform: scale($ripple-size);
 			background: radial-gradient(circle at center, $ripple-col 24%, transparent 25%, transparent 100%);
@@ -68,7 +68,7 @@
 				opacity 0.6s $animation-curve-linear-out-slow-in;
 			opacity: 0;
 			background-size: (100%*$ripple-size);
-			background-image: radial-gradient(circle at calc(var(--mouseX) + 50%) calc(var(--mouseY) + 50%), $ripple-col 24%, transparent 25%, transparent 100%);
+			background-image: radial-gradient(circle at calc(var(--clickX) + 50%) calc(var(--clickY) + 50%), $ripple-col 24%, transparent 25%, transparent 100%);
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
 			background-attachment: local;

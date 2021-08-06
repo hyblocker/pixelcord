@@ -39,3 +39,14 @@
 	--interactive-normal: var(--faded-text-interactive-normal);
 	--accent: var(--accento);
 }
+
+[data-popout-root].newBrand, html.newBrand, :root {
+
+	// Ripple things
+	// Live mouse position
+	--mouseX: 0px;
+	--mouseY: 0px;
+	// Click position
+    --clickX: 0px;
+    --clickY: 0px;
+}
