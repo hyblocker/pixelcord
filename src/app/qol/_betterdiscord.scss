@@ -92,3 +92,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
         display: none;
     }
 }
+
+// dont click replies (helps when italics / bold)
+.repliedTextContent-1R3vnK {
+    padding-right: 1px;
+}

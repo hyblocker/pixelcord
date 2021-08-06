@@ -73,4 +73,10 @@ $width: 32px;
             }
         }
     }
+
+    // Fix VC icons being misaligned
+    .actions-aUdUfC,
+    .connection-3KRENF {
+        margin-right: var(--settings-padding);
+    }
 }

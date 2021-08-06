@@ -12,6 +12,10 @@ $header-height: 6;
 	width: var(--channels-width);
 	max-width: max(50vw, #{$min-width});
 	min-width: $min-width;
+	&.hidden-3iamF5 {
+		min-width: unset;
+		max-width: unset;
+	}
 }
 .scroller-1JbKMe, .privateChannels-1nO12o {
 	background-color: var(--navdrawer-color);
