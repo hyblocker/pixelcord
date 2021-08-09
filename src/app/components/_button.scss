@@ -6,12 +6,12 @@
 	@include ripple;
 	&.lookFilled-1Gx00P {
 		&.colorBrand-3pXr91, &.colorBrand-3pXr91:hover {
-			color: white;
+			color: var(--accent-text);
 			background-color: var(--accent);
 			@include ripple(var(--accent-highlight));
 		}
 		&.colorBrand-3pXr91:active {
-			background-color: var(--accent);
+			background-color: var(--accent-highlight);
 		}
 	}
 	@include card(1, $background: false);

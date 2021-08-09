@@ -180,7 +180,8 @@ $spinner-size: 48px;
 	@include card(2);
 }
 
+// TODO: use card vars
 .option-96V44q.selected-rZcOL-:after {
-	background: -webkit-gradient(linear,left top,right top,from(rgba(246,246,247,0)),color-stop(50%,rgb(246, 246, 247)));
-	background: linear-gradient(90deg,rgba(246,246,247,0),rgb(246, 246, 247) 50%);
+	//background: -webkit-gradient(linear,left top,right top,from(rgba(246,246,247,0)),color-stop(50%,rgb(246, 246, 247)));
+	//background: linear-gradient(90deg,rgba(246,246,247,0),rgb(246, 246, 247) 50%);
 }

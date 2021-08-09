@@ -1,0 +1,25 @@
+@import "../../material/card";
+
+.scroller-1-nKid {
+	@include card(4);
+	overflow: visible;
+}
+.reactionSelected-1pqISm {
+	@include card(2);
+	overflow: visible;
+}
+// make them selectable
+.reactionDefault-GBA58K, .reactionSelected-1pqISm {
+	-webkit-app-region: none;
+}
+// disable selections of the full user name
+.tagFaded-WP86yt {
+	user-select: none;
+}
+.container-1If-HZ,
+.reactors-Blmlhw {
+	.theme-light &,
+	.theme-dark & {
+		background: none;
+	}
+}
