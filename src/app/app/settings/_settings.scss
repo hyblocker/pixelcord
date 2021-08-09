@@ -51,12 +51,7 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 	width: calc(var(--settings-list-width) + 36px);
     max-width: calc(var(--settings-list-width) + 36px);
 	
-	.theme-light & {
-		background-color: cardbg(8, false);
-	}
-	.theme-dark & {
-		background-color: cardbg(8, true);
-	}
+	@include card(8);
 }
 
 .contentRegionScroller-26nc1e,
