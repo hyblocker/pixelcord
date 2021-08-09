@@ -49,7 +49,6 @@
 
 // Become modal
 .root-3R2ngo {
-	border-radius: 8px;
 	transform: unset;
 	&::before {
 		content: "";
@@ -68,6 +67,7 @@
 		height: 80vh;
 		left: calc(50% - 480px);
 		top: 10%;
+		border-radius: 8px;
 	}
 	& .closeIcon-3_iQ6l {
 		right: calc(100% + 64px);
@@ -78,4 +78,16 @@
 	& .carousel-18mXWH {
 		left: 24px !important;
 	}
+	& .closeButton-1tv5uR path {
+		fill: var(--interactive-normal) !important;
+		&:hover {
+			fill: var(--interactive-hover) !important;
+		}
+	}
+}
+
+// boost icon fucked
+.bannerVisible-2ZE_qG .iconTierOne-s_oiRb,
+.bannerVisible-2ZE_qG .iconTierTwo-1JOWNK {
+	color: rgb(255, 115, 250);
 }
