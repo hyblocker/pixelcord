@@ -115,3 +115,11 @@ $connected-account-height: 4;
 		height: 52px;
 	}
 }
+
+// Improve connected accounts' contrast with recolored badges
+.connectedAccountName-E1KzaT,
+.connectedAccountNameInner-2q3MVf {
+	& .childContainer-1wxZNh path {
+		fill: var(--accent-text) !important;
+	}
+}

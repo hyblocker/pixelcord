@@ -160,3 +160,8 @@ $header-height: 6;
 .replyAvatar-1K9Wmr {
 	cursor: pointer;
 }
+
+// fix draggable titlebar not letting you click long channel descriptions to view more
+.topic-TCb_qw.expandable-9fI_e3 {
+	-webkit-app-region: none;
+}

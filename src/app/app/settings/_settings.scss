@@ -427,9 +427,24 @@ $animtime: 0.34s;
 
 	&::after {
 		// TODO: Arrow TOOLTIP
+		content: "";
+		border-top-color: var(--tooltip-bg);	
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-top-width: 5px;
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		pointer-events: none;
+		transition: $settings-transition;
 	}
 
 	&::before {
+		content: "Back";
 		visibility: visible;
 		position: relative;
 		top: 8px; // Space
@@ -442,9 +457,9 @@ $animtime: 0.34s;
 		font-size: 13px;
 		color: var(--tooltip-text);
 		transition: $settings-transition;
+		pointer-events: none;
 
 		// Tooltip text
-		html[lang^=en-] & { content: "Back"; }
 		html[lang=zh-CN] & { content: "后退"; }
 		html[lang=zh-TW] & { content: "返回"; }
 		html[lang=cs] & { content: "Zpět"; }

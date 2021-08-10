@@ -120,8 +120,17 @@ $min-thread-panel-width: 400px;
 // make replies a pill
 .replyBar-1YLQ2F {
 	border-radius: 17px;
+	@include card(2);
 }
 .attachedBars-tZDmyV {
 	background-color: transparent;
 	padding-bottom: 0.25rem;
+}
+.clipContainer-eeROt0 {
+	overflow: visible;
+}
+
+// Skin popout
+.popout-APcvZm {
+	@include card(4);
 }

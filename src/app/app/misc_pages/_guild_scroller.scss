@@ -12,13 +12,16 @@ $header-height: 6;
 		background-color: cardbg($header-height, true);
 	}
 }
-.scroller-1JbKMe, .scroller-RmtA4e {
+.scroller-1JbKMe, .scroller-RmtA4e, .channelNotice-1-XFjC {
 	// inset ofset box shadow for depth 2
 	.theme-light & {
 		box-shadow: inset 2px 3px 1px -2px rgba(0, 0, 0, 0.2),
 					inset 2px 2px 2px 0px rgba(0, 0, 0, 0.14),
 					inset 2px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	}
+}
+.channelNotice-1-XFjC {
+	border-right: 1px solid var(--navdrawer-separator);
 }
 .hasBanner-2SrLR3 ~ .scroller-RmtA4e{
 	box-shadow:
