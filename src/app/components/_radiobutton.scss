@@ -3,7 +3,7 @@
 }
 div[role="radiogroup"]
 {
-	& .item-26Dhrx[aria-checked=true]  {
+	& .item-26Dhrx[aria-checked=true] {
 		& .radioBar-bMNUI- > div:first-child {
 			position: relative;
 			&::after {
@@ -14,19 +14,24 @@ div[role="radiogroup"]
 			color: var(--accent);
 		}
 	}
-	& .item-26Dhrx
-	{
+	& .item-26Dhrx {
+
 		margin-bottom: 0;
 		position: relative;
 
 		& .radioBar-bMNUI- > div:first-child {
+
 			position: relative;
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+
 			&::after {
 				display: inline-block;
 				position: absolute;
 				content: '';
 				left: calc(50% - 5px);
-				top: calc(50% - 6px);
+				top: calc(50% - 5px);
 				width: 10px;
 				height: 10px;
 				background-color: var(--accent);
