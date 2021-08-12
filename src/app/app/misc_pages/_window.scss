@@ -74,8 +74,8 @@ path[d="M14.7489 7.07812C13.97 7.41719 12.9986 7.42635 12.2014 7.07812V11.7792H1
 // In settings we want to make the windows icons brighter
 .winButton-iRh8-Z {
 	color: var(--logo-color);
-	//color: transparent;
-	//filter: contrast(100);
 	filter: grayscale(1) contrast(9);
-	//mix-blend-mode: difference;
+}
+.winButtonClose-1HsbF- {
+	filter: none;
 }

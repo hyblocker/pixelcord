@@ -4,8 +4,11 @@
 div[role="radiogroup"]
 {
 	& .item-26Dhrx[aria-checked=true]  {
-		&::after {
-			transform: scale(1);
+		& .radioBar-bMNUI- > div:first-child {
+			position: relative;
+			&::after {
+				transform: scale(1);
+			}
 		}
 		& .radioBar-bMNUI- svg {
 			color: var(--accent);
@@ -16,21 +19,24 @@ div[role="radiogroup"]
 		margin-bottom: 0;
 		position: relative;
 
-		&::after {
-			display: inline-block;
-    		position: absolute;
-			content: '';
-			left: 17px;
-			top: calc(50% - 5px);
-			width: 10px;
-			height: 10px;
-			background-color: var(--accent);
-			border-radius: 50%;
-			transform: scale(0);
-			transition-duration: .28s;
-			transition-timing-function: cubic-bezier(.4,0,.2,1);
-			transition-property: transform;
-			transition-property: transform,-webkit-transform;
+		& .radioBar-bMNUI- > div:first-child {
+			position: relative;
+			&::after {
+				display: inline-block;
+				position: absolute;
+				content: '';
+				left: calc(50% - 5px);
+				top: calc(50% - 6px);
+				width: 10px;
+				height: 10px;
+				background-color: var(--accent);
+				border-radius: 50%;
+				transform: scale(0);
+				transition-duration: .28s;
+				transition-timing-function: cubic-bezier(.4,0,.2,1);
+				transition-property: transform;
+				transition-property: transform,-webkit-transform;
+			}
 		}
 
 		& .radioBar-bMNUI- {
