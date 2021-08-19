@@ -10,17 +10,6 @@ $height: 8;
 	}
 }
 
-.wrapper-1F5TKx,
-.wrapper-3vR61M
-{
-	.theme-dark & {
-		background-color: cardbg(0, true);
-	}
-	.theme-light & {
-		background-color: cardbg(0, false);
-	}
-}
-
 .panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5 {
 	.theme-light & {
 		background-color: cardbg($height, false);

@@ -1,1 +1,78 @@
-.sidebar-2K8pFh{transition:.2s ease .175s;width:0px;min-width:0px;resize:none}.sidebar-2K8pFh .container-1giJp5,.sidebar-2K8pFh .panel-24C3ux{padding:0;transition:.2s ease .175s}.sidebar-2K8pFh .button-14-BFJ,.sidebar-2K8pFh .badge-1JXQev{width:0;transition:.2s ease .175s}.sidebar-2K8pFh .searchBar-6Kv8R2,.sidebar-2K8pFh .badge-1JXQev{padding:0;transition:.2s ease .175s}.sidebar-2K8pFh .button-38aScr{padding:0;transition:.2s ease .175s}.sidebar-2K8pFh .icon-3Oovq9{opacity:0;transition:.2s ease-in-out .175s}.sidebar-2K8pFh .container-3baos1 .button-38aScr,.sidebar-2K8pFh .container-3baos1 .button-14-BFJ{padding:unset;width:32px}.sidebar-2K8pFh .container-3baos1>.flex-1xMQg5{opacity:0;pointer-events:none;transition:.2s ease-in-out .175s}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh,.sidebar-2K8pFh:hover{width:var(--channels-width)}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .container-1giJp5,.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .panel-24C3ux,.sidebar-2K8pFh:hover .container-1giJp5,.sidebar-2K8pFh:hover .panel-24C3ux{padding:8px}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .button-14-BFJ,.sidebar-2K8pFh:hover .button-14-BFJ{width:32px}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .searchBar-6Kv8R2,.sidebar-2K8pFh:hover .searchBar-6Kv8R2{padding:0 10px}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .button-38aScr,.sidebar-2K8pFh:hover .button-38aScr{padding:2px 16px}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .badge-1JXQev,.sidebar-2K8pFh:hover .badge-1JXQev{padding:2px;width:14px}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .icon-3Oovq9,.sidebar-2K8pFh:hover .icon-3Oovq9{opacity:1}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .container-3baos1 .button-14-BFJ,.sidebar-2K8pFh:hover .container-3baos1 .button-14-BFJ{padding:unset;width:32px}.wrapper-3NnKdC:hover+.base-3dtUhz>.content-98HsJk>.sidebar-2K8pFh .container-3baos1>.flex-1xMQg5,.sidebar-2K8pFh:hover .container-3baos1>.flex-1xMQg5{pointer-events:auto;opacity:1}
+.sidebar-2K8pFh {
+  transition: 0.2s ease 0.175s;
+  width: 0px;
+  min-width: 0px;
+  resize: none;
+}
+.sidebar-2K8pFh .container-1giJp5, .sidebar-2K8pFh .panel-24C3ux {
+  padding: 0;
+  transition: 0.2s ease 0.175s;
+}
+.sidebar-2K8pFh .button-14-BFJ, .sidebar-2K8pFh .badge-1JXQev {
+  width: 0;
+  transition: 0.2s ease 0.175s;
+}
+.sidebar-2K8pFh .searchBar-6Kv8R2, .sidebar-2K8pFh .badge-1JXQev {
+  padding: 0;
+  transition: 0.2s ease 0.175s;
+}
+.sidebar-2K8pFh .button-38aScr {
+  padding: 0;
+  transition: 0.2s ease 0.175s;
+}
+.sidebar-2K8pFh .icon-3Oovq9 {
+  opacity: 0;
+  transition: 0.2s ease-in-out 0.175s;
+}
+.sidebar-2K8pFh .container-3baos1 .button-38aScr, .sidebar-2K8pFh .container-3baos1 .button-14-BFJ {
+  padding: unset;
+  width: 32px;
+}
+.sidebar-2K8pFh .container-3baos1 > .flex-1xMQg5 {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease-in-out 0.175s;
+}
+
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh,
+.sidebar-2K8pFh:hover {
+  width: var(--channels-width);
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .container-1giJp5, .wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .panel-24C3ux,
+.sidebar-2K8pFh:hover .container-1giJp5,
+.sidebar-2K8pFh:hover .panel-24C3ux {
+  padding: 8px;
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .button-14-BFJ,
+.sidebar-2K8pFh:hover .button-14-BFJ {
+  width: 32px;
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .searchBar-6Kv8R2,
+.sidebar-2K8pFh:hover .searchBar-6Kv8R2 {
+  padding: 0 10px;
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .button-38aScr,
+.sidebar-2K8pFh:hover .button-38aScr {
+  padding: 2px 16px;
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .badge-1JXQev,
+.sidebar-2K8pFh:hover .badge-1JXQev {
+  padding: 2px;
+  width: 14px;
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .icon-3Oovq9,
+.sidebar-2K8pFh:hover .icon-3Oovq9 {
+  opacity: 1;
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .container-3baos1 .button-14-BFJ,
+.sidebar-2K8pFh:hover .container-3baos1 .button-14-BFJ {
+  padding: unset;
+  width: 32px;
+}
+.wrapper-3NnKdC:hover + .base-3dtUhz > .content-98HsJk > .sidebar-2K8pFh .container-3baos1 > .flex-1xMQg5,
+.sidebar-2K8pFh:hover .container-3baos1 > .flex-1xMQg5 {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22hover_channels.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAGA;EACC;EACA;EACA;EACA;;AAEA;EAEC;EACA;;AAED;EAEC;EACA;;AAED;EAEC;EACA;;AAED;EACC;EACA;;AAED;EACC;EACA;;AAED;EAEC;EACA;;AAID;EACC;EACA;EACA;;;AAGF;AAAA;EAEC;;AACA;AAAA;AAAA;EAEC;;AAED;AAAA;EACC;;AAED;AAAA;EACC;;AAED;AAAA;EACC;;AAED;AAAA;EACC;EACA;;AAED;AAAA;EACC;;AAED;AAAA;EACC;EACA;;AAID;AAAA;EACC;EACA%22,%22file%22:%22hover_channels.css%22%7D */

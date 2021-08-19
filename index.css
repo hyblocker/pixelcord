@@ -5,12 +5,16 @@
 /* @import url(https://hyblocker.github.io/pixelcord/modules/enhancements/background_blur.css); */
 /* Enhancements | Rounded Corners - Adds rounded corners to the Discord window (assuming either Glasscord or Acryllic are present) */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/enhancements/rounded_corners.css); */
+/* Enhancements | Translucent - Makes discord transparent (works best with Glasscord and Acryllic) */
+/* @import url(https://hyblocker.github.io/pixelcord/modules/enhancements/translucent.css); */
 /* Functions | Collapsing channels list - Channels list collapses and uncollapses on hover, giving you more room to read */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/functions/hover_channels.css); */
 /* Functions | Collapsing members list - Members list collapses and uncollapses on hover, giving you more room to read */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/functions/hover_members.css); */
 /* Functions | macOS Buttons - Replaces window buttons with macOS style buttons (Windows) */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/functions/macos_buttons.css); */
+/* Functions | Channel Icons - Make channels change icon based on what they're called! (eg #github would have a github icon instead of #) */
+/* @import url(https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css); */
 /*
     EXTERNAL MODULES
 */
@@ -63,6 +67,11 @@ html.newBrand,
   --settings-padding: 8px;
   --settings-header-height: 84px;
   --members-width: 240px;
+  /* these are only used if you use the translucent module */
+  --wallpaper: url("https://cdn.discordapp.com/attachments/861011844553244685/877485732783063050/1623950302486.jpg");
+  --blur-strength: 4px;
+  --window-border: 0px;
+  --text-muted: rgba(255,255,255,0.4);
 }
 
 .theme-light {
@@ -74,8 +83,8 @@ html.newBrand,
   --baseline: #f8f9fa;
   --chip: #D7D7D7;
   --chip-active: #c7c7c7;
-  --chip-text: #363536;
-  --navdrawer-color: white;
+  --chip-text: rgb(53, 53, 53);
+  --navdrawer-color: var(--card-2-bg);
   --navdrawer-hover: rgba(0, 0, 0, 0.05);
   --navdrawer-active: rgba(0, 0, 0, 0.1);
   --navdrawer-separator: rgba(0, 0, 0, 0.1);
@@ -107,7 +116,7 @@ html.newBrand,
   --chip: #595A5E;
   --chip-active: #737479;
   --chip-text: white;
-  --navdrawer-color: #222222;
+  --navdrawer-color: var(--card-2-bg);
   --navdrawer-hover: rgba(255, 255, 255, 0.05);
   --navdrawer-active: rgba(255, 255, 255, 0.1);
   --navdrawer-separator: rgba(255, 255, 255, 0.1);
@@ -131,6 +140,63 @@ html.newBrand,
 
 :root {
   --chip-height: 24px;
+}
+
+.theme-light {
+  --card-0-bg: white;
+  --card-1-bg: white;
+  --card-2-bg: white;
+  --card-3-bg: white;
+  --card-4-bg: white;
+  --card-5-bg: white;
+  --card-6-bg: white;
+  --card-7-bg: white;
+  --card-8-bg: white;
+  --card-9-bg: white;
+  --card-10-bg: white;
+  --card-11-bg: white;
+  --card-12-bg: white;
+  --card-13-bg: white;
+  --card-14-bg: white;
+  --card-15-bg: white;
+  --card-16-bg: white;
+  --card-17-bg: white;
+  --card-18-bg: white;
+  --card-19-bg: white;
+  --card-20-bg: white;
+  --card-21-bg: white;
+  --card-22-bg: white;
+  --card-23-bg: white;
+  --card-24-bg: white;
+}
+
+.callContainer-36WRfH,
+.theme-dark {
+  --card-0-bg: #121212;
+  --card-1-bg: #1D1D1D;
+  --card-2-bg: #222222;
+  --card-3-bg: #242424;
+  --card-4-bg: #272727;
+  --card-5-bg: #292828;
+  --card-6-bg: #2C2C2C;
+  --card-7-bg: #2C2C2D;
+  --card-8-bg: #2D2D2D;
+  --card-9-bg: #2E2E2D;
+  --card-10-bg: #2E2F2F;
+  --card-11-bg: #302F30;
+  --card-12-bg: #313130;
+  --card-13-bg: #323231;
+  --card-14-bg: #333332;
+  --card-15-bg: #333434;
+  --card-16-bg: #353535;
+  --card-17-bg: #353536;
+  --card-18-bg: #363536;
+  --card-19-bg: #363636;
+  --card-20-bg: #363736;
+  --card-21-bg: #363737;
+  --card-22-bg: #373737;
+  --card-23-bg: #373737;
+  --card-24-bg: #373737;
 }
 
 :root {

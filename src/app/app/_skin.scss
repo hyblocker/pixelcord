@@ -1,4 +1,3 @@
-@use "sass:color";
 @import "../material/card";
 
 .wrapper-3WhCwL {
@@ -79,22 +78,15 @@
 	background-color: var(--navdrawer-color);
 }
 .form-2fGMdU {
+	.theme-dark &:before,
 	.theme-light &:before {
-		background: -webkit-gradient(linear,left top,left bottom,from(color.change(cardbg(0, false), $alpha: 0)),to(cardbg(0, false)));
-		background: linear-gradient(180deg,color.change(cardbg(0, false), $alpha: 0) 0,cardbg(0, false))
-	}
-	.theme-dark &:before {
-		background: -webkit-gradient(linear,left top,left bottom,from(color.change(cardbg(0, true ), $alpha: 0)),to(cardbg(0, true )));
-		background: linear-gradient(180deg,color.change(cardbg(0, true ), $alpha: 0) 0,cardbg(0, true ))
+		background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(cardbg(0, true)));
+		background: linear-gradient(180deg,transparent 0,cardbg(0, true));
 	}
 }
 .auto-Ge5KZx::-webkit-scrollbar-track {
-	.theme-light & {
-		background-color: cardbg(0, false);
-	}
-	.theme-dark & {
-		background-color: cardbg(0, true);
-	}
+	//background-color: cardbg(0, true);
+	background-color: transparent;
 }
 .auto-Ge5KZx::-webkit-scrollbar-thumb {
 	.theme-light & {

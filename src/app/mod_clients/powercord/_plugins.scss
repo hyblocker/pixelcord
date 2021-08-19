@@ -30,3 +30,6 @@
 .sessionCard-activity {
 	@include card(6);
 }
+.sessionCard-title .textBadge-1iylP6[style^="background-color: hsl(139, "] {
+	background-color: var(--online) !important;
+}

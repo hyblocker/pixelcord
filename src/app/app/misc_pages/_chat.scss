@@ -1,4 +1,3 @@
-@use "sass:color";
 @import "../../material/card";
 @import "../../material/ripple";
 
@@ -18,15 +17,15 @@ $header-height: 6;
 		background-color: cardbg($header-height, true);
 	}
 }
+.theme-light .form-2fGMdU:before {
+	background: transparent;
+}
 
 .children-19S4PO::after {
-	.theme-dark & {
-		background: -webkit-gradient(linear,left top,right top,from(color.change(cardbg($header-height, true), $alpha: 0)),to(cardbg($header-height, true)));
-		background: linear-gradient(90deg,color.change(cardbg($header-height, true), $alpha: 0) 0,cardbg($header-height, true));
-	}
+	.theme-dark &,
 	.theme-light & {
-		background: -webkit-gradient(linear,left top,right top,from(color.change(cardbg($header-height, false), $alpha: 0)),to(cardbg($header-height, false)));
-		background: linear-gradient(90deg,color.change(cardbg($header-height, false), $alpha: 0) 0,cardbg($header-height, false));
+		background: -webkit-gradient(linear,left top,right top,from(transparent),to(cardbg($header-height, false)));
+		background: linear-gradient(90deg,transparent 0,cardbg($header-height, false));
 	}
 }
 
@@ -58,11 +57,18 @@ $header-height: 6;
 .scroller-2XE8rp,
 .layer-3QrUeG:not(.baseLayer-35bLyl),
 .content-1o0f9g {
-	.theme-light & {
-		background-color: cardbg(0, false);
-	}
+	background-color: cardbg(0, true);
+}
+
+// placeholder messages
+.wrapper-1F5TKx,
+.wrapper-3vR61M
+{
 	.theme-dark & {
 		background-color: cardbg(0, true);
+	}
+	.theme-light & {
+		background-color: cardbg(0, false);
 	}
 }
 
@@ -140,12 +146,8 @@ $header-height: 6;
 	bottom: 0px;
 	z-index: 2;
 
-	.theme-light & {
-		background-color: cardbg(0, false);
-	}
-	.theme-dark & {
-		background-color: cardbg(0, true);
-	}
+	background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(var(--card-0-bg)));
+	background: linear-gradient(180deg, transparent 0,var(--card-0-bg));
 }
 
 // New guild cards (invite, hi, etc)

@@ -38,14 +38,7 @@
 		@error "$z-value must be between 0 and 24, but received '#{$z-value}'";
 	}
 	
-	@if $darkmode == false
-	{
-		@return white;
-	}
-	@else
-	{
-		@return map-get($brightness-map-dark, $z-value);
-	}
+	@return var(--card-#{$z-value}-bg);
 }
 
 @mixin card(

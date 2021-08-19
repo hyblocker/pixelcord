@@ -5,12 +5,7 @@ $header-height: 6;
 .scroller-1Bvpku,
 .circleIconButton-1QV--U,
 .childWrapper-anI2G9 {
-	.theme-light & {
-		background-color: cardbg($header-height, false);
-	}
-	.theme-dark & {
-		background-color: cardbg($header-height, true);
-	}
+	background-color: cardbg($header-height, true);
 }
 .scroller-1JbKMe, .scroller-RmtA4e, .channelNotice-1-XFjC {
 	// inset ofset box shadow for depth 2

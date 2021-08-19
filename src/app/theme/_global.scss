@@ -52,4 +52,11 @@ html.newBrand,
 	
 	// Members List
 	--members-width: 240px;
+
+	/* these are only used if you use the translucent module */
+	--wallpaper: url('https://cdn.discordapp.com/attachments/861011844553244685/877485732783063050/1623950302486.jpg');
+	--blur-strength: 4px;
+	--window-border: 0px;
+
+	--text-muted: rgba(255,255,255,0.4);
 }

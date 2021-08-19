@@ -49,3 +49,10 @@
 .actionButton-uPB8Fs.actionAccept-LV-szU:hover {
 	color: var(--online);
 }
+.text-GwUZgS,
+.title-2BxgL2 {
+	.theme-dark &,
+	.theme-light & {
+		color: var(--text-muted);
+	}
+}
