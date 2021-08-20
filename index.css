@@ -71,7 +71,6 @@ html.newBrand,
   --wallpaper: url("https://cdn.discordapp.com/attachments/861011844553244685/877485732783063050/1623950302486.jpg");
   --blur-strength: 4px;
   --window-border: 0px;
-  --text-muted: rgba(255,255,255,0.4);
 }
 
 .theme-light {
