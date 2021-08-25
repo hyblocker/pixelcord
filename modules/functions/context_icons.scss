@@ -76,6 +76,9 @@
 .item-1tOPte#user-settings-cog-Connections {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8z'/%3E%3C/svg%3E");
 }
+.item-1tOPte#user-settings-cog-Subscriptions {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff' width='18' height='18'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z'/%3E%3C/svg%3E");
+}
 .item-1tOPte#user-settings-cog-Discord_Nitro {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M0 0h24v24H0z'/%3E%3Cg fill='%2380A6FF'%3E%3Cpath fill-rule='nonzero' d='M14 5a7 7 0 100 14 7 7 0 000-14zM3 11h1a1 1 0 100-2H1a1 1 0 110-2h5a1 1 0 100-2H3.5a1.5 1.5 0 010-3H14c5.523 0 10 4.477 10 10s-4.477 10-10 10c-5.185 0-9.449-3.947-9.95-9H3a1 1 0 010-2z'/%3E%3Cpath d='M14 17a5 5 0 110-10 5 5 0 010 10zm1.827-7.55a1 1 0 00-.835-.45h-1.926a1 1 0 00-.836.45l-1.315 2a1 1 0 000 1.1l1.315 2a1 1 0 00.836.45h1.926a1 1 0 00.835-.45l1.316-2a1 1 0 000-1.1l-1.316-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -226,6 +229,10 @@
 
 // Message context
 
+// Search on Google
+.item-1tOPte#message-search-google {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M12.24 11.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1c-.86.86-2.2 1.8-4.54 1.8c-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L18.4 5.5C16.94 4.08 14.98 3 12.24 3C7.28 3 3.11 7.04 3.11 12s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52c1.62-1.62 2.13-3.91 2.13-5.75c0-.57-.04-1.1-.13-1.54H12.24z'/%3E%3C/svg%3E");
+}
 // Add reaction
 .item-1tOPte#message-add-reaction {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M7 9.5C7 8.67 7.67 8 8.5 8s1.5.67 1.5 1.5S9.33 11 8.5 11 7 10.33 7 9.5zm5 8c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5zm3.5-6.5c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zM22 1h-2v2h-2v2h2v2h2V5h2V3h-2V1zm-2 11c0 4.42-3.58 8-8 8s-8-3.58-8-8 3.58-8 8-8c1.46 0 2.82.4 4 1.08V2.84A9.929 9.929 0 0011.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12c0-1.05-.17-2.05-.47-3H19.4c.38.93.6 1.94.6 3z'/%3E%3C/svg%3E");
@@ -282,6 +289,10 @@
 .item-1tOPte#message-delete {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-3.5l-1-1zM18 7H6v12c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7z'/%3E%3C/svg%3E");
 }
+// Report Message
+.item-1tOPte#message-report-message-btn {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM19 14.9L14.9 19H9.1L5 14.9V9.1L9.1 5h5.8L19 9.1v5.8z'/%3E%3Ccircle cx='12' cy='16' r='1'/%3E%3Cpath d='M11 7h2v7h-2z'/%3E%3C/svg%3E");
+}
 
 // Message actions
 
@@ -302,6 +313,12 @@
 }
 
 // Image
+
+// Save image
+.item-1tOPte#image-context-save-image {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z'/%3E%3C/svg%3E");
+}
+// Open in browser
 .item-1tOPte#image-context-open-native-link {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M19 4H5a2 2 0 00-2 2v12a2 2 0 002 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6a2 2 0 00-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z'/%3E%3C/svg%3E");
 }
@@ -331,6 +348,10 @@
 // Add note to user
 .item-1tOPte#user-context-note {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M3 10h11v2H3v-2zm0-2h11V6H3v2zm0 8h7v-2H3v2zm15.01-3.13l.71-.71a.996.996 0 011.41 0l.71.71c.39.39.39 1.02 0 1.41l-.71.71-2.12-2.12zm-.71.71l-5.3 5.3V21h2.12l5.3-5.3-2.12-2.12z'/%3E%3C/svg%3E");
+}
+// Add note to user
+.item-1tOPte#user-context-add-friend-nickname {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17l-.59.59-.58.58V4h16v12zm-9.5-2H18v-2h-5.5zm3.86-5.87c.2-.2.2-.51 0-.71l-1.77-1.77c-.2-.2-.51-.2-.71 0L6 11.53V14h2.47l5.89-5.87z'/%3E%3C/svg%3E");
 }
 // Close DM
 .item-1tOPte#user-context-close-dm {
@@ -406,6 +427,10 @@
 .item-1tOPte#user-context-mute-channel {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M0 15h2V9H0v6zm3 2h2V7H3v10zm19-8v6h2V9h-2zm-3 8h2V7h-2v10zM16.5 3h-9C6.67 3 6 3.67 6 4.5v15c0 .83.67 1.5 1.5 1.5h9c.83 0 1.5-.67 1.5-1.5v-15c0-.83-.67-1.5-1.5-1.5zM16 19H8V5h8v14z'/%3E%3C/svg%3E");
 }
+// Remove user from thread
+.item-1tOPte#user-context-remove {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z'/%3E%3C/svg%3E");
+}
 // Kick user
 .item-1tOPte#user-context-kick {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M20 17.17l-3.37-3.38c.64.22 1.23.48 1.77.76.97.51 1.58 1.52 1.6 2.62zm1.19 4.02l-1.41 1.41-2.61-2.6H4v-2.78c0-1.12.61-2.15 1.61-2.66 1.29-.66 2.87-1.22 4.67-1.45L1.39 4.22 2.8 2.81l18.39 18.38zM15.17 18l-3-3H12c-2.37 0-4.29.73-5.48 1.34-.32.16-.52.5-.52.88V18h9.17zM12 6c1.1 0 2 .9 2 2 0 .86-.54 1.59-1.3 1.87l1.48 1.48a3.999 3.999 0 10-5.53-5.53l1.48 1.48A1.99 1.99 0 0112 6z'/%3E%3C/svg%3E");
@@ -439,6 +464,10 @@
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M12.36 6l.4 2H18v6h-3.36l-.4-2H7V6h5.36M14 4H5v17h2v-7h5.6l.4 2h7V6h-5.6L14 4z'/%3E%3C/svg%3E");
 }
 // Roles
+.item-1tOPte#user-context-permissions {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M14 12h4v1.5h-4zM14 15h4v1.5h-4z'/%3E%3Cpath d='M20 7h-5V4c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zm-9 0V4h2v5h-2V7zm9 13H4V9h5c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2h5v11z'/%3E%3Ccircle cx='9' cy='13.5' r='1.5'/%3E%3Cpath d='M11.08 16.18c-.64-.28-1.34-.43-2.08-.43s-1.44.15-2.08.43c-.56.24-.92.78-.92 1.39V18h6v-.43c0-.61-.36-1.15-.92-1.39z'/%3E%3C/svg%3E");
+}
+// VC Move
 .item-1tOPte#user-context-voice-move {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z'/%3E%3C/svg%3E");
 }
@@ -607,6 +636,42 @@
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M14 8c0-2.21-1.79-4-4-4S6 5.79 6 8s1.79 4 4 4 4-1.79 4-4zm-2 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zM2 18v2h16v-2c0-2.66-5.33-4-8-4s-8 1.34-8 4zm2 0c.2-.71 3.3-2 6-2 2.69 0 5.77 1.28 6 2H4zM17 10h6v2h-6z'/%3E%3C/svg%3E");
 }
 
+// Now playing menu
+// Username fix
+.item-1tOPte[id|=now-playing-menu]::before {
+	content: none;
+}
+// Re-add icons to these
+.item-1tOPte#now-playing-menu-message,
+.item-1tOPte[id|=now-playing-menu-join],
+.item-1tOPte[id|=now-playing-menu-play],
+.item-1tOPte[id|=now-playing-menu-spotify-play],
+.item-1tOPte#now-playing-menu-xbox-connect {
+	&::before {
+		content: "" !important;
+	}
+}
+// Message
+.item-1tOPte#now-playing-menu-message {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M4 4h16v12H5.17L4 17.17V4m0-2c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2H4zm2 10h8v2H6v-2zm0-3h12v2H6V9zm0-3h12v2H6V6z'/%3E%3C/svg%3E");
+}
+// Join game (generic)
+.item-1tOPte[id|=now-playing-menu-join] {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z'/%3E%3C/svg%3E");
+}
+// Play game
+.item-1tOPte[id|=now-playing-menu-play] {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 10H3V8h18v8zM6 15h2v-2h2v-2H8V9H6v2H4v2h2z'/%3E%3Ccircle cx='14.5' cy='13.5' r='1.5'/%3E%3Ccircle cx='18.5' cy='10.5' r='1.5'/%3E%3C/svg%3E");
+}
+// Listen along on spotify
+.item-1tOPte[id|=now-playing-menu-spotify-play] {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='32' width='32' viewBox='0 0 168 168'%3E%3Cpath fill='%231ED760' d='M83.837 20.21c-35.15 0-63.645 28.495-63.645 63.644 0 35.151 28.496 63.644 63.645 63.644 35.153 0 63.645-28.493 63.645-63.644 0-35.147-28.492-63.64-63.646-63.64l.001-.003zm29.187 91.793a3.965 3.965 0 01-5.457 1.315c-14.943-9.127-33.754-11.195-55.908-6.133a3.968 3.968 0 01-1.766-7.737c24.244-5.539 45.04-3.154 61.816 7.099a3.967 3.967 0 011.315 5.456zm7.79-17.33c-1.436 2.336-4.492 3.073-6.825 1.636-17.107-10.515-43.185-13.56-63.42-7.418a4.969 4.969 0 01-6.193-3.306 4.97 4.97 0 013.31-6.189c23.113-7.013 51.848-3.616 71.494 8.457 2.333 1.436 3.07 4.491 1.634 6.822v-.001zm.669-18.045c-20.513-12.183-54.355-13.303-73.94-7.36a5.952 5.952 0 11-3.456-11.392c22.482-6.825 59.855-5.506 83.471 8.514a5.946 5.946 0 012.083 8.157 5.948 5.948 0 01-8.155 2.081z'/%3E%3C/svg%3E");
+}
+// Join game (xbox)
+.item-1tOPte#now-playing-menu-xbox-connect {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 788 444' width='32' height='32'%3E%3Cg transform='matrix(3 0 0 3 -790 -445)'%3E%3Cg fill='%23FFF'%3E%3Cpath d='M394 202.3c.1 0 .2.1.3.2 29.9 22.7 81 78.9 65.4 94.7-37.6 32.9-93.9 32.9-131.5 0-15.7-15.9 35.5-72.1 65.4-94.7.2-.1.3-.2.4-.2M446.1 136.7c-15.3-9.1-31.9-14.7-52.1-14.7-20.1 0-36.7 5.5-52.1 14.7-.2.1-.3.3-.2.5.1.2.3.2.5.2 19.3-4.2 48.8 12.6 51.5 14.2.1.1.3.1.4 0 2.8-1.7 32.1-18.4 51.5-14.2.2.1.4 0 .5-.2.2-.2.1-.4 0-.5M324.1 150.8c-.2.1-.3.2-.4.3-35.6 35.3-39.5 91.6-9.1 131.4.1.2.3.2.5.2.2-.1.2-.3.1-.5-7.6-23.5 31.3-80.6 51.5-104.5.1-.1.1-.2.1-.3 0-.1-.1-.3-.2-.3-30.4-30.4-40.8-27.2-42.5-26.3M421.4 177c-.1.1-.2.2-.2.3 0 .1.1.2.1.3 20 23.9 59 81 51.5 104.5-.1.2-.1.4.1.5.2.1.4 0 .5-.2 30.3-39.9 26.4-96-9.1-131.4-.1-.1-.3-.2-.4-.3-1.7-.8-12.1-4-42.5 26.3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
 // Video device
 // Video device
 .item-1tOPte[id|=video-device-context-video-device] {
@@ -636,6 +701,14 @@
 	}
 }
 
+// Subscription stuff (aka boosts)
+.item-1tOPte#subscription-context-apply {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z'/%3E%3C/svg%3E");
+}
+.item-1tOPte#subscription-context-cancel {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.59-13L12 10.59 8.41 7 7 8.41 10.59 12 7 15.59 8.41 17 12 13.41 15.59 17 17 15.59 13.41 12 17 8.41z'/%3E%3C/svg%3E");
+}
+
 
 // PLUGINS
 
@@ -655,4 +728,32 @@
 .item-1tOPte#guild-context-cutecord-add-meanie-guild,
 .item-1tOPte#user-context-cutecord-add-meanie-user {
 	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M14 8c0-2.21-1.79-4-4-4S6 5.79 6 8s1.79 4 4 4 4-1.79 4-4zm-2 0c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zM2 18v2h16v-2c0-2.66-5.33-4-8-4s-8 1.34-8 4zm2 0c.2-.71 3.3-2 6-2 2.69 0 5.77 1.28 6 2H4zM17 10h6v2h-6z'/%3E%3C/svg%3E");
+}
+
+// Local nicknames
+.item-1tOPte#user-context-local-nicknames-edit {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M16.81 8.94l-3.75-3.75L4 14.25V18h3.75l9.06-9.06zM6 16v-.92l7.06-7.06.92.92L6.92 16H6zM19.71 6.04a.996.996 0 000-1.41l-2.34-2.34a1.001 1.001 0 00-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83zM2 20h20v4H2z'/%3E%3C/svg%3E");
+}
+.item-1tOPte#user-context-local-nicknames-reset {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M14.06 9.02l.92.92-1.11 1.11 1.41 1.41 2.52-2.52-3.75-3.75-2.52 2.52 1.41 1.41 1.12-1.1zm6.65-1.98a.996.996 0 000-1.41l-2.34-2.34c-.2-.2-.45-.29-.71-.29s-.51.1-.7.29l-1.83 1.83 3.75 3.75 1.83-1.83zM2.81 2.81L1.39 4.22l7.32 7.32L3 17.25V21h3.75l5.71-5.71 7.32 7.32 1.41-1.41L2.81 2.81zM5.92 19H5v-.92l5.13-5.13.92.92L5.92 19z'/%3E%3C/svg%3E");
+}
+
+// Emoji Utility :kms:
+// pls add #emoji-utility-clone; #emoji-utility-save; etc.
+// TODO: PR emoji utility to fix this
+// Clone
+.item-1tOPte#message-item-0-0-1 {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M18 2H9c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H9V4h9v12zM3 15v-2h2v2H3zm0-5.5h2v2H3v-2zM10 20h2v2h-2v-2zm-7-1.5v-2h2v2H3zM5 22c-1.1 0-2-.9-2-2h2v2zm3.5 0h-2v-2h2v2zm5 0v-2h2c0 1.1-.9 2-2 2zM5 6v2H3c0-1.1.9-2 2-2z'/%3E%3C/svg%3E");
+}
+// Save
+.item-1tOPte#message-item-0-0-2 {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M19 12v7H5v-7H3v7c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2zm-6 .67l2.59-2.58L17 11.5l-5 5-5-5 1.41-1.41L11 12.67V3h2v9.67z'/%3E%3C/svg%3E");
+}
+// Go to server
+.item-1tOPte#message-item-0-0-3 {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z'/%3E%3C/svg%3E");
+}
+// Copy ID
+.item-1tOPte#message-item-0-0-4 {
+	--icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z'/%3E%3C/svg%3E");	
 }

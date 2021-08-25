@@ -1,6 +1,6 @@
  * @name Pixelcord
  * @author Hyblocker
- * @version 3.4.0
+ * @version 3.4.1
  * @description Material Design Theme with numerous enhancements for Discord
  * @source https://github.com/hyblocker/pixelcord
  * @updateUrl https://raw.githubusercontent.com/hyblocker/pixelcord/main/Pixelcord.theme.css
@@ -22,6 +22,8 @@
 /* @import url(https://hyblocker.github.io/pixelcord/modules/functions/macos_buttons.css); */
 /* Functions | Channel Icons - Make channels change icon based on what they're called! (eg #github would have a github icon instead of #) */
 /* @import url(https://hyblocker.github.io/pixelcord/modules/functions/channel_icons.css); */
+/* Functions | Context Menu Icons - Adds icons to right click menus */
+/* @import url(https://hyblocker.github.io/pixelcord/modules/functions/context_icons.css); */
 /*
     EXTERNAL MODULES
 */
