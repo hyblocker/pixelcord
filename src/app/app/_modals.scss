@@ -209,3 +209,13 @@ $modal-height: 8;
 		background-color: transparent;
 	}
 }
+
+// @everyone modal
+.contentWarningPopout-n5JsIs {
+	@include card(6);
+}
+
+// separator
+.separator-2I32lJ {
+	border-color: var(--separator);
+}

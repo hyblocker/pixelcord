@@ -426,21 +426,29 @@ $animtime: 0.34s;
 	font-size: 0;
 
 	&::after {
-		// TODO: Arrow TOOLTIP
+		
 		content: "";
-		border-top-color: var(--tooltip-bg);	
+		visibility: visible;
+
+		padding: 0;
+		overflow-wrap: break-word;
+		text-rendering: optimizelegibility;
+		user-select: none;
+		vertical-align: baseline;
+
+		pointer-events: none;
+
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		border-top-color: var(--tooltip-bg);
+
 		position: absolute;
 		bottom: 100%;
 		left: 50%;
 		margin-left: -5px;
-		border-top-width: 5px;
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		width: 0;
-		height: 0;
-		border: 5px solid transparent;
-		pointer-events: none;
-		transition: $settings-transition;
 	}
 
 	&::before {

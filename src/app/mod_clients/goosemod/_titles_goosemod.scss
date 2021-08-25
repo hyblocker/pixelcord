@@ -2,13 +2,13 @@
 	// Mod client specific ones
 
 	// GOOSEMOD
-	&[aria-controls=gm-general-tab]::after {
+	&[aria-controls="gm-general-tab" i]::after {
 		content: "Goosemod Settings";
 	}
-	&[aria-controls=gm-changelog-tab]::after {
+	&[aria-controls="gm-changelog-tab" i]::after {
 		content: "Goosemod Change Log";
 	}
-	&[aria-controls="gm-Custom CSS-tab"]::after {
+	&[aria-controls="gm-custom css-tab" i]::after {
 		content: "Custom CSS";
 	}
 

@@ -5,7 +5,7 @@
 	// SETTINGS
 	&{
 
-		&[aria-controls="Privacy & Safety-tab"]::after {
+		&[aria-controls="privacy-&-safety-tab" i]::after {
 			html[lang^=en-] & { content: "Privacy & Safety"; }
 			html[lang=zh-CN] & { content: "隐私与安全"; }
 			html[lang=zh-TW] & { content: "隱私 & 安全"; }
@@ -39,7 +39,7 @@
 			html[lang=hi] & { content: "गोपनीयता एवं सुरक्षा"; }
 		}
 
-		&[aria-controls="Authorized Apps-tab"]::after {
+		&[aria-controls="authorized-apps-tab" i]::after {
 			html[lang^=en-	] & { content: "Authorized Apps"; }
 			html[lang=zh-CN] & { content: "已授权的APP"; }
 			html[lang=zh-TW] & { content: "已授權的應用程式"; }
@@ -73,7 +73,7 @@
 			html[lang=hi] & { content: "ऑथराइज़्ड ऐप"; }
 		}
 
-		&[aria-controls=Connections-tab]::after {
+		&[aria-controls="connections-tab" i]::after {
 			html[lang^=en-] & { content: "Connections"; }
 			html[lang^=zh-] & { content: "连接"; }
 			html[lang=cs] & { content: "Propojení"; }
@@ -106,7 +106,7 @@
 			html[lang=hi] & { content: "कनेक्शन"; }
 		}
 
-		&[aria-controls="Nitro Server Boost-tab"]::after {
+		&[aria-controls="nitro-server-boost-tab" i]::after {
 			html[lang^=en-] & { content: "Server Boost"; }
 			html[lang=zh-CN] & { content: "服务器助力"; }
 			html[lang=zh-TW] & { content: "伺服器加成"; }
@@ -140,7 +140,7 @@
 			html[lang=hi] & { content: "सर्वर बूस्ट"; }
 		}
 
-		&[aria-controls=Billing-tab]::after {
+		&[aria-controls="billing-tab" i]::after {
 			html[lang^=en-] & { content: "Billing"; }
 			html[lang=zh-CN] & { content: "账单"; }
 			html[lang=zh-TW] & { content: "帳單"; }
@@ -174,7 +174,7 @@
 			html[lang=hi] & { content: "बिलिंग"; }
 		}
 
-		&[aria-controls=Appearance-tab]::after {
+		&[aria-controls="appearance-tab" i]::after {
 			html[lang^=en-] & { content: "Appearance"; }
 			html[lang=zh-CN] & { content: "外观"; }
 			html[lang=zh-TW] & { content: "外觀"; }
@@ -208,7 +208,7 @@
 			html[lang=hi] & { content: "अपीरंस"; }
 		}
 
-		&[aria-controls=Accessibility-tab]::after {
+		&[aria-controls="accessibility-tab" i]::after {
 			html[lang^=en-] & { content: "Accessibility"; }
 			html[lang=zh-CN] & { content: "可访问性"; }
 			html[lang=zh-TW] & { content: "輔助功能"; }
@@ -242,7 +242,7 @@
 			html[lang=hi] & { content: "एक्सेसिबिलिटी"; }
 		}
 
-		&[aria-controls="Voice & Video-tab"]::after {
+		&[aria-controls="voice-&-video-tab" i]::after {
 			html[lang^=en-] & { content: "Voice & Video"; }
 			html[lang=zh-CN] & { content: "语音和视频"; }
 			html[lang=zh-TW] & { content: "語音 & 視訊"; }
@@ -276,7 +276,7 @@
 			html[lang=hi] & { content: "वॉयस और वीडियो"; }
 		}
 
-		&[aria-controls="Text & Images-tab"]::after {
+		&[aria-controls="text-&-images-tab" i]::after {
 			html[lang^=en-] & { content: "Text & images"; }
 			html[lang=zh-CN] & { content: "文字与图像"; }
 			html[lang=zh-TW] & { content: "文字 & 圖片"; }
@@ -310,7 +310,7 @@
 			html[lang=hi] & { content: "टैक्स्ट और इमेज"; }
 		}
 
-		&[aria-controls=Notifications-tab]::after {
+		&[aria-controls="notifications-tab" i]::after {
 			html[lang^=en-] & { content: "Notifications"; }
 			html[lang=zh-CN] & { content: "通知"; }
 			html[lang=zh-TW] & { content: "通知"; }
@@ -344,7 +344,7 @@
 			html[lang=hi] & { content: "नोटिफिकेशन"; }
 		}
 
-		&[aria-controls=Keybinds-tab]::after {
+		&[aria-controls="keybinds-tab" i]::after {
 			html[lang^=en-] & { content: "Keybinds"; }
 			html[lang^=zh-] & { content: "快捷键"; }
 			html[lang=cs] & { content: "Klávesové zkratky"; }
@@ -377,7 +377,7 @@
 			html[lang=hi] & { content: "कीबाइंड्स"; }
 		}
 
-		&[aria-controls=Language-tab]::after {
+		&[aria-controls="language-tab" i]::after {
 			html[lang^=en-] & { content: "Language"; }
 			html[lang^=zh-] & { content: "语言"; }
 			html[lang=cs] & { content: "Jazyk"; }
@@ -410,7 +410,7 @@
 			html[lang=hi] & { content: "लैंग्वेज"; }
 		}
 
-		&[aria-controls=Windows-tab]::after {
+		&[aria-controls="windows-tab" i]::after {
 			html[lang=en-US] & { content: "Windows Settings"; }
 			html[lang=en-GB] & { content: "Windows settings"; }
 			html[lang=zh-CN] & { content: "Windows 设置"; }
@@ -444,10 +444,12 @@
 			html[lang=vi] & { content: "Cài Đặt Windows"; }
 			html[lang=hi] & { content: "Windows सेटिंग"; }
 		}
-		&[aria-controls=MacOS-tab]::after {
+
+		&[aria-controls="macos-tab" i]::after {
 			content: "macOS" !important;
 		}
-		&[aria-controls=Linux-tab]::after {
+
+		&[aria-controls="linux-tab" i]::after {
 			html[lang=en-US] & { content: "Linux Settings"; }
 			html[lang=en-GB] & { content: "Linux settings"; }
 			html[lang=zh-CN] & { content: "Linux 设置"; }
@@ -482,7 +484,7 @@
 			html[lang=hi] & { content: "Linux सेटिंग"; }
 		}
 
-		&[aria-controls="Streamer Mode-tab"]::after {
+		&[aria-controls="streamer-mode-tab" i]::after {
 			html[lang^=en-] & { content: "Streamer Mode"; }
 			html[lang^=zh-] & { content: "主播模式"; }
 			html[lang=cs] & { content: "Streamovací režim"; }
@@ -515,7 +517,7 @@
 			html[lang=hi] & { content: "स्ट्रीमर मोड"; }
 		}
 
-		&[aria-controls=Advanced-tab]::after {
+		&[aria-controls="advanced-tab" i]::after {
 			html[lang^=en-] & { content: "Advanced"; }
 			html[lang=zh-CN] & { content: "高级设置"; }
 			html[lang=zh-TW] & { content: "進階"; }
@@ -549,7 +551,7 @@
 			html[lang=hi] & { content: "एडवांस"; }
 		}
 
-		&[aria-controls="Game Activity-tab"]::after {
+		&[aria-controls="game-activity-tab" i]::after {
 			html[lang^=en-] & { content: "Game Activity"; }
 			html[lang=zh-CN] & { content: "游戏动态"; }
 			html[lang=zh-TW] & { content: "遊戲偵測"; }
@@ -583,7 +585,7 @@
 			html[lang=hi] & { content: "गेम एक्टिविटी"; }
 		}
 
-		&[aria-controls=Overlay-tab]::after {
+		&[aria-controls="overlay-tab" i]::after {
 			html[lang^=en-] & { content: "Game Overlay"; }
 			html[lang=zh-CN] & { content: "游戏叠加面板"; }
 			html[lang=zh-TW] & { content: "遊戲嵌入介面"; }
@@ -617,16 +619,16 @@
 			html[lang=hi] & { content: "गेम ओवरले"; }
 		}
 
-		&[aria-controls="Hypesquad Online-tab"]::after {
+		&[aria-controls="hypesquad-online-tab" i]::after {
 			content: "HypeSquad" !important;
 			html[lang=el] & { content: "Ομάδα Δημοσιότητας HypeSquad" !important; }
 		}
 
-		&[aria-controls=Experiments-tab]::after {
+		&[aria-controls="experiments-tab" i]::after {
 			content: "Experiments" !important;
 		}
 
-		&[aria-controls="Developer Options-tab"]::after {
+		&[aria-controls="developer-options-tab" i]::after {
 			content: "Developer Options" !important; 
 		}
 	}
@@ -634,7 +636,7 @@
 	// GUILD
 	& {
 
-		&[aria-controls=OVERVIEW-tab]::after {
+		&[aria-controls="overview-tab" i]::after {
 			html[lang^=en-] & { content: "Overview"; }
 			html[lang=zh-CN] & { content: "概况"; }
 			html[lang=zh-TW] & { content: "概要"; }
@@ -668,7 +670,7 @@
 			html[lang=hi] & { content: "ओवरव्यू"; }
 		}
 
-		&[aria-controls=ROLES-tab]::after {
+		&[aria-controls="roles-tab" i]::after {
 			html[lang^=en-] & { content: "Roles"; }
 			html[lang=zh-CN] & { content: "身份组"; }
 			html[lang=zh-TW] & { content: "身分組"; }
@@ -702,7 +704,7 @@
 			html[lang=hi] & { content: "रोल्स"; }
 		}
 
-		&[aria-controls=EMOJI-tab]::after {
+		&[aria-controls="emoji-tab" i] i::after {
 			html[lang^=en-] & { content: "Emoji"; }
 			html[lang=zh-CN] & { content: "表情符号"; }
 			html[lang=zh-TW] & { content: "表情符號"; }
@@ -736,7 +738,7 @@
 			html[lang=hi] & { content: "इमोजी"; }
 		}
 
-		&[aria-controls=MODERATION-tab]::after {
+		&[aria-controls="moderation-tab" i]::after {
 			html[lang^=en-] & { content: "Moderation"; }
 			html[lang=zh-CN] & { content: "管理"; }
 			html[lang=zh-TW] & { content: "管理"; }
@@ -770,7 +772,7 @@
 			html[lang=hi] & { content: "मॉडरेशन"; }
 		}
 		
-		&[aria-controls=AUDIT_LOG-tab]::after {
+		&[aria-controls="audit_log-tab" i]::after {
 			html[lang^=en-] & { content: "Audit Log"; }
 			html[lang=zh-CN] & { content: "审核日志"; }
 			html[lang=zh-TW] & { content: "審核日誌"; }
@@ -804,7 +806,7 @@
 			html[lang=hi] & { content: "ऑडिट लॉग"; }
 		}
 		
-		&[aria-controls=WIDGET-tab]::after {
+		&[aria-controls="widget-tab" i]::after {
 			html[lang^=en-] & { content: "Widget"; }
 			html[lang=zh-CN] & { content: "小工具"; }
 			html[lang=zh-TW] & { content: "小工具"; }
@@ -838,7 +840,7 @@
 			html[lang=hi] & { content: "Widget"; }
 		}
 		
-		&[aria-controls=MEMBER_VERIFICATION-tab]::after {
+		&[aria-controls="member_verification-tab" i]::after {
 			html[lang^=en-] & { content: "Membership Screening"; }
 			html[lang=zh-CN] & { content: "成员筛选"; }
 			html[lang=zh-TW] & { content: "會員審查"; }
@@ -872,7 +874,7 @@
 			html[lang=hi] & { content: "मेम्बरशिप स्क्रीनिंग"; }
 		}
 		
-		&[aria-controls=MEMBERS-tab]::after {
+		&[aria-controls="members-tab" i]::after {
 			html[lang^=en-] & { content: "Members"; }
 			html[lang=zh-CN] & { content: "成员"; }
 			html[lang=zh-TW] & { content: "成員"; }
@@ -906,7 +908,7 @@
 			html[lang=hi] & { content: "मेम्बर"; }
 		}
 		
-		&[aria-controls=INSTANT_INVITES-tab]::after {
+		&[aria-controls="instant_invites-tab" i]::after {
 			html[lang^=en-] & { content: "Invites"; }
 			html[lang=zh-CN] & { content: "邀请"; }
 			html[lang=zh-TW] & { content: "邀請"; }
@@ -940,7 +942,7 @@
 			html[lang=hi] & { content: "इनवाइट"; }
 		}
 		
-		&[aria-controls=BANS-tab]::after {
+		&[aria-controls="bans-tab" i]::after {
 			html[lang^=en-] & { content: "Bans"; }
 			html[lang=zh-CN] & { content: "封锁用户"; }
 			html[lang=zh-TW] & { content: "被停權者"; }
@@ -977,7 +979,7 @@
 
 	// CHANNELS
 	& {
-		&[aria-controls=PERMISSIONS-tab]::after {
+		&[aria-controls="permissions-tab" i]::after {
 			html[lang^=en-] & { content: "Permissions"; }
 			html[lang=zh-CN] & { content: "权限"; }
 			html[lang=zh-TW] & { content: "權限"; }
@@ -1014,7 +1016,7 @@
 
 	// VC DEBUG
 	& {
-		&[aria-controls*=TRANSPORT] {
+		&[aria-controls*="transport" i]::after {
 			html[lang^=en-] & { content: "Transport"; }
 			html[lang=zh-CN] & { content: "传输"; }
 			html[lang=zh-TW] & { content: "傳輸"; }
@@ -1047,7 +1049,8 @@
 			html[lang=vi] & { content: "Vận chuyển"; }
 			html[lang=hi] & { content: "ट्रांसपोर्ट"; }
 		}
-		&[aria-controls*=OUTBOUND] {
+
+		&[aria-controls*="outbound" i]::after {
 			html[lang^=en-] & { content: "Outbound"; }
 			html[lang=zh-CN] & { content: "上传"; }
 			html[lang=zh-TW] & { content: "發出"; }
@@ -1059,6 +1062,40 @@
 			html[lang=el] & { content: "Εξερχόμενη"; }
 			html[lang=hu] & { content: "Kimenő"; }
 			html[lang=it] & { content: "In uscita"; }
+			html[lang=ja] & { content: "アウトバウンド"; }
+			html[lang=ko] & { content: "나가는 연결"; }
+			html[lang=pl] & { content: "Wychodzące"; }
+			html[lang=pt-PT] & { content: "Outbound"; }
+			html[lang=pt-BR] & { content: "Saída"; }
+			html[lang=ru] & { content: "Исходящие"; }
+			html[lang=sk] & { content: "Outbound"; }
+			html[lang=es-ES] & { content: "Saliente"; }
+			html[lang=sv-SE] & { content: "Utgående"; }
+			html[lang=tr] & { content: "Giden"; }
+			html[lang=bg] & { content: "Изходящ"; }
+			html[lang=uk] & { content: "Вихідні"; }
+			html[lang=fi] & { content: "Lähtevä"; }
+			html[lang=no] & { content: "Utgående"; }
+			html[lang=hr] & { content: "Izlazni"; }
+			html[lang=ro] & { content: "Ieșire"; }
+			html[lang=lt] & { content: "Išsiunčiamasis"; }
+			html[lang=th] & { content: "ขาออก"; }
+			html[lang=vi] & { content: "Hướng ra"; }
+			html[lang=hi] & { content: "आउटबाउंड"; }
+		}
+
+		&[aria-controls="screenshare-tab" i]::after {
+			html[lang^=en-] & { content: "Outbound"; }
+			html[lang=zh-CN] & { content: "上传"; }
+			html[lang=zh-TW] & { content: "發出"; }
+			html[lang=cs] & { content: "Odchozí"; }
+			html[lang=da] & { content: "Udgående"; }
+			html[lang=nl] & { content: "Uitgaand"; }
+			html[lang=fr] & { content: "Sortant"; }
+			html[lang=de] & { content: "Ausgehend"; }
+			html[lang=el] & { content: "Εξερχόμενη"; }
+			html[lang=hu] & { content: "Kimenő"; }
+			html[lang=it] & { content: "Condivisione schermo"; }
 			html[lang=ja] & { content: "アウトバウンド"; }
 			html[lang=ko] & { content: "나가는 연결"; }
 			html[lang=pl] & { content: "Wychodzące"; }

@@ -1,20 +1,56 @@
 .sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
 
 	// POWERCORD
-	&[aria-controls=pc-general-tab]::after {
+	&[aria-controls="pc-general-tab" i]::after {
 		content: "Powercord Settings";
 	}
-	&[aria-controls=pc-moduleManager-plugins-tab]::after {
+	&[aria-controls="pc-modulemanager-plugins-tab" i]::after {
 		content: "Plugins";
 	}
-	&[aria-controls=pc-moduleManager-themes-tab]::after {
+	&[aria-controls="pc-modulemanager-themes-tab" i]::after {
 		content: "Themes";
 	}
-	&[aria-controls=pc-updater-tab]::after {
+	&[aria-controls="pc-updater-tab" i]::after {
 		content: "Updater";
 	}
-	&[aria-controls=pc-emojiUtility-tab]::after {
-		content: "Emoji Utility";
+	&[aria-controls="pc-emojiutility-tab" i]::after {
+		content: "Emote Utility";
+	}
+	&[aria-controls="theme-toggler-tab" i]::after {
+		content: "Theme Toggler";
+	}
+	&[aria-controls="better-replies-tab" i]::after {
+		content: "Better Replies";
+	}
+	&[aria-controls="better-status-indicators-tab" i]::after {
+		content: "Better Status Indicators";
+	}
+	&[aria-controls="f8fix-settings-tab" i]::after {
+		content: "F8 Fix";
+	}
+	&[aria-controls="game-activity-toggle-tab" i]::after {
+		content: "Game Activity Toggle	";
+	}
+	&[aria-controls="powerclock-settings-tab" i]::after {
+		content: "Powerclock";
+	}
+	&[aria-controls="powercord-message-tooltips-tab" i]::after {
+		content: "Message Tooltips";
+	}
+	&[aria-controls="privacy-tab-tab" i]::after {
+		content: "Privacy Tab";
+	}
+	&[aria-controls="user-details-tab" i]::after {
+		content: "User Details";
+	}
+	&[aria-controls="vpc-shiki-tab" i]::after {
+		content: "Shiki Codeblocks";
+	}
+	&[aria-controls="better-threads-tab" i]::after {
+		content: "Better Threads";
+	}
+	&[aria-controls="cutecord-tab" i]::after {
+		content: "Cutecord";
 	}
 
 }

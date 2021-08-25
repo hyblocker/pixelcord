@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "../material/card";
 
 $radius: 8px;
@@ -5,7 +6,7 @@ $padding: 24px;
 
 // Classic inline (aka ```html ... ```)
 .markup-2BOw-j code {
-	padding: $padding $padding $padding $padding/2;
+	padding: $padding $padding $padding math.div($padding,2);
 	border-radius: $radius;
 	border-color: var(--navdrawer-separator);
 	background-color: var(--baseline);
@@ -27,7 +28,7 @@ $padding: 24px;
 
 // File viewer
 .textContainer-C0szpm, .modalTextContainer-ITvzbi {
-	padding: $padding $padding $padding/2 $padding;
+	padding: $padding $padding math.div($padding,2) $padding;
 	border-radius: $radius $radius 0 0;
 	border-color: var(--navdrawer-separator);
 	background-color: var(--baseline);
