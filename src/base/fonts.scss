@@ -1,0 +1,41 @@
+// Import Roboto @ weight 400
+// Import Google Sans @ weight 500
+// Import Google Sans @ weight 700
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Google+Sans:wght@400&family=Google+Sans:wght@500&family=Google+Sans:wght@700&display=swap');
+
+:root {
+	// Default font aliases
+	--font-primary: var(--font-header);
+	--font-secondary: var(--font-header);
+	--font-display: var(--font-header);
+}
+
+// Fonts
+::placeholder, body, button, input, select, textarea, ::-webkit-input-placeholder {
+    font-family: var(--font-header);
+}
+.textContainer-C0szpm pre, code, .multiInputLast-33BbRU input {
+    font: 14px/20px var(--font-code) !important;
+    font-weight: var(--code-weight);
+    font-stretch: 100%;
+}
+
+
+
+// Bold headers
+.username-1A8OIy, .title-eS5yk3, .title-29uC1r, .modalTitle-37O4n6 .content-2Add9f {
+	font-weight: var(--weight-header);
+}
+.channelName-2YrOjO,
+.name-uJV0GL {
+	font-weight: var(--weight-subtitle);
+}
+
+.keybindShortcut-1BD6Z1 span {
+	font-weight: 600;
+}
+
+// Chatbox
+.placeholder-37qJjk {
+	font-weight: var(--weight-textbox);
+}

@@ -3,7 +3,7 @@
     "description": "Material Design Theme with numerous enhancements for Discord",
     "version": "4.0.0",
     "license": "GPL-2",
-    "theme": "index.css",
+    "theme": "dist.css",
     "consent": "false",
     "splashTheme": "splash.css",
     "author": "Hyblocker"

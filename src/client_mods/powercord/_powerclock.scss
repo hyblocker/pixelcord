@@ -1,0 +1,26 @@
+$guilds-bg: transparent;
+
+// N.B. We use !important a lot bc the style tag powerclock uses overrides the theme by default
+
+// Make Google Sans look pretty
+.powerclock {
+	font-kerning: none;
+	letter-spacing: 100%;
+	color: var(--logo-color) !important;
+}
+// Sticky gets put into the title bar
+.powerclock.sticky {
+	position: fixed !important;
+	background-color: $guilds-bg !important;
+	// Center it
+	transform: translate(-50%,5px);
+	left: 50vw;
+	padding: 0;
+	font-size: 1rem;
+	z-index: 3001 !important;
+	top: -1px !important;
+}
+// Let powerclock break out into the titlebar
+.guilds-1SWlCJ .scroller-1Bvpku {
+	contain: unset;
+}

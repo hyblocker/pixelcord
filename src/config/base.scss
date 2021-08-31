@@ -1,0 +1,18 @@
+:root {
+
+	// FONTS
+	--font-header: 'Google Sans', 'Migu 1M', sans-serif;
+	--font-code: 'Roboto Mono', monospace;
+
+	// Font Weights (Bold, Italics, etc.)
+	--weight-header: 600;
+	--weight-subtitle: 500;
+	--weight-section: 900;
+	--weight-code: 400;
+}
+.theme-dark {
+	--weight-textbox: 600;
+}
+.theme-light {
+	--weight-textbox: 500;
+}

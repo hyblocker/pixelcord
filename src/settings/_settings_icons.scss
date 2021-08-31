@@ -1,0 +1,62 @@
+@import "../icons/util";
+@import "../icons/outline";
+
+
+$icon-pack: $icons-outline;
+
+// Default vars
+.sidebarRegion-VFTUkN {
+	--settings-icon-color: currentColor;
+}
+
+// Add icons everywhere
+.side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
+.sidebar-CFHs9e .ui-tab-bar-item::before {
+	content: "";
+	width: 22px;
+	height: 22px;
+	left: 15px;
+	margin-right: 6px;
+	margin-top: -2px;
+	background: var(--settings-icon-color);
+	-webkit-mask: var(--icon) center/contain no-repeat;
+	mask: var(--icon) center/contain no-repeat;
+	--icon: #{svg-url(#{map-get($icon-pack, "powercord")})};
+	flex-shrink: 0;
+}
+
+// Hide icons on certain elements
+.side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf),
+.sidebar-CFHs9e .ui-tab-bar-item {
+	display: flex;
+	align-items: center;
+}
+.page-3njELR {
+	& .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
+	& .sidebar-CFHs9e .ui-tab-bar-item::before {
+		content: none;
+	}
+}
+// New discord icons
+.item-PXvHYJ {
+    & .icon-3Povsy,
+    & .icon-Zc-uZZ {
+        display: none;
+    }
+}
+
+@mixin settingsIcon($aria_control, $svg) {
+	.side-8zPYf6 > .item-PXvHYJ[aria-controls="#{$aria_control}" i]:not(.role-3wi9Tf)::before {
+		--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
+	}
+}
+
+@include settingsIcon("my-account-tab", "account");
+@include settingsIcon("profile-customization-tab", "user_profile");
+@include settingsIcon("privacy-&-safety-tab", "shield");
+@include settingsIcon("moderation-tab", "shield");
+@include settingsIcon("authorized-apps-tab", "apps");
+@include settingsIcon("connections-tab", "attachment");
+@include settingsIcon("subscriptions-tab", "subscriptions");
+@include settingsIcon("billing-tab", "billing");
+@include settingsIcon("discord-nitro-tab", "nitro");
