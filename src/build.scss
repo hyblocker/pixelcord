@@ -1,5 +1,8 @@
-@forward "config";
-@forward "base";
-@forward "home";
-@forward "settings";
-@forward "client_mods";
+// Theme itself
+@use "config";
+@use "base";
+@use "home";
+@use "settings";
+@use "client_mods";
+
+@import "import_all_modules";

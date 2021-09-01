@@ -1,28 +1,13 @@
+// SVG Util
 @import "../icons/util";
+
+// Icon packs
 @import "../icons/outline";
-
-
-$icon-pack: $icons-outline;
+@import "../icons/discord";
 
 // Default vars
 .sidebarRegion-VFTUkN {
 	--settings-icon-color: currentColor;
-}
-
-// Add icons everywhere
-.side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
-.sidebar-CFHs9e .ui-tab-bar-item::before {
-	content: "";
-	width: 22px;
-	height: 22px;
-	left: 15px;
-	margin-right: 6px;
-	margin-top: -2px;
-	background: var(--settings-icon-color);
-	-webkit-mask: var(--icon) center/contain no-repeat;
-	mask: var(--icon) center/contain no-repeat;
-	--icon: #{svg-url(#{map-get($icon-pack, "powercord")})};
-	flex-shrink: 0;
 }
 
 // Hide icons on certain elements
@@ -45,18 +30,78 @@ $icon-pack: $icons-outline;
     }
 }
 
-@mixin settingsIcon($aria_control, $svg) {
+@mixin settingsIcon($aria_control, $svg, $icon-pack: $icons-outline) {
 	.side-8zPYf6 > .item-PXvHYJ[aria-controls="#{$aria_control}" i]:not(.role-3wi9Tf)::before {
 		--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
 	}
 }
 
-@include settingsIcon("my-account-tab", "account");
-@include settingsIcon("profile-customization-tab", "user_profile");
-@include settingsIcon("privacy-&-safety-tab", "shield");
-@include settingsIcon("moderation-tab", "shield");
-@include settingsIcon("authorized-apps-tab", "apps");
-@include settingsIcon("connections-tab", "attachment");
-@include settingsIcon("subscriptions-tab", "subscriptions");
-@include settingsIcon("billing-tab", "billing");
-@include settingsIcon("discord-nitro-tab", "nitro");
+// idk why but this is necessary ig?
+$dummy: $icons-outline;
+
+//@mixin includeSettings($icon-pack: $icons-outline) {
+@mixin includeSettings($icon-pack: ()) {
+
+	@if $icon-pack == () {
+		$icon-pack: $icons-outline;
+	}
+	// Add icons everywhere
+	.side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
+	.sidebar-CFHs9e .ui-tab-bar-item::before {
+		content: "";
+		width: 22px;
+		height: 22px;
+		left: 15px;
+		margin-right: 6px;
+		margin-top: -2px;
+		background: var(--settings-icon-color);
+		-webkit-mask: var(--icon) center/contain no-repeat;
+		mask: var(--icon) center/contain no-repeat;
+		flex-shrink: 0;
+
+		// Default to powercord icon
+		--icon: #{svg-url(#{map-get($icon-pack, "powercord")})};
+	}
+
+	// Stock Discord
+
+	// Settings
+	@include settingsIcon("my-account-tab", "account", $icon-pack);
+	@include settingsIcon("profile-customization-tab", "user_profile", $icon-pack);
+	@include settingsIcon("privacy-&-safety-tab", "shield", $icon-pack);
+	@include settingsIcon("moderation-tab", "shield", $icon-pack);
+	@include settingsIcon("authorized-apps-tab", "apps", $icon-pack);
+	@include settingsIcon("connections-tab", "attachment", $icon-pack);
+	@include settingsIcon("subscriptions-tab", "subscriptions", $icon-pack);
+	@include settingsIcon("billing-tab", "billing", $icon-pack);
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+
+	// Guild
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+
+	// Channel
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+
+
+	/*
+	While yes mods are separated to respective menus, settings icons being a module cant be separated sadly :(
+	*/
+
+	// Mods
+
+	// Powercord
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+
+	// Goosemod
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+
+	// Cumcord
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	
+	// Better Discord
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+
+	
+}
+
+@include includeSettings();

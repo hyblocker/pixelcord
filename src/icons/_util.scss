@@ -31,3 +31,27 @@
     }
     @return url("data:image/svg+xml;charset=utf8,#{$encoded}");   
 }
+
+// Returns the first d attribute's contents
+@function svg-d($dict, $name) {
+    
+    $svg: #{map-get($dict, $name)};
+    
+    // Chunk up string in order to avoid "SystemStackError: stack level too deep"
+    $encoded:'';
+    $slice: 2000;
+    $index: 0;
+    $loops: ceil(math.div(str-length($svg), $slice));
+    @for $i from 1 through $loops {
+        $chunk: str-slice($svg, $index, $index + $slice - 1);
+        $chunk: str-replace($chunk,'"','\'');
+        $encoded: #{$encoded}#{$chunk};
+        $index: $index + $slice;
+    }
+    
+    $encoded: str-slice($encoded, (str-index($encoded, 'd=') or str-index($encoded, 'd =')));
+    $encoded: str-slice($encoded, str-index($encoded, "'") + 1);
+    $encoded: str-slice($encoded, 0, str-index($encoded, "'") - 1);
+    
+    @return #{$encoded};
+}

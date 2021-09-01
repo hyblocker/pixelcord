@@ -1,0 +1,26 @@
+// SVG Util
+@import "../../src/icons/util";
+
+// Icon packs
+@import "../../src/icons/outline";
+@import "../../src/icons/discord";
+
+// Replace an individual icon
+@mixin replaceIcon($item, $icon_pack: $icons-discord) {
+	path[d='#{svg-d($icons-discord, $item)}'] {
+		d: path('#{svg-d($icon_pack, $item)}')
+	}
+}
+
+@mixin replaceAllIcons($icon_pack: ()) {
+	
+	@if $icon-pack == () {
+		$icon-pack: $icons-outline;
+	}
+	
+	@include replaceIcon("home", $icon_pack);
+	// @include replaceIcon("nitro", $icon_pack);
+
+}
+
+@include replaceAllIcons();

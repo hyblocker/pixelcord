@@ -1,0 +1,8 @@
+// Icon packs
+@import "../../icons/util";
+@import "../../icons/discord";
+
+// Fix the unclear social icon bc PNGs suck
+.powercord-pc-icon::before {
+	background: #{svg-url(#{map-get($icons-discord, "powercord")})} no-repeat !important;
+}
