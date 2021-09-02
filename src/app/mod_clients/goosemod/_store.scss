@@ -45,8 +45,8 @@
 }
 
 // Change previews on goosemod stores
-.gm-store-card > div:first-child {
-	&:not(:empty) {
+.gm-store-card > img:first-child {
+	&:not([src]) {
 		font-size: 0;
 		background-size: cover;
 		// We use the full URL here because otherwise it would load from the github smh
@@ -57,7 +57,7 @@
 			background-image: url(https://canary.discord.com/assets/7b6ed225050df29a07cb5db712d35a73.svg);
 		}
 	}
-	&:empty {
+	&[src] {
 		cursor: pointer;
 	}
 }

@@ -5,7 +5,16 @@
 	@include card(4);
 }
 
+.theme-dark {
+	@for $i from 0 through 24 {
+		--card-#{$i}-bg-dark: var(--card-#{$i}-bg);
+	}
+}
+
 .theme-dark .theme-light {
+	@for $i from 0 through 24 {
+		--card-#{$i}-bg: var(--card-#{$i}-bg-dark);
+	}
 
 	& .lookBlank-3eh9lL, .theme-light .lookLink-9FtZy- {
 		color: var(--faded-text-interactive-normal);

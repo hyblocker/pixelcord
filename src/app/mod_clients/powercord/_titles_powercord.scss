@@ -52,5 +52,11 @@
 	&[aria-controls="cutecord-tab" i]::after {
 		content: "Cutecord";
 	}
+	&[aria-controls="custom-rpc-tab" i]::after {
+		content: "Custom RPC";
+	}
+	&[aria-controls="custom-activity-tab" i]::after {
+		content: "Custom Activities";
+	}
 
 }

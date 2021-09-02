@@ -2,14 +2,17 @@
 	// Mod client specific ones
 
 	// GOOSEMOD
-	&[aria-controls="gm-general-tab" i]::after {
+	&[aria-controls="gm-settings-tab" i]::after {
 		content: "Goosemod Settings";
 	}
 	&[aria-controls="gm-changelog-tab" i]::after {
-		content: "Goosemod Change Log";
+		content: "Goosemod Changelog";
 	}
-	&[aria-controls="gm-custom css-tab" i]::after {
+	&[aria-controls="gm-custom-css-tab" i]::after {
 		content: "Custom CSS";
+	}
+	&[aria-controls="gm-fucklytics-tab" i]::after {
+		content: "Fucklytics";
 	}
 
 	// Temporary hacks until i find a way to yeet the gm- and -tab :/
