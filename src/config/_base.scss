@@ -9,14 +9,42 @@
 	--weight-subtitle: 500;
 	--weight-section: 900;
 	--weight-code: 400;
+
+	// Snackbars (unread notifs in channels list)
+	--snackbar-radius: 4px;
+    --snackbar-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%);
+	--snackbar-bg: #333;
+	--snackbar-text: white;
 }
 .theme-dark {
 	--weight-textbox: 600;
 
+	// Accent
 	--accent: rgb(52, 164, 255);
 	--accent-text: white;
 	--accent-transparent: rgba(52, 164, 255, 12%);
 	--accent-selected: rgb(141, 202, 255);
+
+	// Colors
+	--green: #66c296;
+	--green-text: white;
+	--green-highlight: #43b581;
+	
+	--red: #cf6679;
+	--red-text: white;
+	--red-highlight: #ff7676;
+	
+	--yellow: #fbec52;
+	--yellow-text: white;
+	--yellow-highlight: #fff68f;
+	
+	--gray: #868d96;
+	--gray-text: white;
+	--gray-highlight: #96999c;
+
+	--purple: #9176c1;
+	--purple-text: white;
+	--purple-highlight: #ac92d8;
 }
 .theme-light {
 	--weight-textbox: 500;
@@ -25,4 +53,25 @@
 	--accent-text: white;
 	--accent-transparent: rgba(26, 115, 232, 12%);
 	--accent-selected: rgb(0, 149, 255);
+
+	// Colors
+	--green: #43b581;
+	--green-text: white;
+	--green-highlight: #66c296;
+	
+	--red: #ff4646;
+	--red-text: white;
+	--red-highlight: #ff7676;
+	
+	--yellow: #faa61a;
+	--yellow-text: white;
+	--yellow-highlight: #fdc25b;
+	
+	--gray: #636b75;
+	--gray-text: white;
+	--gray-highlight: #868d96;
+
+	--purple: #643da7;
+	--purple-text: white;
+	--purple-highlight: #7954b8;
 }

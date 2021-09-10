@@ -1,0 +1,50 @@
+$red-color: "hsl(359, ";
+$green-color: "hsl(139, ";
+$yellow-color: "hsl(38, ";
+$gray-color: "hsl(214, ";
+$purple-color: "hsl(262, ";
+
+// status indicators
+// set status modal
+.status-1AY8sU {
+	&[fill*='background-color: #{$red-color}'] {
+		fill: var(--red) !important;
+	}
+	&[fill*='background-color: #{$green-color}'] {
+		fill: var(--green) !important;
+	}
+	&[fill*='background-color: #{$yellow-color}'] {
+		fill: var(--yellow) !important;
+	}
+	&[fill*='background-color: #{$gray-color}'] {
+		fill: var(--gray) !important;
+	}
+	&[fill*='background-color: #{$purple-color}'] {
+		fill: var(--purple) !important;
+	}
+}
+// avatars
+.wrapper-3t9DeA,
+.status-1XNdyw {
+	& rect {
+		&[fill*='#{$red-color}'] {
+			fill: var(--red);
+		}
+		&[fill*='#{$green-color}'] {
+			fill: var(--green);
+		}
+		&[fill*='#{$yellow-color}'] {
+			fill: var(--yellow);
+		}
+		&[fill*='#{$gray-color}'] {
+			fill: var(--gray);
+		}
+		&[fill*='#{$purple-color}'] {
+			fill: var(--purple);
+		}
+	}
+}
+
+// buttons
+
+// radio toggles
