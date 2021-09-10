@@ -1,0 +1,76 @@
+.searchdiv,
+.container-2XeR5Z,
+.inner-2P4tQO,
+.bd-search-wrapper,
+.inputWrapper-31_8H8,
+.searchBar-3dMhjb,
+.searchBar-1YE5UV,
+.searchBar-5di9mG,
+.searchBar--fTZYa,
+.searchBar-TUoVPN,
+.searchBox-3Y2Vi7,
+.wrapper-1cBijl,
+.gameName-1RiWHm,
+.phoneField-38N1bJ,
+.popoutListInput-1l9TUI,
+.searchBar-1Vaz-O .searchBarComponent-yxeVIL,
+.searchContainer-3pUVEQ,
+.container-cMG81i.medium-1LLV3p
+{
+	position: relative;
+	border-radius: 0;
+
+	&:after {
+		background-color: var(--accent);
+		bottom: 0;
+		content: '';
+		height: 2px;
+		position: absolute;
+		left: calc(50% - 5px);
+		transition-duration: .2s;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		visibility: hidden;
+		width: 10px;
+	}
+  
+	&:focus-within::after {
+		left: 0px;
+		visibility: visible;
+		width: 100%;
+	}
+}
+
+// Send message text box
+.textArea-12jD-V {
+	position: unset;
+	border-radius: 0;
+
+	&::after {
+		background-color: var(--accent);
+		bottom: 0;
+		content: '';
+		height: 2px;
+		position: absolute;
+		left: calc(50% - 5px);
+		transition-duration: .2s;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		visibility: hidden;
+		width: 10px;
+	}
+  
+	&:focus-within::after {
+		left: 0px;
+		visibility: visible;
+		width: 100%;
+	}
+}
+.placeholder-37qJjk {
+	margin-left: 16px + 40px;
+}
+.slateTextArea-1Mkdgw {
+	position: relative;
+}
+// So that the line is clean
+.scrollableContainer-2NUZem {
+	border-radius: 0;
+}

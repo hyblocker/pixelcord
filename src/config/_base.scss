@@ -12,7 +12,17 @@
 }
 .theme-dark {
 	--weight-textbox: 600;
+
+	--accent: rgb(52, 164, 255);
+	--accent-text: white;
+	--accent-transparent: rgba(52, 164, 255, 12%);
+	--accent-selected: rgb(141, 202, 255);
 }
 .theme-light {
 	--weight-textbox: 500;
+
+	--accent: rgb(26, 115, 232);
+	--accent-text: white;
+	--accent-transparent: rgba(26, 115, 232, 12%);
+	--accent-selected: rgb(0, 149, 255);
 }

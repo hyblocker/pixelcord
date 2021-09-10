@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "No Dash";
+  src: url(https://hyblocker.github.io/pixelcord/res/noDash.ttf) format("truetype"), url(https://hyblocker.github.io/pixelcord/res/noDash.woff2) format("woff2");
+  unicode-range: U+002D;
+}
+.sidebar-2K8pFh .mainContent-u_9PKf[href] .channelName-2YrOjO {
+  font-family: "No Dash", var(--font-header);
+}
+
+.wrapper-3WhCwL[class="wrapper-3WhCwL mention interactive"] {
+  font-family: "No Dash", var(--font-header);
+}
+
+.content-3YMskv .emptyChannelIcon-cc932w ~ .size32-o_H79z {
+  font-family: "No Dash", var(--font-header);
+}
+
+.title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Text Channel"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=文字频道] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=文字頻道] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Textový kanál"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=Tekstkanal] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=Tekstkanaal] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Salon textuel"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=Textkanal] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Κανάλι κειμένου"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=Szövegcsatorna] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Canale testuale"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=テキストチャンネル] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="채팅 채널"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Kanał tekstowy"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Canal de texto"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Текстовый канал"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Metin Kanalı"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Текстов канал"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Текстовий канал"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=Tekstikanava] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Tekstualni kanal"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Canal de text"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Teksto Kanalas"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label=ช่องข้อความ] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="Kênh Văn Bản"] + .title-29uC1r, .title-3qD0b- .iconWrapper-2OrFZ1[aria-label="टेक्स्ट चैनल"] + .title-29uC1r {
+  font-family: "No Dash", var(--font-header);
+}
+.title-3qD0b- + .content-yTz4x3 .form-2fGMdU > div > div[aria-controls^=popout_] .placeholder-37qJjk {
+  font-family: "No Dash", var(--font-header);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22space_dash.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AACA;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC%22,%22file%22:%22space_dash.css%22%7D */

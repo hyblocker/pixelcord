@@ -19,6 +19,9 @@
 	}
 	
 	@include replaceIcon("home", $icon_pack);
+	@include replaceIcon("gift", $icon_pack);
+	@include replaceIcon("gif", $icon_pack);
+	@include replaceIcon("settings", $icon_pack);
 	// @include replaceIcon("nitro", $icon_pack);
 
 }

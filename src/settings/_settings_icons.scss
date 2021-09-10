@@ -75,9 +75,11 @@ $dummy: $icons-outline;
 	@include settingsIcon("subscriptions-tab", "subscriptions", $icon-pack);
 	@include settingsIcon("billing-tab", "billing", $icon-pack);
 	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("nitro-server-boost-tab", "boost", $icon-pack);
+	@include settingsIcon("library-inventory-tab", "gift", $icon-pack);
 
 	// Guild
-	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("guild_premium-tab", "boost", $icon-pack);
 
 	// Channel
 	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
@@ -90,13 +92,13 @@ $dummy: $icons-outline;
 	// Mods
 
 	// Powercord
-	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("pc-general-tab", "powercord", $icon-pack);
 
 	// Goosemod
-	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("discord-nitro-tab", "goosemod", $icon-pack);
 
 	// Cumcord
-	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("cumcord_plugins-tab", "cumcord", $icon-pack);
 	
 	// Better Discord
 	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
