@@ -45,10 +45,14 @@
 	--purple: #9176c1;
 	--purple-text: white;
 	--purple-highlight: #ac92d8;
+
+	// Logo color
+	--logo-color: white;
 }
 .theme-light {
 	--weight-textbox: 500;
 
+	// Accent
 	--accent: rgb(26, 115, 232);
 	--accent-text: white;
 	--accent-transparent: rgba(26, 115, 232, 12%);
@@ -74,4 +78,7 @@
 	--purple: #643da7;
 	--purple-text: white;
 	--purple-highlight: #7954b8;
+
+	// Logo color
+	--logo-color: black;
 }

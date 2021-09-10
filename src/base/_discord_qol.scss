@@ -6,3 +6,10 @@
 	-webkit-mask-size: cover;
 	mask-size: cover;
 }
+
+// Remove "shinyness" CTA, bc fuck nitro
+.buttonShine-1CSUM8,
+.shineContainer-1HHuZ1,
+.shineContainerDefault-2bbFgu {
+	display: none;
+}

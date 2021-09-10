@@ -7,20 +7,20 @@ $purple-color: "hsl(262, ";
 // status indicators
 // set status modal
 .status-1AY8sU {
-	&[fill*='background-color: #{$red-color}'] {
-		fill: var(--red) !important;
+	&[style*='background-color: #{$red-color}'] {
+		background-color: var(--red) !important;
 	}
-	&[fill*='background-color: #{$green-color}'] {
-		fill: var(--green) !important;
+	&[style*='background-color: #{$green-color}'] {
+		background-color: var(--green) !important;
 	}
-	&[fill*='background-color: #{$yellow-color}'] {
-		fill: var(--yellow) !important;
+	&[style*='background-color: #{$yellow-color}'] {
+		background-color: var(--yellow) !important;
 	}
-	&[fill*='background-color: #{$gray-color}'] {
-		fill: var(--gray) !important;
+	&[style*='background-color: #{$gray-color}'] {
+		background-color: var(--gray) !important;
 	}
-	&[fill*='background-color: #{$purple-color}'] {
-		fill: var(--purple) !important;
+	&[style*='background-color: #{$purple-color}'] {
+		background-color: var(--purple) !important;
 	}
 }
 // avatars
@@ -42,6 +42,16 @@ $purple-color: "hsl(262, ";
 		&[fill*='#{$purple-color}'] {
 			fill: var(--purple);
 		}
+	}
+}
+
+// pings
+.baseShapeRound-1Mm1YW {
+	&[style*='background-color: #{$red-color}'] {
+		background-color: var(--red) !important;
+	}
+	&[style*='background-color: #{$green-color}'] {
+		background-color: var(--green) !important;
 	}
 }
 
