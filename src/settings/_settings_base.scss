@@ -2,10 +2,16 @@
 .item-PXvHYJ {
 
 }
+// Settings sidebar
 .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
 .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
 	&, &:hover:not(.disabled-1Hwwfb) {
 		background-color: var(--accent-transparent);
 		color: var(--accent);
 	}
+}
+// Premium tabs are special
+.premiumTabItem-1QTfBr[aria-selected=true] {
+	background-color: var(--accent-transparent) !important;
+	color: var(--accent) !important;
 }

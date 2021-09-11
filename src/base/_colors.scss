@@ -4,6 +4,14 @@ $yellow-color: "hsl(38, ";
 $gray-color: "hsl(214, ";
 $purple-color: "hsl(262, ";
 
+// replace root vars bc that works?
+:root {
+	--text-brand: var(--accent);
+	--text-positive: var(--green);
+	--text-warning: var(--yellow);
+	--text-danger: var(--red);
+}
+
 // status indicators
 // set status modal
 .status-1AY8sU {
@@ -55,6 +63,10 @@ $purple-color: "hsl(262, ";
 	}
 }
 
-// buttons
-
 // radio toggles
+
+// accent
+// selected checkmark
+.selectedIcon-3uS11H {
+	color: var(--accent);
+}

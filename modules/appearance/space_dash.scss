@@ -8,12 +8,12 @@
 
 // sidebar
 .sidebar-2K8pFh .mainContent-u_9PKf[href] .channelName-2YrOjO {
-	font-family: 'No Dash', var(--font-header);
+	font-family: 'No Dash', var(--font-primary);
 }
 
 // One mention => channel
 .wrapper-3WhCwL[class="wrapper-3WhCwL mention interactive"] {
-	font-family: 'No Dash', var(--font-header);
+	font-family: 'No Dash', var(--font-primary);
 }
 
 // CSS Limitation: we cant select properly bc we need a look ahead selector or something
@@ -21,17 +21,17 @@
 
 // Autocomplete
 .autocompleteRowVertical-q1K4ky[data-list-item-id*="channel-autocomplete"] .autocompleteRowContentPrimary-238PvP:last-child .colorInteractiveActive-3Ip9Eu {
-	// font-family: 'No Dash', var(--font-header);
+	// font-family: 'No Dash', var(--font-primary);
 }
 
 // Quickswitcher
 .quickswitcher-3JagVE .result-oB0z-- .match-38WbBN {
-	// font-family: 'No Dash', var(--font-header);
+	// font-family: 'No Dash', var(--font-primary);
 }
 
 // New channel
 .content-3YMskv .emptyChannelIcon-cc932w ~ .size32-o_H79z {
-	font-family: 'No Dash', var(--font-header);
+	font-family: 'No Dash', var(--font-display);
 }
 
 // We cant do the description because we cant select text nodes using CSS...
@@ -64,7 +64,7 @@
 	& .iconWrapper-2OrFZ1[aria-label='Kênh Văn Bản'],
 	& .iconWrapper-2OrFZ1[aria-label='टेक्स्ट चैनल'] {
 		& + .title-29uC1r {
-			font-family: 'No Dash', var(--font-header);
+			font-family: 'No Dash', var(--font-display);
 		}
 	}
 	& + .content-yTz4x3 .form-2fGMdU > div > div[aria-controls^="popout_"] .placeholder-37qJjk {

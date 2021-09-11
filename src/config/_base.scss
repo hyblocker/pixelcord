@@ -1,3 +1,6 @@
+// I have absolutely no clue why, but the first import never fucking works when minified???
+// So we make a useless import
+:root{--dummy:0}
 :root {
 
 	// FONTS
@@ -28,23 +31,23 @@
 	// Colors
 	--green: #66c296;
 	--green-text: white;
-	--green-highlight: #43b581;
+	--green-selected: #43b581;
 	
 	--red: #cf6679;
 	--red-text: white;
-	--red-highlight: #ff7676;
+	--red-selected: #ff7676;
 	
 	--yellow: #fbec52;
 	--yellow-text: white;
-	--yellow-highlight: #fff68f;
+	--yellow-selected: #fff68f;
 	
 	--gray: #868d96;
 	--gray-text: white;
-	--gray-highlight: #96999c;
+	--gray-selected: #96999c;
 
 	--purple: #9176c1;
 	--purple-text: white;
-	--purple-highlight: #ac92d8;
+	--purple-selected: #ac92d8;
 
 	// Logo color
 	--logo-color: white;
@@ -61,23 +64,23 @@
 	// Colors
 	--green: #43b581;
 	--green-text: white;
-	--green-highlight: #66c296;
+	--green-selected: #66c296;
 	
 	--red: #ff4646;
 	--red-text: white;
-	--red-highlight: #ff7676;
+	--red-selected: #ff7676;
 	
 	--yellow: #faa61a;
 	--yellow-text: white;
-	--yellow-highlight: #fdc25b;
+	--yellow-selected: #fdc25b;
 	
 	--gray: #636b75;
 	--gray-text: white;
-	--gray-highlight: #868d96;
+	--gray-selected: #868d96;
 
 	--purple: #643da7;
 	--purple-text: white;
-	--purple-highlight: #7954b8;
+	--purple-selected: #7954b8;
 
 	// Logo color
 	--logo-color: black;

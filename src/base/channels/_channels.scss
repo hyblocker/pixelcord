@@ -9,3 +9,18 @@
 	background-color: var(--red, #cf6679);
 	color: var(--red-text, white);
 }
+
+@mixin channelColors($color, $bg) {
+	background-color: $bg;
+
+	& .icon-1DeIlz,			// icon
+	& .name-23GUGE,			// name
+	& .actionIcon-PgcMM2	// buttons (invite, etc)
+	{
+		color: $color;
+	}
+}
+.modeSelected-346R90 .content-1x5b-n,
+.modeSelected-346R90:hover .content-1x5b-n {
+	@include channelColors(var(--accent), var(--accent-transparent));
+}

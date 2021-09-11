@@ -5,15 +5,11 @@
 
 :root {
 	// Default font aliases
-	--font-primary: var(--font-header);
-	--font-secondary: var(--font-header);
-	--font-display: var(--font-header);
+	--font-primary: var(--font-header, 'Google Sans', 'Product Sans', 'Migu 1M', sans-serif);
+	--font-secondary: var(--font-header, 'Google Sans', 'Product Sans', 'Migu 1M', sans-serif);
+	--font-display: var(--font-header, 'Google Sans', 'Product Sans', 'Migu 1M', sans-serif);
 }
-
-// Fonts
-::placeholder, body, button, input, select, textarea, ::-webkit-input-placeholder {
-    font-family: var(--font-header);
-}
+// Code blocks
 .textContainer-C0szpm pre, code, .multiInputLast-33BbRU input {
     font: 14px/20px var(--font-code) !important;
     font-weight: var(--code-weight);

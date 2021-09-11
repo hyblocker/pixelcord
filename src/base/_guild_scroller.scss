@@ -1,3 +1,10 @@
-svg.svg-1X37T1>defs>d[id$="-blob_mask"] {
+// try getting the path? maybe we can do a funny and make css respect masks
+d[id*="-blob_mask"] {
 	d: path("M0 0V24H24V0z");
+}
+// Guild hover / selected
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+.wrapper-1BJsBx:hover .childWrapper-anI2G9 {
+	background-color: var(--accent);
+	color: var(--accent-text);
 }
