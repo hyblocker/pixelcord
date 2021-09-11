@@ -8,3 +8,8 @@ d[id*="-blob_mask"] {
 	background-color: var(--accent);
 	color: var(--accent-text);
 }
+
+// folder color => accent
+.folderIconWrapper-1_bOZe svg[style="color: rgb(88, 101, 242);"] {
+	color: var(--accent) !important;
+}
