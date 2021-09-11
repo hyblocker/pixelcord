@@ -45,8 +45,11 @@
 	}
 
 	// Replace the background
-	& .input-cIJ7To {
-
+	&,
+	& input,
+	& textarea {
+		background-color: transparent;
+		border: none;
 	}
 }
 
@@ -87,4 +90,12 @@
 // So that the line at the bottom is clean on the chat message box
 .scrollableContainer-2NUZem {
 	border-radius: 0;
+}
+
+// Remove the background
+.container-cMG81i,
+.searchdiv .settingssearch,
+.scrollableContainer-2NUZem {
+	background-color: transparent;
+	border: none;
 }

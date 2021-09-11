@@ -1,5 +1,49 @@
 // For this theme, brand = accent
 
+@mixin buttons($class, $color) {
+	// Filled color
+	.lookFilled-1Gx00P#{$class} {
+		&,
+		.theme-dark &,
+		.theme-light & {
+			color: var(--#{$color}-text);
+			background-color: var(--#{$color});
+			&:enabled:active,
+			&:enabled:hover {
+				background-color: var(--#{$color}-selected);
+			}
+		}
+	}
+	// Inverted color
+	.lookInverted-2D7oAl#{$class} {
+		&,
+		.theme-dark &,
+		.theme-light & {
+			color: var(--#{$color});
+			background-color: var(--#{$color}-text);
+		}
+	}
+	// Disabled color
+	.lookFilled-1Gx00P#{$class}:disabled {
+		&,
+		.theme-dark &,
+		.theme-light & {
+			background-color: var(--#{$color});
+		}
+	}
+	.lookLink-9FtZy-#{$class} {
+		&,
+		.theme-dark &,
+		.theme-light & {
+			color: var(--#{$color});
+			&:hover .contents-18-Yxp {
+				background-image: linear-gradient(0deg,transparent,transparent 1px,var(--#{$color}) 0,var(--#{$color}) 2px,transparent 0);
+			}
+		}
+	}
+}
+
+/*
 // Filled accent
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
 	color: var(--accent-text);
@@ -27,6 +71,11 @@
 		background-color: var(--green-selected);
 	}
 }
+// Link red
+.lookLink-9FtZy-.colorRed-1TFJan {
+	color: var(--red);
+}
+
 // Filled gray
 .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
 	.theme-dark &,
@@ -41,7 +90,14 @@
 		}
 	}
 }
+*/
 
+@include buttons(".colorBrand-3pXr91", 'accent');
+@include buttons(".colorGreen-29iAKY", 'green');
+@include buttons(".colorRed-1TFJan", 'red');
+@include buttons(".colorGrey-2DXtkV", 'gray');
+@include buttons(".colorPrimary-3b3xI6", 'gray');
+@include buttons(".colorLink-35jkBc", 'accent'); // TODO: blue?
 
 // Context menu buttons
 

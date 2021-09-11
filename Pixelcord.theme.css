@@ -320,40 +320,208 @@ d[id*=-blob_mask] {
   font-weight: var(--weight-header);
 }
 
+/*
+// Filled accent
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
+	color: var(--accent-text);
+	background-color: var(--accent);
+	&:enabled:active,
+	&:enabled:hover {
+		background-color: var(--accent-selected);
+	}
+}
+// Inverted accent
+.lookInverted-2D7oAl.colorBrand-3pXr91 {
+	color: var(--accent);
+	background-color: var(--accent-text);
+}
+// Disabled accent
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+	background-color: var(--accent);
+}
+// Filled green
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+	color: var(--green-text);
+	background-color: var(--green);
+	&:enabled:active,
+	&:enabled:hover {
+		background-color: var(--green-selected);
+	}
+}
+// Link red
+.lookLink-9FtZy-.colorRed-1TFJan {
+	color: var(--red);
+}
+
+// Filled gray
+.lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+	.theme-dark &,
+	.theme-light & {
+		& {
+			color: var(--gray-text);
+			background-color: var(--gray);
+		}
+		&:enabled:active,
+		&:enabled:hover {
+			background-color: var(--gray-selected);
+		}
+	}
+}
+*/
+.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91 {
   color: var(--accent-text);
   background-color: var(--accent);
 }
 
-.lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover {
+.lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover {
   background-color: var(--accent-selected);
 }
 
-.lookInverted-2D7oAl.colorBrand-3pXr91 {
+.lookInverted-2D7oAl.colorBrand-3pXr91, .theme-dark .lookInverted-2D7oAl.colorBrand-3pXr91, .theme-light .lookInverted-2D7oAl.colorBrand-3pXr91 {
   color: var(--accent);
   background-color: var(--accent-text);
 }
 
-.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:disabled, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
   background-color: var(--accent);
 }
 
-.lookFilled-1Gx00P.colorGreen-29iAKY {
+.lookLink-9FtZy-.colorBrand-3pXr91, .theme-dark .lookLink-9FtZy-.colorBrand-3pXr91, .theme-light .lookLink-9FtZy-.colorBrand-3pXr91 {
+  color: var(--accent);
+}
+
+.lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--accent) 0, var(--accent) 2px, transparent 0);
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY {
   color: var(--green-text);
   background-color: var(--green);
 }
 
-.lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover {
+.lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover {
   background-color: var(--green-selected);
 }
 
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+.lookInverted-2D7oAl.colorGreen-29iAKY, .theme-dark .lookInverted-2D7oAl.colorGreen-29iAKY, .theme-light .lookInverted-2D7oAl.colorGreen-29iAKY {
+  color: var(--green);
+  background-color: var(--green-text);
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY:disabled, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:disabled, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:disabled {
+  background-color: var(--green);
+}
+
+.lookLink-9FtZy-.colorGreen-29iAKY, .theme-dark .lookLink-9FtZy-.colorGreen-29iAKY, .theme-light .lookLink-9FtZy-.colorGreen-29iAKY {
+  color: var(--green);
+}
+
+.lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--green) 0, var(--green) 2px, transparent 0);
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan {
+  color: var(--red-text);
+  background-color: var(--red);
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan:enabled:active, .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:enabled:active, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan:enabled:active, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover {
+  background-color: var(--red-selected);
+}
+
+.lookInverted-2D7oAl.colorRed-1TFJan, .theme-dark .lookInverted-2D7oAl.colorRed-1TFJan, .theme-light .lookInverted-2D7oAl.colorRed-1TFJan {
+  color: var(--red);
+  background-color: var(--red-text);
+}
+
+.lookFilled-1Gx00P.colorRed-1TFJan:disabled, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:disabled, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan:disabled {
+  background-color: var(--red);
+}
+
+.lookLink-9FtZy-.colorRed-1TFJan, .theme-dark .lookLink-9FtZy-.colorRed-1TFJan, .theme-light .lookLink-9FtZy-.colorRed-1TFJan {
+  color: var(--red);
+}
+
+.lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--red) 0, var(--red) 2px, transparent 0);
+}
+
+.lookFilled-1Gx00P.colorGrey-2DXtkV, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV {
   color: var(--gray-text);
   background-color: var(--gray);
 }
 
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover {
+.lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active, .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover {
   background-color: var(--gray-selected);
+}
+
+.lookInverted-2D7oAl.colorGrey-2DXtkV, .theme-dark .lookInverted-2D7oAl.colorGrey-2DXtkV, .theme-light .lookInverted-2D7oAl.colorGrey-2DXtkV {
+  color: var(--gray);
+  background-color: var(--gray-text);
+}
+
+.lookFilled-1Gx00P.colorGrey-2DXtkV:disabled, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+  background-color: var(--gray);
+}
+
+.lookLink-9FtZy-.colorGrey-2DXtkV, .theme-dark .lookLink-9FtZy-.colorGrey-2DXtkV, .theme-light .lookLink-9FtZy-.colorGrey-2DXtkV {
+  color: var(--gray);
+}
+
+.lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--gray) 0, var(--gray) 2px, transparent 0);
+}
+
+.lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+  color: var(--gray-text);
+  background-color: var(--gray);
+}
+
+.lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover {
+  background-color: var(--gray-selected);
+}
+
+.lookInverted-2D7oAl.colorPrimary-3b3xI6, .theme-dark .lookInverted-2D7oAl.colorPrimary-3b3xI6, .theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6 {
+  color: var(--gray);
+  background-color: var(--gray-text);
+}
+
+.lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled {
+  background-color: var(--gray);
+}
+
+.lookLink-9FtZy-.colorPrimary-3b3xI6, .theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6, .theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6 {
+  color: var(--gray);
+}
+
+.lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--gray) 0, var(--gray) 2px, transparent 0);
+}
+
+.lookFilled-1Gx00P.colorLink-35jkBc, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc {
+  color: var(--accent-text);
+  background-color: var(--accent);
+}
+
+.lookFilled-1Gx00P.colorLink-35jkBc:enabled:active, .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:enabled:active, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc:enabled:active, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover {
+  background-color: var(--accent-selected);
+}
+
+.lookInverted-2D7oAl.colorLink-35jkBc, .theme-dark .lookInverted-2D7oAl.colorLink-35jkBc, .theme-light .lookInverted-2D7oAl.colorLink-35jkBc {
+  color: var(--accent);
+  background-color: var(--accent-text);
+}
+
+.lookFilled-1Gx00P.colorLink-35jkBc:disabled, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:disabled, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc:disabled {
+  background-color: var(--accent);
+}
+
+.lookLink-9FtZy-.colorLink-35jkBc, .theme-dark .lookLink-9FtZy-.colorLink-35jkBc, .theme-light .lookLink-9FtZy-.colorLink-35jkBc {
+  color: var(--accent);
+}
+
+.lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--accent) 0, var(--accent) 2px, transparent 0);
 }
 
 .colorBrand-ROmMP1 {
@@ -472,6 +640,62 @@ d[id*=-blob_mask] {
   width: 100%;
 }
 
+.searchdiv, .searchdiv input, .searchdiv textarea,
+.container-2XeR5Z,
+.container-2XeR5Z input,
+.container-2XeR5Z textarea,
+.inner-2P4tQO,
+.inner-2P4tQO input,
+.inner-2P4tQO textarea,
+.bd-search-wrapper,
+.bd-search-wrapper input,
+.bd-search-wrapper textarea,
+.inputWrapper-31_8H8,
+.inputWrapper-31_8H8 input,
+.inputWrapper-31_8H8 textarea,
+.searchBar-3dMhjb,
+.searchBar-3dMhjb input,
+.searchBar-3dMhjb textarea,
+.searchBar-1YE5UV,
+.searchBar-1YE5UV input,
+.searchBar-1YE5UV textarea,
+.searchBar-5di9mG,
+.searchBar-5di9mG input,
+.searchBar-5di9mG textarea,
+.searchBar--fTZYa,
+.searchBar--fTZYa input,
+.searchBar--fTZYa textarea,
+.searchBar-TUoVPN,
+.searchBar-TUoVPN input,
+.searchBar-TUoVPN textarea,
+.searchBox-3Y2Vi7,
+.searchBox-3Y2Vi7 input,
+.searchBox-3Y2Vi7 textarea,
+.wrapper-1cBijl,
+.wrapper-1cBijl input,
+.wrapper-1cBijl textarea,
+.gameName-1RiWHm,
+.gameName-1RiWHm input,
+.gameName-1RiWHm textarea,
+.phoneField-38N1bJ,
+.phoneField-38N1bJ input,
+.phoneField-38N1bJ textarea,
+.popoutListInput-1l9TUI,
+.popoutListInput-1l9TUI input,
+.popoutListInput-1l9TUI textarea,
+.searchBar-1Vaz-O .searchBarComponent-yxeVIL,
+.searchBar-1Vaz-O .searchBarComponent-yxeVIL input,
+.searchBar-1Vaz-O .searchBarComponent-yxeVIL textarea,
+.searchContainer-3pUVEQ,
+.searchContainer-3pUVEQ input,
+.searchContainer-3pUVEQ textarea,
+.container-cMG81i.medium-1LLV3p,
+.container-cMG81i.medium-1LLV3p input,
+.container-cMG81i.medium-1LLV3p textarea {
+  background-color: transparent;
+  border: none;
+}
+
 .textArea-12jD-V {
   position: unset;
   border-radius: 0;
@@ -510,6 +734,13 @@ d[id*=-blob_mask] {
 
 .scrollableContainer-2NUZem {
   border-radius: 0;
+}
+
+.container-cMG81i,
+.searchdiv .settingssearch,
+.scrollableContainer-2NUZem {
+  background-color: transparent;
+  border: none;
 }
 
 .defaultContainer-Z8qCJn .colorPickerSwatch-5GX3Ve {
@@ -709,4 +940,4 @@ path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18
  * @source https://github.com/hyblocker/pixelcord
 */
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22,%22betterdiscord_dev.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAGQ;ACDR;EAAM;;;AACN;EAGC;EACA;EAGA;EACA;EACA;EACA;EAGA;EACG;EACH;EACA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAGA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAGA;;;ACzDD;EAEE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AAIF;AAAA;EAGE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AFhCF;EAEC;EACA;EACA;;;AAGD;EACI;EACA;EACA;;;AAMJ;EACC;;;AAED;AAAA;EAEC;;;AAGD;EACC;;;AAID;EACC;;;AG/BA;EAGC;EACA;EACA;;;AAGD;EAOC;;;ACfF;EACC;EACA;;;AAID;AAAA;AAAA;EAGC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAeC;;;ACzBD;EACC;EACA;EACA;EACA;;;AAMA;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAOA;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAOF;EACC;;;AAED;EACC;;;AAQF;EACC;;;AAID;EACC;;;AAID;EACC;;;AACA;EACC;;;AAKF;EACC;;;ACvFD;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EACC;;;ACbD;AAAA;EAEC;EACG;EACH;EACA;;;AAED;EACC;EACA;;;AAaD;AAAA;EATC,kBAWsC;;;AATtC;AAAA;AAAA;AAAA;EAIC,OAKsB;;;AAExB;EACC;;;AAED;EACC;;;AAED;AAAA;EAEC;;;AC/BD;EACC;EACA;;;AACA;EAEC;;;AAIF;EACC;EACA;;;AAGD;EACC;;;AAGD;EACC;EACA;;;AACA;EAEC;;;AAOA;EACC;EACA;;;AAED;EAEC;;;AASH;EACC;;;AAID;AAAA;EAEC;;;AAED;EACC;;;AAGD;AAAA;AAAA;EAGC;;;AAED;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGD;AAAA;AAAA;EAGC;;;AAGD;AAAA;EAEC;EACA;;;ACpFD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAoBC;EACA;;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAUF;EAEC;EACA;;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;EACA;EACA;;;AAGF;EACC;;;AAED;EACC;;;AAED;EACC;;;AAGD;EACC;;;ACvFD;EACC;;;ACMD;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGA;EAEC;;;AAKE;EAEI;;;AAoBP;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA7BD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAqDD;AAAA;AAAA;AAtDA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACzBD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;;;AAIF;EACC;EACA;;;ACZD;EACC;;;ACDD;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACfA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACTF;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC;;;ACtEF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA%22,%22file%22:%22Pixelcord.theme.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22,%22betterdiscord_dev.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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%22,%22file%22:%22Pixelcord.theme.css%22%7D */
