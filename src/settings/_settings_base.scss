@@ -10,9 +10,14 @@
 	&, &:hover:not(.disabled-1Hwwfb) {
 		background-color: var(--accent-transparent);
 		color: var(--accent);
+		font-weight: var(--weight-header);
 	}
+    & .colorInteractiveActive-3Ip9Eu {
+        color: currentColor;
+    }
 }
-// Premium tabs are special
+// Nitro tabs are special
+.serverBoostTabItem-2hFTIN[aria-selected=true],
 .premiumTabItem-1QTfBr[aria-selected=true] {
 	background-color: var(--accent-transparent) !important;
 	color: var(--accent) !important;

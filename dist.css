@@ -25,18 +25,23 @@
   --accent-selected: rgb(141, 202, 255);
   --green: #66c296;
   --green-text: white;
+  --green-transparent: rgba(67, 181, 129, 12%);
   --green-selected: #43b581;
   --red: #cf6679;
   --red-text: white;
+  --red-transparent: rgba(207, 102, 121, 12%);
   --red-selected: #ff7676;
   --yellow: #fbec52;
   --yellow-text: white;
+  --yellow-transparent: rgba(251, 236, 82, 12%);
   --yellow-selected: #fff68f;
   --gray: #868d96;
   --gray-text: white;
+  --gray-transparent: rgba(134, 141, 150, 12%);
   --gray-selected: #96999c;
   --purple: #9176c1;
   --purple-text: white;
+  --purple-transparent: rgba(145, 118, 193, 12%);
   --purple-selected: #ac92d8;
   --logo-color: white;
 }
@@ -49,18 +54,23 @@
   --accent-selected: rgb(0, 149, 255);
   --green: #43b581;
   --green-text: white;
+  --green-transparent: rgba(67, 181, 129, 12%);
   --green-selected: #66c296;
   --red: #ff4646;
   --red-text: white;
+  --red-transparent: rgba(255, 70, 70, 12%);
   --red-selected: #ff7676;
   --yellow: #faa61a;
   --yellow-text: white;
+  --yellow-transparent: rgba(250, 166, 26, 12%);
   --yellow-selected: #fdc25b;
   --gray: #636b75;
   --gray-text: white;
+  --gray-transparent: rgba(99, 107, 117, 12%);
   --gray-selected: #868d96;
   --purple: #643da7;
   --purple-text: white;
+  --purple-transparent: rgba(100, 61, 167, 12%);
   --purple-selected: #7954b8;
   --logo-color: black;
 }
@@ -321,210 +331,600 @@ d[id*=-blob_mask] {
   font-weight: var(--weight-header);
 }
 
-/*
-// Filled accent
-.lookFilled-1Gx00P.colorBrand-3pXr91 {
-	color: var(--accent-text);
-	background-color: var(--accent);
-	&:enabled:active,
-	&:enabled:hover {
-		background-color: var(--accent-selected);
-	}
-}
-// Inverted accent
-.lookInverted-2D7oAl.colorBrand-3pXr91 {
-	color: var(--accent);
-	background-color: var(--accent-text);
-}
-// Disabled accent
-.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
-	background-color: var(--accent);
-}
-// Filled green
-.lookFilled-1Gx00P.colorGreen-29iAKY {
-	color: var(--green-text);
-	background-color: var(--green);
-	&:enabled:active,
-	&:enabled:hover {
-		background-color: var(--green-selected);
-	}
-}
-// Link red
-.lookLink-9FtZy-.colorRed-1TFJan {
-	color: var(--red);
+.theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91,
+.theme-light .lookFilled-1Gx00P.colorBrand-3pXr91 {
+  color: var(--accent-text);
+  background-color: var(--accent);
 }
 
-// Filled gray
-.lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+.theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover,
+.theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active,
+.theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover {
+  background-color: var(--accent-selected);
+}
+
+.theme-dark .lookInverted-2D7oAl.colorBrand-3pXr91,
+.theme-light .lookInverted-2D7oAl.colorBrand-3pXr91 {
+  color: var(--accent);
+  background-color: var(--accent-text);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:disabled,
+.theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+  background-color: var(--accent);
+}
+
+.theme-dark .lookLink-9FtZy-.colorBrand-3pXr91,
+.theme-light .lookLink-9FtZy-.colorBrand-3pXr91 {
+  color: var(--accent);
+}
+
+.theme-dark .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp,
+.theme-light .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--accent) 0, var(--accent) 2px, transparent 0);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorBrand-3pXr91,
+.theme-light .lookOutlined-3sRXeN.colorBrand-3pXr91 {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorBrand-3pXr91:active,
+.theme-light .lookOutlined-3sRXeN.colorBrand-3pXr91:active {
+  background-color: var(--accent-transparent);
+}
+
+/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
+// Filled color
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+	&,
 	.theme-dark &,
 	.theme-light & {
-		& {
-			color: var(--gray-text);
-			background-color: var(--gray);
+		color: var(--accent-text);
+		background-color: var(--accent);
+		&:enabled:active,
+		&:enabled:hover {
+			background-color: var(--accent-selected);
 		}
+	}
+}
+// Inverted color
+.lookInverted-2D7oAl.colorBrand-3pXr91 {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--accent);
+		background-color: var(--accent-text);
+	}
+}
+// Disabled color
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		background-color: var(--accent);
+	}
+}
+// Link-like buttons
+.lookLink-9FtZy-.colorBrand-3pXr91 {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--accent);
+		&:hover .contents-18-Yxp {
+			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--accent) 0,var(--accent) 2px,transparent 0);
+		}
+	}
+}
+// Outlined buttons
+.lookOutlined-3sRXeN.colorBrand-3pXr91 {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--accent);
+		border-color: var(--accent);
+		&:active {
+			background-color: var(--accent-transparent);
+		}
+	}
+}
+*/
+.theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY,
+.theme-light .lookFilled-1Gx00P.colorGreen-29iAKY {
+  color: var(--green-text);
+  background-color: var(--green);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover,
+.theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active,
+.theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover {
+  background-color: var(--green-selected);
+}
+
+.theme-dark .lookInverted-2D7oAl.colorGreen-29iAKY,
+.theme-light .lookInverted-2D7oAl.colorGreen-29iAKY {
+  color: var(--green);
+  background-color: var(--green-text);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:disabled,
+.theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:disabled {
+  background-color: var(--green);
+}
+
+.theme-dark .lookLink-9FtZy-.colorGreen-29iAKY,
+.theme-light .lookLink-9FtZy-.colorGreen-29iAKY {
+  color: var(--green);
+}
+
+.theme-dark .lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp,
+.theme-light .lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--green) 0, var(--green) 2px, transparent 0);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorGreen-29iAKY,
+.theme-light .lookOutlined-3sRXeN.colorGreen-29iAKY {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorGreen-29iAKY:active,
+.theme-light .lookOutlined-3sRXeN.colorGreen-29iAKY:active {
+  background-color: var(--green-transparent);
+}
+
+/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
+// Filled color
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--green-text);
+		background-color: var(--green);
+		&:enabled:active,
+		&:enabled:hover {
+			background-color: var(--green-selected);
+		}
+	}
+}
+// Inverted color
+.lookInverted-2D7oAl.colorGreen-29iAKY {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--green);
+		background-color: var(--green-text);
+	}
+}
+// Disabled color
+.lookFilled-1Gx00P.colorGreen-29iAKY:disabled {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		background-color: var(--green);
+	}
+}
+// Link-like buttons
+.lookLink-9FtZy-.colorGreen-29iAKY {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--green);
+		&:hover .contents-18-Yxp {
+			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--green) 0,var(--green) 2px,transparent 0);
+		}
+	}
+}
+// Outlined buttons
+.lookOutlined-3sRXeN.colorGreen-29iAKY {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--green);
+		border-color: var(--green);
+		&:active {
+			background-color: var(--green-transparent);
+		}
+	}
+}
+*/
+.theme-dark .lookFilled-1Gx00P.colorRed-1TFJan,
+.theme-light .lookFilled-1Gx00P.colorRed-1TFJan {
+  color: var(--red-text);
+  background-color: var(--red);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:enabled:active, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover,
+.theme-light .lookFilled-1Gx00P.colorRed-1TFJan:enabled:active,
+.theme-light .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover {
+  background-color: var(--red-selected);
+}
+
+.theme-dark .lookInverted-2D7oAl.colorRed-1TFJan,
+.theme-light .lookInverted-2D7oAl.colorRed-1TFJan {
+  color: var(--red);
+  background-color: var(--red-text);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:disabled,
+.theme-light .lookFilled-1Gx00P.colorRed-1TFJan:disabled {
+  background-color: var(--red);
+}
+
+.theme-dark .lookLink-9FtZy-.colorRed-1TFJan,
+.theme-light .lookLink-9FtZy-.colorRed-1TFJan {
+  color: var(--red);
+}
+
+.theme-dark .lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp,
+.theme-light .lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--red) 0, var(--red) 2px, transparent 0);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorRed-1TFJan,
+.theme-light .lookOutlined-3sRXeN.colorRed-1TFJan {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorRed-1TFJan:active,
+.theme-light .lookOutlined-3sRXeN.colorRed-1TFJan:active {
+  background-color: var(--red-transparent);
+}
+
+/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
+// Filled color
+.lookFilled-1Gx00P.colorRed-1TFJan {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--red-text);
+		background-color: var(--red);
+		&:enabled:active,
+		&:enabled:hover {
+			background-color: var(--red-selected);
+		}
+	}
+}
+// Inverted color
+.lookInverted-2D7oAl.colorRed-1TFJan {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--red);
+		background-color: var(--red-text);
+	}
+}
+// Disabled color
+.lookFilled-1Gx00P.colorRed-1TFJan:disabled {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		background-color: var(--red);
+	}
+}
+// Link-like buttons
+.lookLink-9FtZy-.colorRed-1TFJan {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--red);
+		&:hover .contents-18-Yxp {
+			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--red) 0,var(--red) 2px,transparent 0);
+		}
+	}
+}
+// Outlined buttons
+.lookOutlined-3sRXeN.colorRed-1TFJan {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--red);
+		border-color: var(--red);
+		&:active {
+			background-color: var(--red-transparent);
+		}
+	}
+}
+*/
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV,
+.theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV {
+  color: var(--gray-text);
+  background-color: var(--gray);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover,
+.theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active,
+.theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover {
+  background-color: var(--gray-selected);
+}
+
+.theme-dark .lookInverted-2D7oAl.colorGrey-2DXtkV,
+.theme-light .lookInverted-2D7oAl.colorGrey-2DXtkV {
+  color: var(--gray);
+  background-color: var(--gray-text);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled,
+.theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+  background-color: var(--gray);
+}
+
+.theme-dark .lookLink-9FtZy-.colorGrey-2DXtkV,
+.theme-light .lookLink-9FtZy-.colorGrey-2DXtkV {
+  color: var(--gray);
+}
+
+.theme-dark .lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp,
+.theme-light .lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--gray) 0, var(--gray) 2px, transparent 0);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorGrey-2DXtkV,
+.theme-light .lookOutlined-3sRXeN.colorGrey-2DXtkV {
+  color: var(--gray);
+  border-color: var(--gray);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorGrey-2DXtkV:active,
+.theme-light .lookOutlined-3sRXeN.colorGrey-2DXtkV:active {
+  background-color: var(--gray-transparent);
+}
+
+/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
+// Filled color
+.lookFilled-1Gx00P.colorGrey-2DXtkV {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray-text);
+		background-color: var(--gray);
 		&:enabled:active,
 		&:enabled:hover {
 			background-color: var(--gray-selected);
 		}
 	}
 }
+// Inverted color
+.lookInverted-2D7oAl.colorGrey-2DXtkV {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray);
+		background-color: var(--gray-text);
+	}
+}
+// Disabled color
+.lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		background-color: var(--gray);
+	}
+}
+// Link-like buttons
+.lookLink-9FtZy-.colorGrey-2DXtkV {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray);
+		&:hover .contents-18-Yxp {
+			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--gray) 0,var(--gray) 2px,transparent 0);
+		}
+	}
+}
+// Outlined buttons
+.lookOutlined-3sRXeN.colorGrey-2DXtkV {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray);
+		border-color: var(--gray);
+		&:active {
+			background-color: var(--gray-transparent);
+		}
+	}
+}
 */
-.lookFilled-1Gx00P.colorBrand-3pXr91, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91 {
-  color: var(--accent-text);
-  background-color: var(--accent);
-}
-
-.lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover {
-  background-color: var(--accent-selected);
-}
-
-.lookInverted-2D7oAl.colorBrand-3pXr91, .theme-dark .lookInverted-2D7oAl.colorBrand-3pXr91, .theme-light .lookInverted-2D7oAl.colorBrand-3pXr91 {
-  color: var(--accent);
-  background-color: var(--accent-text);
-}
-
-.lookFilled-1Gx00P.colorBrand-3pXr91:disabled, .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91:disabled, .theme-light .lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
-  background-color: var(--accent);
-}
-
-.lookLink-9FtZy-.colorBrand-3pXr91, .theme-dark .lookLink-9FtZy-.colorBrand-3pXr91, .theme-light .lookLink-9FtZy-.colorBrand-3pXr91 {
-  color: var(--accent);
-}
-
-.lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorBrand-3pXr91:hover .contents-18-Yxp {
-  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--accent) 0, var(--accent) 2px, transparent 0);
-}
-
-.lookFilled-1Gx00P.colorGreen-29iAKY, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY {
-  color: var(--green-text);
-  background-color: var(--green);
-}
-
-.lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover {
-  background-color: var(--green-selected);
-}
-
-.lookInverted-2D7oAl.colorGreen-29iAKY, .theme-dark .lookInverted-2D7oAl.colorGreen-29iAKY, .theme-light .lookInverted-2D7oAl.colorGreen-29iAKY {
-  color: var(--green);
-  background-color: var(--green-text);
-}
-
-.lookFilled-1Gx00P.colorGreen-29iAKY:disabled, .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY:disabled, .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY:disabled {
-  background-color: var(--green);
-}
-
-.lookLink-9FtZy-.colorGreen-29iAKY, .theme-dark .lookLink-9FtZy-.colorGreen-29iAKY, .theme-light .lookLink-9FtZy-.colorGreen-29iAKY {
-  color: var(--green);
-}
-
-.lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorGreen-29iAKY:hover .contents-18-Yxp {
-  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--green) 0, var(--green) 2px, transparent 0);
-}
-
-.lookFilled-1Gx00P.colorRed-1TFJan, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan {
-  color: var(--red-text);
-  background-color: var(--red);
-}
-
-.lookFilled-1Gx00P.colorRed-1TFJan:enabled:active, .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:enabled:active, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan:enabled:active, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan:enabled:hover {
-  background-color: var(--red-selected);
-}
-
-.lookInverted-2D7oAl.colorRed-1TFJan, .theme-dark .lookInverted-2D7oAl.colorRed-1TFJan, .theme-light .lookInverted-2D7oAl.colorRed-1TFJan {
-  color: var(--red);
-  background-color: var(--red-text);
-}
-
-.lookFilled-1Gx00P.colorRed-1TFJan:disabled, .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan:disabled, .theme-light .lookFilled-1Gx00P.colorRed-1TFJan:disabled {
-  background-color: var(--red);
-}
-
-.lookLink-9FtZy-.colorRed-1TFJan, .theme-dark .lookLink-9FtZy-.colorRed-1TFJan, .theme-light .lookLink-9FtZy-.colorRed-1TFJan {
-  color: var(--red);
-}
-
-.lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorRed-1TFJan:hover .contents-18-Yxp {
-  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--red) 0, var(--red) 2px, transparent 0);
-}
-
-.lookFilled-1Gx00P.colorGrey-2DXtkV, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV {
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6,
+.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
   color: var(--gray-text);
   background-color: var(--gray);
 }
 
-.lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active, .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:active, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:enabled:hover {
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover,
+.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active,
+.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover {
   background-color: var(--gray-selected);
 }
 
-.lookInverted-2D7oAl.colorGrey-2DXtkV, .theme-dark .lookInverted-2D7oAl.colorGrey-2DXtkV, .theme-light .lookInverted-2D7oAl.colorGrey-2DXtkV {
+.theme-dark .lookInverted-2D7oAl.colorPrimary-3b3xI6,
+.theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6 {
   color: var(--gray);
   background-color: var(--gray-text);
 }
 
-.lookFilled-1Gx00P.colorGrey-2DXtkV:disabled, .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled, .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled,
+.theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled {
   background-color: var(--gray);
 }
 
-.lookLink-9FtZy-.colorGrey-2DXtkV, .theme-dark .lookLink-9FtZy-.colorGrey-2DXtkV, .theme-light .lookLink-9FtZy-.colorGrey-2DXtkV {
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6,
+.theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6 {
   color: var(--gray);
 }
 
-.lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorGrey-2DXtkV:hover .contents-18-Yxp {
+.theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp,
+.theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp {
   background-image: linear-gradient(0deg, transparent, transparent 1px, var(--gray) 0, var(--gray) 2px, transparent 0);
 }
 
-.lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-  color: var(--gray-text);
-  background-color: var(--gray);
-}
-
-.lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover {
-  background-color: var(--gray-selected);
-}
-
-.lookInverted-2D7oAl.colorPrimary-3b3xI6, .theme-dark .lookInverted-2D7oAl.colorPrimary-3b3xI6, .theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6 {
+.theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6,
+.theme-light .lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
   color: var(--gray);
-  background-color: var(--gray-text);
+  border-color: var(--gray);
 }
 
-.lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled {
-  background-color: var(--gray);
+.theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:active,
+.theme-light .lookOutlined-3sRXeN.colorPrimary-3b3xI6:active {
+  background-color: var(--gray-transparent);
 }
 
-.lookLink-9FtZy-.colorPrimary-3b3xI6, .theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6, .theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6 {
-  color: var(--gray);
+/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
+// Filled color
+.lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray-text);
+		background-color: var(--gray);
+		&:enabled:active,
+		&:enabled:hover {
+			background-color: var(--gray-selected);
+		}
+	}
 }
-
-.lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorPrimary-3b3xI6:hover .contents-18-Yxp {
-  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--gray) 0, var(--gray) 2px, transparent 0);
+// Inverted color
+.lookInverted-2D7oAl.colorPrimary-3b3xI6 {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray);
+		background-color: var(--gray-text);
+	}
 }
-
-.lookFilled-1Gx00P.colorLink-35jkBc, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc {
+// Disabled color
+.lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		background-color: var(--gray);
+	}
+}
+// Link-like buttons
+.lookLink-9FtZy-.colorPrimary-3b3xI6 {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray);
+		&:hover .contents-18-Yxp {
+			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--gray) 0,var(--gray) 2px,transparent 0);
+		}
+	}
+}
+// Outlined buttons
+.lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--gray);
+		border-color: var(--gray);
+		&:active {
+			background-color: var(--gray-transparent);
+		}
+	}
+}
+*/
+.theme-dark .lookFilled-1Gx00P.colorLink-35jkBc,
+.theme-light .lookFilled-1Gx00P.colorLink-35jkBc {
   color: var(--accent-text);
   background-color: var(--accent);
 }
 
-.lookFilled-1Gx00P.colorLink-35jkBc:enabled:active, .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:enabled:active, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc:enabled:active, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover {
+.theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:enabled:active, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover,
+.theme-light .lookFilled-1Gx00P.colorLink-35jkBc:enabled:active,
+.theme-light .lookFilled-1Gx00P.colorLink-35jkBc:enabled:hover {
   background-color: var(--accent-selected);
 }
 
-.lookInverted-2D7oAl.colorLink-35jkBc, .theme-dark .lookInverted-2D7oAl.colorLink-35jkBc, .theme-light .lookInverted-2D7oAl.colorLink-35jkBc {
+.theme-dark .lookInverted-2D7oAl.colorLink-35jkBc,
+.theme-light .lookInverted-2D7oAl.colorLink-35jkBc {
   color: var(--accent);
   background-color: var(--accent-text);
 }
 
-.lookFilled-1Gx00P.colorLink-35jkBc:disabled, .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:disabled, .theme-light .lookFilled-1Gx00P.colorLink-35jkBc:disabled {
+.theme-dark .lookFilled-1Gx00P.colorLink-35jkBc:disabled,
+.theme-light .lookFilled-1Gx00P.colorLink-35jkBc:disabled {
   background-color: var(--accent);
 }
 
-.lookLink-9FtZy-.colorLink-35jkBc, .theme-dark .lookLink-9FtZy-.colorLink-35jkBc, .theme-light .lookLink-9FtZy-.colorLink-35jkBc {
+.theme-dark .lookLink-9FtZy-.colorLink-35jkBc,
+.theme-light .lookLink-9FtZy-.colorLink-35jkBc {
   color: var(--accent);
 }
 
-.lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp, .theme-dark .lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp, .theme-light .lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp {
+.theme-dark .lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp,
+.theme-light .lookLink-9FtZy-.colorLink-35jkBc:hover .contents-18-Yxp {
   background-image: linear-gradient(0deg, transparent, transparent 1px, var(--accent) 0, var(--accent) 2px, transparent 0);
 }
 
+.theme-dark .lookOutlined-3sRXeN.colorLink-35jkBc,
+.theme-light .lookOutlined-3sRXeN.colorLink-35jkBc {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorLink-35jkBc:active,
+.theme-light .lookOutlined-3sRXeN.colorLink-35jkBc:active {
+  background-color: var(--accent-transparent);
+}
+
+/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
+// Filled color
+.lookFilled-1Gx00P.colorLink-35jkBc {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--accent-text);
+		background-color: var(--accent);
+		&:enabled:active,
+		&:enabled:hover {
+			background-color: var(--accent-selected);
+		}
+	}
+}
+// Inverted color
+.lookInverted-2D7oAl.colorLink-35jkBc {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--accent);
+		background-color: var(--accent-text);
+	}
+}
+// Disabled color
+.lookFilled-1Gx00P.colorLink-35jkBc:disabled {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		background-color: var(--accent);
+	}
+}
+// Link-like buttons
+.lookLink-9FtZy-.colorLink-35jkBc {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--accent);
+		&:hover .contents-18-Yxp {
+			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--accent) 0,var(--accent) 2px,transparent 0);
+		}
+	}
+}
+// Outlined buttons
+.lookOutlined-3sRXeN.colorLink-35jkBc {
+	&,
+	.theme-dark &,
+	.theme-light & {
+		color: var(--accent);
+		border-color: var(--accent);
+		&:active {
+			background-color: var(--accent-transparent);
+		}
+	}
+}
+*/
 .colorBrand-ROmMP1 {
   color: var(--accent);
 }
@@ -569,6 +969,7 @@ d[id*=-blob_mask] {
 .searchdiv,
 .container-2XeR5Z,
 .inner-2P4tQO,
+.textArea-12jD-V,
 .bd-search-wrapper,
 .inputWrapper-31_8H8,
 .searchBar-3dMhjb,
@@ -591,6 +992,7 @@ d[id*=-blob_mask] {
 .searchdiv:after,
 .container-2XeR5Z:after,
 .inner-2P4tQO:after,
+.textArea-12jD-V:after,
 .bd-search-wrapper:after,
 .inputWrapper-31_8H8:after,
 .searchBar-3dMhjb:after,
@@ -621,6 +1023,7 @@ d[id*=-blob_mask] {
 .searchdiv:focus-within::after,
 .container-2XeR5Z:focus-within::after,
 .inner-2P4tQO:focus-within::after,
+.textArea-12jD-V:focus-within::after,
 .bd-search-wrapper:focus-within::after,
 .inputWrapper-31_8H8:focus-within::after,
 .searchBar-3dMhjb:focus-within::after,
@@ -646,8 +1049,11 @@ d[id*=-blob_mask] {
 .container-2XeR5Z input,
 .container-2XeR5Z textarea,
 .inner-2P4tQO,
+.textArea-12jD-V,
 .inner-2P4tQO input,
+.textArea-12jD-V input,
 .inner-2P4tQO textarea,
+.textArea-12jD-V textarea,
 .bd-search-wrapper,
 .bd-search-wrapper input,
 .bd-search-wrapper textarea,
@@ -699,26 +1105,6 @@ d[id*=-blob_mask] {
 
 .textArea-12jD-V {
   position: unset;
-  border-radius: 0;
-}
-
-.textArea-12jD-V::after {
-  background-color: var(--accent);
-  bottom: 0;
-  content: "";
-  height: 2px;
-  position: absolute;
-  left: calc(50% - 5px);
-  transition-duration: 0.2s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: hidden;
-  width: 10px;
-}
-
-.textArea-12jD-V:focus-within::after {
-  left: 0px;
-  visibility: visible;
-  width: 100%;
 }
 
 .placeholder-37qJjk {
@@ -861,8 +1247,17 @@ While yes mods are separated to respective menus, settings icons being a module 
 .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover:not(.disabled-1Hwwfb) {
   background-color: var(--accent-transparent);
   color: var(--accent);
+  font-weight: var(--weight-header);
 }
 
+.theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa .colorInteractiveActive-3Ip9Eu,
+.theme-light .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa .colorInteractiveActive-3Ip9Eu,
+.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ .colorInteractiveActive-3Ip9Eu,
+.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ .colorInteractiveActive-3Ip9Eu {
+  color: currentColor;
+}
+
+.serverBoostTabItem-2hFTIN[aria-selected=true],
 .premiumTabItem-1QTfBr[aria-selected=true] {
   background-color: var(--accent-transparent) !important;
   color: var(--accent) !important;
@@ -933,4 +1328,4 @@ path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18
   font-family: "No Dash", var(--font-header);
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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%22,%22file%22:%22dist.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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AAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAlCA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAlCA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAlCA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAmED;EACC;;;AAID;AAAA;EAEC;;;AAED;EACC;;;AAGD;AAAA;AAAA;EAGC;;;AAED;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGD;AAAA;AAAA;EAGC;;;AAGD;AAAA;EAEC;EACA;;;ACnJD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAoBC;EACA;;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAGC;EACA;;;AAKF;EAGC;;;AAGD;EACC;;;AAGD;EACC;;;AAED;EACC;;;AAGD;EACC;;;AAID;AAAA;AAAA;EAGC;EACA;;;ACjFD;EACC;;;ACMD;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGA;EAEC;;;AAKE;EAEI;;;AAoBP;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA7BD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAqDD;AAAA;AAAA;AAtDA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACzBD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAEE;AAAA;AAAA;AAAA;EACI;;;AAIR;AAAA;EAEC;EACA;;;ACjBD;EACC;;;ACDD;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACfA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACTF;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC%22,%22file%22:%22dist.css%22%7D */

@@ -1,11 +1,12 @@
 // For this theme, brand = accent
 
 @mixin buttons($class, $color) {
-	// Filled color
-	.lookFilled-1Gx00P#{$class} {
-		&,
-		.theme-dark &,
-		.theme-light & {
+	// this increases specifity but also makes the code cleaner
+	.theme-dark,
+	.theme-light
+	{
+		// Filled color
+		.lookFilled-1Gx00P#{$class} {
 			color: var(--#{$color}-text);
 			background-color: var(--#{$color});
 			&:enabled:active,
@@ -13,84 +14,32 @@
 				background-color: var(--#{$color}-selected);
 			}
 		}
-	}
-	// Inverted color
-	.lookInverted-2D7oAl#{$class} {
-		&,
-		.theme-dark &,
-		.theme-light & {
+		// Inverted color
+		.lookInverted-2D7oAl#{$class} {
 			color: var(--#{$color});
 			background-color: var(--#{$color}-text);
 		}
-	}
-	// Disabled color
-	.lookFilled-1Gx00P#{$class}:disabled {
-		&,
-		.theme-dark &,
-		.theme-light & {
+		// Disabled color
+		.lookFilled-1Gx00P#{$class}:disabled {
 			background-color: var(--#{$color});
 		}
-	}
-	.lookLink-9FtZy-#{$class} {
-		&,
-		.theme-dark &,
-		.theme-light & {
+		// Link-like buttons
+		.lookLink-9FtZy-#{$class} {
 			color: var(--#{$color});
 			&:hover .contents-18-Yxp {
 				background-image: linear-gradient(0deg,transparent,transparent 1px,var(--#{$color}) 0,var(--#{$color}) 2px,transparent 0);
 			}
 		}
-	}
-}
-
-/*
-// Filled accent
-.lookFilled-1Gx00P.colorBrand-3pXr91 {
-	color: var(--accent-text);
-	background-color: var(--accent);
-	&:enabled:active,
-	&:enabled:hover {
-		background-color: var(--accent-selected);
-	}
-}
-// Inverted accent
-.lookInverted-2D7oAl.colorBrand-3pXr91 {
-	color: var(--accent);
-	background-color: var(--accent-text);
-}
-// Disabled accent
-.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
-	background-color: var(--accent);
-}
-// Filled green
-.lookFilled-1Gx00P.colorGreen-29iAKY {
-	color: var(--green-text);
-	background-color: var(--green);
-	&:enabled:active,
-	&:enabled:hover {
-		background-color: var(--green-selected);
-	}
-}
-// Link red
-.lookLink-9FtZy-.colorRed-1TFJan {
-	color: var(--red);
-}
-
-// Filled gray
-.lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-	.theme-dark &,
-	.theme-light & {
-		& {
-			color: var(--gray-text);
-			background-color: var(--gray);
-		}
-		&:enabled:active,
-		&:enabled:hover {
-			background-color: var(--gray-selected);
+		// Outlined buttons
+		.lookOutlined-3sRXeN#{$class} {
+			color: var(--#{$color});
+			border-color: var(--#{$color});
+			&:active {
+				background-color: var(--#{$color}-transparent);
+			}
 		}
 	}
 }
-*/
 
 @include buttons(".colorBrand-3pXr91", 'accent');
 @include buttons(".colorGreen-29iAKY", 'green');

@@ -55,32 +55,15 @@
 
 // Send message text box
 .textArea-12jD-V {
-	// we use this funky shit (compared to other textboxes) bc of plugins adding more buttons
+	@extend .inner-2P4tQO;
+	// wtf this is all we need to do to fix textboxes for slate container now!!!
 	position: unset;
-	border-radius: 0;
-
-	&::after {
-		background-color: var(--accent);
-		bottom: 0;
-		content: '';
-		height: 2px;
-		position: absolute;
-		left: calc(50% - 5px);
-		transition-duration: .2s;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		visibility: hidden;
-		width: 10px;
-	}
-  
-	&:focus-within::after {
-		left: 0px;
-		visibility: visible;
-		width: 100%;
-	}
 }
+// Fix placeholder padding
 .placeholder-37qJjk {
 	margin-left: 16px + 40px;
 }
+// Disabled channels are special
 .innerDisabled-1YTFPN .placeholder-37qJjk {
 	margin-left: 16px;
 }
