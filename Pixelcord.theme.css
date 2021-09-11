@@ -252,6 +252,22 @@
   color: var(--accent);
 }
 
+.colorStatusGreen-2saF4_ {
+  color: var(--green);
+}
+
+.partnered-3nJayh {
+  color: var(--accent);
+}
+
+.partnered-3nJayh .icon-1ihkOt {
+  color: var(--accent-text);
+}
+
+.perkListItemIcon-2B4aA2.hasPerkIcon-JJ5Ezo {
+  color: var(--accent);
+}
+
 d[id*=-blob_mask] {
   d: path("M0 0V24H24V0z");
 }
@@ -287,12 +303,25 @@ d[id*=-blob_mask] {
   color: var(--accent);
 }
 
+.selected-aXhQR6.container-2Pjhx- {
+  background-color: var(--accent-transparent);
+}
+
+.selected-aXhQR6 .layout-2DM8Md {
+  color: var(--accent);
+}
+
+.modeSelected-346R90 .channelName-2YrOjO,
+.selected-aXhQR6 .name-uJV0GL {
+  font-weight: var(--weight-header);
+}
+
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
   color: var(--accent-text);
   background-color: var(--accent);
 }
 
-.lookFilled-1Gx00P.colorBrand-3pXr91:active, .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+.lookFilled-1Gx00P.colorBrand-3pXr91:enabled:active, .lookFilled-1Gx00P.colorBrand-3pXr91:enabled:hover {
   background-color: var(--accent-selected);
 }
 
@@ -301,13 +330,26 @@ d[id*=-blob_mask] {
   background-color: var(--accent-text);
 }
 
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+  background-color: var(--accent);
+}
+
 .lookFilled-1Gx00P.colorGreen-29iAKY {
   color: var(--green-text);
   background-color: var(--green);
 }
 
-.lookFilled-1Gx00P.colorGreen-29iAKY:active, .lookFilled-1Gx00P.colorGreen-29iAKY:hover {
+.lookFilled-1Gx00P.colorGreen-29iAKY:enabled:active, .lookFilled-1Gx00P.colorGreen-29iAKY:enabled:hover {
   background-color: var(--green-selected);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+  color: var(--gray-text);
+  background-color: var(--gray);
+}
+
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:active, .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6:enabled:hover {
+  background-color: var(--gray-selected);
 }
 
 .colorBrand-ROmMP1 {
@@ -570,7 +612,11 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23000' d='M14 5a7 7 0 100 14 7 7 0 000-14zM3 11h1a1 1 0 100-2H1a1 1 0 110-2h5a1 1 0 100-2H3.5a1.5 1.5 0 010-3H14c5.523 0 10 4.477 10 10s-4.477 10-10 10c-5.185 0-9.449-3.947-9.95-9H3a1 1 0 010-2z'/%3E%3Cpath d='M14 17a5 5 0 110-10 5 5 0 010 10zm1.827-7.55a1 1 0 00-.835-.45h-1.926a1 1 0 00-.836.45l-1.315 2a1 1 0 000 1.1l1.315 2a1 1 0 00.836.45h1.926a1 1 0 00.835-.45l1.316-2a1 1 0 000-1.1l-1.316-2z'/%3E%3C/svg%3E");
 }
 
-.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ, .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover:not(.disabled-1Hwwfb),
+.theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa, .theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa:hover:not(.disabled-1Hwwfb),
+.theme-light .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
+.theme-light .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa:hover:not(.disabled-1Hwwfb),
+.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
+.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover:not(.disabled-1Hwwfb),
 .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
 .topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover:not(.disabled-1Hwwfb) {
   background-color: var(--accent-transparent);
@@ -655,4 +701,4 @@ path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18
  * @source https://github.com/hyblocker/pixelcord
 */
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22,%22betterdiscord_dev.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAGQ;ACDR;EAAM;;;AACN;EAGC;EACA;EAGA;EACA;EACA;EACA;EAGA;EACG;EACH;EACA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAGA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAGA;;;ACzDD;EAEE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AAIF;AAAA;EAGE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AFhCF;EAEC;EACA;EACA;;;AAGD;EACI;EACA;EACA;;;AAMJ;EACC;;;AAED;AAAA;EAEC;;;AAGD;EACC;;;AAID;EACC;;;AG/BA;EAGC;EACA;EACA;;;AAGD;EAOC;;;ACfF;EACC;EACA;;;AAID;AAAA;AAAA;EAGC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAeC;;;ACzBD;EACC;EACA;EACA;EACA;;;AAMA;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAOA;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAOF;EACC;;;AAED;EACC;;;AAQF;EACC;;;ACrED;EACC;;;AAGD;AAAA;EAEC;EACA;;;ACRD;AAAA;EAEC;EACG;EACH;EACA;;;AAED;EACC;EACA;;;AAaD;AAAA;EATC,kBAWsC;;;AATtC;AAAA;AAAA;AAAA;EAIC,OAKsB;;;ACrBxB;EACC;EACA;;;AACA;EAEC;;;AAIF;EACC;EACA;;;AAGD;EACC;EACA;;;AACA;EAEC;;;AAYF;EACC;;;AAID;AAAA;EAEC;;;AAED;EACC;;;AAGD;AAAA;AAAA;EAGC;;;AAED;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGD;AAAA;AAAA;EAGC;;;AAGD;AAAA;EAEC;EACA;;;ACtED;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAoBC;EACA;;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAUF;EAEC;EACA;;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;EACA;EACA;;;AAGF;EACC;;;AAED;EACC;;;AAED;EACC;;;AAGD;EACC;;;AChFD;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGA;EAEC;;;AAKE;EAEI;;;AAoBP;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA7BD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAqDD;AAAA;AAAA;AAtDA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AC3BD;AAAA;AAAA;EACC;EACA;;;AAIF;EACC;EACA;;;ACVD;EACC;;;ACDD;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACfA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACTF;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC;;;ACtEF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA%22,%22file%22:%22Pixelcord.theme.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22,%22betterdiscord_dev.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAGQ;ACDR;EAAM;;;AACN;EAGC;EACA;EAGA;EACA;EACA;EACA;EAGA;EACG;EACH;EACA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAGA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EAGA;;;ACzDD;EAEE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AAIF;AAAA;EAGE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AFhCF;EAEC;EACA;EACA;;;AAGD;EACI;EACA;EACA;;;AAMJ;EACC;;;AAED;AAAA;EAEC;;;AAGD;EACC;;;AAID;EACC;;;AG/BA;EAGC;EACA;EACA;;;AAGD;EAOC;;;ACfF;EACC;EACA;;;AAID;AAAA;AAAA;EAGC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAeC;;;ACzBD;EACC;EACA;EACA;EACA;;;AAMA;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAOA;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAOF;EACC;;;AAED;EACC;;;AAQF;EACC;;;AAID;EACC;;;AAID;EACC;;;AACA;EACC;;;AAKF;EACC;;;ACvFD;EACC;;;AAGD;AAAA;EAEC;EACA;;;ACRD;AAAA;EAEC;EACG;EACH;EACA;;;AAED;EACC;EACA;;;AAaD;AAAA;EATC,kBAWsC;;;AATtC;AAAA;AAAA;AAAA;EAIC,OAKsB;;;AAExB;EACC;;;AAED;EACC;;;AAED;AAAA;EAEC;;;AC/BD;EACC;EACA;;;AACA;EAEC;;;AAIF;EACC;EACA;;;AAGD;EACC;;;AAGD;EACC;EACA;;;AACA;EAEC;;;AAOA;EACC;EACA;;;AAED;EAEC;;;AASH;EACC;;;AAID;AAAA;EAEC;;;AAED;EACC;;;AAGD;AAAA;AAAA;EAGC;;;AAED;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGD;AAAA;AAAA;EAGC;;;AAGD;AAAA;EAEC;EACA;;;ACpFD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAoBC;EACA;;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAUF;EAEC;EACA;;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;EACA;EACA;;;AAGF;EACC;;;AAED;EACC;;;AAED;EACC;;;AAGD;EACC;;;AChFD;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGA;EAEC;;;AAKE;EAEI;;;AAoBP;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA7BD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAqDD;AAAA;AAAA;AAtDA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACzBD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;;;AAIF;EACC;EACA;;;ACZD;EACC;;;ACDD;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACfA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACTF;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC;;;ACtEF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA%22,%22file%22:%22Pixelcord.theme.css%22%7D */

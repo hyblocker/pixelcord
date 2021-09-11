@@ -4,8 +4,8 @@
 .lookFilled-1Gx00P.colorBrand-3pXr91 {
 	color: var(--accent-text);
 	background-color: var(--accent);
-	&:active,
-	&:hover {
+	&:enabled:active,
+	&:enabled:hover {
 		background-color: var(--accent-selected);
 	}
 }
@@ -14,18 +14,32 @@
 	color: var(--accent);
 	background-color: var(--accent-text);
 }
+// Disabled accent
+.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
+	background-color: var(--accent);
+}
 // Filled green
 .lookFilled-1Gx00P.colorGreen-29iAKY {
 	color: var(--green-text);
 	background-color: var(--green);
-	&:active,
-	&:hover {
+	&:enabled:active,
+	&:enabled:hover {
 		background-color: var(--green-selected);
 	}
 }
-// Filled default
-.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-
+// Filled gray
+.lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+	.theme-dark &,
+	.theme-light & {
+		& {
+			color: var(--gray-text);
+			background-color: var(--gray);
+		}
+		&:enabled:active,
+		&:enabled:hover {
+			background-color: var(--gray-selected);
+		}
+	}
 }
 
 

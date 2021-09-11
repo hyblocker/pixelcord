@@ -65,8 +65,26 @@ $purple-color: "hsl(262, ";
 
 // radio toggles
 
-// accent
+// random colors which are littered throughout the app
 // selected checkmark
 .selectedIcon-3uS11H {
+	color: var(--accent);
+}
+
+// green text in descriptions
+.colorStatusGreen-2saF4_ {
+	color: var(--green);
+}
+
+// partnered
+.partnered-3nJayh {
+	color: var(--accent);
+	& .icon-1ihkOt {
+		color: var(--accent-text);
+	}
+}
+
+// perk
+.perkListItemIcon-2B4aA2.hasPerkIcon-JJ5Ezo {
 	color: var(--accent);
 }
