@@ -13,3 +13,21 @@
 .shineContainerDefault-2bbFgu {
 	display: none;
 }
+
+// Remove the ability to highlight shit you don't need
+.nameTag-3uD-yy,									// Username, status, discriminator; in the bottom left corner; also disables Ctrl+A
+.header-23xsNx,										// Messages headers (i.e. username, timestamp, pronouns, badges, etc)
+.embedProvider-3k5pfl,								// Embed provider (e.g. YouTube)
+.embedAuthor-3l5luH,								// Embed author (e.g. TheFunny.mp4)
+.embedVideoImageComponent-34z3di,					// Embed content (you copy the link or right click copy anyway)
+.connectedAccount-2Jb-Z0,							// Connected accounts
+.connectedAccountName-E1KzaT,						// Connected account username
+.profileBannerPreview-3_l0Wd .headerText-1vVs-U,	// Profile preview (Username)
+.profileBannerPreview-3_l0Wd .markup-2BOw-j,		// Profile preview (About me)
+.member-1q7VfX .nameTag-3wmDUk .name-8yzEIY,		// Username (Members page)
+.member-1q7VfX .nameTag-3wmDUk .tag-1YGWN9,			// Discriminator (Members page)
+.perks-32J1d0,										// Boost perks
+.cumcord-plugin-card .markdown-11q6EU				// Cumcord plugins
+{
+	user-select: none;
+}

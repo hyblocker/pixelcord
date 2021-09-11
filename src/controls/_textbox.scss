@@ -1,3 +1,5 @@
+// i sure love me a long ass selector
+// why does discord have like 189829 different classes
 .searchdiv,
 .container-2XeR5Z,
 .inner-2P4tQO,
@@ -17,9 +19,11 @@
 .searchContainer-3pUVEQ,
 .container-cMG81i.medium-1LLV3p
 {
+	// Fixes textboxes literally everywhere what the fuck
 	position: relative;
 	border-radius: 0;
 
+	// Define the focused line and hide it
 	&:after {
 		background-color: var(--accent);
 		bottom: 0;
@@ -33,15 +37,22 @@
 		width: 10px;
 	}
   
+	// On select, make the line at the bottom visible and start the animation
 	&:focus-within::after {
 		left: 0px;
 		visibility: visible;
 		width: 100%;
 	}
+
+	// Replace the background
+	& .input-cIJ7To {
+
+	}
 }
 
 // Send message text box
 .textArea-12jD-V {
+	// we use this funky shit (compared to other textboxes) bc of plugins adding more buttons
 	position: unset;
 	border-radius: 0;
 
@@ -67,10 +78,13 @@
 .placeholder-37qJjk {
 	margin-left: 16px + 40px;
 }
+.innerDisabled-1YTFPN .placeholder-37qJjk {
+	margin-left: 16px;
+}
 .slateTextArea-1Mkdgw {
 	position: relative;
 }
-// So that the line is clean
+// So that the line at the bottom is clean on the chat message box
 .scrollableContainer-2NUZem {
 	border-radius: 0;
 }
