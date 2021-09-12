@@ -25,31 +25,41 @@
 
 	// Define the focused line and hide it
 	&:after {
-		background-color: var(--accent);
+		// background-color: var(--accent);
+		background-color: var(--textbox-pillDefault);
 		bottom: 0;
 		content: '';
 		height: 2px;
 		position: absolute;
-		left: calc(50% - 5px);
+		// left: calc(50% - 5px);
+		left: 0px;
 		transition-duration: .2s;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		visibility: hidden;
-		width: 10px;
+		// visibility: hidden;
+		// width: 10px;
+		width: 100%;
 	}
   
 	// On select, make the line at the bottom visible and start the animation
 	&:focus-within::after {
-		left: 0px;
-		visibility: visible;
-		width: 100%;
+		// left: 0px;
+		// visibility: visible;
+		// width: 100%;
+		background-color: var(--accent);
+	}
+	&.disabled-jLAJq8::after {
+		opacity: 0.4;
 	}
 
 	// Replace the background
 	&,
 	& input,
-	& textarea {
-		background-color: transparent;
+	& textarea
+	{
+		caret-color: var(--accent);
+		background-color: var(--textbox-color);
 		border: none;
+		border-radius: var(--textbox-radius) var(--textbox-radius) 0 0;
 	}
 }
 
@@ -58,6 +68,10 @@
 	@extend .inner-2P4tQO;
 	// wtf this is all we need to do to fix textboxes for slate container now!!!
 	position: unset;
+}
+// The slate textbox overrides the caret a div deeper
+.slateTextArea-1Mkdgw {
+	caret-color: var(--accent);
 }
 // Fix placeholder padding
 .placeholder-37qJjk {
@@ -74,11 +88,39 @@
 .scrollableContainer-2NUZem {
 	border-radius: 0;
 }
+// Some textboxes use classes for focused state
+.cardInputFocused-19S1J3,
+.input-cIJ7To {
+	border: none;
+}
+.multiInput-2AiDV2>.multiInputFirst-2aPTwX {
+	border-top-right-radius: 0;
+}
+.multiInput-2AiDV2>.multiInputLast-33BbRU {
+	border-top-left-radius: 0;
+}
+// Remove extra styling for specific textboxes
+#app-mount {
+	.addFriendHint-3Y70FX,
+	.addFriendInput-4bcerK {
+		background-color: transparent;
+	}
+	@at-root .phoneField-38N1bJ .inputField-aNPXsv {
+		background-color: transparent;
+	}
+}
 
-// Remove the background
+// Some classes need specific css to style properly
 .container-cMG81i,
 .searchdiv .settingssearch#settingssearch,
 .scrollableContainer-2NUZem {
-	background-color: transparent;
+	background-color: var(--textbox-color);
 	border: none;
+	border-radius: var(--textbox-radius) var(--textbox-radius) 0 0;
+}
+
+// Credit card textboxes
+// Invalid payment method
+.cardInputError-1GUPnt {
+	--textbox-pillDefault: var(--red);
 }
