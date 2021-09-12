@@ -32,7 +32,7 @@
   --red-transparent: rgba(207, 102, 121, 12%);
   --red-selected: #ff7676;
   --yellow: #fbec52;
-  --yellow-text: white;
+  --yellow-text: black;
   --yellow-transparent: rgba(251, 236, 82, 12%);
   --yellow-selected: #fff68f;
   --gray: #868d96;
@@ -130,6 +130,192 @@
   --card-22-bg: rgb(55, 55, 55);
   --card-23-bg: rgb(55, 55, 55);
   --card-24-bg: rgb(55, 55, 55);
+}
+
+html[lang^=en-] {
+  --i18n-payment: "Billing";
+  --i18n-partnership: "Partner Program";
+  --i18n-discovery: "Enable Discovery" ;
+}
+
+html[lang=zh-CN] {
+  --i18n-payment: "账单";
+  --i18n-partnership: "合作伙伴项目";
+  --i18n-discovery: "开启“发现服务器”" ;
+}
+
+html[lang=zh-TW] {
+  --i18n-payment: "帳單";
+  --i18n-partnership: "合作夥伴計畫";
+  --i18n-discovery: "啟用探索" ;
+}
+
+html[lang=cs] {
+  --i18n-payment: "Fakturace";
+  --i18n-partnership: "Partnerský program";
+  --i18n-discovery: "Povolit Vyhledávání" ;
+}
+
+html[lang=da] {
+  --i18n-payment: "Fakturering";
+  --i18n-partnership: "Partnerprogram";
+  --i18n-discovery: "Slå Discovery til" ;
+}
+
+html[lang=nl] {
+  --i18n-payment: "Facturatie";
+  --i18n-partnership: "Partnerprogramma";
+  --i18n-discovery: "Ontdekking inschakelen" ;
+}
+
+html[lang=fr] {
+  --i18n-partnership: "Partner Program";
+  --i18n-payment: "Facturation";
+  --i18n-discovery: "Activer Découverte de serveurs" ;
+}
+
+html[lang=de] {
+  --i18n-payment: "Zahlungsabwicklung";
+  --i18n-partnership: "Partnerprogramm";
+  --i18n-discovery: "Entdeckung aktivieren" ;
+}
+
+html[lang=el] {
+  --i18n-payment: "Τιμολόγηση";
+  --i18n-partnership: "Πρόγραμμα Συνεργατών";
+  --i18n-discovery: "Ενεργοποίηση Ανακάλυψης" ;
+}
+
+html[lang=hu] {
+  --i18n-payment: "Számlázás";
+  --i18n-partnership: "Partnerprogram";
+  --i18n-discovery: "Felfedezés engedélyezése" ;
+}
+
+html[lang=it] {
+  --i18n-payment: "Fatturazione";
+  --i18n-partnership: "Programma di partnership";
+  --i18n-discovery: "Attiva Esplora" ;
+}
+
+html[lang=ja] {
+  --i18n-payment: "請求";
+  --i18n-partnership: "パートナープログラム";
+  --i18n-discovery: "発見を有効にする" ;
+}
+
+html[lang=ko] {
+  --i18n-payment: "청구";
+  --i18n-partnership: "파트너 프로그램";
+  --i18n-discovery: "서버 찾기 활성화" ;
+}
+
+html[lang=pl] {
+  --i18n-payment: "Dane do faktury";
+  --i18n-partnership: "Program Partnerski";
+  --i18n-discovery: "Włącz Wyszukiwanie serwerów" ;
+}
+
+html[lang=pt-PT] {
+  --i18n-payment: "Billing";
+  --i18n-partnership: "Partner Program";
+  --i18n-discovery: "Enable Discovery" ;
+}
+
+html[lang=pt-BR] {
+  --i18n-payment: "Cobrança";
+  --i18n-partnership: "Programa de Parceria";
+  --i18n-discovery: "Ativar Descobrir" ;
+}
+
+html[lang=ru] {
+  --i18n-payment: "Выставление счетов";
+  --i18n-partnership: "Partner Program"
+  --i18n-discovery: "Включить «Путешествие»" ;
+}
+
+html[lang=sk] {
+  --i18n-payment: "Billing";
+  --i18n-partnership: "Partner Program"
+  --i18n-discovery: "Enable Discovery" ;
+}
+
+html[lang=es-ES] {
+  --i18n-payment: "Facturación";
+  --i18n-partnership: "Programa Partner";
+  --i18n-discovery: "Habilitar Descubrimiento" ;
+}
+
+html[lang=sv-SE] {
+  --i18n-payment: "Fakturering";
+  --i18n-partnership: "Partnerprogram";
+  --i18n-discovery: "Aktivera Identifiering" ;
+}
+
+html[lang=tr] {
+  --i18n-payment: "Faturalandırma";
+  --i18n-partnership: "Discord Ortağı Programı";
+  --i18n-discovery: "Keşfi Etkinleştir" ;
+}
+
+html[lang=bg] {
+  --i18n-payment: "Таксуване";
+  --i18n-partnership: "Партньорска програма";
+  --i18n-discovery: "Активирай Откриване" ;
+}
+
+html[lang=uk] {
+  --i18n-payment: "Виставлення рахунку";
+  --i18n-partnership: "Партнерська програма Discord";
+  --i18n-discovery: "Увімкнути «Знайомство з серверами»" ;
+}
+
+html[lang=fi] {
+  --i18n-payment: "Laskutus";
+  --i18n-partnership: "Kumppaniohjelma";
+  --i18n-discovery: "Ota palvelinhaku käyttöön" ;
+}
+
+html[lang=no] {
+  --i18n-payment: "Fakturering";
+  --i18n-partnership: "Partnerprogram";
+  --i18n-discovery: "Aktiver oppdagelse" ;
+}
+
+html[lang=hr] {
+  --i18n-payment: "Obračun";
+  --i18n-discovery: "Omogući Otkrivanje";
+  --i18n-partnership: "Partner Program" ;
+}
+
+html[lang=ro] {
+  --i18n-payment: "Facturare";
+  --i18n-discovery: "Activează Descoperire";
+  --i18n-partnership: "Programul de parteneriat" ;
+}
+
+html[lang=lt] {
+  --i18n-payment: "Atsiskaitymas";
+  --i18n-discovery: "Įjungti atradimo funkciją";
+  --i18n-partnership: "Partnerių programa" ;
+}
+
+html[lang=th] {
+  --i18n-payment: "การชำระเงิน";
+  --i18n-partnership: "โปรแกรมพาร์ทเนอร์";
+  --i18n-discovery: "เปิดใช้งานการค้นพบ" ;
+}
+
+html[lang=vi] {
+  --i18n-payment: "Thanh toán";
+  --i18n-partnership: "Chương Trình Đối Tác";
+  --i18n-discovery: "Kích Hoạt Khám Phá" ;
+}
+
+html[lang=hi] {
+  --i18n-payment: "बिलिंग";
+  --i18n-discovery: "डिस्कवरी को ऑन करें";
+  --i18n-partnership: "पार्टनर कार्यक्रम" ;
 }
 
 :root {
@@ -375,61 +561,6 @@ d[id*=-blob_mask] {
   background-color: var(--accent-transparent);
 }
 
-/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
-// Filled color
-.lookFilled-1Gx00P.colorBrand-3pXr91 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent-text);
-		background-color: var(--accent);
-		&:enabled:active,
-		&:enabled:hover {
-			background-color: var(--accent-selected);
-		}
-	}
-}
-// Inverted color
-.lookInverted-2D7oAl.colorBrand-3pXr91 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent);
-		background-color: var(--accent-text);
-	}
-}
-// Disabled color
-.lookFilled-1Gx00P.colorBrand-3pXr91:disabled {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		background-color: var(--accent);
-	}
-}
-// Link-like buttons
-.lookLink-9FtZy-.colorBrand-3pXr91 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent);
-		&:hover .contents-18-Yxp {
-			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--accent) 0,var(--accent) 2px,transparent 0);
-		}
-	}
-}
-// Outlined buttons
-.lookOutlined-3sRXeN.colorBrand-3pXr91 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent);
-		border-color: var(--accent);
-		&:active {
-			background-color: var(--accent-transparent);
-		}
-	}
-}
-*/
 .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY,
 .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY {
   color: var(--green-text);
@@ -474,61 +605,6 @@ d[id*=-blob_mask] {
   background-color: var(--green-transparent);
 }
 
-/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
-// Filled color
-.lookFilled-1Gx00P.colorGreen-29iAKY {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--green-text);
-		background-color: var(--green);
-		&:enabled:active,
-		&:enabled:hover {
-			background-color: var(--green-selected);
-		}
-	}
-}
-// Inverted color
-.lookInverted-2D7oAl.colorGreen-29iAKY {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--green);
-		background-color: var(--green-text);
-	}
-}
-// Disabled color
-.lookFilled-1Gx00P.colorGreen-29iAKY:disabled {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		background-color: var(--green);
-	}
-}
-// Link-like buttons
-.lookLink-9FtZy-.colorGreen-29iAKY {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--green);
-		&:hover .contents-18-Yxp {
-			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--green) 0,var(--green) 2px,transparent 0);
-		}
-	}
-}
-// Outlined buttons
-.lookOutlined-3sRXeN.colorGreen-29iAKY {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--green);
-		border-color: var(--green);
-		&:active {
-			background-color: var(--green-transparent);
-		}
-	}
-}
-*/
 .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan,
 .theme-light .lookFilled-1Gx00P.colorRed-1TFJan {
   color: var(--red-text);
@@ -573,61 +649,50 @@ d[id*=-blob_mask] {
   background-color: var(--red-transparent);
 }
 
-/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
-// Filled color
-.lookFilled-1Gx00P.colorRed-1TFJan {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--red-text);
-		background-color: var(--red);
-		&:enabled:active,
-		&:enabled:hover {
-			background-color: var(--red-selected);
-		}
-	}
+.theme-dark .lookFilled-1Gx00P.colorYellow-2JqYwt,
+.theme-light .lookFilled-1Gx00P.colorYellow-2JqYwt {
+  color: var(--yellow-text);
+  background-color: var(--yellow);
 }
-// Inverted color
-.lookInverted-2D7oAl.colorRed-1TFJan {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--red);
-		background-color: var(--red-text);
-	}
+
+.theme-dark .lookFilled-1Gx00P.colorYellow-2JqYwt:enabled:active, .theme-dark .lookFilled-1Gx00P.colorYellow-2JqYwt:enabled:hover,
+.theme-light .lookFilled-1Gx00P.colorYellow-2JqYwt:enabled:active,
+.theme-light .lookFilled-1Gx00P.colorYellow-2JqYwt:enabled:hover {
+  background-color: var(--yellow-selected);
 }
-// Disabled color
-.lookFilled-1Gx00P.colorRed-1TFJan:disabled {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		background-color: var(--red);
-	}
+
+.theme-dark .lookInverted-2D7oAl.colorYellow-2JqYwt,
+.theme-light .lookInverted-2D7oAl.colorYellow-2JqYwt {
+  color: var(--yellow);
+  background-color: var(--yellow-text);
 }
-// Link-like buttons
-.lookLink-9FtZy-.colorRed-1TFJan {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--red);
-		&:hover .contents-18-Yxp {
-			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--red) 0,var(--red) 2px,transparent 0);
-		}
-	}
+
+.theme-dark .lookFilled-1Gx00P.colorYellow-2JqYwt:disabled,
+.theme-light .lookFilled-1Gx00P.colorYellow-2JqYwt:disabled {
+  background-color: var(--yellow);
 }
-// Outlined buttons
-.lookOutlined-3sRXeN.colorRed-1TFJan {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--red);
-		border-color: var(--red);
-		&:active {
-			background-color: var(--red-transparent);
-		}
-	}
+
+.theme-dark .lookLink-9FtZy-.colorYellow-2JqYwt,
+.theme-light .lookLink-9FtZy-.colorYellow-2JqYwt {
+  color: var(--yellow);
 }
-*/
+
+.theme-dark .lookLink-9FtZy-.colorYellow-2JqYwt:hover .contents-18-Yxp,
+.theme-light .lookLink-9FtZy-.colorYellow-2JqYwt:hover .contents-18-Yxp {
+  background-image: linear-gradient(0deg, transparent, transparent 1px, var(--yellow) 0, var(--yellow) 2px, transparent 0);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorYellow-2JqYwt,
+.theme-light .lookOutlined-3sRXeN.colorYellow-2JqYwt {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+
+.theme-dark .lookOutlined-3sRXeN.colorYellow-2JqYwt:active,
+.theme-light .lookOutlined-3sRXeN.colorYellow-2JqYwt:active {
+  background-color: var(--yellow-transparent);
+}
+
 .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV,
 .theme-light .lookFilled-1Gx00P.colorGrey-2DXtkV {
   color: var(--gray-text);
@@ -672,61 +737,6 @@ d[id*=-blob_mask] {
   background-color: var(--gray-transparent);
 }
 
-/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
-// Filled color
-.lookFilled-1Gx00P.colorGrey-2DXtkV {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray-text);
-		background-color: var(--gray);
-		&:enabled:active,
-		&:enabled:hover {
-			background-color: var(--gray-selected);
-		}
-	}
-}
-// Inverted color
-.lookInverted-2D7oAl.colorGrey-2DXtkV {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray);
-		background-color: var(--gray-text);
-	}
-}
-// Disabled color
-.lookFilled-1Gx00P.colorGrey-2DXtkV:disabled {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		background-color: var(--gray);
-	}
-}
-// Link-like buttons
-.lookLink-9FtZy-.colorGrey-2DXtkV {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray);
-		&:hover .contents-18-Yxp {
-			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--gray) 0,var(--gray) 2px,transparent 0);
-		}
-	}
-}
-// Outlined buttons
-.lookOutlined-3sRXeN.colorGrey-2DXtkV {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray);
-		border-color: var(--gray);
-		&:active {
-			background-color: var(--gray-transparent);
-		}
-	}
-}
-*/
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6,
 .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
   color: var(--gray-text);
@@ -771,61 +781,6 @@ d[id*=-blob_mask] {
   background-color: var(--gray-transparent);
 }
 
-/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
-// Filled color
-.lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray-text);
-		background-color: var(--gray);
-		&:enabled:active,
-		&:enabled:hover {
-			background-color: var(--gray-selected);
-		}
-	}
-}
-// Inverted color
-.lookInverted-2D7oAl.colorPrimary-3b3xI6 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray);
-		background-color: var(--gray-text);
-	}
-}
-// Disabled color
-.lookFilled-1Gx00P.colorPrimary-3b3xI6:disabled {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		background-color: var(--gray);
-	}
-}
-// Link-like buttons
-.lookLink-9FtZy-.colorPrimary-3b3xI6 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray);
-		&:hover .contents-18-Yxp {
-			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--gray) 0,var(--gray) 2px,transparent 0);
-		}
-	}
-}
-// Outlined buttons
-.lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--gray);
-		border-color: var(--gray);
-		&:active {
-			background-color: var(--gray-transparent);
-		}
-	}
-}
-*/
 .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc,
 .theme-light .lookFilled-1Gx00P.colorLink-35jkBc {
   color: var(--accent-text);
@@ -870,61 +825,6 @@ d[id*=-blob_mask] {
   background-color: var(--accent-transparent);
 }
 
-/* TODO: yeet once i figure out how to get the theme-dark/light shit outside
-// Filled color
-.lookFilled-1Gx00P.colorLink-35jkBc {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent-text);
-		background-color: var(--accent);
-		&:enabled:active,
-		&:enabled:hover {
-			background-color: var(--accent-selected);
-		}
-	}
-}
-// Inverted color
-.lookInverted-2D7oAl.colorLink-35jkBc {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent);
-		background-color: var(--accent-text);
-	}
-}
-// Disabled color
-.lookFilled-1Gx00P.colorLink-35jkBc:disabled {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		background-color: var(--accent);
-	}
-}
-// Link-like buttons
-.lookLink-9FtZy-.colorLink-35jkBc {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent);
-		&:hover .contents-18-Yxp {
-			background-image: linear-gradient(0deg,transparent,transparent 1px,var(--accent) 0,var(--accent) 2px,transparent 0);
-		}
-	}
-}
-// Outlined buttons
-.lookOutlined-3sRXeN.colorLink-35jkBc {
-	&,
-	.theme-dark &,
-	.theme-light & {
-		color: var(--accent);
-		border-color: var(--accent);
-		&:active {
-			background-color: var(--accent-transparent);
-		}
-	}
-}
-*/
 .colorBrand-ROmMP1 {
   color: var(--accent);
 }
@@ -1124,7 +1024,7 @@ d[id*=-blob_mask] {
 }
 
 .container-cMG81i,
-.searchdiv .settingssearch,
+.searchdiv .settingssearch#settingssearch,
 .scrollableContainer-2NUZem {
   background-color: transparent;
   border: none;
@@ -1150,6 +1050,55 @@ d[id*=-blob_mask] {
 
 .item-PXvHYJ .icon-3Povsy, .item-PXvHYJ .icon-Zc-uZZ {
   display: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:0"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:1"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:2"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:3"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:4"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:5"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:6"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:7"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:8"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:9"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.avatar-1eTZ8m {
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.username-34pxWC {
+  padding-left: 6px;
 }
 
 .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
@@ -1263,6 +1212,146 @@ While yes mods are separated to respective menus, settings icons being a module 
   color: var(--accent) !important;
 }
 
+.side-8zPYf6 .item-PXvHYJ[style^="color: hsl(359,"] {
+  color: var(--red) !important;
+}
+
+.side-8zPYf6 .item-PXvHYJ[style^="color: hsl(0,"][style*="background-color: hsl(359"] {
+  color: var(--red-text) !important;
+  background-color: var(--red) !important;
+}
+
+.contentColumnDefault-1VQkGM .subscriptionDetails-1pYrMz > .title-3sZWYQ:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > div:first-child > .sectionTitle-2vauyC:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > .sectionTitle-2vauyC:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-2HgFLu > div:first-child > div:first-child > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+}
+
+.contentColumnDefault-1VQkGM .subscriptionDetails-1pYrMz > .title-3sZWYQ:first-of-type, .contentColumnDefault-1VQkGM .subscriptionDetails-1pYrMz > .title-3sZWYQ:first-of-type > h1, .contentColumnDefault-1VQkGM .subscriptionDetails-1pYrMz > .title-3sZWYQ:first-of-type > h2,
+.contentColumnDefault-1VQkGM > div:first-child > div:first-child > .sectionTitle-2vauyC:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > div:first-child > .sectionTitle-2vauyC:first-of-type > h1,
+.contentColumnDefault-1VQkGM > div:first-child > div:first-child > .sectionTitle-2vauyC:first-of-type > h2,
+.contentColumnDefault-1VQkGM > div:first-child > .sectionTitle-2vauyC:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > .sectionTitle-2vauyC:first-of-type > h1,
+.contentColumnDefault-1VQkGM > div:first-child > .sectionTitle-2vauyC:first-of-type > h2,
+.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-of-type > h1,
+.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-of-type > h2,
+.customContainer-1RHXqt .content-2HgFLu > div:first-child > div:first-child > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-2HgFLu > div:first-child > div:first-child > .title-3sZWYQ:first-of-type > h1,
+.customContainer-1RHXqt .content-2HgFLu > div:first-child > div:first-child > .title-3sZWYQ:first-of-type > h2,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type > h1,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type > h2,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type > h1,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type > h2,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type > h1,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type > h2,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type > h1,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type > h2 {
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+  text-transform: none;
+}
+
+.layer-3QrUeG[aria-label$=SETTINGS] .content-2c3hgM > .subscriptionsRedirectContainer-21LuI0:first-of-type::before {
+  content: "Nitro";
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+}
+
+.layer-3QrUeG[aria-label$=SETTINGS] .content-3BhRLj > .marketingLogo-1D8DV6:first-of-type::before {
+  content: "Server Boost";
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+}
+
+.layer-3QrUeG[aria-label$=SETTINGS] .paymentHistory-2FXzro > .title-3sZWYQ:first-of-type::before {
+  content: var(--i18n-payment, "Billing");
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+}
+
+.layer-3QrUeG[aria-label$=SETTINGS] .banner-2zWlOa + .size24-RIRrxO:first-of-type::before {
+  content: "Community";
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+}
+
+.layer-3QrUeG[aria-label$=SETTINGS] .banner-2AwsUs + .size24-RIRrxO:first-of-type::before {
+  content: var(--i18n-partnership, "Partnership");
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+}
+
+.layer-3QrUeG[aria-label$=SETTINGS] .discoverPreview-3q1szX:first-of-type::before {
+  content: var(--i18n-discovery, "Discovery");
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+}
+
+.layer-3QrUeG[aria-label$=SETTINGS] .banner-2G2Kv6 + .size24-RIRrxO:first-of-type::before {
+  content: "Thread";
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 5;
+  color: var(--accent-text);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--weight-header);
+}
+
 .powercord-pc-icon::before {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 447 447'%3E%3Cpath fill='%23fff' d='M182.5 78.6l70-70c11.9-11.9 31.2-11.9 43.1 0s11.9 31.2 0 43.1l-70 70zm91.7 91.7l70-70c11.9-11.9 31.2-11.9 43.1 0s11.9 31.2 0 43.1l-70 70zM303 257L138.9 92.9c-2.7-2.7-2.7-7 0-9.7L163 59.1c2.7-2.7 7-2.7 9.7 0l164.1 164.1c2.7 2.7 2.7 7 0 9.7L312.7 257c-2.7 2.7-7 2.7-9.7 0zm-146.6 75.4l-92.9-92.9c-17-17-17-44.6 0-61.6l85.1-85.1L303 247.4l-85 85c-17 17-44.7 17-61.6 0zm-61-2.9l-29-29c-2.7-2.7-2.7-7 0-9.7l29-29 38.7 38.7-29 29c-2.7 2.6-7 2.6-9.7 0zm48.3 115.8L81 382.6c-21.3-21.3-21.3-55.9 0-77.2l9.7 9.7c-16 16-16 42 0 57.9l62.8 62.8c2.7 2.7 2.7 7 0 9.7s-7.1 2.5-9.8-.2z'/%3E%3C/svg%3E") no-repeat !important;
 }
@@ -1328,4 +1417,4 @@ path[d="M19.738 10H22V14H19.739C19.498 14.931 19.1 15.798 18.565 16.564L20 18L18
   font-family: "No Dash", var(--font-header);
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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AAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAlCA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAlCA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAlCA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKF;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAmED;EACC;;;AAID;AAAA;EAEC;;;AAED;EACC;;;AAGD;AAAA;AAAA;EAGC;;;AAED;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGD;AAAA;AAAA;EAGC;;;AAGD;AAAA;EAEC;EACA;;;ACnJD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAoBC;EACA;;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAGC;EACA;;;AAKF;EAGC;;;AAGD;EACC;;;AAGD;EACC;;;AAED;EACC;;;AAGD;EACC;;;AAID;AAAA;AAAA;EAGC;EACA;;;ACjFD;EACC;;;ACMD;EACC;;;AAID;AAAA;EAEC;EACA;;;AAGA;EAEC;;;AAKE;EAEI;;;AAoBP;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA7BD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAqDD;AAAA;AAAA;AAtDA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACzBD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAEE;AAAA;AAAA;AAAA;EACI;;;AAIR;AAAA;EAEC;EACA;;;ACjBD;EACC;;;ACDD;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACfA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACTF;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC%22,%22file%22:%22dist.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/i18n/_index.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/base/channels/_channels.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/settings/_settings_icons.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22modules/appearance/replace_icons.scss%22,%22modules/appearance/space_dash.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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;AAAA;AAAA;AAAA;AAAA;EAEC;EACA;EACA;EACA;EACA;;;AAUD;EACC,SAiBoB;EAfpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAsBoB;EApBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA2BoB;EAzBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAgCoB;EA9BpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAqCoB;EAnCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA0CoB;EAxCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA+CoB;EA7CpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC9EF;EACC;;;ACDD;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACfA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACTF;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC%22,%22file%22:%22dist.css%22%7D */

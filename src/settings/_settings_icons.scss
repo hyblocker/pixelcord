@@ -35,6 +35,18 @@
 		--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
 	}
 }
+@for $i from 0 through 9 {
+	.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:#{$i}"]:not(.role-3wi9Tf)::before {
+		content: none;
+	}
+}
+.avatar-1eTZ8m {
+	width: 22px !important;
+	height: 22px !important;
+}
+.username-34pxWC {
+	padding-left: 6px;
+}
 
 // idk why but this is necessary ig?
 $dummy: $icons-outline;

@@ -22,3 +22,103 @@
 	background-color: var(--accent-transparent) !important;
 	color: var(--accent) !important;
 }
+
+// Add ripple to the sidebar
+.side-8zPYf6 .item-PXvHYJ {
+
+}
+// red items should use the theme var
+.side-8zPYf6 .item-PXvHYJ[style^="color: hsl(359,"] {
+	color: var(--red) !important;
+}
+// red selected
+.side-8zPYf6 .item-PXvHYJ[style^="color: hsl(0,"][style*="background-color: hsl(359"] {
+	color: var(--red-text) !important;
+	background-color: var(--red) !important;
+}
+
+// 'Google' settings
+// Break the title to the text
+.contentColumnDefault-1VQkGM .subscriptionDetails-1pYrMz > .title-3sZWYQ:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > div:first-child > .sectionTitle-2vauyC:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > .sectionTitle-2vauyC:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-2HgFLu > div:first-child > div:first-child > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type,
+.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type,
+ {
+	// Position the title
+	position: fixed;
+	top: 24px;
+	left: 0;
+	z-index: 5;
+
+	&, &>h1, &>h2 {
+		// Style the title
+		color: var(--accent-text);
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: var(--weight-header);
+		text-transform: none;
+	}
+	&.h2-2gWE-o {
+		// Powercord settings are uppercase
+	}
+}
+
+// Some settings don't have a title, so let's add one anyway
+
+@mixin forceTitle($text) {
+	&:first-of-type::before {
+		content: $text;
+
+		position: fixed;
+		top: 24px;
+		left: 0;
+		z-index: 5;
+		color: var(--accent-text);
+		font-size: 20px;
+		line-height: 24px;
+		font-weight: var(--weight-header);
+	}
+}
+
+.layer-3QrUeG[aria-label$="SETTINGS"] {
+	
+	// Nitro
+	.content-2c3hgM > .subscriptionsRedirectContainer-21LuI0 {
+		@include forceTitle('Nitro');
+	}
+
+	// Boosts
+	.content-3BhRLj > .marketingLogo-1D8DV6 {
+		@include forceTitle('Server Boost');
+	}
+
+	// Payment method
+	.paymentHistory-2FXzro>.title-3sZWYQ {
+		@include forceTitle(var(--i18n-payment, 'Billing'));
+	}
+	
+	// Activate community
+	.banner-2zWlOa+.size24-RIRrxO {
+		@include forceTitle('Community');
+	}
+	
+	// Partnership
+	.banner-2AwsUs+.size24-RIRrxO {
+		@include forceTitle(var(--i18n-partnership, 'Partnership'));
+	}
+	
+	// Discovery
+	.discoverPreview-3q1szX {
+		@include forceTitle(var(--i18n-discovery, 'Discovery'));
+	}
+
+	// Threads
+	.banner-2G2Kv6+.size24-RIRrxO {
+		@include forceTitle('Thread');
+	}
+}
