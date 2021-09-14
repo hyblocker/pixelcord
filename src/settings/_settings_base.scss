@@ -1,6 +1,24 @@
 // Inject into settings menu
-.item-PXvHYJ {
+.sidebar-CFHs9e::after {
+	// Text
+	content: 'Pixelcord v4 DEV';
 
+	// Positioning
+	display: block;
+	margin-top: 8px;
+	padding: 8px 10px;
+
+	// Separator
+	border-top: 1px solid var(--background-modifier-accent);
+	
+	// Info css
+	text-transform: capitalize;
+	outline: 0;
+	
+	// Font
+	font-size: 12px;
+	line-height: 16px;
+	color: var(--text-muted);
 }
 // Settings sidebar
 .theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
@@ -47,7 +65,7 @@
 .customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type,
 .customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type,
 .contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type,
-.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type,
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type
  {
 	// Position the title
 	position: fixed;
@@ -62,9 +80,6 @@
 		line-height: 24px;
 		font-weight: var(--weight-header);
 		text-transform: none;
-	}
-	&.h2-2gWE-o {
-		// Powercord settings are uppercase
 	}
 }
 
@@ -120,5 +135,27 @@
 	// Threads
 	.banner-2G2Kv6+.size24-RIRrxO {
 		@include forceTitle('Thread');
+	}
+}
+
+// Make the sidebar wider
+.sidebar-CFHs9e {
+	width: var(--settings-sidebar-width);
+}
+
+// Make space for the blue bar
+.layer-3QrUeG[aria-label$="SETTINGS"] .standardSidebarView-3F1I7i {
+	top: calc(var(--settings-header-height) - 24px);
+
+	// Create the headerbar
+	&::before {
+		content: '';
+		position: fixed;
+		z-index: 2;
+		background-color: var(--accent);
+		width: 100%;
+		height: var(--settings-header-height);
+		left: 0;
+		top: 0;
 	}
 }

@@ -1,0 +1,21 @@
+// Make the search box use flexbox properly
+#app-mount {
+	.searchdiv {
+		display: flex;
+		flex: 1 1 300px;
+		grid-area: initial;
+		flex-wrap: nowrap;
+
+		& .settingssearch {
+			width: 100%;
+			flex: 1;
+			grid-area: initial;
+		}
+		& .settingsicon {
+			background-repeat: no-repeat;
+			grid-area: initial;
+			flex-shrink: 0;
+			background-size: 15px;
+		}
+	}
+}

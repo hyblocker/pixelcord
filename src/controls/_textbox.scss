@@ -12,7 +12,7 @@
 .searchBar-TUoVPN,
 .searchBox-3Y2Vi7,
 .wrapper-1cBijl,
-.gameName-1RiWHm,
+.game-1ipmAa .gameName-1RiWHm:not(input),
 .phoneField-38N1bJ,
 .popoutListInput-1l9TUI,
 .searchBar-1Vaz-O .searchBarComponent-yxeVIL,
@@ -25,26 +25,19 @@
 
 	// Define the focused line and hide it
 	&:after {
-		// background-color: var(--accent);
 		background-color: var(--textbox-pillDefault);
 		bottom: 0;
 		content: '';
 		height: 2px;
 		position: absolute;
-		// left: calc(50% - 5px);
 		left: 0px;
 		transition-duration: .2s;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		// visibility: hidden;
-		// width: 10px;
 		width: 100%;
 	}
   
 	// On select, make the line at the bottom visible and start the animation
 	&:focus-within::after {
-		// left: 0px;
-		// visibility: visible;
-		// width: 100%;
 		background-color: var(--accent);
 	}
 	&.disabled-jLAJq8::after {
@@ -99,6 +92,27 @@
 .multiInput-2AiDV2>.multiInputLast-33BbRU {
 	border-top-left-radius: 0;
 }
+// The game activity textboxes cant use pseudo elements, use border instead
+// These are inputs, the unmodifiable ones use div
+.game-1ipmAa>div:first-child{
+	& > input.gameNameInput-385LoS {
+		caret-color: var(--accent);
+		background-color: var(--textbox-color);
+		border: none;
+		border-radius: var(--textbox-radius) var(--textbox-radius) 0 0;
+		border-bottom: 2px solid var(--textbox-pillDefault);
+		transition-duration: .2s;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		&:focus-within {
+			border-color: var(--accent);
+		}
+	}
+	// "Disable" verified games
+	.gameName-1RiWHm:not(input)::after {
+		opacity: 0.4;
+	}
+}
+
 // Remove extra styling for specific textboxes
 #app-mount {
 	.addFriendHint-3Y70FX,
