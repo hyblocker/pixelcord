@@ -1,0 +1,105 @@
+// SVG Util
+@import "../../src/icons/util";
+
+// Icon packs
+@import "../../src/icons/outline";
+@import "../../src/icons/discord";
+
+// Import build config
+@import "../../src/config/build_config";
+
+// Helpers
+@mixin removeIcon {
+	&::before {
+		content: none;
+		// --context-menu-icon-color: red;
+	}
+}
+@mixin reverseOrder {
+	flex-direction: row-reverse;
+	//& > div:last-child {
+	& > .iconContainer-2-XQPY {
+		margin-left: 0;
+	}
+	//& > div:first-child {
+	& > .label-22pbtT {
+		margin-left: 8px;
+	}
+}
+
+@mixin contextIcon($identifier, $svg, $icon-pack: $icons-outline, $numeric: false)  {
+	@if $numeric == false {
+		.item-1tOPte##{$identifier}::before {
+			--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
+		}
+	} @else {
+		.item-1tOPte[id|="#{$identifier}"]::before {
+			--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
+		}
+	}
+}
+
+@mixin includeContext($icon-pack: ()) {
+
+	@if $icon-pack == () {
+		$icon-pack: $icons-outline;
+	}
+
+	// Default vars
+	.menu-3sdvDG {
+		--context-menu-icon-color: currentColor;
+	}
+
+	.item-1tOPte {
+		
+		// Add icons
+		.menu-3sdvDG &::before {
+			content: "";
+			width: 22px;
+			height: 22px;
+			left: 15px;
+			margin-right: 6px;
+			margin-top: -2px;
+			background: var(--context-menu-icon-color);
+			-webkit-mask: var(--icon) center/contain no-repeat;
+			mask: var(--icon) center/contain no-repeat;
+			flex-shrink: 0;
+
+			// Default to Powercord Icon
+			--icon: #{svg-url(#{map-get($icon-pack, "powercord")})};
+		}
+
+		// Hide in submenus
+		.submenu-2-ysNh & {
+			@include removeIcon();
+		}
+		// Hide in status picker
+		.menu-3sdvDG#status-picker & {
+			@include removeIcon();
+		}
+		// Hide in controls other than buttons
+		&.hideInteraction-1iHO1O {
+			@include removeIcon();
+		}
+		// Hide in gaming menu
+		@for $i from 0 through 9 {
+			&[id^=now-playing-menu-#{$i}] {
+				@include removeIcon();
+			}
+		}
+
+		// Special case: Checkboxes
+		&[role="menuitemcheckbox"] {
+			@include removeIcon();
+			@include reverseOrder();
+		}
+	}
+
+	// Include icons
+	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true);
+
+	@include contextIcon("user-settings-cog-My_Account", "account", $icon-pack);
+	@include contextIcon("user-settings-cog-powercord-actions", "powercord", $icon-pack);
+}
+
+@include includeContext($icon-pack);

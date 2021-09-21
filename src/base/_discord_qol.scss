@@ -1,3 +1,5 @@
+@use "sass:math";
+
 // Just a lot of quality of life fixes for discord because
 // this platform is literal dogshit
 
@@ -31,4 +33,42 @@
 .cumcord-plugin-card .markdown-11q6EU				// Cumcord plugins
 {
 	user-select: none;
+}
+
+// Resize the channel icon in embeds and channel topics bc its chubby
+@mixin channelIconResize($size) {
+	& > .wrapper-3WhCwL.mention.iconMention-1_KJ_B {
+		padding-left: (math.div($size, 1.1));
+		& > .channelIcon-1MN1lz {
+			width: (math.div($size, 1.3));
+			height: $size;
+		}
+	}
+}
+.topic-TCb_qw,
+.embedFooterText-28V_Wb {
+	@include channelIconResize(1rem);
+}
+.embedDescription-1Cuq9a,
+.embedFieldValue-nELq2s,
+.repliedTextContent-1R3vnK {
+	@include channelIconResize(1.05rem);
+}
+
+// fuck threads
+.threadSuggestionBar-2ufK2Z {
+	display: none;
+}
+
+// fuck welcome CTAs
+.welcomeCTA-2orRfU {
+	display: none;
+}
+:root {
+	--open-profile-via-pfp-friends: true;
+}
+
+// attachments' "open link in browser" text may wrap on small width images, fix it because i have severe OCD!
+.downloadLink-1ywL9o {
+	width: 400px;
 }

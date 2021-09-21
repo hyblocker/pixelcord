@@ -1,0 +1,13 @@
+@use "sass:math";
+
+@mixin theming {
+	@at-root  #{selector-nest('.theme-light', &)},
+	#{selector-nest('.theme-dark', &)} {
+		@content;
+	}
+}
+
+@mixin pill {
+	border-radius: math.div(34px, 2);
+	height: 32px;
+}

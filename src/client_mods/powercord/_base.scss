@@ -4,5 +4,22 @@
 
 // Fix the unclear social icon bc PNGs suck
 .powercord-pc-icon::before {
-	background: #{svg-url(#{map-get($icons-discord, "powercord")})} no-repeat !important;
+	-webkit-mask: #{svg-url(#{map-get($icons-discord, "powercord")})} no-repeat !important;
+	background: white;
+}
+
+// Updater colors
+.powercord-updater .icon path {
+	// accent
+	&[fill="#7289da"] {
+		fill: var(--accent);
+	}
+	// updated
+	&[fill="#43b581"] {
+		fill: var(--green);
+	}
+	// failed bc git threw error
+	&[fill="#f04747"] {
+		fill: var(--red);
+	}
 }

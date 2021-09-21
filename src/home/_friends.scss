@@ -1,3 +1,17 @@
+@import "../utils";
+
+// the cards on the side
 .emptyCard-1RJw8n {
 	
+}
+.inset-3sAvek {
+	@include theming {
+		background-color: transparent;
+	}
+}
+.separator-XqIyoz {
+	height: 16px;
+	@include theming {
+		background-color: transparent;
+	}
 }

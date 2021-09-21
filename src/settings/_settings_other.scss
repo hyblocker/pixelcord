@@ -1,0 +1,18 @@
+// Icon util
+@import "../icons/util";
+
+// Build config
+@import "../config/build_config";
+
+// Other things for settings which are more misc things / other
+
+// Lock should be using mask so that we can customise the color
+.userSettingsSecurity-3IYeMF .lockIcon-2Hj8Tq {
+    width: 10px;
+    height: 14px;
+    padding-left: 10px;
+    -webkit-mask-size: 14px 14px;
+    -webkit-mask-position: center;
+    -webkit-mask-image: #{svg-url(#{map-get($icon-pack, "2falock")})};
+    background-color: var(--green);
+}

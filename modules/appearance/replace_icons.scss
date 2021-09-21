@@ -5,6 +5,9 @@
 @import "../../src/icons/outline";
 @import "../../src/icons/discord";
 
+// Import build config
+@import "../../src/config/build_config";
+
 // Replace an individual icon
 @mixin replaceIcon($item, $icon_pack: $icons-discord) {
 	path[d='#{svg-d($icons-discord, $item)}'] {
@@ -26,4 +29,4 @@
 
 }
 
-@include replaceAllIcons();
+@include replaceAllIcons($icon-pack);

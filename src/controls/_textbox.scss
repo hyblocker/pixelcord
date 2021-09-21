@@ -66,13 +66,13 @@
 .slateTextArea-1Mkdgw {
 	caret-color: var(--accent);
 }
-// Fix placeholder padding
+// Default padding, assuming no upload button
 .placeholder-37qJjk {
-	margin-left: 16px + 40px;
-}
-// Disabled channels are special
-.innerDisabled-1YTFPN .placeholder-37qJjk {
 	margin-left: 16px;
+}
+// Fix placeholder padding
+.attachWrapper-2TRKBi + .textArea-12jD-V > .placeholder-37qJjk {
+	margin-left: 16px + 40px;
 }
 .slateTextArea-1Mkdgw {
 	position: relative;

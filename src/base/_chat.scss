@@ -1,11 +1,112 @@
+@import "../utils";
+@import "../material_design/ripple";
+
 // Mentions & channel links
 .wrapper-3WhCwL {
-	.theme-light &,
-	.theme-dark & {
+	@include theming {
 		background-color: var(--accent-transparent);
 		color: var(--accent);
 		&:hover {
 			color: var(--accent-selected);
 		}
 	}
+}
+
+// Failed to load messages
+.messagesErrorBar-nyJGU7 {
+	background-color: var(--red);
+	& > .barButtonBase-2uLO1z {
+		color: var(--red-text);
+	}
+
+	@include pill;
+	margin-bottom: 0.5rem;
+	padding: 0;
+}
+
+// Reply pill
+.replyBar-1YLQ2F {
+	@include pill;
+}
+.attachedBars-tZDmyV {
+	border-radius: 0;
+	background-color: transparent;
+	padding-bottom: 0.5rem;
+}
+.clipContainer-eeROt0 {
+	overflow: visible;
+}
+
+// Unread pill
+.unreadPill-2HyYtt {
+	background-color: var(--red);
+	color: var(--red-text);
+}
+.isUnread-3Ef-o9 .content-1o0f9g {
+	color: var(--red);
+}
+.unreadPillCapStroke-7rkHbg {
+	color: var(--red);
+	fill: var(--red);
+}
+.isUnread-3Ef-o9 {
+	border-color: var(--red);
+	transition: 250ms ease-in-out;
+}
+html:not(.app-focused) {
+	& .isUnread-3Ef-o9 {
+		border-color: transparent;
+	}
+}
+
+// Ripple on message click
+.message-2qnXI6 {
+	@include rippleimg;
+}
+// ripple appearing on top of images and embeds fix
+.container-1ov-mD {
+	z-index: 1;
+}
+
+// Ripple breaks with threads; fix it
+
+// Copy stock discord CSS but in ::before
+.cozy-3raOZG.hasThread-2k82W0::before {
+	top: 28px;
+}
+.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::before {
+	border-left: 2px solid var(--background-accent);
+	border-bottom: 2px solid var(--background-accent);
+	border-bottom-left-radius: 8px;
+	bottom: 29px;
+	content: "";
+	left: 35px;
+	position: absolute;
+	top: 48px;
+	width: 31px;
+}
+// Reset css
+.cozy-3raOZG.hasThread-2k82W0::after {
+	top: 0px !important;
+}
+.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::after {
+	border-left: none;
+	border-bottom: none;
+	border-bottom-left-radius: 0;
+	bottom: unset;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.messagesWrapper-1sRNjr::after {
+	content: "";
+	width: 100%;
+	height: var(--chatbox-top-padding);
+	position: absolute;
+	bottom: 0px;
+	z-index: 2;
+
+	background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(var(--card-0-bg)));
+	background: linear-gradient(180deg, transparent 0,var(--card-0-bg));
 }

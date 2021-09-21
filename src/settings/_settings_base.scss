@@ -1,7 +1,13 @@
+@import '../buildvars';
+
 // Inject into settings menu
-.sidebar-CFHs9e::after {
+.layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e::after {
 	// Text
-	content: 'Pixelcord v4 DEV';
+	@if ($DEBUG == true) {
+		content: 'Pixelcord #{$version} DEV';
+	} @else {
+		content: 'Pixelcord #{$version}';
+	}
 
 	// Positioning
 	display: block;
@@ -34,6 +40,10 @@
         color: currentColor;
     }
 }
+// Yeet whitespace on the left of the sidebar bc yeds
+.sidebarRegion-VFTUkN {
+	flex: 0;
+}
 // Nitro tabs are special
 .serverBoostTabItem-2hFTIN[aria-selected=true],
 .premiumTabItem-1QTfBr[aria-selected=true] {
@@ -60,7 +70,7 @@
 .contentColumnDefault-1VQkGM .subscriptionDetails-1pYrMz > .title-3sZWYQ:first-of-type,
 .contentColumnDefault-1VQkGM > div:first-child > div:first-child > .sectionTitle-2vauyC:first-of-type,
 .contentColumnDefault-1VQkGM > div:first-child > .sectionTitle-2vauyC:first-of-type,
-.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-of-type,
+.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-child, // TODO: revert to first-of-type?
 .customContainer-1RHXqt .content-2HgFLu > div:first-child > div:first-child > .title-3sZWYQ:first-of-type,
 .customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type,
 .customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type,
@@ -69,8 +79,8 @@
  {
 	// Position the title
 	position: fixed;
-	top: 24px;
-	left: 0;
+	top: calc(0.5 * (var(--settings-header-height) - 12px));
+	left: 75px;
 	z-index: 5;
 
 	&, &>h1, &>h2 {
@@ -136,6 +146,16 @@
 	.banner-2G2Kv6+.size24-RIRrxO {
 		@include forceTitle('Thread');
 	}
+
+	// Roles editor
+	.sidebar-dLM-kh {
+		@include forceTitle(var(--i18n-roles, 'Roles'));
+	}
+	
+	// hypesquad
+	.intro-325xRx {
+		@include forceTitle(var(--i18n-hypesquad, 'HypeSquad'));
+	}
 }
 
 // Make the sidebar wider
@@ -151,7 +171,7 @@
 	&::before {
 		content: '';
 		position: fixed;
-		z-index: 2;
+		z-index: 3;
 		background-color: var(--accent);
 		width: 100%;
 		height: var(--settings-header-height);

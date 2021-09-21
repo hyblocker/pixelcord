@@ -4,7 +4,7 @@ $animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
 
 $animation-curve-default: $animation-curve-fast-out-slow-in !default;
 
-$ripple-bg-color: var(--ripple-default);
+$ripple-bg-color: var(--ripple-color);
 $ripple-scale: 5;
 
 $baseline-color: black !default;

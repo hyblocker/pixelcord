@@ -1,9 +1,12 @@
 // SVG Util
-@import "../icons/util";
+@import "../../src/icons/util";
 
 // Icon packs
-@import "../icons/outline";
-@import "../icons/discord";
+@import "../../src/icons/outline";
+@import "../../src/icons/discord";
+
+// Import build config
+@import "../../src/config/build_config";
 
 // Default vars
 .sidebarRegion-VFTUkN {
@@ -22,7 +25,7 @@
 		content: none;
 	}
 }
-// New discord icons
+// Hide new discord icons
 .item-PXvHYJ {
     & .icon-3Povsy,
     & .icon-Zc-uZZ {
@@ -35,15 +38,18 @@
 		--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
 	}
 }
+// Special cases: VC Debug menu - User pfps are icons
 @for $i from 0 through 9 {
 	.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:#{$i}"]:not(.role-3wi9Tf)::before {
 		content: none;
 	}
 }
+// Resize pfp
 .avatar-1eTZ8m {
 	width: 22px !important;
 	height: 22px !important;
 }
+// Align text properly for consistency
 .username-34pxWC {
 	padding-left: 6px;
 }
@@ -106,8 +112,11 @@ $dummy: $icons-outline;
 	// Powercord
 	@include settingsIcon("pc-general-tab", "powercord", $icon-pack);
 
+	// ploogins
+
 	// Goosemod
-	@include settingsIcon("discord-nitro-tab", "goosemod", $icon-pack);
+	@include settingsIcon("gm-settings-tab", "goosemod", $icon-pack);
+	@include settingsIcon("gm-changelog-tab", "goosemod", $icon-pack);
 
 	// Cumcord
 	@include settingsIcon("cumcord_plugins-tab", "cumcord", $icon-pack);
@@ -118,4 +127,4 @@ $dummy: $icons-outline;
 	
 }
 
-@include includeSettings();
+@include includeSettings($icon-pack);

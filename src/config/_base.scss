@@ -25,6 +25,10 @@
 	// Settings
 	--settings-header-height: 90px;
 	--settings-sidebar-width: 350px;
+
+	// Context menus
+	--context-menu-padding: 6px 8px;
+	--context-menu-radius: 4px;
 }
 .theme-dark {
 	--weight-textbox: 600;
@@ -67,6 +71,15 @@
 	// Textbox
 	--textbox-color: #161616;
 	--textbox-pillDefault: #a8a8a8;
+
+	// Links
+	--text-link: var(--accent);
+
+	// Ripple
+	--ripple-color: rgba(255, 255, 255, 0.36);
+	
+	// Context menus
+	--context-menu-separator: rgba(255, 255, 255, 0.24);
 }
 .theme-light {
 	--weight-textbox: 500;
@@ -109,4 +122,13 @@
 	// Textbox
 	--textbox-color: #f5f5f5;
 	--textbox-pillDefault: #1F1F1F;
+	
+	// Links
+	--text-link: var(--accent);
+
+	// Ripple
+	--ripple-color: rgba(0, 0, 0, 0.36);
+
+	// Context menus
+	--context-menu-separator: rgba(0, 0, 0, 0.24);
 }
