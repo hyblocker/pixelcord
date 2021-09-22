@@ -21,10 +21,35 @@
 		$icon-pack: $icons-outline;
 	}
 	
+	// message box
 	@include replaceIcon("home", $icon_pack);
 	@include replaceIcon("gift", $icon_pack);
 	@include replaceIcon("gif", $icon_pack);
+
+	// quick actions (i think?)
 	@include replaceIcon("settings", $icon_pack);
+
+	// message headerbar
+	@include replaceIcon("pin", $icon_pack);
+
+	// message actions
+	@include replaceIcon("add_reaction", $icon-pack);
+	@include replaceIcon("reactions", $icon-pack);
+	@include replaceIcon("reply", $icon-pack);
+	@include replaceIcon("edit", $icon-pack);
+	@include replaceIcon("mark_unread", $icon-pack);
+	@include replaceIcon("copy_link", $icon-pack);
+	@include replaceIcon("id", $icon-pack);
+	@include replaceIcon("delete", $icon-pack);
+	@include replaceIcon("tts", $icon-pack);
+
+	// Channels
+	@include replaceIcon("channel_thread", $icon-pack);
+
+	@include replaceIcon("message", $icon-pack);
+	@include replaceIcon("language", $icon-pack);
+
+
 	// @include replaceIcon("nitro", $icon_pack);
 
 }

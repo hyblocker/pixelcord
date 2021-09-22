@@ -90,11 +90,14 @@ $dummy: $icons-outline;
 	@include settingsIcon("moderation-tab", "shield", $icon-pack);
 	@include settingsIcon("authorized-apps-tab", "apps", $icon-pack);
 	@include settingsIcon("connections-tab", "attachment", $icon-pack);
+
 	@include settingsIcon("subscriptions-tab", "subscriptions", $icon-pack);
-	@include settingsIcon("billing-tab", "billing", $icon-pack);
 	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
 	@include settingsIcon("nitro-server-boost-tab", "boost", $icon-pack);
 	@include settingsIcon("library-inventory-tab", "gift", $icon-pack);
+	@include settingsIcon("billing-tab", "billing", $icon-pack);
+	
+	@include settingsIcon("language-tab", "language", $icon-pack);
 
 	// Guild
 	@include settingsIcon("guild_premium-tab", "boost", $icon-pack);

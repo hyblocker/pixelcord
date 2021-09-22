@@ -10,20 +10,22 @@
 
 // Helpers
 @mixin removeIcon {
-	&::before {
-		content: none;
-		// --context-menu-icon-color: red;
+	&:not([aria-haspopup="true"]) {
+		&::before {
+			content: none;
+			// --context-menu-icon-color: red;
+		}
 	}
 }
 @mixin reverseOrder {
-	flex-direction: row-reverse;
-	//& > div:last-child {
-	& > .iconContainer-2-XQPY {
-		margin-left: 0;
-	}
-	//& > div:first-child {
-	& > .label-22pbtT {
-		margin-left: 8px;
+	&:not([aria-haspopup="true"]) {
+		flex-direction: row-reverse;
+		& > .iconContainer-2-XQPY {
+			margin-left: 0;
+		}
+		& > .label-22pbtT {
+			margin-left: 8px;
+		}
 	}
 }
 
@@ -73,14 +75,34 @@
 		.submenu-2-ysNh & {
 			@include removeIcon();
 		}
+		
 		// Hide in status picker
 		.menu-3sdvDG#status-picker & {
 			@include removeIcon();
 		}
+		
+		// Hide in channel attach dialog
+		.menu-3sdvDG#channel-attach & {
+			@include removeIcon();
+		}
+		
+		// Hide in message actions (the buttons)
+		.menu-3sdvDG#message-actions & {
+			@include removeIcon();
+			@include reverseOrder();
+		}
+
+		// Hide in guild actions (clicking guild header)
+		.menu-3sdvDG#guild-header-popout & {
+			@include removeIcon();
+			@include reverseOrder();
+		}
+
 		// Hide in controls other than buttons
 		&.hideInteraction-1iHO1O {
 			@include removeIcon();
 		}
+		
 		// Hide in gaming menu
 		@for $i from 0 through 9 {
 			&[id^=now-playing-menu-#{$i}] {
@@ -96,9 +118,80 @@
 	}
 
 	// Include icons
-	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true);
 
+	// General cases
+	// @include contextIcon("copy", "copy", $icon-pack);
+	.item-1tOPte[id*="copy"]::before {
+		--icon: #{svg-url(#{map-get($icon-pack, "copy")})};
+	}
+
+	// Message right click
+	@include contextIcon("message-add-reaction", "add_reaction", $icon-pack);
+	@include contextIcon("message-reactions", "reactions", $icon-pack);
+	@include contextIcon("message-edit", "edit", $icon-pack);
+	@include contextIcon("message-pin", "pin", $icon-pack);
+	@include contextIcon("message-reply", "reply", $icon-pack);
+	@include contextIcon("message-thread", "channel_thread", $icon-pack);
+	@include contextIcon("message-apps", "apps", $icon-pack);
+	@include contextIcon("message-mark-unread", "mark_unread", $icon-pack);
+	@include contextIcon("message-copy-link", "copy_link", $icon-pack);
+	@include contextIcon("message-tts", "tts", $icon-pack);
+	@include contextIcon("message-delete", "delete", $icon-pack);
+	@include contextIcon("message-devmode-copy-id", "id", $icon-pack);
+	@include contextIcon("message-devmode-copy-id", "id", $icon-pack);
+	
+	// Textbox right click
+	@include contextIcon("textarea-context-languages", "language", $icon-pack);
+	@include contextIcon("textarea-context-copy", "copy", $icon-pack);
+	@include contextIcon("textarea-context-cut", "cut", $icon-pack);
+	@include contextIcon("textarea-context-paste", "paste", $icon-pack);
+	
+	// User right click	
+	@include contextIcon("user-context-user-profile", "user_profile", $icon-pack);
+	@include contextIcon("user-context-call", "voice_call", $icon-pack);
+	// @include contextIcon("user-context-mention", "at_symbol", $icon-pack);
+	@include contextIcon("user-context-message-user", "message", $icon-pack);
+	@include contextIcon("user-context-change-nickname", "edit", $icon-pack);
+	@include contextIcon("user-context-apps", "apps", $icon-pack);
+	@include contextIcon("user-context-add-friend", "add_friend", $icon-pack);
+	@include contextIcon("user-context-block", "block", $icon-pack);
+	
+	// Guild right click
+	@include contextIcon("guild-context-invite-people", "invite", $icon-pack);
+	@include contextIcon("guild-context-guild-settings", "settings", $icon-pack);
+	@include contextIcon("guild-context-change-nickname", "edit", $icon-pack);
+
+	// Friends tab
+	// TODO: FIX ICONS
+	@include contextIcon("now-playing-menu-message", "message", $icon-pack);
+	@include contextIcon("now-playing-menu-join-voice", "message", $icon-pack); // join vc
+	@include contextIcon("now-playing-menu-goto-server", "message", $icon-pack); // go to server
+	@include contextIcon("now-playing-menu-spectate", "message", $icon-pack, true); // watch stream
+	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true); // join on spotify
+	
+	// Profile (open modal => 3 dots)
+	@include contextIcon("user-profile-actions-user-remove", "spotify", $icon-pack);
+	@include contextIcon("user-profile-actions-user-block", "spotify", $icon-pack);
+	@include contextIcon("user-profile-actions-user-message", "message", $icon-pack);
+
+	// Settings
 	@include contextIcon("user-settings-cog-My_Account", "account", $icon-pack);
+
+	
+	@include contextIcon("user-settings-cog-Profile_Customization", "user_profile", $icon-pack);
+	@include contextIcon("user-settings-cog-Privacy___Safety", "shield", $icon-pack);
+	@include contextIcon("moderation-tab", "shield", $icon-pack);
+	@include contextIcon("user-settings-cog-Authorized_Apps", "apps", $icon-pack);
+	@include contextIcon("user-settings-cog-Connections", "attachment", $icon-pack);
+
+	@include contextIcon("user-settings-cog-Subscriptions", "subscriptions", $icon-pack);
+	@include contextIcon("user-settings-cog-Discord_Nitro", "nitro", $icon-pack);
+	@include contextIcon("user-settings-cog-Nitro_Server_Boost", "boost", $icon-pack);
+	@include contextIcon("user-settings-cog-Library_Inventory", "gift", $icon-pack);
+	@include contextIcon("user-settings-cog-Billing", "billing", $icon-pack);
+
+	@include contextIcon("user-settings-cog-Language", "language", $icon-pack);
+
 	@include contextIcon("user-settings-cog-powercord-actions", "powercord", $icon-pack);
 }
 
