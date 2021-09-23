@@ -136,8 +136,8 @@
 	@include contextIcon("message-mark-unread", "mark_unread", $icon-pack);
 	@include contextIcon("message-copy-link", "copy_link", $icon-pack);
 	@include contextIcon("message-tts", "tts", $icon-pack);
+	@include contextIcon("message-report-message-btn", "report", $icon-pack);
 	@include contextIcon("message-delete", "delete", $icon-pack);
-	@include contextIcon("message-devmode-copy-id", "id", $icon-pack);
 	@include contextIcon("message-devmode-copy-id", "id", $icon-pack);
 	
 	// Textbox right click
@@ -147,26 +147,58 @@
 	@include contextIcon("textarea-context-paste", "paste", $icon-pack);
 	
 	// User right click	
+	@include contextIcon("user-context-mark-channel-read", "mark_read", $icon-pack);
 	@include contextIcon("user-context-user-profile", "user_profile", $icon-pack);
-	@include contextIcon("user-context-call", "voice_call", $icon-pack);
-	// @include contextIcon("user-context-mention", "at_symbol", $icon-pack);
+	@include contextIcon("user-context-mention", "at_symbol", $icon-pack);
 	@include contextIcon("user-context-message-user", "message", $icon-pack);
+	@include contextIcon("user-context-call", "voice_call", $icon-pack);
+	@include contextIcon("user-context-note", "add_note", $icon-pack);
+	@include contextIcon("user-context-add-friend-nickname", "add_nickname", $icon-pack);
+	@include contextIcon("user-context-close-dm", "close", $icon-pack);
+
 	@include contextIcon("user-context-change-nickname", "edit", $icon-pack);
 	@include contextIcon("user-context-apps", "apps", $icon-pack);
 	@include contextIcon("user-context-add-friend", "add_friend", $icon-pack);
+	@include contextIcon("user-context-remove-friend", "unfriend", $icon-pack);
 	@include contextIcon("user-context-block", "block", $icon-pack);
+	@include contextIcon("user-context-roles", "roles", $icon-pack);
+	@include contextIcon("user-context-kick", "kick", $icon-pack);
+	@include contextIcon("user-context-ban", "ban", $icon-pack);
 	
 	// Guild right click
+	@include contextIcon("guild-context-mark-guild-read", "mark_read", $icon-pack);
 	@include contextIcon("guild-context-invite-people", "invite", $icon-pack);
+	@include contextIcon("guild-context-mute-guild", "mute", $icon-pack);
+	@include contextIcon("guild-context-unmute-guild", "unmute", $icon-pack);
+	
 	@include contextIcon("guild-context-guild-settings", "settings", $icon-pack);
+	@include contextIcon("guild-context-notifications", "notifications", $icon-pack);
+	@include contextIcon("guild-context-privacy", "privacy", $icon-pack);
 	@include contextIcon("guild-context-change-nickname", "edit", $icon-pack);
+
+	@include contextIcon("guild-context-create-channel", "create_channel", $icon-pack);
+	@include contextIcon("guild-context-create-category", "create_category", $icon-pack);
+
+	@include contextIcon("guild-context-leave-guild", "leave", $icon-pack);
+	
+	// Channel right click
+	@include contextIcon("channel-context-mark-channel-read", "mark_read", $icon-pack);
+	@include contextIcon("channel-context-edit-channel", "settings", $icon-pack);
+	@include contextIcon("channel-context-invite-people", "invite", $icon-pack);
+	@include contextIcon("channel-context-delete-channel", "delete", $icon-pack);
+	
+	// Folder right click
+	@include contextIcon("guild-context-mark-folder-read", "mark_read", $icon-pack);
+	@include contextIcon("guild-context-folder-settings", "settings", $icon-pack);
+	@include contextIcon("guild-context-folder-collapse", "close", $icon-pack);
 
 	// Friends tab
 	// TODO: FIX ICONS
 	@include contextIcon("now-playing-menu-message", "message", $icon-pack);
-	@include contextIcon("now-playing-menu-join-voice", "message", $icon-pack); // join vc
-	@include contextIcon("now-playing-menu-goto-server", "message", $icon-pack); // go to server
-	@include contextIcon("now-playing-menu-spectate", "message", $icon-pack, true); // watch stream
+	@include contextIcon("now-playing-menu-join-voice", "voice_channel", $icon-pack); // join vc
+	@include contextIcon("now-playing-menu-goto-server", "go_to", $icon-pack); // go to server
+	@include contextIcon("now-playing-menu-spectate", "spectate", $icon-pack, true); // watch stream
+	@include contextIcon("now-playing-menu-join", "join_game", $icon-pack, true); // join on spotify
 	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true); // join on spotify
 	
 	// Profile (open modal => 3 dots)
@@ -176,8 +208,6 @@
 
 	// Settings
 	@include contextIcon("user-settings-cog-My_Account", "account", $icon-pack);
-
-	
 	@include contextIcon("user-settings-cog-Profile_Customization", "user_profile", $icon-pack);
 	@include contextIcon("user-settings-cog-Privacy___Safety", "shield", $icon-pack);
 	@include contextIcon("moderation-tab", "shield", $icon-pack);
@@ -190,6 +220,7 @@
 	@include contextIcon("user-settings-cog-Library_Inventory", "gift", $icon-pack);
 	@include contextIcon("user-settings-cog-Billing", "billing", $icon-pack);
 
+	@include contextIcon("user-settings-cog-Voice___Video", "voice_settings", $icon-pack);
 	@include contextIcon("user-settings-cog-Language", "language", $icon-pack);
 
 	@include contextIcon("user-settings-cog-powercord-actions", "powercord", $icon-pack);

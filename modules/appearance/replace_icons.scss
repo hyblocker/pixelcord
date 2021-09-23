@@ -30,6 +30,7 @@
 	@include replaceIcon("settings", $icon_pack);
 
 	// message headerbar
+	@include replaceIcon("voice_call", $icon_pack);
 	@include replaceIcon("pin", $icon_pack);
 
 	// message actions

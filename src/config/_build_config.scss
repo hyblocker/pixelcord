@@ -1,11 +1,15 @@
 // Icon packs
 @import "../icons/outline";
+@import "../icons/filled";
+@import "../icons/rounded";
 @import "../icons/discord";
 
 // VALID VALUES
 // 
 // $icons-discord		// STOCK DISCORD ICONS
 // $icons-outline		// OUTLINED ICONS
+// $icons-filled		// FILLED ICONS
+// $icons-rounded		// ROUNDED ICONS
 // 
 
 $icon-pack: $icons-discord;

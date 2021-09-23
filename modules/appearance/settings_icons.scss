@@ -97,6 +97,7 @@ $dummy: $icons-outline;
 	@include settingsIcon("library-inventory-tab", "gift", $icon-pack);
 	@include settingsIcon("billing-tab", "billing", $icon-pack);
 	
+	@include settingsIcon("voice-&-video-tab", "voice_settings", $icon-pack);
 	@include settingsIcon("language-tab", "language", $icon-pack);
 
 	// Guild
