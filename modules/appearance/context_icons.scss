@@ -22,9 +22,31 @@
 		flex-direction: row-reverse;
 		& > .iconContainer-2-XQPY {
 			margin-left: 0;
+			width: var(--context-icon-size);
+			height: var(--context-icon-size);
+			& > .icon-LYJorE {
+				width: var(--context-icon-size);
+				height: var(--context-icon-size);
+			}
 		}
 		& > .label-22pbtT {
-			margin-left: 8px;
+			margin-left: var(--context-icon-spacing);
+		}
+	}
+}
+
+@mixin restoreIcons($root-menu, $item) {
+	@if $item == undefined {
+		
+	} @else {
+		.menu-3sdvDG##{$root-menu} .item-1tOPte##{$item} {
+			flex-direction: row;
+			&::before {
+				content: "";
+			}
+			& .label-22pbtT {
+				margin-left: 0;
+			}
 		}
 	}
 }
@@ -57,10 +79,10 @@
 		// Add icons
 		.menu-3sdvDG &::before {
 			content: "";
-			width: 22px;
-			height: 22px;
+			width: var(--context-icon-size);
+			height: var(--context-icon-size);
 			left: 15px;
-			margin-right: 6px;
+			margin-right: var(--context-icon-spacing);
 			margin-top: -2px;
 			background: var(--context-menu-icon-color);
 			-webkit-mask: var(--icon) center/contain no-repeat;
@@ -97,6 +119,18 @@
 			@include removeIcon();
 			@include reverseOrder();
 		}
+		
+		// Hide in audio device quick settings
+		.menu-3sdvDG#audio-device-context & {
+			@include removeIcon();
+			@include reverseOrder();
+		}
+
+		// Hide in video device quick settings
+		.menu-3sdvDG#video-device-context & {
+			@include removeIcon();
+			@include reverseOrder();
+		}
 
 		// Hide in controls other than buttons
 		&.hideInteraction-1iHO1O {
@@ -115,6 +149,11 @@
 			@include removeIcon();
 			@include reverseOrder();
 		}
+		
+		// Experiments doesnt need icons
+		.submenu-2-ysNh.menu-3sdvDG &::before {
+			content: none;
+		}
 	}
 
 	// Include icons
@@ -123,6 +162,9 @@
 	// @include contextIcon("copy", "copy", $icon-pack);
 	.item-1tOPte[id*="copy"]::before {
 		--icon: #{svg-url(#{map-get($icon-pack, "copy")})};
+	}
+	.item-1tOPte[id|="user-settings-cog-Experiments-"][id$="-clear-override"] {
+		@include reverseOrder();
 	}
 
 	// Message right click
@@ -135,12 +177,14 @@
 	@include contextIcon("message-apps", "apps", $icon-pack);
 	@include contextIcon("message-mark-unread", "mark_unread", $icon-pack);
 	@include contextIcon("message-copy-link", "copy_link", $icon-pack);
+	@include contextIcon("message-open-native-link", "launch", $icon-pack);
 	@include contextIcon("message-tts", "tts", $icon-pack);
 	@include contextIcon("message-report-message-btn", "report", $icon-pack);
 	@include contextIcon("message-delete", "delete", $icon-pack);
 	@include contextIcon("message-devmode-copy-id", "id", $icon-pack);
 	
 	// Textbox right click
+	@include contextIcon("textarea-context-add-to-dictionary", "add_dictionary", $icon-pack);
 	@include contextIcon("textarea-context-languages", "language", $icon-pack);
 	@include contextIcon("textarea-context-copy", "copy", $icon-pack);
 	@include contextIcon("textarea-context-cut", "cut", $icon-pack);
@@ -161,6 +205,8 @@
 	@include contextIcon("user-context-add-friend", "add_friend", $icon-pack);
 	@include contextIcon("user-context-remove-friend", "unfriend", $icon-pack);
 	@include contextIcon("user-context-block", "block", $icon-pack);
+	@include contextIcon("user-context-mute-channel", "mute", $icon-pack);
+	@include contextIcon("user-context-unmute-channel", "unmute", $icon-pack);
 	@include contextIcon("user-context-roles", "roles", $icon-pack);
 	@include contextIcon("user-context-kick", "kick", $icon-pack);
 	@include contextIcon("user-context-ban", "ban", $icon-pack);
@@ -183,9 +229,16 @@
 	
 	// Channel right click
 	@include contextIcon("channel-context-mark-channel-read", "mark_read", $icon-pack);
+	
+	@include contextIcon("channel-context-mute-channel", "mute", $icon-pack);
+	@include contextIcon("channel-context-unmute-channel", "unmute", $icon-pack);
+	@include contextIcon("channel-context-channel-notifications", "notifications", $icon-pack);
+	
 	@include contextIcon("channel-context-edit-channel", "settings", $icon-pack);
 	@include contextIcon("channel-context-invite-people", "invite", $icon-pack);
+	
 	@include contextIcon("channel-context-delete-channel", "delete", $icon-pack);
+	@include contextIcon("channel-context-collapse-all-categories", "close", $icon-pack);
 	
 	// Folder right click
 	@include contextIcon("guild-context-mark-folder-read", "mark_read", $icon-pack);
@@ -205,14 +258,33 @@
 	@include contextIcon("user-profile-actions-user-remove", "spotify", $icon-pack);
 	@include contextIcon("user-profile-actions-user-block", "spotify", $icon-pack);
 	@include contextIcon("user-profile-actions-user-message", "message", $icon-pack);
+	
+	// Re-add to video quick settings
+	@include contextIcon("video-device-context-report-stream-problem", "settings", $icon-pack);
+	@include restoreIcons("video-device-context", "video-device-context-report-stream-problem");
+
+	// Threads
+	@include contextIcon("thread-context-leave-thread", "leave", $icon-pack);
+	@include contextIcon("thread-context-mark-channel-read", "mark_read", $icon-pack);
+	
+	@include contextIcon("thread-context-mute-channel", "mute", $icon-pack);
+	@include contextIcon("thread-context-unmute-channel", "unmute", $icon-pack);
+	@include contextIcon("thread-context-thread-notifications", "notifications", $icon-pack);
+	
+	@include contextIcon("thread-context-edit-thread", "settings", $icon-pack);
+	
+	@include contextIcon("thread-context-archive-thread", "message", $icon-pack);
+	@include contextIcon("thread-context-auto-archive-thread", "message", $icon-pack);
+	@include contextIcon("thread-context-unarchive-thread", "message", $icon-pack);
+	
+	@include contextIcon("thread-context-delete-channel", "delete", $icon-pack);
 
 	// Settings
 	@include contextIcon("user-settings-cog-My_Account", "account", $icon-pack);
 	@include contextIcon("user-settings-cog-Profile_Customization", "user_profile", $icon-pack);
 	@include contextIcon("user-settings-cog-Privacy___Safety", "shield", $icon-pack);
-	@include contextIcon("moderation-tab", "shield", $icon-pack);
 	@include contextIcon("user-settings-cog-Authorized_Apps", "apps", $icon-pack);
-	@include contextIcon("user-settings-cog-Connections", "attachment", $icon-pack);
+	@include contextIcon("user-settings-cog-Connections", "connections", $icon-pack);
 
 	@include contextIcon("user-settings-cog-Subscriptions", "subscriptions", $icon-pack);
 	@include contextIcon("user-settings-cog-Discord_Nitro", "nitro", $icon-pack);
@@ -220,9 +292,26 @@
 	@include contextIcon("user-settings-cog-Library_Inventory", "gift", $icon-pack);
 	@include contextIcon("user-settings-cog-Billing", "billing", $icon-pack);
 
+	@include contextIcon("user-settings-cog-Appearance", "appearance", $icon-pack);
+	@include contextIcon("user-settings-cog-Accessibility", "accessibility", $icon-pack);
 	@include contextIcon("user-settings-cog-Voice___Video", "voice_settings", $icon-pack);
-	@include contextIcon("user-settings-cog-Language", "language", $icon-pack);
-
+	@include contextIcon("user-settings-cog-Text___Images", "text__images", $icon-pack);
+	@include contextIcon("user-settings-cog-Notifications", "notifications", $icon-pack);
+	@include contextIcon("user-settings-cog-Keybinds", "keyboard", $icon-pack);
+	@include contextIcon("user-settings-cog-Language", "locale", $icon-pack);
+	@include contextIcon("user-settings-cog-Windows", "monitor", $icon-pack);
+	@include contextIcon("user-settings-cog-Streamer_Mode", "stream", $icon-pack);
+	@include contextIcon("user-settings-cog-Advanced", "advanced", $icon-pack);
+	
+	@include contextIcon("user-settings-cog-Game_Activity", "game", $icon-pack);
+	@include contextIcon("user-settings-cog-Overlay", "game_activity", $icon-pack);
+	
+	@include contextIcon("user-settings-cog-changelog", "changelog", $icon-pack);
+	@include contextIcon("user-settings-cog-Hypesquad_Online", "hypesquad", $icon-pack);
+	@include contextIcon("user-settings-cog-Experiments", "experiment", $icon-pack);
+	@include contextIcon("user-settings-cog-Developer_Options", "developer", $icon-pack);
+	
+	// Mods
 	@include contextIcon("user-settings-cog-powercord-actions", "powercord", $icon-pack);
 }
 

@@ -4,5 +4,7 @@
 @use "colors";
 @use "guild_scroller";
 @use "chat";
-@use "channels/channels";
+@use "channels";
 @use "context_menu";
+
+@use "modals";
