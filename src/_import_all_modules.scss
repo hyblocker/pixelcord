@@ -1,6 +1,29 @@
 // Imports all modules
 
-@import "../modules/appearance/replace_icons";
+// Appearance - General
 @import "../modules/appearance/space_dash";
-@import "../modules/appearance/settings_icons";
-@import "../modules/appearance/context_icons";
+
+// Appearance - Icons
+
+// Replace Icons
+// @import "../modules/appearance/icons/replace/outline";
+// @import "../modules/appearance/icons/replace/filled";
+// @import "../modules/appearance/icons/replace/rounded";
+
+// Settings Icons
+@import "../modules/appearance/icons/settings/discord";
+// @import "../modules/appearance/icons/settings/outline";
+// @import "../modules/appearance/icons/settings/filled";
+// @import "../modules/appearance/icons/settings/rounded";
+
+// Context Menu Icons
+@import "../modules/appearance/icons/context/discord";
+// @import "../modules/appearance/icons/context/outline";
+// @import "../modules/appearance/icons/context/filled";
+// @import "../modules/appearance/icons/context/rounded";
+
+// Icon Shapes
+// @import "../modules/appearance/icons/shapes/rounded";
+// @import "../modules/appearance/icons/shapes/square";
+// @import "../modules/appearance/icons/shapes/squircle";
+@import "../modules/appearance/icons/shapes/hexagon";

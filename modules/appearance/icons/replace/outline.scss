@@ -1,0 +1,5 @@
+@import "../replace_icons";
+
+@import "../../../../src/icons/outline";
+
+@include replaceAllIcons($icons-outline);

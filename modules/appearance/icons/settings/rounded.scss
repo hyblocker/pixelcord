@@ -1,0 +1,5 @@
+﻿@import "../settings_icons";
+
+@import "../../../../src/icons/rounded";
+
+@include includeSettings($icons-rounded);

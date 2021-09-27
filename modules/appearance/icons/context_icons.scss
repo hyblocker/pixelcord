@@ -1,12 +1,12 @@
 // SVG Util
-@import "../../src/icons/util";
+@import "../../../src/icons/util";
 
 // Icon packs
-@import "../../src/icons/outline";
-@import "../../src/icons/discord";
+@import "../../../src/icons/outline";
+@import "../../../src/icons/discord";
 
 // Import build config
-@import "../../src/config/build_config";
+@import "../../../src/config/build_config";
 
 // Helpers
 @mixin removeIcon {
@@ -159,10 +159,13 @@
 	// Include icons
 
 	// General cases
-	// @include contextIcon("copy", "copy", $icon-pack);
 	.item-1tOPte[id*="copy"]::before {
 		--icon: #{svg-url(#{map-get($icon-pack, "copy")})};
 	}
+	.item-1tOPte[id*="copy"][id*="devmode"]::before {
+		--icon: #{svg-url(#{map-get($icon-pack, "id")})};
+	}
+	
 	.item-1tOPte[id|="user-settings-cog-Experiments-"][id$="-clear-override"] {
 		@include reverseOrder();
 	}
@@ -181,7 +184,6 @@
 	@include contextIcon("message-tts", "tts", $icon-pack);
 	@include contextIcon("message-report-message-btn", "report", $icon-pack);
 	@include contextIcon("message-delete", "delete", $icon-pack);
-	@include contextIcon("message-devmode-copy-id", "id", $icon-pack);
 	
 	// Textbox right click
 	@include contextIcon("textarea-context-add-to-dictionary", "add_dictionary", $icon-pack);
@@ -202,6 +204,7 @@
 
 	@include contextIcon("user-context-change-nickname", "edit", $icon-pack);
 	@include contextIcon("user-context-apps", "apps", $icon-pack);
+	@include contextIcon("user-context-invite-to-server", "invite", $icon-pack);
 	@include contextIcon("user-context-add-friend", "add_friend", $icon-pack);
 	@include contextIcon("user-context-remove-friend", "unfriend", $icon-pack);
 	@include contextIcon("user-context-block", "block", $icon-pack);
@@ -246,13 +249,12 @@
 	@include contextIcon("guild-context-folder-collapse", "close", $icon-pack);
 
 	// Friends tab
-	// TODO: FIX ICONS
 	@include contextIcon("now-playing-menu-message", "message", $icon-pack);
-	@include contextIcon("now-playing-menu-join-voice", "voice_channel", $icon-pack); // join vc
-	@include contextIcon("now-playing-menu-goto-server", "go_to", $icon-pack); // go to server
-	@include contextIcon("now-playing-menu-spectate", "spectate", $icon-pack, true); // watch stream
-	@include contextIcon("now-playing-menu-join", "join_game", $icon-pack, true); // join on spotify
-	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true); // join on spotify
+	@include contextIcon("now-playing-menu-join-voice", "voice_channel", $icon-pack);
+	@include contextIcon("now-playing-menu-goto-server", "go_to", $icon-pack);
+	@include contextIcon("now-playing-menu-spectate", "spectate", $icon-pack, true);
+	@include contextIcon("now-playing-menu-join", "join_game", $icon-pack, true);
+	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true);
 	
 	// Profile (open modal => 3 dots)
 	@include contextIcon("user-profile-actions-user-remove", "spotify", $icon-pack);
@@ -273,6 +275,7 @@
 	
 	@include contextIcon("thread-context-edit-thread", "settings", $icon-pack);
 	
+	// TODO: Thread archive icons bc im lazy!
 	@include contextIcon("thread-context-archive-thread", "message", $icon-pack);
 	@include contextIcon("thread-context-auto-archive-thread", "message", $icon-pack);
 	@include contextIcon("thread-context-unarchive-thread", "message", $icon-pack);
@@ -303,8 +306,8 @@
 	@include contextIcon("user-settings-cog-Streamer_Mode", "stream", $icon-pack);
 	@include contextIcon("user-settings-cog-Advanced", "advanced", $icon-pack);
 	
-	@include contextIcon("user-settings-cog-Game_Activity", "game", $icon-pack);
-	@include contextIcon("user-settings-cog-Overlay", "game_activity", $icon-pack);
+	@include contextIcon("user-settings-cog-Game_Activity", "game_activity", $icon-pack);
+	@include contextIcon("user-settings-cog-Overlay", "game", $icon-pack);
 	
 	@include contextIcon("user-settings-cog-changelog", "changelog", $icon-pack);
 	@include contextIcon("user-settings-cog-Hypesquad_Online", "hypesquad", $icon-pack);
@@ -312,7 +315,6 @@
 	@include contextIcon("user-settings-cog-Developer_Options", "developer", $icon-pack);
 	
 	// Mods
+	@include contextIcon("user-settings-cog-BetterDiscord", "betterdiscord", $icon-pack);
 	@include contextIcon("user-settings-cog-powercord-actions", "powercord", $icon-pack);
 }
-
-@include includeContext($icon-pack);

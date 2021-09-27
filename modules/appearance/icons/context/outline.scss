@@ -1,0 +1,5 @@
+@import "../context_icons";
+
+@import "../../../../src/icons/outline";
+
+@include includeContext($icons-outline);

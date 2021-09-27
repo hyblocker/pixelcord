@@ -1,0 +1,167 @@
+﻿// SVG Util
+@use "sass:string";
+@import "../../../src/icons/util";
+
+@mixin replaceGuildShape($shape, $shape-hover) {
+	.svg-1X37T1 > defs > path:not([d='M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z']) {
+		d: path($shape);
+	}.svg-1X37T1 > defs > path[d='M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z'] {
+		d: path($shape-hover);
+	}
+	.svg-1X37T1 > foreignObject:first-child {
+		@include maskImage($shape, 48);
+	}
+}
+
+@function wrapperSVG($shape, $size: 40, $fill: 'black', $extra: '') {
+	@return "<svg viewBox='0 0 48 48' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><path fill='#{$fill}' d='#{$shape}'/>#{$extra}</svg>";
+}
+@function statusSVG($shape, $size: 40, $mask: '<rect></rect>') {
+	@return "<svg viewBox='0 0 48 48' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><defs><clipPath id='yeet'>#{$mask}</clipPath></defs><path fill='#fff' d='#{$shape}' clip-path='url(#yeet)'/></svg>";
+}
+
+@mixin maskImage($shape, $size) {
+	-webkit-mask-image: #{svg-url(#{wrapperSVG($shape, $size)})};
+	-webkit-mask-size: #{$size}px;
+	-webkit-mask-position: center;
+	-webkit-mask-repeat: no-repeat;
+	border-radius: 0;
+}
+
+// Discord has multiple SVG masks for different image resolutions FUCK ME AAAAAAA
+$status_round: (
+		16: '<circle fill="black" cx="0.8125" cy="0.8125" r="0.3125"/>',
+		24: '<circle fill="black" cx="0.8333333333333334" cy="0.8333333333333334" r="0.2916666666666667"/>',
+		32: '<circle fill="black" cx="0.84375" cy="0.84375" r="0.25"/>',
+		40: '<circle fill="black" cx="0.85" cy="0.85" r="0.25"/>',
+		80: '<circle fill="black" cx="0.85" cy="0.85" r="0.175"/>',
+		120: '<circle fill="black" cx="0.8333333333333334" cy="0.8333333333333334" r="0.16666666666666666"/>'
+) !default;
+$status_mobile: (
+		16: '<rect fill="black" x="0.5" y="0.3125" width="0.625" height="0.8125" rx="0.1625" ry="0.1625"/>',
+		24: '<rect fill="black" x="0.5416666666666666" y="0.375" width="0.5833333333333334" height="0.75" rx="0.15" ry="0.15"/>',
+		32: '<rect fill="black" x="0.59375" y="0.4375" width="0.5" height="0.65625" rx="0.13125" ry="0.13125"/>',
+		40: '<rect fill="black" x="0.6" y="0.45" width="0.5" height="0.65" rx="0.13" ry="0.13"/>',
+		80: '<rect fill="black" x="0.675" y="0.575" width="0.35" height="0.45" rx="0.09" ry="0.09"/>',
+		120: '<rect fill="black" x="0.6666666666666666" y="0.5666666666666667" width="0.3333333333333333" height="0.43333333333333335" rx="0.08666666666666667" ry="0.08666666666666667"/>'
+) !default;
+$status_typing: (
+		16: '<rect fill="black" x="0.21875" y="0.5" width="1.1875" height="0.625" rx="0.3125" ry="0.3125"/>',
+		24: '<rect fill="black" x="0.2916666666666667" y="0.5416666666666666" width="1.0833333333333333" height="0.5833333333333334" rx="0.2916666666666667" ry="0.2916666666666667"/>',
+		32: '<rect fill="black" x="0.359375" y="0.59375" width="0.96875" height="0.5" rx="0.25" ry="0.25"/>',
+		40: '<rect fill="black" x="0.375" y="0.6" width="0.95" height="0.5" rx="0.25" ry="0.25"/>',
+		80: '<rect fill="black" x="0.525" y="0.675" width="0.65" height="0.35" rx="0.175" ry="0.175"/>',
+		120: '<rect fill="black" x="0.5166666666666667" y="0.6666666666666666" width="0.6333333333333333" height="0.3333333333333333" rx="0.16666666666666666" ry="0.16666666666666666"/>'
+) !default;
+
+@mixin avatarMaskMain($encodedSvg, $statusMask, $composite, $swap) {
+	@if $swap {
+		-webkit-mask: $statusMask, $encodedSvg;
+	} @else {
+		-webkit-mask: $encodedSvg, $statusMask;
+	}
+	-webkit-mask-composite: string.unquote($composite);
+}
+
+@mixin avatarStatusMask($shape, $size, $composite, $swap) {
+	.avatarHint-2A3RNb,
+	.mask-1l8v16 {
+		$encodedSvg: #{svg-url(#{wrapperSVG(#{$shape}, $size, '#fff')})};
+
+		& > foreignObject[mask="url(#svg-mask-avatar-status-round-#{$size})"] {
+			// $statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><circle fill='black' cx='0.85' cy='0.85' r='0.175'/></svg>")};
+			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_round, $size)}</svg>")};
+			
+			// -webkit-mask: $encodedSvg, $statusMask;
+			// -webkit-mask-composite: string.unquote($composite);
+			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
+		}
+
+		& > foreignObject[mask="url(#svg-mask-avatar-status-mobile-#{$size})"] {
+			// $statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><rect fill='black' x='0.675' y='0.575' width='0.35' height='0.45' rx='0.09' ry='0.09'/></svg>")};
+			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_mobile, $size)}</svg>")};
+			
+			// -webkit-mask: $encodedSvg, $statusMask;
+			// -webkit-mask-composite: string.unquote($composite);
+			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
+		}
+
+		& > foreignObject[mask="url(#svg-mask-avatar-status-typing-#{$size})"] {
+			// $statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><rect fill='black' x='0.359375' y='0.59375' width='0.96875' height='0.5' rx='0.25' ry='0.25'/></svg>")};
+			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_typing, $size)}</svg>")};
+
+			// -webkit-mask: $encodedSvg, $statusMask;
+			// -webkit-mask-composite: string.unquote($composite);
+			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
+		}
+	}
+}
+
+@mixin includeIconShapes($shape: '', $hoverShape: '', $composite: 'destination-in', $swap: false) {
+
+	@if $shape == '' {
+		$shape: 'M24 4l-18 10v20l18 10 18-10v-20l-18-10z';
+	}
+	@if $hoverShape == '' {
+		$hoverShape: $shape;
+	}
+
+	@include replaceGuildShape($shape, $hoverShape);
+
+	.replyAvatar-1K9Wmr {
+		@include maskImage($hoverShape, 16);
+	}
+	
+	.avatar-1BDn8e {
+		@include maskImage($hoverShape, 40);
+	}
+	
+	.voiceSectionGuildImage-3HwnfL {
+		@include maskImage($hoverShape, 32);
+	}
+
+	.avatar-3bWpYy,
+	.listDefault-3ir5aS .avatarContainer-28iYmV {
+		@include maskImage($hoverShape, 24);
+		box-shadow: none;
+		&.avatarSpeaking-2IGMRN {
+			@include maskImage($hoverShape, 22);
+			position: relative;
+			z-index: 2;
+			&::before {
+				content: "";
+				width: 24px;
+				height: 24px;
+				// background: red;
+				display: block;
+				z-index: 1;
+				@include maskImage($hoverShape, 24);
+			}
+		}
+	}
+
+	// Remove from wrappers
+	.avatar-AvHqJA,
+	.avatar-37jOim,
+	.avatar-1uQSZT {
+		&.wrapper-3t9DeA {
+			border-radius: 0;
+			// additional path at the end is to prevent clipping of the status
+			-webkit-mask-image: #{svg-url("<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path d='#{$hoverShape}'/><path d='M0 24v24h48V24z'/></svg>")};
+		}
+	}
+	.wrapper-3t9DeA {
+		border-radius: 0;	
+	}
+	
+	.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-default)"] {
+		-webkit-mask: #{svg-url("<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path fill='#fff' d='#{$hoverShape}'/></svg>")};
+	}
+
+	@include avatarStatusMask($hoverShape, 16,  $composite, $swap);
+	@include avatarStatusMask($hoverShape, 24,  $composite, $swap);
+	@include avatarStatusMask($hoverShape, 32,  $composite, $swap);
+	@include avatarStatusMask($hoverShape, 40,  $composite, $swap);
+	@include avatarStatusMask($hoverShape, 80,  $composite, $swap);
+	@include avatarStatusMask($hoverShape, 120, $composite, $swap);
+}
