@@ -113,7 +113,8 @@ $status_typing: (
 	.replyAvatar-1K9Wmr {
 		@include maskImage($hoverShape, 16);
 	}
-	
+
+	.listAvatar-1BbvHX,
 	.avatar-1BDn8e {
 		@include maskImage($hoverShape, 40);
 	}
