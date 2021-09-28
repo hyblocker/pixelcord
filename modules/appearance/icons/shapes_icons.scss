@@ -22,7 +22,9 @@
 
 @mixin maskImage($shape, $size) {
 	-webkit-mask-image: #{svg-url(#{wrapperSVG($shape, $size)})};
-	-webkit-mask-size: #{$size}px;
+	// -webkit-mask-size: #{$size}px;
+	-webkit-mask-size: contain;
+
 	-webkit-mask-position: center;
 	-webkit-mask-repeat: no-repeat;
 	border-radius: 0;
@@ -118,9 +120,20 @@ $status_typing: (
 	.avatar-1BDn8e {
 		@include maskImage($hoverShape, 40);
 	}
-	
+
+	.guildIcon-1zxZMV,
 	.voiceSectionGuildImage-3HwnfL {
 		@include maskImage($hoverShape, 32);
+	}
+
+	// Add border
+	.avatarUploader-2UF9NL {
+		@include maskImage($hoverShape, 92);
+	}
+
+	// Cre-Arts' Friends Grid breaks with this
+	#app-mount .peopleColumn-29fq28 .avatar-3W3CeO::before {
+		@include maskImage($hoverShape, 67);
 	}
 
 	.avatar-3bWpYy,
@@ -161,6 +174,7 @@ $status_typing: (
 	
 	.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-default)"] {
 		-webkit-mask: #{svg-url("<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path fill='#fff' d='#{$hoverShape}'/></svg>")};
+		mask: none;
 	}
 
 	@include avatarStatusMask($hoverShape, 16,  $composite, $swap);
@@ -169,4 +183,9 @@ $status_typing: (
 	@include avatarStatusMask($hoverShape, 40,  $composite, $swap);
 	@include avatarStatusMask($hoverShape, 80,  $composite, $swap);
 	@include avatarStatusMask($hoverShape, 120, $composite, $swap);
+	
+	// Padding in collapsed VCs
+	.size24-1HlGux .avatarContainerMasked-PIJ-3L {
+		margin-right: 4px;
+	}
 }

@@ -90,7 +90,7 @@
 			flex-shrink: 0;
 
 			// Default to Powercord Icon
-			--icon: #{svg-url(#{map-get($icon-pack, "powercord")})};
+			--icon: #{svg-url(#{map-get($icon-pack, "placeholder")})};
 		}
 
 		// Hide in submenus
@@ -154,6 +154,11 @@
 		.submenu-2-ysNh.menu-3sdvDG &::before {
 			content: none;
 		}
+		
+		// Hide in powercord menus
+		.menu-3sdvDG[id|=pc] & {
+			@include removeIcon();
+		}
 	}
 
 	// Include icons
@@ -171,6 +176,7 @@
 	}
 
 	// Message right click
+	@include contextIcon("message-search-google", "google", $icon-pack);
 	@include contextIcon("message-add-reaction", "add_reaction", $icon-pack);
 	@include contextIcon("message-reactions", "reactions", $icon-pack);
 	@include contextIcon("message-edit", "edit", $icon-pack);
@@ -179,6 +185,8 @@
 	@include contextIcon("message-thread", "channel_thread", $icon-pack);
 	@include contextIcon("message-apps", "apps", $icon-pack);
 	@include contextIcon("message-mark-unread", "mark_unread", $icon-pack);
+	@include contextIcon("message-save-image", "save_file", $icon-pack);
+	@include contextIcon("message-copy-native-link", "copy_link", $icon-pack);
 	@include contextIcon("message-copy-link", "copy_link", $icon-pack);
 	@include contextIcon("message-open-native-link", "launch", $icon-pack);
 	@include contextIcon("message-tts", "tts", $icon-pack);
@@ -227,6 +235,7 @@
 
 	@include contextIcon("guild-context-create-channel", "create_channel", $icon-pack);
 	@include contextIcon("guild-context-create-category", "create_category", $icon-pack);
+	@include contextIcon("guild-context-create-event", "create_event", $icon-pack);
 
 	@include contextIcon("guild-context-leave-guild", "leave", $icon-pack);
 	
@@ -255,10 +264,11 @@
 	@include contextIcon("now-playing-menu-spectate", "spectate", $icon-pack, true);
 	@include contextIcon("now-playing-menu-join", "join_game", $icon-pack, true);
 	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true);
+	@include contextIcon("now-playing-menu-xbox-connect", "xbox", $icon-pack, true);
 	
 	// Profile (open modal => 3 dots)
-	@include contextIcon("user-profile-actions-user-remove", "spotify", $icon-pack);
-	@include contextIcon("user-profile-actions-user-block", "spotify", $icon-pack);
+	@include contextIcon("user-profile-actions-user-remove", "unfriend", $icon-pack);
+	@include contextIcon("user-profile-actions-user-block", "block", $icon-pack);
 	@include contextIcon("user-profile-actions-user-message", "message", $icon-pack);
 	
 	// Re-add to video quick settings
@@ -276,11 +286,16 @@
 	@include contextIcon("thread-context-edit-thread", "settings", $icon-pack);
 	
 	// TODO: Thread archive icons bc im lazy!
-	@include contextIcon("thread-context-archive-thread", "message", $icon-pack);
-	@include contextIcon("thread-context-auto-archive-thread", "message", $icon-pack);
-	@include contextIcon("thread-context-unarchive-thread", "message", $icon-pack);
+	@include contextIcon("thread-context-archive-thread", "archive", $icon-pack);
+	@include contextIcon("thread-context-auto-archive-thread", "auto_archive", $icon-pack);
+	@include contextIcon("thread-context-unarchive-thread", "unarchive", $icon-pack);
 	
 	@include contextIcon("thread-context-delete-channel", "delete", $icon-pack);
+
+	// Image
+	@include contextIcon("image-context-save-image", "save_file", $icon-pack);
+	@include contextIcon("image-context-copy-native-link", "copy_link", $icon-pack);
+	@include contextIcon("image-context-open-native-link", "launch", $icon-pack);
 
 	// Settings
 	@include contextIcon("user-settings-cog-My_Account", "account", $icon-pack);
@@ -317,4 +332,14 @@
 	// Mods
 	@include contextIcon("user-settings-cog-BetterDiscord", "betterdiscord", $icon-pack);
 	@include contextIcon("user-settings-cog-powercord-actions", "powercord", $icon-pack);
+	
+	// Reverse image search
+	@include contextIcon("message-reverse-image-search-menu", "reverse_search", $icon-pack);
+	@include contextIcon("image-context-reverse-image-search-menu", "reverse_search", $icon-pack);
+	@include contextIcon("guild-context-reverse-image-search-menu", "reverse_search", $icon-pack);
+	@include contextIcon("user-context-reverse-image-search-menu", "reverse_search", $icon-pack);
+
+	// Guild profile
+	@include contextIcon("guild-context-guild-profile", "guild_profile", $icon-pack);
+	
 }

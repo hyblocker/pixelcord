@@ -72,3 +72,8 @@
 .downloadLink-1ywL9o {
 	width: 400px;
 }
+
+// emoji popouts' guild icon is small
+.guildSection-1EoFKd > .flex-1xMQg5 > svg {
+	min-width: 32px;
+}

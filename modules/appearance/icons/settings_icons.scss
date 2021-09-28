@@ -84,7 +84,7 @@ $dummy: $icons-outline;
     flex-shrink: 0;
 
     // Default to powercord icon
-    --icon: #{svg-url(#{map-get($icon-pack, "discord")})};
+    --icon: #{svg-url(#{map-get($icon-pack, "placeholder")})};
   }
 
   // Stock Discord
@@ -134,6 +134,11 @@ $dummy: $icons-outline;
   @include settingsIcon("widget-tab", "boost", $icon-pack);
   @include settingsIcon("guild_templates-tab", "boost", $icon-pack);
 
+  @include settingsIcon("community-tab", "boost", $icon-pack);
+  @include settingsIcon("analytics-tab", "guild_insights", $icon-pack);
+  @include settingsIcon("community-tab", "boost", $icon-pack);
+  @include settingsIcon("community-tab", "boost", $icon-pack);
+  @include settingsIcon("community-tab", "boost", $icon-pack);
   @include settingsIcon("community-tab", "boost", $icon-pack);
 
   @include settingsIcon("guild_premium-tab", "boost", $icon-pack);

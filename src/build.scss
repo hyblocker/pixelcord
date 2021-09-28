@@ -7,4 +7,6 @@
 @use "settings";
 @use "client_mods";
 
+// NOTE: This is only used during debugging!
+// Id disable it at compile time but SCSS is shit and doesnt let you @if true { @import / @use }
 @import "import_all_modules";

@@ -228,6 +228,26 @@
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
 }
 
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=analytics-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+}
+
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=guild_premium-tab i]:not(.role-3wi9Tf)::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
 }
@@ -311,4 +331,4 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M14 5a7 7 0 100 14 7 7 0 000-14zM3 11h1a1 1 0 100-2H1a1 1 0 110-2h5a1 1 0 100-2H3.5a1.5 1.5 0 010-3H14c5.523 0 10 4.477 10 10s-4.477 10-10 10c-5.185 0-9.449-3.947-9.95-9H3a1 1 0 010-2z'/%3E%3Cpath d='M14 17a5 5 0 110-10 5 5 0 010 10zm1.827-7.55a1 1 0 00-.835-.45h-1.926a1 1 0 00-.836.45l-1.315 2a1 1 0 000 1.1l1.315 2a1 1 0 00.836.45h1.926a1 1 0 00.835-.45l1.316-2a1 1 0 000-1.1l-1.316-2z'/%3E%3C/svg%3E");
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../settings_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA2BE;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AA0IF;AAAA;AAAA;AA3IA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE%22,%22file%22:%22filled.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../settings_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA2BE;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AA+IF;AAAA;AAAA;AAhJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE%22,%22file%22:%22filled.css%22%7D */
