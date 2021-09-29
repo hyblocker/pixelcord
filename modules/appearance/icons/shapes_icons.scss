@@ -9,21 +9,27 @@
 		d: path($shape-hover);
 	}
 	.svg-1X37T1 > foreignObject:first-child {
-		@include maskImage($shape, 48);
+		// @include maskImage($shape);
+		-webkit-mask-image: var(--guild-shape-normal);
+		// -webkit-mask-image: #{svg-url(#{wrapperSVG($shape)})};
+		-webkit-mask-size: contain;
+		-webkit-mask-position: center;
+		-webkit-mask-repeat: no-repeat;
+		border-radius: 0;
 	}
 }
 
-@function wrapperSVG($shape, $size: 40, $fill: 'black', $extra: '') {
-	@return "<svg viewBox='0 0 48 48' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><path fill='#{$fill}' d='#{$shape}'/>#{$extra}</svg>";
+@function wrapperSVG($shape, $fill: 'black', $extra: '') {
+	@return "<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path fill='#{$fill}' d='#{$shape}'/>#{$extra}</svg>";
 }
-@function statusSVG($shape, $size: 40, $mask: '<rect></rect>') {
-	@return "<svg viewBox='0 0 48 48' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><defs><clipPath id='yeet'>#{$mask}</clipPath></defs><path fill='#fff' d='#{$shape}' clip-path='url(#yeet)'/></svg>";
+@function statusSVG($shape, $mask: '<rect></rect>') {
+	@return "<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><defs><clipPath id='yeet'>#{$mask}</clipPath></defs><path fill='#fff' d='#{$shape}' clip-path='url(#yeet)'/></svg>";
 }
 
-@mixin maskImage($shape, $size) {
-	-webkit-mask-image: #{svg-url(#{wrapperSVG($shape, $size)})};
+@mixin maskImage($shape) {
+	-webkit-mask-image: var(--avatar-shape);
+	// -webkit-mask-image: #{svg-url(#{wrapperSVG($shape)})};
 	-webkit-mask-size: contain;
-
 	-webkit-mask-position: center;
 	-webkit-mask-repeat: no-repeat;
 	border-radius: 0;
@@ -55,39 +61,30 @@ $status_typing: (
 		120: '<rect fill="black" x="0.5166666666666667" y="0.6666666666666666" width="0.6333333333333333" height="0.3333333333333333" rx="0.16666666666666666" ry="0.16666666666666666"/>'
 ) !default;
 
-@mixin avatarMaskMain($encodedSvg, $statusMask, $composite, $swap) {
-	@if $swap {
-		-webkit-mask: $statusMask, $encodedSvg;
-	} @else {
-		-webkit-mask: $encodedSvg, $statusMask;
-	}
-	-webkit-mask-composite: string.unquote($composite);
-	mask: none;
-}
-
-@mixin avatarStatusMask($shape, $size, $composite, $swap) {
+@mixin avatarStatusMask($shape, $size, $swap) {
 	.avatarHint-2A3RNb,
 	.mask-1l8v16 {
-		$encodedSvg: #{svg-url(#{wrapperSVG(#{$shape}, $size, '#fff')})};
+		// $encodedSvg: #{svg-url(#{wrapperSVG(#{$shape}, '#fff')})};
+		$encodedSvg: var(--avatar-shape);
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-round-#{$size})"] {
 			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_round, $size)}</svg>")};
-			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
+			-webkit-mask: $statusMask, $encodedSvg;
 		}
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-mobile-#{$size})"] {
 			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_mobile, $size)}</svg>")};
-			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
+			-webkit-mask: $statusMask, $encodedSvg;
 		}
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-typing-#{$size})"] {
 			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_typing, $size)}</svg>")};
-			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
+			-webkit-mask: $statusMask, $encodedSvg;
 		}
 	}
 }
 
-@mixin includeIconShapes($shape: '', $hoverShape: '', $composite: 'destination-in', $swap: false) {
+@mixin includeIconShapes($shape: '', $hoverShape: '', $swap: false) {
 
 	@if $shape == '' {
 		$shape: 'M24 4l-18 10v20l18 10 18-10v-20l-18-10z';
@@ -95,48 +92,40 @@ $status_typing: (
 	@if $hoverShape == '' {
 		$hoverShape: $shape;
 	}
+	
+	:root {
+		--guild-shape-normal:  #{svg-url(#{wrapperSVG($shape)})};
+		--guild-shape-hover:  #{svg-url(#{wrapperSVG($hoverShape)})};
+		--avatar-shape:  #{svg-url(#{wrapperSVG($shape)})};
+	}
 
 	@include replaceGuildShape($shape, $hoverShape);
 
 	.avatar-3Bhz0p,
 	.guildIcon-2Tpnad.iconSizeSmol-2Dw61G,
-	.replyAvatar-1K9Wmr {
-		@include maskImage($hoverShape, 16);
-	}
-	.embedAuthorIcon--1zR3L {
-		@include maskImage($hoverShape, 24);
-	}
-
+	.replyAvatar-1K9Wmr,
+	.embedAuthorIcon--1zR3L,
 	// Mutuals => Guilds
 	.iconSizeMedium-2OqPjI.listAvatar-1BbvHX,
-	.avatar-1BDn8e {
-		@include maskImage($hoverShape, 40);
-	}
-
+	.avatar-1BDn8e,
 	.guildIcon-1zxZMV,
-	.voiceSectionGuildImage-3HwnfL {
-		@include maskImage($hoverShape, 32);
-	}
-
+	.voiceSectionGuildImage-3HwnfL,
 	// Add border
-	.avatarUploader-2UF9NL {
-		@include maskImage($hoverShape, 92);
-	}
-
+	.avatarUploader-2UF9NL,
 	// Cre-Arts' Friends Grid breaks without this
 	#app-mount .peopleColumn-29fq28 .avatar-3W3CeO::before {
-		@include maskImage($hoverShape, 67);
+		@include maskImage($hoverShape);
 	}
 
 	// VCs
 	.avatar-3bWpYy,
 	.listDefault-3ir5aS .avatarContainer-28iYmV {
-		@include maskImage($hoverShape, 24);
+		@include maskImage($hoverShape);
 		box-shadow: none;
 		
 		// Speaking is broken
 		&.avatarSpeaking-2IGMRN {
-			@include maskImage($hoverShape, 22);
+			@include maskImage($hoverShape);
 			-webkit-mask-size: 22px;
 			
 			position: relative;
@@ -155,7 +144,7 @@ $status_typing: (
 		display: block;
 		z-index: 1;
 		position: absolute;
-		@include maskImage($hoverShape, 24);
+		@include maskImage($hoverShape);
 		top: 3px;
 		left: 8px;
 	}
@@ -169,7 +158,7 @@ $status_typing: (
 	.container-3baos1 .avatarStack-2Dr8S9 {
 		// if we arent the first and last child (aka only child) we are therefore speaking
 		.avatar-VxgULZ:first-child:not(:last-child) {
-			@include maskImage($hoverShape, 28);
+			@include maskImage($hoverShape);
 			-webkit-mask-size: 28px;
 			-webkit-mask-position: center;
 			width: 28px;
@@ -178,7 +167,7 @@ $status_typing: (
 		}
 	}
 	.avatarSpeaking-2c8-9i {
-		@include maskImage($hoverShape, 24);
+		@include maskImage($hoverShape);
 		background: var(--accent);
 		box-shadow: none;
 
@@ -202,7 +191,8 @@ $status_typing: (
 		&.wrapper-3t9DeA {
 			border-radius: 0;
 			// additional path at the end is to prevent clipping of the status
-			-webkit-mask-image: #{svg-url("<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path d='#{$hoverShape}'/><path d='M0 24v24h48V24z'/></svg>")};
+			-webkit-mask-image: var(--avatar-shape), #{svg-url("<svg viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'><path d='M0 1v1h2V1z'/></svg>")};
+			// -webkit-mask: var(--avatar-shape);
 		}
 	}
 
@@ -212,20 +202,57 @@ $status_typing: (
 	}
 	
 	.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-default)"] {
-		-webkit-mask: #{svg-url("<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path fill='#fff' d='#{$hoverShape}'/></svg>")};
+		// -webkit-mask: #{svg-url("<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path fill='#fff' d='#{$hoverShape}'/></svg>")};
+		-webkit-mask: var(--avatar-shape);
 		mask: none;
 	}
 
-	@include avatarStatusMask($hoverShape, 16,  $composite, $swap);
-	@include avatarStatusMask($hoverShape, 24,  $composite, $swap);
-	@include avatarStatusMask($hoverShape, 32,  $composite, $swap);
-	@include avatarStatusMask($hoverShape, 40,  $composite, $swap);
-	@include avatarStatusMask($hoverShape, 80,  $composite, $swap);
-	@include avatarStatusMask($hoverShape, 120, $composite, $swap);
+	@include avatarStatusMask($hoverShape, 16,  $swap);
+	@include avatarStatusMask($hoverShape, 24,  $swap);
+	@include avatarStatusMask($hoverShape, 32,  $swap);
+	@include avatarStatusMask($hoverShape, 40,  $swap);
+	@include avatarStatusMask($hoverShape, 80,  $swap);
+	@include avatarStatusMask($hoverShape, 120, $swap);
+
+	.avatarHint-2A3RNb,
+	.mask-1l8v16 {
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-16)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-16)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-16)"],
+		// 
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-24)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-24)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-24)"],
+		// 
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-32)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-32)"],
+		// 
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-40)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-40)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-40)"],
+		// 
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-80)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-80)"],
+		// 
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-120)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-120)"],
+		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-120)"] {
+		
+		& > foreignObject[mask|="url(#svg-mask-avatar-status-round"],
+		& > foreignObject[mask|="url(#svg-mask-avatar-status-mobile"],
+		& > foreignObject[mask|="url(#svg-mask-avatar-status-typing"] {
+			-webkit-mask-size: contain;
+			-webkit-mask-composite: destination-out;
+			mask: none;
+		}
+	}
 	
 	// Padding in collapsed VCs
-	.size16-NOVQSt .avatarContainerMasked-PIJ-3L,
-	.size24-1HlGux .avatarContainerMasked-PIJ-3L {
+	// .size16-NOVQSt .avatarContainerMasked-PIJ-3L,
+	// .size24-1HlGux .avatarContainerMasked-PIJ-3L {
+	.avatarContainerMasked-PIJ-3L {
 		margin-right: 4px;
 	}
 }
