@@ -1,3 +1,6 @@
+@import '../buildvars';
+@import "../material_design/ripple";
+
 .separator-2I32lJ {
 	border-color: var(--context-menu-separator);
 }
@@ -6,4 +9,7 @@
 }
 .scroller-3BxosC {
 	padding: var(--context-menu-padding);
+}
+.item-1tOPte {
+	@include ripple;
 }

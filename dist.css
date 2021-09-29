@@ -566,6 +566,11 @@ html[lang=hi] {
   color: var(--red);
 }
 
+::selection {
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
+
 d[id*=-blob_mask] {
   d: path("M0 0V24H24V0z");
 }
@@ -762,8 +767,37 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   padding: var(--context-menu-padding);
 }
 
+.item-1tOPte {
+  overflow: hidden;
+}
+
+.item-1tOPte::after {
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(0px + var(--clickY));
+  left: calc(0px + var(--clickX));
+  transform: scale(5);
+  background: radial-gradient(circle at center, var(--ripple-color) 24%, transparent 25%, transparent 100%);
+}
+
+.item-1tOPte:not(:active)::after {
+  transition: 0s;
+  opacity: 0.3;
+  transform: scale(0);
+}
+
 .customStatusText-2opeSw {
   overflow-wrap: break-word;
+}
+
+.guildAvatarWithoutIcon-1s9Pcy {
+  background-color: var(--accent);
+  color: var(--accent-text);
 }
 
 .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91,
@@ -810,6 +844,12 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background-color: var(--accent-transparent);
 }
 
+.theme-dark .lookBlank-3eh9lL.colorBrand-3pXr91, .theme-dark .lookBlank-3eh9lL.colorBrand-3pXr91:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.colorBrand-3pXr91,
+.theme-light .lookBlank-3eh9lL.colorBrand-3pXr91:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
+}
+
 .theme-dark .lookFilled-1Gx00P.colorGreen-29iAKY,
 .theme-light .lookFilled-1Gx00P.colorGreen-29iAKY {
   color: var(--green-text);
@@ -852,6 +892,12 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .theme-dark .lookOutlined-3sRXeN.colorGreen-29iAKY:active,
 .theme-light .lookOutlined-3sRXeN.colorGreen-29iAKY:active {
   background-color: var(--green-transparent);
+}
+
+.theme-dark .lookBlank-3eh9lL.colorGreen-29iAKY, .theme-dark .lookBlank-3eh9lL.colorGreen-29iAKY:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.colorGreen-29iAKY,
+.theme-light .lookBlank-3eh9lL.colorGreen-29iAKY:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
 }
 
 .theme-dark .lookFilled-1Gx00P.colorRed-1TFJan,
@@ -898,6 +944,12 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background-color: var(--red-transparent);
 }
 
+.theme-dark .lookBlank-3eh9lL.colorRed-1TFJan, .theme-dark .lookBlank-3eh9lL.colorRed-1TFJan:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.colorRed-1TFJan,
+.theme-light .lookBlank-3eh9lL.colorRed-1TFJan:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
+}
+
 .theme-dark .lookFilled-1Gx00P.colorYellow-2JqYwt,
 .theme-light .lookFilled-1Gx00P.colorYellow-2JqYwt {
   color: var(--yellow-text);
@@ -940,6 +992,12 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .theme-dark .lookOutlined-3sRXeN.colorYellow-2JqYwt:active,
 .theme-light .lookOutlined-3sRXeN.colorYellow-2JqYwt:active {
   background-color: var(--yellow-transparent);
+}
+
+.theme-dark .lookBlank-3eh9lL.colorYellow-2JqYwt, .theme-dark .lookBlank-3eh9lL.colorYellow-2JqYwt:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.colorYellow-2JqYwt,
+.theme-light .lookBlank-3eh9lL.colorYellow-2JqYwt:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
 }
 
 .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV,
@@ -986,6 +1044,12 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background-color: var(--gray-transparent);
 }
 
+.theme-dark .lookBlank-3eh9lL.colorGrey-2DXtkV, .theme-dark .lookBlank-3eh9lL.colorGrey-2DXtkV:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.colorGrey-2DXtkV,
+.theme-light .lookBlank-3eh9lL.colorGrey-2DXtkV:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
+}
+
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6,
 .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
   color: var(--gray-text);
@@ -1028,6 +1092,12 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6:active,
 .theme-light .lookOutlined-3sRXeN.colorPrimary-3b3xI6:active {
   background-color: var(--gray-transparent);
+}
+
+.theme-dark .lookBlank-3eh9lL.colorPrimary-3b3xI6, .theme-dark .lookBlank-3eh9lL.colorPrimary-3b3xI6:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.colorPrimary-3b3xI6,
+.theme-light .lookBlank-3eh9lL.colorPrimary-3b3xI6:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
 }
 
 .theme-dark .lookFilled-1Gx00P.colorLink-35jkBc,
@@ -1074,6 +1144,12 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background-color: var(--accent-transparent);
 }
 
+.theme-dark .lookBlank-3eh9lL.colorLink-35jkBc, .theme-dark .lookBlank-3eh9lL.colorLink-35jkBc:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.colorLink-35jkBc,
+.theme-light .lookBlank-3eh9lL.colorLink-35jkBc:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
+}
+
 .theme-dark .lookFilled-1Gx00P.leaveButton-2ml9zB,
 .theme-light .lookFilled-1Gx00P.leaveButton-2ml9zB {
   color: var(--red-text);
@@ -1118,12 +1194,41 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background-color: var(--red-transparent);
 }
 
+.theme-dark .lookBlank-3eh9lL.leaveButton-2ml9zB, .theme-dark .lookBlank-3eh9lL.leaveButton-2ml9zB:active:not(.hideInteraction-1iHO1O),
+.theme-light .lookBlank-3eh9lL.leaveButton-2ml9zB,
+.theme-light .lookBlank-3eh9lL.leaveButton-2ml9zB:active:not(.hideInteraction-1iHO1O) {
+  background: transparent;
+}
+
 .colorBrand-ROmMP1 {
   color: var(--accent);
 }
 
-.colorDefault-2K3EoJ .checkbox-3s5GYZ,
-.colorDefault-2K3EoJ .radioSelection-1HmrQS {
+.button-38aScr {
+  overflow: hidden;
+}
+
+.button-38aScr::after {
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(0px + var(--clickY));
+  left: calc(0px + var(--clickX));
+  transform: scale(5);
+  background: radial-gradient(circle at center, var(--ripple-color) 24%, transparent 25%, transparent 100%);
+}
+
+.button-38aScr:not(:active)::after {
+  transition: 0s;
+  opacity: 0.3;
+  transform: scale(0);
+}
+
+.colorDefault-2K3EoJ .checkbox-3s5GYZ, .colorDefault-2K3EoJ .radioSelection-1HmrQS {
   color: var(--accent);
 }
 
@@ -1131,9 +1236,7 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   color: var(--accent-text);
 }
 
-.colorDefault-2K3EoJ.focused-3afm-j .checkbox-3s5GYZ,
-.colorDefault-2K3EoJ.focused-3afm-j .radioSelection-1HmrQS,
-.colorDefault-2K3EoJ.focused-3afm-j .subtext-13Lvrj {
+.colorDefault-2K3EoJ.focused-3afm-j .checkbox-3s5GYZ, .colorDefault-2K3EoJ.focused-3afm-j .radioSelection-1HmrQS, .colorDefault-2K3EoJ.focused-3afm-j .subtext-13Lvrj {
   color: var(--accent-text);
 }
 
@@ -1159,6 +1262,27 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   color: var(--red-text);
 }
 
+/*
+
+// Default focused
+.colorDefault-2K3EoJ.focused-3afm-j,
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}
+// Red 
+.colorDanger-2qLCe1,
+.colorDanger-2qLCe1 .checkbox-3s5GYZ,
+.colorDanger-2qLCe1 .radioSelection-1HmrQS {
+	color: var(--red);
+}
+// Red hover
+.colorDanger-2qLCe1.focused-3afm-j,
+.colorDanger-2qLCe1:active:not(.hideInteraction-1iHO1O) {
+	background-color: var(--red);
+	color: var(--red-text);
+}
+*/
 .searchdiv,
 .container-2XeR5Z,
 .inner-2P4tQO,
@@ -1411,6 +1535,64 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background-color: transparent;
 }
 
+.container-2Pjhx- {
+  overflow: hidden;
+}
+
+.container-2Pjhx-::after {
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(0px + var(--clickY));
+  left: calc(0px + var(--clickX));
+  transform: scale(5);
+  background: radial-gradient(circle at center, var(--ripple-color) 24%, transparent 25%, transparent 100%);
+}
+
+.container-2Pjhx-:not(:active)::after {
+  transition: 0s;
+  opacity: 0.3;
+  transform: scale(0);
+}
+
+.content-1x5b-n {
+  overflow: hidden;
+}
+
+.content-1x5b-n::after {
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(0px + var(--clickY));
+  left: calc(0px + var(--clickX));
+  transform: scale(5);
+  background: radial-gradient(circle at center, var(--ripple-color) 24%, transparent 25%, transparent 100%);
+}
+
+.content-1x5b-n:not(:active)::after {
+  transition: 0s;
+  opacity: 0.3;
+  transform: scale(0);
+}
+
+.border-3dQmSY.speaking-WDn8Wm {
+  box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 3px #000;
+}
+
+.avatarSpeaking-2IGMRN,
+.avatarSpeaking-2c8-9i {
+  -webkit-box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 3px var(--background-secondary);
+  box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 3px var(--background-secondary);
+}
+
 .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e::after {
   content: "Pixelcord 4.0.0 DEV";
   display: block;
@@ -1451,6 +1633,30 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .premiumTabItem-1QTfBr[aria-selected=true] {
   background-color: var(--accent-transparent) !important;
   color: var(--accent) !important;
+}
+
+.side-8zPYf6 .item-PXvHYJ {
+  overflow: hidden;
+}
+
+.side-8zPYf6 .item-PXvHYJ::after {
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(0px + var(--clickY));
+  left: calc(0px + var(--clickX));
+  transform: scale(5);
+  background: radial-gradient(circle at center, var(--ripple-color) 24%, transparent 25%, transparent 100%);
+}
+
+.side-8zPYf6 .item-PXvHYJ:not(:active)::after {
+  transition: 0s;
+  opacity: 0.3;
+  transform: scale(0);
 }
 
 .side-8zPYf6 .item-PXvHYJ[style^="color: hsl(359,"] {
@@ -1512,8 +1718,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .content-2c3hgM > .subscriptionsRedirectContainer-21LuI0:first-of-type::before {
   content: "Nitro";
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1524,8 +1730,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .content-3BhRLj > .marketingLogo-1D8DV6:first-of-type::before {
   content: "Server Boost";
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1536,8 +1742,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .paymentHistory-2FXzro > .title-3sZWYQ:first-of-type::before {
   content: var(--i18n-payment, "Billing");
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1548,8 +1754,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .banner-2zWlOa + .size24-RIRrxO:first-of-type::before {
   content: "Community";
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1560,8 +1766,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .banner-2AwsUs + .size24-RIRrxO:first-of-type::before {
   content: var(--i18n-partnership, "Partnership");
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1572,8 +1778,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .discoverPreview-3q1szX:first-of-type::before {
   content: var(--i18n-discovery, "Discovery");
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1584,8 +1790,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .banner-2G2Kv6 + .size24-RIRrxO:first-of-type::before {
   content: "Thread";
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1596,8 +1802,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .sidebar-dLM-kh:first-of-type::before {
   content: var(--i18n-roles, "Roles");
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1608,8 +1814,8 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 .layer-3QrUeG[aria-label$=SETTINGS] .intro-325xRx:first-of-type::before {
   content: var(--i18n-hypesquad, "HypeSquad");
   position: fixed;
-  top: 24px;
-  left: 0;
+  top: calc(0.5 * (var(--settings-header-height) - 12px));
+  left: 75px;
   z-index: 5;
   color: var(--accent-text);
   font-size: 20px;
@@ -1636,6 +1842,23 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   height: var(--settings-header-height);
   left: 0;
   top: 0;
+}
+
+:root {
+  --settings-lock-mask: url(/assets/55b367aaef0b83c837ac6c3bfe01da4c.svg);
+}
+
+.userSettingsSecurity-3IYeMF .lockIcon-2Hj8Tq {
+  width: 10px;
+  height: 14px;
+  padding-left: 10px;
+  -webkit-mask-image: var(--settings-lock-mask);
+  background-color: var(--green);
+}
+
+.avatarUploaderInner-3UNxY3 {
+  background-color: var(--accent);
+  color: var(--accent-text);
 }
 
 .powercord-pc-icon::before {
@@ -2724,231 +2947,4 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath fill-rule='evenodd' d='M21 3H3V21H21V3ZM17.4 6.6H6.6V8.4H17.4V6.6ZM6.6 10.2H17.4V12H6.6V10.2ZM13.8 13.8H6.6V15.6H13.8V13.8Z'/%3E%3C/svg%3E");
 }
 
-.svg-1X37T1 > defs > path:not([d="M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z"]) {
-  d: path("M0 24C0 5.04 5.04 0 24 0s24 5.04 24 24s-5.04 24-24 24S0 42.96 0 24");
-}
-
-.svg-1X37T1 > defs > path[d="M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z"] {
-  d: path("M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24");
-}
-
-.svg-1X37T1 > foreignObject:first-child {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='48' width='48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 5.04 5.04 0 24 0s24 5.04 24 24s-5.04 24-24 24S0 42.96 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-}
-
-.guildIcon-2Tpnad.iconSizeSmol-2Dw61G,
-.replyAvatar-1K9Wmr {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-}
-
-.listAvatar-1BbvHX,
-.avatar-1BDn8e {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='40' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-}
-
-.guildIcon-1zxZMV,
-.voiceSectionGuildImage-3HwnfL {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-}
-
-.avatarUploader-2UF9NL {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='92' width='92' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-}
-
-#app-mount .peopleColumn-29fq28 .avatar-3W3CeO::before {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='67' width='67' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-}
-
-.avatar-3bWpYy,
-.listDefault-3ir5aS .avatarContainer-28iYmV {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-  box-shadow: none;
-}
-.avatar-3bWpYy.avatarSpeaking-2IGMRN,
-.listDefault-3ir5aS .avatarContainer-28iYmV.avatarSpeaking-2IGMRN {
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='22' width='22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-  position: relative;
-  z-index: 2;
-}
-.avatar-3bWpYy.avatarSpeaking-2IGMRN::before,
-.listDefault-3ir5aS .avatarContainer-28iYmV.avatarSpeaking-2IGMRN::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: block;
-  z-index: 1;
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-size: contain;
-  -webkit-mask-position: center;
-  -webkit-mask-repeat: no-repeat;
-  border-radius: 0;
-}
-
-.avatar-AvHqJA.wrapper-3t9DeA,
-.avatar-37jOim.wrapper-3t9DeA,
-.avatar-1uQSZT.wrapper-3t9DeA {
-  border-radius: 0;
-  -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3Cpath d='M0 24v24h48V24z'/%3E%3C/svg%3E");
-}
-
-.wrapperSimple-19ogV2,
-.wrapper-3t9DeA {
-  border-radius: 0;
-}
-
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-default)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  mask: none;
-}
-
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-round-16)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-round-16)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='black' cx='0.8125' cy='0.8125' r='0.3125'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-mobile-16)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-mobile-16)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.5' y='0.3125' width='0.625' height='0.8125' rx='0.1625' ry='0.1625'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-typing-16)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-typing-16)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.21875' y='0.5' width='1.1875' height='0.625' rx='0.3125' ry='0.3125'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='16' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-round-24)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-round-24)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='black' cx='0.8333333333333334' cy='0.8333333333333334' r='0.2916666666666667'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-mobile-24)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-mobile-24)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.5416666666666666' y='0.375' width='0.5833333333333334' height='0.75' rx='0.15' ry='0.15'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-typing-24)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-typing-24)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.2916666666666667' y='0.5416666666666666' width='1.0833333333333333' height='0.5833333333333334' rx='0.2916666666666667' ry='0.2916666666666667'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-round-32)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-round-32)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='black' cx='0.84375' cy='0.84375' r='0.25'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.59375' y='0.4375' width='0.5' height='0.65625' rx='0.13125' ry='0.13125'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-typing-32)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-typing-32)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.359375' y='0.59375' width='0.96875' height='0.5' rx='0.25' ry='0.25'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='32' width='32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-round-40)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-round-40)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='40' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='black' cx='0.85' cy='0.85' r='0.25'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='40' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-mobile-40)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-mobile-40)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='40' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.6' y='0.45' width='0.5' height='0.65' rx='0.13' ry='0.13'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='40' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-typing-40)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-typing-40)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='40' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.375' y='0.6' width='0.95' height='0.5' rx='0.25' ry='0.25'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='40' width='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-round-80)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-round-80)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='80' width='80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='black' cx='0.85' cy='0.85' r='0.175'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='80' width='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='80' width='80' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.675' y='0.575' width='0.35' height='0.45' rx='0.09' ry='0.09'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='80' width='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-typing-80)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-typing-80)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='80' width='80' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.525' y='0.675' width='0.65' height='0.35' rx='0.175' ry='0.175'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='80' width='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-round-120)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-round-120)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='120' width='120' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='black' cx='0.8333333333333334' cy='0.8333333333333334' r='0.16666666666666666'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='120' width='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-mobile-120)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-mobile-120)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='120' width='120' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.6666666666666666' y='0.5666666666666667' width='0.3333333333333333' height='0.43333333333333335' rx='0.08666666666666667' ry='0.08666666666666667'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='120' width='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-.avatarHint-2A3RNb > foreignObject[mask="url(#svg-mask-avatar-status-typing-120)"],
-.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-status-typing-120)"] {
-  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 1 1' height='120' width='120' xmlns='http://www.w3.org/2000/svg'%3E%3Crect fill='black' x='0.5166666666666667' y='0.6666666666666666' width='0.6333333333333333' height='0.3333333333333333' rx='0.16666666666666666' ry='0.16666666666666666'/%3E%3C/svg%3E"), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 48 48' height='120' width='120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M0 24C0 3.12 3.12 0 24 0s24 3.12 24 24s-3.12 24-24 24S0 44.88 0 24'/%3E%3C/svg%3E");
-  -webkit-mask-composite: destination-out;
-  mask: none;
-}
-
-.size24-1HlGux .avatarContainerMasked-PIJ-3L {
-  margin-right: 4px;
-}
-
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/config/_context_icons_config.scss%22,%22src/i18n/_index.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/_utils.scss%22,%22src/base/_chat.scss%22,%22src/material_design/_ripple.scss%22,%22src/base/_channels.scss%22,%22src/base/_context_menu.scss%22,%22src/base/modals/_user_profile.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/home/_friends.scss%22,%22src/settings/_settings_base.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22src/client_mods/powercord/_better_settings.scss%22,%22modules/appearance/space_dash.scss%22,%22modules/appearance/icons/settings_icons.scss%22,%22modules/appearance/icons/context_icons.scss%22,%22modules/appearance/icons/shapes_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAGQ;ACDR;EAAM;;;AACN;EAGC;EACA;EAGA;EACA;EACA;EACA;EAGA;EACG;EACH;EACA;EAGA;EAGA;EACA;EAGA;EACA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;ACxGD;EAEE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AAIF;AAAA;EAGE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;ACrCF;EACE;EACA;;;ACFF;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AJzKJ;EAEC;EACA;EACA;;;AAGD;EACI;EACA;EACA;;;AAMJ;EACC;;;AAED;AAAA;EAEC;;;AAGD;EACC;;;AAID;EACC;;;AK7BA;EACC;;;AAED;EAEE;EAID;EAGA;EACA;EACA;EAGA;EACA;EACA;EACA;;;ACpBF;EACC;EACA;;;AAID;AAAA;AAAA;EAGC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAeC;;;AAKA;AAAA;EACC;;;AACA;AAAA;EACC;EACA,QAMyB;;;AAV3B;AAAA;AAAA;EACC;;;AACA;AAAA;AAAA;EACC;EACA,QAWyB;;;AAI5B;EACC;;;AAID;EACC;;;AAED;EACC;;;AAID;EACC;;;AAID;EACC;;;ACtED;EACC;EACA;EACA;EACA;;;AAMA;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAOA;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAOF;EACC;;;AAED;EACC;;;AAQF;EACC;;;AAID;EACC;;;AAGD;EACC;;;AAID;EACC;;;AACA;EACC;;;AAKF;EACC;;;AAID;EACC;;;AAID;EACC;;;ACrGD;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EACC;;;ACVU;AAAA;ECGT;EACA;;;AACA;AAAA;EACC;;;AAMH;EACC;EDNA;EACA;ECWA;EACA;;;AANA;EACC;;;AASF;EDjBC;EACA;;;ACmBD;EACC;EACA;EACA;;;AAED;EACC;;;AAID;EACC;EACA;;;AAED;EACC;;;AAED;EACC;EACA;;;AAED;EACC;EACA;;;AAGA;EACC;;;ACID;EACC;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA,OAxBQ;EAyBR,QAxBS;EA2BR,KAzBK;EA0BL,MAzBM;;;AAsCR;EACC;EACA;EACA;;;AD/BF;EACC;;;AAMD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;;;AE9GD;AAAA;EAEC;EACG;EACH;EACA;;;AAED;EACC;EACA;;;AAaD;AAAA;EATC,kBAWsC;;;AATtC;AAAA;AAAA;AAAA;EAIC,OAKsB;;;AAExB;EACC;;;AAED;EACC;;;AAED;AAAA;EAEC;;;AClCD;EACC;;;AAED;EACC;;;AAED;EACC;;;ACPD;EACE;;;ACOA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AA7BF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AA7BF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AA7BF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;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;EACA;EACA;EACA;;;AAVD;EACC,SA2BoB;EAzBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAgCoB;EA9BpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAqCoB;EAnCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA0CoB;EAxCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA+CoB;EA7CpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAoDoB;EAlDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAyDoB;EAvDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAqDF;EACC;;;AAID;AAAA;EAEC;;;AAGA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC9KF;EACC;EACA;;;AAMA;EACC;;;AAGD;EACC;;;AAGD;EACC;;;ACjBF;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACvBA;EACC;EACA;EACA;EACA;;;AAEA;EACC;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;;;AChBH;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC;;;AC3CA;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AA+IF;AAAA;AAAA;AAhJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AC4DH;EACC;;;AAMA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;AA/ED;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAyHD;EACC;;AA7ID;EACC;;;AAwJF;EACC;;;AAED;EACC;;;AAtJD;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;;AAuBD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAGD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AALD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAfD;EACC;;AACA;EACC;;AAED;EACC;;;AAQF;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACnDF;EACC;;;AACA;EACA;;;AAED;EAaA;EAEA;EAEA;EACA;EACA;;;AAoFA;AAAA;EA1FA;EAEA;EAEA;EACA;EACA;;;AAyFA;AAAA;EA/FA;EAEA;EAEA;EACA;EACA;;;AA8FA;AAAA;EApGA;EAEA;EAEA;EACA;EACA;;;AAoGA;EA1GA;EAEA;EAEA;EACA;EACA;;;AAyGA;EA/GA;EAEA;EAEA;EACA;EACA;;;AA6GA;AAAA;EAnHA;EAEA;EAEA;EACA;EACA;EAgHC;;AACA;AAAA;EAvHD;EAEA;EAEA;EACA;EACA;EAmHE;EACA;;AACA;AAAA;EACC;EACA;EACA;EAEA;EACA;EAjIH;EAEA;EAEA;EACA;EACA;;;AAqIC;AAAA;AAAA;EACC;EAEA;;;AAIF;AAAA;EAEC;;;AAGD;EACC;EACA;;;AAvGA;AAAA;EAbA;EAID;EACA;;AAiBC;AAAA;EAtBA;EAID;EACA;;AA0BC;AAAA;EA/BA;EAID;EACA;;;AAQC;AAAA;EAbA;EAID;EACA;;AAiBC;AAAA;EAtBA;EAID;EACA;;AA0BC;AAAA;EA/BA;EAID;EACA;;;AAQC;AAAA;EAbA;EAID;EACA;;AAiBC;AAAA;EAtBA;EAID;EACA;;AA0BC;AAAA;EA/BA;EAID;EACA;;;AAQC;AAAA;EAbA;EAID;EACA;;AAiBC;AAAA;EAtBA;EAID;EACA;;AA0BC;AAAA;EA/BA;EAID;EACA;;;AAQC;AAAA;EAbA;EAID;EACA;;AAiBC;AAAA;EAtBA;EAID;EACA;;AA0BC;AAAA;EA/BA;EAID;EACA;;;AAQC;AAAA;EAbA;EAID;EACA;;AAiBC;AAAA;EAtBA;EAID;EACA;;AA0BC;AAAA;EA/BA;EAID;EACA;;;AA0HA;EACC%22,%22file%22:%22dist.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/config/_context_icons_config.scss%22,%22src/i18n/_index.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/_utils.scss%22,%22src/base/_chat.scss%22,%22src/material_design/_ripple.scss%22,%22src/base/_channels.scss%22,%22src/base/_context_menu.scss%22,%22src/base/modals/_user_profile.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/home/_friends.scss%22,%22src/home/_sidebar.scss%22,%22src/guild/_sidebar.scss%22,%22src/voice_chat/_people.scss%22,%22src/settings/_settings_base.scss%22,%22src/settings/_settings_other.scss%22,%22src/settings/pages/_edit_profile.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22src/client_mods/powercord/_better_settings.scss%22,%22modules/appearance/space_dash.scss%22,%22modules/appearance/icons/settings_icons.scss%22,%22modules/appearance/icons/context_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAGQ;ACDR;EAAM;;;AACN;EAGC;EACA;EAGA;EACA;EACA;EACA;EAGA;EACG;EACH;EACA;EAGA;EAGA;EACA;EAGA;EACA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;ACxGD;EAEE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AAIF;AAAA;EAGE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;ACrCF;EACE;EACA;;;ACFF;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AJzKJ;EAEC;EACA;EACA;;;AAGD;EACI;EACA;EACA;;;AAMJ;EACC;;;AAED;AAAA;EAEC;;;AAGD;EACC;;;AAID;EACC;;;AK7BA;EACC;;;AAED;EAEE;EAID;EAGA;EACA;EACA;EAGA;EACA;EACA;EACA;;;ACpBF;EACC;EACA;;;AAID;AAAA;AAAA;EAGC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAeC;;;AAKA;AAAA;EACC;;;AACA;AAAA;EACC;EACA,QAMyB;;;AAV3B;AAAA;AAAA;EACC;;;AACA;AAAA;AAAA;EACC;EACA,QAWyB;;;AAI5B;EACC;;;AAID;EACC;;;AAED;EACC;;;AAID;EACC;;;AAID;EACC;;;ACtED;EACC;EACA;EACA;EACA;;;AAMA;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAOA;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAOF;EACC;;;AAED;EACC;;;AAQF;EACC;;;AAID;EACC;;;AAGD;EACC;;;AAID;EACC;;;AACA;EACC;;;AAKF;EACC;;;AAID;EACC;;;AAID;EACC;;;AAID;EACC;EACA;;;AC3GD;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EACC;;;ACVU;AAAA;ECGT;EACA;;;AACA;AAAA;EACC;;;AAMH;EACC;EDNA;EACA;ECWA;EACA;;;AANA;EACC;;;AASF;EDjBC;EACA;;;ACmBD;EACC;EACA;EACA;;;AAED;EACC;;;AAID;EACC;EACA;;;AAED;EACC;;;AAED;EACC;EACA;;;AAED;EACC;EACA;;;AAGA;EACC;;;ACID;EACC;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA,OAxBQ;EAyBR,QAxBS;EA2BR,KAzBK;EA0BL,MAzBM;;;AAsCR;EACC;EACA;EACA;;;AD/BF;EACC;;;AAMD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;;;AE9GD;AAAA;EAEC;EACG;EACH;EACA;;;AAED;EACC;EACA;;;AAaD;AAAA;EATC,kBAWsC;;;AATtC;AAAA;AAAA;AAAA;EAIC,OAKsB;;;AAExB;EACC;;;AAED;EACC;;;AAED;AAAA;EAEC;;;AC/BD;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EFCC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AG/CF;EACE;;;AAGF;EACE;EACA;;;ACIA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AAkBJ;EACC;;;AAGD;EJvDC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AI2BD;EAEC;;;AAED;EACC;;;AAGD;EAGC;;;AAED;EACC;;;AAOF;AAAA;EAEC;EACA;;;AAGD;AAAA;AAAA;EAGC;;;AAGD;AAAA;EAEC;EACA;;;AAGD;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AC/GA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAoBC;EACA;;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;;;AAED;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAIC;EACA;EACA;EACA;;;AAKF;EAGC;;;AAGD;EACC;;;AAGD;EACC;;;AAGD;EACC;;;AAED;EACC;;;AAGD;EACC;;;AAGD;AAAA;EAEC;;;AAED;EACC;;;AAED;EACC;;;AAKA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;;AACA;EACC;;;AAIF;EACC;;;AAMD;AAAA;EAEC;;;AAEQ;EACR;;;AAKF;AAAA;AAAA;EAGC;EACA;EACA;;;AAKD;EACC;;;ACzID;EACC;;;ARCU;AAAA;ESKT;;;AAGF;EACC;;;ATTU;AAAA;ESWT;;;ACZF;ERWC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AS7CF;ETWC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AU9CF;EACC;;;AAGD;AAAA;EAEC;EACA;;;ACJD;EAGE;EAMD;EACA;EACA;EAGA;EAGA;EACA;EAGA;EACA;EACA;;;AAOA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAEE;AAAA;AAAA;AAAA;EACI;;;AAIR;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EX1CC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AWYF;EACC;;;AAGD;EACC;EACA;;;AAKD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAWC;EACA;EACA;EACA;;;AAEA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAEC;EACA;EACA;EACA;EACA;;;AAOD;EACC,SAiBoB;EAfpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAsBoB;EApBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA2BoB;EAzBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAgCoB;EA9BpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAqCoB;EAnCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA0CoB;EAxCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA+CoB;EA7CpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAoDoB;EAlDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAyDoB;EAvDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAqDF;EACC;;;AAID;AAAA;EAEC;;;AAGA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC7KF;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;;;ACfD;EACC;EACA;;;ACGD;EACC;EACA;;;AAMA;EACC;;;AAGD;EACC;;;AAGD;EACC;;;ACjBF;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACvBA;EACC;EACA;EACA;EACA;;;AAEA;EACC;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;;;AChBH;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC;;;AC3CA;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AA+IF;AAAA;AAAA;AAhJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AC4DH;EACC;;;AAMA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;AA/ED;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAyHD;EACC;;AA7ID;EACC;;;AAwJF;EACC;;;AAED;EACC;;;AAtJD;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;;AAuBD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAGD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AALD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAfD;EACC;;AACA;EACC;;AAED;EACC;;;AAQF;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC%22,%22file%22:%22dist.css%22%7D */

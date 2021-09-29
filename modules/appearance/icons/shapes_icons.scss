@@ -22,7 +22,6 @@
 
 @mixin maskImage($shape, $size) {
 	-webkit-mask-image: #{svg-url(#{wrapperSVG($shape, $size)})};
-	// -webkit-mask-size: #{$size}px;
 	-webkit-mask-size: contain;
 
 	-webkit-mask-position: center;
@@ -72,29 +71,17 @@ $status_typing: (
 		$encodedSvg: #{svg-url(#{wrapperSVG(#{$shape}, $size, '#fff')})};
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-round-#{$size})"] {
-			// $statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><circle fill='black' cx='0.85' cy='0.85' r='0.175'/></svg>")};
 			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_round, $size)}</svg>")};
-			
-			// -webkit-mask: $encodedSvg, $statusMask;
-			// -webkit-mask-composite: string.unquote($composite);
 			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
 		}
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-mobile-#{$size})"] {
-			// $statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><rect fill='black' x='0.675' y='0.575' width='0.35' height='0.45' rx='0.09' ry='0.09'/></svg>")};
 			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_mobile, $size)}</svg>")};
-			
-			// -webkit-mask: $encodedSvg, $statusMask;
-			// -webkit-mask-composite: string.unquote($composite);
 			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
 		}
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-typing-#{$size})"] {
-			// $statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'><rect fill='black' x='0.359375' y='0.59375' width='0.96875' height='0.5' rx='0.25' ry='0.25'/></svg>")};
 			$statusMask: #{svg-url("<svg viewBox='0 0 1 1' height='#{$size}' width='#{$size}' xmlns='http://www.w3.org/2000/svg'>#{map-get($status_typing, $size)}</svg>")};
-
-			// -webkit-mask: $encodedSvg, $statusMask;
-			// -webkit-mask-composite: string.unquote($composite);
 			@include avatarMaskMain($encodedSvg, $statusMask, $composite, $swap);
 		}
 	}
@@ -111,12 +98,17 @@ $status_typing: (
 
 	@include replaceGuildShape($shape, $hoverShape);
 
+	.avatar-3Bhz0p,
 	.guildIcon-2Tpnad.iconSizeSmol-2Dw61G,
 	.replyAvatar-1K9Wmr {
 		@include maskImage($hoverShape, 16);
 	}
+	.embedAuthorIcon--1zR3L {
+		@include maskImage($hoverShape, 24);
+	}
 
-	.listAvatar-1BbvHX,
+	// Mutuals => Guilds
+	.iconSizeMedium-2OqPjI.listAvatar-1BbvHX,
 	.avatar-1BDn8e {
 		@include maskImage($hoverShape, 40);
 	}
@@ -131,30 +123,77 @@ $status_typing: (
 		@include maskImage($hoverShape, 92);
 	}
 
-	// Cre-Arts' Friends Grid breaks with this
+	// Cre-Arts' Friends Grid breaks without this
 	#app-mount .peopleColumn-29fq28 .avatar-3W3CeO::before {
 		@include maskImage($hoverShape, 67);
 	}
 
+	// VCs
 	.avatar-3bWpYy,
 	.listDefault-3ir5aS .avatarContainer-28iYmV {
 		@include maskImage($hoverShape, 24);
 		box-shadow: none;
+		
+		// Speaking is broken
 		&.avatarSpeaking-2IGMRN {
 			@include maskImage($hoverShape, 22);
+			-webkit-mask-size: 22px;
+			
 			position: relative;
 			z-index: 2;
-			&::before {
-				content: "";
-				width: 24px;
-				height: 24px;
-				// background: red;
-				display: block;
-				z-index: 1;
-				@include maskImage($hoverShape, 24);
-			}
 		}
 	}
+	.usernameSpeaking-RmltQx::before {
+		content: "";
+
+		// 1px bigger
+		margin: -1px 0 0 -1px;
+		width: 26px;
+		height: 26px;
+		
+		background: var(--accent);
+		display: block;
+		z-index: 1;
+		position: absolute;
+		@include maskImage($hoverShape, 24);
+		top: 3px;
+		left: 8px;
+	}
+	.container-3baos1 .avatarStack-2Dr8S9,
+	.voiceUser-1K6Xox {
+		& .avatar-VxgULZ {
+			z-index: 2;
+		}
+	}
+	// really hacky way to check if user in current logged in panel is speaking or not
+	.container-3baos1 .avatarStack-2Dr8S9 {
+		// if we arent the first and last child (aka only child) we are therefore speaking
+		.avatar-VxgULZ:first-child:not(:last-child) {
+			@include maskImage($hoverShape, 28);
+			-webkit-mask-size: 28px;
+			-webkit-mask-position: center;
+			width: 28px;
+			height: 28px;
+			margin: 2px;
+		}
+	}
+	.avatarSpeaking-2c8-9i {
+		@include maskImage($hoverShape, 24);
+		background: var(--accent);
+		box-shadow: none;
+
+		// 1px bigger
+		margin: -1px 0 0 -1px;
+		width: 34px;
+		height: 34px;
+
+		position: absolute;
+		z-index: 1;
+	}
+	.content-1Wq3SX {
+		position: relative;
+	}
+	// VC collapsed speaking :kms:
 
 	// Remove from wrappers
 	.avatar-AvHqJA,
@@ -185,6 +224,7 @@ $status_typing: (
 	@include avatarStatusMask($hoverShape, 120, $composite, $swap);
 	
 	// Padding in collapsed VCs
+	.size16-NOVQSt .avatarContainerMasked-PIJ-3L,
 	.size24-1HlGux .avatarContainerMasked-PIJ-3L {
 		margin-right: 4px;
 	}

@@ -1,4 +1,5 @@
 @import '../buildvars';
+@import '../material_design/ripple';
 
 // Inject into settings menu
 .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e::after {
@@ -53,7 +54,7 @@
 
 // Add ripple to the sidebar
 .side-8zPYf6 .item-PXvHYJ {
-
+	@include ripple;
 }
 // red items should use the theme var
 .side-8zPYf6 .item-PXvHYJ[style^="color: hsl(359,"] {
@@ -100,8 +101,8 @@
 		content: $text;
 
 		position: fixed;
-		top: 24px;
-		left: 0;
+		top: calc(0.5 * (var(--settings-header-height) - 12px));
+		left: 75px;
 		z-index: 5;
 		color: var(--accent-text);
 		font-size: 20px;

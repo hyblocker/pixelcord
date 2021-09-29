@@ -102,3 +102,9 @@ $purple-color: "hsl(262, ";
 .button-1ZiXG9.dangerous-2r8KxV {
 	color: var(--red);
 }
+
+// Text selection should follow accent color bc :sunglasses:
+::selection {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}

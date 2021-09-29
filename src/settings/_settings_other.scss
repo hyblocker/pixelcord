@@ -5,3 +5,13 @@
 @import "../config/build_config";
 
 // Other things for settings which are more misc things / other
+:root {
+	--settings-lock-mask: url(/assets/55b367aaef0b83c837ac6c3bfe01da4c.svg);
+}
+.userSettingsSecurity-3IYeMF .lockIcon-2Hj8Tq {
+	width: 10px;
+	height: 14px;
+	padding-left: 10px;
+	-webkit-mask-image: var(--settings-lock-mask);
+	background-color: var(--green);
+}

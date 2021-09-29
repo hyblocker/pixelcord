@@ -1,3 +1,5 @@
+@import "../material_design/ripple";
+
 // For this theme, brand = accent
 
 @mixin buttons($class, $color) {
@@ -38,6 +40,13 @@
 				background-color: var(--#{$color}-transparent);
 			}
 		}
+		// Lookblank
+		.lookBlank-3eh9lL#{$class} {
+			&,
+			&:active:not(.hideInteraction-1iHO1O) {
+				background: transparent;
+			}
+		}
 	}
 }
 
@@ -57,23 +66,31 @@
 	color: var(--accent);
 }
 
-// Checkbox
-.colorDefault-2K3EoJ .checkbox-3s5GYZ,
-.colorDefault-2K3EoJ .radioSelection-1HmrQS {
-	color: var(--accent);
+.button-38aScr {
+	@include ripple;
 }
-.colorDefault-2K3EoJ .check-1JyqgN {
-	color: var(--accent-text);
+
+.colorDefault-2K3EoJ {
+	// Checkbox
+	& .checkbox-3s5GYZ,
+	& .radioSelection-1HmrQS {
+		color: var(--accent);
+	}
+	& .check-1JyqgN {
+		color: var(--accent-text);
+	}
+	// Checkebox hover
+	&.focused-3afm-j .checkbox-3s5GYZ,
+	&.focused-3afm-j .radioSelection-1HmrQS,
+	&.focused-3afm-j .subtext-13Lvrj {
+		color: var(--accent-text);
+	}
+	&.focused-3afm-j .check-1JyqgN {
+		color: var(--accent);
+	}
 }
-// Checkebox hover
-.colorDefault-2K3EoJ.focused-3afm-j .checkbox-3s5GYZ,
-.colorDefault-2K3EoJ.focused-3afm-j .radioSelection-1HmrQS,
-.colorDefault-2K3EoJ.focused-3afm-j .subtext-13Lvrj {
-	color: var(--accent-text);
-}
-.colorDefault-2K3EoJ.focused-3afm-j .check-1JyqgN {
-	color: var(--accent);
-}
+
+// context menu buttons
 
 // Default focused
 .colorDefault-2K3EoJ.focused-3afm-j,
@@ -93,3 +110,25 @@
 	background-color: var(--red);
 	color: var(--red-text);
 }
+
+/*
+
+// Default focused
+.colorDefault-2K3EoJ.focused-3afm-j,
+.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}
+// Red 
+.colorDanger-2qLCe1,
+.colorDanger-2qLCe1 .checkbox-3s5GYZ,
+.colorDanger-2qLCe1 .radioSelection-1HmrQS {
+	color: var(--red);
+}
+// Red hover
+.colorDanger-2qLCe1.focused-3afm-j,
+.colorDanger-2qLCe1:active:not(.hideInteraction-1iHO1O) {
+	background-color: var(--red);
+	color: var(--red-text);
+}
+*/
