@@ -108,3 +108,8 @@ $purple-color: "hsl(262, ";
 	background-color: var(--accent);
 	color: var(--accent-text);
 }
+
+// Some text is green
+.base-1x0h_U[style*="color: hsl(139, "] {
+	color: var(--green) !important;
+}
