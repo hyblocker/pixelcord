@@ -1,0 +1,13 @@
+﻿#app-mount {
+	& .sessionCard {
+		padding: 1rem;
+	}
+
+	& .sessionCard-activity {
+		margin-bottom: 1rem;
+	}
+
+	& .sessionCard-header > .wrapper-3t9DeA {
+		right: calc(1rem - 10px);
+	}
+}

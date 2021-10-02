@@ -1,0 +1,47 @@
+﻿// Redeisng the nitro page
+
+.subscriptionsRedirectContainer-21LuI0 {
+	display: none;
+
+	& + .changelogNotice-CQEWmQ {
+		display: none;
+	}
+}
+.hero-EvfTTA {
+	background: none;
+	height: fit-content;
+	& > .heroIcon-3QgOM5 {
+		margin-top: 0;
+	}
+	& .heroHeader-IulZgg,
+	& .heroBody-2P4UF5,
+	& .heroButtons-2NvgKB {
+		display: none;	
+	}
+}
+.featureChildrenWrapper-smz30S,
+.featureImageWrapper-pPDLjm {
+	display: none;
+}
+.feature-2w65J5 {
+	padding: 16px;
+	min-height: unset;
+	text-align: left;
+}
+.featureGrid-3-fNl- {
+	grid-gap: 1rem;
+	grid-template-columns: unset;
+}
+.marketingRefreshTier2Cta-bw9Vyc {
+	margin-top: 1rem;
+}
+.marketingRefreshTier1Graphic-9B12wx {
+	display: none;
+}
+.marketingRefreshSectionTier1-dRwS-6 {
+	& .buttons-2-EdE8 {
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+}

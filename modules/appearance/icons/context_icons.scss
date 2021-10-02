@@ -265,6 +265,7 @@
 	@include contextIcon("now-playing-menu-join", "join_game", $icon-pack, true);
 	@include contextIcon("now-playing-menu-spotify-play", "spotify", $icon-pack, true);
 	@include contextIcon("now-playing-menu-xbox-connect", "xbox", $icon-pack, true);
+	@include contextIcon("now-playing-menu-play", "game", $icon-pack, true);
 	
 	// Profile (open modal => 3 dots)
 	@include contextIcon("user-profile-actions-user-remove", "unfriend", $icon-pack);

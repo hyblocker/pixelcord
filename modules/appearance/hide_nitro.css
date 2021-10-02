@@ -1,0 +1,49 @@
+.subscriptionsRedirectContainer-21LuI0 {
+  display: none;
+}
+.subscriptionsRedirectContainer-21LuI0 + .changelogNotice-CQEWmQ {
+  display: none;
+}
+
+.hero-EvfTTA {
+  background: none;
+  height: fit-content;
+}
+.hero-EvfTTA > .heroIcon-3QgOM5 {
+  margin-top: 0;
+}
+.hero-EvfTTA .heroHeader-IulZgg, .hero-EvfTTA .heroBody-2P4UF5, .hero-EvfTTA .heroButtons-2NvgKB {
+  display: none;
+}
+
+.featureChildrenWrapper-smz30S,
+.featureImageWrapper-pPDLjm {
+  display: none;
+}
+
+.feature-2w65J5 {
+  padding: 16px;
+  min-height: unset;
+  text-align: left;
+}
+
+.featureGrid-3-fNl- {
+  grid-gap: 1rem;
+  grid-template-columns: unset;
+}
+
+.marketingRefreshTier2Cta-bw9Vyc {
+  margin-top: 1rem;
+}
+
+.marketingRefreshTier1Graphic-9B12wx {
+  display: none;
+}
+
+.marketingRefreshSectionTier1-dRwS-6 .buttons-2-EdE8 {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22hide_nitro.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAEA;EACC;;AAEA;EACC;;;AAGF;EACC;EACA;;AACA;EACC;;AAED;EAGC;;;AAGF;AAAA;EAEC;;;AAED;EACC;EACA;EACA;;;AAED;EACC;EACA;;;AAED;EACC;;;AAED;EACC;;;AAGA;EACC;EACA;EACA%22,%22file%22:%22hide_nitro.css%22%7D */
