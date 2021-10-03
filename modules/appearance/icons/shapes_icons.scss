@@ -9,9 +9,7 @@
 		d: path($shape-hover);
 	}
 	.svg-1X37T1 > foreignObject:first-child {
-		// @include maskImage($shape);
 		-webkit-mask-image: var(--guild-shape-normal);
-		// -webkit-mask-image: #{svg-url(#{wrapperSVG($shape)})};
 		-webkit-mask-size: contain;
 		-webkit-mask-position: center;
 		-webkit-mask-repeat: no-repeat;
@@ -28,14 +26,13 @@
 
 @mixin maskImage($shape) {
 	-webkit-mask-image: var(--avatar-shape);
-	// -webkit-mask-image: #{svg-url(#{wrapperSVG($shape)})};
 	-webkit-mask-size: contain;
 	-webkit-mask-position: center;
 	-webkit-mask-repeat: no-repeat;
 	border-radius: 0;
 }
 
-// Discord has multiple SVG masks for different image resolutions FUCK ME AAAAAAA
+// Discord has multiple SVG masks for different image resolutions:
 $status_round: (
 		16: '<circle fill="black" cx="0.8125" cy="0.8125" r="0.3125"/>',
 		24: '<circle fill="black" cx="0.8333333333333334" cy="0.8333333333333334" r="0.2916666666666667"/>',
@@ -64,7 +61,6 @@ $status_typing: (
 @mixin avatarStatusMask($shape, $size, $swap) {
 	.avatarHint-2A3RNb,
 	.mask-1l8v16 {
-		// $encodedSvg: #{svg-url(#{wrapperSVG(#{$shape}, '#fff')})};
 		$encodedSvg: var(--avatar-shape);
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-round-#{$size})"] {
@@ -94,9 +90,9 @@ $status_typing: (
 	}
 	
 	:root {
-		--guild-shape-normal:  #{svg-url(#{wrapperSVG($shape)})};
-		--guild-shape-hover:  #{svg-url(#{wrapperSVG($hoverShape)})};
-		--avatar-shape:  #{svg-url(#{wrapperSVG($shape)})};
+		--guild-shape-normal:  	#{svg-url(#{wrapperSVG($shape)})};
+		--guild-shape-hover:  	#{svg-url(#{wrapperSVG($hoverShape)})};
+		--avatar-shape:  		#{svg-url(#{wrapperSVG($shape)})};
 	}
 
 	@include replaceGuildShape($shape, $hoverShape);
@@ -192,7 +188,6 @@ $status_typing: (
 			border-radius: 0;
 			// additional path at the end is to prevent clipping of the status
 			-webkit-mask-image: var(--avatar-shape), #{svg-url("<svg viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'><path d='M0 1v1h2V1z'/></svg>")};
-			// -webkit-mask: var(--avatar-shape);
 		}
 	}
 
@@ -202,7 +197,6 @@ $status_typing: (
 	}
 	
 	.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-default)"] {
-		// -webkit-mask: #{svg-url("<svg viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'><path fill='#fff' d='#{$hoverShape}'/></svg>")};
 		-webkit-mask: var(--avatar-shape);
 		mask: none;
 	}
@@ -216,29 +210,6 @@ $status_typing: (
 
 	.avatarHint-2A3RNb,
 	.mask-1l8v16 {
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-16)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-16)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-16)"],
-		// 
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-24)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-24)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-24)"],
-		// 
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-32)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-32)"],
-		// 
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-40)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-40)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-40)"],
-		// 
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-80)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-80)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-80)"],
-		// 
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-round-120)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-mobile-120)"],
-		// & > foreignObject[mask="url(#svg-mask-avatar-status-typing-120)"] {
 		
 		& > foreignObject[mask|="url(#svg-mask-avatar-status-round"],
 		& > foreignObject[mask|="url(#svg-mask-avatar-status-mobile"],
@@ -253,5 +224,11 @@ $status_typing: (
 	.size16-NOVQSt .avatarContainerMasked-PIJ-3L,
 	.size24-1HlGux .avatarContainerMasked-PIJ-3L {
 		margin-right: 4px;
+	}
+	
+	// Party members (in now playing) have a unique mask :DDD
+	.partyMember-1CzxeX {
+		mask: none;
+		-webkit-mask: none;
 	}
 }
