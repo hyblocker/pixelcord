@@ -145,6 +145,7 @@
 		}
 
 		// Special case: Checkboxes
+		&[role="menuitemradio"],
 		&[role="menuitemcheckbox"] {
 			@include removeIcon();
 			@include reverseOrder();
@@ -158,6 +159,12 @@
 		// Hide in powercord menus
 		.menu-3sdvDG[id|=pc] & {
 			@include removeIcon();
+		}
+		
+		// Hide in powercord menus
+		.menu-3sdvDG#manage-streams & {
+			@include removeIcon();
+			@include reverseOrder();
 		}
 	}
 
@@ -191,6 +198,7 @@
 	@include contextIcon("message-open-native-link", "launch", $icon-pack);
 	@include contextIcon("message-tts", "tts", $icon-pack);
 	@include contextIcon("message-report-message-btn", "report", $icon-pack);
+	@include contextIcon("message-remove-reactions", "remove_reactions", $icon-pack);
 	@include contextIcon("message-delete", "delete", $icon-pack);
 	
 	// Textbox right click
@@ -222,6 +230,16 @@
 	@include contextIcon("user-context-kick", "kick", $icon-pack);
 	@include contextIcon("user-context-ban", "ban", $icon-pack);
 	
+	// rpc shit
+	@include contextIcon("user-context-ask-to-join", "join_game", $icon-pack);
+	@include contextIcon("user-context-spotify-play", "spotify", $icon-pack, true);
+	@include contextIcon("user-context-spotify-sync", "headphones", $icon-pack, true);
+	
+	// User right click vc stuff
+	@include contextIcon("user-context-change-video-background", "change_camera_bg", $icon-pack); // TODO: Fuck placeholder
+	@include contextIcon("user-context-focus-video", "focus_video", $icon-pack); // TODO: Fuck placeholder
+	@include contextIcon("user-context-voice-move", "move_voice", $icon-pack); // TODO: Fuck placeholder
+	
 	// Guild right click
 	@include contextIcon("guild-context-mark-guild-read", "mark_read", $icon-pack);
 	@include contextIcon("guild-context-invite-people", "invite", $icon-pack);
@@ -239,6 +257,9 @@
 
 	@include contextIcon("guild-context-leave-guild", "leave", $icon-pack);
 	
+	@include contextIcon("guild-context-join", "join", $icon-pack);
+	@include contextIcon("guild-context-create", "create_guild", $icon-pack);
+	
 	// Channel right click
 	@include contextIcon("channel-context-mark-channel-read", "mark_read", $icon-pack);
 	
@@ -248,6 +269,9 @@
 	
 	@include contextIcon("channel-context-edit-channel", "settings", $icon-pack);
 	@include contextIcon("channel-context-invite-people", "invite", $icon-pack);
+	@include contextIcon("channel-context-clone-channel", "clone", $icon-pack);
+	@include contextIcon("channel-context-create-text-channel", "create_channel", $icon-pack);
+	@include contextIcon("channel-context-create-voice-channel", "create_channel", $icon-pack);
 	
 	@include contextIcon("channel-context-delete-channel", "delete", $icon-pack);
 	@include contextIcon("channel-context-collapse-all-categories", "close", $icon-pack);
@@ -298,9 +322,19 @@
 	@include contextIcon("image-context-copy-native-link", "copy_link", $icon-pack);
 	@include contextIcon("image-context-open-native-link", "launch", $icon-pack);
 
+	// Friends row
+	@include contextIcon("friend-row-start-video-call", "video_call", $icon-pack);
+	@include contextIcon("friend-row-start-voice-call", "voice_call", $icon-pack);
+	@include contextIcon("friend-row-remove-friend", "unfriend", $icon-pack);
+	
+	// VC stuff
+	@include contextIcon("stream-context-watch", "stop_viewing", $icon-pack);
+	@include contextIcon("stream-context-report-stream-problem", "report", $icon-pack);
+	@include contextIcon("channel-call-overflow-popout-report-stream-problem", "report", $icon-pack);
+
 	// Settings
 	@include contextIcon("user-settings-cog-My_Account", "account", $icon-pack);
-	@include contextIcon("user-settings-cog-Profile_Customization", "user_profile", $icon-pack);
+	@include contextIcon("user-settings-cog-Profile_Customization", "user_profile_settings", $icon-pack);
 	@include contextIcon("user-settings-cog-Privacy___Safety", "shield", $icon-pack);
 	@include contextIcon("user-settings-cog-Authorized_Apps", "apps", $icon-pack);
 	@include contextIcon("user-settings-cog-Connections", "connections", $icon-pack);
@@ -329,7 +363,12 @@
 	@include contextIcon("user-settings-cog-Hypesquad_Online", "hypesquad", $icon-pack);
 	@include contextIcon("user-settings-cog-Experiments", "experiment", $icon-pack);
 	@include contextIcon("user-settings-cog-Developer_Options", "developer", $icon-pack);
+	@include contextIcon("user-settings-cog-Hotspot_Options", "cta", $icon-pack);
 	
+	// Spotify
+	@include contextIcon("spotify-toggle-no-accounts", "spotify", $icon-pack); // TODO: No accounts icon rather than shotify
+	// idk i dont use spotify :trol:
+
 	// Mods
 	@include contextIcon("user-settings-cog-BetterDiscord", "betterdiscord", $icon-pack);
 	@include contextIcon("user-settings-cog-powercord-actions", "powercord", $icon-pack);

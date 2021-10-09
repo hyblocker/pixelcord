@@ -17,8 +17,7 @@
 .popoutListInput-1l9TUI,
 .searchBar-1Vaz-O .searchBarComponent-yxeVIL,
 .searchContainer-3pUVEQ,
-.container-cMG81i.medium-1LLV3p
-{
+.container-cMG81i.medium-1LLV3p {
 	// Fixes textboxes literally everywhere what the fuck
 	position: relative;
 	border-radius: 0;
@@ -35,11 +34,12 @@
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		width: 100%;
 	}
-  
+
 	// On select, make the line at the bottom visible and start the animation
 	&:focus-within::after {
 		background-color: var(--accent);
 	}
+
 	&.disabled-jLAJq8::after {
 		opacity: 0.4;
 	}
@@ -47,8 +47,7 @@
 	// Replace the background
 	&,
 	& input,
-	& textarea
-	{
+	& textarea {
 		caret-color: var(--accent);
 		background-color: var(--textbox-color);
 		border: none;
@@ -62,39 +61,79 @@
 	// wtf this is all we need to do to fix textboxes for slate container now!!!
 	position: unset;
 }
+
 // The slate textbox overrides the caret a div deeper
 .slateTextArea-1Mkdgw {
 	caret-color: var(--accent);
 }
+
 // Default padding, assuming no upload button
 .placeholder-37qJjk {
 	margin-left: 16px;
 }
+
 // Fix placeholder padding
 .attachWrapper-2TRKBi + .textArea-12jD-V > .placeholder-37qJjk {
 	margin-left: 16px + 40px;
 }
+
 .slateTextArea-1Mkdgw {
 	position: relative;
 }
+
 // So that the line at the bottom is clean on the chat message box
-.scrollableContainer-2NUZem {
-	border-radius: 0;
+#app-mount {
+	& .textArea-12jD-V,
+	& .scrollableContainer-2NUZem {
+		background: transparent;
+	}
+
+	& .textArea-12jD-V {
+		&::after {
+			content: none;
+		}
+	}
+
+	& .inner-MADQqc {
+
+		&::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--textbox-color);
+			border-radius: 24px;
+		}
+		
+		& > .buttons-3JBrkn {
+			margin-right: 4px;
+		}
+	}
+
+	// Status emoji button gets covered
+	.emojiButtonContainer-3d6DFV {
+		z-index: 1;
+	}
 }
+
 // Some textboxes use classes for focused state
 .cardInputFocused-19S1J3,
 .input-cIJ7To {
 	border: none;
 }
-.multiInput-2AiDV2>.multiInputFirst-2aPTwX {
+
+.multiInput-2AiDV2 > .multiInputFirst-2aPTwX {
 	border-top-right-radius: 0;
 }
-.multiInput-2AiDV2>.multiInputLast-33BbRU {
+
+.multiInput-2AiDV2 > .multiInputLast-33BbRU {
 	border-top-left-radius: 0;
 }
+
 // The game activity textboxes cant use pseudo elements, use border instead
 // These are inputs, the unmodifiable ones use div
-.game-1ipmAa>div:first-child{
+.game-1ipmAa > div:first-child {
 	& > input.gameNameInput-385LoS {
 		caret-color: var(--accent);
 		background-color: var(--textbox-color);
@@ -103,10 +142,12 @@
 		border-bottom: 2px solid var(--textbox-pillDefault);
 		transition-duration: .2s;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 		&:focus-within {
 			border-color: var(--accent);
 		}
 	}
+
 	// "Disable" verified games
 	.gameName-1RiWHm:not(input)::after {
 		opacity: 0.4;
@@ -119,6 +160,7 @@
 	.addFriendInput-4bcerK {
 		background-color: transparent;
 	}
+
 	@at-root .phoneField-38N1bJ .inputField-aNPXsv {
 		background-color: transparent;
 	}

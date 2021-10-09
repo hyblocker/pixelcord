@@ -167,7 +167,7 @@
 // Make space for the blue bar
 .layer-3QrUeG[aria-label=RTC_DEBUG] .standardSidebarView-3F1I7i,
 .layer-3QrUeG[aria-label$="SETTINGS"] .standardSidebarView-3F1I7i {
-	top: calc(var(--settings-header-height) - 24px);
+	top: calc(var(--settings-header-height) - 24px);;
 
 	// Create the headerbar
 	&::before {

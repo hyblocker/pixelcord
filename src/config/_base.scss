@@ -29,6 +29,13 @@
 	// Context menus
 	--context-menu-padding: 6px 8px;
 	--context-menu-radius: 4px;
+	
+	// External Modules
+	// Better Badges
+	--badge-size: 22px;
+	
+	--sticker-substitute-text: "*sticker*";
+	--sticker-substitute-color: var(--red);
 }
 .theme-dark {
 	--weight-textbox: 600;

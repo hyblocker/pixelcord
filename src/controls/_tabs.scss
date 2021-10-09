@@ -1,0 +1,79 @@
+﻿@use "sass:math";
+@import "../material_design/ripple";
+
+// SVG Util
+@import "../../src/icons/util";
+
+// Icon packs
+@import "../../src/icons/outline";
+@import "../../src/icons/discord";
+
+
+@mixin tabIcon($controls, $icon) {
+	.tabBarItem-3dfX8P[aria-controls="#{$controls}"] {
+		--icon: #{svg-url(#{map-get($icons-discord, $icon)})};
+	}
+}
+
+.tabBarContainer-37hZsr {
+	padding-top: 16px;
+}
+
+.tabBarItem-3dfX8P {
+	--icon: #{svg-url(#{map-get($icons-discord, "placeholder")})};
+	--iconColor: currentColor;
+	--iconBgColor: transparent;
+	position: relative;
+	align-items: flex-end;
+	padding-bottom: 0.5rem;
+
+	$icon-size: 1rem;
+	$pill-width: 2.5rem;
+	$pill-height: 1.25rem;
+
+	&::before {
+		content: "";
+		background-color: var(--iconBgColor);
+		width: $pill-width;
+		height: $pill-height;
+		border-radius: math.div($pill-height, 2);
+		position: absolute;
+		left: calc(50% - #{math.div($pill-width, 2)});
+		top: 0;
+	}
+
+	&::after {
+		content: "";
+		-webkit-mask: var(--icon);
+		-webkit-mask-size: contain;
+		background-color: var(--iconColor);
+		width: $icon-size;
+		height: $icon-size;
+		position: absolute;
+		left: calc(50% - #{math.div($icon-size, 2)});
+		top: math.div(($pill-height - $icon-size), 2);
+
+	}
+}
+
+.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:hover {
+	border-color: transparent;
+	--iconColor: var(--accent-text);
+	--iconBgColor: var(--accent);
+	color: var(--accent);
+}
+.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,
+.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active {
+	// border-color: var(--accent);
+	border-color: transparent;
+	--iconColor: var(--accent-text);
+	--iconBgColor: var(--accent-selected);
+	color: var(--accent-selected);
+}
+
+@include tabIcon("user_info-tab", "user_profile");
+@include tabIcon("mutual_guilds-tab", "mutual_guild");
+@include tabIcon("mutual_friends-tab", "mutual_friends");
+@include tabIcon("activity-tab", "game");
+
+// TODO: separate file overriding default (aka change colors to accent)

@@ -10,6 +10,6 @@
 .scroller-3BxosC {
 	padding: var(--context-menu-padding);
 }
-.item-1tOPte {
+.item-1tOPte:not(.hideInteraction-1iHO1O) {
 	@include ripple;
 }

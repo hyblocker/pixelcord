@@ -2,4 +2,6 @@
 
 .container-2Pjhx- {
 	@include ripple;
+	user-drag: none;
+	-webkit-user-drag: none;
 }

@@ -85,7 +85,7 @@
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=profile-customization-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33A7.95 7.95 0 014 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z'/%3E%3C/svg%3E");
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls="privacy-&-safety-tab" i]:not(.role-3wi9Tf)::before {
@@ -185,6 +185,10 @@
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=developer-options-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=hotspot-options-tab i]:not(.role-3wi9Tf)::before {
   --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
@@ -331,4 +335,4 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M14 5a7 7 0 100 14 7 7 0 000-14zM3 11h1a1 1 0 100-2H1a1 1 0 110-2h5a1 1 0 100-2H3.5a1.5 1.5 0 010-3H14c5.523 0 10 4.477 10 10s-4.477 10-10 10c-5.185 0-9.449-3.947-9.95-9H3a1 1 0 010-2z'/%3E%3Cpath d='M14 17a5 5 0 110-10 5 5 0 010 10zm1.827-7.55a1 1 0 00-.835-.45h-1.926a1 1 0 00-.836.45l-1.315 2a1 1 0 000 1.1l1.315 2a1 1 0 00.836.45h1.926a1 1 0 00.835-.45l1.316-2a1 1 0 000-1.1l-1.316-2z'/%3E%3C/svg%3E");
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../settings_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA2BE;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AA+IF;AAAA;AAAA;AAhJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE%22,%22file%22:%22outline.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../settings_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA2BE;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAgJF;AAAA;AAAA;AAjJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE%22,%22file%22:%22outline.css%22%7D */

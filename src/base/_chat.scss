@@ -110,3 +110,12 @@ html:not(.app-focused) {
 	background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(var(--card-0-bg)));
 	background: linear-gradient(180deg, transparent 0,var(--card-0-bg));
 }
+
+// Chat uploading "embed"
+.zalgo-jN1Ica .messageContent-2qWWxC {
+	overflow: visible;
+}
+// File embeds need accent color for ...
+.audioMetadata-3zOuGv .metadataContent-3c_ZXw {
+	color: var(--text-link);
+}

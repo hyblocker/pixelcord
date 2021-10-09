@@ -20,9 +20,16 @@
 		color: $color;
 	}
 }
-.modeSelected-346R90 .content-1x5b-n,
-.modeSelected-346R90:hover .content-1x5b-n {
-	@include channelColors(var(--accent), var(--accent-transparent));
+.content-1x5b-n {
+	&, & .mainContent-u_9PKf {
+		user-drag: none;
+		-webkit-user-drag: none;
+	}
+
+	.modeSelected-346R90 &,
+	.modeSelected-346R90:hover & {
+		@include channelColors(var(--accent), var(--accent-transparent));
+	}
 }
 .selected-aXhQR6.container-2Pjhx- {
 	background-color: var(--accent-transparent);

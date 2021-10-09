@@ -1,0 +1,40 @@
+﻿// Chat icons refer to icons such as the welcome -> or the pin icon
+
+// Welcome (reply)
+.userJoinSystemMessageIcon-1jNKMz path {
+	fill: var(--green);
+}
+
+@mixin colorIcon($url, $newShape: null, $color:null) {
+	@if $newShape == null {
+		$color: var(--text-normal);
+		$newShape: url("#{$url}");
+	}
+	@else if $color == null {
+		$color: var(--text-normal);
+	}
+	
+	&[style='background-image: url("#{$url}");'] {
+		background-image: none !important;
+		-webkit-mask-position: center;
+		-webkit-mask-size: contain;
+		-webkit-mask-image: #{$newShape};
+		background-color: $color;
+		
+	}
+}
+
+:root {
+	--welcome-svg:			url("/assets/d1382af8d9e755bc44811b1fd92990a8.svg");
+	--pins-svg:				url("/assets/1f57f1c100434d1ff6569a495ada213e.svg");
+	--missed-call-svg:		url("/assets/5e64269a40d5bb745c2f3df29f26738d.svg");
+	--call-accepted-svg:	url("/assets/7f75ab26bc5deb393cd8db44d9fe14e7.svg");
+}
+// Big message icons
+.iconSize-2tmqqh {
+	// TODO: Idk why it breaks now
+	@include colorIcon("/assets/d1382af8d9e755bc44811b1fd92990a8.svg", var(--welcome-svg), var(--green));
+	@include colorIcon("/assets/1f57f1c100434d1ff6569a495ada213e.svg", var(--pins-svg));
+	@include colorIcon("/assets/5e64269a40d5bb745c2f3df29f26738d.svg", var(--missed-call-svg));
+	@include colorIcon("/assets/7f75ab26bc5deb393cd8db44d9fe14e7.svg", var(--call-accepted-svg), var(--green));
+}

@@ -13,6 +13,8 @@
 @use "voice_chat";
 @use "settings";
 @use "client_mods";
+@use "pages";
+@use "modals";
 
 // NOTE: This is only used during debugging!
 // Id disable it at compile time but SCSS is shit and doesnt let you @if true { @import / @use }

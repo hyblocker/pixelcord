@@ -40,6 +40,9 @@
   --settings-sidebar-width: 350px;
   --context-menu-padding: 6px 8px;
   --context-menu-radius: 4px;
+  --badge-size: 22px;
+  --sticker-substitute-text: "*sticker*";
+  --sticker-substitute-color: var(--red);
 }
 
 .theme-dark {
@@ -427,12 +430,6 @@ html[lang=hi] {
   mask-size: cover;
 }
 
-.buttonShine-1CSUM8,
-.shineContainer-1HHuZ1,
-.shineContainerDefault-2bbFgu {
-  display: none;
-}
-
 .nameTag-3uD-yy,
 .header-23xsNx,
 .embedProvider-3k5pfl,
@@ -444,6 +441,8 @@ html[lang=hi] {
 .profileBannerPreview-3_l0Wd .markup-2BOw-j,
 .member-1q7VfX .nameTag-3wmDUk .name-8yzEIY,
 .member-1q7VfX .nameTag-3wmDUk .tag-1YGWN9,
+.timestamp-3ZCmNB,
+.bot-2Fta1w,
 .perks-32J1d0,
 .carouselItemSelected-JFUsnG,
 .cumcord-plugin-card .markdown-11q6EU {
@@ -474,6 +473,12 @@ html[lang=hi] {
   height: 1.05rem;
 }
 
+.buttonShine-1CSUM8,
+.shineContainer-1HHuZ1,
+.shineContainerDefault-2bbFgu {
+  display: none;
+}
+
 .threadSuggestionBar-2ufK2Z {
   display: none;
 }
@@ -482,8 +487,38 @@ html[lang=hi] {
   display: none;
 }
 
-:root {
-  --open-profile-via-pfp-friends: true;
+.message-2qnXI6 .stickerAsset-13j1W0 {
+  position: relative;
+  height: 160px;
+  width: 160px;
+}
+
+.message-2qnXI6 .stickerAsset-13j1W0[alt*=", Choco, "], .message-2qnXI6 .stickerAsset-13j1W0[alt*=", Sup, "], .message-2qnXI6 .stickerAsset-13j1W0[alt*=", Scream, "], .message-2qnXI6 .stickerAsset-13j1W0[alt*=", Wave, "] {
+  content: var(--sticker-substitute-text);
+  display: block;
+  height: 0;
+  padding-top: 1rem;
+  width: fit-content;
+  background-color: var(--sticker-substitute-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='0' y='15' fill='black' font-family='Google Sans' font-weight='400' font-style='italic'%3E*sticker*%3C/text%3E%3C/svg%3E");
+}
+
+.message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Choco, "] .stickerAsset-13j1W0, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Sup, "] .stickerAsset-13j1W0, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Scream, "] .stickerAsset-13j1W0, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Wave, "] .stickerAsset-13j1W0 {
+  display: none;
+}
+
+.message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Choco, "]::after, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Sup, "]::after, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Scream, "]::after, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Wave, "]::after {
+  content: var(--sticker-substitute-text);
+  display: block;
+  height: 1rem;
+  color: var(--sticker-substitute-color);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.message-2qnXI6 .assetWrapper-3GNt0z {
+  height: fit-content !important;
+  width: fit-content !important;
 }
 
 .downloadLink-1ywL9o {
@@ -492,6 +527,18 @@ html[lang=hi] {
 
 .guildSection-1EoFKd > .flex-1xMQg5 > svg {
   min-width: 32px;
+}
+
+.audioMetadata-3zOuGv::before {
+  min-width: 24px;
+}
+
+.audioMetadata-3zOuGv .metadataContent-3c_ZXw {
+  text-overflow: ellipsis;
+}
+
+.iconWrapper-2OrFZ1 + .anchor-3Z-8Bb[href="https://support.discord.com"] {
+  display: none;
 }
 
 :root {
@@ -741,6 +788,57 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background: linear-gradient(180deg, transparent 0, var(--card-0-bg));
 }
 
+.zalgo-jN1Ica .messageContent-2qWWxC {
+  overflow: visible;
+}
+
+.audioMetadata-3zOuGv .metadataContent-3c_ZXw {
+  color: var(--text-link);
+}
+
+.userJoinSystemMessageIcon-1jNKMz path {
+  fill: var(--green);
+}
+
+:root {
+  --welcome-svg:	url("/assets/d1382af8d9e755bc44811b1fd92990a8.svg");
+  --pins-svg:	url("/assets/1f57f1c100434d1ff6569a495ada213e.svg");
+  --missed-call-svg:	url("/assets/5e64269a40d5bb745c2f3df29f26738d.svg");
+  --call-accepted-svg:	url("/assets/7f75ab26bc5deb393cd8db44d9fe14e7.svg");
+}
+
+.iconSize-2tmqqh[style='background-image: url("/assets/d1382af8d9e755bc44811b1fd92990a8.svg");'] {
+  background-image: none !important;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-image: var(--welcome-svg);
+  background-color: var(--green);
+}
+
+.iconSize-2tmqqh[style='background-image: url("/assets/1f57f1c100434d1ff6569a495ada213e.svg");'] {
+  background-image: none !important;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-image: var(--pins-svg);
+  background-color: var(--text-normal);
+}
+
+.iconSize-2tmqqh[style='background-image: url("/assets/5e64269a40d5bb745c2f3df29f26738d.svg");'] {
+  background-image: none !important;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-image: var(--missed-call-svg);
+  background-color: var(--text-normal);
+}
+
+.iconSize-2tmqqh[style='background-image: url("/assets/7f75ab26bc5deb393cd8db44d9fe14e7.svg");'] {
+  background-image: none !important;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  -webkit-mask-image: var(--call-accepted-svg);
+  background-color: var(--green);
+}
+
 .bar-30k2ka,
 .unread-1xRYoj {
   border-radius: var(--snackbar-radius, 4px);
@@ -754,15 +852,16 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   color: var(--red-text, white);
 }
 
-.modeSelected-346R90 .content-1x5b-n,
-.modeSelected-346R90:hover .content-1x5b-n {
+.content-1x5b-n, .content-1x5b-n .mainContent-u_9PKf {
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+.modeSelected-346R90 .content-1x5b-n, .modeSelected-346R90:hover .content-1x5b-n {
   background-color: var(--accent-transparent);
 }
 
-.modeSelected-346R90 .content-1x5b-n .icon-1DeIlz, .modeSelected-346R90 .content-1x5b-n .name-23GUGE, .modeSelected-346R90 .content-1x5b-n .actionIcon-PgcMM2,
-.modeSelected-346R90:hover .content-1x5b-n .icon-1DeIlz,
-.modeSelected-346R90:hover .content-1x5b-n .name-23GUGE,
-.modeSelected-346R90:hover .content-1x5b-n .actionIcon-PgcMM2 {
+.modeSelected-346R90 .content-1x5b-n .icon-1DeIlz, .modeSelected-346R90 .content-1x5b-n .name-23GUGE, .modeSelected-346R90 .content-1x5b-n .actionIcon-PgcMM2, .modeSelected-346R90:hover .content-1x5b-n .icon-1DeIlz, .modeSelected-346R90:hover .content-1x5b-n .name-23GUGE, .modeSelected-346R90:hover .content-1x5b-n .actionIcon-PgcMM2 {
   color: var(--accent);
 }
 
@@ -791,11 +890,11 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   padding: var(--context-menu-padding);
 }
 
-.item-1tOPte {
+.item-1tOPte:not(.hideInteraction-1iHO1O) {
   overflow: hidden;
 }
 
-.item-1tOPte::after {
+.item-1tOPte:not(.hideInteraction-1iHO1O)::after {
   transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
   content: "";
   opacity: 0;
@@ -809,19 +908,10 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background: radial-gradient(circle at center, var(--ripple-color) 24%, transparent 25%, transparent 100%);
 }
 
-.item-1tOPte:not(:active)::after {
+.item-1tOPte:not(.hideInteraction-1iHO1O):not(:active)::after {
   transition: 0s;
   opacity: 0.3;
   transform: scale(0);
-}
-
-.customStatusText-2opeSw {
-  overflow-wrap: break-word;
-}
-
-.guildAvatarWithoutIcon-1s9Pcy {
-  background-color: var(--accent);
-  color: var(--accent-text);
 }
 
 .theme-dark .lookFilled-1Gx00P.colorBrand-3pXr91,
@@ -1485,8 +1575,30 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   position: relative;
 }
 
-.scrollableContainer-2NUZem {
-  border-radius: 0;
+#app-mount .textArea-12jD-V, #app-mount .scrollableContainer-2NUZem {
+  background: transparent;
+}
+
+#app-mount .textArea-12jD-V::after {
+  content: none;
+}
+
+#app-mount .inner-MADQqc::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--textbox-color);
+  border-radius: 24px;
+}
+
+#app-mount .inner-MADQqc > .buttons-3JBrkn {
+  margin-right: 4px;
+}
+
+#app-mount .emojiButtonContainer-3d6DFV {
+  z-index: 1;
 }
 
 .cardInputFocused-19S1J3,
@@ -1545,22 +1657,77 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   background-color: var(--accent) !important;
 }
 
-.theme-light .inset-3sAvek,
-.theme-dark .inset-3sAvek {
-  background-color: transparent;
+.tabBarContainer-37hZsr {
+  padding-top: 16px;
 }
 
-.separator-XqIyoz {
-  height: 16px;
+.tabBarItem-3dfX8P {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M20 19A1 1 0 0019 18A1 1 0 0018 19A1 1 0 0019 20A1 1 0 0020 19ZM6 19A1 1 0 005 18A1 1 0 004 19A1 1 0 005 20A1 1 0 006 19ZM6 5A1 1 0 005 4A1 1 0 004 5A1 1 0 005 6A1 1 0 006 5ZM20 5A1 1 0 0019 4A1 1 0 0018 5A1 1 0 0019 6A1 1 0 0020 5ZM6 1H18C20.77 1 23 3.23 23 6V18C23 20.77 20.77 23 18 23H6C3.23 23 1 20.77 1 18V6C1 3.23 3.23 1 6 1zM12.7356 18V15.5076H10.4826V18H12.7356ZM12.4284 12.828C14.6304 12.0258 15.8592 11.0526 15.8592 9.141C15.8592 7.1778 14.4432 6 12.2064 6C10.653 6 9.4242 6.495 8.4 7.2288L8.6904 9.2088C9.663 8.4582 10.7724 7.9116 11.9844 7.9116C13.0086 7.9116 13.6914 8.424 13.6914 9.2946C13.6914 10.2504 13.0434 10.7796 11.4042 11.3598L10.875 11.565 11.0802 14.2788 12.3258 14.0058 12.4284 12.828z'/%3E%3C/svg%3E");
+  --iconColor: currentColor;
+  --iconBgColor: transparent;
+  position: relative;
+  align-items: flex-end;
+  padding-bottom: 0.5rem;
 }
 
-.theme-light .separator-XqIyoz,
-.theme-dark .separator-XqIyoz {
-  background-color: transparent;
+.tabBarItem-3dfX8P::before {
+  content: "";
+  background-color: var(--iconBgColor);
+  width: 2.5rem;
+  height: 1.25rem;
+  border-radius: 0.625rem;
+  position: absolute;
+  left: calc(50% - 1.25rem);
+  top: 0;
+}
+
+.tabBarItem-3dfX8P::after {
+  content: "";
+  -webkit-mask: var(--icon);
+  -webkit-mask-size: contain;
+  background-color: var(--iconColor);
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: calc(50% - 0.5rem);
+  top: 0.125rem;
+}
+
+.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:hover {
+  border-color: transparent;
+  --iconColor: var(--accent-text);
+  --iconBgColor: var(--accent);
+  color: var(--accent);
+}
+
+.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,
+.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active {
+  border-color: transparent;
+  --iconColor: var(--accent-text);
+  --iconBgColor: var(--accent-selected);
+  color: var(--accent-selected);
+}
+
+.tabBarItem-3dfX8P[aria-controls=user_info-tab] {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 5v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5a2 2 0 0 0-2 2Zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3Zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1Z'/%3E%3C/svg%3E");
+}
+
+.tabBarItem-3dfX8P[aria-controls=mutual_guilds-tab] {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8h-8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1z'/%3E%3C/svg%3E");
+}
+
+.tabBarItem-3dfX8P[aria-controls=mutual_friends-tab] {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z'/%3E%3C/svg%3E");
+}
+
+.tabBarItem-3dfX8P[aria-controls=activity-tab] {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.665 5h12.67a3 3 0 0 1 2.992 2.783l.666 9.194A1.886 1.886 0 0 1 20.112 19a2.606 2.606 0 0 1-2.526-1.966L17.07 15H6.93l-.515 2.034A2.606 2.606 0 0 1 3.888 19a1.886 1.886 0 0 1-1.881-2.023l.666-9.194A3 3 0 0 1 5.665 5Zm8.835 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM6 9H4v2h2v2h2v-2h2V9H8V7H6v2Z'/%3E%3C/svg%3E");
 }
 
 .container-2Pjhx- {
   overflow: hidden;
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
 .container-2Pjhx-::after {
@@ -1611,6 +1778,7 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 3px #000;
 }
 
+.speaking-3dBKhR,
 .avatarSpeaking-2IGMRN,
 .avatarSpeaking-2c8-9i {
   -webkit-box-shadow: inset 0 0 0 2px var(--accent), inset 0 0 0 3px var(--background-secondary);
@@ -1961,6 +2129,46 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   right: calc(1rem - 10px);
 }
 
+.userPopout-xaxa6l[aria-label=mr_miner] .headerText-1vVs-U::after {
+  font-family: var(--font-header);
+}
+
+.theme-light .inset-3sAvek,
+.theme-dark .inset-3sAvek {
+  background-color: transparent;
+}
+
+.separator-XqIyoz {
+  height: 16px;
+}
+
+.theme-light .separator-XqIyoz,
+.theme-dark .separator-XqIyoz {
+  background-color: transparent;
+}
+
+.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
+  background: none;
+}
+
+.categoryItem-1QIroW {
+  position: relative;
+}
+
+.customStatusText-2opeSw {
+  overflow-wrap: break-word;
+}
+
+.guildAvatarWithoutIcon-1s9Pcy {
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.noTabBar-3ZjPNR,
+.tabBarContainer-37hZsr {
+  border: none;
+}
+
 @font-face {
   font-family: "No Dash";
   src: url(https://hyblocker.github.io/pixelcord/res/noDash.ttf) format("truetype"), url(https://hyblocker.github.io/pixelcord/res/noDash.woff2) format("woff2");
@@ -2031,6 +2239,30 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.premiumInlineNotice-159eYs {
+  display: none;
+}
+
+.avatar-VxgULZ[src$="7c8f476123d28d103efe381543274c25.png"] {
+  content: none;
+}
+
+.avatar-VxgULZ[src$="3c6ccb83716d1e4fb91d3082f6b21d77.png"] {
+  content: none;
+}
+
+.avatar-VxgULZ[src$="1f0bfc0865d324c2587920a7d80c609b.png"] {
+  content: none;
+}
+
+.avatar-VxgULZ[src$="6f26ddd1bf59740c536d2274bb834a05.png"] {
+  content: none;
+}
+
+.avatar-VxgULZ[src$="c09a43a372ba81e3018c3151d4ed4773.png"] {
+  content: none;
 }
 
 .sidebarRegion-VFTUkN {
@@ -2221,6 +2453,10 @@ html:not(.app-focused) .isUnread-3Ef-o9 {
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=developer-options-tab i]:not(.role-3wi9Tf)::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Zm0 8h16a1 1 0 0 1 1 1v.67l-2.5-1.11-6.5 2.88V15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1Zm0 8h8c.06 2.25 1 4.4 2.46 6H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1ZM8 5h1V3H8v2Zm0 8h1v-2H8v2Zm0 8h1v-2H8v2ZM4 3v2h2V3H4Zm0 8v2h2v-2H4Zm0 8v2h2v-2H4Zm13.5-7 4.5 2v3c0 2.78-1.92 5.37-4.5 6-2.58-.63-4.5-3.22-4.5-6v-3l4.5-2Zm0 1.94L15 15.06v2.66c0 1.54 1.07 2.98 2.5 3.34v-7.12Z'/%3E%3C/svg%3E");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=hotspot-options-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3v-3h18v3z'/%3E%3C/svg%3E");
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=logout-tab i]:not(.role-3wi9Tf)::before {
@@ -2497,22 +2733,22 @@ While yes mods are separated to respective menus, settings icons being a module 
 .item-1tOPte[id^=now-playing-menu-9]:not([aria-haspopup=true])::before {
   content: none;
 }
-.item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true])::before {
+.item-1tOPte[role=menuitemradio]:not([aria-haspopup=true])::before, .item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true])::before {
   content: none;
 }
-.item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) {
+.item-1tOPte[role=menuitemradio]:not([aria-haspopup=true]), .item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) {
   flex-direction: row-reverse;
 }
-.item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) > .iconContainer-2-XQPY {
+.item-1tOPte[role=menuitemradio]:not([aria-haspopup=true]) > .iconContainer-2-XQPY, .item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) > .iconContainer-2-XQPY {
   margin-left: 0;
   width: var(--context-icon-size);
   height: var(--context-icon-size);
 }
-.item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) > .iconContainer-2-XQPY > .icon-LYJorE {
+.item-1tOPte[role=menuitemradio]:not([aria-haspopup=true]) > .iconContainer-2-XQPY > .icon-LYJorE, .item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) > .iconContainer-2-XQPY > .icon-LYJorE {
   width: var(--context-icon-size);
   height: var(--context-icon-size);
 }
-.item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) > .label-22pbtT {
+.item-1tOPte[role=menuitemradio]:not([aria-haspopup=true]) > .label-22pbtT, .item-1tOPte[role=menuitemcheckbox]:not([aria-haspopup=true]) > .label-22pbtT {
   margin-left: var(--context-icon-spacing);
 }
 .submenu-2-ysNh.menu-3sdvDG .item-1tOPte::before {
@@ -2520,6 +2756,24 @@ While yes mods are separated to respective menus, settings icons being a module 
 }
 .menu-3sdvDG[id|=pc] .item-1tOPte:not([aria-haspopup=true])::before {
   content: none;
+}
+.menu-3sdvDG#manage-streams .item-1tOPte:not([aria-haspopup=true])::before {
+  content: none;
+}
+.menu-3sdvDG#manage-streams .item-1tOPte:not([aria-haspopup=true]) {
+  flex-direction: row-reverse;
+}
+.menu-3sdvDG#manage-streams .item-1tOPte:not([aria-haspopup=true]) > .iconContainer-2-XQPY {
+  margin-left: 0;
+  width: var(--context-icon-size);
+  height: var(--context-icon-size);
+}
+.menu-3sdvDG#manage-streams .item-1tOPte:not([aria-haspopup=true]) > .iconContainer-2-XQPY > .icon-LYJorE {
+  width: var(--context-icon-size);
+  height: var(--context-icon-size);
+}
+.menu-3sdvDG#manage-streams .item-1tOPte:not([aria-haspopup=true]) > .label-22pbtT {
+  margin-left: var(--context-icon-spacing);
 }
 
 .item-1tOPte[id*=copy]::before {
@@ -2606,6 +2860,10 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6.002h-6v-3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v19h2v-8h5.586l-2.293 2.293A1.002 1.002 0 0 0 9 18.002h11a1 1 0 0 0 1-1v-10a1 1 0 0 0-1-1Z'/%3E%3C/svg%3E");
 }
 
+.item-1tOPte#message-remove-reactions::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M18.4 4 12 10.4 5.6 4 4 5.6l6.4 6.4L4 18.4 5.6 20l6.4-6.4 6.4 6.4 1.6-1.6-6.4-6.4L20 5.6 18.4 4Z'/%3E%3C/svg%3E");
+}
+
 .item-1tOPte#message-delete::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15 3.999V2H9V3.999H3V5.999H21V3.999H15Z'/%3E%3Cpath d='M5 6.99902V18.999C5 20.101 5.897 20.999 7 20.999H17C18.103 20.999 19 20.101 19 18.999V6.99902H5ZM11 17H9V11H11V17ZM15 17H13V11H15V17Z'/%3E%3C/svg%3E");
 }
@@ -2635,7 +2893,7 @@ While yes mods are separated to respective menus, settings icons being a module 
 }
 
 .item-1tOPte#user-context-user-profile::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath d='M19.2929 9.8299L19.9409 9.18278C21.353 7.77064 21.353 5.47197 19.9409 4.05892C18.5287 2.64678 16.2292 2.64678 14.817 4.05892L14.1699 4.70694L19.2929 9.8299ZM12.8962 5.97688L5.18469 13.6906L10.3085 18.813L18.0201 11.0992L12.8962 5.97688ZM4.11851 20.9704L8.75906 19.8112L4.18692 15.239L3.02678 19.8796C2.95028 20.1856 3.04028 20.5105 3.26349 20.7337C3.48669 20.9569 3.8116 21.046 4.11851 20.9704Z'/%3E%3C/svg%3E");
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 5v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5a2 2 0 0 0-2 2Zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3Zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1Z'/%3E%3C/svg%3E");
 }
 
 .item-1tOPte#user-context-mention::before {
@@ -2706,6 +2964,30 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m13 2 9 8v2l-4.999 5.001H15L6 9V7l5-5h2Zm4.707.707a1 1 0 0 1 1.421.007l1.401 1.401a1 1 0 1 1-1.414 1.414l-1.401-1.401a1.003 1.003 0 0 1-.007-1.421ZM8.364 13l2.121 2.121-6.364 6.364L2 19.364 8.364 13Z'/%3E%3C/svg%3E");
 }
 
+.item-1tOPte#user-context-ask-to-join::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M15 7.5V2H9v5.5l3 3 3-3zM7.5 9H2v6h5.5l3-3-3-3zM9 16.5V22h6v-5.5l-3-3-3 3zM16.5 9l-3 3 3 3H22V9h-5.5z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte[id|=user-context-spotify-play]::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23fff' d='M12.761 7.08c-2.581-1.534-6.84-1.675-9.303-.926a.749.749 0 1 1-.435-1.435c2.828-.859 7.53-.693 10.502 1.072a.75.75 0 0 1-.764 1.29Zm-.015 2.298a.627.627 0 0 1-.862.206c-2.16-1.327-5.454-1.711-8.01-.936A.627.627 0 0 1 3.51 7.45c2.92-.885 6.549-.456 9.03 1.067a.626.626 0 0 1 .206.86Zm-1.035 2.165a.499.499 0 0 1-.689.167c-1.886-1.159-4.26-1.42-7.056-.779a.503.503 0 0 1-.223-.981c3.06-.703 5.684-.4 7.802.9.236.145.31.456.166.693ZM0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte[id|=user-context-spotify-sync]::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.00305C6.486 2.00305 2 6.48805 2 12.0031V20.0031C2 21.1071 2.895 22.0031 4 22.0031H6C7.104 22.0031 8 21.1071 8 20.0031V17.0031C8 15.8991 7.104 15.0031 6 15.0031H4V12.0031C4 7.59105 7.589 4.00305 12 4.00305C16.411 4.00305 20 7.59105 20 12.0031V15.0031H18C16.896 15.0031 16 15.8991 16 17.0031V20.0031C16 21.1071 16.896 22.0031 18 22.0031H20C21.104 22.0031 22 21.1071 22 20.0031V12.0031C22 6.48805 17.514 2.00305 12 2.00305Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#user-context-change-video-background::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M4 4h7V2H4c-1.1 0-2 .9-2 2v7h2V4zm6 9-4 5h12l-3-4-2.03 2.71L10 13zm7-4.5c0-.83-.67-1.5-1.5-1.5S14 7.67 14 8.5s.67 1.5 1.5 1.5S17 9.33 17 8.5zM20 2h-7v2h7v7h2V4c0-1.1-.9-2-2-2zm0 18h-7v2h7c1.1 0 2-.9 2-2v-7h-2v7zM4 13H2v7c0 1.1.9 2 2 2h7v-2H4v-7z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#user-context-focus-video::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V5a2 2 0 0 0-2-2zm0 16H5V7h14v12zm-5.5-6c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM12 9c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4zm0 6.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#user-context-voice-move::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z'/%3E%3C/svg%3E");
+}
+
 .item-1tOPte#guild-context-mark-guild-read::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M18.83 7h-2.6L10.5 4 4 7.4V17c-1.1 0-2-.9-2-2V7.17c0-.53.32-1.09.8-1.34L10.5 2l7.54 3.83c.43.23.73.7.79 1.17zM20 8H7c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2zm0 3.67L13.5 15 7 11.67V10l6.5 3.33L20 10v1.67z'/%3E%3C/svg%3E");
 }
@@ -2754,6 +3036,14 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M10.418 13L12.708 15.294L11.292 16.706L6.586 11.991L11.294 7.292L12.707 8.708L10.41 11H21.949C21.446 5.955 17.177 2 12 2C6.486 2 2 6.487 2 12C2 17.513 6.486 22 12 22C17.177 22 21.446 18.046 21.949 13H10.418Z'/%3E%3C/svg%3E");
 }
 
+.item-1tOPte#guild-context-join::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M11 7 9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#guild-context-create::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 2.00098C6.486 2.00098 2 6.48698 2 12.001C2 17.515 6.486 22.001 12 22.001C17.514 22.001 22 17.515 22 12.001C22 6.48698 17.514 2.00098 12 2.00098ZM17 13.001H13V17.001H11V13.001H7V11.001H11V7.00098H13V11.001H17V13.001Z'/%3E%3C/svg%3E");
+}
+
 .item-1tOPte#channel-context-mark-channel-read::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M18.83 7h-2.6L10.5 4 4 7.4V17c-1.1 0-2-.9-2-2V7.17c0-.53.32-1.09.8-1.34L10.5 2l7.54 3.83c.43.23.73.7.79 1.17zM20 8H7c-1.1 0-2 .9-2 2v9c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2v-9c0-1.1-.9-2-2-2zm0 3.67L13.5 15 7 11.67V10l6.5 3.33L20 10v1.67z'/%3E%3C/svg%3E");
 }
@@ -2776,6 +3066,18 @@ While yes mods are separated to respective menus, settings icons being a module 
 
 .item-1tOPte#channel-context-invite-people::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M21 3H24V5H21V8H19V5H16V3H19V0H21V3ZM10 12C12.205 12 14 10.205 14 8C14 5.795 12.205 4 10 4C7.795 4 6 5.795 6 8C6 10.205 7.795 12 10 12ZM10 13C5.289 13 2 15.467 2 19V20H18V19C18 15.467 14.711 13 10 13Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#channel-context-clone-channel::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M18 2H9c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h9c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H9V4h9v12zM3 15v-2h2v2H3zm0-5.5h2v2H3v-2zM10 20h2v2h-2v-2zm-7-1.5v-2h2v2H3zM5 22c-1.1 0-2-.9-2-2h2v2zm3.5 0h-2v-2h2v2zm5 0v-2h2c0 1.1-.9 2-2 2zM5 6v2H3c0-1.1.9-2 2-2z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#channel-context-create-text-channel::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 2.00098C6.486 2.00098 2 6.48698 2 12.001C2 17.515 6.486 22.001 12 22.001C17.514 22.001 22 17.515 22 12.001C22 6.48698 17.514 2.00098 12 2.00098ZM17 13.001H13V17.001H11V13.001H7V11.001H11V7.00098H13V11.001H17V13.001Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#channel-context-create-voice-channel::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M12 2.00098C6.486 2.00098 2 6.48698 2 12.001C2 17.515 6.486 22.001 12 22.001C17.514 22.001 22 17.515 22 12.001C22 6.48698 17.514 2.00098 12 2.00098ZM17 13.001H13V17.001H11V13.001H7V11.001H11V7.00098H13V11.001H17V13.001Z'/%3E%3C/svg%3E");
 }
 
 .item-1tOPte#channel-context-delete-channel::before {
@@ -2815,7 +3117,7 @@ While yes mods are separated to respective menus, settings icons being a module 
 }
 
 .item-1tOPte[id|=now-playing-menu-join]::before {
-  --icon: url("data:image/svg+xml;charset=utf8,");
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M15 7.5V2H9v5.5l3 3 3-3zM7.5 9H2v6h5.5l3-3-3-3zM9 16.5V22h6v-5.5l-3-3-3 3zM16.5 9l-3 3 3 3H22V9h-5.5z'/%3E%3C/svg%3E");
 }
 
 .item-1tOPte[id|=now-playing-menu-spotify-play]::before {
@@ -2906,6 +3208,30 @@ While yes mods are separated to respective menus, settings icons being a module 
 
 .item-1tOPte#image-context-open-native-link::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6a2 2 0 0 0-2-2zm-7 6-4 4h3v6h2v-6h3l-4-4z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#friend-row-start-video-call::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M21.526 8.149C21.231 7.966 20.862 7.951 20.553 8.105L18 9.382V7C18 5.897 17.103 5 16 5H4C2.897 5 2 5.897 2 7V17C2 18.104 2.897 19 4 19H16C17.103 19 18 18.104 18 17V14.618L20.553 15.894C20.694 15.965 20.847 16 21 16C21.183 16 21.365 15.949 21.526 15.851C21.82 15.668 22 15.347 22 15V9C22 8.653 21.82 8.332 21.526 8.149Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#friend-row-start-voice-call::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M11 5V3C16.515 3 21 7.486 21 13H19C19 8.589 15.411 5 11 5ZM17 13H15C15 10.795 13.206 9 11 9V7C14.309 7 17 9.691 17 13ZM11 11V13H13C13 11.896 12.105 11 11 11ZM14 16H18C18.553 16 19 16.447 19 17V21C19 21.553 18.553 22 18 22H13C6.925 22 2 17.075 2 11V6C2 5.447 2.448 5 3 5H7C7.553 5 8 5.447 8 6V10C8 10.553 7.553 11 7 11H6C6.063 14.938 9 18 13 18V17C13 16.447 13.447 16 14 16Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#friend-row-remove-friend::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15 14c2.67 0 8 1.33 8 4v2H7v-2c0-2.67 5.33-4 8-4Zm0-2a4 4 0 1 1 0-8 4 4 0 0 1 0 8ZM5 9.59l2.12-2.13 1.42 1.42L6.41 11l2.13 2.12-1.42 1.42L5 12.41l-2.12 2.13-1.42-1.42L3.59 11 1.46 8.88l1.42-1.42L5 9.59Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#stream-context-watch::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46A11.804 11.804 0 0 0 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78 3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#stream-context-report-stream-problem::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6.002h-6v-3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v19h2v-8h5.586l-2.293 2.293A1.002 1.002 0 0 0 9 18.002h11a1 1 0 0 0 1-1v-10a1 1 0 0 0-1-1Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#channel-call-overflow-popout-report-stream-problem::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6.002h-6v-3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v19h2v-8h5.586l-2.293 2.293A1.002 1.002 0 0 0 9 18.002h11a1 1 0 0 0 1-1v-10a1 1 0 0 0-1-1Z'/%3E%3C/svg%3E");
 }
 
 .item-1tOPte#user-settings-cog-My_Account::before {
@@ -3010,6 +3336,14 @@ While yes mods are separated to respective menus, settings icons being a module 
 
 .item-1tOPte#user-settings-cog-Developer_Options::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Zm0 8h16a1 1 0 0 1 1 1v.67l-2.5-1.11-6.5 2.88V15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1Zm0 8h8c.06 2.25 1 4.4 2.46 6H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1ZM8 5h1V3H8v2Zm0 8h1v-2H8v2Zm0 8h1v-2H8v2ZM4 3v2h2V3H4Zm0 8v2h2v-2H4Zm0 8v2h2v-2H4Zm13.5-7 4.5 2v3c0 2.78-1.92 5.37-4.5 6-2.58-.63-4.5-3.22-4.5-6v-3l4.5-2Zm0 1.94L15 15.06v2.66c0 1.54 1.07 2.98 2.5 3.34v-7.12Z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#user-settings-cog-Hotspot_Options::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3v-3h18v3z'/%3E%3C/svg%3E");
+}
+
+.item-1tOPte#spotify-toggle-no-accounts::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23fff' d='M12.761 7.08c-2.581-1.534-6.84-1.675-9.303-.926a.749.749 0 1 1-.435-1.435c2.828-.859 7.53-.693 10.502 1.072a.75.75 0 0 1-.764 1.29Zm-.015 2.298a.627.627 0 0 1-.862.206c-2.16-1.327-5.454-1.711-8.01-.936A.627.627 0 0 1 3.51 7.45c2.92-.885 6.549-.456 9.03 1.067a.626.626 0 0 1 .206.86Zm-1.035 2.165a.499.499 0 0 1-.689.167c-1.886-1.159-4.26-1.42-7.056-.779a.503.503 0 0 1-.223-.981c3.06-.703 5.684-.4 7.802.9.236.145.31.456.166.693ZM0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8Z'/%3E%3C/svg%3E");
 }
 
 .item-1tOPte#user-settings-cog-BetterDiscord::before {
@@ -3162,6 +3496,7 @@ While yes mods are separated to respective menus, settings icons being a module 
   -webkit-mask-image: var(--avatar-shape), url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1v1h2V1z'/%3E%3C/svg%3E");
 }
 
+.folderIconWrapper-1_bOZe,
 .wrapperSimple-19ogV2,
 .wrapper-3t9DeA {
   border-radius: 0;
@@ -3269,4 +3604,4 @@ While yes mods are separated to respective menus, settings icons being a module 
   -webkit-mask: none;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22betterdiscord_dev.scss%22,%22src/_external_modules.scss%22,%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/config/_context_icons_config.scss%22,%22src/i18n/_index.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/_utils.scss%22,%22src/base/_chat.scss%22,%22src/material_design/_ripple.scss%22,%22src/base/_channels.scss%22,%22src/base/_context_menu.scss%22,%22src/base/modals/_user_profile.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/home/_friends.scss%22,%22src/home/_sidebar.scss%22,%22src/guild/_sidebar.scss%22,%22src/voice_chat/_people.scss%22,%22src/settings/_settings_base.scss%22,%22src/settings/_settings_other.scss%22,%22src/settings/pages/_edit_profile.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22src/client_mods/powercord/_better_settings.scss%22,%22src/client_mods/powercord/_show_sessions.scss%22,%22modules/appearance/space_dash.scss%22,%22modules/appearance/hide_nitro.scss%22,%22modules/appearance/icons/settings_icons.scss%22,%22modules/appearance/icons/context_icons.scss%22,%22modules/appearance/icons/shapes_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;ACCA;AACQ;AAER;AACA;AACA;AACQ;AACR;AACA;AACA;AACA;AACA;AAEA;AACQ;ACZA;ADaR;AEdA;EAAM;;;AACN;EAGC;EACA;EAGA;EACA;EACA;EACA;EAGA;EACG;EACH;EACA;EAGA;EAGA;EACA;EAGA;EACA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;ACxGD;EAEE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AAIF;AAAA;EAGE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;ACrCF;EACE;EACA;;;ACFF;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AJzKJ;EAEC;EACA;EACA;;;AAGD;EACI;EACA;EACA;;;AAMJ;EACC;;;AAED;AAAA;EAEC;;;AAGD;EACC;;;AAID;EACC;;;AK7BA;EACC;;;AAED;EAEE;EAID;EAGA;EACA;EACA;EAGA;EACA;EACA;EACA;;;ACpBF;EACC;EACA;;;AAID;AAAA;AAAA;EAGC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAeC;;;AAKA;AAAA;EACC;;;AACA;AAAA;EACC;EACA,QAMyB;;;AAV3B;AAAA;AAAA;EACC;;;AACA;AAAA;AAAA;EACC;EACA,QAWyB;;;AAI5B;EACC;;;AAID;EACC;;;AAED;EACC;;;AAID;EACC;;;AAID;EACC;;;ACtED;EACC;EACA;EACA;EACA;;;AAMA;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAOA;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAOF;EACC;;;AAED;EACC;;;AAQF;EACC;;;AAID;EACC;;;AAGD;EACC;;;AAID;EACC;;;AACA;EACC;;;AAKF;EACC;;;AAID;EACC;;;AAID;EACC;;;AAID;EACC;EACA;;;AAID;EACC;;;AChHD;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EACC;;;ACVU;AAAA;ECGT;EACA;;;AACA;AAAA;EACC;;;AAMH;EACC;EDNA;EACA;ECWA;EACA;;;AANA;EACC;;;AASF;EDjBC;EACA;;;ACmBD;EACC;EACA;EACA;;;AAED;EACC;;;AAID;EACC;EACA;;;AAED;EACC;;;AAED;EACC;EACA;;;AAED;EACC;EACA;;;AAGA;EACC;;;ACID;EACC;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA,OAxBQ;EAyBR,QAxBS;EA2BR,KAzBK;EA0BL,MAzBM;;;AAsCR;EACC;EACA;EACA;;;AD/BF;EACC;;;AAMD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;;;AE9GD;AAAA;EAEC;EACG;EACH;EACA;;;AAED;EACC;EACA;;;AAaD;AAAA;EATC,kBAWsC;;;AATtC;AAAA;AAAA;AAAA;EAIC,OAKsB;;;AAExB;EACC;;;AAED;EACC;;;AAED;AAAA;EAEC;;;AC/BD;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EFCC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AG/CF;EACE;;;AAGF;EACE;EACA;;;ACIA;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AApCF;AAAA;EACC;EACA;;;AACA;AAAA;AAAA;EAEC;;;AAIF;AAAA;EACC;EACA;;;AAGD;AAAA;EACC;;;AAGD;AAAA;EACC;;;AACA;AAAA;EACC;;;AAIF;AAAA;EACC;EACA;;;AACA;AAAA;EACC;;;AAKD;AAAA;AAAA;EAEC;;;AAkBJ;EACC;;;AAGD;EJvDC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AI2BD;EAEC;;;AAED;EACC;;;AAGD;EAGC;;;AAED;EACC;;;AAOF;AAAA;EAEC;EACA;;;AAGD;AAAA;AAAA;EAGC;;;AAGD;AAAA;EAEC;EACA;;;AAGD;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AC/GA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAoBC;EACA;;;AAGA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;;;AAED;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAIC;EACA;EACA;EACA;;;AAKF;EAGC;;;AAGD;EACC;;;AAGD;EACC;;;AAGD;EACC;;;AAED;EACC;;;AAGD;EACC;;;AAGD;AAAA;EAEC;;;AAED;EACC;;;AAED;EACC;;;AAKA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;;AACA;EACC;;;AAIF;EACC;;;AAMD;AAAA;EAEC;;;AAEQ;EACR;;;AAKF;AAAA;AAAA;EAGC;EACA;EACA;;;AAKD;EACC;;;ACzID;EACC;;;ARCU;AAAA;ESKT;;;AAGF;EACC;;;ATTU;AAAA;ESWT;;;ACZF;ERWC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AS7CF;ETWC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AU9CF;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAGD;EACC;EACA;;;ACTD;EAGE;EAMD;EACA;EACA;EAGA;EAGA;EACA;EAGA;EACA;EACA;;;AAOA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EACC;EACA;EACA;;;AAEE;AAAA;AAAA;AAAA;EACI;;;AAIR;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EX1CC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AWYF;EACC;;;AAGD;EACC;EACA;;;AAKD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAWC;EACA;EACA;EACA;;;AAEA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAEC;EACA;EACA;EACA;EACA;;;AAOD;EACC,SAiBoB;EAfpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAsBoB;EApBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA2BoB;EAzBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAgCoB;EA9BpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAqCoB;EAnCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA0CoB;EAxCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA+CoB;EA7CpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAoDoB;EAlDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAyDoB;EAvDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAqDF;EACC;;;AAID;AAAA;EAEC;;;AAGA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC7KF;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;;;ACfD;EACC;EACA;;;ACGD;EACC;EACA;;;AAMA;EACC;;;AAGD;EACC;;;AAGD;EACC;;;ACjBF;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACvBA;EACC;EACA;EACA;EACA;;;AAEA;EACC;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;;;AChBF;EACC;;;AAGD;EACC;;;AAGD;EACC;;;ACTF;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC;;;ACpEF;EACC;;AAEA;EACC;;;AAGF;EACC;EACA;;AACA;EACC;;AAED;EAGC;;;AAGF;AAAA;EAEC;;;AAED;EACC;EACA;EACA;;;AAED;EACC;EACA;;;AAED;EACC;;;AAED;EACC;;;AAGA;EACC;EACA;EACA;;;ACjBA;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AA+IF;AAAA;AAAA;AAhJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AC4DH;EACC;;;AAMA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;AA/ED;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAyHD;EACC;;AA7ID;EACC;;;AAwJF;EACC;;;AAED;EACC;;;AAtJD;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;;AAuBD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAGD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AALD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAfD;EACC;;AACA;EACC;;AAED;EACC;;;AAQF;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACmCF;EACC;EACA;EACA;;;AAzFD;EACC;;;AACA;EACA;;;AAED;EACC;EACA;EACA;EACA;EACA;;;AAoFD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAxEA;EACA;EACA;EACA;EACA;;;AAqFA;AAAA;EAzFA;EACA;EACA;EACA;EACA;EAwFC;;AAGA;AAAA;EA/FD;EACA;EACA;EACA;EACA;EA6FE;EAEA;EACA;;;AAGF;EACC;EAGA;EACA;EACA;EAEA;EACA;EACA;EACA;EAlHD;EACA;EACA;EACA;EACA;EAgHC;EACA;;;AAIA;AAAA;EACC;;;AAMD;EAhID;EACA;EACA;EACA;EACA;EA8HE;EACA;EACA;EACA;EACA;;;AAGF;EAzIA;EACA;EACA;EACA;EACA;EAuIC;EACA;EAGA;EACA;EACA;EAEA;EACA;;;AAED;EACC;;;AAQA;AAAA;AAAA;EACC;EAEA;;;AAIF;AAAA;EAEC;;;AAGD;EACC;EACA;;;AAvIA;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAwID;AAAA;AAAA;AAAA;EAGC;EACA;EACA;;;AAKF;AAAA;EAEC;;;AAID;EACC;EACA%22,%22file%22:%22Pixelcord.theme.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22betterdiscord_dev.scss%22,%22src/_external_modules.scss%22,%22src/base/_fonts.scss%22,%22src/config/_base.scss%22,%22src/config/_material.scss%22,%22src/config/_context_icons_config.scss%22,%22src/i18n/_index.scss%22,%22src/base/_window.scss%22,%22src/base/_discord_qol.scss%22,%22src/base/_colors.scss%22,%22src/base/_guild_scroller.scss%22,%22src/_utils.scss%22,%22src/base/_chat.scss%22,%22src/material_design/_ripple.scss%22,%22src/base/_chat_icons.scss%22,%22src/base/_channels.scss%22,%22src/base/_context_menu.scss%22,%22src/controls/_buttons.scss%22,%22src/controls/_textbox.scss%22,%22src/controls/_colorpicker.scss%22,%22src/controls/_tabs.scss%22,%22src/home/_sidebar.scss%22,%22src/guild/_sidebar.scss%22,%22src/voice_chat/_people.scss%22,%22src/settings/_settings_base.scss%22,%22src/settings/_settings_other.scss%22,%22src/settings/pages/_edit_profile.scss%22,%22src/client_mods/powercord/_base.scss%22,%22src/client_mods/powercord/_powerclock.scss%22,%22src/client_mods/powercord/_better_settings.scss%22,%22src/client_mods/powercord/_show_sessions.scss%22,%22src/client_mods/_external_module_fixes.scss%22,%22src/pages/_friends.scss%22,%22src/pages/_server_discovery.scss%22,%22src/modals/_user_profile.scss%22,%22modules/appearance/space_dash.scss%22,%22modules/appearance/hide_nitro.scss%22,%22modules/appearance/gradients.scss%22,%22modules/appearance/icons/settings_icons.scss%22,%22modules/appearance/icons/context_icons.scss%22,%22modules/appearance/icons/shapes_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;ACCA;AACQ;AAER;AACA;AACA;AACQ;AACR;AACA;AACA;AACA;AACA;AAEA;AACQ;ACZA;ADaR;AEdA;EAAM;;;AACN;EAGC;EACA;EAGA;EACA;EACA;EACA;EAGA;EACG;EACH;EACA;EAGA;EAGA;EACA;EAGA;EACA;EAIA;EAEA;EACA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;AAED;EACC;EAGA;EACA;EACA;EACA;EAGA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;EAGA;EACA;EAGA;EAGA;EAGA;;;AC/GD;EAEE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;AAIF;AAAA;EAGE;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;EAAA;;;ACrCF;EACE;EACA;;;ACFF;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AAEJ;EACI;EACA;EACA;EACA;;;AJzKJ;EAEC;EACA;EACA;;;AAGD;EACI;EACA;EACA;;;AAMJ;EACC;;;AAED;AAAA;EAEC;;;AAGD;EACC;;;AAID;EACC;;;AK7BA;EACC;;;AAED;EAEE;EAID;EAGA;EACA;EACA;EAGA;EACA;EACA;EACA;;;ACpBF;EACC;EACA;;;AAID;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAiBC;;;AAKA;AAAA;EACC;;;AAEA;AAAA;EACC;EACA,QAOyB;;;AAZ3B;AAAA;AAAA;EACC;;;AAEA;AAAA;AAAA;EACC;EACA,QAayB;;;AAI5B;AAAA;AAAA;EAGC;;;AAID;EACC;;;AAID;EACC;;;AAqBA;EACC;EACA;EACA;;;AAEA;EAKC;EACA;EACA;EACA;EACA;EAEA;EACA;;;AASA;EACC;;;AAGD;EACC;EACA;EACA;EAEA;EACA;EACA;;;AAKH;EACC;EACA;;;AAKF;EACC;;;AAID;EACC;;;AAID;EACC;;;AAID;EACC;;;AAID;EACC;;;ACzJD;EACC;EACA;EACA;EACA;;;AAMA;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAOA;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAED;AAAA;EACC;;;AAOF;EACC;;;AAED;EACC;;;AAQF;EACC;;;AAID;EACC;;;AAGD;EACC;;;AAID;EACC;;;AACA;EACC;;;AAKF;EACC;;;AAID;EACC;;;AAID;EACC;;;AAID;EACC;EACA;;;AAID;EACC;;;AChHD;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EACC;;;ACVU;AAAA;ECGT;EACA;;;AACA;AAAA;EACC;;;AAMH;EACC;EDNA;EACA;ECWA;EACA;;;AANA;EACC;;;AASF;EDjBC;EACA;;;ACmBD;EACC;EACA;EACA;;;AAED;EACC;;;AAID;EACC;EACA;;;AAED;EACC;;;AAED;EACC;EACA;;;AAED;EACC;EACA;;;AAGA;EACC;;;ACID;EACC;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA,OAxBQ;EAyBR,QAxBS;EA2BR,KAzBK;EA0BL,MAzBM;;;AAsCR;EACC;EACA;EACA;;;AD/BF;EACC;;;AAMD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;;;AAID;EACC;;;AAGD;EACC;;;AEpHD;EACC;;;AAsBD;EACC;EACA;EACA;EACA;;;AAdA;EACC;EACA;EACA;EACA;EACA,kBAcsF;;;AAnBvF;EACC;EACA;EACA;EACA;EACA,kBARQ;;;AAGT;EACC;EACA;EACA;EACA;EACA,kBARQ;;;AAGT;EACC;EACA;EACA;EACA;EACA,kBAiB4F;;;ACtC9F;AAAA;EAEC;EACG;EACH;EACA;;;AAED;EACC;EACA;;;AAcA;EACC;EACA;;;AAGD;EAfA,kBAiBuC;;;AAfvC;EAIC,OAWuB;;;AAGzB;EACC;;;AAED;EACC;;;AAED;AAAA;EAEC;;;ACtCD;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EHCC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsB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E;AAAA;AAAA;AAAA;EACI;;;AAIR;EACC;;;AAGD;AAAA;EAEC;EACA;;;AAID;EX1CC;;;AAEA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;;AAOD;EACC;EACA;EACA;;;AWYF;EACC;;;AAGD;EACC;EACA;;;AAKD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAWC;EACA;EACA;EACA;;;AAEA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAEC;EACA;EACA;EACA;EACA;;;AAOD;EACC,SAiBoB;EAfpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAsBoB;EApBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA2BoB;EAzBpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAgCoB;EA9BpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAqCoB;EAnCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA0CoB;EAxCpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SA+CoB;EA7CpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAoDoB;EAlDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAVD;EACC,SAyDoB;EAvDpB;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAqDF;EACC;;;AAID;AAAA;EAEC;;;AAGA;AAAA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AC7KF;EACC;;;AAED;EACC;EACA;EACA;EACA;EACA;;;ACfD;EACC;EACA;;;ACGD;EACC;EACA;;;AAMA;EACC;;;AAGD;EACC;;;AAGD;EACC;;;ACjBF;EACC;EACA;EACA;;;AAGD;EACC;EACA;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGD;EACC;;;ACvBA;EACC;EACA;EACA;EACA;;;AAEA;EACC;EACA;EACA;;;AAED;EACC;EACA;EACA;EACA;;;AChBF;EACC;;;AAGD;EACC;;;AAGD;EACC;;;ACTF;EACC;;;ApBCU;AAAA;EqBKT;;;AAGF;EACC;;;ArBTU;AAAA;EqBWT;;;ACdF;EACC;;;AAED;EACC;;;ACJD;EACC;;;AAID;EACC;EACA;;;AAID;AAAA;EAEC;;;ACZD;EACC;EACA;EAEA;;AAID;EACC;;;AAID;EACC;;;AAiBD;EACC;;;AAgCC;EACC;;AAGF;EACC;;;ACpEF;EACC;;AAEA;EACC;;;AAGF;EACC;EACA;;AACA;EACC;;AAED;EAGC;;;AAGF;AAAA;EAEC;;;AAED;EACC;EACA;EACA;;;AAED;EACC;EACA;;;AAED;EACC;;;AAED;EACC;;;AAGA;EACC;EACA;EACA;;;AAKF;EACC;;;AC/CA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACuBA;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAgJF;AAAA;AAAA;AAjJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AC4DH;EACC;;;AAMA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;AA/ED;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AAnBD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;AA0HD;EACC;;AA9ID;EACC;;AADD;EACC;;AAMF;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;;AA6IF;EACC;;;AAED;EACC;;;AA7JD;EACC;;AACA;EACC;EACA;EACA;;AACA;EACC;EACA;;AAGF;EACC;;;AAuBD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAGD;EACC;;;AADD;EACC;;;AALD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAGD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AALD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAfD;EACC;;AACA;EACC;;AAED;EACC;;;AAQF;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;ACmCF;EACC;EACA;EACA;;;AAzFD;EACC;;;AACA;EACA;;;AAED;EACC;EACA;EACA;EACA;EACA;;;AAoFD;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;EAxEA;EACA;EACA;EACA;EACA;;;AAqFA;AAAA;EAzFA;EACA;EACA;EACA;EACA;EAwFC;;AAGA;AAAA;EA/FD;EACA;EACA;EACA;EACA;EA6FE;EAEA;EACA;;;AAGF;EACC;EAGA;EACA;EACA;EAEA;EACA;EACA;EACA;EAlHD;EACA;EACA;EACA;EACA;EAgHC;EACA;;;AAIA;AAAA;EACC;;;AAMD;EAhID;EACA;EACA;EACA;EACA;EA8HE;EACA;EACA;EACA;EACA;;;AAGF;EAzIA;EACA;EACA;EACA;EACA;EAuIC;EACA;EAGA;EACA;EACA;EAEA;EACA;;;AAED;EACC;;;AAQA;AAAA;AAAA;EACC;EAEA;;;AAIF;AAAA;AAAA;EAGC;;;AAGD;EACC;EACA;;;AAxIA;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAZD;AAAA;EAEC;;AAGD;AAAA;EAEC;;AAGD;AAAA;EAEC;;;AAyID;AAAA;AAAA;AAAA;EAGC;EACA;EACA;;;AAKF;AAAA;EAEC;;;AAID;EACC;EACA%22,%22file%22:%22Pixelcord.theme.css%22%7D */

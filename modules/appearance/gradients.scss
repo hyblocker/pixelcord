@@ -1,0 +1,13 @@
+﻿// Adds a shit ton of gradients basically
+
+@mixin replaceAvatar($original, $new) {
+	.avatar-VxgULZ[src$="#{$original}.png"] {
+		content: none;
+	}
+}
+
+@include replaceAvatar("7c8f476123d28d103efe381543274c25", ""); // green
+@include replaceAvatar("3c6ccb83716d1e4fb91d3082f6b21d77", ""); // red
+@include replaceAvatar("1f0bfc0865d324c2587920a7d80c609b", ""); // blue
+@include replaceAvatar("6f26ddd1bf59740c536d2274bb834a05", ""); // yellow
+@include replaceAvatar("c09a43a372ba81e3018c3151d4ed4773", ""); // gray

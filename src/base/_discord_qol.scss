@@ -9,28 +9,23 @@
 	mask-size: cover;
 }
 
-// Remove "shinyness" CTA, bc fuck nitro
-.buttonShine-1CSUM8,
-.shineContainer-1HHuZ1,
-.shineContainerDefault-2bbFgu {
-	display: none;
-}
-
 // Remove the ability to highlight shit you don't need
-.nameTag-3uD-yy,									// Username, status, discriminator; in the bottom left corner; also disables Ctrl+A
-.header-23xsNx,										// Messages headers (i.e. username, timestamp, pronouns, badges, etc)
-.embedProvider-3k5pfl,								// Embed provider (e.g. YouTube)
-.embedAuthor-3l5luH,								// Embed author (e.g. TheFunny.mp4)
-.embedVideoImageComponent-34z3di,					// Embed content (you copy the link or right click copy anyway)
-.connectedAccount-2Jb-Z0,							// Connected accounts
-.connectedAccountName-E1KzaT,						// Connected account username
-.profileBannerPreview-3_l0Wd .headerText-1vVs-U,	// Profile preview (Username)
-.profileBannerPreview-3_l0Wd .markup-2BOw-j,		// Profile preview (About me)
-.member-1q7VfX .nameTag-3wmDUk .name-8yzEIY,		// Username (Members page)
-.member-1q7VfX .nameTag-3wmDUk .tag-1YGWN9,			// Discriminator (Members page)
-.perks-32J1d0,										// Boost perks
-.carouselItemSelected-JFUsnG,						// Boost perks (clicked)
-.cumcord-plugin-card .markdown-11q6EU				// Cumcord plugins
+.nameTag-3uD-yy, // Username, status, discriminator; in the bottom left corner; also disables Ctrl+A
+.header-23xsNx, // Messages headers (i.e. username, timestamp, pronouns, badges, etc)
+.embedProvider-3k5pfl, // Embed provider (e.g. YouTube)
+.embedAuthor-3l5luH, // Embed author (e.g. TheFunny.mp4)
+.embedVideoImageComponent-34z3di, // Embed content (you copy the link or right click copy anyway)
+.connectedAccount-2Jb-Z0, // Connected accounts
+.connectedAccountName-E1KzaT, // Connected account username
+.profileBannerPreview-3_l0Wd .headerText-1vVs-U, // Profile preview (Username)
+.profileBannerPreview-3_l0Wd .markup-2BOw-j, // Profile preview (About me)
+.member-1q7VfX .nameTag-3wmDUk .name-8yzEIY, // Username (Members page)
+.member-1q7VfX .nameTag-3wmDUk .tag-1YGWN9, // Discriminator (Members page)
+.timestamp-3ZCmNB, // Timestamps
+.bot-2Fta1w, // Bot tag
+.perks-32J1d0, // Boost perks
+.carouselItemSelected-JFUsnG, // Boost perks (clicked)
+.cumcord-plugin-card .markdown-11q6EU // Cumcord plugins
 {
 	user-select: none;
 }
@@ -39,20 +34,30 @@
 @mixin channelIconResize($size) {
 	& > .wrapper-3WhCwL.mention.iconMention-1_KJ_B {
 		padding-left: (math.div($size, 1.1));
+
 		& > .channelIcon-1MN1lz {
 			width: (math.div($size, 1.3));
 			height: $size;
 		}
 	}
 }
+
 .topic-TCb_qw,
 .embedFooterText-28V_Wb {
 	@include channelIconResize(1rem);
 }
+
 .embedDescription-1Cuq9a,
 .embedFieldValue-nELq2s,
 .repliedTextContent-1R3vnK {
 	@include channelIconResize(1.05rem);
+}
+
+// Remove "shinyness" CTA, bc fuck nitro
+.buttonShine-1CSUM8,
+.shineContainer-1HHuZ1,
+.shineContainerDefault-2bbFgu {
+	display: none;
 }
 
 // fuck threads
@@ -60,12 +65,75 @@
 	display: none;
 }
 
-// fuck welcome CTAs
+// fuck welcome sticker CTAs
 .welcomeCTA-2orRfU {
 	display: none;
 }
-:root {
-	--open-profile-via-pfp-friends: true;
+
+// also fuck stickers
+// .clickableSticker-3HmpgV {
+// 	& .assetWrapper-3GNt0z {
+// 		display: none;
+// 	}
+// 
+// 	&::after {
+// 		content: var(--sticker-substitute-text);
+// 		display: block;
+// 		height: 1rem;
+// 
+// 		color: var(--sticker-substitute-color);
+// 		font-weight: 400;
+// 		font-style: italic;
+// 	}
+// }
+
+.message-2qnXI6 {
+	.stickerAsset-13j1W0 {
+		position: relative;
+		height: 160px;
+		width: 160px;
+
+		&[alt*=", Choco, "],
+		&[alt*=", Sup, "],
+		&[alt*=", Scream, "],
+		&[alt*=", Wave, "]  {
+
+			content: var(--sticker-substitute-text);
+			display: block;
+			height: 0;
+			padding-top: 1rem;
+			width: fit-content;
+
+			background-color: var(--sticker-substitute-color);
+			-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='0' y='15' fill='black' font-family='Google Sans' font-weight='400' font-style='italic'%3E*sticker*%3C/text%3E%3C/svg%3E");
+		}
+	}
+
+	.clickableSticker-3HmpgV {
+		& > div[aria-label*=", Choco, "],
+		& > div[aria-label*=", Sup, "],
+		& > div[aria-label*=", Scream, "],
+		& > div[aria-label*=", Wave, "] {
+			& .stickerAsset-13j1W0 {
+				display: none;
+			}
+
+			&::after {
+				content: var(--sticker-substitute-text);
+				display: block;
+				height: 1rem;
+
+				color: var(--sticker-substitute-color);
+				font-weight: 400;
+				font-style: italic;
+			}
+		}
+	}
+
+	.assetWrapper-3GNt0z {
+		height: fit-content !important;
+		width: fit-content !important;
+	}
 }
 
 // attachments' "open link in browser" text may wrap on small width images, fix it because i have severe OCD!
@@ -76,4 +144,19 @@
 // emoji popouts' guild icon is small
 .guildSection-1EoFKd > .flex-1xMQg5 > svg {
 	min-width: 32px;
+}
+
+// for some reason, sometimes file uploads have tiny as shit icons
+.audioMetadata-3zOuGv::before {
+	min-width: 24px;
+}
+
+// also truncate file names...
+.audioMetadata-3zOuGv .metadataContent-3c_ZXw {
+	text-overflow: ellipsis;
+}
+
+// Hide the help button; if you know how to install a discord mod AND a theme, you dont need help on how to use discord as a platform lol
+.iconWrapper-2OrFZ1 + .anchor-3Z-8Bb[href="https://support.discord.com"] {
+	display: none;
 }
