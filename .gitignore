@@ -2,3 +2,8 @@ index.css.map
 manifest.json
 powercord_manifest.json
 .vscode/settings.json
+.idea
+modules/appearance/icons/context_icons.css
+modules/appearance/icons/replace_icons.css
+modules/appearance/icons/settings_icons.css
+modules/appearance/icons/shapes_icons.css
