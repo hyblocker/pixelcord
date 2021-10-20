@@ -3,7 +3,7 @@
 $header-height: 6;
 
 .scroller-1Bvpku,
-.circleIconButton-1QV--U,
+.circleIconButton-1XqULR,
 .childWrapper-anI2G9 {
 	background-color: cardbg($header-height, true);
 }
@@ -27,4 +27,10 @@ $header-height: 6;
 
 .guildSeparator-33mFX6 {
 	background-color: var(--navdrawer-separator);
+}
+.circleIconButton-1XqULR {
+	color: var(--online);
+}
+.circleIconButton-1XqULR.selected-2jcQaY {
+	background-color: var(--online);
 }
