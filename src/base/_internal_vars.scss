@@ -1,0 +1,13 @@
+﻿:root {
+
+    // Default font aliases
+    --font-primary: var(--font-header);
+    --font-secondary: var(--font-header);
+    --font-display: var(--font-header);
+    
+    // Theme helper default values
+    --mouseX: 50%;
+    --mouseY: 50%;
+    --clickX: 50%;
+    --clickY: 50%;
+}

@@ -3,20 +3,12 @@
 // Import Google Sans @ weight 700
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Google+Sans:wght@400&family=Google+Sans:wght@500&family=Google+Sans:wght@700&display=swap');
 
-:root {
-	// Default font aliases
-	--font-primary: var(--font-header);
-	--font-secondary: var(--font-header);
-	--font-display: var(--font-header);
-}
 // Code blocks
 .textContainer-C0szpm pre, code, .multiInputLast-33BbRU input {
     font: 14px/20px var(--font-code) !important;
     font-weight: var(--code-weight);
     font-stretch: 100%;
 }
-
-
 
 // Bold headers
 .username-1A8OIy, .title-eS5yk3, .title-29uC1r, .modalTitle-37O4n6 .content-2Add9f {
