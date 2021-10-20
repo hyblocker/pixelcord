@@ -1,7 +1,7 @@
 {
     "name": "Pixelcord",
     "description": "Material Design Theme with numerous enhancements for Discord",
-    "version": "3.4.1",
+    "version": "3.4.2",
     "license": "GPL-2",
     "theme": "index.css",
     "consent": "false",
