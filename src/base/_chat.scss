@@ -87,7 +87,21 @@ html:not(.app-focused) {
 }
 // Reset css
 .cozy-3raOZG.hasThread-2k82W0::after {
-	top: 0px !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	border: none;
+}
+.cozy-3raOZG.hasThread-2k82W0::before {
+	content: "";
+	width: 2rem;
+	left: 2.2rem;
+	top: 3rem;
+	border-left: 2px solid var(--background-accent);
+	border-bottom: 2px solid var(--background-accent);
+	border-bottom-left-radius: 8px;
+	bottom: 29px;
+	position: absolute;
 }
 .cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::after {
 	border-left: none;
@@ -118,4 +132,37 @@ html:not(.app-focused) {
 // File embeds need accent color for ...
 .audioMetadata-3zOuGv .metadataContent-3c_ZXw {
 	color: var(--text-link);
+}
+
+
+// Replies redesign?
+.repliedMessage-VokQwo::before {
+	--reply-spacing: 0px;
+	border-color: var(--accent-transparent);
+}
+.repliedMessage-VokQwo {
+	background-color: var(--accent-transparent);
+	color: var(--accent);
+	width: fit-content;
+	padding: 4px;
+	border-radius: 4px;
+	& .username-1A8OIy {
+		opacity: 1;
+		color: var(--accent) !important;
+	}
+	#app-mount & {
+		margin-bottom: 0;
+	}
+	& .repliedTextPreview-2NBljf.clickable-1bVtEA:hover {
+		color: var(--accent);
+	}
+	& .wrapper-3WhCwL {
+		color: var(--accent);
+		font-weight: 700;
+	}
+	&.executedCommand-2GE3w2 .commandName-1klrjB,
+	& .timestamp-3ZCmNB {
+		color: var(--accent);
+		opacity: 0.7;
+	}
 }

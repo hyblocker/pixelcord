@@ -1,0 +1,14 @@
+﻿@import "../utils";
+
+.autocompleteRow-2OthDa {
+    .selected-1Tbx07 {
+        @include theming {
+            & .icon-3ZzoN7,
+            & .colorInteractiveActive-3Ip9Eu,
+            & .colorInteractiveNormal-PB7JN3 {
+                color: var(--accent);
+            }
+            background-color: var(--accent-transparent);
+        }
+    }
+}

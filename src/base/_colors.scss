@@ -94,7 +94,9 @@ $purple-color: "hsl(262, ";
 }
 
 // update app
-.updateIconForeground-3tnNZn {
+.updateIconForeground-3tnNZn,
+// Attach button (RPC)
+.attachButtonPlay-3iJ0mf {
 	fill: var(--green);
 }
 
@@ -112,4 +114,22 @@ $purple-color: "hsl(262, ";
 // Some text is green
 .base-1x0h_U[style*="color: hsl(139, "] {
 	color: var(--green) !important;
+}
+
+// BOT tag
+.botTagRegular-2HEhHi {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}
+
+// pins red badge
+.iconBadge-qZ4Ksk {
+	background-color: var(--red);
+}
+
+// Strikethroughs should be our red
+.strikethrough-otdQWt,
+.strikethrough-3Wiitd,
+.strikethrough-1n4ekb {
+	color: var(--red);
 }

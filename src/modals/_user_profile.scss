@@ -1,4 +1,6 @@
-﻿.customStatusText-2opeSw {
+﻿@import "../material_design/ripple";
+
+.customStatusText-2opeSw {
 	overflow-wrap: break-word;
 }
 
@@ -12,4 +14,10 @@
 .noTabBar-3ZjPNR,
 .tabBarContainer-37hZsr {
 	border: none;
+}
+
+// ripple my beloved
+.listRow-1iDGel {
+	position: relative;
+	@include ripple();
 }

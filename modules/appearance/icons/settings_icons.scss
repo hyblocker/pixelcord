@@ -9,9 +9,9 @@
 @import "../../../src/config/build_config";
 
 @mixin settingsIcon($aria_control, $svg, $icon-pack: $icons-outline) {
-  .side-8zPYf6 > .item-PXvHYJ[aria-controls="#{$aria_control}" i]:not(.role-3wi9Tf)::before {
-    --icon: #{svg-url(#{map-get($icon-pack, $svg)})};
-  }
+	.side-8zPYf6 > .item-PXvHYJ[aria-controls="#{$aria_control}" i]:not(.role-3wi9Tf)::before {
+		--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
+	}
 }
 
 // idk why but this is necessary ig?
@@ -20,168 +20,175 @@ $dummy: $icons-outline;
 //@mixin includeSettings($icon-pack: $icons-outline) {
 @mixin includeSettings($icon-pack: ()) {
 
-  @if $icon-pack == () {
-    $icon-pack: $icons-outline;
-  }
+	@if $icon-pack == () {
+		$icon-pack: $icons-outline;
+	}
 
-  // Default vars
-  .sidebarRegion-VFTUkN {
-    --settings-icon-color: currentColor;
-  }
+	// Default vars
+	.sidebarRegion-VFTUkN {
+		--settings-icon-color: currentColor;
+	}
 
-  // Hide icons on certain elements
-  .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf),
-  .sidebar-CFHs9e .ui-tab-bar-item {
-    display: flex;
-    align-items: center;
-  }
+	// Hide icons on certain elements
+	.side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf),
+	.sidebar-CFHs9e .ui-tab-bar-item {
+		display: flex;
+		align-items: center;
+	}
 
-  .page-3njELR {
-    & .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
-    & .sidebar-CFHs9e .ui-tab-bar-item::before {
-      content: none;
-    }
-  }
+	.page-3njELR {
+		& .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
+		& .sidebar-CFHs9e .ui-tab-bar-item::before {
+			content: none;
+		}
+	}
 
-  // Hide new discord icons
-  .item-PXvHYJ {
-    & .icon-3Povsy,
-    & .icon-Zc-uZZ {
-      display: none;
-    }
-  }
+	// Hide new discord icons
+	.item-PXvHYJ {
+		& .icon-3Povsy,
+		& .icon-Zc-uZZ {
+			display: none;
+		}
+	}
 
-  // Special cases: VC Debug menu - User pfps are icons
-  @for $i from 0 through 9 {
-    .side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:#{$i}"]:not(.role-3wi9Tf)::before {
-      content: none;
-    }
-  }
+	// Resize pfp
+	.avatar-1eTZ8m {
+		width: 22px !important;
+		height: 22px !important;
+	}
 
-  // Resize pfp
-  .avatar-1eTZ8m {
-    width: 22px !important;
-    height: 22px !important;
-  }
+	// Align text properly for consistency
+	.username-34pxWC {
+		padding-left: 6px;
+	}
 
-  // Align text properly for consistency
-  .username-34pxWC {
-    padding-left: 6px;
-  }
-  
-  // Add icons everywhere
-  .sidebar-CFHs9e > .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
-  .sidebar-CFHs9e .ui-tab-bar-item::before {
-    content: "";
-    width: 22px;
-    height: 22px;
-    left: 15px;
-    margin-right: 6px;
-    margin-top: -2px;
-    background: var(--settings-icon-color);
-    -webkit-mask: var(--icon) center/contain no-repeat;
-    mask: var(--icon) center/contain no-repeat;
-    flex-shrink: 0;
+	// Add icons everywhere
+	.sidebar-CFHs9e > .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
+	.sidebar-CFHs9e .ui-tab-bar-item::before {
+		content: "";
+		width: 22px;
+		height: 22px;
+		left: 15px;
+		margin-right: 6px;
+		margin-top: -2px;
+		background: var(--settings-icon-color);
+		-webkit-mask: var(--icon) center/contain no-repeat;
+		mask: var(--icon) center/contain no-repeat;
+		flex-shrink: 0;
 
-    // Default to powercord icon
-    --icon: #{svg-url(#{map-get($icon-pack, "placeholder")})};
-  }
+		// Default to powercord icon
+		--icon: #{svg-url(#{map-get($icon-pack, "placeholder")})};
+	}
 
-  // Stock Discord
+	// Special cases: VC Debug menu - User pfps are icons
+	@for $i from 0 through 9 {
+		.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:#{$i}"]:not(.role-3wi9Tf)::before,
+		.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:#{$i}"]:not(.role-3wi9Tf)::before {
+			content: none;
+		}
+	}
 
-  // Settings
-  @include settingsIcon("my-account-tab", "account", $icon-pack);
-  @include settingsIcon("profile-customization-tab", "user_profile_settings", $icon-pack);
-  @include settingsIcon("privacy-&-safety-tab", "shield", $icon-pack);
-  @include settingsIcon("moderation-tab", "shield", $icon-pack);
-  @include settingsIcon("authorized-apps-tab", "apps", $icon-pack);
-  @include settingsIcon("connections-tab", "connections", $icon-pack);
+	// Stock Discord
 
-  @include settingsIcon("subscriptions-tab", "subscriptions", $icon-pack);
-  @include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
-  @include settingsIcon("nitro-server-boost-tab", "boost", $icon-pack);
-  @include settingsIcon("library-inventory-tab", "gift", $icon-pack);
-  @include settingsIcon("billing-tab", "billing", $icon-pack);
+	// Settings
+	@include settingsIcon("my-account-tab", "account", $icon-pack);
+	@include settingsIcon("profile-customization-tab", "user_profile_settings", $icon-pack);
+	@include settingsIcon("privacy-&-safety-tab", "shield", $icon-pack);
+	@include settingsIcon("moderation-tab", "shield", $icon-pack);
+	@include settingsIcon("authorized-apps-tab", "apps", $icon-pack);
+	@include settingsIcon("connections-tab", "connections", $icon-pack);
 
-  @include settingsIcon("appearance-tab", "appearance", $icon-pack);
-  @include settingsIcon("accessibility-tab", "accessibility", $icon-pack);
-  @include settingsIcon("voice-&-video-tab", "voice_settings", $icon-pack);
-  @include settingsIcon("text-&-images-tab", "text__images", $icon-pack);
-  @include settingsIcon("notifications-tab", "notifications", $icon-pack);
-  @include settingsIcon("keybinds-tab", "keyboard", $icon-pack);
-  @include settingsIcon("language-tab", "locale", $icon-pack);
-  @include settingsIcon("windows-tab", "monitor", $icon-pack);
-  @include settingsIcon("streamer-mode-tab", "stream", $icon-pack);
-  @include settingsIcon("advanced-tab", "advanced", $icon-pack);
+	@include settingsIcon("subscriptions-tab", "subscriptions", $icon-pack);
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("nitro-server-boost-tab", "boost", $icon-pack);
+	@include settingsIcon("library-inventory-tab", "gift", $icon-pack);
+	@include settingsIcon("billing-tab", "billing", $icon-pack);
 
-  @include settingsIcon("game-activity-tab", "game_activity", $icon-pack);
-  @include settingsIcon("overlay-tab", "game", $icon-pack);
+	@include settingsIcon("appearance-tab", "appearance", $icon-pack);
+	@include settingsIcon("accessibility-tab", "accessibility", $icon-pack);
+	@include settingsIcon("voice-&-video-tab", "voice_settings", $icon-pack);
+	@include settingsIcon("text-&-images-tab", "text__images", $icon-pack);
+	@include settingsIcon("notifications-tab", "notifications", $icon-pack);
+	@include settingsIcon("keybinds-tab", "keyboard", $icon-pack);
+	@include settingsIcon("language-tab", "locale", $icon-pack);
+	@include settingsIcon("windows-tab", "monitor", $icon-pack);
+	@include settingsIcon("streamer-mode-tab", "stream", $icon-pack);
+	@include settingsIcon("advanced-tab", "advanced", $icon-pack);
 
-  @include settingsIcon("changelog-tab", "changelog", $icon-pack);
-  @include settingsIcon("hypesquad-online-tab", "hypesquad", $icon-pack);
-  @include settingsIcon("experiments-tab", "experiment", $icon-pack);
-  @include settingsIcon("developer-options-tab", "developer", $icon-pack);
-  @include settingsIcon("hotspot-options-tab", "cta", $icon-pack);
+	@include settingsIcon("game-activity-tab", "game_activity", $icon-pack);
+	@include settingsIcon("overlay-tab", "overlay", $icon-pack);
 
-  @include settingsIcon("logout-tab", "logout", $icon-pack);
+	@include settingsIcon("changelog-tab", "changelog", $icon-pack);
+	@include settingsIcon("hypesquad-online-tab", "hypesquad", $icon-pack);
+	@include settingsIcon("experiments-tab", "experiment", $icon-pack);
+	@include settingsIcon("developer-options-tab", "developer", $icon-pack);
+	@include settingsIcon("hotspot-options-tab", "cta", $icon-pack);
 
-  // Guild
-  @include settingsIcon("overview-tab", "overview", $icon-pack);
-  @include settingsIcon("roles-tab", "roles", $icon-pack);
-  @include settingsIcon("emoji-tab", "emoji", $icon-pack);
-  @include settingsIcon("stickers-tab", "sticker", $icon-pack);
-  @include settingsIcon("audit_log-tab", "audit_log", $icon-pack);
-  @include settingsIcon("integrations-tab", "game", $icon-pack);
-  @include settingsIcon("widget-tab", "boost", $icon-pack);
-  @include settingsIcon("guild_templates-tab", "boost", $icon-pack);
+	@include settingsIcon("logout-tab", "logout", $icon-pack);
 
-  @include settingsIcon("community-tab", "boost", $icon-pack);
-  @include settingsIcon("analytics-tab", "guild_insights", $icon-pack);
-  @include settingsIcon("community-tab", "boost", $icon-pack);
-  @include settingsIcon("community-tab", "boost", $icon-pack);
-  @include settingsIcon("community-tab", "boost", $icon-pack);
-  @include settingsIcon("community-tab", "boost", $icon-pack);
+	// Guild
+	@include settingsIcon("overview-tab", "overview", $icon-pack);
+	@include settingsIcon("roles-tab", "roles", $icon-pack);
+	@include settingsIcon("emoji-tab", "emoji", $icon-pack);
+	@include settingsIcon("stickers-tab", "sticker", $icon-pack);
+	@include settingsIcon("audit_log-tab", "audit_log", $icon-pack);
+	@include settingsIcon("integrations-tab", "game", $icon-pack);
+	@include settingsIcon("widget-tab", "widgets", $icon-pack);
+	@include settingsIcon("guild_templates-tab", "template", $icon-pack);
 
-  @include settingsIcon("guild_premium-tab", "boost", $icon-pack);
+	@include settingsIcon("community-tab", "people_wave", $icon-pack);
+	@include settingsIcon("analytics-tab", "guild_insights", $icon-pack);
+	@include settingsIcon("partner-tab", "partner", $icon-pack);
+	@include settingsIcon("discovery-tab", "explore", $icon-pack);
+	@include settingsIcon("member_verification-tab", "verification", $icon-pack);
+	@include settingsIcon("community_welcome-tab", "hand_wave", $icon-pack);
 
-  @include settingsIcon("members-tab", "boost", $icon-pack);
-  @include settingsIcon("instant_invites-tab", "invites", $icon-pack);
-  @include settingsIcon("bans-tab", "ban", $icon-pack);
+	@include settingsIcon("guild_premium-tab", "boost", $icon-pack);
 
-  @include settingsIcon("delete-tab", "delete", $icon-pack);
+	@include settingsIcon("members-tab", "members", $icon-pack);
+	@include settingsIcon("instant_invites-tab", "invites", $icon-pack);
+	@include settingsIcon("bans-tab", "ban", $icon-pack);
 
-  // Channel
-  @include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("delete-tab", "delete", $icon-pack);
+
+	// Channel
+	@include settingsIcon("permissions-tab", "permissions", $icon-pack);
+	
+	// VC Debug
+	@include settingsIcon("default:transport:0-tab", "download_rate", $icon-pack);
+	@include settingsIcon("default:outbound:0-tab", "upload_rate", $icon-pack);
+	@include settingsIcon("stream:transport:0-tab", "download_rate", $icon-pack);
+	@include settingsIcon("stream:outbound:0-tab", "upload_rate", $icon-pack);
 
 
-  /*
-  While yes mods are separated to respective menus, settings icons being a module cant be separated sadly :(
-  */
+	/*
+	While yes mods are separated to respective menus, settings icons being a module cant be separated sadly :(
+	*/
 
-  // Mods
+	// Mods
 
-  // Powercord
-  @include settingsIcon("pc-general-tab", "powercord", $icon-pack);
-  @include settingsIcon("pc-modulemanager-plugins-tab", "plugins", $icon-pack);
-  @include settingsIcon("pc-modulemanager-themes-tab", "themes", $icon-pack);
-  @include settingsIcon("pc-updater-tab", "updater", $icon-pack);
+	// Cumcord
+	@include settingsIcon("cumcord_plugins-tab", "cumcord", $icon-pack);
+	@include settingsIcon("cumcord_quickcss-tab", "css_editor", $icon-pack);
 
-  // ploogins
+	// Better Discord
+	@include settingsIcon("settings-tab", "betterdiscord", $icon-pack);
+	@include settingsIcon("customcss-tab", "css_editor", $icon-pack);
+	@include settingsIcon("plugins-tab", "plugins", $icon-pack);
+	@include settingsIcon("themes-tab", "themes", $icon-pack);
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
 
-  // Goosemod
-  @include settingsIcon("gm-settings-tab", "goosemod", $icon-pack);
-  @include settingsIcon("gm-changelog-tab", "changelog", $icon-pack);
+	// Goosemod
+	@include settingsIcon("gm-settings-tab", "goosemod", $icon-pack);
+	@include settingsIcon("gm-changelog-tab", "changelog", $icon-pack);
 
-  // Cumcord
-  @include settingsIcon("cumcord_plugins-tab", "cumcord", $icon-pack);
-  @include settingsIcon("cumcord_quickcss-tab", "css_editor", $icon-pack);
+	// Powercord
+	@include settingsIcon("pc-general-tab", "powercord", $icon-pack);
+	@include settingsIcon("pc-modulemanager-plugins-tab", "plugins", $icon-pack);
+	@include settingsIcon("pc-modulemanager-themes-tab", "themes", $icon-pack);
+	@include settingsIcon("pc-updater-tab", "updater", $icon-pack);
 
-  // Better Discord
-  @include settingsIcon("settings-tab", "betterdiscord", $icon-pack);
-  @include settingsIcon("customcss-tab", "css_editor", $icon-pack);
-  @include settingsIcon("plugins-tab", "plugins", $icon-pack);
-  @include settingsIcon("themes-tab", "themes", $icon-pack);
-  @include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
-  @include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
-
+	// ploogins
+	
 }

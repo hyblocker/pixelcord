@@ -1,0 +1,18 @@
+﻿// Media progress bar slider
+.mediaBarGrabber-1FqnbN,
+.mediaBarProgress-1xaPtl,
+.mediaBarProgress-1xaPtl:after,
+.mediaBarProgress-1xaPtl:before {
+    background-color: var(--accent);
+}
+.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN {
+    background-color: var(--accent-selected);
+}
+// Generic slider
+.barFill-23-gu-{
+    background-color: var(--accent);
+}
+.grabber-3mFHz2 {
+    background-color: var(--accent-selected);
+    border: none;
+}

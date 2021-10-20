@@ -1,0 +1,33 @@
+﻿// Turns dialogs like "Jump to present" and "Mark as read" to floating action buttons!
+
+// Based on https://canary.discord.com/channels/538759280057122817/755005803303403570/821960077132038184
+@import '../../src/material_design/ripple';
+@import '../../src/material_design/cards';
+
+.jumpToPresentBar-G1R9s6 {
+    visibility: hidden;
+    bottom: 15px;
+}
+
+.newMessagesBar-265mhP {
+    visibility: hidden;
+    top: 15px;
+}
+
+.barButtonBase-2uLO1z {
+    @include rippleimg(var(--accent-highlight), 64px, 64px, $leftname: right, $top: -12px);
+    height: 42px;
+
+    &::after {
+        visibility: visible;
+    }
+}
+
+.barButtonIcon-3t4V3d {
+    visibility: visible;
+    padding: 11px;
+    background-color: var(--accent);
+    color: var(--accent-text);
+    border-radius: 50%;
+    box-shadow: elevation-shadow(6);
+}

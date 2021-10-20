@@ -1,0 +1,50 @@
+.jumpToPresentBar-G1R9s6 {
+  visibility: hidden;
+  bottom: 15px;
+}
+
+.newMessagesBar-265mhP {
+  visibility: hidden;
+  top: 15px;
+}
+
+.barButtonBase-2uLO1z {
+  height: 42px;
+}
+.barButtonBase-2uLO1z::after {
+  transition: background-size 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+  opacity: 0;
+  background-size: 500%;
+  background-image: radial-gradient(circle at calc(var(--clickX) + 50%) calc(var(--clickY) + 50%), var(--accent-highlight) 24%, transparent 25%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment: local;
+  background-clip: padding-box;
+  object-fit: contain;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: -12px;
+  right: 0px;
+}
+.barButtonBase-2uLO1z:not(:active)::after {
+  transition: 0s;
+  opacity: 0.3;
+  background-size: 0%;
+}
+.barButtonBase-2uLO1z::after {
+  visibility: visible;
+}
+
+.barButtonIcon-3t4V3d {
+  visibility: visible;
+  padding: 11px;
+  background-color: var(--accent);
+  color: var(--accent-text);
+  border-radius: 50%;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22fabify.scss%22,%22../../src/material_design/_ripple.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAMA;EACI;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EAEI;;AC2CH;EACC;EAEA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAEA;EACA;EACA;EACA,OD3D8C;EC4D9C,QD5DoD;EC+DnD,KD/DiF;ECgEjF,OAzBM;;AAsCR;EACC;EACA;EACA;;AD7EE;EACI;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22fabify.css%22%7D */

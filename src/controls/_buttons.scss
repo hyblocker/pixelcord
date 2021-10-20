@@ -36,15 +36,9 @@
 		.lookOutlined-3sRXeN#{$class} {
 			color: var(--#{$color});
 			border-color: var(--#{$color});
+
 			&:active {
 				background-color: var(--#{$color}-transparent);
-			}
-		}
-		// Lookblank
-		.lookBlank-3eh9lL#{$class} {
-			&,
-			&:active:not(.hideInteraction-1iHO1O) {
-				background: transparent;
 			}
 		}
 	}
@@ -111,24 +105,9 @@
 	color: var(--red-text);
 }
 
-/*
-
-// Default focused
-.colorDefault-2K3EoJ.focused-3afm-j,
-.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
-	background-color: var(--accent);
-	color: var(--accent-text);
-}
-// Red 
-.colorDanger-2qLCe1,
-.colorDanger-2qLCe1 .checkbox-3s5GYZ,
-.colorDanger-2qLCe1 .radioSelection-1HmrQS {
-	color: var(--red);
-}
-// Red hover
-.colorDanger-2qLCe1.focused-3afm-j,
-.colorDanger-2qLCe1:active:not(.hideInteraction-1iHO1O) {
+// VC Call buttons
+.colorable-1bkp8v.red-33-Lnk {
 	background-color: var(--red);
 	color: var(--red-text);
 }
-*/
+

@@ -16,46 +16,6 @@
   display: none;
 }
 
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:0"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:1"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:2"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:3"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:4"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:5"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:6"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:7"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:8"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:9"]:not(.role-3wi9Tf)::before {
-  content: none;
-}
-
 .avatar-1eTZ8m {
   width: 22px !important;
   height: 22px !important;
@@ -78,6 +38,56 @@
   mask: var(--icon) center/contain no-repeat;
   flex-shrink: 0;
   --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:0"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:0"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:1"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:1"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:2"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:2"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:3"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:3"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:4"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:4"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:5"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:5"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:6"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:6"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:7"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:7"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:8"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:8"]:not(.role-3wi9Tf)::before {
+  content: none;
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:9"]:not(.role-3wi9Tf)::before,
+.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:9"]:not(.role-3wi9Tf)::before {
+  content: none;
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=my-account-tab i]:not(.role-3wi9Tf)::before {
@@ -221,35 +231,35 @@
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=widget-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=guild_templates-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=analytics-tab i]:not(.role-3wi9Tf)::before {
   --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=partner-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=discovery-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=member_verification-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=community-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=community_welcome-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=guild_premium-tab i]:not(.role-3wi9Tf)::before {
@@ -257,7 +267,7 @@
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=members-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 8 12'%3E%3Cpath d='M4 0L0 4v4l4 4 4-4V4L4 0zm3 7.59l-3 3-3-3V4.41l3-3 3 3v3.18z M2 4.83v2.34l2 2 2-2V4.83l-2-2-2 2z' fill='currentColor'/%3E%3C/svg%3E");
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=instant_invites-tab i]:not(.role-3wi9Tf)::before {
@@ -272,37 +282,29 @@
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15 3.999V2H9V3.999H3V5.999H21V3.999H15Z'%3E%3C/path%3E%3Cpath d='M5 6.99902V18.999C5 20.101 5.897 20.999 7 20.999H17C18.103 20.999 19 20.101 19 18.999V6.99902H5ZM11 17H9V11H11V17ZM15 17H13V11H15V17Z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=discord-nitro-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M14 5a7 7 0 100 14 7 7 0 000-14zM3 11h1a1 1 0 100-2H1a1 1 0 110-2h5a1 1 0 100-2H3.5a1.5 1.5 0 010-3H14c5.523 0 10 4.477 10 10s-4.477 10-10 10c-5.185 0-9.449-3.947-9.95-9H3a1 1 0 010-2z'/%3E%3Cpath d='M14 17a5 5 0 110-10 5 5 0 010 10zm1.827-7.55a1 1 0 00-.835-.45h-1.926a1 1 0 00-.836.45l-1.315 2a1 1 0 000 1.1l1.315 2a1 1 0 00.836.45h1.926a1 1 0 00.835-.45l1.316-2a1 1 0 000-1.1l-1.316-2z'/%3E%3C/svg%3E");
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=permissions-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls="default:transport:0-tab" i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls="default:outbound:0-tab" i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls="stream:transport:0-tab" i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls="stream:outbound:0-tab" i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
 }
 
 /*
 While yes mods are separated to respective menus, settings icons being a module cant be separated sadly :(
 */
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-general-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 447 447'%3E%3Cpath d='M182.5 78.6l70-70c11.9-11.9 31.2-11.9 43.1 0s11.9 31.2 0 43.1l-70 70zm91.7 91.7l70-70c11.9-11.9 31.2-11.9 43.1 0s11.9 31.2 0 43.1l-70 70zM303 257L138.9 92.9c-2.7-2.7-2.7-7 0-9.7L163 59.1c2.7-2.7 7-2.7 9.7 0l164.1 164.1c2.7 2.7 2.7 7 0 9.7L312.7 257c-2.7 2.7-7 2.7-9.7 0zm-146.6 75.4l-92.9-92.9c-17-17-17-44.6 0-61.6l85.1-85.1L303 247.4l-85 85c-17 17-44.7 17-61.6 0zm-61-2.9l-29-29c-2.7-2.7-2.7-7 0-9.7l29-29 38.7 38.7-29 29c-2.7 2.6-7 2.6-9.7 0zm48.3 115.8L81 382.6c-21.3-21.3-21.3-55.9 0-77.2l9.7 9.7c-16 16-16 42 0 57.9l62.8 62.8c2.7 2.7 2.7 7 0 9.7s-7.1 2.5-9.8-.2z'/%3E%3C/svg%3E");
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-modulemanager-plugins-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,");
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-modulemanager-themes-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,");
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-updater-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,");
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=gm-settings-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 22 22' height='20' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.932 2.178c-.536.05-1.199.327-1.262.935-.424 1.863-.497 3.822-.137 5.7.193.525.287 1.158-.096 1.622-.413.281-.958-.103-1.442-.044-1.424-.07-2.9-.11-4.254.413-1.158.431-2.315.884-3.416 1.448-.608.395-1.326.562-1.97.886-.577.253-1.157.527-1.66.91-.365.48-.96.628-1.435.973-.328.349-1.128.368-1.16.905-.008.543 1.178-.127.584.31-.301.102-.693.83-.11.617.985-.354 2.012-.658 3.066-.688 1.1.05 2.106.576 3.17.816a24.66 24.66 0 0 0 2.436.46c.464-.2.744.331.594.717.01.592.1 1.208-.116 1.776-.446.374.037.796.428.912.326.346.743.746 1.259.547.436-.08.83.195 1.253.263.372.126.756.5 1.164.239.281-.17.943-.59.481-.912-.544-.13-1.129.017-1.66-.164-.491-.357-.221-1.04-.227-1.544.18-.501-.102-1.016.094-1.47.415-.356 1.067-.193 1.515-.56.768-.443 1.474-.996 2.133-1.588.554-.508.954-1.15 1.312-1.802.4-.554.812-1.145.847-1.852.086-.721-.203-1.42-.62-1.992-.966-1.602-1.46-3.607-.874-5.43.23-.448.823-.469 1.253-.61.61-.092 1.242.136 1.839-.072.275-.56-.69-.503-.976-.771-.517-.192-.828-.702-1.34-.885a1.591 1.591 0 0 0-.673-.065Zm-.509 8.187-.01.005zm-5.472 7.22c.578.153.641.852.826 1.324.116.5.19 1.191-.136 1.587-.572.094-1.048-.443-1.115-.977-.093-.537-.19-1.117.049-1.634.006-.21.132-.526.376-.3z'/%3E%3C/svg%3E");
-}
-
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=gm-changelog-tab i]:not(.role-3wi9Tf)::before {
-  --icon: url("data:image/svg+xml;charset=utf8,");
-}
-
 .side-8zPYf6 > .item-PXvHYJ[aria-controls=cumcord_plugins-tab i]:not(.role-3wi9Tf)::before {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg width='844' height='1198' viewBox='0 0 844 1198' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M843.5 759.923C843.5 1001.59 663.591 1197.5 422 1197.5C180.409 1197.5 0.5 1001.59 0.5 759.923C0.5 518.253 422 0.503906 422 0.503906C422 0.503906 843.5 518.253 843.5 759.923Z'/%3E%3C/svg%3E");
 }
@@ -335,4 +337,28 @@ While yes mods are separated to respective menus, settings icons being a module 
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M14 5a7 7 0 100 14 7 7 0 000-14zM3 11h1a1 1 0 100-2H1a1 1 0 110-2h5a1 1 0 100-2H3.5a1.5 1.5 0 010-3H14c5.523 0 10 4.477 10 10s-4.477 10-10 10c-5.185 0-9.449-3.947-9.95-9H3a1 1 0 010-2z'/%3E%3Cpath d='M14 17a5 5 0 110-10 5 5 0 010 10zm1.827-7.55a1 1 0 00-.835-.45h-1.926a1 1 0 00-.836.45l-1.315 2a1 1 0 000 1.1l1.315 2a1 1 0 00.836.45h1.926a1 1 0 00.835-.45l1.316-2a1 1 0 000-1.1l-1.316-2z'/%3E%3C/svg%3E");
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../settings_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA2BE;EACE;;;AAIF;AAAA;EAEE;EACA;;;AAIA;EAEE;;;AAMF;EAEE;;;AAMF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAKJ;EACE;EACA;;;AAIF;EACE;;;AAIF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AA3EF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AAgJF;AAAA;AAAA;AAjJA;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE;;;AADF;EACE%22,%22file%22:%22rounded.css%22%7D */
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=gm-settings-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 22 22' height='20' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.932 2.178c-.536.05-1.199.327-1.262.935-.424 1.863-.497 3.822-.137 5.7.193.525.287 1.158-.096 1.622-.413.281-.958-.103-1.442-.044-1.424-.07-2.9-.11-4.254.413-1.158.431-2.315.884-3.416 1.448-.608.395-1.326.562-1.97.886-.577.253-1.157.527-1.66.91-.365.48-.96.628-1.435.973-.328.349-1.128.368-1.16.905-.008.543 1.178-.127.584.31-.301.102-.693.83-.11.617.985-.354 2.012-.658 3.066-.688 1.1.05 2.106.576 3.17.816a24.66 24.66 0 0 0 2.436.46c.464-.2.744.331.594.717.01.592.1 1.208-.116 1.776-.446.374.037.796.428.912.326.346.743.746 1.259.547.436-.08.83.195 1.253.263.372.126.756.5 1.164.239.281-.17.943-.59.481-.912-.544-.13-1.129.017-1.66-.164-.491-.357-.221-1.04-.227-1.544.18-.501-.102-1.016.094-1.47.415-.356 1.067-.193 1.515-.56.768-.443 1.474-.996 2.133-1.588.554-.508.954-1.15 1.312-1.802.4-.554.812-1.145.847-1.852.086-.721-.203-1.42-.62-1.992-.966-1.602-1.46-3.607-.874-5.43.23-.448.823-.469 1.253-.61.61-.092 1.242.136 1.839-.072.275-.56-.69-.503-.976-.771-.517-.192-.828-.702-1.34-.885a1.591 1.591 0 0 0-.673-.065Zm-.509 8.187-.01.005zm-5.472 7.22c.578.153.641.852.826 1.324.116.5.19 1.191-.136 1.587-.572.094-1.048-.443-1.115-.977-.093-.537-.19-1.117.049-1.634.006-.21.132-.526.376-.3z'/%3E%3C/svg%3E");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=gm-changelog-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-general-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 447 447'%3E%3Cpath d='M182.5 78.6l70-70c11.9-11.9 31.2-11.9 43.1 0s11.9 31.2 0 43.1l-70 70zm91.7 91.7l70-70c11.9-11.9 31.2-11.9 43.1 0s11.9 31.2 0 43.1l-70 70zM303 257L138.9 92.9c-2.7-2.7-2.7-7 0-9.7L163 59.1c2.7-2.7 7-2.7 9.7 0l164.1 164.1c2.7 2.7 2.7 7 0 9.7L312.7 257c-2.7 2.7-7 2.7-9.7 0zm-146.6 75.4l-92.9-92.9c-17-17-17-44.6 0-61.6l85.1-85.1L303 247.4l-85 85c-17 17-44.7 17-61.6 0zm-61-2.9l-29-29c-2.7-2.7-2.7-7 0-9.7l29-29 38.7 38.7-29 29c-2.7 2.6-7 2.6-9.7 0zm48.3 115.8L81 382.6c-21.3-21.3-21.3-55.9 0-77.2l9.7 9.7c-16 16-16 42 0 57.9l62.8 62.8c2.7 2.7 2.7 7 0 9.7s-7.1 2.5-9.8-.2z'/%3E%3C/svg%3E");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-modulemanager-plugins-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-modulemanager-themes-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=pc-updater-tab i]:not(.role-3wi9Tf)::before {
+  --icon: url("data:image/svg+xml;charset=utf8,");
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../settings_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AA2BC;EACC;;;AAID;AAAA;EAEC;EACA;;;AAIA;EAEC;;;AAMD;EAEC;;;AAKF;EACC;EACA;;;AAID;EACC;;;AAID;AAAA;EAEC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EAGA;;;AAKA;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AAFD;AAAA;EAEC;;;AA3EF;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAuJD;AAAA;AAAA;AAxJA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC%22,%22file%22:%22rounded.css%22%7D */

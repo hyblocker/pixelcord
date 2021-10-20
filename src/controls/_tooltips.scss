@@ -1,0 +1,13 @@
+﻿@import "../utils";
+
+.tooltipGreen-WdeQwd {
+	@include theming {
+		background-color: var(--green);
+		color: var(--green-text);
+	}
+}
+.tooltipGreen-WdeQwd .tooltipPointer-3ZfirK {
+	@include theming {
+		border-top-color: var(--green);
+	}
+}

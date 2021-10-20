@@ -3,6 +3,7 @@
 
 // Icon packs
 @import "../../../src/icons/outline";
+@import "../../../src/icons/filled";
 @import "../../../src/icons/discord";
 
 // Import build config
@@ -12,6 +13,16 @@
 @mixin replaceIcon($item, $icon_pack: $icons-discord) {
 	path[d='#{svg-d($icons-discord, $item)}'] {
 		d: path('#{svg-d($icon_pack, $item)}')
+	}
+}
+@mixin replacePathWithIcon($path, $item, $icon_pack: $icons-discord) {
+	path[d='#{$path}'] {
+		d: path('#{svg-d($icon_pack, $item)}')
+	}
+}
+@mixin removePath($path) {
+	path[d='#{$path}'] {
+		d: path('')
 	}
 }
 
@@ -25,34 +36,76 @@
 	@include replaceIcon("home", $icon_pack);
 	@include replaceIcon("gift", $icon_pack);
 	@include replaceIcon("gif", $icon_pack);
+	@include replaceIcon("attach_button", $icon_pack);
+	@include replaceIcon("attach_button_rpc", $icon_pack);
 
 	// quick actions (i think?)
 	@include replaceIcon("settings", $icon_pack);
+	@include replaceIcon("game_alt", $icon_pack);
+	@include replaceIcon("game_off", $icon_pack);
+	@include replaceIcon("microphone", $icon_pack);
+	@include replaceIcon("headphones", $icon_pack);
+	@include replacePathWithIcon("M9.01 11.085C9.015 11.1125 9.02 11.14 9.02 11.17L15 5.18V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11C9 11.03 9.005 11.0575 9.01 11.085Z", "microphone_off", $icon_pack);
+	@include replacePathWithIcon("M6.16204 15.0065C6.10859 15.0022 6.05455 15 6 15H4V12C4 7.588 7.589 4 12 4C13.4809 4 14.8691 4.40439 16.0599 5.10859L17.5102 3.65835C15.9292 2.61064 14.0346 2 12 2C6.486 2 2 6.485 2 12V19.1685L6.16204 15.0065Z", "headphones_off", $icon_pack);
+	
+	// Remove extra paths of mic and headphone off
+	@include removePath("M19.725 9.91686C19.9043 10.5813 20 11.2796 20 12V15H18C16.896 15 16 15.896 16 17V20C16 21.104 16.896 22 18 22H20C21.105 22 22 21.104 22 20V12C22 10.7075 21.7536 9.47149 21.3053 8.33658L19.725 9.91686Z");
+	@include removePath("M11.7237 16.0927L10.9632 16.8531L10.2533 17.5688C10.4978 17.633 10.747 17.6839 11 17.72V22H13V17.72C16.28 17.23 19 14.41 19 11H17.3C17.3 14 14.76 16.1 12 16.1C11.9076 16.1 11.8155 16.0975 11.7237 16.0927Z");
+	@include removePath("M6.7 11H5C5 12.19 5.34 13.3 5.9 14.28L7.13 13.05C6.86 12.43 6.7 11.74 6.7 11Z");
+	@include removePath("M14.99 11C14.99 12.66 13.66 14 12 14C10.34 14 9 12.66 9 11V5C9 3.34 10.34 2 12 2C13.66 2 15 3.34 15 5L14.99 11ZM12 16.1C14.76 16.1 17.3 14 17.3 11H19C19 14.42 16.28 17.24 13 17.72V22H11V17.72C7.72 17.23 5 14.41 5 11H6.7C6.7 14 9.24 16.1 12 16.1Z");
+	@include removePath("M21 4.27L19.73 3L3 19.73L4.27 21L8.46 16.82L9.69 15.58L11.35 13.92L14.99 10.28L21 4.27Z");
+	@include removePath("M3.20101 23.6243L1.7868 22.2101L21.5858 2.41113L23 3.82535L3.20101 23.6243Z");
 
 	// message headerbar
+	@include replaceIcon("at_symbol", $icon_pack);
 	@include replaceIcon("voice_call", $icon_pack);
+	@include replaceIcon("video_call", $icon_pack);
 	@include replaceIcon("pin", $icon_pack);
+	// @include replaceIcon("pin_circle", $icon_pack);
+	@include replaceIcon("inbox", $icon_pack);
 
 	// message actions
 	@include replaceIcon("add_reaction", $icon-pack);
+	@include removePath("M21 3V0H19V3H16V5H19V8H21V5H24V3H21Z");
 	@include replaceIcon("reactions", $icon-pack);
 	@include replaceIcon("reply", $icon-pack);
 	@include replaceIcon("edit", $icon-pack);
 	@include replaceIcon("mark_unread", $icon-pack);
 	@include replaceIcon("copy_link", $icon-pack);
 	@include replaceIcon("id", $icon-pack);
-	@include replaceIcon("delete", $icon-pack);
 	@include replaceIcon("tts", $icon-pack);
+	@include replaceIcon("invite", $icon-pack);
+	@include replaceIcon("notifications", $icon-pack);
+	// notification mute
+	@include replacePathWithIcon("M12 3C13.417 3 14.71 3.5 15.734 4.321L5.99805 14.058C5.99805 14.0479 5.99856 14.038 5.99907 14.0283C5.99956 14.0188 6.00005 14.0094 6.00005 14V9C6.00005 5.686 8.68605 3 12 3Z", "notifications_off", $icon-pack);
+	@include removePath("M8.957 19.5718L9.52877 19H15.4449C14.7519 20.19 13.4759 21 11.9999 21C10.7748 21 9.68752 20.442 8.957 19.5718Z");
+	@include removePath("M18 10.5283L10.5287 18H21V17C19.344 17 18 15.657 18 14V10.5283Z");
+	
+	// delete
+	@include replacePathWithIcon("M5 6.99902V18.999C5 20.101 5.897 20.999 7 20.999H17C18.103 20.999 19 20.101 19 18.999V6.99902H5ZM11 17H9V11H11V17ZM15 17H13V11H15V17Z", "delete", $icon_pack);
+	@include removePath("M15 3.999V2H9V3.999H3V5.999H21V3.999H15Z");
 
 	// Channels
 	@include replaceIcon("channel_thread", $icon-pack);
 
 	@include replaceIcon("message", $icon-pack);
 	@include replaceIcon("language", $icon-pack);
+	
+	// Context menus
+	@include replaceIcon("logout", $icon-pack);
+	@include replaceIcon("leave", $icon-pack);
 
 
 	// @include replaceIcon("nitro", $icon_pack);
 
+	// Some settings need custom replace systems bc funny svg!!
+	.stickerIcon-3TP7EM > path:first-child {
+		d: path("M17 3v9h-5v5H3V3h14m0-2H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10l6-6V3c0-1.1-.9-2-2-2zm-7 11H5v-2h5v2zm5-4H5V6h10v2z");
+	}
+	.stickerIcon-3TP7EM > path:last-child {
+		d: path('')
+	}
+	
 
 	// Settings
 	// Lock should be using mask so that we can customise the color
@@ -60,4 +113,48 @@
 		--settings-lock-mask: #{svg-url(#{map-get($icon-pack, "2falock")})};
 	}
 
+	// GIFs
+	.gifTag-31zFY8 {
+		background: #{svg-url(#{map-get($icon-pack, "gif")})};
+		background-size: 29px;
+	}
+	
+	// Discord's default Emoji picker is cringe
+	.sprite-2iCowe {
+		transform: scale(1) !important;
+		-webkit-mask-image: #{svg-url(#{map-get($icon-pack, "emoji")})};
+		background: var(--interactive-normal) !important;
+		&:hover {
+			background: var(--interactive-hover) !important;
+		}
+	}
+	
+	// Reset red strikethrough
+	.strikethrough-otdQWt,
+	.strikethrough-3Wiitd,
+	.strikethrough-1n4ekb {
+		color: inherit;
+		d: path("");
+	}
+	
+	// Override icons for tabs
+	.tabBarItem-3dfX8P[aria-controls=activity-tab] {
+		--icon: #{svg-url(#{map-get($icons-filled, "game")})};
+	}
+	
+	// plugins
+	
+	// view raw
+	@include removePath("M462.002,92.002h-42.001V50c0-27.57-22.43-50-50-50h-320c-27.57,0-50,22.43-50,50v320.002c0,27.57,22.43,50,50,50h42.001    v42c0,27.57,22.43,50,50,50h320c27.57,0,50-22.43,50-50v-320C512.001,114.432,489.573,92.002,462.002,92.002z M50.001,400.002    c-16.542,0-30-13.458-30-30V50c0-16.542,13.458-30,30-30h320c16.542,0,30,13.458,30,30v320.002c0,16.542-13.458,30-30,30H50.001z     M492.002,462.002c0,16.542-13.458,30-30,30h-320c-16.542,0-30-13.458-30-30v-42h257.999c27.57,0,50-22.43,50-50v-258h42.001    c16.542,0,30,13.458,30,30V462.002z");
+	@include removePath("M462.024,457.002H170.98c-5.522,0-10,4.478-10,10c0,5.523,4.478,10,10,10h291.043c5.522,0,10-4.477,10-10    S467.546,457.002,462.024,457.002z");
+	@include removePath("M142.25,457.002h-0.27c-5.522,0-10,4.478-10,10c0,5.523,4.478,10,10,10h0.27c5.523,0,10-4.477,10-10    S147.773,457.002,142.25,457.002z");
+	@include removePath("M110.035,35h-0.27c-5.522,0-10,4.478-10,10s4.478,10,10,10h0.27c5.522,0,10-4.478,10-10S115.558,35,110.035,35z");
+	@include removePath("M81.036,35H50.001c-5.522,0-10,4.478-10,10s4.478,10,10,10h31.034c5.523,0,10.001-4.478,10.001-10S86.558,35,81.036,35z");
+	@include removePath("M226.7,247.37l-0.008-0.031l-8.818-21.24l-0.003,0.002l-25.528-61.617h0.001c-1.024-2.709-3.167-4.654-5.674-5.645    c-1.165-0.461-2.429-0.715-3.708-0.742c-1.28-0.027-2.565,0.178-3.773,0.635c-2.393,0.906-4.479,2.764-5.647,5.719l0.005,0.002    l-25.54,61.719h-0.003l-8.818,21.168v0.008c-1.076,2.607-1,5.383-0.008,7.783c0.994,2.408,2.91,4.433,5.51,5.527l0.038,0.023    c2.619,1.035,5.435,1.064,7.886,0.041c2.295-0.955,4.242-2.813,5.384-5.6l6.147-14.877h37.566l6.148,14.877    c1.175,2.844,3.171,4.674,5.459,5.609c1.261,0.518,2.601,0.752,3.932,0.73c1.324-0.021,2.642-0.295,3.865-0.801    c2.418-0.998,4.496-2.9,5.579-5.547l0.008-0.016C227.723,252.523,227.723,249.945,226.7,247.37z M172.552,219.938l10.344-25.01    l10.416,25.01H172.552z");
+	@include removePath("M122.084,246.829l-0.008-0.008l-14.8-30.002c5.407-2.305,10.07-5.975,13.466-10.537c3.725-5.006,5.931-11.08,5.931-17.604    c0-8.588-3.248-15.902-9.743-21.965c-3.196-2.992-6.739-5.242-10.627-6.744c-3.891-1.506-8.097-2.258-12.612-2.258H64.936    c-2.793,0-5.327,1.145-7.163,2.996c-1.832,1.85-2.968,4.396-2.968,7.205v82.777c0,2.896,1.137,5.338,2.893,7.105    c0.962,0.969,2.107,1.728,3.349,2.246c1.249,0.52,2.597,0.797,3.953,0.797c2.49,0,5.028-0.92,7.096-2.967    c1.004-0.99,1.761-2.09,2.271-3.297c0.516-1.221,0.771-2.516,0.771-3.885v-31.139h10.844l17.862,36.184l-0.004,0.005    c1.315,2.699,3.416,4.4,5.763,5.201c1.275,0.434,2.616,0.596,3.938,0.502c1.317-0.094,2.618-0.44,3.812-1.022    c2.307-1.123,4.237-3.123,5.179-5.881h0.002c0.45-1.307,0.639-2.609,0.564-3.904C123.023,249.327,122.684,248.058,122.084,246.829    z M106.124,190.85c-0.438,1.795-1.473,3.546-3.189,5.07c-1.205,1.039-2.538,1.838-3.996,2.395c-1.45,0.553-3.02,0.865-4.704,0.934    v-0.006H75.138v-21.221H93.69c3.19,0,5.9,0.893,7.984,2.328c1.83,1.26,3.187,2.939,3.96,4.791    C106.393,186.957,106.591,188.942,106.124,190.85z");
+	// @include replacePathWithIcon("M364.199,163.706c-1.12-2.354-3.136-4.285-5.777-5.254l-0.055-0.016c-2.721-0.916-5.49-0.688-7.823,0.439    c-2.349,1.135-4.243,3.172-5.193,5.861v0.008l-19.568,55.744l-19.571-55.816h-0.001c-0.705-2.352-2.14-4.141-3.935-5.322    c-1.589-1.047-3.458-1.609-5.345-1.656c-1.887-0.047-3.801,0.42-5.479,1.43c-1.938,1.164-3.553,3.031-4.445,5.637h0.002    l-19.564,55.73l-19.569-55.746l-0.008-0.016c-0.997-2.779-2.938-4.752-5.235-5.846c-1.222-0.584-2.552-0.918-3.899-0.99    c-1.34-0.074-2.701,0.115-3.991,0.578c-2.347,0.842-4.429,2.57-5.701,5.24c-1.206,2.529-1.354,5.119-0.441,7.766l0.005,0.009    l29.181,83.133l0.016,0.047c1.186,3.139,3.318,5.213,5.775,6.234c1.141,0.473,2.355,0.717,3.581,0.73    c1.219,0.016,2.438-0.197,3.595-0.635c2.602-0.982,4.914-3.084,6.238-6.268l0.039-0.109l19.595-55.779l20.043,56.877l0.047,0.125    c0.967,2.25,2.404,3.912,4.071,4.99c1.666,1.078,3.544,1.563,5.408,1.465c1.854-0.096,3.686-0.764,5.274-1.992    c1.666-1.289,3.059-3.191,3.899-5.686l29.251-83.133C365.546,168.825,365.317,166.053,364.199,163.706z", "view_raw", $icon_pack);
+	path[d='M364.199,163.706c-1.12-2.354-3.136-4.285-5.777-5.254l-0.055-0.016c-2.721-0.916-5.49-0.688-7.823,0.439    c-2.349,1.135-4.243,3.172-5.193,5.861v0.008l-19.568,55.744l-19.571-55.816h-0.001c-0.705-2.352-2.14-4.141-3.935-5.322    c-1.589-1.047-3.458-1.609-5.345-1.656c-1.887-0.047-3.801,0.42-5.479,1.43c-1.938,1.164-3.553,3.031-4.445,5.637h0.002    l-19.564,55.73l-19.569-55.746l-0.008-0.016c-0.997-2.779-2.938-4.752-5.235-5.846c-1.222-0.584-2.552-0.918-3.899-0.99    c-1.34-0.074-2.701,0.115-3.991,0.578c-2.347,0.842-4.429,2.57-5.701,5.24c-1.206,2.529-1.354,5.119-0.441,7.766l0.005,0.009    l29.181,83.133l0.016,0.047c1.186,3.139,3.318,5.213,5.775,6.234c1.141,0.473,2.355,0.717,3.581,0.73    c1.219,0.016,2.438-0.197,3.595-0.635c2.602-0.982,4.914-3.084,6.238-6.268l0.039-0.109l19.595-55.779l20.043,56.877l0.047,0.125    c0.967,2.25,2.404,3.912,4.071,4.99c1.666,1.078,3.544,1.563,5.408,1.465c1.854-0.096,3.686-0.764,5.274-1.992    c1.666-1.289,3.059-3.191,3.899-5.686l29.251-83.133C365.546,168.825,365.317,166.053,364.199,163.706z'] {
+		d: path('#{svg-d($icon_pack, "view_raw")}');
+		transform: scale(21.3333);
+	}
 }

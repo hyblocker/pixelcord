@@ -50,3 +50,10 @@
 .premiumInlineNotice-159eYs {
 	display: none;
 }
+
+// OK i hate buttons in my textbox fuck that shit *delete*
+.buttons-3JBrkn {
+	& > .button-38aScr:first-child {
+		display: none;
+	}
+}

@@ -30,6 +30,10 @@
 	.modeSelected-346R90:hover & {
 		@include channelColors(var(--accent), var(--accent-transparent));
 	}
+	.modeUnread-1qO3K1 & .icon-1DeIlz,
+	.modeUnread-1qO3K1:hover & .icon-1DeIlz {
+		color: var(--interactive-active);
+	}
 }
 .selected-aXhQR6.container-2Pjhx- {
 	background-color: var(--accent-transparent);
