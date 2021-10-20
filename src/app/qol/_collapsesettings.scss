@@ -79,4 +79,9 @@ $width: 32px;
     .connection-3KRENF {
         margin-right: var(--settings-padding);
     }
+
+    // Z-indexing breaks with unreads; make this appear on top!
+    .panels-j1Uci_ {
+        z-index: 3;
+    }
 }
