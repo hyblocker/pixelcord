@@ -378,10 +378,10 @@ html[lang=hi] {
   --font-primary: var(--font-header);
   --font-secondary: var(--font-header);
   --font-display: var(--font-header);
-  --mouseX: 50%;
-  --mouseY: 50%;
-  --clickX: 50%;
-  --clickY: 50%;
+  --mouseX: 0%;
+  --mouseY: 0%;
+  --clickX: 0%;
+  --clickY: 0%;
 }
 
 .textContainer-C0szpm pre, code, .multiInputLast-33BbRU input {
