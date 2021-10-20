@@ -116,3 +116,8 @@ $msg-height: 4;
 		background-color: var(--danger);
 	}
 }
+// Changelog icon mis-alignment fix
+.bd-sidebar-header .bd-changelog-button {
+    height: 16px;
+    margin-right: 10px;
+}
