@@ -25,7 +25,7 @@
 .replyAvatar-1K9Wmr,
 .embedAuthorIcon--1zR3L,
 .iconSizeMedium-2OqPjI.listAvatar-1BbvHX,
-.avatar-1BDn8e,
+.avatar-1BDn8e:not(.avatar-1BDn8e[data-bsi-status]),
 .guildIcon-1zxZMV,
 .voiceSectionGuildImage-3HwnfL,
 .avatarUploader-2UF9NL,

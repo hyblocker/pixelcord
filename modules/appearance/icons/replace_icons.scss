@@ -63,6 +63,7 @@
 	@include replaceIcon("pin", $icon_pack);
 	// @include replaceIcon("pin_circle", $icon_pack);
 	@include replaceIcon("inbox", $icon_pack);
+	@include replaceIcon("download", $icon_pack);
 
 	// message actions
 	@include replaceIcon("add_reaction", $icon-pack);
@@ -140,6 +141,14 @@
 	// Override icons for tabs
 	.tabBarItem-3dfX8P[aria-controls=activity-tab] {
 		--icon: #{svg-url(#{map-get($icons-filled, "game")})};
+	}
+
+
+	:root {
+		--welcome-svg:			url("/assets/d1382af8d9e755bc44811b1fd92990a8.svg");
+		--pins-svg:				#{svg-url(#{map-get($icon-pack, "pin")})};
+		--missed-call-svg:		url("/assets/5e64269a40d5bb745c2f3df29f26738d.svg");
+		--call-accepted-svg:	url("/assets/7f75ab26bc5deb393cd8db44d9fe14e7.svg");
 	}
 	
 	// plugins

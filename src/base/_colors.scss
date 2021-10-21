@@ -80,7 +80,8 @@ $purple-color: "hsl(262, ";
 	color: var(--red);
 }
 
-// partnered
+// partnered & verified
+.verified-1eC5dy,
 .partnered-3nJayh {
 	color: var(--accent);
 	& .icon-1ihkOt {
@@ -132,4 +133,14 @@ $purple-color: "hsl(262, ";
 .strikethrough-3Wiitd,
 .strikethrough-1n4ekb {
 	color: var(--red);
+}
+
+// Online / Offline dots
+.statusOnline-8PnF5L,
+.dotOnline-8Ag7EB {
+	background-color: var(--green);
+}
+.statusOffline-37RKt7,
+.dotOffline-3DXoDy {
+	background-color: var(--gray);
 }

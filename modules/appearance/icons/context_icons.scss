@@ -350,7 +350,6 @@
     @include contextIcon("thread-context-search", "search", $icon-pack);
     @include contextIcon("thread-context-pins", "pin", $icon-pack);
 
-    // TODO: Thread archive icons bc im lazy!
     @include contextIcon("thread-context-archive-thread", "archive", $icon-pack);
     @include contextIcon("thread-context-auto-archive-thread", "auto_archive", $icon-pack);
     @include contextIcon("thread-context-unarchive-thread", "unarchive", $icon-pack);
@@ -409,6 +408,11 @@
     // Spotify
     @include contextIcon("spotify-toggle-no-accounts", "spotify", $icon-pack); // TODO: No accounts icon rather than shotify
     // idk i dont use spotify :trol:
+    
+    // Game stuff
+    @include contextIcon("game-context-install", "download", $icon-pack);
+    @include contextIcon("game-context-in-library", "hide", $icon-pack);
+    @include contextIcon("game-context-application-dev", "copy", $icon-pack);
 
     // Mods
     @include contextIcon("user-settings-cog-BetterDiscord", "betterdiscord", $icon-pack);
