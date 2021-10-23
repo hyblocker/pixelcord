@@ -85,6 +85,24 @@
 	text-overflow: ellipsis;
 }
 
+// Slash command in the channel attach stuff is actually useless as shit and genuinely confuses me
+// as to whoever at Shitcord™ thought implementing it was a good idea
+#channel-attach-SLASH_COMMAND {
+	display: none;
+}
+// Same with threads
+#channel-attach-THREAD {
+	display: none;
+}
+
+// Show a pointer on these elements:
+
+.roleRemoveIcon-2-TeGW,     // Remove role button
+.replyAvatar-1K9Wmr,        // Avatar in replies (it opens the user popout)
+{
+	cursor: pointer;
+}
+
 // Hide the help button; if you know how to install a discord mod AND a theme, you dont need help on how to use discord as a platform lol
 .iconWrapper-2OrFZ1 + .anchor-3Z-8Bb[href="https://support.discord.com"] {
 	display: none;

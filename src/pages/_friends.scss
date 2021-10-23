@@ -1,3 +1,4 @@
+@import "../material_design/ripple";
 @import "../utils";
 
 // the cards on the side
@@ -14,4 +15,10 @@
 	@include theming {
 		background-color: transparent;
 	}
+}
+
+// ripple my beloved
+.peopleListItem-2nzedh {
+	position: relative;
+	@include ripple;
 }

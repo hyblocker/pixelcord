@@ -33,6 +33,10 @@
 	--context-menu-padding: 6px 8px;
 	--context-menu-radius: 4px;
 	
+	// Roles
+	--role-chip-weight: 500;
+	--role-chip-padding: 2px;
+	
 	// External Modules
 	// Better Badges
 	--badge-size: 22px;
@@ -90,6 +94,13 @@
 	
 	// Context menus
 	--context-menu-separator: rgba(255, 255, 255, 0.24);
+
+	// Roles
+	--role-chip-bg: var(--accent-transparent);
+	
+	// Tooltips
+	--tooltip-bg: #1f1f1f;
+	--tooltip-text: white;
 }
 .theme-light {
 	--weight-textbox: 500;
@@ -141,4 +152,11 @@
 
 	// Context menus
 	--context-menu-separator: rgba(0, 0, 0, 0.24);
+
+	// Roles
+	--role-chip-bg: var(--accent-transparent);
+
+	// Tooltips
+	--tooltip-bg: #1f1f1f;
+	--tooltip-text: white;
 }

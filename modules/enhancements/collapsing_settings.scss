@@ -1,4 +1,6 @@
-﻿// Edge case
+﻿@import "../../src/material_design/cards";
+
+// Edge case
 .container-35XQWE {
 	z-index: 1;
 	// Fix unread pills breaking because of this
@@ -52,7 +54,6 @@
 			transform: translate(calc(-50% - 30px), 40px) !important;
 			& .tooltipPointer-3ZfirK {
 				margin-left: -1px;
-				left: unset;
 				margin-top: -5px;
 				left: 100%;
 				top: 50%;

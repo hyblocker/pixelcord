@@ -1,0 +1,11 @@
+﻿.bsi-clientStatuses, .bsi-statusIcon {
+	path[fill^="hsl(139, "] {
+		fill: var(--green);
+	}
+	path[fill^="hsl(38, "] {
+		fill: var(--yellow);
+	}
+	path[fill^="hsl(359, "] {
+		fill: var(--red);
+	}
+}

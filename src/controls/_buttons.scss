@@ -45,6 +45,7 @@
 }
 
 @include buttons(".colorBrand-3pXr91", 'accent');
+@include buttons(".colorBrandNew-g5lmBU", 'accent');
 @include buttons(".colorGreen-29iAKY", 'green');
 @include buttons(".colorRed-1TFJan", 'red');
 @include buttons(".colorYellow-2JqYwt", 'yellow');
@@ -60,7 +61,12 @@
 .colorBrand-ROmMP1 {
 	color: var(--accent);
 }
+// On light theme this is a thing?
+.theme-light .colorBrand-ROmMP1:not(.focused-3afm-j) {
+	color: var(--accent);
+}
 
+// RIPPLE MY BELOVED!!!!
 .button-38aScr {
 	@include ripple;
 }

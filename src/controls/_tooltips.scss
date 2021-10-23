@@ -1,13 +1,39 @@
 ﻿@import "../utils";
 
-.tooltipGreen-WdeQwd {
+@mixin colorTooltip($color) {
 	@include theming {
-		background-color: var(--green);
-		color: var(--green-text);
+		background-color: var(--#{$color});
+		color: var(--#{$color}-text);
+	}
+
+	.tooltipPointer-3ZfirK {
+		@include theming {
+			border-top-color: var(--#{$color});
+		}
 	}
 }
-.tooltipGreen-WdeQwd .tooltipPointer-3ZfirK {
+
+.tooltipGreen-WdeQwd {
+	@include colorTooltip("green");
+}
+
+.tooltipRed-8-9NeP {
+	@include colorTooltip("red");
+}
+
+// Default, unskinned tooltip
+.tooltipPrimary-1d1ph4 {
 	@include theming {
-		border-top-color: var(--green);
+		background-color: var(--tooltip-bg);
+		color: var(--tooltip-text);
 	}
+
+	.tooltipPointer-3ZfirK {
+		@include theming {
+			border-top-color: var(--tooltip-bg);
+		}
+	}
+}
+.guildNameText-3Zwx4p {
+	color: currentColor;
 }
