@@ -1,0 +1,43 @@
+.welcomeCTA-2orRfU {
+  display: none;
+}
+
+.message-2qnXI6 .stickerAsset-13j1W0 {
+  position: relative;
+  height: 160px;
+  width: 160px;
+}
+.message-2qnXI6 .stickerAsset-13j1W0[alt*=", Choco, "], .message-2qnXI6 .stickerAsset-13j1W0[alt*=", Sup, "], .message-2qnXI6 .stickerAsset-13j1W0[alt*=", Scream, "], .message-2qnXI6 .stickerAsset-13j1W0[alt*=", Wave, "] {
+  content: var(--sticker-substitute-text);
+  display: block;
+  height: 0;
+  padding-top: 1rem;
+  width: fit-content;
+  background-color: var(--sticker-substitute-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='0' y='15' fill='black' font-family='Google Sans' font-weight='400' font-style='italic'%3E*sticker*%3C/text%3E%3C/svg%3E");
+}
+.message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Choco, "] .stickerAsset-13j1W0, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Sup, "] .stickerAsset-13j1W0, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Scream, "] .stickerAsset-13j1W0, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Wave, "] .stickerAsset-13j1W0 {
+  display: none;
+}
+.message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Choco, "]::after, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Sup, "]::after, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Scream, "]::after, .message-2qnXI6 .clickableSticker-3HmpgV > div[aria-label*=", Wave, "]::after {
+  content: var(--sticker-substitute-text);
+  display: block;
+  height: 1rem;
+  color: var(--sticker-substitute-color);
+  font-weight: 400;
+  font-style: italic;
+}
+.message-2qnXI6 .assetWrapper-3GNt0z {
+  height: fit-content !important;
+  width: fit-content !important;
+}
+
+.buttons-3JBrkn .stickerButton-3OEgwj {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22hide_stickers.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACC;;;AAqBA;EACC;EACA;EACA;;AAEA;EAKC;EACA;EACA;EACA;EACA;EAEA;EACA;;AASA;EACC;;AAGD;EACC;EACA;EACA;EAEA;EACA;EACA;;AAKH;EACC;EACA;;;AAKF;EACC;EACA;EACA;EACA;EACA%22,%22file%22:%22hide_stickers.css%22%7D */

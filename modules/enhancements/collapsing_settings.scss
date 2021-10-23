@@ -1,1 +1,71 @@
-﻿
+﻿// Edge case
+.container-35XQWE {
+	z-index: 1;
+	// Fix unread pills breaking because of this
+	&.unread-15xhX5 {
+		z-index: 2;
+	}
+}
+
+.container-3baos1 {
+	position: relative;
+}
+
+.panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
+	position: absolute;
+	flex-direction: column;
+	bottom: var(--collapse-settings-padding);
+	right: var(--collapse-settings-padding);
+	z-index: 12;
+	padding: 5px;
+	border-radius: 4px;
+	max-height: 32px;
+	transition: max-height 0.2s ease-in-out, box-shadow 0.3s ease;
+	box-shadow: none;
+
+	&:hover {
+		max-height: 500px;
+		@include card(4);
+	}
+}
+.panels-j1Uci_>.container-3baos1>.flex-1xMQg5>:not(:last-child){
+	height: 0;
+	opacity: 0;
+	transition: opacity 0.2s linear, height 0.2s ease-in-out;
+}
+.panels-j1Uci_>.container-3baos1>.flex-1xMQg5:hover>:not(:last-child){
+	height: 32px;
+	opacity: 1;
+}
+.nameTag-3uD-yy {
+	margin-right: 25px;
+}
+
+// Fix tooltips
+.layer-v9HyYc.disabledPointerEvents-1ptgTB {
+	&[style*="bottom: 54"][style^="position: absolute; left: 2"],
+	&[style*="bottom: 86"][style^="position: absolute; left: 2"],
+	&[style*="bottom: 118"][style^="position: absolute; left: 3"],
+	&[style*="bottom: 118"][style^="position: absolute; left: 2"],
+	&[style*="bottom: 150"][style^="position: absolute; left: 2"] {
+		& .tooltip-2QfLtc.tooltipTop-XDDSxx.tooltipPrimary-1d1ph4.tooltipDisablePointerEvents-3eaBGN {
+			transform: translate(calc(-50% - 30px), 40px) !important;
+			& .tooltipPointer-3ZfirK {
+				margin-left: -1px;
+				left: unset;
+				margin-top: -5px;
+				left: 100%;
+				top: 50%;
+				border-right-width: 5px;
+				-webkit-transform: rotate(270deg);
+				transform: rotate(270deg);
+			}
+		}
+	}
+}
+
+// Fix VC icons being misaligned
+.actions-aUdUfC,
+.connection-3KRENF {
+	margin-right: var(--collapse-settings-padding);
+}

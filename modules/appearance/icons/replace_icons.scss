@@ -96,6 +96,7 @@
 	@include replaceIcon("language", $icon-pack);
 	
 	// Context menus
+	@include replaceIcon("mark_read", $icon-pack);
 	@include replaceIcon("logout", $icon-pack);
 	@include replaceIcon("leave", $icon-pack);
 

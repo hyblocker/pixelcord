@@ -1,0 +1,14 @@
+﻿.default-3oAQTF {
+	background-image: none;
+	&::after {
+		content: "";
+		display: block;
+		width: 24px;
+		height: 24px;
+		-webkit-mask-image: url(/assets/b5ad3c52d0699af9b6987839875450d4.svg);
+		-webkit-mask-position: center;
+		-webkit-mask-repeat: no-repeat;
+		background: var(--red);
+		z-index: 2;
+	}
+}

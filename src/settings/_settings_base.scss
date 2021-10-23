@@ -1,6 +1,10 @@
 @import '../buildvars';
 @import '../material_design/ripple';
 
+$titlePadding: calc(0.5 * (var(--settings-header-height) - 12px));
+$titleLeftPadding: calc((var(--settings-header-height) + 6px));
+$backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
+
 // Inject into settings menu
 .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e::after {
 	// Text
@@ -83,8 +87,10 @@
  {
 	// Position the title
 	position: fixed;
-	top: calc(0.5 * (var(--settings-header-height) - 12px));
-	left: 75px;
+	// top: calc(0.5 * (var(--settings-header-height) - 12px));
+	// left: 75px;
+	top: $titlePadding;
+	left: $titleLeftPadding;
 	z-index: 5;
 
 	&, &>h1, &>h2 {
@@ -104,8 +110,10 @@
 		content: $text;
 
 		position: fixed;
-		top: calc(0.5 * (var(--settings-header-height) - 12px));
-		left: 75px;
+		// top: calc(0.5 * (var(--settings-header-height) - 12px));
+		// left: 75px;
+		top: $titlePadding;
+		left: $titleLeftPadding;
 		z-index: 5;
 		color: var(--accent-text);
 		font-size: 20px;
@@ -186,3 +194,20 @@
 		
 	}
 }
+
+// <- Button in settings
+.toolsContainer-1edPuj {
+	// Reposition it
+	position: fixed;
+	left: $backButtonPadding;
+	top: $backButtonPadding;
+	padding-top: 0;
+	
+	// Make it appear on top
+	z-index: 5;
+	
+	// Replace the back button with an arrow back
+	
+}
+
+// Turn ESC into a funny tooltip

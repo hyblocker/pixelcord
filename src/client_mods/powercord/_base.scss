@@ -23,3 +23,13 @@
 		fill: var(--red);
 	}
 }
+
+// Padding between search box and cards
+.powercord-entities-manage-search {
+	margin-bottom: 20px;
+}
+
+// Toasts
+.powercord-toast[data-toast-type=info] .icon {
+	color: var(--accent);
+}

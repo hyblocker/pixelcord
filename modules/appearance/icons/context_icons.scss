@@ -413,6 +413,13 @@
     @include contextIcon("game-context-install", "download", $icon-pack);
     @include contextIcon("game-context-in-library", "hide", $icon-pack);
     @include contextIcon("game-context-application-dev", "copy", $icon-pack);
+    
+    // Guild roles
+    .item-1tOPte#guild-settings-role-context-view-as-role,
+    .item-1tOPte#guild-settings-role-context-delete-role {
+        @include removeIcon();
+        @include reverseOrder();
+    }
 
     // Mods
     @include contextIcon("user-settings-cog-BetterDiscord", "betterdiscord", $icon-pack);

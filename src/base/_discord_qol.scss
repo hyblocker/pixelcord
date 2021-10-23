@@ -89,3 +89,8 @@
 .iconWrapper-2OrFZ1 + .anchor-3Z-8Bb[href="https://support.discord.com"] {
 	display: none;
 }
+
+// Hide the GIF button, you can use the emotes button and head to the GIF tab, or use Ctrl+G
+.buttonContainer-28fw2U > .button-38aScr[aria-label*="gif" i] {
+	display: none;
+}

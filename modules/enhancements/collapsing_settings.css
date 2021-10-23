@@ -1,3 +1,17 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 28 |         @include card(4);
+ *    |         ^^^^^^^^^^^^^^^^
+ *    '
+ *   modules\enhancements\collapsing_settings.scss 28:3  root stylesheet */
 
-
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%5D,%22names%22:%5B%5D,%22mappings%22:%22%22,%22file%22:%22collapsing_settings.css%22%7D */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 28 \2502          @include card(4);\d\a    \2502          ^^^^^^^^^^^^^^^^\a    \2575 \a   modules\\enhancements\\collapsing_settings.scss 28:3  root stylesheet";
+}

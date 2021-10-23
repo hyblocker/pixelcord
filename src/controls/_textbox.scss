@@ -180,3 +180,20 @@
 .cardInputError-1GUPnt {
 	--textbox-pillDefault: var(--red);
 }
+
+// Emoji name textbox breaks: fix it!
+.emojiRow-zIc7ZX {
+	&:hover,
+	&:focus-within {
+		& .emojiAliasInput-1y-NBz + .emojiAliasPlaceholder-3H_iZA {
+			// z-index: unset;
+			opacity: 0;
+		}
+	}
+	// & .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
+	& .emojiAliasInput-1y-NBz + .emojiAliasPlaceholder-3H_iZA {
+		z-index: 1;
+		opacity: 1;
+		transition: opacity .1s ease-in-out;
+	}
+}
