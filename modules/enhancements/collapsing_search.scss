@@ -1,0 +1,71 @@
+// im lazy so vars lol
+$transition:        150ms ease-in-out 50ms;
+$transitionLonger:  250ms ease-in-out 50ms;
+
+.searchBar-3dMhjb {
+	// Collapse!
+	width: 24px;
+	background-color:       transparent;
+	transition:             $transitionLonger;
+
+	// Placeholder should be invisible
+	& .DraftEditor-root .public-DraftEditorPlaceholder-root {
+		color:              transparent;
+		transition:         $transition;
+	}
+
+	// Textbox line
+	&::after {
+		background-color:   transparent;
+		transition:         $transition;
+	}
+	
+	// Search icon
+	& .iconContainer-O4O2CN {
+		width:              22px;
+		height:             22px;
+		transition:         $transitionLonger;
+
+
+		& > .icon-3cZ1F_ {
+			color:          var(--interactive-normal);
+			transition:     $transitionLonger;
+		}
+	}
+
+	// Hover / focus
+	&:hover,
+	.focused-31_ccS &,
+	.open-6_Y_aH & {
+		// Expand!
+		width:              240px;
+		background-color:   var(--textbox-color);
+
+		// Placeholder
+		& .DraftEditor-root .public-DraftEditorPlaceholder-root {
+			color:          var(--text-muted);
+		}
+		
+		&::after {
+			background-color: var(--textbox-pillDefault);
+		}
+		
+		// Search icon
+		& .iconContainer-O4O2CN {
+			width:          16px;
+			height:         16px;
+
+			& > .icon-3cZ1F_ {
+				color:      var(--text-muted);
+			}
+		}
+	}
+	
+	// Focus line color
+	.focused-31_ccS &,
+	.open-6_Y_aH & {
+		&::after {
+			background-color: var(--accent);
+		}
+	}
+}

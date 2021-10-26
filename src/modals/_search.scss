@@ -1,0 +1,259 @@
+﻿@import "../utils";
+@import "../icons/util";
+@import "../icons/discord";
+
+// date picker
+
+// suggestion hint
+.datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z {
+	@include theming {
+		background-color: var(--accent);
+		color: var(--accent-text);
+		&:hover {
+			background-color: var(--accent-selected);
+		}
+	}
+
+	margin-left: 4px;
+	border-radius: 11px;
+	padding: 0 8px;
+}
+
+// I dont like this honestly
+// kinda ugly and verbose
+// but for now it works™
+/*
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type {
+	border-right-color: transparent;
+}
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day {
+	border-bottom-color: transparent;
+}
+.calendarPicker-2yf6Ci .react-datepicker__month-container .react-datepicker__day {
+	border-radius: 50% !important;
+	border: 2px solid transparent;
+}
+.calendarPicker-2yf6Ci .react-datepicker__week>.react-datepicker__day:last-of-type {
+	border-right: 2px solid transparent;
+}
+.calendarPicker-2yf6Ci .react-datepicker__week:last-of-type>.react-datepicker__day {
+	border-bottom: 2px solid transparent;
+}
+
+// hover day
+.calendarPicker-2yf6Ci .react-datepicker__day:hover {
+	border-radius: 50%;
+	border: 2px solid var(--accent);
+	border-color: var(--accent);
+	background-color: transparent;
+	
+	height: 40px;
+}
+
+// Out of month
+.calendarPicker-2yf6Ci .react-datepicker__day--disabled,
+.calendarPicker-2yf6Ci .react-datepicker__day--outside-month {
+	background-color: #2f3136; // TODO: card or smth
+}
+
+.calendarPicker-2yf6Ci .react-datepicker__week:last-of-type .react-datepicker__day:hover {
+	border-bottom-color: var(--accent);
+	
+	&.react-datepicker__day--disabled,
+	&.react-datepicker__day--outside-month {
+		border-bottom-color: transparent;
+	}
+}
+
+.theme-dark .calendarPicker-2yf6Ci .react-datepicker__week .react-datepicker__day:last-of-type:hover {
+	border-right-color: var(--accent);
+
+	&.react-datepicker__day--disabled,
+	&.react-datepicker__day--outside-month {
+		border-right-color: transparent;
+	}
+}
+
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--keyboard-selected,
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover,
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected {
+	border-radius: 50%;
+	border: 2px solid var(--accent);
+	background-color: var(--accent);
+	color: var(--accent-text);
+	
+	&::after {
+		content: none;
+	}
+}
+
+.calendarPicker-2yf6Ci .react-datepicker__day--disabled,
+.calendarPicker-2yf6Ci .react-datepicker__day--outside-month,
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled,
+.calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--disabled:hover {
+	@include theming {
+		border-color: transparent;
+	}
+}
+*/
+
+// Resize date picker
+.layer-v9HyYc[style$=" top: 66px;"] > .container-3ayLPN.elevationBorderHigh-2WYJ09[style="width: 320px;"] {
+	width: calc(7 * (var(--date-picker-date-size) + var(--date-picker-date-padding)) + 2 * var(--date-picker-popout-padding)) !important;
+	left: calc(-2 * var(--date-picker-popout-padding));
+	position: absolute;
+}
+
+.calendarPicker-2yf6Ci {
+
+	// padding
+	.react-datepicker {
+		padding: var(--date-picker-popout-padding);
+	}
+
+	// Month
+	.react-datepicker__current-month {
+		text-transform: capitalize;
+		font-size: 16px;
+		line-height: 16px;
+
+		@include theming {
+			border-bottom-color: transparent;
+		}
+	}
+
+	// Dates
+	.react-datepicker__day {
+
+		// Default day
+		border: var(--date-picker-circle-thickness) solid transparent;
+		border-radius: 50%;
+		width: var(--date-picker-date-size);
+		height: var(--date-picker-date-size);
+		line-height: var(--date-picker-date-size);
+		margin: 0 var(--date-picker-date-padding) var(--date-picker-date-padding) 0;
+		--border-color: transparent;
+
+		// Hover
+		&.react-datepicker__day--keyboard-selected,
+		&.react-datepicker__day--selected:hover,
+		&:hover {
+			border-radius: 50%;
+			background-color: transparent;
+			// using a var so that i dont have to write a million extra lines of code to override stock discord
+			--border-color: var(--accent);
+			border: var(--date-picker-circle-thickness) solid var(--border-color);
+		}
+
+		// Selected
+		&.react-datepicker__day--selected {
+			border-radius: 50%;
+			// hover overrides it, so lets override it ourselves again lol
+			&, &:hover {
+				background-color: var(--accent);
+				color: var(--accent-text);
+			}
+
+			// Remove line
+			&::after {
+				content: none;
+			}
+		}
+
+		// Disabled
+		&.react-datepicker__day--disabled {
+			--border-color: transparent;
+		}
+	}
+
+	@include theming {
+		.react-datepicker__week {
+			// Bottom row
+			&:last-of-type {
+				& > .react-datepicker__day {
+					border-bottom: var(--date-picker-circle-thickness) solid var(--border-color);
+					margin-bottom: 0;
+				}
+
+				& .react-datepicker__day {
+					border-bottom-color: var(--border-color);
+				}
+			}
+
+			// Right-most column
+			& > .react-datepicker__day:last-of-type {
+				border-right: var(--date-picker-circle-thickness) solid var(--border-color);
+				margin-right: 0;
+			}
+
+			& .react-datepicker__day:last-of-type {
+				border-right-color: var(--border-color);
+			}
+
+			// Reset border radius
+			&:first-of-type > .react-datepicker__day:first-of-type,
+			&:first-of-type > .react-datepicker__day:last-of-type,
+			&:last-of-type > .react-datepicker__day:first-of-type,
+			&:last-of-type > .react-datepicker__day:last-of-type {
+				border-radius: 50%;
+			}
+		}
+
+		// Hide dates outside of the current month (just like Google) ; you can't select them anyway
+		.react-datepicker__day--outside-month {
+			visibility: hidden; // Don't let the user select hidden stuff!
+		}
+
+		// Disabled dates shouldn't have a unique background
+		.react-datepicker__day--disabled,
+		.react-datepicker__day.react-datepicker__day--disabled,
+		.react-datepicker__day.react-datepicker__day--disabled:hover {
+			background-color: transparent;
+		}
+
+		// last and next month buttons
+		.react-datepicker__navigation.react-datepicker__navigation--next,
+		.react-datepicker__navigation.react-datepicker__navigation--previous {
+			width: 24px;
+			height: 24px;
+			border: none;
+			-webkit-mask: #{svg-url(#{map-get($icons-discord, "chevron_right")})};
+			background: var(--interactive-normal);
+
+			&:hover {
+				background: var(--interactive-hover);
+			}
+		}
+	}
+}
+
+// Search spinner
+
+// Center the search spinner because of my OCD
+.totalResults--dyAxF {
+	& .spinnerWrapper-3hIs5I {
+		position: absolute;
+		width: var(--loading-spinner-size);
+		height: var(--loading-spinner-size);
+		left: calc(50% - var(--loading-spinner-size) * 0.5);
+		top: calc(50vh - var(--loading-spinner-size) * 0.5 - 7px);
+		justify-content: center;
+
+		& .inner-1gJC7_ {
+			width: var(--loading-spinner-size);
+			height: var(--loading-spinner-size);
+		}
+
+		.platform-win & {
+			top: calc(50vh - var(--loading-spinner-size) * 0.5 - 7px);
+		}
+	}
+}
+
+.path-92Hmty,
+.path2-1q7bG_,
+.path3-2l9TIX {
+	@include theming {
+		stroke: var(--accent);
+	}
+}

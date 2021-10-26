@@ -146,10 +146,26 @@
 	}
 	
 	// Override icons for tabs
+	.tabBarItem-3dfX8P[aria-controls=user_info-tab] {
+		--icon: #{svg-url(#{map-get($icons-filled, "account")})};
+	}
 	.tabBarItem-3dfX8P[aria-controls=activity-tab] {
 		--icon: #{svg-url(#{map-get($icons-filled, "game")})};
 	}
-
+	.tabBarItem-3dfX8P[aria-controls=mutual_guilds-tab] {
+		--icon: #{svg-url(#{map-get($icons-filled, "mutual_guild")})};
+	}
+	.tabBarItem-3dfX8P[aria-controls=mutual_friends-tab] {
+		--icon: #{svg-url(#{map-get($icons-filled, "mutual_friends")})};
+	}
+	
+	// Switch accounts icon
+	.switchAccountsIcon-355frb {
+		-webkit-mask-image: #{svg-url(#{map-get($icon-pack, "swap")})};
+		-webkit-mask-size: 16px;
+		background: currentColor;
+		
+	}
 
 	:root {
 		--welcome-svg:			url("/assets/d1382af8d9e755bc44811b1fd92990a8.svg");

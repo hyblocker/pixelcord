@@ -1,9 +1,15 @@
-﻿:root {
+﻿:root,.theme-dark,.theme-light {
 
     // Default font aliases
     --font-primary: var(--font-header);
     --font-secondary: var(--font-header);
     --font-display: var(--font-header);
+    
+    // Override default colors
+    --text-positive: var(--green);
+    --text-warning: var(--yellow);
+    --text-danger: var(--red);
+    --text-brand: var(--accent);
     
     // Theme helper default values
     --mouseX: 0%;

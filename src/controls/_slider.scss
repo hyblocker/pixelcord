@@ -11,8 +11,31 @@
 // Generic slider
 .barFill-23-gu-{
     background-color: var(--accent);
+    transition: 150ms ease-in-out;
 }
 .grabber-3mFHz2 {
-    background-color: var(--accent-selected);
+    background-color: var(--accent);
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    border-radius: 50%;
+    transition: 150ms ease-in-out;
+    &:hover {
+        background-color: var(--accent-selected);
+    }
     border: none;
+    .disabled-bolDAc & {
+        background-color: var(--slider-disabled);
+    }
+}
+.bar-2Qqk5Z {
+    transition: 150ms ease-in-out background-color;
+    height: 4px;
+    top: 18px;
+}
+
+// sometimes text overflows bruh
+.mark-1xjQqt {
+    width: fit-content;
 }

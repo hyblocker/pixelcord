@@ -57,10 +57,16 @@ $purple-color: "hsl(262, ";
 .baseShapeRound-1Mm1YW {
 	&[style*='background-color: #{$red-color}'] {
 		background-color: var(--red) !important;
+		color: var(--red-text);
 	}
 	&[style*='background-color: #{$green-color}'] {
 		background-color: var(--green) !important;
+		color: var(--green-text);
 	}
+}   
+.wrapper-232cHJ {
+	background-color: var(--red);
+	color: var(--red-text);
 }
 
 // radio toggles
@@ -143,4 +149,29 @@ $purple-color: "hsl(262, ";
 .statusOffline-37RKt7,
 .dotOffline-3DXoDy {
 	background-color: var(--gray);
+}
+
+// VC badges
+.iconBadge-1N56q1 {
+	background-color: var(--gray);
+	& > .icon-3s6X1M {
+		color: var(--gray-text);
+	}
+	
+	&.participating-1P_Z3z {
+		background-color: var(--green);
+		& > .icon-3s6X1M {
+			color: var(--green-text);
+		}
+	}
+}
+
+// Required *
+.required-7sPBq3 {
+	color: var(--accent);
+}
+
+// Nickname is longer than 32 chars
+.colorStatusRed-1YV2rj {
+	color: var(--red);
 }

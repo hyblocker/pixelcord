@@ -1,0 +1,69 @@
+﻿@import "../utils";
+
+// Tabs
+.navButtonActive-1MkytQ {
+	background-color: var(--accent-transparent);
+	color: var(--accent);
+
+	&:hover {
+		color: var(--accent);
+	}
+}
+
+// EMOTE PICKER
+
+// hovered emotes
+.emojiItem-14v6tW.emojiItemSelected-1aLkfV {
+	background-color: var(--accent-transparent);
+	color: var(--accent);
+}
+
+// emote category
+.categoryItemDefaultCategory-aBZ6nJ:hover,
+.categoryItemDefaultCategorySelected-_HCKoz,
+.categoryItemDefaultCategorySelected-_HCKoz:hover {
+	background-color: var(--accent-transparent);
+
+	& .categoryIcon-1SvUHG {
+		color: var(--accent);
+	}
+}
+
+// emote guild
+.mask-2hO5M8 [mask="url(#svg-mask-squircle)"] {
+	.guildIconWithoutImage-2JZx6N {
+		background-color: var(--accent-transparent);
+		color: var(--accent);
+	}
+	.guildIcon-3h-1IH {
+		background-color: var(--accent-transparent);
+	}
+}
+
+// emote skin tones
+.diversityEmojiItem-L6_IXw:hover {
+	background-color: var(--accent-transparent);
+}
+
+// STICKERS
+.stickerInspected-2EM4w- .inspectedIndicator-59EII8 {
+	background-color: var(--accent-transparent);
+}
+
+// GIF PICKER
+.focused-1En8bG::after,
+.result-3w1ZcL:hover::after {
+	@include theming {
+		box-shadow: inset 0 0 0 2px var(--accent),inset 0 0 0 3px #2f3136;
+	}
+}
+.categoryFadeBlurple-1j72_A {
+	@include theming {
+		background-color: var(--accent);
+		opacity: 0.5;
+		&:hover {
+			background-color: var(--accent);
+			opacity: 0.8;
+		}
+	}
+}

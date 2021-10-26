@@ -1,0 +1,35 @@
+﻿.bd-settings-group.collapsible .bd-settings-title {
+	cursor: pointer;
+}
+
+// Buttons
+.bd-button {
+	background-color: var(--accent);
+	color: var(--accent-text);
+	
+	&.bd-button-danger {
+		background-color: var(--red);
+		color: var(--red-text);
+	}
+}
+
+// Move the title button back into frame
+.bd-settings-title:first-of-type {
+	width: 100%;
+}
+.bd-button-title {
+	// reposition buttons
+	position: absolute;
+	height: 24px;
+	// 138px: sidebar + 740px content + 84px half button width 
+	left: calc(138px + 740px + 84px);
+	top: calc(var(--settings-header-height) - 1px);
+}
+
+// Addon views
+.bd-addon-views .bd-view-button.selected {
+	background-color: var(--accent);
+	& svg {
+		fill: var(--accent-text);
+	}
+}

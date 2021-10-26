@@ -1,0 +1,36 @@
+﻿@import "../utils";
+
+// Changelog section titles' colors
+.added-3gEorX::after {
+	background-color: var(--green);
+}
+
+.progress-3VSXTd::after {
+	background-color: var(--yellow);
+}
+
+.improved-2xP0R6 {
+	@include theming {
+		&::after {
+			background-color: var(--accent);
+		}
+		color: var(--accent);
+	}
+}
+
+.fixed-17NtPk {
+	color: var(--red);
+	&::after {
+		background-color: var(--red);
+	}
+}
+
+// social links
+.socialLink-3toGbB {
+	@include theming {
+		color: var(--interactive-normal);
+		&:hover {
+			color: var(--interactive-hover);
+		}
+	}
+}

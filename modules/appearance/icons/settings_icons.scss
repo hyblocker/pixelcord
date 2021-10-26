@@ -172,7 +172,14 @@ $dummy: $icons-outline;
 	@include settingsIcon("cumcord_quickcss-tab", "css_editor", $icon-pack);
 
 	// Better Discord
-	@include settingsIcon("settings-tab", "betterdiscord", $icon-pack);
+	// @include settingsIcon("settings-tab", "betterdiscord", $icon-pack);
+	// BD settings uses i18n, so heres a funky workaround for it
+	.bd-sidebar-header + .bd-settings-tab {
+		.side-8zPYf6 > &:not(.role-3wi9Tf)::before {
+			--icon: #{svg-url(#{map-get($icon-pack, "betterdiscord")})};
+		}
+	}
+	
 	@include settingsIcon("customcss-tab", "css_editor", $icon-pack);
 	@include settingsIcon("plugins-tab", "plugins", $icon-pack);
 	@include settingsIcon("themes-tab", "themes", $icon-pack);
@@ -190,5 +197,9 @@ $dummy: $icons-outline;
 	@include settingsIcon("pc-updater-tab", "updater", $icon-pack);
 
 	// ploogins
+	@include settingsIcon("view-raw-tab", "view_raw", $icon-pack);
+	@include settingsIcon("pronoundb-tab", "pronoundb", $icon-pack);
+	@include settingsIcon("powercord-reverse-image-search-tab", "reverse_search", $icon-pack);
+	@include settingsIcon("better-settings-tab", "settings", $icon-pack);
 	
 }

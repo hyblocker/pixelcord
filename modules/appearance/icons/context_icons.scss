@@ -207,6 +207,9 @@
     @include contextIcon("message-report", "report", $icon-pack);
     @include contextIcon("message-remove-reactions", "remove_reactions", $icon-pack);
     @include contextIcon("message-delete", "delete", $icon-pack);
+    
+    // Message action special case
+    @include contextIcon("message-actions-apps", "apps", $icon-pack);
 
     // Textbox right click
     @include contextIcon("textarea-context-add-to-dictionary", "add_dictionary", $icon-pack);
@@ -237,6 +240,7 @@
     @include contextIcon("user-context-roles", "roles", $icon-pack);
     @include contextIcon("user-context-kick", "kick", $icon-pack);
     @include contextIcon("user-context-ban", "ban", $icon-pack);
+    @include contextIcon("user-context-remove", "kick", $icon-pack);
 
     // rpc shit
     @include contextIcon("user-context-ask-to-join", "join_game", $icon-pack);
@@ -263,6 +267,7 @@
             flex-shrink: 0;
         }
     }
+    @include contextIcon("gdm-context-instant-invites", "invite", $icon-pack);
     @include contextIcon("gdm-context-remove-icon", "close", $icon-pack);
     @include contextIcon("gdm-context-invite-to-join", "join_game", $icon-pack);
     @include contextIcon("gdm-context-mute-channel", "mute", $icon-pack);
@@ -273,6 +278,7 @@
     @include contextIcon("user-context-change-video-background", "change_camera_bg", $icon-pack);
     @include contextIcon("user-context-focus-video", "focus_video", $icon-pack);
     @include contextIcon("user-context-voice-move", "move_voice", $icon-pack);
+    @include contextIcon("user-context-voice-disconnect", "move_voice", $icon-pack); // TODO: KICK FROM VC
 
     // Guild right click
     @include contextIcon("guild-context-mark-guild-read", "mark_read", $icon-pack);
@@ -414,12 +420,19 @@
     @include contextIcon("game-context-in-library", "hide", $icon-pack);
     @include contextIcon("game-context-application-dev", "copy", $icon-pack);
     
+    // Boosts
+    @include contextIcon("subscription-context-apply", "swap", $icon-pack);
+    @include contextIcon("subscription-context-cancel", "close", $icon-pack);
+    
     // Guild roles
     .item-1tOPte#guild-settings-role-context-view-as-role,
     .item-1tOPte#guild-settings-role-context-delete-role {
         @include removeIcon();
         @include reverseOrder();
     }
+    
+    // Account switcher
+    @include contextIcon("manage-mutli-account-remove-account", "logout", $icon-pack);
 
     // Mods
     @include contextIcon("user-settings-cog-BetterDiscord", "betterdiscord", $icon-pack);
@@ -434,5 +447,9 @@
     // Guild profile
     @include contextIcon("guild-context-guild-profile", "guild_profile", $icon-pack);
     @include contextIcon("message-view-raw", "view_raw", $icon-pack);
+
+    // Pronoun DB
+    @include contextIcon("user-context-pronoundb", "pronoundb", $icon-pack);
+
 
 }

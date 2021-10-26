@@ -13,3 +13,16 @@ d[id*="-blob_mask"] {
 .folderIconWrapper-1_bOZe svg[style="color: rgb(88, 101, 242);"] {
 	color: var(--accent) !important;
 }
+
+// New guild
+
+// Server discovery
+.circleIconButton-1XqULR {
+	background-color: transparent;
+	color: var(--green);
+	
+	&.selected-2jcQaY {
+		background-color: var(--green);
+		color: var(--green-text);
+	}
+}

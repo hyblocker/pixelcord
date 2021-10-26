@@ -1,6 +1,61 @@
-﻿.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
+﻿@import "../utils";
+
+.categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
 	background: none;
 }
 .categoryItem-1QIroW {
 	position: relative;
+}
+
+// Fix search box
+.search-1iTphC .searchBox-2_mAlO {
+	// Text color is borked
+	& .searchBoxInput-K6mkng {
+		color: var(--text-normal);
+	}
+	
+	// Enter to search
+	& .colorMuted-HdFt4q {
+		color: var(--interactive-normal);
+	}
+	
+	// Disable focus ring
+	&:focus,
+	&:focus-within {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	// Search icon color
+	& .searchIcon-6ljH-4 {
+		color: var(--interactive-normal);	
+	}
+	
+	// Clear icon color
+	& .closeIcon-2WLZc1 {
+		color: var(--interactive-normal);
+		&:hover {
+			color: var(--interactive-hover);
+		}
+	}
+
+	background-color: var(--textbox-color);
+}
+
+.searchBox-3Y2Vi7 {
+	@include theming {
+		background-color: var(--textbox-color);
+	}
+}
+
+// Selected pill
+.categoryPill-34fszg.selected-1dONk0 {
+	background-color: var(--accent);
+	color: var(--accent-text);
+}
+.categoryPill-34fszg:hover:not(.selected-1dONk0) {
+	background-color: var(--accent-transparent);
+	& .categoryLabel-2G3r2V {
+		color: var(--accent);
+	}
 }

@@ -112,3 +112,13 @@
 .buttonContainer-28fw2U > .button-38aScr[aria-label*="gif" i] {
 	display: none;
 }
+
+// Stream just start is misaligned in spanish (and likely other languages)
+.emptyPreviewText-2IOfAL {
+	text-align: center;
+}
+
+// color picker is fucked on things which arent english bruh
+.dropperIconButton-2shYII {
+	width: 69px;
+}

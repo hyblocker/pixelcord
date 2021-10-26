@@ -1,0 +1,71 @@
+﻿@import "../material_design/ripple";
+
+.input-rwLH4i {
+	left: 0;
+}
+.container-3auIfb {
+	width: 32px;
+	height: 14px;
+	overflow: visible;
+
+	@mixin switchOn($i) {
+		&[style*="background-color: hsl(#{$i}"] {
+			background-color: transparent !important;
+
+			&::before {
+				content: '';
+				display: inline-block;
+				background-color: var(--accent) !important;
+				opacity: 0.3;
+				width: 32px;
+				height: 14px;
+				border-radius: 14px;
+				pointer-events: none;
+			}
+			.slider-TkfMQL {
+				background-color: var(--accent) !important;
+				box-shadow: 0 3px 4px 0 RGB(0 0 0 / 14%), 0 3px 3px -2px RGB(0 0 0 / 20%), 0 1px 8px 0 RGB(0 0 0 / 12%);
+			}
+		}
+	}
+
+	// bd range
+	@for $i from 219 through 235 {
+		@include switchOn($i);
+	}
+	// vanilla shitcord
+	@for $i from 126 through 178 {
+		@include switchOn($i);
+	}
+
+	// off state
+	@for $i from 179 through 218 {
+		&[style*="background-color: hsl(#{$i}"] {
+			background-color: var(--switch-slider-color) !important;
+
+			.slider-TkfMQL {
+				background-color: var(--switch-knob-color) !important;
+				box-shadow: 0 2px 2px 0 RGB(0 0 0 / 14%), 0 3px 1px -2px RGB(0 0 0 / 20%), 0 1px 5px 0 RGB(0 0 0 / 12%)
+			}
+		}
+	}
+
+	.slider-TkfMQL {
+		width: 20px;
+		height: 20px;
+		top: -3px;
+		margin: 0;
+		border-radius: 50%;
+		box-shadow: var(--shadow-2dp);
+
+		rect, svg {
+			display: none;
+		}
+	}
+
+	@include rippleimg(var(--accent-highlight), 256px, 256px, true, -119px, -113px, $ripple-size: 1);
+
+	input#uid_4214.input-rwLH4i {
+		left: 0;
+	}
+}

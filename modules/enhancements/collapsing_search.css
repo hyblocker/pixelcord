@@ -1,3 +1,44 @@
+.searchBar-3dMhjb {
+  width: 24px;
+  background-color: transparent;
+  transition: 250ms ease-in-out 50ms;
+}
+.searchBar-3dMhjb .DraftEditor-root .public-DraftEditorPlaceholder-root {
+  color: transparent;
+  transition: 150ms ease-in-out 50ms;
+}
+.searchBar-3dMhjb::after {
+  background-color: transparent;
+  transition: 150ms ease-in-out 50ms;
+}
+.searchBar-3dMhjb .iconContainer-O4O2CN {
+  width: 22px;
+  height: 22px;
+  transition: 250ms ease-in-out 50ms;
+}
+.searchBar-3dMhjb .iconContainer-O4O2CN > .icon-3cZ1F_ {
+  color: var(--interactive-normal);
+  transition: 250ms ease-in-out 50ms;
+}
+.searchBar-3dMhjb:hover, .focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb {
+  width: 240px;
+  background-color: var(--textbox-color);
+}
+.searchBar-3dMhjb:hover .DraftEditor-root .public-DraftEditorPlaceholder-root, .focused-31_ccS .searchBar-3dMhjb .DraftEditor-root .public-DraftEditorPlaceholder-root, .open-6_Y_aH .searchBar-3dMhjb .DraftEditor-root .public-DraftEditorPlaceholder-root {
+  color: var(--text-muted);
+}
+.searchBar-3dMhjb:hover::after, .focused-31_ccS .searchBar-3dMhjb::after, .open-6_Y_aH .searchBar-3dMhjb::after {
+  background-color: var(--textbox-pillDefault);
+}
+.searchBar-3dMhjb:hover .iconContainer-O4O2CN, .focused-31_ccS .searchBar-3dMhjb .iconContainer-O4O2CN, .open-6_Y_aH .searchBar-3dMhjb .iconContainer-O4O2CN {
+  width: 16px;
+  height: 16px;
+}
+.searchBar-3dMhjb:hover .iconContainer-O4O2CN > .icon-3cZ1F_, .focused-31_ccS .searchBar-3dMhjb .iconContainer-O4O2CN > .icon-3cZ1F_, .open-6_Y_aH .searchBar-3dMhjb .iconContainer-O4O2CN > .icon-3cZ1F_ {
+  color: var(--text-muted);
+}
+.focused-31_ccS .searchBar-3dMhjb::after, .open-6_Y_aH .searchBar-3dMhjb::after {
+  background-color: var(--accent);
+}
 
-
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%5D,%22names%22:%5B%5D,%22mappings%22:%22%22,%22file%22:%22collapsing_search.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22collapsing_search.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;EAEC;EACA;EACA,YANmB;;AASnB;EACC;EACA,YAZkB;;AAgBnB;EACC;EACA,YAlBkB;;AAsBnB;EACC;EACA;EACA,YAxBkB;;AA2BlB;EACC;EACA,YA7BiB;;AAkCnB;EAIC;EACA;;AAGA;EACC;;AAGD;EACC;;AAID;EACC;EACA;;AAEA;EACC;;AAQF;EACC%22,%22file%22:%22collapsing_search.css%22%7D */

@@ -14,13 +14,32 @@
 	&[fill="#7289da"] {
 		fill: var(--accent);
 	}
+
 	// updated
 	&[fill="#43b581"] {
 		fill: var(--green);
 	}
+
 	// failed bc git threw error
 	&[fill="#f04747"] {
 		fill: var(--red);
+	}
+}
+
+#app-mount {
+	// Red should be our red
+	& .powercord-settings-item .description-3_Ncsb strong strong {
+		color: var(--red);
+	}
+
+	// Yellow beta
+	& .powercord-product-details .metadata .version span + div {
+		color: var(--yellow);
+	}
+	
+	// Blue debug info
+	& .powercord-updater .debug-info b {
+		color: var(--accent);
 	}
 }
 

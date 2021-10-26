@@ -1,0 +1,10 @@
+﻿@import "../utils";
+
+// TODO: Change to cards!!!!
+.partyMemberEmpty-2iyh5g,
+.moreUsers-1sZP3U {
+	@include theming {
+		background-color: var(--gray);
+		color: var(--gray-text);
+	}
+}

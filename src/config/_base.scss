@@ -35,7 +35,16 @@
 	
 	// Roles
 	--role-chip-weight: 500;
-	--role-chip-padding: 2px;
+	--role-chip-padding: 4px;
+	
+	// Date picker
+	--date-picker-circle-thickness: 2px;
+	--date-picker-date-size: 40px;
+	--date-picker-date-padding: 4px;
+	--date-picker-popout-padding: 20px;
+	
+	// Loading spinner
+	--loading-spinner-size: 48px;
 	
 	// External Modules
 	// Better Badges
@@ -54,10 +63,10 @@
 	--accent-selected: rgb(141, 202, 255);
 
 	// Colors
-	--green: #66c296;
+	--green: #43b581;
 	--green-text: white;
 	--green-transparent: rgba(67, 181, 129, 12%);
-	--green-selected: #43b581;
+	--green-selected: #66c296;
 	
 	--red: #cf6679;
 	--red-text: white;
@@ -101,6 +110,14 @@
 	// Tooltips
 	--tooltip-bg: #1f1f1f;
 	--tooltip-text: white;
+
+	// Switches
+	--switch-knob-color: #ECECEC;
+	--switch-slider-color: rgba(135, 135, 135,0.65);
+	
+	// Sliders
+	--slider-disabled: #ECECEC;
+	--slider-disabled: #ECECEC;
 }
 .theme-light {
 	--weight-textbox: 500;

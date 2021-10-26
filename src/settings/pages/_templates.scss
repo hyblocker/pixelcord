@@ -1,0 +1,18 @@
+﻿.descriptionSection-3RrpaD {
+	&:first-child .descriptionIcon-36p1fN {
+		& > circle {
+			fill: var(--green-text);
+		}
+		& > g > path[fill^="hsl(139, "] {
+			fill: var(--green);
+		}
+	}
+	&:last-child .descriptionIcon-36p1fN {
+		& > circle {
+			fill: var(--red-text);
+		}
+		& > path[fill^="hsl(359, "] {
+			fill: var(--red);
+		}
+	}
+}

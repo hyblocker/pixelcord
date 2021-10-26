@@ -1,0 +1,29 @@
+﻿$red-color: "hsl(359, ";
+$green-color: "hsl(139, ";
+$yellow-color: "hsl(38, ";
+$gray-color: "hsl(214, ";
+$purple-color: "hsl(262, ";
+
+.PI-icon_mobile,
+.PI-icon_desktop,
+.PI-icon_web {
+	&[style*='color: #{$red-color}'] {
+		color: var(--red) !important;
+	}
+
+	&[style*='color: #{$green-color}'] {
+		color: var(--green) !important;
+	}
+
+	&[style*='color: #{$yellow-color}'] {
+		color: var(--yellow) !important;
+	}
+
+	&[style*='color: #{$gray-color}'] {
+		color: var(--gray) !important;
+	}
+
+	&[style*='color: #{$purple-color}'] {
+		color: var(--purple) !important;
+	}
+}

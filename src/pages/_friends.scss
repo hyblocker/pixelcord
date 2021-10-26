@@ -22,3 +22,13 @@
 	position: relative;
 	@include ripple;
 }
+
+// Add friend button is funky
+.topPill-30KHOu .themed-OHr7kt.item-PXvHYJ[aria-controls="add_friend-tab"] {
+	background-color: var(--green) !important;
+	color: var(--green-text) !important;
+	
+	&:hover {
+		background-color: var(--green-selected) !important;
+	}
+}
