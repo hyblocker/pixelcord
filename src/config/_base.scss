@@ -46,10 +46,14 @@
 	// Loading spinner
 	--loading-spinner-size: 48px;
 	
+	// Tooltips
+	--tooltip-animation: 100ms ease-in-out 323ms;
+	
 	// External Modules
 	// Better Badges
 	--badge-size: 22px;
 	
+	// Stickers
 	--sticker-substitute-text: "*sticker*";
 	--sticker-substitute-color: var(--red);
 }

@@ -18,19 +18,24 @@ $purple-color: "hsl(262, ";
 	&[style*='background-color: #{$red-color}'] {
 		background-color: var(--red) !important;
 	}
+
 	&[style*='background-color: #{$green-color}'] {
 		background-color: var(--green) !important;
 	}
+
 	&[style*='background-color: #{$yellow-color}'] {
 		background-color: var(--yellow) !important;
 	}
+
 	&[style*='background-color: #{$gray-color}'] {
 		background-color: var(--gray) !important;
 	}
+
 	&[style*='background-color: #{$purple-color}'] {
 		background-color: var(--purple) !important;
 	}
 }
+
 // avatars
 .wrapper-3t9DeA,
 .status-1XNdyw {
@@ -38,15 +43,19 @@ $purple-color: "hsl(262, ";
 		&[fill*='#{$red-color}'] {
 			fill: var(--red);
 		}
+
 		&[fill*='#{$green-color}'] {
 			fill: var(--green);
 		}
+
 		&[fill*='#{$yellow-color}'] {
 			fill: var(--yellow);
 		}
+
 		&[fill*='#{$gray-color}'] {
 			fill: var(--gray);
 		}
+
 		&[fill*='#{$purple-color}'] {
 			fill: var(--purple);
 		}
@@ -59,11 +68,13 @@ $purple-color: "hsl(262, ";
 		background-color: var(--red) !important;
 		color: var(--red-text);
 	}
+
 	&[style*='background-color: #{$green-color}'] {
 		background-color: var(--green) !important;
 		color: var(--green-text);
 	}
-}   
+}
+
 .wrapper-232cHJ {
 	background-color: var(--red);
 	color: var(--red-text);
@@ -81,6 +92,7 @@ $purple-color: "hsl(262, ";
 .colorStatusGreen-2saF4_ {
 	color: var(--green);
 }
+
 // text randomly found in the app
 .warning-3qyw2h {
 	color: var(--red);
@@ -90,6 +102,7 @@ $purple-color: "hsl(262, ";
 .verified-1eC5dy,
 .partnered-3nJayh {
 	color: var(--accent);
+
 	& .icon-1ihkOt {
 		color: var(--accent-text);
 	}
@@ -102,7 +115,7 @@ $purple-color: "hsl(262, ";
 
 // update app
 .updateIconForeground-3tnNZn,
-// Attach button (RPC)
+	// Attach button (RPC)
 .attachButtonPlay-3iJ0mf {
 	fill: var(--green);
 }
@@ -146,6 +159,7 @@ $purple-color: "hsl(262, ";
 .dotOnline-8Ag7EB {
 	background-color: var(--green);
 }
+
 .statusOffline-37RKt7,
 .dotOffline-3DXoDy {
 	background-color: var(--gray);
@@ -154,12 +168,14 @@ $purple-color: "hsl(262, ";
 // VC badges
 .iconBadge-1N56q1 {
 	background-color: var(--gray);
+
 	& > .icon-3s6X1M {
 		color: var(--gray-text);
 	}
-	
+
 	&.participating-1P_Z3z {
 		background-color: var(--green);
+
 		& > .icon-3s6X1M {
 			color: var(--green-text);
 		}
@@ -174,4 +190,24 @@ $purple-color: "hsl(262, ";
 // Nickname is longer than 32 chars
 .colorStatusRed-1YV2rj {
 	color: var(--red);
+}
+
+// Channel perms yellow should use our yellow
+.card-4s8auQ path[fill^="hsl(38, "] {
+	fill: var(--yellow);
+}
+
+@mixin permissionSwitch($color) {
+	color: var(--#{$color});
+	&.selected-2YhbGh {
+		background-color: var(--#{$color});
+		color: var(--#{$color}-text);
+	}
+}
+
+.allow-1PzSY3 {
+	@include permissionSwitch("green");
+}
+.deny-3nAuT6 {
+	@include permissionSwitch("red");
 }

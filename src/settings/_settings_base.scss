@@ -22,20 +22,22 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 
 	// Separator
 	border-top: 1px solid var(--background-modifier-accent);
-	
+
 	// Info css
 	text-transform: capitalize;
 	outline: 0;
-	
+
 	// Font
 	font-size: 12px;
 	line-height: 16px;
 	color: var(--text-muted);
 }
+
 // Settings sidebar
 .topPill-30KHOu .themed-OHr7kt.item-PXvHYJ {
 	@include ripple;
 }
+
 .theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
 .theme-light .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
 .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
@@ -45,14 +47,17 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 		color: var(--accent);
 		font-weight: var(--weight-header);
 	}
-    & .colorInteractiveActive-3Ip9Eu {
-        color: currentColor;
-    }
+
+	& .colorInteractiveActive-3Ip9Eu {
+		color: currentColor;
+	}
 }
+
 // Yeet whitespace on the left of the sidebar bc yeds
 .sidebarRegion-VFTUkN {
 	flex: 0;
 }
+
 // Nitro tabs are special
 .serverBoostTabItem-2hFTIN[aria-selected=true],
 .premiumTabItem-1QTfBr[aria-selected=true] {
@@ -64,10 +69,12 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 .side-8zPYf6 .item-PXvHYJ {
 	@include ripple;
 }
+
 // red items should use the theme var
 .side-8zPYf6 .item-PXvHYJ[style^="color: hsl(359,"] {
 	color: var(--red) !important;
 }
+
 // red selected
 .side-8zPYf6 .item-PXvHYJ[style^="color: hsl(0,"][style*="background-color: hsl(359"] {
 	color: var(--red-text) !important;
@@ -84,8 +91,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 .customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type,
 .customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type,
 .contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type,
-.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type
- {
+.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type {
 	// Position the title
 	position: fixed;
 	// top: calc(0.5 * (var(--settings-header-height) - 12px));
@@ -94,7 +100,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	left: $titleLeftPadding;
 	z-index: 5;
 
-	&, &>h1, &>h2 {
+	&, & > h1, & > h2 {
 		// Style the title
 		color: var(--accent-text);
 		font-size: 20px;
@@ -124,7 +130,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 }
 
 .layer-3QrUeG[aria-label$="SETTINGS"] {
-	
+
 	// Nitro
 	.content-2c3hgM > .marketingRefreshSectionTier1-dRwS-6 {
 		@include forceTitle('Nitro');
@@ -136,27 +142,27 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	}
 
 	// Payment method
-	.paymentHistory-2FXzro>.title-3sZWYQ {
+	.paymentHistory-2FXzro > .title-3sZWYQ {
 		@include forceTitle(var(--i18n-payment, 'Billing'));
 	}
-	
+
 	// Activate community
-	.banner-2zWlOa+.size24-RIRrxO {
+	.banner-2zWlOa + .size24-RIRrxO {
 		@include forceTitle('Community');
 	}
-	
+
 	// Partnership
-	.banner-2AwsUs+.size24-RIRrxO {
+	.banner-2AwsUs + .size24-RIRrxO {
 		@include forceTitle(var(--i18n-partnership, 'Partnership'));
 	}
-	
+
 	// Discovery
 	.discoverPreview-3q1szX {
 		@include forceTitle(var(--i18n-discovery, 'Discovery'));
 	}
 
 	// Threads
-	.banner-2G2Kv6+.size24-RIRrxO {
+	.banner-2G2Kv6 + .size24-RIRrxO {
 		@include forceTitle('Thread');
 	}
 
@@ -164,12 +170,12 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	.sidebar-dLM-kh {
 		@include forceTitle(var(--i18n-roles, 'Roles'));
 	}
-	
+
 	// hypesquad
 	.intro-325xRx {
 		@include forceTitle(var(--i18n-hypesquad, 'HypeSquad'));
 	}
-	
+
 	// TODO: Premium title whenever they add the page
 }
 
@@ -194,7 +200,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 		left: 0;
 		top: 0;
 
-		
+
 	}
 }
 
@@ -205,10 +211,10 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	left: $backButtonPadding;
 	top: $backButtonPadding;
 	padding-top: 0;
-	
+
 	// Make it appear on top
 	z-index: 5;
-	
+
 }
 
 // Replace the back button with an arrow back
@@ -216,16 +222,73 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	border-radius: 0;
 	@include theming {
 		border-color: transparent;
+		&:hover {
+			background-color: transparent;
+		}
 	}
-	
+
 	& > svg {
 		width: 24px;
 		height: 24px;
 	}
-	
+
 	& path {
 		d: path("M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z");
 	}
 }
 
+.closeButton-1tv5uR:hover + .keybind-KpFkfr {
+	opacity: 1;
+	transform: scale(1);
+}
+
 // Turn ESC into a funny tooltip
+.closeButton-1tv5uR + .keybind-KpFkfr {
+	font-size: 0;
+	opacity: 0;
+	transform: scale(0);
+	visibility: hidden;
+
+	&::after {
+		content: "";
+		visibility: visible;
+
+		padding: 0;
+		overflow-wrap: break-word;
+		text-rendering: optimizelegibility;
+		user-select: none;
+		vertical-align: baseline;
+
+		pointer-events: none;
+
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		border-top-color: var(--tooltip-bg);
+
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -5px;
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		transition: var(--tooltip-animation);
+	}
+
+	&::before {
+		content: var(--i18n-back, "Back");
+		visibility: visible;
+		position: relative;
+		top: 8px; // Space
+
+		background-color: var(--tooltip-bg);
+		border-radius: 4px;
+		padding: 8px;
+		line-height: 14px;
+		font-weight: 500;
+		font-size: 13px;
+		color: var(--tooltip-text);
+		transition: var(--tooltip-animation);
+		pointer-events: none;
+	}
+}

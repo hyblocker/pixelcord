@@ -15,7 +15,7 @@ $normal: 4;
 .avatar-1uQSZT {
 	.theme-light & {
 		border-color: cardbg($highlight, false);
-		background-color: cardbg($highlight, false);
+		background-color: cardbg($highlight, nfalse);
 	}
 	.theme-dark & {
 		border-color: cardbg($highlight, true);
