@@ -1,0 +1,17 @@
+﻿@import "../utils";
+
+.checkbox-1ix_J3[style$="color: var(--control-brand-foreground);"] {
+	@include theming {
+		background-color: var(--accent) !important;
+		border-color: var(--accent) !important;
+		& path {
+			fill: var(--accent-text);
+		}
+	}
+}
+
+// Discount
+.rowPercentDiscount-1Ip6TE {
+	background-color: var(--green);
+	color: var(--green-text);
+}
