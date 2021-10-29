@@ -21,3 +21,13 @@
 	position: relative;
 	@include ripple();
 }
+
+// buttons
+.connectedAccount-2Jb-Z0 {
+	height:     calc(var(--button-height) - 2 * var(--button-padding));
+	border-radius: calc(0.5 * var(--button-height));
+	padding:    var(--button-padding)
+				calc(var(--button-icon-spacing) + var(--button-padding))
+				var(--button-padding)
+				calc(var(--button-icon-spacing) + var(--button-padding));
+}

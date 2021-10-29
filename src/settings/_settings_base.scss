@@ -38,6 +38,16 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	@include ripple;
 }
 
+// Items should be "material you"
+.side-8zPYf6 .item-PXvHYJ {
+	height: var(--settings-item-height);
+	border-radius: calc(0.5 * var(--settings-item-height));
+}
+// sidebar padding
+.sidebar-CFHs9e {
+	padding: 60px var(--sidebar-right-padding) 60px var(--sidebar-left-padding);
+}
+
 .theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
 .theme-light .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
 .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
