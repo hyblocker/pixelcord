@@ -6,10 +6,15 @@
 }
 .menu-3sdvDG {
 	border-radius: var(--context-menu-radius);
+	background-color: var(--secondary-container);
+	color: var(--on-secondary-container);
 }
 .scroller-3BxosC {
 	padding: var(--context-menu-padding);
 }
 .item-1tOPte:not(.hideInteraction-1iHO1O) {
 	@include ripple;
+}
+.colorDefault-2K3EoJ {
+	color: var(--on-secondary-container);
 }

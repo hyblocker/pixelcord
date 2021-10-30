@@ -28,7 +28,7 @@
 
 	.modeSelected-346R90 &,
 	.modeSelected-346R90:hover & {
-		@include channelColors(var(--accent), var(--accent-transparent));
+		@include channelColors(var(--on-primary-container), var(--primary-container));
 	}
 	.modeUnread-1qO3K1 & .icon-1DeIlz,
 	.modeUnread-1qO3K1:hover & .icon-1DeIlz {
@@ -36,10 +36,10 @@
 	}
 }
 .selected-aXhQR6.container-2Pjhx- {
-	background-color: var(--accent-transparent);
+	background-color: var(--primary-container);
 }
 .selected-aXhQR6 .layout-2DM8Md {
-	color: var(--accent);
+	color: var(--primary);
 }
 .modeSelected-346R90 .channelName-2YrOjO,
 .selected-aXhQR6 .name-uJV0GL {

@@ -3,18 +3,18 @@
 .mediaBarProgress-1xaPtl,
 .mediaBarProgress-1xaPtl:after,
 .mediaBarProgress-1xaPtl:before {
-    background-color: var(--accent);
+    background-color: var(--primary);
 }
 .mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN {
-    background-color: var(--accent-selected);
+    background-color: var(--on-primary-container);
 }
 // Generic slider
 .barFill-23-gu-{
-    background-color: var(--accent);
+    background-color: var(--primary);
     transition: 150ms ease-in-out;
 }
 .grabber-3mFHz2 {
-    background-color: var(--accent);
+    background-color: var(--primary);
     width: 16px;
     height: 16px;
     margin-left: -8px;
@@ -22,7 +22,7 @@
     border-radius: 50%;
     transition: 150ms ease-in-out;
     &:hover {
-        background-color: var(--accent-selected);
+        background-color: var(--on-primary-container);
     }
     border: none;
     .disabled-bolDAc & {

@@ -69,6 +69,73 @@
 .theme-dark {
 	--weight-textbox: 600;
 
+	// Primary
+	--primary: #9acaff;
+	--on-primary: #003258;
+	--primary-container: #00497c;
+	--on-primary-container: #cfe4ff;
+	
+	// Secondary
+	--secondary: #b7c8d8;
+	--on-secondary: #22323f;
+	--secondary-container: #384956;
+	--on-secondary-container: #d3e5f6;
+	
+	// Tertiary
+	--tertiary: #cfc0e8;
+	--on-tertiary: #362b4b;
+	--tertiary-container: #4c4162;
+	--on-tertiary-container: #ebdcff;
+	
+	// Red colors
+	--red: #ffb4a9;
+	--on-red: #680003;
+	--red-container: #ffb4a9;
+	--on-red-container: #ffdad4;
+
+	// Yellow colors
+	--yellow: #d7c930;
+	--on-yellow: #363100;
+	--yellow-container: #d7c930;
+	--on-yellow-container: #f5e64c;
+
+	// Green colors
+
+	--green: #6cdba4;
+	--on-green: #003822;
+	--green-container: #6cdba4;
+	--on-green-container: #89f8bf;
+
+	// Gray colors
+	--gray: #c1c1c1;
+	--on-gray: #292929;
+	--gray-container: #c1c1c1;
+	--on-gray-container: #e1e1e1;
+
+	// Purple colors
+	--purple: #d5baff;
+	--on-purple: #3c1c70;
+	--purple-container: #d5baff;
+	--on-purple-container: #ecdcff;
+
+
+	// Background
+	--background: #191c1d;
+	--on-background: #e0e3e3;
+	
+	--surface: #191c1d;
+	--on-surface: #e0e3e3;
+
+	--outline: #8a938b;
+	
+	--surface-variant: #404942;
+	--on-surface-variant: #c0c9c0;
+	
+	--inverse-surface: #e0e3e3;
+	--inverse-on-surface: #191c1d;
+
+	/*
+	// LEGACY; YEET
 	// Accent
 	--accent: rgb(52, 164, 255);
 	--accent-text: white;
@@ -100,12 +167,15 @@
 	--purple-text: white;
 	--purple-transparent: rgba(145, 118, 193, 12%);
 	--purple-selected: #ac92d8;
+	*/
 
 	// Logo color
 	--logo-color: white;
 
 	// Textbox
-	--textbox-color: #161616;
+	--textbox-color: var(--tertiary);
+	--textbox-text-color: var(--on-tertiary);
+	--textbox-text-color-hover: var(--on-tertiary-container);
 	--textbox-pillDefault: #a8a8a8;
 
 	// Links
@@ -115,7 +185,7 @@
 	--ripple-color: rgba(255, 255, 255, 0.36);
 	
 	// Context menus
-	--context-menu-separator: rgba(255, 255, 255, 0.24);
+	--context-menu-separator: var(--on-secondary-container);
 
 	// Roles
 	--role-chip-bg: var(--accent-transparent);
@@ -130,17 +200,30 @@
 	
 	// Sliders
 	--slider-disabled: #ECECEC;
-	--slider-disabled: #ECECEC;
+	
+	// status indicators
+	--status-online: #43b581;
+	--status-dnd: #cf6679;
+	--status-idle: #fbec52;
+	--status-offline: #868d96;
+	--status-streaming: #9176c1;
 }
 .theme-light {
 	--weight-textbox: 500;
 
+	--primary: #006d42;
+	--on-primary: #ffffff;
+	--primary-container: #60feb1;
+	--on-primary-container: #002110;
+
+	// LEGACY; YEET
+	
 	// Accent
 	--accent: rgb(26, 115, 232);
 	--accent-text: white;
 	--accent-transparent: rgba(26, 115, 232, 12%);
 	--accent-selected: rgb(0, 149, 255);
-
+	
 	// Colors
 	--green: #43b581;
 	--green-text: white;
