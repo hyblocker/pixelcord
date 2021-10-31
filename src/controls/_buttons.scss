@@ -9,12 +9,11 @@
 	{
 		// Filled color
 		.lookFilled-1Gx00P#{$class} {
-			color: var(--on-#{$color});
+			color: var(--#{$color}-text);
 			background-color: var(--#{$color});
 			&:enabled:active,
 			&:enabled:hover {
-				background-color: var(--#{$color}-container);
-				color: var(--on-#{$color}-container);
+				background-color: var(--#{$color}-selected);
 			}
 		}
 		// Inverted color
@@ -44,48 +43,6 @@
 		}
 	}
 }
-
-// @mixin buttons($class, $color) {
-// 	// this increases specifity but also makes the code cleaner
-// 	.theme-dark,
-// 	.theme-light
-// 	{
-// 		// Filled color
-// 		.lookFilled-1Gx00P#{$class} {
-// 			color: var(--#{$color}-text);
-// 			background-color: var(--#{$color});
-// 			&:enabled:active,
-// 			&:enabled:hover {
-// 				background-color: var(--#{$color}-selected);
-// 			}
-// 		}
-// 		// Inverted color
-// 		.lookInverted-2D7oAl#{$class} {
-// 			color: var(--#{$color});
-// 			background-color: var(--#{$color}-text);
-// 		}
-// 		// Disabled color
-// 		.lookFilled-1Gx00P#{$class}:disabled {
-// 			background-color: var(--#{$color});
-// 		}
-// 		// Link-like buttons
-// 		.lookLink-9FtZy-#{$class} {
-// 			color: var(--#{$color});
-// 			&:hover .contents-18-Yxp {
-// 				background-image: linear-gradient(0deg,transparent,transparent 1px,var(--#{$color}) 0,var(--#{$color}) 2px,transparent 0);
-// 			}
-// 		}
-// 		// Outlined buttons
-// 		.lookOutlined-3sRXeN#{$class} {
-// 			color: var(--#{$color});
-// 			border-color: var(--#{$color});
-// 
-// 			&:active {
-// 				background-color: var(--#{$color}-transparent);
-// 			}
-// 		}
-// 	}
-// }
 
 @include buttons(".colorBrand-3pXr91", 'accent');
 @include buttons(".colorBrandNew-g5lmBU", 'accent');
@@ -139,8 +96,8 @@
 // Default focused
 .colorDefault-2K3EoJ.focused-3afm-j,
 .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
-	background-color: var(--on-secondary-container);
-	color: var(--secondary-container);
+	background-color: var(--accent);
+	color: var(--accent-text);
 }
 // Red 
 .colorDanger-2qLCe1,

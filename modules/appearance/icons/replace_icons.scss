@@ -129,11 +129,11 @@
 	
 	// Discord's default Emoji picker is cringe
 	.sprite-2iCowe {
-		transform: scale(.9) translate(-5.5px, -2.5px) !important;
+		transform: scale(1) !important;
 		-webkit-mask-image: #{svg-url(#{map-get($icon-pack, "emoji")})};
-		background: var(--textbox-text-color) !important;
+		background: var(--interactive-normal) !important;
 		&:hover {
-			background: var(--textbox-text-color-hover) !important;
+			background: var(--interactive-hover) !important;
 		}
 	}
 	

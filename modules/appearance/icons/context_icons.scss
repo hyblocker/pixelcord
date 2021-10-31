@@ -433,10 +433,6 @@
     
     // Account switcher
     @include contextIcon("manage-mutli-account-remove-account", "logout", $icon-pack);
-    
-    .item-1tOPte#status-picker-switch-account::before {
-        content: none;
-    }
 
     // Mods
     @include contextIcon("user-settings-cog-BetterDiscord", "betterdiscord", $icon-pack);

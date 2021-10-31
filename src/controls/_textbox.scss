@@ -65,10 +65,6 @@
 // The slate textbox overrides the caret a div deeper
 .slateTextArea-1Mkdgw {
 	caret-color: var(--accent);
-	position: relative;
-	.chat-3bRxxu &.markup-2BOw-j {
-		color: var(--on-tertiary);
-	}
 }
 
 // Default padding, assuming no upload button
@@ -79,6 +75,10 @@
 // Fix placeholder padding
 .attachWrapper-2TRKBi + .textArea-12jD-V > .placeholder-37qJjk {
 	margin-left: 16px + 40px;
+}
+
+.slateTextArea-1Mkdgw {
+	position: relative;
 }
 
 // So that the line at the bottom is clean on the chat message box
@@ -195,26 +195,5 @@
 		z-index: 1;
 		opacity: 1;
 		transition: opacity .1s ease-in-out;
-	}
-}
-
-// Textbox controls
-.attachButtonPlus-jWVFah {
-	fill: var(--textbox-text-color);
-	.attachButton-2WznTc:hover & {
-		fill: var(--textbox-text-color-hover);
-	}
-}
-.placeholder-37qJjk,
-.slateTextArea-1Mkdgw .hljs-comment,
-.slateTextArea-1Mkdgw .hljs-quote {
-	color: var(--textbox-text-color);
-	opacity: 0.7;
-}
-.channelTextArea-rNsIhG .button-3AYNKb {
-	color: var(--textbox-text-color);
-	& .active-23Nm0T .buttonWrapper-1ZmCpA,
-	& .buttonWrapper-1ZmCpA:hover {
-		color: var(--textbox-text-color-hover);
 	}
 }

@@ -1,24 +1,6 @@
 @import "../utils";
 @import "../material_design/ripple";
 
-// Chat colors
-.chat-3bRxxu, .threadSidebar-1o3BTy {
-	background-color: var(--surface);
-	& .markup-2BOw-j {
-		color: var(--on-surface);
-	}
-}
-.channelTextArea-rNsIhG {
-	background-color: var(--surface);
-}
-
-.form-2fGMdU:before {
-	@include theming {
-		background: -webkit-gradient(linear,left top,left bottom,from(rgba(54,57,63,0)),to(var(--surface)));
-		background: linear-gradient(180deg,rgba(54,57,63,0) 0,var(--surface));
-	}
-}
-
 // Mentions & channel links
 .wrapper-3WhCwL {
 	@include theming {
@@ -34,7 +16,7 @@
 .messagesErrorBar-nyJGU7 {
 	background-color: var(--red);
 	& > .barButtonBase-2uLO1z {
-		color: var(--on-red);
+		color: var(--red-text);
 	}
 
 	@include pill;
@@ -58,7 +40,7 @@
 // Unread pill
 .unreadPill-2HyYtt {
 	background-color: var(--red);
-	color: var(--on-red);
+	color: var(--red-text);
 }
 .isUnread-3Ef-o9 .content-1o0f9g {
 	color: var(--red);

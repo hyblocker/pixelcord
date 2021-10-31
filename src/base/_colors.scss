@@ -16,23 +16,23 @@ $purple-color: "hsl(262, ";
 // set status modal
 .status-1AY8sU {
 	&[style*='background-color: #{$red-color}'] {
-		background-color: var(--status-dnd) !important;
+		background-color: var(--red) !important;
 	}
 
 	&[style*='background-color: #{$green-color}'] {
-		background-color: var(--status-online) !important;
+		background-color: var(--green) !important;
 	}
 
 	&[style*='background-color: #{$yellow-color}'] {
-		background-color: var(--status-idle) !important;
+		background-color: var(--yellow) !important;
 	}
 
 	&[style*='background-color: #{$gray-color}'] {
-		background-color: var(--status-offline) !important;
+		background-color: var(--gray) !important;
 	}
 
 	&[style*='background-color: #{$purple-color}'] {
-		background-color: var(--status-streaming) !important;
+		background-color: var(--purple) !important;
 	}
 }
 
@@ -41,23 +41,23 @@ $purple-color: "hsl(262, ";
 .status-1XNdyw {
 	& rect {
 		&[fill*='#{$red-color}'] {
-			fill: var(--status-dnd);
+			fill: var(--red);
 		}
 
 		&[fill*='#{$green-color}'] {
-			fill: var(--status-online);
+			fill: var(--green);
 		}
 
 		&[fill*='#{$yellow-color}'] {
-			fill: var(--status-idle);
+			fill: var(--yellow);
 		}
 
 		&[fill*='#{$gray-color}'] {
-			fill: var(--status-offline);
+			fill: var(--gray);
 		}
 
 		&[fill*='#{$purple-color}'] {
-			fill: var(--status-streaming);
+			fill: var(--purple);
 		}
 	}
 }
