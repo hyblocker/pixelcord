@@ -41,7 +41,7 @@
     }
 }
 
-.iconServer-Lyg2F4, .strikethrough-3q4FHz {
+.doesNot-36YbF_, .iconServer-Lyg2F4, .strikethrough-3q4FHz {
     color: var(--danger);
 }
 
@@ -49,4 +49,8 @@
     & .dots-3Bkt3k:not(.themed-IQiCm3) {
         color: white;
     }
+}
+
+.checklistIcon-6Kez2J path[fill^="hsl(359, "] {
+    fill: var(--danger);
 }

@@ -4,8 +4,8 @@
 $settings-transition: 150ms ease-in-out;
 $tooltip-transition: 100ms ease-in-out 323ms;
 
-.side-8zPYf6 > .item-PXvHYJ[data-item-id=DiscordNitro]:not(.role-3wi9Tf),
-.side-8zPYf6 > .item-PXvHYJ[data-item-id=GUILD_PREMIUM]:not(.role-3wi9Tf) {
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=discord-nitro-tab]:not(.role-3wi9Tf),
+.side-8zPYf6 > .item-PXvHYJ[aria-controls=guild-premium-tab]:not(.role-3wi9Tf) {
 	&[style*="color: rgb(114, 137, 218);"]
 	{
 		color: var(--accent) !important;
