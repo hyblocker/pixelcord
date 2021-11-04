@@ -172,6 +172,11 @@
             @include removeIcon();
             @include reverseOrder();
         }
+        
+        // Hide extra icon for account switcher
+        &#status-picker-switch-account::before {
+            content: none;
+        }
     }
 
     // Include icons
