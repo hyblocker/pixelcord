@@ -61,6 +61,11 @@ $dummy: $icons-outline;
 	.username-34pxWC {
 		padding-left: 6px;
 	}
+	
+	// Hide default nitro icon
+	.premiumLabel-fDtYys svg {
+		display: none;
+	}
 
 	// Add icons everywhere
 	.sidebar-CFHs9e > .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,

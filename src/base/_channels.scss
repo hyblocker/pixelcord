@@ -34,6 +34,9 @@
 	.modeUnread-1qO3K1:hover & .icon-1DeIlz {
 		color: var(--interactive-active);
 	}
+	
+	height: var(--channel-height);
+	border-radius: calc(0.5 * var(--channel-height));
 }
 .selected-aXhQR6.container-2Pjhx- {
 	background-color: var(--accent-transparent);
