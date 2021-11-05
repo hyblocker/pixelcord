@@ -91,3 +91,13 @@
 .bannerVisible-2ZE_qG .iconTierTwo-1JOWNK {
 	color: rgb(255, 115, 250);
 }
+.perks-26lTSw {
+	@include card(4);
+}
+.upsellFooter-3coAfO {
+	@include card(2);
+}
+
+.planSelectRow-2YPEKQ .actions-6rRvry {
+	@include card(2);
+}

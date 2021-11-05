@@ -34,6 +34,12 @@ $header-height: 6;
 		padding-top: calc(56.25% - 51px);
 	}
 }
+.bannerImg-2NHyzX {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
 .container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw {
 	@include card($header-height);
 }

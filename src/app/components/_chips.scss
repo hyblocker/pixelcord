@@ -96,3 +96,7 @@
 .message-2qnXI6 .ownerIcon-2NH9FM.icon-1A2_vz {
 	top: -5px;
 }
+.role-2irmRk {
+	position: relative;
+	@include ripple();
+}
