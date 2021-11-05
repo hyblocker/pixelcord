@@ -20,6 +20,7 @@
 		color: $color;
 	}
 }
+// Channels
 .content-1x5b-n {
 	&, & .mainContent-u_9PKf {
 		user-drag: none;
@@ -38,11 +39,16 @@
 	height: var(--channel-height);
 	border-radius: calc(0.5 * var(--channel-height));
 }
+// Members list
 .selected-aXhQR6.container-2Pjhx- {
 	background-color: var(--accent-transparent);
 }
 .selected-aXhQR6 .layout-2DM8Md {
 	color: var(--accent);
+}
+.container-2Pjhx- {
+	height: var(--member-height);
+	border-radius: calc(0.5 * var(--member-height));
 }
 .modeSelected-346R90 .channelName-2YrOjO,
 .selected-aXhQR6 .name-uJV0GL {
