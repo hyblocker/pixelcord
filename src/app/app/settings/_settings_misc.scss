@@ -144,3 +144,11 @@ $normal: 4;
 .addGamePopout-2RY8Ju {
 	@include card(4);
 }
+
+// Nitro thing broke
+.selectedBackground-2KQZ6B {
+	display: none;
+}
+.premiumLabel-fDtYys > svg {
+	display: none;
+}
