@@ -1,50 +1,79 @@
 .tabBarContainer-37hZsr {
-  padding-top: 16px;
+  padding: 16px 20px 0 20px;
 }
 
 .tabBarItem-3dfX8P {
+  overflow: hidden;
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M20 19A1 1 0 0019 18A1 1 0 0018 19A1 1 0 0019 20A1 1 0 0020 19ZM6 19A1 1 0 005 18A1 1 0 004 19A1 1 0 005 20A1 1 0 006 19ZM6 5A1 1 0 005 4A1 1 0 004 5A1 1 0 005 6A1 1 0 006 5ZM20 5A1 1 0 0019 4A1 1 0 0018 5A1 1 0 0019 6A1 1 0 0020 5ZM6 1H18C20.77 1 23 3.23 23 6V18C23 20.77 20.77 23 18 23H6C3.23 23 1 20.77 1 18V6C1 3.23 3.23 1 6 1zM12.7356 18V15.5076H10.4826V18H12.7356ZM12.4284 12.828C14.6304 12.0258 15.8592 11.0526 15.8592 9.141C15.8592 7.1778 14.4432 6 12.2064 6C10.653 6 9.4242 6.495 8.4 7.2288L8.6904 9.2088C9.663 8.4582 10.7724 7.9116 11.9844 7.9116C13.0086 7.9116 13.6914 8.424 13.6914 9.2946C13.6914 10.2504 13.0434 10.7796 11.4042 11.3598L10.875 11.565 11.0802 14.2788 12.3258 14.0058 12.4284 12.828z'/%3E%3C/svg%3E");
   --iconColor: currentColor;
   --iconBgColor: transparent;
   position: relative;
-  align-items: flex-end;
-  padding-bottom: 0.5rem;
-}
-.tabBarItem-3dfX8P::before {
-  content: "";
+  border: none;
+  padding: var(--tab-pill-height-quarter) var(--tab-pill-padding);
   background-color: var(--iconBgColor);
-  width: 2.5rem;
-  height: 1.25rem;
-  border-radius: 0.625rem;
-  position: absolute;
-  left: calc(50% - 1.25rem);
-  top: 0;
+  height: var(--tab-pill-height-half);
+  line-height: var(--tab-pill-height-half);
+  border-radius: var(--tab-pill-height);
+  margin-right: 15px;
 }
 .tabBarItem-3dfX8P::after {
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), width 0.3s cubic-bezier(0, 0, 0.2, 1), height 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: calc(0px + var(--clickY));
+  left: calc(0px + var(--clickX));
+  transform: scale(5);
+  background: radial-gradient(circle at center, var(--ripple-color) 24%, transparent 25%, transparent 100%);
+}
+.tabBarItem-3dfX8P:not(:active)::after {
+  transition: 0s;
+  opacity: 0.3;
+  transform: scale(0);
+}
+.tabBarItem-3dfX8P::before {
   content: "";
   -webkit-mask: var(--icon);
   -webkit-mask-size: contain;
   background-color: var(--iconColor);
-  width: 1rem;
-  height: 1rem;
-  position: absolute;
-  left: calc(50% - 0.5rem);
-  top: 0.125rem;
+  width: var(--tab-pill-height-half);
+  height: var(--tab-pill-height-half);
+  margin-right: var(--tab-pill-height-quarter);
 }
 
 .top-28JiJ- .themed-OHr7kt.item-PXvHYJ:hover {
-  border-color: transparent;
   --iconColor: var(--accent-text);
   --iconBgColor: var(--accent);
-  color: var(--accent);
+  color: var(--accent-text);
 }
 
 .top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,
 .top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active {
-  border-color: transparent;
   --iconColor: var(--accent-text);
   --iconBgColor: var(--accent-selected);
-  color: var(--accent-selected);
+  color: var(--accent-text);
+}
+
+.top-28JiJ- .item-PXvHYJ {
+  border-bottom: none;
+}
+
+.tabBar-3nvOPa {
+  height: calc(var(--tab-pill-height) + 12px);
+  overflow: scroll hidden;
+}
+.tabBar-3nvOPa::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.tabBar-3nvOPa::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 8px;
+  background-color: var(--scrollbar-thin-thumb);
 }
 
 .tabBarItem-3dfX8P[aria-controls=user_info-tab] {
@@ -63,4 +92,4 @@
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg height='24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.665 5h12.67a3 3 0 0 1 2.992 2.783l.666 9.194A1.886 1.886 0 0 1 20.112 19a2.606 2.606 0 0 1-2.526-1.966L17.07 15H6.93l-.515 2.034A2.606 2.606 0 0 1 3.888 19a1.886 1.886 0 0 1-1.881-2.023l.666-9.194A3 3 0 0 1 5.665 5Zm8.835 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM6 9H4v2h2v2h2v-2h2V9H8V7H6v2Z'/%3E%3C/svg%3E");
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22tabs.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAgBA;EACC;;;AAGD;EACC;EACA;EACA;EACA;EACA;EACA;;AAMA;EACC;EACA;EACA,OANY;EAOZ,QANa;EAOb;EACA;EACA;EACA;;AAGD;EACC;EACA;EACA;EACA;EACA,OApBW;EAqBX,QArBW;EAsBX;EACA;EACA;;;AAKF;EACC;EACA;EACA;EACA;;;AAED;AAAA;EAGC;EACA;EACA;EACA;;;AA1DA;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC%22,%22file%22:%22tabs.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22tabs.scss%22,%22../../../src/material_design/_ripple.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAgBA;EACC;;;AAGD;ECPC;EDUA;EACA;EACA;EAEA;EACA;EACA;EAEA;EACA;EACA;EACA;EAGA;;ACtBA;EACC;EAIA;EACA;EACA;EACA;EACA,OArBQ;EAsBR,QArBS;EAwBR;EACA;EAOD;EACA;;AAOD;EACC;EACA;EACA;;ADRD;EACC;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIF;EACC;EACA;EACA;;;AAED;AAAA;EAEC;EACA;EACA;;;AAGD;EACC;;;AAGD;EACC;EACA;;AAGA;EACC;EACA;;AAED;EACC;EACA;EACA;EACA;;;AApED;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC%22,%22file%22:%22tabs.css%22%7D */

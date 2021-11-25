@@ -16,4 +16,9 @@
     --mouseY: 0%;
     --clickX: 0%;
     --clickY: 0%;
+
+    // Quick aliases
+    --tab-pill-padding: calc(var(--tab-pill-height) * 0.5 - 6px);
+    --tab-pill-height-half: calc(var(--tab-pill-height) * 0.5);
+    --tab-pill-height-quarter: calc(var(--tab-pill-height) * 0.25);
 }

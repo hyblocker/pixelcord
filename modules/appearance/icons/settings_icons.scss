@@ -117,6 +117,8 @@ $dummy: $icons-outline;
 	@include settingsIcon("keybinds-tab", "keyboard", $icon-pack);
 	@include settingsIcon("language-tab", "locale", $icon-pack);
 	@include settingsIcon("windows-tab", "monitor", $icon-pack);
+	@include settingsIcon("macos-tab", "monitor", $icon-pack);
+	@include settingsIcon("linux-tab", "monitor", $icon-pack);
 	@include settingsIcon("streamer-mode-tab", "stream", $icon-pack);
 	@include settingsIcon("advanced-tab", "advanced", $icon-pack);
 

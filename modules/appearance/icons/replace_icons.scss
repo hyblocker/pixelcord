@@ -65,6 +65,7 @@
 	@include replaceIcon("video_call", $icon_pack);
 	@include replaceIcon("pin", $icon_pack);
 	// @include replaceIcon("pin_circle", $icon_pack);
+	@include replaceIcon("info", $icon_pack);
 	@include replaceIcon("inbox", $icon_pack);
 	@include replaceIcon("download", $icon_pack);
 
@@ -97,6 +98,7 @@
 	
 	// Context menus
 	@include replaceIcon("mark_read", $icon-pack);
+	@include replaceIcon("unblock", $icon-pack);
 	@include replaceIcon("logout", $icon-pack);
 	@include replaceIcon("leave", $icon-pack);
 	

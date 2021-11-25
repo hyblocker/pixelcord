@@ -15,59 +15,70 @@
 }
 
 .tabBarContainer-37hZsr {
-	padding-top: 16px;
+	padding: 16px 20px 0 20px;
 }
 
 .tabBarItem-3dfX8P {
+	@include ripple();
+	
 	--icon: #{svg-url(#{map-get($icons-discord, "placeholder")})};
 	--iconColor: currentColor;
 	--iconBgColor: transparent;
+	
 	position: relative;
-	align-items: flex-end;
-	padding-bottom: 0.5rem;
-
-	$icon-size: 1rem;
-	$pill-width: 2.5rem;
-	$pill-height: 1.25rem;
+	border: none;
+	padding: var(--tab-pill-height-quarter) var(--tab-pill-padding);
+	
+	background-color: var(--iconBgColor);
+	height: var(--tab-pill-height-half);
+	line-height: var(--tab-pill-height-half);
+	border-radius: var(--tab-pill-height);
+	
+	// why is default 40px wtf
+	margin-right: 15px;
 
 	&::before {
-		content: "";
-		background-color: var(--iconBgColor);
-		width: $pill-width;
-		height: $pill-height;
-		border-radius: math.div($pill-height, 2);
-		position: absolute;
-		left: calc(50% - #{math.div($pill-width, 2)});
-		top: 0;
-	}
-
-	&::after {
 		content: "";
 		-webkit-mask: var(--icon);
 		-webkit-mask-size: contain;
 		background-color: var(--iconColor);
-		width: $icon-size;
-		height: $icon-size;
-		position: absolute;
-		left: calc(50% - #{math.div($icon-size, 2)});
-		top: math.div(($pill-height - $icon-size), 2);
-
+		width: var(--tab-pill-height-half);
+		height: var(--tab-pill-height-half);
+		margin-right: var(--tab-pill-height-quarter);
 	}
 }
 
 .top-28JiJ- .themed-OHr7kt.item-PXvHYJ:hover {
-	border-color: transparent;
 	--iconColor: var(--accent-text);
 	--iconBgColor: var(--accent);
-	color: var(--accent);
+	color: var(--accent-text);
 }
 .top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,
 .top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active {
-	// border-color: var(--accent);
-	border-color: transparent;
 	--iconColor: var(--accent-text);
 	--iconBgColor: var(--accent-selected);
-	color: var(--accent-selected);
+	color: var(--accent-text);
+}
+// remove bottom line
+.top-28JiJ- .item-PXvHYJ {
+	border-bottom: none;
+}
+
+.tabBar-3nvOPa {
+	height: calc(var(--tab-pill-height) + 12px);
+	overflow: scroll hidden;
+
+	// scrollbar
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+	&::-webkit-scrollbar-thumb {
+		border: 2px solid transparent;
+		background-clip: padding-box;
+		border-radius: 8px;
+		background-color: var(--scrollbar-thin-thumb);
+	}
 }
 
 @include tabIcon("user_info-tab", "user_profile");
