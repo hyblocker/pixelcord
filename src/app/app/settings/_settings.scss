@@ -4,8 +4,8 @@
 $settings-transition: 150ms ease-in-out;
 $tooltip-transition: 100ms ease-in-out 323ms;
 
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=discord-nitro-tab]:not(.role-3wi9Tf),
-.side-8zPYf6 > .item-PXvHYJ[aria-controls=guild-premium-tab]:not(.role-3wi9Tf) {
+.side-2ur1Qk > .item-3XjbnG[aria-controls=discord-nitro-tab]:not(.role-3wi9Tf),
+.side-2ur1Qk > .item-3XjbnG[aria-controls=guild-premium-tab]:not(.role-3wi9Tf) {
 	&[style*="color: rgb(114, 137, 218);"]
 	{
 		color: var(--accent) !important;
@@ -292,7 +292,7 @@ $animtime: 0.34s;
 }
 
 // Settings header
-.sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+.sidebar-CFHs9e .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
 	position: initial;
 	&[aria-controls]::after {
 		content: attr(aria-controls);
@@ -325,9 +325,9 @@ $animtime: 0.34s;
 	}
 }
 // Uppercase plugin titles and shit
-.sidebar-CFHs9e .themed-OHr7kt.item-PXvHYJ {
+.sidebar-CFHs9e .themed-2-lozF.item-3XjbnG {
 	// not clean bc of all the not chaining but u do what u gotta do
-	&[aria-controls=pc-updater-tab] ~ .item-PXvHYJ:not([aria-controls=changelog-tab]):not([aria-controls="Hypesquad Online-tab"]):not([aria-controls=Experiments-tab]):not([aria-controls="Developer Options-tab"]):not([aria-controls=logout-tab]),
+	&[aria-controls=pc-updater-tab] ~ .item-3XjbnG:not([aria-controls=changelog-tab]):not([aria-controls="Hypesquad Online-tab"]):not([aria-controls=Experiments-tab]):not([aria-controls="Developer Options-tab"]):not([aria-controls=logout-tab]),
 	&[aria-controls^=gm-]
 	{
 		&::after {
@@ -356,7 +356,7 @@ $animtime: 0.34s;
 }
 
 // Border radius clips on the right bc of scroll bar, so resize it
-.side-8zPYf6 > .item-PXvHYJ {
+.side-2ur1Qk > .item-3XjbnG {
 	margin-right: 14px;
 }
 
@@ -366,10 +366,10 @@ $animtime: 0.34s;
 }
 
 // New color palette
-.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
-.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover,
-.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
-.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover {
+.side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG,
+.side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG:hover,
+.topPill-30KHOu .themed-2-lozF.selected-g-kMVV.item-3XjbnG,
+.topPill-30KHOu .themed-2-lozF.selected-g-kMVV.item-3XjbnG:hover {
 	background-color: var(--accent-selected-highlight);
 	color: var(--accent);
 }
@@ -382,9 +382,21 @@ $animtime: 0.34s;
 		color: var(--accent);
 	}
 }
+// Override nitro and boosts
+.premiumLabel-V52REm.selected-2m-n75,
+.serverBoostTabItem-2hFTIN.selected-2m-n75 {
+	color: var(--accent);
+}
+.background-3iPORX.selectedBackground-1qyzak {
+	display: none;
+}
+// Fix the template dot being too close to the text
+.item-3XjbnG .dot-e8DTw_ {
+	margin-left: 6px;
+}
 
 // Turn the close button into a back button
-.toolsContainer-1edPuj {
+.toolsContainer-25FL6V {
 	position: fixed;
 	top: 0;
 	z-index: 3005;
@@ -392,7 +404,7 @@ $animtime: 0.34s;
 	left: calc((var(--settings-header-height) - 48px) * 0.5);
 }
 
-.closeButton-1tv5uR {
+.closeButton-PCZcma {
 	border: none;
 	// funny optimized selector
 	& svg {
@@ -411,11 +423,11 @@ $animtime: 0.34s;
 	}
 }
 // Tooltip
-.closeButton-1tv5uR:hover+.keybind-KpFkfr {
+.closeButton-PCZcma:hover+.keybind-13vtq8 {
 	opacity: 1;
 	transform: scale(1);
 }
-.closeButton-1tv5uR+.keybind-KpFkfr {
+.closeButton-PCZcma+.keybind-13vtq8 {
 	opacity: 0;
 	transform: scale(0);
 	transform-origin: center top;
