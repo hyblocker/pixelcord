@@ -1,19 +1,19 @@
 @import "../../../config";
 
-.h5-18_1nd[id*=gm-settings-header] {
+.h5-2RwDNl[id*=gm-settings-header] {
 	cursor: pointer;
 }
 
 @if $animations {
-	.privateChannelsHeaderContainer-3NB1K1 {
-		& .privateChannelRecipientsInviteButtonIcon-3A3uTc {
+	.privateChannelsHeaderContainer-1UWASm {
+		& .privateChannelRecipientsInviteButtonIcon-1ObKXK {
 			transition: transform 150ms ease-in,
 						left 150ms ease-in,
 						top 150ms ease-in;
 		}
 	}
-	.vertical-V37hAW,
-	.container-2_Tvc_ {
+	.vertical-3aLnqW,
+	.container-1zDvAE {
 		&[style*="display: block;"],
 		&[style=""],
 		&[style*="display: none;"] {

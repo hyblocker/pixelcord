@@ -6,7 +6,7 @@
 }
 
 //body:not(.powercord) 
-.app-2rEoOp::before {
+.app-2CXKsg::before {
 	content: "Your version of Pixelcord is outdated. Please download the newest version from: https://betterdiscord.app/theme/Pixelcord";
 	display: var(--verzjoni_#{$current_version}, block);
 	background-color: var(--accent);

@@ -1,7 +1,7 @@
 @import '../../../config';
 
 // Pages
-.endButton-m5h5Sr {
+.endButton-oUxeLG {
 	& .contents-18-Yxp {
 		content: '';
 		& span {
@@ -14,7 +14,7 @@
 	}
 }
 
-.endButton-m5h5Sr:first-child {
+.endButton-oUxeLG:first-child {
 	// left arrow
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z'/%3E%3C/svg%3E");
 	-webkit-mask-size: 38px 38px;
@@ -22,7 +22,7 @@
 	background-color: var(--header-primary);
 }
 
-.endButton-m5h5Sr:last-child {
+.endButton-oUxeLG:last-child {
 	// right arrow
 	-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z'/%3E%3C/svg%3E");
 	-webkit-mask-size: 38px 38px;
@@ -30,8 +30,8 @@
 	background-color: var(--header-primary);
 }
 
-.pageControl-xGOf_S>div:nth-child(3):not(.pageButton-2ruNwd):not(.inputWrapper-31_8H8),
-.pageControl-xGOf_S>div:nth-child(5):not(.pageButton-2ruNwd):not(.inputWrapper-31_8H8) {
+.pageControl-1XvHg0>div:nth-child(3):not(.pageButton-1GMGeJ):not(.inputWrapper-1YNMmM),
+.pageControl-1XvHg0>div:nth-child(5):not(.pageButton-1GMGeJ):not(.inputWrapper-1YNMmM) {
 
 	cursor: text;
 	
@@ -67,32 +67,32 @@
 			width: 100%;
 		}
 	}
-	& .gap-3lIf-M {
+	& .gap-35QmZH {
 		cursor: text;
 		@if $animations {
 			transition: font-size 0.2s ease-in-out;
 		}
 	}
 	@if $animations {
-		&:hover .gap-3lIf-M {
+		&:hover .gap-35QmZH {
 			font-size: 0;
 		}
 	}
 }
 
 // Cards
-.searchResult-9tQ1uo {
+.searchResult-O9NDji {
 	@include card(2);
 }
 
 // BG
-.searchResultsWrap-3-pOjs {
+.searchResultsWrap-5RVOkx {
 	@include card(8);
 }
-.searchHeader-2XoQg7 {
+.searchHeader-1r_ZSh {
 	@include card(2);
 }
-.channelName-1JRO3C {
+.channelName-3w2Y3c {
 	.theme-light & {
 		background-color: cardbg(8, false);
 	}
@@ -102,22 +102,22 @@
 }
 
 // Search popout
-.container-3ayLPN {
+.container-2McqkF {
 	@include card(4);
 	@if $animations {
 		animation: pixelcord-spawn-anim 0.18s ease-in-out;
 		transform-origin: top;
 	}
 }
-.resultsGroup-r_nuzN .header-2N-gMV {
+.resultsGroup-1BPR25 .header-3A13BX {
 	font-weight: var(--section-weight);
 	font-size: 14px;
 	color: var(--header-color);
 }
-.resultsGroup-r_nuzN .header-2N-gMV,
-.resultsGroup-r_nuzN .plusIcon-v0BTrL,
-.resultsGroup-r_nuzN .searchClearHistory-2cSSMO,
-.resultsGroup-r_nuzN .searchLearnMore-3SQUAj a {
+.resultsGroup-1BPR25 .header-3A13BX,
+.resultsGroup-1BPR25 .plusIcon-2V7coV,
+.resultsGroup-1BPR25 .searchClearHistory-2Be-92,
+.resultsGroup-1BPR25 .searchLearnMore-7__o_n a {
 	.theme-light & {
 		color: var(--header-color);
 	}
@@ -127,7 +127,7 @@
 }
 
 // Stick bottom thing
-.container-NdaZbY {
+.container-36u7Lw {
 	position: sticky;
 	bottom: 0;
 	z-index: 2;
@@ -142,8 +142,8 @@
 // Center the search spinner because of my OCD
 $spinner-size: 48px;
 
-.totalResults--dyAxF {
-	& .spinnerWrapper-3hIs5I {
+.totalResults-2On644 {
+	& .spinnerWrapper-6lH0US {
 		position: absolute;
 		width: $spinner-size;
 		height: $spinner-size;
@@ -151,7 +151,7 @@ $spinner-size: 48px;
 		top: calc(50vh - #{$spinner-size} * 0.5 - 7px);
 		justify-content: center;
 
-		& .inner-1gJC7_ {
+		& .inner-26JK4f {
 			width: $spinner-size;
 			height: $spinner-size;
 		}
@@ -161,31 +161,31 @@ $spinner-size: 48px;
 	}
 }
 
-.queryContainer-RKFJW- {
+.queryContainer-ZunrLZ {
 	@include card(2);
 }
 
 // gradient shit
-.theme-dark .option-96V44q:after {
+.theme-dark .option-2KkUJO:after {
 	background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),color-stop(80%,cardbg(4, true)));
 	background: linear-gradient(90deg,rgba(54,57,63,0),cardbg(4, true) 80%);
 }
-.theme-light .option-96V44q:after {
+.theme-light .option-2KkUJO:after {
 	background: -webkit-gradient(linear,left top,right top,from(rgba(54,57,63,0)),color-stop(80%,cardbg(4, false)));
 	background: linear-gradient(90deg,rgba(54,57,63,0),cardbg(4, false) 80%);
 }
 
 // Make it easier to tell if we have it selected
-.option-96V44q.selected-rZcOL- {
+.option-2KkUJO.selected-rZcOL- {
 	@include card(2);
 }
 
 // TODO: use card vars
-.option-96V44q.selected-rZcOL-:after {
+.option-2KkUJO.selected-rZcOL-:after {
 	//background: -webkit-gradient(linear,left top,right top,from(rgba(246,246,247,0)),color-stop(50%,rgb(246, 246, 247)));
 	//background: linear-gradient(90deg,rgba(246,246,247,0),rgb(246, 246, 247) 50%);
 }
 
-.searchHeaderTabList-2aPqS1.side-8zPYf6::after {
+.searchHeaderTabList-3CZMQB.side-2ur1Qk::after {
 	content: none;
 }

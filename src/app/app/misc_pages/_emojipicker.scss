@@ -2,32 +2,32 @@
 @import "../../../config";
 
 @if $animations {
-	.drawerSizingWrapper-17Mss4 {
+	.drawerSizingWrapper-1txdWG {
 		animation: pixelcord-spawn-anim 0.186s ease-in-out;
 		transform-origin: bottom right;
 	}
 }
 
 // Highlight is accent
-.stickerInspected-2EM4w- .inspectedIndicator-59EII8,
-.emojiItem-14v6tW.emojiItemSelected-1aLkfV {
+.stickerInspected-mwnU6w .inspectedIndicator-27zwNZ,
+.emojiItem-277VFM.emojiItemSelected-2Lg50V {
 	background-color: var(--accent);
 }
-.wrapper-2Gsate {
+.wrapper-22rqw6 {
 	@include card(8);
 }
-.inspector-S2gM3e {
+.inspector-DFKXwB {
 	@include card(6);
 	overflow: visible
 }
-.contentWrapper-SvZHNd,
-.header-1TOWci,
-.header-2k4I2o,
-.header-8ilj5e {
+.contentWrapper-3vHNP2,
+.header-JHwfVI,
+.header-uVCAlo,
+.header-11eigE {
 	@include card(2);
 }
-.emojiPicker-3PwZFl,
-.wrapper-1-Fsb8 {
+.emojiPicker-6YCk8a,
+.wrapper-1NNaWG {
 	.theme-light & {
 		background-color: cardbg(2, false);
 	}
@@ -35,6 +35,6 @@
 		background-color: cardbg(2, true);
 	}
 }
-.diversitySelectorOptions-4YM-vX {
+.diversitySelectorOptions-3DhNYs {
 	@include card(4);
 }

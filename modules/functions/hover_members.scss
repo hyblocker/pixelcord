@@ -1,28 +1,28 @@
 $transition_delay: 0.175s;
 $transition_duration: 0.2s;
 
-.membersWrap-2h-GB4 {
+.membersWrap-3NUR2t {
 	min-width: 25px;
 	width: 25px !important;
 	// Actual container
-	& .members-1998pB {
+	& .members-3WRCEx {
 		width: 1px !important;
-		& .member-3-YXUe {
+		& .member-2gU6Ar {
 			opacity: 0;
 		}
-		& .membersGroup-v9BXpm {
+		& .membersGroup-2eiWxl {
 			opacity: 0;
 		}
 	}
 
 	&:hover {
 		width: var(--members-width) !important;
-		.members-1998pB {
+		.members-3WRCEx {
 			width: var(--members-width) !important;
-			& .member-3-YXUe {
+			& .member-2gU6Ar {
 				opacity: 1;
 			}
-			& .membersGroup-v9BXpm {
+			& .membersGroup-2eiWxl {
 				opacity: 1;
 			}
 		}
@@ -30,12 +30,12 @@ $transition_duration: 0.2s;
 }
 //@if $animations
 //{
-	.membersWrap-2h-GB4 {
+	.membersWrap-3NUR2t {
 		transition: $transition_duration ease $transition_delay;
-		& .members-1998pB {
+		& .members-3WRCEx {
 			transition: $transition_duration ease $transition_delay;
-			& .member-3-YXUe,
-			& .membersGroup-v9BXpm {
+			& .member-2gU6Ar,
+			& .membersGroup-2eiWxl {
 				transition: $transition_duration ease-in-out $transition_delay;
 			}
 		}

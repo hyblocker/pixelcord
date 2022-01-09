@@ -9,16 +9,16 @@ $min-thread-panel-width: 400px;
 
 // APP LAYOUT
 .threadSidebar-1o3BTy,
-.chat-3bRxxu.threadSidebarOpen-vdkwIh {
+.chat-2ZfjoI.threadSidebarOpen-1LSXvU {
 	border-radius: 0;
 }
-.chat-3bRxxu.threadSidebarOpen-vdkwIh {
+.chat-2ZfjoI.threadSidebarOpen-1LSXvU {
 	resize: horizontal;
 	min-width: 400px;
 	// NB: This is not elegant bc its dependant on window width but CSS is hacky af so you live with this dogshit hell
 	max-width: calc(70% - #{$min-thread-panel-width});
 }
-.chat-3bRxxu:not(.threadSidebarOpen-vdkwIh) {
+.chat-2ZfjoI:not(.threadSidebarOpen-1LSXvU) {
 	width: unset !important;
 	flex: 1 1 auto;
 }
@@ -59,12 +59,12 @@ $min-thread-panel-width: 400px;
 }
 
 // Chat
-.container-3hZ-gs {
+.container-3i3IzO {
 	@include card(4);
 }
 
 // Create thread dialog
-.textAreaThreadCreation-3zmvce {
+.textAreaThreadCreation-1CbEub {
 	min-height: 44px;
 }
 .channelTextAreaInner-1WnnRS {
@@ -75,10 +75,10 @@ $min-thread-panel-width: 400px;
 }
 
 // Threads dialog
-.container-7uh5fX {
+.container-18GwIk {
 	@include card($msg-height);
 }
-.modal-2DCYwU {
+.modal-ZdazA8 {
 	.theme-light & {
 		background-color: cardbg($msg-height, false) !important;
 	}
@@ -86,11 +86,11 @@ $min-thread-panel-width: 400px;
 		background-color: cardbg($msg-height, true) !important;
 	}
 }
-.header-1VS4tm {
+.header-3_zmOb {
 	@include card($header-height);
 	z-index: 11;
 }
-.container-2I9Hud {
+.container-2rzKKA {
 	@include card($popout-height);
 	@if $animations {
 		animation: pixelcord-spawn-anim 0.2s ease-in-out;
@@ -99,7 +99,7 @@ $min-thread-panel-width: 400px;
 }
 
 // Turn the funny notif on top to a pill
-.chatHeaderBar-4vZS1x {
+.chatHeaderBar-2fUORh {
 	// TODO: FUCK
 	margin: 12px;
 	padding: 6px 24px;
@@ -108,30 +108,30 @@ $min-thread-panel-width: 400px;
 }
 
 // Collapse threads
-.container-3JKcAb {
+.container-1Bj0eq {
 	//height: 0;
 }
 
 // Fuck thread suggestions i know how to make threads retard
-.threadSuggestionBar-2ufK2Z {
+.threadSuggestionBar-3ExSyc {
 	display: none;
 }
 
 // make replies a pill
-.replyBar-1YLQ2F {
+.replyBar-1oi75v {
 	border-radius: 17px;
 	@include card(2);
 }
-.attachedBars-tZDmyV {
+.attachedBars-2BCP3l {
 	background-color: transparent;
 	padding-bottom: 0.25rem;
 }
-.clipContainer-eeROt0 {
+.clipContainer-31nYlH {
 	overflow: visible;
 }
 
 // Skin popout
-.popout-APcvZm {
+.popout-TdhJ6Z {
 	@include card(4);
 }
 

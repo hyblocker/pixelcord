@@ -3,16 +3,16 @@
 $highlight: 6;
 $normal: 4;
 
-.background-1QDuV2 {
+.background-3d_SjE {
 	@include card($highlight, $background: false);
 	.theme-dark & {
 		background-color: cardbg($normal, true);
 	}
 }
-.theme-dark .fieldList-21DyL8 {
+.theme-dark .fieldList-in8WkP {
 	background-color: cardbg($normal, true);
 }
-.avatar-1uQSZT {
+.avatar-3mTjvZ {
 	.theme-light & {
 		border-color: cardbg($highlight, false);
 		background-color: cardbg($highlight, false);
@@ -30,24 +30,24 @@ $normal: 4;
 		fill: var(--danger);
 	}
 }
-.settingCard-3w2mVL,
-.cardPrimary-1Hv-to,
-.cardPrimaryEditable-3KtE4g,
-.accountProfileCard-1XCH88
+.settingCard-xZSDjS,
+.cardPrimary-3qRT__,
+.cardPrimaryEditable-2mz_3i,
+.accountProfileCard-lbN7n-
 {
 	@include card($highlight);
 }
-.cardPrimaryOutline-29Ujqw,
-.premiumSubscriptionAccountCredit-25i0tQ,
-.guilds-3A5wi_ .cardWrapper-2Min21 {
+.cardPrimaryOutline-1ofwVz,
+.premiumSubscriptionAccountCredit-1UInYJ,
+.guilds-35jvvn .cardWrapper-CyvwQv {
 	@include card($normal);
 }
-.cardPrimaryOutline-29Ujqw {
+.cardPrimaryOutline-1ofwVz {
 	border-color: transparent;
 }
 
 // fix the color on the voice notches being default discord
-.notches-1sAcEM.gray-3_LNYR {
+.notches-2w7UZJ.gray-3wP137 {
 	.theme-light & {
 		background-image:none;
 		background-color: cardbg(0, false);
@@ -61,7 +61,7 @@ $normal: 4;
 }
 
 // videos card
-.userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+.userSettingsVoice-1_dzjw .previewOverlay-2reuWf {
 	.theme-light & {
 		border-color:transparent;
 	}
@@ -70,25 +70,25 @@ $normal: 4;
 	}
 	@include card(4);
 }
-.userSettingsVoice-iwdUCU .previewContainer-37c2Si {
+.userSettingsVoice-1_dzjw .previewContainer-37c2Si {
 	overflow: visible;
 }
-.defaultValue-3gC7yw .markValue-2DwdXI {
+.defaultValue-19SZ-q .markValue-2U_-UG {
 	color: var(--accent);
 }
 
-.permissionCheckmark-1SeKr2 {
+.permissionCheckmark-2XFmCt {
 	-webkit-mask: url(https://canary.discord.com/assets/718074e12775def7df7e2a01d6bf2bf8.svg) no-repeat;
 	background: var(--online);
 }
 
 // Disable dragging of nitro upsell previews
-.featureImage-2L9kA0, .featureTitle-W5O6R1, .hero-EvfTTA {
+.featureImage-91H2fC, .featureTitle-3N9Stg, .hero-1aNo0v {
 	-webkit-user-drag: none;
 }
 
 // Game Activity Red
-.overlayToggleIconOff-1kT42w .fill-1ugeBG {
+.overlayToggleIconOff-3hGOmN .fill-MYciTJ {
 	fill: var(--danger);
 	&+rect {
 		fill: var(--danger);
@@ -96,16 +96,16 @@ $normal: 4;
 }
 
 // Verified
-.flowerStar-1GeTsn path {
+.flowerStar-2tNFCR path {
 	fill: var(--accent);
 	opacity: 0.5;
-	&+.childContainer-1wxZNh path {
+	&+.childContainer-U_a6Yh path {
 		fill: var(--accent-text);
 	}
 }
 
 // Analytics
-.trendingArrow-18JKWi {
+.trendingArrow-1JMCSr {
 	& path[fill^="hsl(139,"] {
 		fill: var(--online);
 	}
@@ -123,32 +123,32 @@ $normal: 4;
 }
 
 // Guilds
-.deny-3nAuT6 {
+.deny-1GO6vI {
 	color: var(--danger);
-	&.selected-2YhbGh {
+	&.selected-3jieYB {
 		background-color: var(--danger);
 	}
 }
-.allow-1PzSY3 {
+.allow-1h61-Z {
 	color: var(--online);
-	&.selected-2YhbGh {
+	&.selected-3jieYB {
 		background-color: var(--online);
 	}
 }
-.item-1yAxl1 {
+.item-4m-12I {
 	cursor: pointer;
 }
 
 // The uhh the uhh i forgor 💀
 // Game Activity
-.addGamePopout-2RY8Ju {
+.addGamePopout-3yePJc {
 	@include card(4);
 }
 
 // Nitro thing broke
-.selectedBackground-2KQZ6B {
+.selectedBackground-1qyzak {
 	display: none;
 }
-.premiumLabel-fDtYys > svg {
+.premiumLabel-V52REm > svg {
 	display: none;
 }

@@ -5,7 +5,7 @@ $radius: 8px;
 $padding: 24px;
 
 // Classic inline (aka ```html ... ```)
-.markup-2BOw-j code {
+.markup-eYLPri code {
 	padding: $padding $padding $padding math.div($padding,2);
 	border-radius: $radius;
 	border-color: var(--navdrawer-separator);
@@ -27,19 +27,19 @@ $padding: 24px;
 }
 
 // File viewer
-.textContainer-C0szpm, .modalTextContainer-ITvzbi {
+.textContainer-36wgKK, .modalTextContainer-1FUO2W {
 	padding: $padding $padding math.div($padding,2) $padding;
 	border-radius: $radius $radius 0 0;
 	border-color: var(--navdrawer-separator);
 	background-color: var(--baseline);
 }
-.footer-2yA7Ep {
+.footer-GXWBBp {
 	padding: 0 $padding;
 	border-radius: 0 0 $radius $radius;
 	border-color: var(--navdrawer-separator);
 	background-color: var(--baseline);
 }
-.codeView-1JPDeA, .modalTextContainer-ITvzbi {
+.codeView-12LUIl, .modalTextContainer-1FUO2W {
 	&::-webkit-scrollbar-track {
 		background-color: var(--baseline);
 	}
@@ -52,7 +52,7 @@ $padding: 24px;
 		}
 	}
 }
-.formattedSize-2PXVec {
+.formattedSize-1YbZww {
 	font-weight: 500;
 	font-size: 12.5px;
 	.theme-light & {

@@ -1,23 +1,23 @@
 @import "../../material/card";
 
-.optionContainer-15srkc {
+.optionContainer-yOpaLq {
 	@include card(2);
 }
-.container-2Uhd6d {
+.container-2dXT_2 {
 	border-color: transparent;
 	@include card(6);
 }
-.notice-18685F {
+.notice-2olXi7 {
 	background-color: var(--accent);
 	color: var(--accent-text);
 }
-.button-2TV-eO:hover {
+.button-YGmtzG:hover {
 	background-color: var(--accent-highlight);
 	color: var(--accent-text);
 }
-.item-2J2GlB[aria-disabled="false"] {
+.item-1BCeuB[aria-disabled="false"] {
 	cursor: pointer;
-	& .checkboxWrapper-SkhIWG {
+	& .checkboxWrapper-2fDzaA {
 		cursor: pointer;
 	}
 }

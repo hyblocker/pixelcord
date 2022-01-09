@@ -1,22 +1,22 @@
 
 .theme-light .lookFilled-1Gx00P.colorPrimary-3b3xI6,
-.theme-light .defaultIndicator-G3c16x,
-//.base-PmTxvP 
+.theme-light .defaultIndicator-2ndWks,
+//.base-3IDx3L 
 {
 	color: white;
 }
-.theme-light .paymentText-2vaF7U {
+.theme-light .paymentText-BPrx01 {
 	color: var(--text);
 }
-.theme-dark .premiumIndicator-1XvbfM,
-.theme-light .premiumIndicator-1XvbfM {
+.theme-dark .premiumIndicator-22GgcZ,
+.theme-light .premiumIndicator-22GgcZ {
 	background-color: var(--accent);
 	color: white;
 }
-.theme-light .bottomDivider-1K9Gao {
+.theme-light .bottomDivider-ZmTm-j {
 	border-color: var(--navdrawer-separator);
 }
-.gemIndicatorContainer-2jdECl {
+.gemIndicatorContainer-PqApbX {
 	.theme-light & {
 		background-color: cardbg(0, false);
 	}
@@ -25,13 +25,13 @@
 	}
 }
 .wrapper-3nSjSv {
-	& .colorStandard-2KCXvj,
-	& .base-1x0h_U {
+	& .colorStandard-21JIj7,
+	& .base-21yXnu {
 		color: var(--accent-text);
 	}
 	color: white;
 }
-.bannerVisible-2ZE_qG .iconBackgroundTierOne-2OQMBY, .bannerVisible-2ZE_qG .iconBackgroundTierThree-FWlUL9, .bannerVisible-2ZE_qG .iconBackgroundTierTwo-Eab9L6, .iconTierOne-s_oiRb, .iconTierTwo-1JOWNK,
+.bannerVisible-Vkyg1I .iconBackgroundTierOne-2OQMBY, .bannerVisible-Vkyg1I .iconBackgroundTierThree-FWlUL9, .bannerVisible-Vkyg1I .iconBackgroundTierTwo-Eab9L6, .iconTierOne-s_oiRb, .iconTierTwo-1JOWNK,
 .perkAvailabilityIcon-1FFCXW {
 	color: white;
 }
@@ -54,6 +54,6 @@
 }
 
 // Delete messages
-.ephemeral-1PsL1r.gm-deleted-message::before {
+.ephemeral-2nDdnn.gm-deleted-message::before {
 	background-color: var(--danger);
 }

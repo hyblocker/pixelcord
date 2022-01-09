@@ -1,4 +1,4 @@
-.tooltipContent-bqVLWK {
+.tooltipContent-Nejnvh {
 	background-color: var(--tooltip-bg);
 	border-radius: 2px;
 	padding: 8px;
@@ -7,41 +7,41 @@
 	color: var(--tooltip-text);
 }
 
-.theme-dark  .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK,
-.theme-light .tooltipPrimary-1d1ph4 .tooltipPointer-3ZfirK {
+.theme-dark  .tooltipPrimary-3qLMbS .tooltipPointer-3L49xb,
+.theme-light .tooltipPrimary-3qLMbS .tooltipPointer-3L49xb {
 	border-top-color: var(--tooltip-bg);
 }
 
-.theme-dark  .tooltipPrimary-1d1ph4,
-.theme-light .tooltipPrimary-1d1ph4 {
+.theme-dark  .tooltipPrimary-3qLMbS,
+.theme-light .tooltipPrimary-3qLMbS {
 	background-color: transparent;
 }
 
 .guildNameText-74xXQn,
-.guildNameText-3Zwx4p {
+.guildNameText-jBFbNC {
 	color: var(--tooltip-text);
 	font-weight: 600;
 }
 // Green tooltip
-.tooltipGreen-WdeQwd {
+.tooltipGreen-oouJdx {
 	.theme-dark &,
 	.theme-light & {
-		& .tooltipContent-bqVLWK {
+		& .tooltipContent-Nejnvh {
 			background-color: var(--online);
 		}
-		& .tooltipPointer-3ZfirK {
+		& .tooltipPointer-3L49xb {
 			border-top-color: var(--online);
 		}
 	}
 }
 // Red tooltip
-.tooltipRed-8-9NeP {
+.tooltipRed-2z14Wl {
 	.theme-dark &,
 	.theme-light & {
-		& .tooltipContent-bqVLWK {
+		& .tooltipContent-Nejnvh {
 			background-color: var(--danger);
 		}
-		& .tooltipPointer-3ZfirK {
+		& .tooltipPointer-3L49xb {
 			border-top-color: var(--danger);
 		}
 	}
