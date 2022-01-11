@@ -80,7 +80,7 @@
 
 // Remove GIF button
 @if $remove_gif_button {
-    .buttonContainer-28fw2U>.button-38aScr:not(.emojiButton-pET4wH ).colorBrand-3pXr91>.contents-18-Yxp:not(.stickerButton-3OEgwj){
+    .buttonContainer-2lnNiN>.button-38aScr:not(.emojiButton-1fMsf3 ).colorBrand-3pXr91>.contents-18-Yxp:not(.stickerButton-1-nFh2){
         position: fixed;
         visibility: hidden;
     }
@@ -88,7 +88,7 @@
 
 // Remove Sticker button
 @if $remove_sticker_button {
-    .stickerButton-3OEgwj{
+    .stickerButton-1-nFh2{
         position: fixed;
         visibility: hidden;
     }

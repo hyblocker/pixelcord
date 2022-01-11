@@ -52,17 +52,17 @@
 @include buttons(".colorGrey-2DXtkV", 'gray');
 @include buttons(".colorPrimary-3b3xI6", 'gray');
 @include buttons(".colorLink-35jkBc", 'accent'); // TODO: blue?
-@include buttons(".leaveButton-2ml9zB", 'red');
-@include buttons(".leaveButton-2ml9zB", 'red'); // TODO: WATCHING THING => GRAY
+@include buttons(".leaveButton-1Tg7l4", 'red');
+@include buttons(".leaveButton-1Tg7l4", 'red'); // TODO: WATCHING THING => GRAY
 
 // Context menu buttons
 
 // Accent
-.colorBrand-ROmMP1 {
+.colorBrand-3cPPsm {
 	color: var(--accent);
 }
 // On light theme this is a thing?
-.theme-light .colorBrand-ROmMP1:not(.focused-3afm-j) {
+.theme-light .colorBrand-3cPPsm:not(.focused-3qFvc8) {
 	color: var(--accent);
 }
 
@@ -71,22 +71,22 @@
 	@include ripple;
 }
 
-.colorDefault-2K3EoJ {
+.colorDefault-CDqZdO {
 	// Checkbox
-	& .checkbox-3s5GYZ,
-	& .radioSelection-1HmrQS {
+	& .checkbox-hADx5o,
+	& .radioSelection-1UHp0b {
 		color: var(--accent);
 	}
-	& .check-1JyqgN {
+	& .check-3HZJs4 {
 		color: var(--accent-text);
 	}
 	// Checkebox hover
-	&.focused-3afm-j .checkbox-3s5GYZ,
-	&.focused-3afm-j .radioSelection-1HmrQS,
-	&.focused-3afm-j .subtext-13Lvrj {
+	&.focused-3qFvc8 .checkbox-hADx5o,
+	&.focused-3qFvc8 .radioSelection-1UHp0b,
+	&.focused-3qFvc8 .subtext-2GlkbE {
 		color: var(--accent-text);
 	}
-	&.focused-3afm-j .check-1JyqgN {
+	&.focused-3qFvc8 .check-3HZJs4 {
 		color: var(--accent);
 	}
 }
@@ -94,26 +94,26 @@
 // context menu buttons
 
 // Default focused
-.colorDefault-2K3EoJ.focused-3afm-j,
-.colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) {
+.colorDefault-CDqZdO.focused-3qFvc8,
+.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
 	background-color: var(--accent);
 	color: var(--accent-text);
 }
 // Red 
-.colorDanger-2qLCe1,
-.colorDanger-2qLCe1 .checkbox-3s5GYZ,
-.colorDanger-2qLCe1 .radioSelection-1HmrQS {
+.colorDanger-3n-KnP,
+.colorDanger-3n-KnP .checkbox-hADx5o,
+.colorDanger-3n-KnP .radioSelection-1UHp0b {
 	color: var(--red);
 }
 // Red hover
-.colorDanger-2qLCe1.focused-3afm-j,
-.colorDanger-2qLCe1:active:not(.hideInteraction-1iHO1O) {
+.colorDanger-3n-KnP.focused-3qFvc8,
+.colorDanger-3n-KnP:active:not(.hideInteraction-2jPGL_) {
 	background-color: var(--red);
 	color: var(--red-text);
 }
 
 // VC Call buttons
-.colorable-1bkp8v.red-33-Lnk {
+.colorable-3rVGna.red-3T8maV {
 	background-color: var(--red);
 	color: var(--red-text);
 }

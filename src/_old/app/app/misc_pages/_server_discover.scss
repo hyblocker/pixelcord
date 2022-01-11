@@ -2,11 +2,11 @@
 
 $header-height: 6;
 
-.header-1URtb6 {
+.header-3lOo5J {
 	color: var(--header-color);
 }
 
-.sidebar-2K8pFh > .scrollerBase-289Jih {
+.sidebar-1tnWFu > .scrollerBase-_bVAAt {
 	background-color: var(--navdrawer-color);
 	border-right: 1px solid var(--navdrawer-separator);
 	// inset offset box shadow for depth 2
@@ -16,7 +16,7 @@ $header-height: 6;
 					inset 2px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	}
 }
-.pageWrapper-1PgVDX {
+.pageWrapper-2PwDoS {
 	.theme-light & {
 		background-color: cardbg(0, false);
 	}
@@ -25,17 +25,17 @@ $header-height: 6;
 	}
 }
 
-.card-3DjzTQ {
+.card-2TuZPZ {
 	@include card($header-height);
 }
 
 // Welcome prompt
-.guildSidebar-2OCzWB {
+.guildSidebar-UHnQqs {
 	@include card($header-height);
 }
-.modal-f02hVt {
+.modal-2TOYtq {
 	@include card(4);
 }
-.formFieldWrapper-malor5, .settingsFormFieldWrapper-3Y77Pr {
+.formFieldWrapper-2LV3S6, .settingsFormFieldWrapper-U99c9i {
 	@include card(2);
 }

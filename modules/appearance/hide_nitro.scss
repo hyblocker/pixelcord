@@ -1,59 +1,83 @@
-﻿// Redeisng the nitro page
+// Redeisng the nitro page
 
-.subscriptionsRedirectContainer-21LuI0 {
-	display: none;
+.subscriptionsRedirectContainer-zD3U79 {
+    display: none;
 
-	& + .changelogNotice-CQEWmQ {
-		display: none;
-	}
+    & + .changelogNotice-CQEWmQ {
+        display: none;
+    }
 }
-.hero-EvfTTA {
-	background: none;
-	height: fit-content;
-	& > .heroIcon-3QgOM5 {
-		margin-top: 0;
-	}
-	& .heroHeader-IulZgg,
-	& .heroBody-2P4UF5,
-	& .heroButtons-2NvgKB {
-		display: none;	
-	}
+
+.hero-1aNo0v {
+    background: none;
+    height: fit-content;
+
+    & > .heroIcon-3kmupU {
+        margin-top: 0;
+    }
+
+    & .heroHeader-1A0uOZ,
+    & .heroBody-20fY29,
+    & .heroButtons-357iJy {
+        display: none;
+    }
 }
-.featureChildrenWrapper-smz30S,
-.featureImageWrapper-pPDLjm {
-	display: none;
+
+.featureChildrenWrapper-2cxUCl,
+.featureImageWrapper-2ndc8N {
+    display: none;
 }
-.feature-2w65J5 {
-	padding: 16px;
-	min-height: unset;
-	text-align: left;
+
+.feature-2IUcBI {
+    padding: 16px;
+    min-height: unset;
+    text-align: left;
 }
-.featureGrid-3-fNl- {
-	grid-gap: 1rem;
-	grid-template-columns: unset;
+
+.featureGrid-SSlfD0 {
+    grid-gap: 1rem;
+    grid-template-columns: unset;
 }
-.marketingRefreshTier2Cta-bw9Vyc {
-	margin-top: 1rem;
+
+.marketingRefreshTier2Cta-2dN2zP {
+    margin-top: 1rem;
 }
-.marketingRefreshTier1Graphic-9B12wx {
-	display: none;
+
+.marketingRefreshTier1Graphic-1mUnMb {
+    display: none;
 }
-.marketingRefreshSectionTier1-dRwS-6 {
-	& .buttons-2-EdE8 {
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-	}
+
+.marketingRefreshSectionTier1-1chtWC {
+    & .buttons-19uowm {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 // Nitro upsell in change account pfps
 .premiumInlineNotice-159eYs {
-	display: none;
+    display: none;
 }
 
 // OK i hate buttons in my textbox fuck that shit *delete*
-.buttons-3JBrkn {
-	& > .button-38aScr:first-child {
-		display: none;
-	}
+.buttons-uaqb-5 {
+    & > .button-38aScr:first-of-type {
+        display: none;
+    }
+}
+
+// Hide the annoying CTAs
+.banner-3Uu4yV,
+.wrapper-2-Da9H,
+.wrapper-3Zq_cJ,
+.bannerUpsellContainer-31E9J5,
+.bannerUpsellContainer-3E2uAM,
+.premiumInlineNotice-eSBKv7 {
+    display: none;
+}
+
+// Hide server boost progress bar image
+.children-1xdcWE > div:last-child:not(.divider--oiTeJ) > .divider--oiTeJ > .children-1xdcWE > div:first-child:not(.divider--oiTeJ) > .flex-2S1XBF > .flexChild-3PzYmX {
+    display: none;
 }

@@ -11,10 +11,10 @@
 }
 
 // Acryllic
-.theme-light .titleBar-AC4pGV {
+.theme-light .titleBar-1it3bQ {
 	background-color: cardbg(6, false);
 }
-.theme-dark .titleBar-AC4pGV {
+.theme-dark .titleBar-1it3bQ {
 	background-color: cardbg(6, true);
 }
 
@@ -30,17 +30,17 @@ body,
 }
 body,
 #app-mount,
-.bg-h5JY_x,
-.backdrop-1wrmKB,
+.bg-1QIAus,
+.backdrop-2ByYRN,
 .backdropWithLayer-3_uhz4 {
     border-radius: var(--window-roundedness);
 	transition: border-radius 150ms ease-in-out;
 }
-.sidebarRegion-VFTUkN::before,
-.sidebarRegionScroller-3MXcoP::before {
+.sidebarRegion-1VBisG::before,
+.sidebarRegionScroller-FXiQOh::before {
     border-top-left-radius: var(--window-roundedness);
 	transition: border-top-left-radius 150ms ease-in-out;
 }
-.sidebarRegionScroller-3MXcoP::before {
+.sidebarRegionScroller-FXiQOh::before {
     border-top-right-radius: var(--window-roundedness);
 }

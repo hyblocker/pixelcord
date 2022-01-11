@@ -1,19 +1,19 @@
-﻿// Media progress bar slider
-.mediaBarGrabber-1FqnbN,
-.mediaBarProgress-1xaPtl,
-.mediaBarProgress-1xaPtl:after,
-.mediaBarProgress-1xaPtl:before {
+// Media progress bar slider
+.mediaBarGrabber-FvJKJg,
+.mediaBarProgress-38I317,
+.mediaBarProgress-38I317:after,
+.mediaBarProgress-38I317:before {
     background-color: var(--accent);
 }
-.mediaBarInteraction-37i2O4:hover .mediaBarGrabber-1FqnbN {
+.mediaBarInteraction-tUE5dq:hover .mediaBarGrabber-FvJKJg {
     background-color: var(--accent-selected);
 }
 // Generic slider
-.barFill-23-gu-{
+.barFill-2Bh7CX{
     background-color: var(--accent);
     transition: 150ms ease-in-out;
 }
-.grabber-3mFHz2 {
+.grabber-2GQyvM {
     background-color: var(--accent);
     width: 16px;
     height: 16px;
@@ -25,17 +25,17 @@
         background-color: var(--accent-selected);
     }
     border: none;
-    .disabled-bolDAc & {
+    .disabled-3XkegQ & {
         background-color: var(--slider-disabled);
     }
 }
-.bar-2Qqk5Z {
+.bar-1Bhnl9 {
     transition: 150ms ease-in-out background-color;
     height: 4px;
     top: 18px;
 }
 
 // sometimes text overflows bruh
-.mark-1xjQqt {
+.mark-2iakCT {
     width: fit-content;
 }

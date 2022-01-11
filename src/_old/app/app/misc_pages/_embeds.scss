@@ -1,13 +1,13 @@
 // Embeds means both literal embeds and attachments (more commonly known as files)
 @import '../../material/card';
 
-.attachment-33OFj0 {
+.attachment-1PZZB2 {
 	@include card(6);
 	overflow: visible;
 }
 
-.wrapperAudio-1jDe0Q,
-.embedFull-2tM8-- {
+.wrapperAudio-1Bzv_Z,
+.embedFull-1HGV2S {
 	@include card(6);
 	transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out;
 	&:hover {
@@ -16,12 +16,12 @@
 }
 
 // Nitro gift
-.embedHorizontal-WknQ2-,
-.embedVertical-W5-T0m,
-.tile-2OwFgW,
+.embedHorizontal-2GF6zV,
+.embedVertical-2vpt72,
+.tile-2mmK5T,
 
 // Server invite
-.wrapper-35wsBm {
+.wrapper-1HIH0j {
 	@include card(8);
 	transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out;
 

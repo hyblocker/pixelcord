@@ -1,17 +1,17 @@
-.jumpToPresentBar-G1R9s6 {
+.jumpToPresentBar-1cEnH0 {
   visibility: hidden;
   bottom: 15px;
 }
 
-.newMessagesBar-265mhP {
+.newMessagesBar-1hF-9G {
   visibility: hidden;
   top: 15px;
 }
 
-.barButtonBase-2uLO1z {
+.barButtonBase-Sk2mdB {
   height: 42px;
 }
-.barButtonBase-2uLO1z::after {
+.barButtonBase-Sk2mdB::after {
   transition: background-size 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
   opacity: 0;
   background-size: 500%;
@@ -29,16 +29,16 @@
   top: -12px;
   right: 0px;
 }
-.barButtonBase-2uLO1z:not(:active)::after {
+.barButtonBase-Sk2mdB:not(:active)::after {
   transition: 0s;
   opacity: 0.3;
   background-size: 0%;
 }
-.barButtonBase-2uLO1z::after {
+.barButtonBase-Sk2mdB::after {
   visibility: visible;
 }
 
-.barButtonIcon-3t4V3d {
+.barButtonIcon-bMvzp2 {
   visibility: visible;
   padding: 11px;
   background-color: var(--accent);

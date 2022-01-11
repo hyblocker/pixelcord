@@ -1,9 +1,9 @@
-﻿@import "../material_design/ripple";
+@import "../material_design/ripple";
 
-.input-rwLH4i {
+.input-2XRLou {
 	left: 0;
 }
-.container-3auIfb {
+.container-2nx-BQ {
 	width: 32px;
 	height: 14px;
 	overflow: visible;
@@ -22,7 +22,7 @@
 				border-radius: 14px;
 				pointer-events: none;
 			}
-			.slider-TkfMQL {
+			.slider-32CRPX {
 				background-color: var(--accent) !important;
 				box-shadow: 0 3px 4px 0 RGB(0 0 0 / 14%), 0 3px 3px -2px RGB(0 0 0 / 20%), 0 1px 8px 0 RGB(0 0 0 / 12%);
 			}
@@ -43,14 +43,14 @@
 		&[style*="background-color: hsl(#{$i}"] {
 			background-color: var(--switch-slider-color) !important;
 
-			.slider-TkfMQL {
+			.slider-32CRPX {
 				background-color: var(--switch-knob-color) !important;
 				box-shadow: 0 2px 2px 0 RGB(0 0 0 / 14%), 0 3px 1px -2px RGB(0 0 0 / 20%), 0 1px 5px 0 RGB(0 0 0 / 12%)
 			}
 		}
 	}
 
-	.slider-TkfMQL {
+	.slider-32CRPX {
 		width: 20px;
 		height: 20px;
 		top: -3px;
@@ -65,7 +65,7 @@
 
 	@include rippleimg(var(--accent-highlight), 256px, 256px, true, -119px, -113px, $ripple-size: 1);
 
-	input#uid_4214.input-rwLH4i {
+	input#uid_4214.input-2XRLou {
 		left: 0;
 	}
 }

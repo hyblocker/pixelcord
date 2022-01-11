@@ -1,34 +1,34 @@
 @import '../../material/card';
 
-.emptyCard-1RJw8n,
-.wrapper-3D2qGf,
-.nowPlayingColumn-2sl4cE .outer-1AjyKL {
+.emptyCard-KDifrB,
+.wrapper-2RrXDg,
+.nowPlayingColumn-1eCBCN .outer-2JOHae {
 	@include card(4);
 	transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	margin-bottom: 16px;
 }
 
-.section-2gLsgF {
+.section-3G9aLW {
 	@include card(2);
 }
 
-.outer-1AjyKL.active-1xchHY,
-.outer-1AjyKL.interactive-3B9GmY:hover {
+.outer-2JOHae.active-1W_Gl9,
+.outer-2JOHae.interactive-2zD88a:hover {
 	.theme-light &,
 	.theme-dark  & {
 		@include card(8);
 	}
 }
 
-.body-1ld4H7 .separator-XqIyoz,
-.body-1ld4H7 .separator-XqIyoz {
+.body-16rSsp .separator-2OaeRP,
+.body-16rSsp .separator-2OaeRP {
 	.theme-light &,
 	.theme-dark  & {
 		background-color: transparent;
 		height: var(--card-padding);
 	}
 }
-.inset-3sAvek {
+.inset-SbsSFp {
 	.theme-light &,
 	.theme-dark  & {
 		background-color: transparent;
@@ -36,21 +36,21 @@
 }
 
 // hover things
-.peopleListItem-2nzedh.active-rhSpJJ, .peopleListItem-2nzedh:hover {
+.peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover {
 	@include card(3);
 }
 
-.actionButton-uPB8Fs.highlight-Lf97TE,
-.peopleListItem-2nzedh.active-rhSpJJ .actionButton-uPB8Fs,
-.peopleListItem-2nzedh:hover .actionButton-uPB8Fs {
+.actionButton-3-B2x-.highlight-3DSi7b,
+.peopleListItem-u6dGxF.active-2UF8Zh .actionButton-3-B2x-,
+.peopleListItem-u6dGxF:hover .actionButton-3-B2x- {
 	@include card(8);
 }
 // Accept fr
-.actionButton-uPB8Fs.actionAccept-LV-szU:hover {
+.actionButton-3-B2x-.actionAccept-2nmnLv:hover {
 	color: var(--online);
 }
-.text-GwUZgS,
-.title-2BxgL2 {
+.text-27cdrj,
+.title-2CL_z0 {
 	.theme-dark &,
 	.theme-light & {
 		color: var(--text-muted);

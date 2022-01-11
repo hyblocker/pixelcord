@@ -2,7 +2,7 @@
 $transition:        150ms ease-in-out 50ms;
 $transitionLonger:  250ms ease-in-out 50ms;
 
-.searchBar-3dMhjb {
+.searchBar-zdmu7v {
 	// Collapse!
 	width: 24px;
 	background-color:       transparent;
@@ -21,13 +21,13 @@ $transitionLonger:  250ms ease-in-out 50ms;
 	}
 	
 	// Search icon
-	& .iconContainer-O4O2CN {
+	& .iconContainer-1RqWJj {
 		width:              22px;
 		height:             22px;
 		transition:         $transitionLonger;
 
 
-		& > .icon-3cZ1F_ {
+		& > .icon-18rqoe {
 			color:          var(--interactive-normal);
 			transition:     $transitionLonger;
 		}
@@ -35,8 +35,8 @@ $transitionLonger:  250ms ease-in-out 50ms;
 
 	// Hover / focus
 	&:hover,
-	.focused-31_ccS &,
-	.open-6_Y_aH & {
+	.focused-8aNhVB &,
+	.open-3y3yI_ & {
 		// Expand!
 		width:              240px;
 		background-color:   var(--textbox-color);
@@ -51,19 +51,19 @@ $transitionLonger:  250ms ease-in-out 50ms;
 		}
 		
 		// Search icon
-		& .iconContainer-O4O2CN {
+		& .iconContainer-1RqWJj {
 			width:          16px;
 			height:         16px;
 
-			& > .icon-3cZ1F_ {
+			& > .icon-18rqoe {
 				color:      var(--text-muted);
 			}
 		}
 	}
 	
 	// Focus line color
-	.focused-31_ccS &,
-	.open-6_Y_aH & {
+	.focused-8aNhVB &,
+	.open-3y3yI_ & {
 		&::after {
 			background-color: var(--accent);
 		}

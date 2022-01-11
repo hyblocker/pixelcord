@@ -1,0 +1,23 @@
+.contentWrapperWithSnowsgivingNotice-tHP4vx {
+  grid-template-rows: 40px auto;
+}
+.contentWrapperWithSnowsgivingNotice-tHP4vx > .wrapper-3bv1ZV:first-child {
+  display: none;
+}
+.contentWrapperWithSnowsgivingNotice-tHP4vx > .nav-1zWVQw {
+  padding-top: 16px;
+}
+
+div.channel-1Shao0.container-1oeRFJ.clickable-28SzVr {
+  display: none;
+}
+
+path[d="M42.6,20.64a1.5,1.5,0,1,0-1.5-1.5A1.5,1.5,0,0,0,42.6,20.64Z"],
+path[d="M20.82,6.14a.89.89,0,1,0-.89-.89A.89.89,0,0,0,20.82,6.14Z"],
+path[d="M4.93,32.06a1,1,0,0,0,0-2,1,1,0,1,0,0,2Z"],
+path[d="M11.22,11.72A1.79,1.79,0,1,0,9.44,9.94,1.79,1.79,0,0,0,11.22,11.72Z"],
+path[d="M48,38.94V48H0V40.18a17,17,0,0,1,1.55.76c6.49-4.13,10.29-2.65,14.89,0s6.73.84,10.49,0a8.47,8.47,0,0,1,7,1.58C37.32,39.81,41.71,34.8,48,38.94Z"] {
+  d: path("");
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22no_snowsgiving.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AACA;EACI;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;;;AAIJ;AAAA;AAAA;AAAA;AAAA;EAKI%22,%22file%22:%22no_snowsgiving.css%22%7D */

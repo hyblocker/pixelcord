@@ -4,45 +4,45 @@
 $modal-height: 8;
 
 // Emoji popout
-.popoutContainer-1MXdqN,
-.emojiSection-3Fb9ix {
+.popoutContainer-2wbmiM,
+.emojiSection-3QtaWO {
 	@include card($modal-height);
 }
 
 // Upload modal
-.uploadModal-2ifh8j, .root-1gCeng {
+.uploadModal-2ie9O_, .root-g14mjS {
 	@include card(2);
 }
-.uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC, .footer-2gL1pp {
+.uploadModal-2ie9O_ .footer-VCsJQY.hasSpoilers-33hwf_, .footer-31IekZ {
 	@include card($modal-height);
 }
 
 // Generic Modal
-.root-1gCeng,
-.quickswitcher-3JagVE {
+.root-g14mjS,
+.quickswitcher-pKcM9U {
 	@include card($modal-height);
 }
 // Screenshare cards
-.selectorButton-EEUWed,
-.card-2Mz_4z {
+.selectorButton-3sW6Qm,
+.card-1SdQ2- {
 	@include card(2);
 }
-.selectorButtonSelected-t5V9On {
+.selectorButtonSelected-3Z0WNU {
 	.theme-light &,
 	.theme-dark & {
 		background-color: var(--accent);
 		color: var(--accent-text);
 	}
 }
-.scroller-zPkAnE {
+.scroller-2qwVWY {
 	background-color: transparent;
 }
-.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc.error-kKl9o2 {
+.uploadModalIn-2w48Zf .uploadDropModal-13Kd20.error-3lNz4C {
 	background-color: var(--danger);
 }
 
 // Status thing has the emoji button under the textbox, use z-index hacks to fix it!!!
-.emojiButtonContainer-3d6DFV {
+.emojiButtonContainer-1cdx-p {
 	z-index: 1;
 	& .button-38aScr {
 		overflow: visible;
@@ -51,10 +51,10 @@ $modal-height: 8;
 
 // Modal insert animation
 @if $animations {
-	.modal-3c3bKg {
+	.modal-3Crloo {
 		animation: pixelcord-spawn-anim 0.2s ease-in-out;
 	}
-	.menu-3sdvDG {
+	.menu-1QACrS {
 		animation: pixelcord-spawn-anim 0.2s ease-in-out;
 		transform-origin: center;
 		
@@ -75,42 +75,42 @@ $modal-height: 8;
 			transform-origin: top center;
 		}
 	}
-	.layer-v9HyYc .popoutWrapper-3TSaaB[role=dialog] {
+	.layer-2aCOJ3 .popoutWrapper-3ks_kl[role=dialog] {
 		transform-origin: bottom left;
 	}
-	.layer-v9HyYc .userPopout-xaxa6l[role=dialog] {
+	.layer-2aCOJ3 .userPopout-2j1gM4[role=dialog] {
 		transform-origin: center;
 	}
-	.layer-v9HyYc .container-3XJ8ns[role=dialog] {
+	.layer-2aCOJ3 .container-2O1UgZ[role=dialog] {
 		transform-origin: top center;
 	}
 }
-.uploadModal-2ifh8j .footer-3mqk7D.hasSpoilers-1IRtQC {
+.uploadModal-2ie9O_ .footer-VCsJQY.hasSpoilers-33hwf_ {
 	overflow-y: hidden;
 }
 
 // Open link in browser disable word wrap
-.downloadLink-1ywL9o {
+.downloadLink-1OAglv {
 	width: 128px;
 }
 
 // Context menus dont layer properly because its too hard to add proper z-indexing
-.layerContainer-yqaFcK .layer-v9HyYc {
-	& .layer-v9HyYc {
+.layerContainer-2v_Sit .layer-2aCOJ3 {
+	& .layer-2aCOJ3 {
 		z-index: 1003;
-		& .layer-v9HyYc {
+		& .layer-2aCOJ3 {
 			z-index: 1004;
-			& .layer-v9HyYc {
+			& .layer-2aCOJ3 {
 				z-index: 1005;
-				& .layer-v9HyYc {
+				& .layer-2aCOJ3 {
 					z-index: 1006;
-					& .layer-v9HyYc {
+					& .layer-2aCOJ3 {
 						z-index: 1007;
-						& .layer-v9HyYc {
+						& .layer-2aCOJ3 {
 							z-index: 1008;
-							& .layer-v9HyYc {
+							& .layer-2aCOJ3 {
 								z-index: 1009;
-								& .layer-v9HyYc {
+								& .layer-2aCOJ3 {
 									z-index: 1010;
 								}
 							}
@@ -123,30 +123,30 @@ $modal-height: 8;
 }
 
 // Error thing
-.messagesErrorBar-nyJGU7 {
+.messagesErrorBar-1IQ1rH {
 	background-color: var(--danger);
 	border-radius: var(--snackbar-radius);
 	height: var(--snackbar-height);
 }
 
 // Transactions have a funny non skinned
-.table-39R0Oe {
+.table-17_dGF {
 	@include card(4);
 }
 
 // Invite server modal is cucked on dark mode
 .theme-dark .theme-light {
-	& .root-1gCeng {
-		& .base-1x0h_U {
+	& .root-g14mjS {
+		& .base-21yXnu {
 			color: white;
 		}
-		& .colorStandard-2KCXvj {
+		& .colorStandard-21JIj7 {
 			color: #dcddde;
 		}
-		& .colorHeaderSecondary-3Sp3Ft {
+		& .colorHeaderSecondary-g5teka {
 			color: #b9bbbe;
 		}
-		& .close-hZ94c6 {
+		& .close-1mLglB {
 			color: #dcddde;
 			&::hover {
 				color: #b9bbbe;
@@ -155,8 +155,8 @@ $modal-height: 8;
 	}
 
 	// TODO: Get the hover shit to work im not bothered atm
-	& .container-UC8Ug1 {
-		& .arrow-hynWUl {
+	& .container-x8Y1ix {
+		& .arrow-2yY1Tm {
 			// right arrow
 			box-sizing: border-box;
 			-webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z'/%3E%3C/svg%3E");
@@ -166,7 +166,7 @@ $modal-height: 8;
 			padding-left: 38px;
 			background-color: #dcddde;
 		}
-		&::hover .arrow-hynWUl {
+		&::hover .arrow-2yY1Tm {
 			//background-color: #b9bbbe;
 			background-color: red;
 		}
@@ -174,30 +174,30 @@ $modal-height: 8;
 }
 
 // Emoji popout funny animations
-.layerContainer-yqaFcK .layer-v9HyYc {
+.layerContainer-2v_Sit .layer-2aCOJ3 {
 	transition: top		100ms ease-in-out,
 				bottom	100ms ease-in-out,
 				left	100ms ease-in-out,
 				right	100ms ease-in-out;
 }
-.popoutContainer-1MXdqN {
+.popoutContainer-2wbmiM {
 	transition: width	150ms ease-in-out,
 				height	150ms ease-in-out;
 }
 
 // Invite dots
-.dotMembers-1XEUE5 {
+.dotMembers-71yF9W {
     background-color: var(--offline);
 }
-.dotOnline-2wEpt_ {
+.dotOnline-r4Z_bf {
     background-color: var(--online);
 }
 
 // Delete message message preview is a different card class ffs
-.message-2qRu38 {
+.message-G6O-Wv {
 	@include card(2);
 }
-.inviteRow-2L02ae {
+.inviteRow-3vmB7i {
 	@include card($modal-height);
 	transition: background-color	150ms ease-in-out,
 				box-shadow			150ms ease-in-out,;
@@ -211,11 +211,11 @@ $modal-height: 8;
 }
 
 // @everyone modal
-.contentWarningPopout-n5JsIs {
+.contentWarningPopout-WKdbDG {
 	@include card(6);
 }
 
 // separator
-.separator-2I32lJ {
+.separator-1So4YB {
 	border-color: var(--separator);
 }

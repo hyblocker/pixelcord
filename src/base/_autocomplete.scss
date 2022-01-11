@@ -1,23 +1,23 @@
-﻿@import "../utils";
+@import "../utils";
 
-.autocompleteRow-2OthDa {
-    .selected-1Tbx07 {
+.autocompleteRow-14iwvH {
+    .selected-3H3-RC {
         @include theming {
-            & .icon-3ZzoN7,
-            & .icon-2VCx8O,
-            & .colorInteractiveActive-3Ip9Eu,
-            & .colorInteractiveNormal-PB7JN3,
-            & .colorMuted-HdFt4q {
+            & .icon-nmEpWl,
+            & .icon-1kx1ir,
+            & .colorInteractiveActive-30E9n8,
+            & .colorInteractiveNormal-36ZhyZ,
+            & .colorMuted-20987_ {
                 color: var(--accent);
             }
-            & .colorMuted-HdFt4q {
+            & .colorMuted-20987_ {
                 color: var(--accent);
                 opacity: 0.7;
             }
-            & .optionals-yC7FfY {
+            & .optionals-2w-NPQ {
                 border-color: var(--accent);
             }
-            & .option-2lkyZ_ {
+            & .option-c0n68t {
                 background-color: var(--accent);
                 color: var(--accent-text);
             }
@@ -25,14 +25,14 @@
         }
     }
 }
-.active-2awTSY {
+.active-WHsd77 {
     background-color: var(--accent) !important;
     color: var(--accent-text);
 }
-.error-2_oAXi {
+.error-29IZEE {
     color: var(--red);
 }
-.option-2lkyZ_.error-1NcCbc {
+.option-c0n68t.error-1SecXe {
     background-color: var(--red);
     color: var(--red-text);
 }

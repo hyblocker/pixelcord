@@ -1,0 +1,9 @@
+.checklistIcon-D7psvE {
+    & > svg > path[fill*="hsl(38, "] {
+        fill: var(--yellow);
+    }
+
+    & > svg > path[fill*="hsl(359, "] {
+        fill: var(--red);
+    }
+}

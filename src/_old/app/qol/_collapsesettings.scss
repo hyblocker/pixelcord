@@ -9,19 +9,19 @@ $width: 32px;
 @if $collapse_settings {
 
     // Edge case
-    .container-35XQWE {
+    .container-1qIct8 {
         z-index: 1;
         // Fix unread pills breaking because of this
-        &.unread-15xhX5 {
+        &.unread-XRkyaQ {
             z-index: 2;
         }
     }
 
-    .container-3baos1 {
+    .container-YkUktl {
         position: relative;
     }
 
-    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5{
+    .panels-3wFtMD>.container-YkUktl>.flex-2S1XBF{
         position: absolute;
         flex-direction: column;
         bottom: var(--settings-padding);
@@ -39,28 +39,28 @@ $width: 32px;
             @include card(4);
         }
     }
-    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5>:not(:last-child){
+    .panels-3wFtMD>.container-YkUktl>.flex-2S1XBF>:not(:last-child){
         height: 0;
         opacity: 0;
         transition: opacity 0.2s linear, height 0.2s ease-in-out;
     }
-    .panels-j1Uci_>.container-3baos1>.flex-1xMQg5:hover>:not(:last-child){
+    .panels-3wFtMD>.container-YkUktl>.flex-2S1XBF:hover>:not(:last-child){
         height: 32px;
         opacity: 1;
     }
-    .nameTag-3uD-yy {
+    .nameTag-sc-gpq {
         margin-right: 25px;
     }
 
     // Fix tooltips
-    .layer-v9HyYc.disabledPointerEvents-1ptgTB {
+    .layer-2aCOJ3.disabledPointerEvents-2AmYRc {
         &[style*="bottom: 54"][style^="position: absolute; left: 2"],
         &[style*="bottom: 86"][style^="position: absolute; left: 2"],
         &[style*="bottom: 118"][style^="position: absolute; left: 3"],
         &[style*="bottom: 150"][style^="position: absolute; left: 2"] {
-            & .tooltip-2QfLtc.tooltipTop-XDDSxx.tooltipPrimary-1d1ph4.tooltipDisablePointerEvents-3eaBGN {
+            & .tooltip-14MtrL.tooltipTop-1wv5UJ.tooltipPrimary-3qLMbS.tooltipDisablePointerEvents-1huO19 {
                 transform: translate(calc(-50% - 30px), 40px) !important;
-                & .tooltipPointer-3ZfirK {
+                & .tooltipPointer-3L49xb {
                     margin-left: -1px;
                     left: unset;
                     margin-top: -5px;
@@ -75,8 +75,8 @@ $width: 32px;
     }
 
     // Fix VC icons being misaligned
-    .actions-aUdUfC,
-    .connection-3KRENF {
+    .actions-zk2vB_,
+    .connection-3k9QeF {
         margin-right: var(--settings-padding);
     }
 }

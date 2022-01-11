@@ -1,13 +1,17 @@
-﻿@import "../utils";
+@import "../utils";
 
 // Fix better badges using a shit font
-.userPopout-xaxa6l[aria-label="mr_miner"] .headerText-1vVs-U::after {
+.userPopout-2j1gM4[aria-label="mr_miner"] .headerText-1-WmDq::after {
   font-family: var(--font-header);
 }
 
 // Bruh
-.errorImage-12Q43V {
+.errorImage-19HeaA {
   background-size: contain;
+}
+.theme-dark .channelNotice-3-mDJt,
+.theme-light .channelNotice-3-mDJt {
+  background-position: center top 20px;
 }
 
 // guilds icon is fucked and doesnt look good

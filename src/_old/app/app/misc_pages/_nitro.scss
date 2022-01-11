@@ -1,15 +1,15 @@
 @import '../../material/card';
 
-.feature-2w65J5 {
+.feature-2IUcBI {
 	@include card(4);
 }
-.header-1RC2Wb {
+.header-ISPHUQ {
 	@include card(4);
 }
-.body-SKIE6r {
+.body-2S0G9D {
 	@include card(2, $background: false);
 }
-.card-7JP0BX {
+.card-3Zmutq {
 	overflow: visible;
 }
 .guild-Hq0WWA {
@@ -29,12 +29,12 @@
 .perk-2WeBWW {
 	@include card(4);
 }
-.planOptionDiscount-cS8uaO {
+.planOptionDiscount-2UFc37 {
 	background-color: var(--online);
 }
 
 // Boosts menu
-.tierMarkerBackground-3q29am, // The boost icons have a funny circle near them
+.tierMarkerBackground-G8FoN4, // The boost icons have a funny circle near them
 .perksModal-fSYqOq {
 	.theme-light & {
 		background-color: cardbg(0, false);
@@ -48,7 +48,7 @@
 }
 
 // Become modal
-.root-3R2ngo {
+.root-2zfUH6 {
 	transform: unset;
 	&::before {
 		content: "";
@@ -75,10 +75,10 @@
 	& .closeContent-I3JbQJ {
 		top: calc(10% + 32px);
 	}
-	& .carousel-18mXWH {
+	& .carousel-2M5OVB {
 		left: 24px !important;
 	}
-	& .closeButton-1tv5uR path {
+	& .closeButton-PCZcma path {
 		fill: var(--interactive-normal) !important;
 		&:hover {
 			fill: var(--interactive-hover) !important;
@@ -87,7 +87,7 @@
 }
 
 // boost icon fucked
-.bannerVisible-2ZE_qG .iconTierOne-s_oiRb,
-.bannerVisible-2ZE_qG .iconTierTwo-1JOWNK {
+.bannerVisible-Vkyg1I .iconTierOne-s_oiRb,
+.bannerVisible-Vkyg1I .iconTierTwo-1JOWNK {
 	color: rgb(255, 115, 250);
 }

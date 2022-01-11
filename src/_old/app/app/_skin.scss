@@ -1,6 +1,6 @@
 @import "../material/card";
 
-.wrapper-3WhCwL {
+.wrapper-1ZcZW- {
 	color: var(--accent);
 	background-color: transparent;
 }
@@ -9,86 +9,86 @@
 	color: var(--accent-text);
 }
 
-.theme-light .path-92Hmty,
-.theme-dark .path-92Hmty {
+.theme-light .path-lhsLSV,
+.theme-dark .path-lhsLSV {
 	stroke: var(--accent);
 }
 
 // Picture-in-picture
-.pictureInPictureVideo-2iKsGg {
+.pictureInPictureVideo-2puO2Q {
 	width: var(--pip-width);
 	height: calc(var(--pip-width) * 0.5625);
 }
-.theme-light .elevationHigh-3A9Xbf {
+.theme-light .elevationHigh-3KUiqj {
 	@include card(24, $background: false);
 	border-radius: var(--pip-radius);
 }
-.pictureInPictureWindow-1B5qSe {
+.pictureInPictureWindow-3ms5Zy {
 	overflow: visible;
 }
 
-.members-1998pB, .members-1998pB>div {
+.members-3WRCEx, .members-3WRCEx>div {
 	// border-radius: 0 var(--pip-radius) var(--pip-radius) 0;
 	border-radius: 0;
 }
 
-.privateChannels-1nO12o {
+.privateChannels-oVe7HL {
 	margin: calc(-1 * var(--card-padding));
 	padding: var(--card-padding);
 }
 
 // Draggable title bar
-.container-1r6BKw.themed-ANHk51, .container-1r6BKw.transparent-2ZlE3R {
+.container-ZMc96U.themed-Hp1KC_, .container-ZMc96U.transparent-1lUmft {
 	-webkit-app-region: drag;
 }
-.topPill-30KHOu .item-PXvHYJ, .container-1r6BKw.transparent-2ZlE3R .button-38aScr, .title-29uC1r, .title-29uC1r, .toolbar-1t6TWx {
+.topPill-3DJJNV .item-3XjbnG, .container-ZMc96U.transparent-1lUmft .button-38aScr, .title-17SveM, .title-17SveM, .toolbar-3_r2xA {
 	-webkit-app-region: none;
 }
 
-.wrapper-39oAo3 {
+.wrapper-2SplAX {
 	@include card(6);
 }
 
 // Emote auto-complete
-.autocomplete-1vrmpx {
+.autocomplete-3NRXG8 {
 	@include card(8);
 }
-.base-1pYU8j {
+.base-2v-uc0 {
 	transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out;
 }
-.selected-1Tbx07 {
+.selected-3H3-RC {
 	//@include card(16);
 	.theme-light &,
 	.theme-dark & {
 		background-color: var(--accent-selected-highlight);
-		& .colorInteractiveActive-3Ip9Eu,
-		& .colorInteractiveNormal-PB7JN3,
-		& .icon-3ZzoN7 {
+		& .colorInteractiveActive-30E9n8,
+		& .colorInteractiveNormal-36ZhyZ,
+		& .icon-nmEpWl {
 			color: var(--accent);
 		}
 	}
 }
 
-.iconBadge-2NuvG9 {
+.iconBadge-1D5-9X {
 	@include card(4, $background: false);
 }
 
-.members-1998pB, .members-1998pB>div
+.members-3WRCEx, .members-3WRCEx>div
 {
 	background-color: var(--navdrawer-color);
 }
-.form-2fGMdU {
+.form-3gdLxP {
 	.theme-dark &:before,
 	.theme-light &:before {
 		background: -webkit-gradient(linear,left top,left bottom,from(transparent),to(cardbg(0, true)));
 		background: linear-gradient(180deg,transparent 0,cardbg(0, true));
 	}
 }
-.auto-Ge5KZx::-webkit-scrollbar-track {
+.auto-2K3UW5::-webkit-scrollbar-track {
 	//background-color: cardbg(0, true);
 	background-color: transparent;
 }
-.auto-Ge5KZx::-webkit-scrollbar-thumb {
+.auto-2K3UW5::-webkit-scrollbar-thumb {
 	.theme-light & {
 		background-color: rgb(223, 223, 223);
 	}
@@ -98,13 +98,13 @@
 }
 
 // VC border radius
-.wrapper-2qzCYF, .gradientTop-3UWg3T, .gradientBottom-3X4SdK {
+.wrapper-1gVUIN, .gradientTop-1UBZHm, .gradientBottom-uB_-4E {
 	border-top-left-radius: var(--card-roundedness);
 	border-top-right-radius: var(--card-roundedness);
 }
 
 // VC Headers force dark mode, so lets use some fuckery to detect if we truly have dark mode enabled:
-.theme-light .container-1r6BKw.transparent-2ZlE3R.theme-dark {
+.theme-light .container-ZMc96U.transparent-1lUmft.theme-dark {
 	//Truly light theme
 	box-shadow: elevation-shadow(2, $baseline-color);
 	background-color: white;
@@ -116,34 +116,34 @@
 	--danger: var(--danger);
 	--accent: var(--accent);
 	--online: var(--online);
-	& .controlIcon-35oS15 {
+	& .controlIcon-10O-4h {
 		color: var(--interactive-normal);
 	}
-	& .playingText-3KIkt6 {
+	& .playingText-16QsYy {
 		color: var(--header-primary);
 	}
 }
-.notice-3bPHh- {
+.notice-2HEN-u {
 	@include card(8, $background: false);
 	border-radius: var(--card-roundedness);
 }
 
-.callContainer-3UuV6S {
-	& .scroller-1SuHJo {
+.callContainer-BGIngG {
+	& .scroller-35tvpe {
 		border-radius: var(--card-roundedness);
 	}
 }
 
-.chat-3bRxxu .wrapper-2qzCYF.minimum-28Z35l+.content-yTz4x3:nth-child(3) {
+.chat-2ZfjoI .wrapper-1gVUIN.minimum-fXpVNc+.content-1jQy2l:nth-child(3) {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
 
 
-.wrapper-2aW0bm {
+.wrapper-2vIMkT {
 	@include card(6);
 }
-.mediaBarGrabber-1FqnbN, .mediaBarProgress-1xaPtl, .mediaBarProgress-1xaPtl:after, .mediaBarProgress-1xaPtl:before {
+.mediaBarGrabber-FvJKJg, .mediaBarProgress-38I317, .mediaBarProgress-38I317:after, .mediaBarProgress-38I317:before {
 	background-color: var(--accent);
 }
 
@@ -151,28 +151,28 @@ body::before {
 	color: var(--danger);
 }
 
-.inline-136HKr .pro-1T8RK7,
-.inline-136HKr .tip-2ab612 {
+.inline-1zjmuk .pro-3GwLMX,
+.inline-1zjmuk .tip-Jl__cG {
 	&[style*="color: hsl(139, "] {
 		color: var(--online) !important;
 	}
 }
-.required-7sPBq3,
-.powercord-settings-item .description-3_Ncsb strong strong {
+.required---V9PF,
+.powercord-settings-item .description-30xx7u strong strong {
 	color: var(--danger) !important;
 }
-.errorImage-1StK2r {
+.errorImage-1n5rtg {
 	background-image: none;
 	-webkit-mask-image: url(/assets/c4e2488e2b572c805ffc3cce9ca92376.svg);
 	background-color: var(--danger);
 }
-.wanderingCubesItem-WPXqao {
+.wanderingCubesItem-3Us-UG {
 	background-color: var(--accent);;
 }
-.wrapper-232cHJ {
+.wrapper-22ayhK {
 	background-color: var(--danger);
 }
-.secured-1Yihly:before {
+.secured-2wavXv:before {
 	-webkit-mask: url(/assets/9d817c6b23267c30d63b2979684a42c2.svg) 50% no-repeat;
 	background: var(--online);
 }

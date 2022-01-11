@@ -81,6 +81,7 @@
 	@include replaceIcon("tts", $icon-pack);
 	@include replaceIcon("invite", $icon-pack);
 	@include replaceIcon("notifications", $icon-pack);
+	@include removePath("M21.178 1.70703L22.592 3.12103L4.12103 21.593L2.70703 20.178L21.178 1.70703Z");
 	// notification mute
 	@include replacePathWithIcon("M12 3C13.417 3 14.71 3.5 15.734 4.321L5.99805 14.058C5.99805 14.0479 5.99856 14.038 5.99907 14.0283C5.99956 14.0188 6.00005 14.0094 6.00005 14V9C6.00005 5.686 8.68605 3 12 3Z", "notifications_off", $icon-pack);
 	@include removePath("M8.957 19.5718L9.52877 19H15.4449C14.7519 20.19 13.4759 21 11.9999 21C10.7748 21 9.68752 20.442 8.957 19.5718Z");
@@ -109,28 +110,28 @@
 	// @include replaceIcon("nitro", $icon_pack);
 
 	// Some settings need custom replace systems bc funny svg!!
-	.stickerIcon-3TP7EM > path:first-child {
+	.stickerIcon-3Jx5SE > path:first-child {
 		d: path("M17 3v9h-5v5H3V3h14m0-2H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10l6-6V3c0-1.1-.9-2-2-2zm-7 11H5v-2h5v2zm5-4H5V6h10v2z");
 	}
-	.stickerIcon-3TP7EM > path:last-child {
+	.stickerIcon-3Jx5SE > path:last-child {
 		d: path('')
 	}
 	
 
 	// Settings
 	// Lock should be using mask so that we can customise the color
-	.userSettingsSecurity-3IYeMF .lockIcon-2Hj8Tq {
+	.userSettingsSecurity-3C5Hg5 .lockIcon-1FHuKP {
 		--settings-lock-mask: #{svg-url(#{map-get($icon-pack, "2falock")})};
 	}
 
 	// GIFs
-	.gifTag-31zFY8 {
+	.gifTag-1TvtGO {
 		background: #{svg-url(#{map-get($icon-pack, "gif")})};
 		background-size: 29px;
 	}
 	
 	// Discord's default Emoji picker is cringe
-	.sprite-2iCowe {
+	.sprite-2lxwfc {
 		transform: scale(1) !important;
 		-webkit-mask-image: #{svg-url(#{map-get($icon-pack, "emoji")})};
 		background: var(--interactive-normal) !important;
@@ -140,29 +141,29 @@
 	}
 	
 	// Reset red strikethrough
-	.strikethrough-otdQWt,
+	.strikethrough-958bun,
 	.strikethrough-3Wiitd,
-	.strikethrough-1n4ekb {
+	.strikethrough-2Kl6HF {
 		color: inherit;
 		d: path("");
 	}
 	
 	// Override icons for tabs
-	.tabBarItem-3dfX8P[aria-controls=user_info-tab] {
+	.tabBarItem-30Te4-[aria-controls=user_info-tab] {
 		--icon: #{svg-url(#{map-get($icons-filled, "account")})};
 	}
-	.tabBarItem-3dfX8P[aria-controls=activity-tab] {
+	.tabBarItem-30Te4-[aria-controls=activity-tab] {
 		--icon: #{svg-url(#{map-get($icons-filled, "game")})};
 	}
-	.tabBarItem-3dfX8P[aria-controls=mutual_guilds-tab] {
+	.tabBarItem-30Te4-[aria-controls=mutual_guilds-tab] {
 		--icon: #{svg-url(#{map-get($icons-filled, "mutual_guild")})};
 	}
-	.tabBarItem-3dfX8P[aria-controls=mutual_friends-tab] {
+	.tabBarItem-30Te4-[aria-controls=mutual_friends-tab] {
 		--icon: #{svg-url(#{map-get($icons-filled, "mutual_friends")})};
 	}
 	
 	// Switch accounts icon
-	.switchAccountsIcon-355frb {
+	.switchAccountsIcon-36imMT {
 		-webkit-mask-image: #{svg-url(#{map-get($icon-pack, "swap")})};
 		-webkit-mask-size: 16px;
 		background: currentColor;

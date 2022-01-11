@@ -7,7 +7,7 @@ $titleLeftPadding: calc((var(--settings-header-height) + 6px));
 $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 
 // Inject into settings menu
-.layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e::after {
+.layer-86YKbF[aria-label="USER_SETTINGS"] .sidebar-nqHbhN::after {
 	// Text
 	@if ($DEBUG == true) {
 		content: 'Pixelcord #{$version} DEV';
@@ -34,80 +34,84 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 }
 
 // Settings sidebar
-.topPill-30KHOu .themed-OHr7kt.item-PXvHYJ {
+.topPill-3DJJNV .themed-2-lozF.item-3XjbnG {
 	@include ripple;
 }
 
 // Items should be "material you"
-.side-8zPYf6 .item-PXvHYJ {
+.side-2ur1Qk .item-3XjbnG {
 	height: var(--settings-item-height);
 	border-radius: calc(0.5 * var(--settings-item-height));
 }
 // sidebar padding
-.sidebar-CFHs9e {
+.sidebar-nqHbhN {
 	padding: 60px var(--sidebar-right-padding) 60px var(--sidebar-left-padding);
 }
 
-.theme-dark .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
-.theme-light .header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
-.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
-.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
-	&, &:hover:not(.disabled-1Hwwfb) {
+.theme-dark .header-145e10 .tabBar-1qdMr5 .tab-TRrPC8.active-1grPyy,
+.theme-light .header-145e10 .tabBar-1qdMr5 .tab-TRrPC8.active-1grPyy,
+.side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG,
+.topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
+	&, &:hover:not(.disabled-1nofHP) {
 		background-color: var(--accent-transparent);
 		color: var(--accent);
 		font-weight: var(--weight-header);
 	}
 
-	& .colorInteractiveActive-3Ip9Eu {
+	& .colorInteractiveActive-30E9n8 {
 		color: currentColor;
 	}
 }
 
 // Yeet whitespace on the left of the sidebar bc yeds
-.sidebarRegion-VFTUkN {
+.sidebarRegion-1VBisG {
 	flex: 0;
 }
 
 // Nitro tabs are special
-.serverBoostTabItem-2hFTIN[aria-selected=true],
+.serverBoostTabItem-3QwA3W[aria-selected=true],
 .premiumTabItem-1QTfBr[aria-selected=true] {
 	background-color: var(--accent-transparent) !important;
 	color: var(--accent) !important;
 }
-.selectedBackground-2KQZ6B {
+.selectedBackground-1qyzak {
 	background-color: transparent;
 }
-.selected-2GV18F {
+.selected-2m-n75 {
 	color: inherit;
 }
 
 // Add ripple to the sidebar
-.side-8zPYf6 .item-PXvHYJ {
+.side-2ur1Qk .item-3XjbnG {
 	@include ripple;
 }
 
 // red items should use the theme var
-.side-8zPYf6 .item-PXvHYJ[style^="color: hsl(359,"] {
+.side-2ur1Qk .item-3XjbnG[style^="color: hsl(359,"] {
 	color: var(--red) !important;
 }
 
 // red selected
-.side-8zPYf6 .item-PXvHYJ[style^="color: hsl(0,"][style*="background-color: hsl(359"] {
+.side-2ur1Qk .item-3XjbnG[style^="color: hsl(0,"][style*="background-color: hsl(359"] {
 	color: var(--red-text) !important;
 	background-color: var(--red) !important;
 }
 
 // 'Google' settings
 // Break the title to the text
-.contentColumnDefault-1VQkGM .subscriptionDetails-1pYrMz > .title-3sZWYQ:first-of-type,
-.contentColumnDefault-1VQkGM > div:first-child > div:first-child > .sectionTitle-2vauyC:first-of-type,
-.contentColumnDefault-1VQkGM > div:first-child > .sectionTitle-2vauyC:first-of-type,
-.contentColumnDefault-1VQkGM > div:first-child > .title-3sZWYQ:first-child, // TODO: revert to first-of-type?
-.customContainer-1RHXqt .content-2HgFLu > div:first-child > div:first-child > .title-3sZWYQ:first-of-type,
-.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .title-3sZWYQ:first-of-type,
-.customContainer-1RHXqt .content-3YMskv > div:nth-child(2) > .sectionTitle-2vauyC > .title-3sZWYQ:first-of-type,
-.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .title-3sZWYQ:first-of-type,
-.contentTransitionWrap-3hqOEW > div > .contentColumn-2hrIYH > .breadcrumbs-313Q_y:first-of-type {
+.contentColumnDefault-3eyv5o .subscriptionDetails-ZcKNHC > .title-3hptVQ:first-of-type,
+.contentColumnDefault-3eyv5o > div:first-child > div:first-child > .sectionTitle-3j2YI1:first-of-type,
+.contentColumnDefault-3eyv5o > div:first-child > .sectionTitle-3j2YI1:first-of-type,
+.contentColumnDefault-3eyv5o > div:first-child > .title-3hptVQ:first-child, // TODO: revert to first-of-type?
+.customContainer-dK1ozq .content-28mbXd > div:first-child > div:first-child > .title-3hptVQ:first-of-type,
+.customContainer-dK1ozq .content-2a4AW9 > div:nth-child(2) > .title-3hptVQ:first-of-type,
+.customContainer-dK1ozq .content-2a4AW9 > div:nth-child(2) > .sectionTitle-3j2YI1 > .title-3hptVQ:first-of-type,
+.contentTransitionWrap-1YD530 > div > .contentColumn-1C7as6 > .title-3hptVQ:first-of-type,
+.contentTransitionWrap-1YD530 > div > .contentColumn-1C7as6 > .breadcrumbs-313Q_y:first-of-type,
+.bdcompat-title:first-of-type,
+.pc-settings-title:first-of-type,
+.kernel-title:first-of-type,
+.ysink_zone_ticker {
 	// Position the title
 	position: fixed;
 	// top: calc(0.5 * (var(--settings-header-height) - 12px));
@@ -124,6 +128,9 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 		font-weight: var(--weight-header);
 		text-transform: none;
 	}
+}
+.ysink_zone_ticker {
+	
 }
 
 // Some settings don't have a title, so let's add one anyway
@@ -145,30 +152,30 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	}
 }
 
-.layer-3QrUeG[aria-label$="SETTINGS"] {
+.layer-86YKbF[aria-label$="SETTINGS"] {
 
 	// Nitro
-	.content-2c3hgM > .marketingRefreshSectionTier1-dRwS-6 {
+	.content-374sTA > .marketingRefreshSectionTier1-1chtWC {
 		@include forceTitle('Nitro');
 	}
 
 	// Boosts
-	.content-3BhRLj > div > .marketingLogo-1D8DV6 {
+	.content-11k50x > div > .marketingLogo-pyU32f {
 		@include forceTitle('Server Boost');
 	}
 
 	// Payment method
-	.paymentHistory-2FXzro > .title-3sZWYQ {
+	.paymentHistory-2Zf4ZE > .title-3hptVQ {
 		@include forceTitle(var(--i18n-payment, 'Billing'));
 	}
 
 	// Activate community
-	.banner-2zWlOa + .size24-RIRrxO {
+	.banner-2zWlOa + .size24-17l95E {
 		@include forceTitle('Community');
 	}
 
 	// Partnership
-	.banner-2AwsUs + .size24-RIRrxO {
+	.banner-2AwsUs + .size24-17l95E {
 		@include forceTitle(var(--i18n-partnership, 'Partnership'));
 	}
 
@@ -178,17 +185,17 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	}
 
 	// Threads
-	.banner-2G2Kv6 + .size24-RIRrxO {
+	.banner-2G2Kv6 + .size24-17l95E {
 		@include forceTitle('Thread');
 	}
 
 	// Roles editor
-	.sidebar-dLM-kh {
+	.sidebar-3K3Z4C {
 		@include forceTitle(var(--i18n-roles, 'Roles'));
 	}
 
 	// hypesquad
-	.intro-325xRx {
+	.intro-3NvIZT {
 		@include forceTitle(var(--i18n-hypesquad, 'HypeSquad'));
 	}
 
@@ -196,13 +203,13 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 }
 
 // Make the sidebar wider
-.sidebar-CFHs9e {
+.sidebar-nqHbhN {
 	width: var(--settings-sidebar-width);
 }
 
 // Make space for the blue bar
-.layer-3QrUeG[aria-label=RTC_DEBUG] .standardSidebarView-3F1I7i,
-.layer-3QrUeG[aria-label$="SETTINGS"] .standardSidebarView-3F1I7i {
+.layer-86YKbF[aria-label=RTC_DEBUG] .standardSidebarView-E9Pc3j,
+.layer-86YKbF[aria-label$="SETTINGS"] .standardSidebarView-E9Pc3j {
 	top: calc(var(--settings-header-height) - 24px);;
 
 	// Create the headerbar
@@ -221,7 +228,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 }
 
 // <- Button in settings
-.toolsContainer-1edPuj {
+.toolsContainer-25FL6V {
 	// Reposition it
 	position: fixed;
 	left: $backButtonPadding;
@@ -234,7 +241,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 }
 
 // Replace the back button with an arrow back
-.closeButton-1tv5uR {
+.closeButton-PCZcma {
 	border-radius: 0;
 	@include theming {
 		border-color: transparent;
@@ -253,13 +260,13 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	}
 }
 
-.closeButton-1tv5uR:hover + .keybind-KpFkfr {
+.closeButton-PCZcma:hover + .keybind-13vtq8 {
 	opacity: 1;
 	transform: scale(1);
 }
 
 // Turn ESC into a funny tooltip
-.closeButton-1tv5uR + .keybind-KpFkfr {
+.closeButton-PCZcma + .keybind-13vtq8 {
 	font-size: 0;
 	opacity: 0;
 	transform: scale(0);

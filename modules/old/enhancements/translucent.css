@@ -39,19 +39,19 @@ body {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.spine--Wla_O,
-.placeholder-37qJjk,
-.slateTextArea-1Mkdgw span[data-slate-string=true] {
+.spine-29OFwR,
+.placeholder-1_mJY1,
+.slateTextArea-27tjG0 span[data-slate-string=true] {
   filter: var(--text-filter);
 }
 
-.spine--Wla_O {
+.spine-29OFwR {
   color: var(--text-muted);
 }
 
-.theme-dark .descriptionWrapper-1YBY_J, .theme-light .descriptionWrapper-1YBY_J,
-.theme-dark .markValue-2DwdXI,
-.theme-light .markValue-2DwdXI {
+.theme-dark .descriptionWrapper-eOmU90, .theme-light .descriptionWrapper-eOmU90,
+.theme-dark .markValue-2U_-UG,
+.theme-light .markValue-2U_-UG {
   color: var(--text-muted);
 }
 
@@ -59,94 +59,94 @@ body {
   background-color: var(--blur-bg-4);
 }
 
-.members-1998pB,
-.scroller-1JbKMe, .privateChannels-1nO12o {
+.members-3WRCEx,
+.scroller-WSmht3, .privateChannels-oVe7HL {
   background-color: var(--blur-bg-3);
 }
 
-.sidebar-2K8pFh .container-3w7J-x {
+.sidebar-1tnWFu .container-1NXEtd {
   background-color: var(--blur-bg-3);
 }
 
-.theme-dark .connection-1fbD7X, .theme-light .connection-1fbD7X,
-.theme-dark .accountList-33MS45,
-.theme-light .accountList-33MS45,
-.theme-dark .searchResultsWrap-3-pOjs,
-.theme-light .searchResultsWrap-3-pOjs,
-.theme-dark .emptyCard-1RJw8n,
-.theme-light .emptyCard-1RJw8n,
-.theme-dark .wrapper-3D2qGf,
-.theme-light .wrapper-3D2qGf,
-.theme-dark .nowPlayingColumn-2sl4cE .outer-1AjyKL,
-.theme-light .nowPlayingColumn-2sl4cE .outer-1AjyKL {
+.theme-dark .connection-107AGH, .theme-light .connection-107AGH,
+.theme-dark .accountList-305sx3,
+.theme-light .accountList-305sx3,
+.theme-dark .searchResultsWrap-5RVOkx,
+.theme-light .searchResultsWrap-5RVOkx,
+.theme-dark .emptyCard-KDifrB,
+.theme-light .emptyCard-KDifrB,
+.theme-dark .wrapper-2RrXDg,
+.theme-light .wrapper-2RrXDg,
+.theme-dark .nowPlayingColumn-1eCBCN .outer-2JOHae,
+.theme-light .nowPlayingColumn-1eCBCN .outer-2JOHae {
   background-color: var(--blur-bg-3);
 }
 
-.theme-dark .container-3hZ-gs, .theme-light .container-3hZ-gs,
-.theme-dark .card-3RzMcx,
-.theme-light .card-3RzMcx,
-.theme-dark .accountBtn-2Nozo3 .accountBtnInner-sj5jLs,
-.theme-light .accountBtn-2Nozo3 .accountBtnInner-sj5jLs,
-.theme-dark .settingCard-3w2mVL,
-.theme-light .settingCard-3w2mVL, .theme-dark .cardPrimary-1Hv-to, .theme-light .cardPrimary-1Hv-to, .theme-dark .cardPrimaryEditable-3KtE4g, .theme-light .cardPrimaryEditable-3KtE4g, .theme-dark .accountProfileCard-1XCH88, .theme-light .accountProfileCard-1XCH88,
-.theme-dark .codeRedemptionRedirect-1wVR4b,
-.theme-light .codeRedemptionRedirect-1wVR4b,
-.theme-dark .paymentPane-3bwJ6A,
-.theme-light .paymentPane-3bwJ6A,
-.theme-dark .cardPrimaryOutline-29Ujqw,
-.theme-light .cardPrimaryOutline-29Ujqw, .theme-dark .premiumSubscriptionAccountCredit-25i0tQ, .theme-light .premiumSubscriptionAccountCredit-25i0tQ, .theme-dark .guilds-3A5wi_ .cardWrapper-2Min21, .theme-light .guilds-3A5wi_ .cardWrapper-2Min21,
+.theme-dark .container-3i3IzO, .theme-light .container-3i3IzO,
+.theme-dark .card-PQEqCK,
+.theme-light .card-PQEqCK,
+.theme-dark .accountBtn-1YkMgV .accountBtnInner-3XK70s,
+.theme-light .accountBtn-1YkMgV .accountBtnInner-3XK70s,
+.theme-dark .settingCard-xZSDjS,
+.theme-light .settingCard-xZSDjS, .theme-dark .cardPrimary-3qRT__, .theme-light .cardPrimary-3qRT__, .theme-dark .cardPrimaryEditable-2mz_3i, .theme-light .cardPrimaryEditable-2mz_3i, .theme-dark .accountProfileCard-lbN7n-, .theme-light .accountProfileCard-lbN7n-,
+.theme-dark .codeRedemptionRedirect-3SBiCp,
+.theme-light .codeRedemptionRedirect-3SBiCp,
+.theme-dark .paymentPane-ut5qKZ,
+.theme-light .paymentPane-ut5qKZ,
+.theme-dark .cardPrimaryOutline-1ofwVz,
+.theme-light .cardPrimaryOutline-1ofwVz, .theme-dark .premiumSubscriptionAccountCredit-1UInYJ, .theme-light .premiumSubscriptionAccountCredit-1UInYJ, .theme-dark .guilds-35jvvn .cardWrapper-CyvwQv, .theme-light .guilds-35jvvn .cardWrapper-CyvwQv,
 .theme-dark .detailsBlock-FoDTGA,
-.theme-light .detailsBlock-FoDTGA, .theme-dark .expandedInfo-3kfShd, .theme-light .expandedInfo-3kfShd,
-.theme-dark .feature-2w65J5,
-.theme-light .feature-2w65J5,
-.theme-dark .searchResult-9tQ1uo,
-.theme-light .searchResult-9tQ1uo,
-.theme-dark .reaction-1hd86g,
-.theme-light .reaction-1hd86g,
-.theme-dark .section-2gLsgF,
-.theme-light .section-2gLsgF,
-.theme-dark .wrapperAudio-1jDe0Q,
-.theme-light .wrapperAudio-1jDe0Q,
-.theme-dark .embedFull-2tM8--,
-.theme-light .embedFull-2tM8-- {
+.theme-light .detailsBlock-FoDTGA, .theme-dark .expandedInfo-1W31i3, .theme-light .expandedInfo-1W31i3,
+.theme-dark .feature-2IUcBI,
+.theme-light .feature-2IUcBI,
+.theme-dark .searchResult-O9NDji,
+.theme-light .searchResult-O9NDji,
+.theme-dark .reaction-2A2y9y,
+.theme-light .reaction-2A2y9y,
+.theme-dark .section-3G9aLW,
+.theme-light .section-3G9aLW,
+.theme-dark .wrapperAudio-1Bzv_Z,
+.theme-light .wrapperAudio-1Bzv_Z,
+.theme-dark .embedFull-1HGV2S,
+.theme-light .embedFull-1HGV2S {
   background-color: var(--blur-bg-4);
 }
 
-.theme-dark .markup-2BOw-j code, .theme-light .markup-2BOw-j code,
-.theme-dark .background-1QDuV2,
-.theme-light .background-1QDuV2,
-.theme-dark .hoverablePayment-Yc6mK7:hover,
-.theme-light .hoverablePayment-Yc6mK7:hover,
-.theme-dark .searchHeader-2XoQg7,
-.theme-light .searchHeader-2XoQg7,
-.theme-dark .panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5:hover,
-.theme-light .panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5:hover,
-.theme-dark .peopleListItem-2nzedh.active-rhSpJJ,
-.theme-light .peopleListItem-2nzedh.active-rhSpJJ,
-.theme-dark .peopleListItem-2nzedh:hover,
-.theme-light .peopleListItem-2nzedh:hover,
-.theme-dark .panels-j1Uci_,
-.theme-light .panels-j1Uci_,
-.theme-dark .container-1r6BKw.themed-ANHk51,
-.theme-light .container-1r6BKw.themed-ANHk51 {
+.theme-dark .markup-eYLPri code, .theme-light .markup-eYLPri code,
+.theme-dark .background-3d_SjE,
+.theme-light .background-3d_SjE,
+.theme-dark .hoverablePayment-lE1s4t:hover,
+.theme-light .hoverablePayment-lE1s4t:hover,
+.theme-dark .searchHeader-1r_ZSh,
+.theme-light .searchHeader-1r_ZSh,
+.theme-dark .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF:hover,
+.theme-light .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF:hover,
+.theme-dark .peopleListItem-u6dGxF.active-2UF8Zh,
+.theme-light .peopleListItem-u6dGxF.active-2UF8Zh,
+.theme-dark .peopleListItem-u6dGxF:hover,
+.theme-light .peopleListItem-u6dGxF:hover,
+.theme-dark .panels-3wFtMD,
+.theme-light .panels-3wFtMD,
+.theme-dark .container-ZMc96U.themed-Hp1KC_,
+.theme-light .container-ZMc96U.themed-Hp1KC_ {
   background-color: var(--blur-bg-8);
 }
 
-.theme-dark .connectionHeader-2MDqhu, .theme-light .connectionHeader-2MDqhu,
-.theme-dark .sidebarRegion-VFTUkN,
-.theme-light .sidebarRegion-VFTUkN,
-.theme-dark .container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw,
-.theme-light .container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw,
-.theme-dark .searchBar-6Kv8R2,
-.theme-light .searchBar-6Kv8R2 {
+.theme-dark .connectionHeader-2rV1ze, .theme-light .connectionHeader-2rV1ze,
+.theme-dark .sidebarRegion-1VBisG,
+.theme-light .sidebarRegion-1VBisG,
+.theme-dark .container-1-ERn5:not(.hasBanner-2IrYih) .header-3OsQeK,
+.theme-light .container-1-ERn5:not(.hasBanner-2IrYih) .header-3OsQeK,
+.theme-dark .searchBar-3TnChZ,
+.theme-light .searchBar-3TnChZ {
   background-color: var(--blur-bg-5);
 }
 
-.theme-dark .paginator-166-09, .theme-light .paginator-166-09 {
+.theme-dark .paginator-1eqD2g, .theme-light .paginator-1eqD2g {
   background: transparent;
 }
 
-.privateChannels-1nO12o {
+.privateChannels-oVe7HL {
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -155,80 +155,80 @@ body {
   --background-tertiary: transparent;
 }
 
-.sidebar-2K8pFh,
+.sidebar-1tnWFu,
 .folder-1hbNCn,
 .folder-1hbNCn.hover-qTxTR_,
-.standardSidebarView-3F1I7i,
-.bg-h5JY_x,
-.app-2rEoOp,
-.appMount-3lHmkl, body,
-.chat-3bRxxu,
+.standardSidebarView-E9Pc3j,
+.bg-1QIAus,
+.app-2CXKsg,
+.appMount-2yBXZl, body,
+.chat-2ZfjoI,
 .threadSidebar-1o3BTy,
-.scroller-9moviB,
-.container-3Mxszk,
-.nowPlayingColumn-2sl4cE,
-.container-lRFx4q,
-.scroller-1IIF0A,
-.header-39GIC8,
-.scroller-2XE8rp,
-.layer-3QrUeG:not(.baseLayer-35bLyl),
-.members-1998pB > div {
+.scroller-29cQFV,
+.container-36u7Lw,
+.nowPlayingColumn-1eCBCN,
+.container-1oAagU,
+.scroller-2XLwLg,
+.header-2EadGG,
+.scroller-1TOeMq,
+.layer-86YKbF:not(.baseLayer-W6S8cY),
+.members-3WRCEx > div {
   background-color: transparent;
 }
 
-.theme-dark .fieldList-21DyL8, .theme-light .fieldList-21DyL8,
-.theme-dark .sidebarRegionScroller-3MXcoP,
-.theme-light .sidebarRegionScroller-3MXcoP,
-.theme-dark .sidebar-CFHs9e,
-.theme-light .sidebar-CFHs9e,
-.theme-dark .contentRegion-3nDuYy,
-.theme-light .contentRegion-3nDuYy,
-.theme-dark .header-2mZ9Ov,
-.theme-light .header-2mZ9Ov,
-.theme-dark .container-NdaZbY,
-.theme-light .container-NdaZbY,
-.theme-dark .channelName-1JRO3C,
-.theme-light .channelName-1JRO3C,
-.theme-dark .panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5,
-.theme-light .panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5,
-.theme-dark .wrapper-1F5TKx,
-.theme-light .wrapper-1F5TKx,
-.theme-dark .wrapper-3vR61M,
-.theme-light .wrapper-3vR61M,
-.theme-dark .container-1D34oG,
-.theme-light .container-1D34oG {
+.theme-dark .fieldList-in8WkP, .theme-light .fieldList-in8WkP,
+.theme-dark .sidebarRegionScroller-FXiQOh,
+.theme-light .sidebarRegionScroller-FXiQOh,
+.theme-dark .sidebar-nqHbhN,
+.theme-light .sidebar-nqHbhN,
+.theme-dark .contentRegion-3HkfJJ,
+.theme-light .contentRegion-3HkfJJ,
+.theme-dark .header-JUTO-g,
+.theme-light .header-JUTO-g,
+.theme-dark .container-36u7Lw,
+.theme-light .container-36u7Lw,
+.theme-dark .channelName-3w2Y3c,
+.theme-light .channelName-3w2Y3c,
+.theme-dark .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF,
+.theme-light .panels-3wFtMD > .container-YkUktl > .flex-2S1XBF,
+.theme-dark .wrapper-15CKyy,
+.theme-light .wrapper-15CKyy,
+.theme-dark .wrapper-22ayhK,
+.theme-light .wrapper-22ayhK,
+.theme-dark .container-2cd8Mz,
+.theme-light .container-2cd8Mz {
   background-color: transparent;
 }
 
-.messagesWrapper-1sRNjr::after {
+.messagesWrapper-RpOMA3::after {
   background: transparent;
 }
 
-.theme-dark .form-2fGMdU:before, .theme-light .form-2fGMdU:before {
+.theme-dark .form-3gdLxP:before, .theme-light .form-3gdLxP:before {
   background: transparent;
 }
 
-.theme-dark .children-19S4PO::after,
-.theme-light .children-19S4PO::after,
-.wrapper-3NnKdC,
-.scroller-1Bvpku,
+.theme-dark .children-3xh0VB::after,
+.theme-light .children-3xh0VB::after,
+.wrapper-1_HaEi,
+.scroller-3X7KbA,
 .circleIconButton-1QV--U,
-.childWrapper-anI2G9 {
+.childWrapper-1j_1ub {
   background: transparent;
 }
 
-.scroller-3GIiMh {
+.scroller-3iiyhZ {
   margin-bottom: 70px;
 }
 
-.container-NdaZbY {
+.container-36u7Lw {
   position: fixed;
   bottom: 0;
   width: 394px;
   margin: auto 0;
 }
 
-.layer-3QrUeG.animating-rRxada:first-child:not(:last-child) {
+.layer-86YKbF.animating-1rIrGV:first-child:not(:last-child) {
   --opq: none;
 }
 

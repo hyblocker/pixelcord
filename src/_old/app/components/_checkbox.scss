@@ -1,6 +1,6 @@
 @import '../material/ripple';
 
-.checkbox-1ix_J3 svg {
+.checkbox-f1HnKB svg {
 	position: absolute;
 	width: 7.2px;
 	height: 14px;
@@ -15,25 +15,25 @@
 	transition: 140ms;
 	transform: scale(0, 0) rotate(0deg);
 }
-.checkbox-1ix_J3.checked-3_4uQ9 svg {
+.checkbox-f1HnKB.checked-1pZh2h svg {
 	transform: scale(1, 1) rotate(45deg);
 }
 
-.checkbox-1ix_J3 path {
+.checkbox-f1HnKB path {
 	d: path("") !important;
 }
 
-.checkbox-1ix_J3.checked-3_4uQ9 {
+.checkbox-f1HnKB.checked-1pZh2h {
 	border-color: var(--accent) !important;
 	background-color: var(--accent) !important;
 }
 
-.checkbox-1ix_J3 {
+.checkbox-f1HnKB {
     -webkit-transition: background-color 140ms, border-color 140ms;
     transition: background-color 140ms, border-color 140ms;
     -webkit-transition-duration: var(--animation-duration, 140ms);
     transition-duration: var(--animation-duration, 140ms);
-	@include ripple(var(--accent-highlight), 256px, 256px, true, -119px, -113px, $ripple-size: 1, $hoverclass: ".checked-3_4uQ9");
+	@include ripple(var(--accent-highlight), 256px, 256px, true, -119px, -113px, $ripple-size: 1, $hoverclass: ".checked-1pZh2h");
 }
 
 @-webkit-keyframes checkmark-expand {

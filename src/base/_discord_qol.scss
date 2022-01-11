@@ -4,84 +4,84 @@
 // this platform is literal dogshit
 
 // Fix VC game icon not being properly positioned
-.assetsLargeMaskVoiceChannel-2k1oGM {
+.assetsLargeMaskVoiceChannel-3IlDCA {
 	-webkit-mask-size: cover;
 	mask-size: cover;
 }
 
 // Remove the ability to highlight shit you don't need
-.nameTag-3uD-yy, // Username, status, discriminator; in the bottom left corner; also disables Ctrl+A
-.header-23xsNx, // Messages headers (i.e. username, timestamp, pronouns, badges, etc)
-.embedProvider-3k5pfl, // Embed provider (e.g. YouTube)
-.embedAuthor-3l5luH, // Embed author (e.g. TheFunny.mp4)
-.embedVideoImageComponent-34z3di, // Embed content (you copy the link or right click copy anyway)
-.connectedAccount-2Jb-Z0, // Connected accounts
-.connectedAccountName-E1KzaT, // Connected account username
-.profileBannerPreview-3_l0Wd .headerText-1vVs-U, // Profile preview (Username)
-.profileBannerPreview-3_l0Wd .markup-2BOw-j, // Profile preview (About me)
+.nameTag-sc-gpq, // Username, status, discriminator; in the bottom left corner; also disables Ctrl+A
+.header-2jRmjb, // Messages headers (i.e. username, timestamp, pronouns, badges, etc)
+.embedProvider-1GSN0c, // Embed provider (e.g. YouTube)
+.embedAuthor-TJIHp5, // Embed author (e.g. TheFunny.mp4)
+.embedVideoImageComponent-3Clc3C, // Embed content (you copy the link or right click copy anyway)
+.connectedAccount-1xKpli, // Connected accounts
+.connectedAccountName-j0meX4, // Connected account username
+.profileBannerPreview-3_l0Wd .headerText-1-WmDq, // Profile preview (Username)
+.profileBannerPreview-3_l0Wd .markup-eYLPri, // Profile preview (About me)
 .member-1q7VfX .nameTag-3wmDUk .name-8yzEIY, // Username (Members page)
 .member-1q7VfX .nameTag-3wmDUk .tag-1YGWN9, // Discriminator (Members page)
-.timestamp-3ZCmNB, // Timestamps
-.bot-2Fta1w, // Bot tag
-.perks-32J1d0, // Boost perks
+.timestamp-p1Df1m, // Timestamps
+.bot-XvK26D, // Bot tag
+.perks-36lD43, // Boost perks
 .carouselItemSelected-JFUsnG, // Boost perks (clicked)
-.cumcord-plugin-card .markdown-11q6EU // Cumcord plugins
+.cumcord-plugin-card .markdown-19oyJN // Cumcord plugins
 {
 	user-select: none;
 }
 
 // Resize the channel icon in embeds and channel topics bc its chubby
 @mixin channelIconResize($size) {
-	& > .wrapper-3WhCwL.mention.iconMention-1_KJ_B {
+	& > .wrapper-1ZcZW-.mention.iconMention-3WxjBe {
 		padding-left: (math.div($size, 1.1));
 
-		& > .channelIcon-1MN1lz {
+		& > .channelIcon-3I2O7O {
 			width: (math.div($size, 1.3));
 			height: $size;
 		}
 	}
 }
 
-.topic-TCb_qw,
-.embedFooterText-28V_Wb {
+.topic-11NuQZ,
+.embedFooterText-2Mc7H9 {
 	@include channelIconResize(1rem);
 }
 
-.embedDescription-1Cuq9a,
-.embedFieldValue-nELq2s,
-.repliedTextContent-1R3vnK {
+.embedDescription-1DrJxZ,
+.embedFieldValue-3EHtvR,
+.repliedTextContent-2hOYMB {
 	@include channelIconResize(1.05rem);
 }
 
 // Remove "shinyness" CTA, bc fuck nitro
-.buttonShine-1CSUM8,
-.shineContainer-1HHuZ1,
-.shineContainerDefault-2bbFgu {
+.buttonShine-p5V5TB,
+.shineContainer-NmlfaV,
+.shineContainerDefault-3f8X_o {
 	display: none;
 }
 
 // fuck threads
-.threadSuggestionBar-2ufK2Z {
+.threadSuggestionBar-3ExSyc {
 	display: none;
 }
 
 // attachments' "open link in browser" text may wrap on small width images, fix it because i have severe OCD!
-.downloadLink-1ywL9o {
+.downloadLink-1OAglv {
 	width: 400px;
 }
 
 // emoji popouts' guild icon is small
-.guildSection-1EoFKd > .flex-1xMQg5 > svg {
+.guildSection-2Zyzy8 > .flex-2S1XBF > svg {
 	min-width: 32px;
 }
 
 // for some reason, sometimes file uploads have tiny as shit icons
-.audioMetadata-3zOuGv::before {
+.audioMetadata-1Hrt8T::before {
 	min-width: 24px;
 }
 
 // also truncate file names...
-.audioMetadata-3zOuGv .metadataContent-3c_ZXw {
+.audioMetadata-1Hrt8T .metadataContent-lalfZ3 {
 	text-overflow: ellipsis;
 }
 
@@ -97,24 +97,24 @@
 
 // Show a pointer on these elements:
 
-.roleRemoveIcon-2-TeGW,     // Remove role button
-.replyAvatar-1K9Wmr,        // Avatar in replies (it opens the user popout)
+.roleRemoveIcon-387wKV,     // Remove role button
+.replyAvatar-sHd2sU,        // Avatar in replies (it opens the user popout)
 {
 	cursor: pointer;
 }
 
 // Hide the help button; if you know how to install a discord mod AND a theme, you dont need help on how to use discord as a platform lol
-.iconWrapper-2OrFZ1 + .anchor-3Z-8Bb[href="https://support.discord.com"] {
+.iconWrapper-2awDjA + .anchor-1MIwyf[href="https://support.discord.com"] {
 	display: none;
 }
 
 // Hide the GIF button, you can use the emotes button and head to the GIF tab, or use Ctrl+G
-.buttonContainer-28fw2U > .button-38aScr[aria-label*="gif" i] {
+.buttonContainer-2lnNiN > .button-38aScr[aria-label*="gif" i] {
 	display: none;
 }
 
 // Stream just start is misaligned in spanish (and likely other languages)
-.emptyPreviewText-2IOfAL {
+.emptyPreviewText-3Xt6XE {
 	text-align: center;
 }
 

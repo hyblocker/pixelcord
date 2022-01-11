@@ -2,15 +2,15 @@
 @import "../utils";
 
 // the cards on the side
-.emptyCard-1RJw8n {
+.emptyCard-KDifrB {
 	
 }
-.inset-3sAvek {
+.inset-SbsSFp {
 	@include theming {
 		background-color: transparent;
 	}
 }
-.separator-XqIyoz {
+.separator-2OaeRP {
 	height: 16px;
 	@include theming {
 		background-color: transparent;
@@ -18,13 +18,13 @@
 }
 
 // ripple my beloved
-.peopleListItem-2nzedh {
+.peopleListItem-u6dGxF {
 	position: relative;
 	@include ripple;
 }
 
 // Add friend button is funky
-.topPill-30KHOu .themed-OHr7kt.item-PXvHYJ[aria-controls="add_friend-tab"] {
+.topPill-3DJJNV .themed-2-lozF.item-3XjbnG[aria-controls="add_friend-tab"] {
 	background-color: var(--green) !important;
 	color: var(--green-text) !important;
 	
@@ -34,6 +34,6 @@
 }
 
 // unfriend red
-.actionButton-uPB8Fs.actionDeny-de_uKj:hover {
+.actionButton-3-B2x-.actionDeny-1pQVuZ:hover {
 	color: var(--red) !important;
 }

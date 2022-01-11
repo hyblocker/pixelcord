@@ -2,7 +2,7 @@
 @import "../material_design/ripple";
 
 // Mentions & channel links
-.wrapper-3WhCwL {
+.wrapper-1ZcZW- {
 	@include theming {
 		background-color: var(--accent-transparent);
 		color: var(--accent);
@@ -13,10 +13,11 @@
 }
 
 // Failed to load messages
-.messagesErrorBar-nyJGU7 {
+.messagesErrorBar-1IQ1rH {
 	background-color: var(--red);
-	& > .barButtonBase-2uLO1z {
+	& > .barButtonBase-Sk2mdB {
 		color: var(--red-text);
+		line-height: 42px;
 	}
 
 	@include pill;
@@ -25,56 +26,56 @@
 }
 
 // Reply pill
-.replyBar-1YLQ2F {
+.replyBar-1oi75v {
 	@include pill;
 }
-.attachedBars-tZDmyV {
+.attachedBars-2BCP3l {
 	border-radius: 0;
 	background-color: transparent;
 	padding-bottom: 0.5rem;
 }
-.clipContainer-eeROt0 {
+.clipContainer-31nYlH {
 	overflow: visible;
 }
 
 // Unread pill
-.unreadPill-2HyYtt {
+.unreadPill-3nEWYM {
 	background-color: var(--red);
 	color: var(--red-text);
 }
-.isUnread-3Ef-o9 .content-1o0f9g {
+.isUnread-3Lojb- .content-3spvdd {
 	color: var(--red);
 }
-.unreadPillCapStroke-7rkHbg {
+.unreadPillCapStroke-1nE1Q8 {
 	color: var(--red);
 	fill: var(--red);
 }
-.isUnread-3Ef-o9 {
+.isUnread-3Lojb- {
 	border-color: var(--red);
 	transition: 250ms ease-in-out;
 }
 html:not(.app-focused) {
-	& .isUnread-3Ef-o9 {
+	& .isUnread-3Lojb- {
 		border-color: transparent;
 	}
 }
 
 // Ripple on message click
-.message-2qnXI6 {
+.message-2CShn3 {
 	@include rippleimg;
 }
 // ripple appearing on top of images and embeds fix
-.container-1ov-mD {
+.container-2sjPya {
 	z-index: 1;
 }
 
 // Ripple breaks with threads; fix it
 
 // Copy stock discord CSS but in ::before
-.cozy-3raOZG.hasThread-2k82W0::before {
+.cozy-VmLDNB.hasThread-3h-KJV::before {
 	top: 28px;
 }
-.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::before {
+.cozy-VmLDNB.hasThread-3h-KJV.isSystemMessage-QNv9ZH::before {
 	border-left: 2px solid var(--background-accent);
 	border-bottom: 2px solid var(--background-accent);
 	border-bottom-left-radius: 8px;
@@ -86,13 +87,13 @@ html:not(.app-focused) {
 	width: 31px;
 }
 // Reset css
-.cozy-3raOZG.hasThread-2k82W0::after {
+.cozy-VmLDNB.hasThread-3h-KJV::after {
 	top: 0 !important;
 	left: 0 !important;
 	width: 100% !important;
 	border: none;
 }
-.cozy-3raOZG.hasThread-2k82W0::before {
+.cozy-VmLDNB.hasThread-3h-KJV::before {
 	content: "";
 	width: 2rem;
 	left: 2.2rem;
@@ -103,7 +104,7 @@ html:not(.app-focused) {
 	bottom: 29px;
 	position: absolute;
 }
-.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::after {
+.cozy-VmLDNB.hasThread-3h-KJV.isSystemMessage-QNv9ZH::after {
 	border-left: none;
 	border-bottom: none;
 	border-bottom-left-radius: 0;
@@ -113,7 +114,7 @@ html:not(.app-focused) {
 	top: 0px;
 	width: 100%;
 }
-.messagesWrapper-1sRNjr::after {
+.messagesWrapper-RpOMA3::after {
 	content: "";
 	width: 100%;
 	height: var(--chatbox-top-padding);
@@ -126,42 +127,42 @@ html:not(.app-focused) {
 }
 
 // Chat uploading "embed"
-.zalgo-jN1Ica .messageContent-2qWWxC {
+.zalgo-26OfGz .messageContent-2t3eCI {
 	overflow: visible;
 }
 // File embeds need accent color for ...
-.audioMetadata-3zOuGv .metadataContent-3c_ZXw {
+.audioMetadata-1Hrt8T .metadataContent-lalfZ3 {
 	color: var(--text-link);
 }
 
 
 // Replies redesign?
-.repliedMessage-VokQwo::before {
+.repliedMessage-3Z6XBG::before {
 	--reply-spacing: 0px;
 	border-color: var(--accent-transparent);
 }
-.repliedMessage-VokQwo {
+.repliedMessage-3Z6XBG {
 	background-color: var(--accent-transparent);
 	color: var(--accent);
 	width: fit-content;
 	padding: 4px;
 	border-radius: 4px;
-	& .username-1A8OIy {
+	& .username-h_Y3Us {
 		opacity: 1;
 		color: var(--accent) !important;
 	}
 	#app-mount & {
 		margin-bottom: 0;
 	}
-	& .repliedTextPreview-2NBljf.clickable-1bVtEA:hover {
+	& .repliedTextPreview-1bvxun.clickable-31pE3P:hover {
 		color: var(--accent);
 	}
-	& .wrapper-3WhCwL {
+	& .wrapper-1ZcZW- {
 		color: var(--accent);
 		font-weight: 700;
 	}
-	&.executedCommand-2GE3w2 .commandName-1klrjB,
-	& .timestamp-3ZCmNB {
+	&.executedCommand-14-SNW .commandName-1KhvGm,
+	& .timestamp-p1Df1m {
 		color: var(--accent);
 		opacity: 0.7;
 	}

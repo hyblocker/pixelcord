@@ -1,43 +1,43 @@
-.searchBar-3dMhjb {
+.searchBar-zdmu7v {
   width: 24px;
   background-color: transparent;
   transition: 250ms ease-in-out 50ms;
 }
-.searchBar-3dMhjb .DraftEditor-root .public-DraftEditorPlaceholder-root {
+.searchBar-zdmu7v .DraftEditor-root .public-DraftEditorPlaceholder-root {
   color: transparent;
   transition: 150ms ease-in-out 50ms;
 }
-.searchBar-3dMhjb::after {
+.searchBar-zdmu7v::after {
   background-color: transparent;
   transition: 150ms ease-in-out 50ms;
 }
-.searchBar-3dMhjb .iconContainer-O4O2CN {
+.searchBar-zdmu7v .iconContainer-1RqWJj {
   width: 22px;
   height: 22px;
   transition: 250ms ease-in-out 50ms;
 }
-.searchBar-3dMhjb .iconContainer-O4O2CN > .icon-3cZ1F_ {
+.searchBar-zdmu7v .iconContainer-1RqWJj > .icon-18rqoe {
   color: var(--interactive-normal);
   transition: 250ms ease-in-out 50ms;
 }
-.searchBar-3dMhjb:hover, .focused-31_ccS .searchBar-3dMhjb, .open-6_Y_aH .searchBar-3dMhjb {
+.searchBar-zdmu7v:hover, .focused-8aNhVB .searchBar-zdmu7v, .open-3y3yI_ .searchBar-zdmu7v {
   width: 240px;
   background-color: var(--textbox-color);
 }
-.searchBar-3dMhjb:hover .DraftEditor-root .public-DraftEditorPlaceholder-root, .focused-31_ccS .searchBar-3dMhjb .DraftEditor-root .public-DraftEditorPlaceholder-root, .open-6_Y_aH .searchBar-3dMhjb .DraftEditor-root .public-DraftEditorPlaceholder-root {
+.searchBar-zdmu7v:hover .DraftEditor-root .public-DraftEditorPlaceholder-root, .focused-8aNhVB .searchBar-zdmu7v .DraftEditor-root .public-DraftEditorPlaceholder-root, .open-3y3yI_ .searchBar-zdmu7v .DraftEditor-root .public-DraftEditorPlaceholder-root {
   color: var(--text-muted);
 }
-.searchBar-3dMhjb:hover::after, .focused-31_ccS .searchBar-3dMhjb::after, .open-6_Y_aH .searchBar-3dMhjb::after {
+.searchBar-zdmu7v:hover::after, .focused-8aNhVB .searchBar-zdmu7v::after, .open-3y3yI_ .searchBar-zdmu7v::after {
   background-color: var(--textbox-pillDefault);
 }
-.searchBar-3dMhjb:hover .iconContainer-O4O2CN, .focused-31_ccS .searchBar-3dMhjb .iconContainer-O4O2CN, .open-6_Y_aH .searchBar-3dMhjb .iconContainer-O4O2CN {
+.searchBar-zdmu7v:hover .iconContainer-1RqWJj, .focused-8aNhVB .searchBar-zdmu7v .iconContainer-1RqWJj, .open-3y3yI_ .searchBar-zdmu7v .iconContainer-1RqWJj {
   width: 16px;
   height: 16px;
 }
-.searchBar-3dMhjb:hover .iconContainer-O4O2CN > .icon-3cZ1F_, .focused-31_ccS .searchBar-3dMhjb .iconContainer-O4O2CN > .icon-3cZ1F_, .open-6_Y_aH .searchBar-3dMhjb .iconContainer-O4O2CN > .icon-3cZ1F_ {
+.searchBar-zdmu7v:hover .iconContainer-1RqWJj > .icon-18rqoe, .focused-8aNhVB .searchBar-zdmu7v .iconContainer-1RqWJj > .icon-18rqoe, .open-3y3yI_ .searchBar-zdmu7v .iconContainer-1RqWJj > .icon-18rqoe {
   color: var(--text-muted);
 }
-.focused-31_ccS .searchBar-3dMhjb::after, .open-6_Y_aH .searchBar-3dMhjb::after {
+.focused-8aNhVB .searchBar-zdmu7v::after, .open-3y3yI_ .searchBar-zdmu7v::after {
   background-color: var(--accent);
 }
 

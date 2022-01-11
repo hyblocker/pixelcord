@@ -2,54 +2,54 @@
 
 $min-width: 256px;
 $header-height: 6;
-.platform-win .sidebar-2K8pFh,
-.platform-mac .sidebar-2K8pFh,
-.platform-linux .sidebar-2K8pFh {
+.platform-win .sidebar-1tnWFu,
+.platform-mac .sidebar-1tnWFu,
+.platform-linux .sidebar-1tnWFu {
 	border-radius: 0;
 }
-.sidebar-2K8pFh {
+.sidebar-1tnWFu {
 	resize: horizontal;
 	width: var(--channels-width);
 	max-width: max(50vw, #{$min-width});
 	min-width: $min-width;
-	&.hidden-3iamF5 {
+	&.hidden-38rxp9 {
 		min-width: unset;
 		max-width: unset;
 	}
 }
-.scroller-1JbKMe, .privateChannels-1nO12o {
+.scroller-WSmht3, .privateChannels-oVe7HL {
 	background-color: var(--navdrawer-color);
 }
-.channel-2QD9_O {
+.channel-1Shao0 {
 	max-width: 100%;
 }
-.bannerImage-3KhIJ6, .animatedContainer-1NSq4T {
+.bannerImage-ubW8K-, .animatedContainer-2laTjx {
 	width: 100%;
 	padding-top: 56.25%;
 	height: 0;
 }
-.scroller-1JbKMe, .scroller-RmtA4e {
-	& .content-3YMskv div[style*="height: 84px"]:first-child {
+.scroller-WSmht3, .scroller-1ox3I2 {
+	& .content-2a4AW9 div[style*="height: 84px"]:first-child {
 		height: 0 !important;
 		padding-top: calc(56.25% - 51px);
 	}
 }
-.container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw {
+.container-1-ERn5:not(.hasBanner-2IrYih) .header-3OsQeK {
 	@include card($header-height);
 }
 
 // Fix shitty bug with scrolling
-.scrolling-1Cdwk- .content-3YMskv {
+.scrolling-20Of9p .content-2a4AW9 {
 	pointer-events: all;
 }
 
 // Members list
-.membersWrap-2h-GB4 {
+.membersWrap-3NUR2t {
     width: var(--members-width);
 }
-.members-1998pB {
+.members-3WRCEx {
 	width: var(--members-width);
 }
-.member-3-YXUe {
+.member-2gU6Ar {
 	max-width: var(--members-width);
 }

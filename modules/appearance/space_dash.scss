@@ -7,12 +7,12 @@
 }
 
 // sidebar
-.sidebar-2K8pFh .mainContent-u_9PKf[href] .channelName-2YrOjO {
+.sidebar-1tnWFu .mainContent-20q_Hp[href] .channelName-3KPsGw {
 	font-family: 'No Dash', var(--font-primary);
 }
 
 // One mention => channel
-.wrapper-3WhCwL[class="wrapper-3WhCwL mention interactive"] {
+.wrapper-1ZcZW-[class="wrapper-1ZcZW- mention interactive"] {
 	font-family: 'No Dash', var(--font-primary);
 }
 
@@ -20,54 +20,54 @@
 // Thus both autocomplete and quickswitcher disabled until we can find a suitable workaround
 
 // Autocomplete
-.autocompleteRowVertical-q1K4ky[data-list-item-id*="channel-autocomplete"] .autocompleteRowContentPrimary-238PvP:last-child .colorInteractiveActive-3Ip9Eu {
+.autocompleteRowVertical-EA9dCg[data-list-item-id*="channel-autocomplete"] .autocompleteRowContentPrimary-1kUW9H:last-child .colorInteractiveActive-30E9n8 {
 	// font-family: 'No Dash', var(--font-primary);
 }
 
 // Quickswitcher
-.quickswitcher-3JagVE .result-oB0z-- .match-38WbBN {
+.quickswitcher-pKcM9U .result-u66Ywh .match-20K5f5 {
 	// font-family: 'No Dash', var(--font-primary);
 }
 
 // New channel
-.content-3YMskv .emptyChannelIcon-cc932w ~ .size32-o_H79z {
+.content-2a4AW9 .emptyChannelIcon-1YdEz2 ~ .size32-5yOQel {
 	font-family: 'No Dash', var(--font-display);
 }
 
 // We cant do the description because we cant select text nodes using CSS...
 
-.title-3qD0b- {
-	& .iconWrapper-2OrFZ1[aria-label='Text Channel'],
-	& .iconWrapper-2OrFZ1[aria-label='文字频道'],
-	& .iconWrapper-2OrFZ1[aria-label='文字頻道'],
-	& .iconWrapper-2OrFZ1[aria-label='Textový kanál'],
-	& .iconWrapper-2OrFZ1[aria-label='Tekstkanal'],
-	& .iconWrapper-2OrFZ1[aria-label='Tekstkanaal'],
-	& .iconWrapper-2OrFZ1[aria-label='Salon textuel'],
-	& .iconWrapper-2OrFZ1[aria-label='Textkanal'],
-	& .iconWrapper-2OrFZ1[aria-label='Κανάλι κειμένου'],
-	& .iconWrapper-2OrFZ1[aria-label='Szövegcsatorna'],
-	& .iconWrapper-2OrFZ1[aria-label='Canale testuale'],
-	& .iconWrapper-2OrFZ1[aria-label='テキストチャンネル'],
-	& .iconWrapper-2OrFZ1[aria-label='채팅 채널'],
-	& .iconWrapper-2OrFZ1[aria-label='Kanał tekstowy'],
-	& .iconWrapper-2OrFZ1[aria-label='Canal de texto'],
-	& .iconWrapper-2OrFZ1[aria-label='Текстовый канал'],
-	& .iconWrapper-2OrFZ1[aria-label='Metin Kanalı'],
-	& .iconWrapper-2OrFZ1[aria-label='Текстов канал'],
-	& .iconWrapper-2OrFZ1[aria-label='Текстовий канал'],
-	& .iconWrapper-2OrFZ1[aria-label='Tekstikanava'],
-	& .iconWrapper-2OrFZ1[aria-label='Tekstualni kanal'],
-	& .iconWrapper-2OrFZ1[aria-label='Canal de text'],
-	& .iconWrapper-2OrFZ1[aria-label='Teksto Kanalas'],
-	& .iconWrapper-2OrFZ1[aria-label='ช่องข้อความ'],
-	& .iconWrapper-2OrFZ1[aria-label='Kênh Văn Bản'],
-	& .iconWrapper-2OrFZ1[aria-label='टेक्स्ट चैनल'] {
-		& + .title-29uC1r {
+.title-31SJ6t {
+	& .iconWrapper-2awDjA[aria-label='Text Channel'],
+	& .iconWrapper-2awDjA[aria-label='文字频道'],
+	& .iconWrapper-2awDjA[aria-label='文字頻道'],
+	& .iconWrapper-2awDjA[aria-label='Textový kanál'],
+	& .iconWrapper-2awDjA[aria-label='Tekstkanal'],
+	& .iconWrapper-2awDjA[aria-label='Tekstkanaal'],
+	& .iconWrapper-2awDjA[aria-label='Salon textuel'],
+	& .iconWrapper-2awDjA[aria-label='Textkanal'],
+	& .iconWrapper-2awDjA[aria-label='Κανάλι κειμένου'],
+	& .iconWrapper-2awDjA[aria-label='Szövegcsatorna'],
+	& .iconWrapper-2awDjA[aria-label='Canale testuale'],
+	& .iconWrapper-2awDjA[aria-label='テキストチャンネル'],
+	& .iconWrapper-2awDjA[aria-label='채팅 채널'],
+	& .iconWrapper-2awDjA[aria-label='Kanał tekstowy'],
+	& .iconWrapper-2awDjA[aria-label='Canal de texto'],
+	& .iconWrapper-2awDjA[aria-label='Текстовый канал'],
+	& .iconWrapper-2awDjA[aria-label='Metin Kanalı'],
+	& .iconWrapper-2awDjA[aria-label='Текстов канал'],
+	& .iconWrapper-2awDjA[aria-label='Текстовий канал'],
+	& .iconWrapper-2awDjA[aria-label='Tekstikanava'],
+	& .iconWrapper-2awDjA[aria-label='Tekstualni kanal'],
+	& .iconWrapper-2awDjA[aria-label='Canal de text'],
+	& .iconWrapper-2awDjA[aria-label='Teksto Kanalas'],
+	& .iconWrapper-2awDjA[aria-label='ช่องข้อความ'],
+	& .iconWrapper-2awDjA[aria-label='Kênh Văn Bản'],
+	& .iconWrapper-2awDjA[aria-label='टेक्स्ट चैनल'] {
+		& + .title-17SveM {
 			font-family: 'No Dash', var(--font-display);
 		}
 	}
-	& + .content-yTz4x3 .form-2fGMdU > div > div[aria-controls^="popout_"] .placeholder-37qJjk {
+	& + .content-1jQy2l .form-3gdLxP > div > div[aria-controls^="popout_"] .placeholder-1_mJY1 {
 		font-family: 'No Dash', var(--font-header);
 	}
 }

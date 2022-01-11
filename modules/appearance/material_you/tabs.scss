@@ -1,4 +1,4 @@
-﻿@use "sass:math";
+@use "sass:math";
 @import "../../../src/material_design/ripple";
 
 // SVG Util
@@ -9,16 +9,16 @@
 @import "../../../src/icons/discord";
 
 @mixin tabIcon($controls, $icon) {
-	.tabBarItem-3dfX8P[aria-controls="#{$controls}"] {
+	.tabBarItem-30Te4-[aria-controls="#{$controls}"] {
 		--icon: #{svg-url(#{map-get($icons-discord, $icon)})};
 	}
 }
 
-.tabBarContainer-37hZsr {
+.tabBarContainer-sCZC4w {
 	padding: 16px 20px 0 20px;
 }
 
-.tabBarItem-3dfX8P {
+.tabBarItem-30Te4- {
 	@include ripple();
 	
 	--icon: #{svg-url(#{map-get($icons-discord, "placeholder")})};
@@ -48,23 +48,23 @@
 	}
 }
 
-.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:hover {
+.top-K_jibn .themed-2-lozF.item-3XjbnG:hover {
 	--iconColor: var(--accent-text);
 	--iconBgColor: var(--accent);
 	color: var(--accent-text);
 }
-.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ,
-.top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active {
+.top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG,
+.top-K_jibn .themed-2-lozF.item-3XjbnG:active {
 	--iconColor: var(--accent-text);
 	--iconBgColor: var(--accent-selected);
 	color: var(--accent-text);
 }
 // remove bottom line
-.top-28JiJ- .item-PXvHYJ {
+.top-K_jibn .item-3XjbnG {
 	border-bottom: none;
 }
 
-.tabBar-3nvOPa {
+.tabBar-2hXqzU {
 	height: calc(var(--tab-pill-height) + 12px);
 	overflow: scroll hidden;
 

@@ -1,23 +1,23 @@
 // i sure love me a long ass selector
 // why does discord have like 189829 different classes
 .searchdiv,
-.container-2XeR5Z,
-.inner-2P4tQO,
+.container-1SX9VC,
+.inner-2pOSmK,
 .bd-search-wrapper,
-.inputWrapper-31_8H8,
-.searchBar-3dMhjb,
+.inputWrapper-1YNMmM,
+.searchBar-zdmu7v,
 .searchBar-1YE5UV,
-.searchBar-5di9mG,
-.searchBar--fTZYa,
-.searchBar-TUoVPN,
-.searchBox-3Y2Vi7,
+.searchBar-2M9mRP,
+.searchBar-gJe8lY,
+.searchBar-1UNSCg,
+.searchBox-pyIJJj,
 .wrapper-1cBijl,
-.game-1ipmAa .gameName-1RiWHm:not(input),
-.phoneField-38N1bJ,
-.popoutListInput-1l9TUI,
-.searchBar-1Vaz-O .searchBarComponent-yxeVIL,
-.searchContainer-3pUVEQ,
-.container-cMG81i.medium-1LLV3p {
+.game-3x3aDt .gameName-Uw4dbt:not(input),
+.phoneField-3NAPDv,
+.popoutListInput-1w4TxY,
+.searchBar-14YqL- .searchBarComponent-18D6hD,
+.searchContainer-2kJ46v,
+.container-2oNtJn.medium-2NClDM {
 	// Fixes textboxes literally everywhere what the fuck
 	position: relative;
 	border-radius: 0;
@@ -40,7 +40,7 @@
 		background-color: var(--accent);
 	}
 
-	&.disabled-jLAJq8::after {
+	&.disabled-2QaYSb::after {
 		opacity: 0.4;
 	}
 
@@ -56,45 +56,45 @@
 }
 
 // Send message text box
-.textArea-12jD-V {
-	@extend .inner-2P4tQO;
+.textArea-2CLwUE {
+	@extend .inner-2pOSmK;
 	// wtf this is all we need to do to fix textboxes for slate container now!!!
 	position: unset;
 }
 
 // The slate textbox overrides the caret a div deeper
-.slateTextArea-1Mkdgw {
+.slateTextArea-27tjG0 {
 	caret-color: var(--accent);
 }
 
 // Default padding, assuming no upload button
-.placeholder-37qJjk {
+.placeholder-1_mJY1 {
 	margin-left: 16px;
 }
 
 // Fix placeholder padding
-.attachWrapper-2TRKBi + .textArea-12jD-V > .placeholder-37qJjk {
-	margin-left: 16px + 40px;
+.attachWrapper-3slhXI + .textArea-2CLwUE > .placeholder-1_mJY1 {
+	margin-left: 44px;
 }
 
-.slateTextArea-1Mkdgw {
+.slateTextArea-27tjG0 {
 	position: relative;
 }
 
 // So that the line at the bottom is clean on the chat message box
 #app-mount {
-	& .textArea-12jD-V,
-	& .scrollableContainer-2NUZem {
+	& .textArea-2CLwUE,
+	& .scrollableContainer-15eg7h {
 		background: transparent;
 	}
 
-	& .textArea-12jD-V {
+	& .textArea-2CLwUE {
 		&::after {
 			content: none;
 		}
 	}
 
-	& .inner-MADQqc {
+	& .inner-NQg18Y {
 
 		&::before {
 			position: absolute;
@@ -106,35 +106,35 @@
 			border-radius: 24px;
 		}
 		
-		& > .buttons-3JBrkn {
+		& > .buttons-uaqb-5 {
 			margin-right: 4px;
 		}
 	}
 
 	// Status emoji button gets covered
-	.emojiButtonContainer-3d6DFV {
+	.emojiButtonContainer-1cdx-p {
 		z-index: 1;
 	}
 }
 
 // Some textboxes use classes for focused state
-.cardInputFocused-19S1J3,
-.input-cIJ7To {
+.cardInputFocused-31lFD1,
+.input-2g-os5 {
 	border: none;
 }
 
-.multiInput-2AiDV2 > .multiInputFirst-2aPTwX {
+.multiInput-1VARjC > .multiInputFirst-3-OxIz {
 	border-top-right-radius: 0;
 }
 
-.multiInput-2AiDV2 > .multiInputLast-33BbRU {
+.multiInput-1VARjC > .multiInputLast-35zVz0 {
 	border-top-left-radius: 0;
 }
 
 // The game activity textboxes cant use pseudo elements, use border instead
 // These are inputs, the unmodifiable ones use div
-.game-1ipmAa > div:first-child {
-	& > input.gameNameInput-385LoS {
+.game-3x3aDt > div:first-child {
+	& > input.gameNameInput-3TuPuA {
 		caret-color: var(--accent);
 		background-color: var(--textbox-color);
 		border: none;
@@ -149,27 +149,27 @@
 	}
 
 	// "Disable" verified games
-	.gameName-1RiWHm:not(input)::after {
+	.gameName-Uw4dbt:not(input)::after {
 		opacity: 0.4;
 	}
 }
 
 // Remove extra styling for specific textboxes
 #app-mount {
-	.addFriendHint-3Y70FX,
-	.addFriendInput-4bcerK {
+	.addFriendHint-1EVQJY,
+	.addFriendInput-1Ta-rO {
 		background-color: transparent;
 	}
 
-	@at-root .phoneField-38N1bJ .inputField-aNPXsv {
+	@at-root .phoneField-3NAPDv .inputField-1iYysB {
 		background-color: transparent;
 	}
 }
 
 // Some classes need specific css to style properly
-.container-cMG81i,
+.container-2oNtJn,
 .searchdiv .settingssearch#settingssearch,
-.scrollableContainer-2NUZem {
+.scrollableContainer-15eg7h {
 	background-color: var(--textbox-color);
 	border: none;
 	border-radius: var(--textbox-radius) var(--textbox-radius) 0 0;
@@ -177,7 +177,7 @@
 
 // Credit card textboxes
 // Invalid payment method
-.cardInputError-1GUPnt {
+.cardInputError-2mof5q {
 	--textbox-pillDefault: var(--red);
 }
 

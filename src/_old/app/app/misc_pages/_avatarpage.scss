@@ -4,7 +4,7 @@
 $connected-account-height: 4;
 
 // New loading popout
-.loadingPopout-qYljDW {
+.loadingPopout-1feYe_ {
 	@include card(6);
 }
 
@@ -14,7 +14,7 @@ $connected-account-height: 4;
 .topSectionPlaying-1J5E4n {
 	background-color: var(--accent);
 }
-.connectedAccount-2Jb-Z0 {
+.connectedAccount-1xKpli {
 	@include card($connected-account-height);
 	border-color: transparent;
 }
@@ -23,26 +23,26 @@ $connected-account-height: 4;
 }
 .aboutMeTitle-2i3lnH,
 .bodyTitle-3FWCs2,
-.userInfoSectionHeader-3TYk6R,
-.headerText-1HLrL7,
-.theme-dark  .newPopoutActivityStyles  .headerText-1HLrL7, 
-.theme-dark  .newProfileActivityStyles .headerText-1HLrL7,
-.theme-light .newPopoutActivityStyles  .headerText-1HLrL7
-.theme-light .newProfileActivityStyles .headerText-1HLrL7 {
+.userInfoSectionHeader-2mYYun,
+.headerText-3g1XK9,
+.theme-dark  .newPopoutActivityStyles  .headerText-3g1XK9, 
+.theme-dark  .newProfileActivityStyles .headerText-3g1XK9,
+.theme-light .newPopoutActivityStyles  .headerText-3g1XK9
+.theme-light .newProfileActivityStyles .headerText-3g1XK9 {
 	font-weight: var(--section-weight);
 	font-size: 14px;
 	color: var(--header-color);
 }
-.base-1x0h_U.muted-3-7c5L {
+.base-21yXnu.muted-eZM05q {
 	font-weight: var(--section-weight);
 	font-size: 14px;
 }
-.body-3HBlXn {
+.body-2wLx-E {
 	background-color: transparent;
 }
-.userPopout-xaxa6l {
+.userPopout-2j1gM4 {
 	background-color: var(--background-floating);
-	& .colorStandard-2KCXvj {
+	& .colorStandard-21JIj7 {
 		// Stolen from about me css from shitcord :D
 		font-size: 14px;
 		line-height: 18px;
@@ -51,9 +51,9 @@ $connected-account-height: 4;
 
 @if $fix_blurry_connection_icons {
 	// DISCORD HOW THE FUCK DID YOU NOT GET TRIGGERED BY THIS HOLY SHIT
-	.connectedAccountIcon-3_EQqg,
-	.connectionIcon-2ElzVe,
-	.accountBtnInner-sj5jLs {
+	.connectedAccountIcon-2vls0t,
+	.connectionIcon-3nqZDW,
+	.accountBtnInner-3XK70s {
 		display: block;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -110,16 +110,16 @@ $connected-account-height: 4;
 			background-image: url("%3Csvg height='32' width='32' viewBox='0 0 1000 990.833' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M568.79 346.16a221.895 221.16 0 01-221.895 221.16A221.895 221.16 0 01125 346.16 221.895 221.16 0 01346.895 125a221.895 221.16 0 01221.894 221.16m309.244 317.604A221.97 221.236 0 01656.063 885a221.97 221.236 0 01-221.971-221.236 221.97 221.236 0 01221.97-221.236 221.97 221.236 0 01221.971 221.236m-25.029-157.117a351.45 350.284 0 01-351.45 350.284 351.45 350.284 0 01-351.449-350.284 351.45 350.284 0 01351.45-350.284 351.45 350.284 0 01351.449 350.284' fill='%230078D7'/%3E%3Cpath d='M402.73 494.487c-55.85-31.965-64-122.846-11.379-161.72 45.024-36.015 106.955-40.878 162.044-32.408 23.737 4.45 49.97 11.46 65.803 30.87 12.65 20.822-4.197 54.464-30.242 49.124-25.168-3.44-46.403-20.998-72.417-21.028-27.68-2.97-62.057 3.452-76.184 30.158-9.305 23.451 7.583 49.784 30.383 57.1 49.903 25.363 109.369 38.216 146.876 82.81 38.39 49.086 21.289 132.53-37.088 157.967-53.808 26.118-116.991 21.86-173.327 6.942-21.168-6.618-46.77-18.836-50.504-43.159-2.7-25.82 25.35-44.399 48.45-33.828 26.703 8.023 50.202 26.806 79.166 26.654 26.515 2.318 60.293-5.899 70.241-33.616 6.866-23.313-9.052-47.942-30.95-56.078-38.987-22.561-83.697-33.89-120.872-59.788z' fill='%23fff' fill-rule='evenodd'/%3E%3C/svg%3E") !important;
 		}
 	}
-	.accountBtnInner-sj5jLs {
+	.accountBtnInner-3XK70s {
 		width: 52px;
 		height: 52px;
 	}
 }
 
 // Improve connected accounts' contrast with recolored badges
-.connectedAccountName-E1KzaT,
-.connectedAccountNameInner-2q3MVf {
-	& .childContainer-1wxZNh path {
+.connectedAccountName-j0meX4,
+.connectedAccountNameInner-t24B11 {
+	& .childContainer-U_a6Yh path {
 		fill: var(--accent-text) !important;
 	}
 }

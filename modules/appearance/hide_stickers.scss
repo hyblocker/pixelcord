@@ -1,11 +1,11 @@
-﻿// fuck welcome sticker CTAs
-.welcomeCTA-2orRfU {
+// fuck welcome sticker CTAs
+.welcomeCTA-3GMMRK {
 	display: none;
 }
 
 // also fuck stickers
-// .clickableSticker-3HmpgV {
-// 	& .assetWrapper-3GNt0z {
+// .clickableSticker-3FN2_L {
+// 	& .assetWrapper-2hzITV {
 // 		display: none;
 // 	}
 // 
@@ -20,8 +20,8 @@
 // 	}
 // }
 
-.message-2qnXI6 {
-	.stickerAsset-13j1W0 {
+.message-2CShn3 {
+	.stickerAsset-4c7Oqy {
 		position: relative;
 		height: 160px;
 		width: 160px;
@@ -42,12 +42,12 @@
 		}
 	}
 
-	.clickableSticker-3HmpgV {
+	.clickableSticker-3FN2_L {
 		& > div[aria-label*=", Choco, "],
 		& > div[aria-label*=", Sup, "],
 		& > div[aria-label*=", Scream, "],
 		& > div[aria-label*=", Wave, "] {
-			& .stickerAsset-13j1W0 {
+			& .stickerAsset-4c7Oqy {
 				display: none;
 			}
 
@@ -63,14 +63,14 @@
 		}
 	}
 
-	.assetWrapper-3GNt0z {
+	.assetWrapper-2hzITV {
 		height: fit-content !important;
 		width: fit-content !important;
 	}
 }
 
 // Hide in message box
-.buttons-3JBrkn .stickerButton-3OEgwj {
+.buttons-uaqb-5 .stickerButton-1-nFh2 {
 	width: 0;
 	height: 0;
 	visibility: hidden;

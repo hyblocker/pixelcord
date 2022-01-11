@@ -1,15 +1,15 @@
-﻿@import "../utils";
+@import "../utils";
 
 // Changelog section titles' colors
-.added-3gEorX::after {
+.added-mQcv9V::after {
 	background-color: var(--green);
 }
 
-.progress-3VSXTd::after {
+.progress-1DcfFh::after {
 	background-color: var(--yellow);
 }
 
-.improved-2xP0R6 {
+.improved-2SJXHz {
 	@include theming {
 		&::after {
 			background-color: var(--accent);
@@ -18,7 +18,7 @@
 	}
 }
 
-.fixed-17NtPk {
+.fixed-cTX7Hp {
 	color: var(--red);
 	&::after {
 		background-color: var(--red);
@@ -26,7 +26,7 @@
 }
 
 // social links
-.socialLink-3toGbB {
+.socialLink-1qjJIk {
 	@include theming {
 		color: var(--interactive-normal);
 		&:hover {

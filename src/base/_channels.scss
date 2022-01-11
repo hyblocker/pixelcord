@@ -1,11 +1,11 @@
-.bar-30k2ka,
-.unread-1xRYoj {
+.bar-2eAyLE,
+.unread-2wipsx {
 	border-radius: var(--snackbar-radius, 4px);
     box-shadow: var(--snackbar-shadow, 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%), 0 1px 18px 0 rgb(0 0 0 / 12%));
 	background-color: var(--snackbar-bg, #333);
 	color: var(--snackbar-text, white);
 }
-.mention-1f5kbO {
+.mention-3XBnnZ {
 	background-color: var(--red, #cf6679);
 	color: var(--red-text, white);
 }
@@ -13,26 +13,26 @@
 @mixin channelColors($color, $bg) {
 	background-color: $bg;
 
-	& .icon-1DeIlz,			// icon
-	& .name-23GUGE,			// name
-	& .actionIcon-PgcMM2	// buttons (invite, etc)
+	& .icon-2W8DHg,			// icon
+	& .name-28HaxV,			// name
+	& .actionIcon-2sw4Sl	// buttons (invite, etc)
 	{
 		color: $color;
 	}
 }
 // Channels
-.content-1x5b-n {
-	&, & .mainContent-u_9PKf {
+.content-1gYQeQ {
+	&, & .mainContent-20q_Hp {
 		user-drag: none;
 		-webkit-user-drag: none;
 	}
 
-	.modeSelected-346R90 &,
-	.modeSelected-346R90:hover & {
+	.modeSelected-3DmyhH &,
+	.modeSelected-3DmyhH:hover & {
 		@include channelColors(var(--accent), var(--accent-transparent));
 	}
-	.modeUnread-1qO3K1 & .icon-1DeIlz,
-	.modeUnread-1qO3K1:hover & .icon-1DeIlz {
+	.modeUnread-3Cxepe & .icon-2W8DHg,
+	.modeUnread-3Cxepe:hover & .icon-2W8DHg {
 		color: var(--interactive-active);
 	}
 	
@@ -40,17 +40,17 @@
 	border-radius: calc(0.5 * var(--channel-height));
 }
 // Members list
-.selected-aXhQR6.container-2Pjhx- {
+.selected-1-Z6gm.container-1oeRFJ {
 	background-color: var(--accent-transparent);
 }
-.selected-aXhQR6 .layout-2DM8Md {
+.selected-1-Z6gm .layout-1qmrhw {
 	color: var(--accent);
 }
-.container-2Pjhx- {
+.container-1oeRFJ {
 	height: var(--member-height);
 	border-radius: calc(0.5 * var(--member-height));
 }
-.modeSelected-346R90 .channelName-2YrOjO,
-.selected-aXhQR6 .name-uJV0GL {
+.modeSelected-3DmyhH .channelName-3KPsGw,
+.selected-1-Z6gm .name-3Vmqxm {
 	font-weight: var(--weight-header);
 }

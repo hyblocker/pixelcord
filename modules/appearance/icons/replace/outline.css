@@ -146,6 +146,10 @@ path[d="M18 9V14C18 15.657 19.344 17 21 17V18H3V17C4.656 17 6 15.657 6 14V9C6 5.
   d: path("M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z");
 }
 
+path[d="M21.178 1.70703L22.592 3.12103L4.12103 21.593L2.70703 20.178L21.178 1.70703Z"] {
+  d: path("");
+}
+
 path[d="M12 3C13.417 3 14.71 3.5 15.734 4.321L5.99805 14.058C5.99805 14.0479 5.99856 14.038 5.99907 14.0283C5.99956 14.0188 6.00005 14.0094 6.00005 14V9C6.00005 5.686 8.68605 3 12 3Z"] {
   d: path("M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm0-15.5c2.49 0 4 2.02 4 4.5v.1l2 2V11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68c-.24.06-.47.15-.69.23l1.64 1.64c.18-.02.36-.05.55-.05zM5.41 3.35L4 4.76l2.81 2.81C6.29 8.57 6 9.74 6 11v5l-2 2v1h14.24l1.74 1.74 1.41-1.41L5.41 3.35zM16 17H8v-6c0-.68.12-1.32.34-1.9L16 16.76V17z");
 }
@@ -198,56 +202,56 @@ path[d="M20 11.1111H12.8889V4H11.1111V11.1111H4V12.8889H11.1111V20H12.8889V12.88
   d: path("M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z");
 }
 
-.stickerIcon-3TP7EM > path:first-child {
+.stickerIcon-3Jx5SE > path:first-child {
   d: path("M17 3v9h-5v5H3V3h14m0-2H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h10l6-6V3c0-1.1-.9-2-2-2zm-7 11H5v-2h5v2zm5-4H5V6h10v2z");
 }
 
-.stickerIcon-3TP7EM > path:last-child {
+.stickerIcon-3Jx5SE > path:last-child {
   d: path("");
 }
 
-.userSettingsSecurity-3IYeMF .lockIcon-2Hj8Tq {
+.userSettingsSecurity-3C5Hg5 .lockIcon-1FHuKP {
   --settings-lock-mask: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='14' viewBox='0 0 10 14' width='10'%3E%3Cpath d='m553 515h-6v-1c0-1.654 1.346-3 3-3s3 1.346 3 3zm-4 6h2v-4h-2zm1-12c-2.762 0-5 2.238-5 5v1 4 2c0 1.104.896 2 2 2h6c1.104 0 2-.896 2-2v-2-4-1c0-2.762-2.238-5-5-5z' fill-rule='evenodd' transform='translate(-545 -509)'/%3E%3C/svg%3E");
 }
 
-.gifTag-31zFY8 {
+.gifTag-1TvtGO {
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M10.857 8h1.929v7.714h-1.929V8zM7.643 8H3.786C3.014 8 2.5 8.643 2.5 9.286v5.143c0 .642.514 1.285 1.286 1.285h3.857c.771 0 1.286-.643 1.286-1.285v-2.572H7v1.929H4.429V9.929h4.5v-.643C8.929 8.643 8.414 8 7.643 8zM20.5 9.929V8h-5.786v7.714h1.929v-2.571h2.571v-1.929h-2.571V9.93H20.5z'/%3E%3C/svg%3E");
   background-size: 29px;
 }
 
-.sprite-2iCowe {
+.sprite-2lxwfc {
   transform: scale(1) !important;
   -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8s8 3.58 8 8s-3.58 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8S14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8S7 8.67 7 9.5S7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z'/%3E%3C/svg%3E");
   background: var(--interactive-normal) !important;
 }
-.sprite-2iCowe:hover {
+.sprite-2lxwfc:hover {
   background: var(--interactive-hover) !important;
 }
 
-.strikethrough-otdQWt,
+.strikethrough-958bun,
 .strikethrough-3Wiitd,
-.strikethrough-1n4ekb {
+.strikethrough-2Kl6HF {
   color: inherit;
   d: path("");
 }
 
-.tabBarItem-3dfX8P[aria-controls=user_info-tab] {
+.tabBarItem-30Te4-[aria-controls=user_info-tab] {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z'/%3E%3C/svg%3E");
 }
 
-.tabBarItem-3dfX8P[aria-controls=activity-tab] {
+.tabBarItem-30Te4-[aria-controls=activity-tab] {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M16 13.5a1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5Zm4-3a1.5 1.5 0 0 1-1.5 1.5 1.5 1.5 0 0 1-1.5-1.5A1.5 1.5 0 0 1 18.5 9a1.5 1.5 0 0 1 1.5 1.5ZM21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2Zm0 10H3V8h18ZM6 15h2v-2h2v-2H8V9H6v2H4v2h2z'/%3E%3C/svg%3E");
 }
 
-.tabBarItem-3dfX8P[aria-controls=mutual_guilds-tab] {
+.tabBarItem-30Te4-[aria-controls=mutual_guilds-tab] {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8h-8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1z'/%3E%3C/svg%3E");
 }
 
-.tabBarItem-3dfX8P[aria-controls=mutual_friends-tab] {
+.tabBarItem-30Te4-[aria-controls=mutual_friends-tab] {
   --icon: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z'/%3E%3C/svg%3E");
 }
 
-.switchAccountsIcon-355frb {
+.switchAccountsIcon-36imMT {
   -webkit-mask-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24' width='24'%3E%3Cpath d='M6.99 11 3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z'/%3E%3C/svg%3E");
   -webkit-mask-size: 16px;
   background: currentColor;
@@ -293,4 +297,4 @@ path[d="M364.199,163.706c-1.12-2.354-3.136-4.285-5.777-5.254l-0.055-0.016c-2.721
   transform: scale(21.3333);
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../replace_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAaC;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAID;EACC;;;AADD;EACC;;;AAID;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAXD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AASD;EACC;;;AAXD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAID;EACC;;;AAID;EACC;;;AADD;EACC;;;AAND;EACC;;;AAID;EACC;;;AAXD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAID;EACC;;;AA4FD;EACC;;;AAED;EACC;;;AAMD;EACC;;;AAID;EACC;EACA;;;AAID;EACC;EACA;EACA;;AACA;EACC;;;AAKF;AAAA;AAAA;EAGC;EACA;;;AAID;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAID;EACC;EACA;EACA;;;AAID;EACC;EACA;EACA;EACA;;;AAxJD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAqKD;EACC;EACA%22,%22file%22:%22outline.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../replace_icons.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAaC;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAID;EACC;;;AADD;EACC;;;AAID;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAXD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AASD;EACC;;;AAXD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AASD;EACC;;;AAND;EACC;;;AAID;EACC;;;AADD;EACC;;;AAND;EACC;;;AAID;EACC;;;AAXD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAID;EACC;;;AA6FD;EACC;;;AAED;EACC;;;AAMD;EACC;;;AAID;EACC;EACA;;;AAID;EACC;EACA;EACA;;AACA;EACC;;;AAKF;AAAA;AAAA;EAGC;EACA;;;AAID;EACC;;;AAED;EACC;;;AAED;EACC;;;AAED;EACC;;;AAID;EACC;EACA;EACA;;;AAID;EACC;EACA;EACA;EACA;;;AAzJD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AADD;EACC;;;AAsKD;EACC;EACA%22,%22file%22:%22outline.css%22%7D */

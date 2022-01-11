@@ -9,7 +9,7 @@
 @import "../../../src/config/build_config";
 
 @mixin settingsIcon($aria_control, $svg, $icon-pack: $icons-outline) {
-	.side-8zPYf6 > .item-PXvHYJ[aria-controls="#{$aria_control}" i]:not(.role-3wi9Tf)::before {
+	.side-2ur1Qk > .item-3XjbnG[aria-controls="#{$aria_control}" i]:not(.role-3pGE29)::before {
 		--icon: #{svg-url(#{map-get($icon-pack, $svg)})};
 	}
 }
@@ -25,26 +25,26 @@ $dummy: $icons-outline;
 	}
 
 	// Default vars
-	.sidebarRegion-VFTUkN {
+	.sidebarRegion-1VBisG {
 		--settings-icon-color: currentColor;
 	}
 
 	// Hide icons on certain elements
-	.side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf),
-	.sidebar-CFHs9e .ui-tab-bar-item {
+	.side-2ur1Qk > .item-3XjbnG:not(.role-3pGE29),
+	.sidebar-nqHbhN .ui-tab-bar-item {
 		display: flex;
 		align-items: center;
 	}
 
-	.page-3njELR {
-		& .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
-		& .sidebar-CFHs9e .ui-tab-bar-item::before {
+	.page-15bX59 {
+		& .side-2ur1Qk > .item-3XjbnG:not(.role-3pGE29)::before,
+		& .sidebar-nqHbhN .ui-tab-bar-item::before {
 			content: none;
 		}
 	}
 
 	// Hide new discord icons
-	.item-PXvHYJ {
+	.item-3XjbnG {
 		& .icon-3Povsy,
 		& .icon-Zc-uZZ {
 			display: none;
@@ -52,24 +52,25 @@ $dummy: $icons-outline;
 	}
 
 	// Resize pfp
-	.avatar-1eTZ8m {
+	.avatar-8T0jhU {
 		width: 22px !important;
 		height: 22px !important;
 	}
 
 	// Align text properly for consistency
-	.username-34pxWC {
+	.username-1xQOwN {
 		padding-left: 6px;
 	}
 	
 	// Hide default nitro icon
-	.premiumLabel-fDtYys svg {
+	.serverBoostTabItem-3QwA3W svg,
+	.premiumLabel-V52REm svg {
 		display: none;
 	}
 
 	// Add icons everywhere
-	.sidebar-CFHs9e > .side-8zPYf6 > .item-PXvHYJ:not(.role-3wi9Tf)::before,
-	.sidebar-CFHs9e .ui-tab-bar-item::before {
+	.sidebar-nqHbhN > .side-2ur1Qk > .item-3XjbnG:not(.role-3pGE29)::before,
+	.sidebar-nqHbhN .ui-tab-bar-item::before {
 		content: "";
 		width: 22px;
 		height: 22px;
@@ -87,8 +88,8 @@ $dummy: $icons-outline;
 
 	// Special cases: VC Debug menu - User pfps are icons
 	@for $i from 0 through 9 {
-		.side-8zPYf6 > .item-PXvHYJ[aria-controls^="default:#{$i}"]:not(.role-3wi9Tf)::before,
-		.side-8zPYf6 > .item-PXvHYJ[aria-controls^="stream:#{$i}"]:not(.role-3wi9Tf)::before {
+		.side-2ur1Qk > .item-3XjbnG[aria-controls^="default:#{$i}"]:not(.role-3pGE29)::before,
+		.side-2ur1Qk > .item-3XjbnG[aria-controls^="stream:#{$i}"]:not(.role-3pGE29)::before {
 			content: none;
 		}
 	}
@@ -182,9 +183,14 @@ $dummy: $icons-outline;
 	// @include settingsIcon("settings-tab", "betterdiscord", $icon-pack);
 	// BD settings uses i18n, so heres a funky workaround for it
 	.bd-sidebar-header + .bd-settings-tab {
-		.side-8zPYf6 > &:not(.role-3wi9Tf)::before {
+		.side-2ur1Qk > &:not(.role-3pGE29)::before {
 			--icon: #{svg-url(#{map-get($icon-pack, "betterdiscord")})};
 		}
+	}
+
+	// Kernel
+	.sidebar-nqHbhN > .side-2ur1Qk > .item-3XjbnG.bdcompat-settings-item-settings::before {
+		--icon: #{svg-url(#{map-get($icon-pack, "betterdiscord")})};
 	}
 	
 	@include settingsIcon("customcss-tab", "css_editor", $icon-pack);
@@ -202,6 +208,13 @@ $dummy: $icons-outline;
 	@include settingsIcon("pc-modulemanager-plugins-tab", "plugins", $icon-pack);
 	@include settingsIcon("pc-modulemanager-themes-tab", "themes", $icon-pack);
 	@include settingsIcon("pc-updater-tab", "updater", $icon-pack);
+	
+	// Kernel
+	@include settingsIcon("kernelsettings-tab", "plugins", $icon-pack);
+	@include settingsIcon("bdcompatsettings-tab", "betterdiscord", $icon-pack);
+	@include settingsIcon("bdcompatplugins-tab", "plugins", $icon-pack);
+	@include settingsIcon("bdcompatthemes-tab", "themes", $icon-pack);
+	@include settingsIcon("pc-modulemanager-quickcss-tab", "css_editor", $icon-pack);
 
 	// ploogins
 	@include settingsIcon("view-raw-tab", "view_raw", $icon-pack);

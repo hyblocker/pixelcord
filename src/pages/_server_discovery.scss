@@ -1,4 +1,4 @@
-﻿@import "../utils";
+@import "../utils";
 
 .categoryItem-1QIroW.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
 	background: none;
@@ -8,14 +8,14 @@
 }
 
 // Fix search box
-.search-1iTphC .searchBox-2_mAlO {
+.search-25t1e9 .searchBox-31Zv9h {
 	// Text color is borked
-	& .searchBoxInput-K6mkng {
+	& .searchBoxInput-3h4etz {
 		color: var(--text-normal);
 	}
 	
 	// Enter to search
-	& .colorMuted-HdFt4q {
+	& .colorMuted-20987_ {
 		color: var(--interactive-normal);
 	}
 	
@@ -27,12 +27,12 @@
 	}
 
 	// Search icon color
-	& .searchIcon-6ljH-4 {
+	& .searchIcon-3X4BYL {
 		color: var(--interactive-normal);	
 	}
 	
 	// Clear icon color
-	& .closeIcon-2WLZc1 {
+	& .closeIcon-BMGxx0 {
 		color: var(--interactive-normal);
 		&:hover {
 			color: var(--interactive-hover);
@@ -42,20 +42,20 @@
 	background-color: var(--textbox-color);
 }
 
-.searchBox-3Y2Vi7 {
+.searchBox-pyIJJj {
 	@include theming {
 		background-color: var(--textbox-color);
 	}
 }
 
 // Selected pill
-.categoryPill-34fszg.selected-1dONk0 {
+.categoryPill-1zjNrr.selected-bLcqYK {
 	background-color: var(--accent);
 	color: var(--accent-text);
 }
-.categoryPill-34fszg:hover:not(.selected-1dONk0) {
+.categoryPill-1zjNrr:hover:not(.selected-bLcqYK) {
 	background-color: var(--accent-transparent);
-	& .categoryLabel-2G3r2V {
+	& .categoryLabel-2m4AT- {
 		color: var(--accent);
 	}
 }

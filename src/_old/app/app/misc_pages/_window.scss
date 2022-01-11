@@ -1,9 +1,9 @@
 // Topbar
-.bg-h5JY_x {
+.bg-1QIAus {
 	background-color: cardbg($header-height, true);
 }
 // Fix the macOS bar thing being fucked
-.guilds-1SWlCJ {
+.guilds-2JjMmN {
 	.platform-osx &::before {
 		content: "";
 		height: 32px;
@@ -19,13 +19,13 @@
 	}
 }
 // Fix clipping so that transitions work better :decrement
-.layers-3iHuyZ {
+.layers-OrUESM {
 	overflow: visible;
 }
 
 // Sidebar extend to window top
-.layer-3QrUeG.baseLayer-35bLyl:not(.stop-animations):not(.animating-rRxada) {
-	& .sidebar-2K8pFh.theme-dark {
+.layer-86YKbF.baseLayer-W6S8cY:not(.stop-animations):not(.animating-1rIrGV) {
+	& .sidebar-1tnWFu.theme-dark {
 		&::before {
 			content: '';
 			background-color: cardbg(8, true);
@@ -43,7 +43,7 @@
 	}
 }
 
-.wordmarkWindows-1v0lYD {
+.wordmarkWindows-2dq6rw {
 	color: var(--logo-color);
 }
 
@@ -66,10 +66,10 @@ path[d="M14.7489 7.07812C13.97 7.41719 12.9986 7.42635 12.2014 7.07812V11.7792H1
 }
 
 // In settings we want to make the windows icons brighter
-.winButton-iRh8-Z {
+.winButton-3UMjdg {
 	color: var(--logo-color);
 	filter: grayscale(1) contrast(9);
 }
-.winButtonClose-1HsbF- {
+.winButtonClose-3Q8ZH5 {
 	filter: none;
 }

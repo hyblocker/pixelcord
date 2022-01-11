@@ -1,29 +1,29 @@
-﻿@import "../material_design/ripple";
+@import "../material_design/ripple";
 
-.customStatusText-2opeSw {
+.customStatusText-_4TbWr {
 	overflow-wrap: break-word;
 }
 
 // Mutuals
-.guildAvatarWithoutIcon-1s9Pcy {
+.guildAvatarWithoutIcon-6EjPQF {
 	background-color: var(--accent);
 	color: var(--accent-text);
 }
 
 // fuck the bottom bar ~~its bloat~~
-.noTabBar-3ZjPNR,
-.tabBarContainer-37hZsr {
+.noTabBar-2Q-iE_,
+.tabBarContainer-sCZC4w {
 	border: none;
 }
 
 // ripple my beloved
-.listRow-1iDGel {
+.listRow-2nO1T6 {
 	position: relative;
 	@include ripple();
 }
 
 // buttons
-.connectedAccount-2Jb-Z0 {
+.connectedAccount-1xKpli {
 	height:     calc(var(--button-height) - 2 * var(--button-padding));
 	border-radius: calc(0.5 * var(--button-height));
 	padding:    var(--button-padding)

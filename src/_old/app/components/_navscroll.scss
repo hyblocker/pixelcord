@@ -1,28 +1,28 @@
-.sidebar-2K8pFh .container-3w7J-x {
+.sidebar-1tnWFu .container-1NXEtd {
 	background-color: var(--navdrawer-color);
 }
-.clickable-1JJAn8:hover .layout-2DM8Md {
+.clickable-28SzVr:hover .layout-1qmrhw {
     background-color: var(--navdrawer-hover);
 }
-.clickable-1JJAn8:active .layout-2DM8Md,
-.selected-aXhQR6 .layout-2DM8Md {
+.clickable-28SzVr:active .layout-1qmrhw,
+.selected-1-Z6gm .layout-1qmrhw {
     //background-color: var(--navdrawer-active);
     background-color: var(--accent-selected-highlight);
 	color: var(--accent);
 }
-.modeSelected-346R90 .content-1x5b-n,
-.modeSelected-346R90:hover .content-1x5b-n {
+.modeSelected-3DmyhH .content-1gYQeQ,
+.modeSelected-3DmyhH:hover .content-1gYQeQ {
     //background-color: var(--navdrawer-active);
     background-color: var(--accent-selected-highlight);
-	& .actionIcon-PgcMM2 {
+	& .actionIcon-2sw4Sl {
 		color: var(--accent);
 	}
 }
-.wrapper-2jXpOf:hover .icon-1DeIlz {
+.wrapper-NhbLHG:hover .icon-2W8DHg {
 	color: var(--interactive-hover);
 }
-.scroller-1JbKMe .container-2ax-kl:not(:first-child)::before,
-.scroller-RmtA4e .containerDefault-3tr_sE:not(:nth-child(2))::before {
+.scroller-WSmht3 .container-36u7Lw:not(:first-child)::before,
+.scroller-1ox3I2 .containerDefault-3TQ5YN:not(:nth-child(2))::before {
 	content: '';
 	height: 1px;
 	width: 100%;
@@ -31,35 +31,35 @@
     margin-top: -8px;
 	left: 0;
 }
-.content-1x5b-n,
-.channel-2QD9_O, .layout-2DM8Md {
+.content-1gYQeQ,
+.channel-1Shao0, .layout-1qmrhw {
 	margin-left: 0;
 	border-radius: 0;
 }
-.content-1x5b-n, .layout-2DM8Md {
+.content-1gYQeQ, .layout-1qmrhw {
 	padding-left: 16px;
 }
-.container-2ax-kl, .wrapper-PY0fhH {
+.container-36u7Lw, .wrapper-1S43wv {
 	color: var(--title-color);
 }
-.modeSelected-346R90 .icon-1DeIlz,
-.modeSelected-346R90:hover .icon-1DeIlz {
+.modeSelected-3DmyhH .icon-2W8DHg,
+.modeSelected-3DmyhH:hover .icon-2W8DHg {
 	color: var(--accent);
 }
-.icon-1DeIlz {
+.icon-2W8DHg {
 	color: var(--channels-default);
 }
-.modeUnread-1qO3K1 .icon-1DeIlz, .modeUnread-1qO3K1:hover .icon-1DeIlz {
+.modeUnread-3Cxepe .icon-2W8DHg, .modeUnread-3Cxepe:hover .icon-2W8DHg {
 	color: var(--list-color);
 }
 // Yeet spacing between dms to mimic the material list control better
-.container-2Pjhx-, .wrapper-2jXpOf {
+.container-1oeRFJ, .wrapper-NhbLHG {
 	padding: 0;
 }
-.layout-2DM8Md {
+.layout-1qmrhw {
 	height: 44px;
 }
-.content-1x5b-n {
+.content-1gYQeQ {
 	padding-top: 1px;
 	padding-bottom: 1px;
 }
@@ -67,10 +67,10 @@
 	margin: 0;
 	padding: 5px 8px 5px 16px;
 }
-.listRow-hutiT_, .container-2Pjhx- {
+.listRow-hutiT_, .container-1oeRFJ {
 	border-radius: 0;
 }
 // IDK
-//.name-23GUGE,.icon-1DeIlz {
+//.name-28HaxV,.icon-2W8DHg {
 //	color: var(--list-color);
 //}

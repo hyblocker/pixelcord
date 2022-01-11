@@ -1,7 +1,7 @@
-﻿// Chat icons refer to icons such as the welcome -> or the pin icon
+// Chat icons refer to icons such as the welcome -> or the pin icon
 
 // Welcome (reply)
-.userJoinSystemMessageIcon-1jNKMz path {
+.userJoinSystemMessageIcon-3FQ_Mo path {
 	fill: var(--green);
 }
 
@@ -31,7 +31,7 @@
 	--call-accepted-svg:	url("/assets/7f75ab26bc5deb393cd8db44d9fe14e7.svg");
 }
 // Big message icons
-.iconSize-2tmqqh {
+.iconSize-Ai8Wtu {
 	// TODO: Idk why it breaks now
 	@include colorIcon("/assets/d1382af8d9e755bc44811b1fd92990a8.svg", var(--welcome-svg), var(--green));
 	@include colorIcon("/assets/1f57f1c100434d1ff6569a495ada213e.svg", var(--pins-svg));

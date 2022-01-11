@@ -8,20 +8,20 @@
 :root {
 	--settings-lock-mask: url(/assets/55b367aaef0b83c837ac6c3bfe01da4c.svg);
 }
-.userSettingsSecurity-3IYeMF .lockIcon-2Hj8Tq {
+.userSettingsSecurity-3C5Hg5 .lockIcon-1FHuKP {
 	width: 10px;
 	height: 14px;
 	padding-left: 10px;
 	-webkit-mask-image: var(--settings-lock-mask);
 	background-color: var(--green);
 }
-.secured-1Yihly:before {
+.secured-2wavXv:before {
 	width: 10px;
 	height: 14px;
 	-webkit-mask-image: var(--settings-lock-mask);
 	background: var(--green);
 }
-.permissionCheckmark-1SeKr2 {
+.permissionCheckmark-2XFmCt {
 	-webkit-mask: url(/assets/ac4e8d510fe8708104eddbe1b9597e1c.svg) no-repeat;
 	-webkit-mask-size: 18px 18px;
 	background: var(--green);
@@ -35,12 +35,17 @@
 }
 
 // Text badges in settings
-.side-8zPYf6 .item-PXvHYJ .baseShapeRound-1Mm1YW {
+.side-2ur1Qk .item-3XjbnG .baseShapeRound-3epLEv {
 	margin-left: 8px;
 }
 
 // idk theres a weird dot that i hate now
-.dot-18T0Md {
+.dot-e8DTw_ {
 	background-color: var(--accent);
 	margin-left: 12px;
+}
+
+// Hide permission descriptions in roles
+.container-1zDvAE > .note-2C4pGr {
+	display: none;
 }

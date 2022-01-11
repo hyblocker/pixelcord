@@ -4,8 +4,8 @@
 $settings-transition: 150ms ease-in-out;
 $tooltip-transition: 100ms ease-in-out 323ms;
 
-.side-8zPYf6 > .item-PXvHYJ[data-item-id=DiscordNitro]:not(.role-3wi9Tf),
-.side-8zPYf6 > .item-PXvHYJ[data-item-id=GUILD_PREMIUM]:not(.role-3wi9Tf) {
+.side-2ur1Qk > .item-3XjbnG[data-item-id=DiscordNitro]:not(.role-3pGE29),
+.side-2ur1Qk > .item-3XjbnG[data-item-id=GUILD_PREMIUM]:not(.role-3pGE29) {
 	&[style*="color: rgb(114, 137, 218);"]
 	{
 		color: var(--accent) !important;
@@ -16,7 +16,7 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 		color: var(--accent-text) !important;
 	}
 }
-.sidebar-CFHs9e {
+.sidebar-nqHbhN {
     width: calc(var(--settings-list-width) + 36px);
     max-width: calc(var(--settings-list-width) + 36px);
 	position: absolute;
@@ -30,7 +30,7 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 		background-color: cardbg(8, true);
 	}
 }
-.sidebarRegionScroller-3MXcoP {
+.sidebarRegionScroller-FXiQOh {
 	width: calc(var(--settings-list-width) + 36px);
     max-width: calc(var(--settings-list-width) + 36px);
 	z-index: 3003;
@@ -47,20 +47,20 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 		background-color: cardbg(8, true);
 	}
 }
-.sidebarRegion-VFTUkN {
+.sidebarRegion-1VBisG {
 	width: calc(var(--settings-list-width) + 36px);
     max-width: calc(var(--settings-list-width) + 36px);
 	
 	@include card(8);
 }
 
-.contentRegionScroller-26nc1e,
-.titleContainer-2CXtJo {
+.contentRegionScroller-2_GT_N,
+.titleContainer-3fPic2 {
 	background-color: transparent
 }
 // Black bg
-.contentRegion-3nDuYy,
-.header-2mZ9Ov {
+.contentRegion-3HkfJJ,
+.header-JUTO-g {
 	.theme-light & {
 		background-color: cardbg(0, false);
 	}
@@ -69,34 +69,34 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 	}
 }
 .detailsBlock-FoDTGA,
-.expandedInfo-3kfShd {
+.expandedInfo-1W31i3 {
 	@include card(4);
 }
 
-.codeRedemptionRedirect-1wVR4b {
+.codeRedemptionRedirect-3SBiCp {
 	@include card(4);
 	border-width: 0;
 }
-.paymentPane-3bwJ6A {
+.paymentPane-ut5qKZ {
 	@include card(6);
 	border-radius: var(--button-radius);
 }
-.paymentHistory-2FXzro .verticalFit-waKLYN {
+.paymentHistory-2Zf4ZE .verticalFit-21XL0v {
 	overflow: visible;
 }
-.paginator-166-09, .payment-xT17Mq {
+.paginator-1eqD2g, .payment-2bOh4k {
 	.theme-light &,
 	.theme-dark & {
 		background-color: transparent;
 	}
 }
-.h5-18_1nd {
+.h5-2RwDNl {
 	font-weight: var(--section-weight);
 	font-size: 14px;
 }
 
 // Connections
-.accountBtn-2Nozo3 .accountBtnInner-sj5jLs {
+.accountBtn-1YkMgV .accountBtnInner-3XK70s {
 	@include card(2);
 	
 	@if $animations {
@@ -104,39 +104,39 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 		transition: box-shadow 0.2s ease, background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 	}
 }
-.accountBtn-2Nozo3 .accountBtnInner-sj5jLs:hover {
+.accountBtn-1YkMgV .accountBtnInner-3XK70s:hover {
 	@include card(4);
 	
 	@if $animations {
 		transform: scale(1.1);
 	}
 }
-.accountList-33MS45 {
+.accountList-305sx3 {
 	@include card(6);
 }
-.connection-1fbD7X {
+.connection-107AGH {
 	@include card(4);
 }
-.connectionHeader-2MDqhu {
+.connectionHeader-2rV1ze {
 	@include card(2);
 }
 
 // accessibiltà
-.previewMessage-1ZN7YG {
+.previewMessage-2uxBrA {
 	background-color: transparent;
-	& .cozy-3raOZG .messageContent-2qWWxC {
+	& .cozy-VmLDNB .messageContent-2t3eCI {
 		user-select: none;
 	}
 }
 
 // GUILD
-.theme-dark .tierHeaderUnlocked-3lTDnP,
-.tierHeaderUnlocked-3lTDnP {
+.theme-dark .tierHeaderUnlocked-1OpOLf,
+.tierHeaderUnlocked-1OpOLf {
 	@include card(4);
 	color: var(--header-color);
 }
-.theme-dark .tierHeaderLocked-3S508x,
-.tierHeaderLocked-3S508x {
+.theme-dark .tierHeaderLocked-30MLlO,
+.tierHeaderLocked-30MLlO {
 	@include card(2);
 	color: var(--header-color);
 }
@@ -147,8 +147,8 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 .emojiAliasPlaceholder-3H_iZA {
 	opacity: 0;
 }
-.tierBody-3aUxuc,
-.tierBody-3aUxuc,
+.tierBody-1d3UiS,
+.tierBody-1d3UiS,
 .upsellContainer-L9xv7w,
 .checklistContainer-mFJZEJ,
 .developerPortalCtaWrapper-2XNafh,
@@ -158,9 +158,9 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 .descriptionBox-1EKQKL {
 	@include card(4);
 }
-.guildSection-1EoFKd,
+.guildSection-2Zyzy8,
 .upsellFooter-ZYsio_,
-.analyticsCard-qckucw,
+.analyticsCard-2fnrVG,
 .checklistHeader-1KWcEY,
 .welcomeChannel-1rFrIO,
 .enableContainer-6E-puu,
@@ -170,13 +170,13 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 .enableContainer-6E-puu {
 	z-index: 1;
 }
-.container-3XJ8ns {
+.container-2O1UgZ {
 	@include card(8);
 }
-.selectedBrand-1UKrSX.focused-dKLoQt, .selectedBrand-1UKrSX:hover {
+.selectedBrand-1AtwYE.focused-qp-W9B, .selectedBrand-1AtwYE:hover {
 	background: var(--accent-highlight);
 }
-.upsellContainer-3UlEOE .base-1x0h_U {
+.upsellContainer-3UlEOE .base-21yXnu {
 	color: white;
 }
 
@@ -186,7 +186,7 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 }
 
 // Ruoli
-.scroller-305q3I {
+.scroller-3_YDR2 {
 	.theme-light & {
 		background-color: cardbg(0, false);
 	}
@@ -196,18 +196,18 @@ $tooltip-transition: 100ms ease-in-out 323ms;
 }
 
 // Make green, yellow and red use the theme equivalents
-.radioBar-bMNUI-[style*="--radio-bar-accent-color:hsl(139, "] {
+.radioBar-3w9XY-[style*="--radio-bar-accent-color:hsl(139, "] {
     --radio-bar-accent-color: var(--online) !important;
 }
-.radioBar-bMNUI-[style*="--radio-bar-accent-color:hsl(37, "] {
+.radioBar-3w9XY-[style*="--radio-bar-accent-color:hsl(37, "] {
     --radio-bar-accent-color: var(--idle) !important;
 }
-.radioBar-bMNUI-[style*="--radio-bar-accent-color:hsl(359, "] {
+.radioBar-3w9XY-[style*="--radio-bar-accent-color:hsl(359, "] {
     --radio-bar-accent-color: var(--danger) !important;
 }
 
 // Roles card
-.container-_phMUq {
+.container-3EtAkD {
 	@include card(4);
 }
 
@@ -217,25 +217,25 @@ $animtime: 0.34s;
 
 // Custom open/close settings animation because I can
 // Close animation
-.baseLayer-35bLyl.animating-rRxada[aria-hidden=false]+.animating-rRxada[aria-label=USER_SETTINGS] {
+.baseLayer-W6S8cY.animating-1rIrGV[aria-hidden=false]+.animating-1rIrGV[aria-label=USER_SETTINGS] {
 	transform: scale(1) !important;
 	animation: settings-circle-out $animtime ease forwards;
 }
 // Open animation
-.baseLayer-35bLyl.animating-rRxada[aria-hidden=true]+.animating-rRxada[aria-label=USER_SETTINGS] {
+.baseLayer-W6S8cY.animating-1rIrGV[aria-hidden=true]+.animating-1rIrGV[aria-label=USER_SETTINGS] {
 	transform: scale(1) !important;
 	animation: settings-circle-in $animtime ease forwards;
 }
 // Disable the default animations shit on this
-.baseLayer-35bLyl.animating-rRxada,
-.baseLayer-35bLyl.stop-animations {
+.baseLayer-W6S8cY.animating-1rIrGV,
+.baseLayer-W6S8cY.stop-animations {
 	transform: scale(1) !important;
 	&:only-child {
 		opacity: 1 !important;
 	}
 }
-.layers-3iHuyZ>.layer-3QrUeG.animating-rRxada *,
-.layers-3iHuyZ>.layer-3QrUeG.animating-rRxada {
+.layers-OrUESM>.layer-86YKbF.animating-1rIrGV *,
+.layers-OrUESM>.layer-86YKbF.animating-1rIrGV {
     pointer-events: auto !important;
     will-change: unset;
 }
@@ -257,7 +257,7 @@ $animtime: 0.34s;
 }
 
 // Header bar
-.sidebarRegionScroller-3MXcoP{
+.sidebarRegionScroller-FXiQOh{
 	&::before {
 		content: "";
 		width: 100%;
@@ -287,12 +287,12 @@ $animtime: 0.34s;
 	}
 }
 // Fix pfps rendering on top
-.preview-2nSL_2 .avatar-1BDn8e {
+.preview-rua1rr .avatar-2e8lTP {
 	z-index: 0;
 }
 
 // Settings header
-.sidebar-CFHs9e .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+.sidebar-nqHbhN .themed-2-lozF.selected-g-kMVV.item-3XjbnG {
 	position: initial;
 	&[aria-controls]::after {
 		content: attr(aria-controls);
@@ -325,9 +325,9 @@ $animtime: 0.34s;
 	}
 }
 // Uppercase plugin titles and shit
-.sidebar-CFHs9e .themed-OHr7kt.item-PXvHYJ {
+.sidebar-nqHbhN .themed-2-lozF.item-3XjbnG {
 	// not clean bc of all the not chaining but u do what u gotta do
-	&[aria-controls=pc-updater-tab] ~ .item-PXvHYJ:not([aria-controls=changelog-tab]):not([aria-controls="Hypesquad Online-tab"]):not([aria-controls=Experiments-tab]):not([aria-controls="Developer Options-tab"]):not([aria-controls=logout-tab]),
+	&[aria-controls=pc-updater-tab] ~ .item-3XjbnG:not([aria-controls=changelog-tab]):not([aria-controls="Hypesquad Online-tab"]):not([aria-controls=Experiments-tab]):not([aria-controls="Developer Options-tab"]):not([aria-controls=logout-tab]),
 	&[aria-controls^=gm-]
 	{
 		&::after {
@@ -336,7 +336,7 @@ $animtime: 0.34s;
 	}
 }
 // Realign settings contents
-.contentRegion-3nDuYy {
+.contentRegion-3HkfJJ {
 	height: 100%;
 	margin-top: calc(var(--settings-header-height) - 24px);
 	.platform-web & {
@@ -346,17 +346,17 @@ $animtime: 0.34s;
 
 // Role header overlaying on top of the header fix
 // i hate z-indexing in CSS
-.contentContainer-14yMzC {
+.contentContainer-3hXFtK {
 	z-index: 0;
 }
 
 // Fix the settings notice clipping at the bottom
-.noticeRegion-1YviSH {
+.noticeRegion-qjyUVg {
 	bottom: var(--settings-header-height);
 }
 
 // Border radius clips on the right bc of scroll bar, so resize it
-.side-8zPYf6 > .item-PXvHYJ {
+.side-2ur1Qk > .item-3XjbnG {
 	margin-right: 14px;
 }
 
@@ -366,16 +366,16 @@ $animtime: 0.34s;
 }
 
 // New color palette
-.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
-.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover,
-.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
-.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ:hover {
+.side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG,
+.side-2ur1Qk .themed-2-lozF.selected-g-kMVV.item-3XjbnG:hover,
+.topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG,
+.topPill-3DJJNV .themed-2-lozF.selected-g-kMVV.item-3XjbnG:hover {
 	background-color: var(--accent-selected-highlight);
 	color: var(--accent);
 }
-.list-wek7hJ .tabBar-wS4pjJ .tab-17bjMB.active-3JUHqX,
-.header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa,
-.header-1VS4tm .tabBar-31Wimb .tab-PQvTH4.active-30vPlA {
+.list-1uSVgu .tabBar-3N44FC .tab-1tp4jL.active-3WMEyE,
+.header-145e10 .tabBar-1qdMr5 .tab-TRrPC8.active-1grPyy,
+.header-3_zmOb .tabBar-2WhZ9G .tab-2Jo-cu.active-346HgG {
 	.theme-dark &,
 	.theme-light & {
 		background-color: var(--accent-selected-highlight);
@@ -384,7 +384,7 @@ $animtime: 0.34s;
 }
 
 // Turn the close button into a back button
-.toolsContainer-1edPuj {
+.toolsContainer-25FL6V {
 	position: fixed;
 	top: 0;
 	z-index: 3005;
@@ -392,7 +392,7 @@ $animtime: 0.34s;
 	left: calc((var(--settings-header-height) - 48px) * 0.5);
 }
 
-.closeButton-1tv5uR {
+.closeButton-PCZcma {
 	border: none;
 	// funny optimized selector
 	& svg {
@@ -411,11 +411,11 @@ $animtime: 0.34s;
 	}
 }
 // Tooltip
-.closeButton-1tv5uR:hover+.keybind-KpFkfr {
+.closeButton-PCZcma:hover+.keybind-13vtq8 {
 	opacity: 1;
 	transform: scale(1);
 }
-.closeButton-1tv5uR+.keybind-KpFkfr {
+.closeButton-PCZcma+.keybind-13vtq8 {
 	opacity: 0;
 	transform: scale(0);
 	transform-origin: center top;

@@ -1,36 +1,36 @@
-.membersWrap-2h-GB4 {
+.membersWrap-3NUR2t {
   min-width: 25px;
   width: 25px !important;
 }
-.membersWrap-2h-GB4 .members-1998pB {
+.membersWrap-3NUR2t .members-3WRCEx {
   width: 1px !important;
 }
-.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe {
+.membersWrap-3NUR2t .members-3WRCEx .member-2gU6Ar {
   opacity: 0;
 }
-.membersWrap-2h-GB4 .members-1998pB .membersGroup-v9BXpm {
+.membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl {
   opacity: 0;
 }
-.membersWrap-2h-GB4:hover {
+.membersWrap-3NUR2t:hover {
   width: var(--members-width) !important;
 }
-.membersWrap-2h-GB4:hover .members-1998pB {
+.membersWrap-3NUR2t:hover .members-3WRCEx {
   width: var(--members-width) !important;
 }
-.membersWrap-2h-GB4:hover .members-1998pB .member-3-YXUe {
+.membersWrap-3NUR2t:hover .members-3WRCEx .member-2gU6Ar {
   opacity: 1;
 }
-.membersWrap-2h-GB4:hover .members-1998pB .membersGroup-v9BXpm {
+.membersWrap-3NUR2t:hover .members-3WRCEx .membersGroup-2eiWxl {
   opacity: 1;
 }
 
-.membersWrap-2h-GB4 {
+.membersWrap-3NUR2t {
   transition: 0.2s ease 0.175s;
 }
-.membersWrap-2h-GB4 .members-1998pB {
+.membersWrap-3NUR2t .members-3WRCEx {
   transition: 0.2s ease 0.175s;
 }
-.membersWrap-2h-GB4 .members-1998pB .member-3-YXUe, .membersWrap-2h-GB4 .members-1998pB .membersGroup-v9BXpm {
+.membersWrap-3NUR2t .members-3WRCEx .member-2gU6Ar, .membersWrap-3NUR2t .members-3WRCEx .membersGroup-2eiWxl {
   transition: 0.2s ease-in-out 0.175s;
 }
 

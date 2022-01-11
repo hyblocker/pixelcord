@@ -1,7 +1,7 @@
-﻿@import "../utils";
+@import "../utils";
 
 // Tabs
-.navButtonActive-1MkytQ {
+.navButtonActive-1EqC5l {
 	background-color: var(--accent-transparent);
 	color: var(--accent);
 
@@ -13,51 +13,51 @@
 // EMOTE PICKER
 
 // hovered emotes
-.emojiItem-14v6tW.emojiItemSelected-1aLkfV {
+.emojiItem-277VFM.emojiItemSelected-2Lg50V {
 	background-color: var(--accent-transparent);
 	color: var(--accent);
 }
 
 // emote category
-.categoryItemDefaultCategory-aBZ6nJ:hover,
-.categoryItemDefaultCategorySelected-_HCKoz,
-.categoryItemDefaultCategorySelected-_HCKoz:hover {
+.categoryItemDefaultCategory-3haEDq:hover,
+.categoryItemDefaultCategorySelected-2YeRUu,
+.categoryItemDefaultCategorySelected-2YeRUu:hover {
 	background-color: var(--accent-transparent);
 
-	& .categoryIcon-1SvUHG {
+	& .categoryIcon-2cYeku {
 		color: var(--accent);
 	}
 }
 
 // emote guild
-.mask-2hO5M8 [mask="url(#svg-mask-squircle)"] {
-	.guildIconWithoutImage-2JZx6N {
+.mask-1hlQQ6 [mask="url(#svg-mask-squircle)"] {
+	.guildIconWithoutImage-3bOll3 {
 		background-color: var(--accent-transparent);
 		color: var(--accent);
 	}
-	.guildIcon-3h-1IH {
+	.guildIcon-2SUGiq {
 		background-color: var(--accent-transparent);
 	}
 }
 
 // emote skin tones
-.diversityEmojiItem-L6_IXw:hover {
+.diversityEmojiItem-2bgZKv:hover {
 	background-color: var(--accent-transparent);
 }
 
 // STICKERS
-.stickerInspected-2EM4w- .inspectedIndicator-59EII8 {
+.stickerInspected-mwnU6w .inspectedIndicator-27zwNZ {
 	background-color: var(--accent-transparent);
 }
 
 // GIF PICKER
-.focused-1En8bG::after,
-.result-3w1ZcL:hover::after {
+.focused-q9B2e4::after,
+.result-3OpoO7:hover::after {
 	@include theming {
 		box-shadow: inset 0 0 0 2px var(--accent),inset 0 0 0 3px #2f3136;
 	}
 }
-.categoryFadeBlurple-1j72_A {
+.categoryFadeBlurple-1HuV1x {
 	@include theming {
 		background-color: var(--accent);
 		opacity: 0.5;

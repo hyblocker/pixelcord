@@ -22,18 +22,18 @@
     &:not([aria-haspopup="true"]) {
         flex-direction: row-reverse;
 
-        & > .iconContainer-2-XQPY {
+        & > .iconContainer-1-SsTR {
             margin-left: 0;
             width: var(--context-icon-size);
             height: var(--context-icon-size);
 
-            & > .icon-LYJorE {
+            & > .icon-E4cW1l {
                 width: var(--context-icon-size);
                 height: var(--context-icon-size);
             }
         }
 
-        & > .label-22pbtT {
+        & > .label-2gNW3x {
             margin-left: var(--context-icon-spacing);
         }
     }
@@ -43,14 +43,14 @@
     @if $item == undefined {
 
     } @else {
-        .menu-3sdvDG##{$root-menu} .item-1tOPte##{$item} {
+        .menu-1QACrS##{$root-menu} .item-1OdjEX##{$item} {
             flex-direction: row;
 
             &::before {
                 content: "";
             }
 
-            & .label-22pbtT {
+            & .label-2gNW3x {
                 margin-left: 0;
             }
         }
@@ -59,11 +59,11 @@
 
 @mixin contextIcon($identifier, $svg, $icon-pack: $icons-outline, $numeric: false) {
     @if $numeric == false {
-        .item-1tOPte##{$identifier}::before {
+        .item-1OdjEX##{$identifier}::before {
             --icon: #{svg-url(#{map-get($icon-pack, $svg)})};
         }
     } @else {
-        .item-1tOPte[id|="#{$identifier}"]::before {
+        .item-1OdjEX[id|="#{$identifier}"]::before {
             --icon: #{svg-url(#{map-get($icon-pack, $svg)})};
         }
     }
@@ -76,14 +76,14 @@
     }
 
     // Default vars
-    .menu-3sdvDG {
+    .menu-1QACrS {
         --context-menu-icon-color: currentColor;
     }
 
-    .item-1tOPte {
+    .item-1OdjEX {
 
         // Add icons
-        .menu-3sdvDG &::before {
+        .menu-1QACrS &::before {
             content: "";
             width: var(--context-icon-size);
             height: var(--context-icon-size);
@@ -100,46 +100,46 @@
         }
 
         // Hide in submenus
-        .submenu-2-ysNh & {
+        .submenu-1apzyU & {
             @include removeIcon();
         }
 
         // Hide in status picker
-        .menu-3sdvDG#status-picker & {
+        .menu-1QACrS#status-picker & {
             @include removeIcon();
         }
 
         // Hide in channel attach dialog
-        .menu-3sdvDG#channel-attach & {
+        .menu-1QACrS#channel-attach & {
             @include removeIcon();
         }
 
         // Hide in message actions (the buttons)
-        .menu-3sdvDG#message-actions & {
+        .menu-1QACrS#message-actions & {
             @include removeIcon();
             @include reverseOrder();
         }
 
         // Hide in guild actions (clicking guild header)
-        .menu-3sdvDG#guild-header-popout & {
+        .menu-1QACrS#guild-header-popout & {
             @include removeIcon();
             @include reverseOrder();
         }
 
         // Hide in audio device quick settings
-        .menu-3sdvDG#audio-device-context & {
+        .menu-1QACrS#audio-device-context & {
             @include removeIcon();
             @include reverseOrder();
         }
 
         // Hide in video device quick settings
-        .menu-3sdvDG#video-device-context & {
+        .menu-1QACrS#video-device-context & {
             @include removeIcon();
             @include reverseOrder();
         }
 
         // Hide in controls other than buttons
-        &.hideInteraction-1iHO1O {
+        &.hideInteraction-2jPGL_ {
             @include removeIcon();
         }
 
@@ -158,17 +158,17 @@
         }
 
         // Experiments doesnt need icons
-        .submenu-2-ysNh.menu-3sdvDG &::before {
+        .submenu-1apzyU.menu-1QACrS &::before {
             content: none;
         }
 
         // Hide in powercord menus
-        .menu-3sdvDG[id|=pc] & {
+        .menu-1QACrS[id|=pc] & {
             @include removeIcon();
         }
 
         // Hide in powercord menus
-        .menu-3sdvDG#manage-streams & {
+        .menu-1QACrS#manage-streams & {
             @include removeIcon();
             @include reverseOrder();
         }
@@ -182,14 +182,14 @@
     // Include icons
 
     // General cases
-    .item-1tOPte[id*="copy"]::before {
+    .item-1OdjEX[id*="copy"]::before {
         --icon: #{svg-url(#{map-get($icon-pack, "copy")})};
     }
-    .item-1tOPte[id*="copy"][id*="devmode"]::before {
+    .item-1OdjEX[id*="copy"][id*="devmode"]::before {
         --icon: #{svg-url(#{map-get($icon-pack, "id")})};
     }
 
-    .item-1tOPte[id|="user-settings-cog-Experiments-"][id$="-clear-override"] {
+    .item-1OdjEX[id|="user-settings-cog-Experiments-"][id$="-clear-override"] {
         @include reverseOrder();
     }
 
@@ -255,11 +255,11 @@
     // Group DMs
     @include contextIcon("gdm-context-mark-channel-read", "mark_read", $icon-pack);
     // idk why it broke but heres a fix?
-    .menu-3sdvDG .item-1tOPte#gdm-context-change-icon {
+    .menu-1QACrS .item-1OdjEX#gdm-context-change-icon {
 
         @include removeIcon();
         --icon: #{svg-url(#{map-get($icon-pack, "change_icon")})};
-        & .labelContainer-1BLJti::before {
+        & .labelContainer-2vJzYL::before {
             content: "";
             width: var(--context-icon-size);
             height: var(--context-icon-size);
@@ -292,10 +292,10 @@
     @include contextIcon("guild-context-unmute-guild", "unmute", $icon-pack);
 
     @include contextIcon("guild-context-guild-settings", "settings", $icon-pack);
-    @include contextIcon("guild-context-notifications", "notifications", $icon-pack);
+    @include contextIcon("guild-context-guild-notifications", "notifications", $icon-pack);
     @include contextIcon("guild-context-privacy", "privacy", $icon-pack);
     @include contextIcon("guild-context-change-nickname", "edit", $icon-pack);
-
+    
     @include contextIcon("guild-context-create-channel", "create_channel", $icon-pack);
     @include contextIcon("guild-context-create-category", "create_category", $icon-pack);
     @include contextIcon("guild-context-create-event", "create_event", $icon-pack);
@@ -383,6 +383,21 @@
     @include contextIcon("channel-call-overflow-popout-report-stream-problem", "report", $icon-pack);
     @include contextIcon("manage-streams-stream-settings", "settings", $icon-pack);
 
+    // Events
+    .item-1OdjEX[id="user-context-Add to calendar"]::before {
+        --icon: #{svg-url(#{map-get($icon-pack, "copy_link")})};
+    }
+
+    .item-1OdjEX[id="user-context-Copy event link"]::before {
+        --icon: #{svg-url(#{map-get($icon-pack, "copy_link")})};
+    }
+
+    .item-1OdjEX#user-context-report-event {
+        @include removeIcon();
+        @include reverseOrder();
+    }
+
+
     // Settings
     @include contextIcon("user-settings-cog-My_Account", "account", $icon-pack);
     @include contextIcon("user-settings-cog-Profile_Customization", "user_profile_settings", $icon-pack);
@@ -430,11 +445,15 @@
     @include contextIcon("subscription-context-cancel", "close", $icon-pack);
     
     // Guild roles
-    .item-1tOPte#guild-settings-role-context-view-as-role,
-    .item-1tOPte#guild-settings-role-context-delete-role {
+    .item-1OdjEX#guild-settings-role-context-view-as-role,
+    .item-1OdjEX#guild-settings-role-context-delete-role {
         @include removeIcon();
         @include reverseOrder();
     }
+    
+    // Guild profile
+    @include contextIcon("edit-profile-popout-edit-server-profile", "guild", $icon-pack);
+    @include contextIcon("edit-profile-popout-edit-default-profile", "user_profile_settings", $icon-pack);
     
     // Account switcher
     @include contextIcon("manage-mutli-account-remove-account", "logout", $icon-pack);

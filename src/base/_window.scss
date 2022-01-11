@@ -1,13 +1,13 @@
 @import '../buildvars';
 
 // We use title bar because otherwise it would replace the "Discord" in active subscription banners
-.titleBar-AC4pGV {
+.titleBar-1it3bQ {
 
 	// Replace Discord wordmark with Pixelcord wordmark
-	& > .wordmark-2iDDfm > svg {
+	& > .wordmark-2u86JB > svg {
 		width: 0;
 	}
-	& > .wordmark-2iDDfm::after {
+	& > .wordmark-2u86JB::after {
 		@if ($DEBUG == true) {
 			content: 'Piselcord Development Edition';
 		} @else {

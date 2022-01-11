@@ -1,15 +1,15 @@
 @import '../buildvars';
 @import "../material_design/ripple";
 
-.separator-2I32lJ {
+.separator-1So4YB {
 	border-color: var(--context-menu-separator);
 }
-.menu-3sdvDG {
+.menu-1QACrS {
 	border-radius: var(--context-menu-radius);
 }
-.scroller-3BxosC {
+.scroller-1bVxF5 {
 	padding: var(--context-menu-padding);
 }
-.item-1tOPte:not(.hideInteraction-1iHO1O) {
+.item-1OdjEX:not(.hideInteraction-2jPGL_) {
 	@include ripple;
 }

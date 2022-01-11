@@ -1,14 +1,14 @@
-﻿// SVG Util
+// SVG Util
 @use "sass:string";
 @import "../../../src/icons/util";
 
 @mixin replaceGuildShape($shape, $shape-hover) {
-	.svg-1X37T1 > defs > path:not([d='M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z']) {
+	.svg-2zuE5p > defs > path:not([d='M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z']) {
 		d: path($shape);
-	}.svg-1X37T1 > defs > path[d='M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z'] {
+	}.svg-2zuE5p > defs > path[d='M0 24C0 16.5449 0 12.8174 1.21793 9.87706C2.84183 5.95662 5.95662 2.84183 9.87706 1.21793C12.8174 0 16.5449 0 24 0C31.4551 0 35.1826 0 38.1229 1.21793C42.0434 2.84183 45.1582 5.95662 46.7821 9.87706C48 12.8174 48 16.5449 48 24C48 31.4551 48 35.1826 46.7821 38.1229C45.1582 42.0434 42.0434 45.1582 38.1229 46.7821C35.1826 48 31.4551 48 24 48C16.5449 48 12.8174 48 9.87706 46.7821C5.95662 45.1582 2.84183 42.0434 1.21793 38.1229C0 35.1826 0 31.4551 0 24Z'] {
 		d: path($shape-hover);
 	}
-	.svg-1X37T1 > foreignObject:first-child {
+	.svg-2zuE5p > foreignObject:first-child {
 		-webkit-mask-image: var(--guild-shape-normal);
 		-webkit-mask-size: contain;
 		-webkit-mask-position: center;
@@ -59,8 +59,8 @@ $status_typing: (
 ) !default;
 
 @mixin avatarStatusMask($shape, $size, $swap) {
-	.avatarHint-2A3RNb,
-	.mask-1l8v16 {
+	.avatarHint-k7pYop,
+	.mask-1FEkla {
 		$encodedSvg: var(--avatar-shape);
 
 		& > foreignObject[mask="url(#svg-mask-avatar-status-round-#{$size})"] {
@@ -97,30 +97,30 @@ $status_typing: (
 
 	@include replaceGuildShape($shape, $hoverShape);
 
-	.avatar-3Bhz0p,
-	.guildIcon-2Tpnad.iconSizeSmol-2Dw61G,
-	.replyAvatar-1K9Wmr,
-	.embedAuthorIcon--1zR3L,
+	.avatar-3XmvJx,
+	.guildIcon-2Tpnad.iconSizeSmol-qsFaRK,
+	.replyAvatar-sHd2sU,
+	.embedAuthorIcon-3pnkS4,
 	// Mutuals => Guilds
-	.iconSizeMedium-2OqPjI.listAvatar-1BbvHX,
-	.avatar-1BDn8e:not(.avatar-1BDn8e[data-bsi-status]),
-	.guildIcon-1zxZMV,
-	.voiceSectionGuildImage-3HwnfL,
+	.iconSizeMedium-2vzSua.listAvatar-2bU5Uh,
+	.avatar-2e8lTP:not(.avatar-2e8lTP[data-bsi-status]),
+	.guildIcon-EvT-p6,
+	.voiceSectionGuildImage-TctMOd,
 	// Add border
 	.avatarUploader-2UF9NL,
 	// Cre-Arts' Friends Grid breaks without this
-	#app-mount .peopleColumn-29fq28 .avatar-3W3CeO::before {
+	#app-mount .peopleColumn-1wMU14 .avatar-2MSPKk::before {
 		@include maskImage($hoverShape);
 	}
 
 	// VCs
-	.avatar-3bWpYy,
-	.listDefault-3ir5aS .avatarContainer-28iYmV {
+	.avatar-3TrM7c,
+	.listDefault-2F-w65 .avatarContainer-3FF_Km {
 		@include maskImage($hoverShape);
 		box-shadow: none;
 		
 		// Speaking is broken
-		&.avatarSpeaking-2IGMRN {
+		&.avatarSpeaking-2pCGrZ {
 			@include maskImage($hoverShape);
 			-webkit-mask-size: 22px;
 			
@@ -128,7 +128,7 @@ $status_typing: (
 			z-index: 2;
 		}
 	}
-	.usernameSpeaking-RmltQx::before {
+	.usernameSpeaking-3FKv6H::before {
 		content: "";
 
 		// 1px bigger
@@ -144,16 +144,16 @@ $status_typing: (
 		top: 3px;
 		left: 8px;
 	}
-	.container-3baos1 .avatarStack-2Dr8S9,
-	.voiceUser-1K6Xox {
-		& .avatar-VxgULZ {
+	.container-YkUktl .avatarStack-3vfSFa,
+	.voiceUser-3nRK-K {
+		& .avatar-b5OQ1N {
 			z-index: 2;
 		}
 	}
 	// really hacky way to check if user in current logged in panel is speaking or not
-	.container-3baos1 .avatarStack-2Dr8S9 {
+	.container-YkUktl .avatarStack-3vfSFa {
 		// if we arent the first and last child (aka only child) we are therefore speaking
-		.avatar-VxgULZ:first-child:not(:last-child) {
+		.avatar-b5OQ1N:first-child:not(:last-child) {
 			@include maskImage($hoverShape);
 			-webkit-mask-size: 28px;
 			-webkit-mask-position: center;
@@ -162,7 +162,7 @@ $status_typing: (
 			margin: 2px;
 		}
 	}
-	.avatarSpeaking-2c8-9i {
+	.avatarSpeaking-33RRJU {
 		@include maskImage($hoverShape);
 		background: var(--accent);
 		box-shadow: none;
@@ -175,16 +175,16 @@ $status_typing: (
 		position: absolute;
 		z-index: 1;
 	}
-	.content-1Wq3SX {
+	.content-1Tgc42 {
 		position: relative;
 	}
 	// VC collapsed speaking :kms:
 
 	// Remove from wrappers
-	.avatar-AvHqJA,
-	.avatar-37jOim,
-	.avatar-1uQSZT {
-		&.wrapper-3t9DeA {
+	.avatar-3QF_VA,
+	.avatar-2Vndt_,
+	.avatar-3mTjvZ {
+		&.wrapper-1VLyxH {
 			border-radius: 0;
 			// additional path at the end is to prevent clipping of the status
 			-webkit-mask-image: var(--avatar-shape), #{svg-url("<svg viewBox='0 0 2 2' xmlns='http://www.w3.org/2000/svg'><path d='M0 1v1h2V1z'/></svg>")};
@@ -192,12 +192,12 @@ $status_typing: (
 	}
 
 	.folderIconWrapper-1_bOZe,
-	.wrapperSimple-19ogV2,
-	.wrapper-3t9DeA {
+	.wrapperSimple-Js2rIO,
+	.wrapper-1VLyxH {
 		border-radius: 0;	
 	}
 	
-	.mask-1l8v16 > foreignObject[mask="url(#svg-mask-avatar-default)"] {
+	.mask-1FEkla > foreignObject[mask="url(#svg-mask-avatar-default)"] {
 		-webkit-mask: var(--avatar-shape);
 		mask: none;
 	}
@@ -209,8 +209,8 @@ $status_typing: (
 	@include avatarStatusMask($hoverShape, 80,  $swap);
 	@include avatarStatusMask($hoverShape, 120, $swap);
 
-	.avatarHint-2A3RNb,
-	.mask-1l8v16 {
+	.avatarHint-k7pYop,
+	.mask-1FEkla {
 		
 		& > foreignObject[mask|="url(#svg-mask-avatar-status-round"],
 		& > foreignObject[mask|="url(#svg-mask-avatar-status-mobile"],
@@ -222,13 +222,13 @@ $status_typing: (
 	}
 	
 	// Padding in collapsed VCs
-	.size16-NOVQSt .avatarContainerMasked-PIJ-3L,
-	.size24-1HlGux .avatarContainerMasked-PIJ-3L {
+	.size16-2-tfaM .avatarContainerMasked-13fYnN,
+	.size24-9rrwDS .avatarContainerMasked-13fYnN {
 		margin-right: 4px;
 	}
 	
 	// Party members (in now playing) have a unique mask :DDD
-	.partyMember-1CzxeX {
+	.partyMember-YLjOa7 {
 		mask: none;
 		-webkit-mask: none;
 	}
