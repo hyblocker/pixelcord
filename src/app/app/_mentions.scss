@@ -1,37 +1,37 @@
 // Unread pill
-.isUnread-3Ef-o9 {
+.isUnread-3Lojb- {
     border-color: var(--danger);
 }
-.unreadPill-2HyYtt {
+.unreadPill-3nEWYM {
     background-color: var(--danger);
 	color: white;
 }
-.unreadPillCapStroke-7rkHbg {
+.unreadPillCapStroke-1nE1Q8 {
     color: var(--danger);
     fill: var(--danger);
 }
 
 // Red dot on pin = var(--danger)
-.iconBadge-qZ4Ksk, .mention-1f5kbO {
+.iconBadge-3Mmg92, .mention-3XBnnZ {
 	background-color: var(--danger);
 }
-.numberBadge-2s8kKX[style*="background-color: rgb(240, 71, 71)"] {
+.numberBadge-37OJ3S[style*="background-color: rgb(240, 71, 71)"] {
 	background-color: var(--danger) !important;
 }
 
 // End call using --danger
-.colorable-1bkp8v.red-33-Lnk,
+.colorable-3rVGna.red-3T8maV,
 .lookFilled-1Gx00P.colorRed-1TFJan {
 	background-color: var(--danger);
 	color: white;
 }
-.container-3baos1 .redIcon-2uP7Ej {
+.container-YkUktl .redIcon-1ppjsM {
 	color: var(--danger);
 }
 
 // Actual mentions
-.theme-light .wrapper-3WhCwL,
-.theme-dark .wrapper-3WhCwL {
+.theme-light .wrapper-1ZcZW-,
+.theme-dark .wrapper-1ZcZW- {
 	background-color: var(--accent-selected-highlight);
 	color: var(--accent);
 	&:hover {

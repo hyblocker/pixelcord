@@ -32,7 +32,7 @@ $brightness-map-dark: (
 	}
 }
 
-.callContainer-36WRfH,
+.callContainer-HtHELf,
 .theme-dark {
 	@for $i from 0 through 24 {
 		--card-#{$i}-bg: #{map-get($brightness-map-dark, $i)};

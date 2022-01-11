@@ -1,7 +1,6 @@
-/**
-* @name Pixelcord
+ * @name Pixelcord
  * @author Hyblocker
- * @version 3.4.2
+ * @version 3.5.2
  * @description Material Design Theme with numerous enhancements for Discord
  * @source https://github.com/hyblocker/pixelcord
  * @updateUrl https://raw.githubusercontent.com/hyblocker/pixelcord/main/Pixelcord.theme.css
@@ -116,7 +115,7 @@ html.newBrand,
   --offline: #636b75;
 }
 
-.callContainer-36WRfH,
+.callContainer-HtHELf,
 .theme-dark {
   --accent: var(--primary-400);
   --accent-selected-highlight: rgba(52, 164, 255, 12%);
@@ -181,7 +180,7 @@ html.newBrand,
   --card-24-bg: white;
 }
 
-.callContainer-36WRfH,
+.callContainer-HtHELf,
 .theme-dark {
   --card-0-bg: #121212;
   --card-1-bg: #1D1D1D;

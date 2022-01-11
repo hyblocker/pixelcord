@@ -4,11 +4,11 @@
 $header-height: 6;
 
 // header
-.container-1r6BKw.themed-ANHk51,
-.searchBar-6Kv8R2 {
+.container-ZMc96U.themed-Hp1KC_,
+.searchBar-3TnChZ {
 	@include card($header-height);
 }
-.sidebar-2K8pFh .container-3w7J-x .container-1taM1r:not(.hasBanner-2SrLR3) {
+.sidebar-1tnWFu .container-1NXEtd .container-1-ERn5:not(.hasBanner-2IrYih) {
 	&.theme-light {
 		background-color: cardbg($header-height, false);
 		box-shadow: elevation-shadow($header-height, $baseline-color);
@@ -17,11 +17,11 @@ $header-height: 6;
 		background-color: cardbg($header-height, true);
 	}
 }
-.theme-light .form-2fGMdU:before {
+.theme-light .form-3gdLxP:before {
 	background: transparent;
 }
 
-.children-19S4PO::after {
+.children-3xh0VB::after {
 	.theme-dark &,
 	.theme-light & {
 		background: -webkit-gradient(linear,left top,right top,from(transparent),to(cardbg($header-height, false)));
@@ -30,39 +30,39 @@ $header-height: 6;
 }
 
 // channel scroller border for easier differentiation of elements
-.scroller-1JbKMe,
-.scroller-RmtA4e {
+.scroller-WSmht3,
+.scroller-1ox3I2 {
 	border-right: 1px solid var(--navdrawer-separator);
 }
-.divider-JfaTT5 {
+.divider-2rZFJK {
 	border-color: var(--navdrawer-separator);
 }
-.divider-3FBTu8 {
+.divider-q3P9HC {
 	background: var(--navdrawer-separator);
 }
 
 
 // Background primary
-.app-2rEoOp,
-.appMount-3lHmkl, body,
-.chat-3bRxxu,
+.app-2CXKsg,
+.appMount-2yBXZl, body,
+.chat-2ZfjoI,
 .threadSidebar-1o3BTy,
-.scroller-9moviB,
-.container-3Mxszk,
-.nowPlayingColumn-2sl4cE,
-.container-lRFx4q,
-.scroller-1IIF0A,
-.header-39GIC8,
-.scroller-2XE8rp,
-.layer-3QrUeG:not(.baseLayer-35bLyl),
-.content-1o0f9g {
+.scroller-29cQFV,
+.container-36u7Lw,
+.nowPlayingColumn-1eCBCN,
+.container-1oAagU,
+.scroller-2XLwLg,
+.header-2EadGG,
+.scroller-1TOeMq,
+.layer-86YKbF:not(.baseLayer-W6S8cY),
+.content-3spvdd {
 	background-color: cardbg(0, true);
 }
 
 // placeholder messages
-.container-1D34oG,
-.wrapper-1F5TKx,
-.wrapper-3vR61M
+.container-2cd8Mz,
+.wrapper-15CKyy,
+.wrapper-22ayhK
 {
 	.theme-dark & {
 		background-color: cardbg(0, true);
@@ -73,7 +73,7 @@ $header-height: 6;
 }
 
 // Placeholder is bold
-.placeholder-37qJjk {
+.placeholder-1_mJY1 {
 	.theme-light & {
 		font-weight: 500;
 	}
@@ -82,38 +82,38 @@ $header-height: 6;
 	}
 }
 
-.thin-1ybCId::-webkit-scrollbar-thumb {
+.thin-31rlnD::-webkit-scrollbar-thumb {
 	background-color: var(--navdrawer-separator);
 }
 // Disable selection of usernames
-.setIdentityLink-1t8Ahd,
-.botText-1526X_,
-.username-1A8OIy {
+.setIdentityLink-hOFsMl,
+.botText-1fD6Qk,
+.username-h_Y3Us {
 	 user-select: none;
 }
 // Disable selection of system messages
-.ephemeralMessage-1fEWtQ,
-.message-2qnXI6.systemMessage-1I9LCe.isSystemMessage-2MkNHd .messageContent-2qWWxC,
-.message-2qnXI6.systemMessage-1I9LCe.isSystemMessage-2MkNHd.wrapper-2a6GCs .systemMessageContainer-2ddkN3 {
+.ephemeralMessage-11q8XZ,
+.message-2CShn3.systemMessage-1H1Z20.isSystemMessage-QNv9ZH .messageContent-2t3eCI,
+.message-2CShn3.systemMessage-1H1Z20.isSystemMessage-QNv9ZH.wrapper-30-Nkg .systemMessageContainer-3F3V9U {
 	user-select: none;
 }
 
 
 // Ripple on message click
-.message-2qnXI6 {
+.message-2CShn3 {
 	@include rippleimg;
 }
 // ripple appearing on top of images and embeds fix
-.container-1ov-mD {
+.container-2sjPya {
 	z-index: 1;
 }
 
 // Fix ripple conflicts with discord CSS
 // Move discord CSS to ::before
-.cozy-3raOZG.hasThread-2k82W0::before {
+.cozy-VmLDNB.hasThread-3h-KJV::before {
 	top: 28px;
 }
-.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::before {
+.cozy-VmLDNB.hasThread-3h-KJV.isSystemMessage-QNv9ZH::before {
 	border-left: 2px solid var(--background-accent);
 	border-bottom: 2px solid var(--background-accent);
 	border-bottom-left-radius: 8px;
@@ -125,10 +125,10 @@ $header-height: 6;
 	width: 31px;
 }
 // Reset css
-.cozy-3raOZG.hasThread-2k82W0::after {
+.cozy-VmLDNB.hasThread-3h-KJV::after {
 	top: 0px;
 }
-.cozy-3raOZG.hasThread-2k82W0.isSystemMessage-2MkNHd::after {
+.cozy-VmLDNB.hasThread-3h-KJV.isSystemMessage-QNv9ZH::after {
 	border-left: none;
 	border-bottom: none;
 	border-bottom-left-radius: 0;
@@ -138,7 +138,7 @@ $header-height: 6;
 	top: 0px;
 	width: 100%;
 }
-.messagesWrapper-1sRNjr::after {
+.messagesWrapper-RpOMA3::after {
 	content: "";
 	width: 100%;
 	height: var(--chatbox-top-padding);
@@ -151,23 +151,23 @@ $header-height: 6;
 }
 
 // New guild cards (invite, hi, etc)
-.card-3RzMcx {
+.card-PQEqCK {
 	@include card(4);
 }
-.checkmark-3rush5 {
+.checkmark-bW9BK8 {
 	background-color: var(--online);
 }
 
 // discord pls
-.replyAvatar-1K9Wmr {
+.replyAvatar-sHd2sU {
 	cursor: pointer;
 }
 
 // fix draggable titlebar not letting you click long channel descriptions to view more
-.topic-TCb_qw.expandable-9fI_e3 {
+.topic-11NuQZ.expandable-3CaLeS {
 	-webkit-app-region: none;
 }
 // fix follow button being unclickable
-.followButton-L6L-Us {
+.followButton-1N-GGp {
 	-webkit-app-region: none;
 }

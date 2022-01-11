@@ -1,61 +1,61 @@
-.botTagRegular-2HEhHi,
-.role-2irmRk,
-.role-1P70N6,
-.akaBadge-1M-1Gw {
+.botTagRegular-kpctgU,
+.role-2TIOKu,
+.role-23oyrw,
+.akaBadge-3i7V3p {
 	background: var(--chip);
 	color: var(--chip-text);
 	border: none;
 	z-index: 1;
 }
-.px-10SIf7.botTag-2WPJ74,
-.role-2irmRk,
-.role-1P70N6,
-.botTagRegular-2HEhHi,
-.akaBadge-1M-1Gw
+.px-MnE_OR.botTag-7aX5WZ,
+.role-2TIOKu,
+.role-23oyrw,
+.botTagRegular-kpctgU,
+.akaBadge-3i7V3p
 {
 	height: var(--chip-height);
 	line-height: var(--chip-height);
 	border-radius: calc(var(--chip-height) * 0.5);
 	padding: 0 calc(var(--chip-height) * 0.5);
 
-	.nameAndDecorators-5FJ2dg & {
+	.nameAndDecorators-3ERwy2 & {
 		height: .9375rem;
 		line-height: .9375rem;
 		border-radius: .46875rem;
 		padding: 0 .46875rem;
 	}
 
-	.headerTagNoNickname-3qrd77 & {
+	.headerTagNoNickname-3tGHj6 & {
 		margin-top: 0 !important;
 	}
 }
-.rem-2m9HGf.botTag-2WPJ74 {
+.rem-3kT9wc.botTag-7aX5WZ {
 	height: .9375rem;
 	line-height: .9375rem;
 	border-radius: .46875rem;
 	padding: 0 .46875rem;
 
 	// only if we are in a header
-	.cozy-3raOZG .headerText-3Uvj1Y & {
+	.cozy-VmLDNB .headerText-2z4IhQ & {
 		height: var(--chip-height);
 		line-height: var(--chip-height);
 		border-radius: calc(var(--chip-height) * 0.5);
 		padding: 0 calc(var(--chip-height) * 0.5);
 	}
 }
-.cozy-3raOZG .username-1A8OIy:not(:only-child) {
+.cozy-VmLDNB .username-h_Y3Us:not(:only-child) {
 	height: var(--chip-height);
 	display: inline-block;
     line-height: var(--chip-height);
 }
-.roleColor-fHISxl,
-.roleCircle-3xAZ1j {
+.roleColor-3cA0as,
+.roleCircle-1EgnFN {
 	overflow: visible;
 	width: var(--chip-height);
 	height: var(--chip-height);
 	margin-left: calc(var(--chip-height) * -0.5);;
 }
-.roleRemoveIcon-2-TeGW
+.roleRemoveIcon-387wKV
 {
 	width: var(--chip-height);
 	height: var(--chip-height);
@@ -71,17 +71,17 @@
 		fill: rgba(0,0,0,.87);
 	}
 }
-.roleRemoveIcon-2-TeGW:hover {
+.roleRemoveIcon-387wKV:hover {
 	opacity: 1;
 }
-.theme-light .actionButton-VzECiy,
-.theme-dark .actionButton-VzECiy {
+.theme-light .actionButton-1YKTU0,
+.theme-dark .actionButton-1YKTU0 {
 	padding: 0;
 }
-.role-3UN8jj:hover {
+.role-1adzi2:hover {
 	background: var(--chip);
 }
-.addButton-pcyyf6 {
+.addButton-1_dZYu {
 	background-color: transparent;
 	color: var(--chip);
 	&:hover {
@@ -93,10 +93,10 @@
 	top: -4px;
 }
 
-.message-2qnXI6 .ownerIcon-2NH9FM.icon-1A2_vz {
+.message-2CShn3 .ownerIcon-255uKo.icon-1dGlZy {
 	top: -5px;
 }
-.role-2irmRk {
+.role-2TIOKu {
 	position: relative;
 	@include ripple();
 }

@@ -1,12 +1,12 @@
 @use "sass:color";
 
-.reaction-1hd86g {
+.reaction-2A2y9y {
 	border-radius: .25rem;
 	border: none;
 }
 .theme-light,
 .theme-dark {
-	& .reaction-1hd86g.reactionMe-wv5HKu {
+	& .reaction-2A2y9y.reactionMe-3I9gFK {
 		$accent: #1a73e8;
 		$accent-highlight: #0095ff;
 		background-color: color.change($accent, $alpha: 0.25);
@@ -16,7 +16,7 @@
 			background-color: color.change($accent-highlight, $alpha: 0.25);
 		}
 	}
-	& .reaction-1hd86g.reactionMe-wv5HKu .reactionCount-2mvXRV {
+	& .reaction-2A2y9y.reactionMe-3I9gFK .reactionCount-1zkLcN {
 		color: var(--accent);
 	}
 }

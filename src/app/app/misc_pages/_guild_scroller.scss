@@ -2,12 +2,12 @@
 
 $header-height: 6;
 
-.scroller-1Bvpku,
-.circleIconButton-1XqULR,
-.childWrapper-anI2G9 {
+.scroller-3X7KbA,
+.circleIconButton-3lUBQk,
+.childWrapper-1j_1ub {
 	background-color: cardbg($header-height, true);
 }
-.scroller-1JbKMe, .scroller-RmtA4e, .channelNotice-1-XFjC {
+.scroller-WSmht3, .scroller-1ox3I2, .channelNotice-tO6Tus {
 	// inset ofset box shadow for depth 2
 	.theme-light & {
 		box-shadow: inset 2px 3px 1px -2px rgba(0, 0, 0, 0.2),
@@ -15,10 +15,10 @@ $header-height: 6;
 					inset 2px 1px 5px 0px rgba(0, 0, 0, 0.12);
 	}
 }
-.channelNotice-1-XFjC {
+.channelNotice-tO6Tus {
 	border-right: 1px solid var(--navdrawer-separator);
 }
-.hasBanner-2SrLR3 ~ .scroller-RmtA4e{
+.hasBanner-2IrYih ~ .scroller-1ox3I2{
 	box-shadow:
 		inset 2px -3px 1px -2px rgba(0, 0, 0, 0.2),
 		inset 2px -2px 2px 0px rgba(0, 0, 0, 0.14),
@@ -28,9 +28,9 @@ $header-height: 6;
 .guildSeparator-33mFX6 {
 	background-color: var(--navdrawer-separator);
 }
-.circleIconButton-1XqULR {
+.circleIconButton-3lUBQk {
 	color: var(--online);
 }
-.circleIconButton-1XqULR.selected-2jcQaY {
+.circleIconButton-3lUBQk.selected-2tb4pB {
 	background-color: var(--online);
 }

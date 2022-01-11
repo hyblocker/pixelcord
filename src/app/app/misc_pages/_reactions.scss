@@ -1,23 +1,23 @@
 @import "../../material/card";
 
-.scroller-1-nKid {
+.scroller-2GkvCq {
 	@include card(4);
 	overflow: visible;
 }
-.reactionSelected-1pqISm {
+.reactionSelected-1aMb2K {
 	@include card(2);
 	overflow: visible;
 }
 // make them selectable
-.reactionDefault-GBA58K, .reactionSelected-1pqISm {
+.reactionDefault-1Sjj1f, .reactionSelected-1aMb2K {
 	-webkit-app-region: none;
 }
 // disable selections of the full user name
-.tagFaded-WP86yt {
+.tagFaded-1S1bJ- {
 	user-select: none;
 }
-.container-1If-HZ,
-.reactors-Blmlhw {
+.container-KM8BU6,
+.reactors-1VXca7 {
 	.theme-light &,
 	.theme-dark & {
 		background: none;
