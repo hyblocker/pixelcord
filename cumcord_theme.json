@@ -1,0 +1,13 @@
+{
+    "name": "Pixelcord",
+    "description": "Material Design Theme with numerous enhancements for Discord",
+    "author": "Hyblocker",
+    "license": "GPL-2",
+    "media": [
+        "https://raw.githubusercontent.com/hyblocker/pixelcord/main/screenshots/animations.gif",
+        "https://raw.githubusercontent.com/hyblocker/pixelcord/main/screenshots/settings.png",
+        "https://raw.githubusercontent.com/hyblocker/pixelcord/main/screenshots/user_popout.png",
+        "https://raw.githubusercontent.com/hyblocker/pixelcord/main/screenshots/light_mode.png",
+        "https://raw.githubusercontent.com/hyblocker/pixelcord/main/screenshots/goosemod.png"
+    ]
+}
