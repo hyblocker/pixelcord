@@ -80,7 +80,7 @@
 
 // Remove GIF button
 @if $remove_gif_button {
-    .buttonContainer-2lnNiN>.button-38aScr:not(.emojiButton-1fMsf3 ).colorBrand-3pXr91>.contents-18-Yxp:not(.stickerButton-1-nFh2){
+    .expression-picker-chat-input-button {
         position: fixed;
         visibility: hidden;
     }
