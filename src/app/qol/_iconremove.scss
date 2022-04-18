@@ -80,7 +80,7 @@
 
 // Remove GIF button
 @if $remove_gif_button {
-    .expression-picker-chat-input-button {
+    .expression-picker-chat-input-button > button[*="gif" i] {
         position: fixed;
         visibility: hidden;
     }
