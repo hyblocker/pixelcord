@@ -1,0 +1,8 @@
+﻿.theme-light {
+	& .pc-settings-panel {
+		color: #424242;
+	}
+	& .pc-settings-addon-card .pc-settings-card-header .pc-settings-card-field:not(:first-child) {
+		color: #737373;
+	}
+}

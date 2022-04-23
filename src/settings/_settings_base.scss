@@ -208,8 +208,8 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 }
 
 // Make space for the blue bar
-.layer-86YKbF[aria-label=RTC_DEBUG] .standardSidebarView-E9Pc3j,
-.layer-86YKbF[aria-label$="SETTINGS"] .standardSidebarView-E9Pc3j {
+.layer-86YKbF:not(.baseLayer-W6S8cY) .standardSidebarView-E9Pc3j,
+.layer-86YKbF:not(.baseLayer-W6S8cY) .standardSidebarView-E9Pc3j {
 	top: calc(var(--settings-header-height) - 24px);;
 
 	// Create the headerbar
@@ -222,8 +222,6 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 		height: var(--settings-header-height);
 		left: 0;
 		top: 0;
-
-
 	}
 }
 
@@ -257,6 +255,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 
 	& path {
 		d: path("M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z");
+		fill: var(--accent-text);
 	}
 }
 

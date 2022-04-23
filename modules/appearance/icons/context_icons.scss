@@ -115,7 +115,7 @@
         }
 
         // Hide in message actions (the buttons)
-        .menu-1QACrS#message-actions & {
+        .menu-1QACrS#message & {
             @include removeIcon();
             @include reverseOrder();
         }
@@ -185,8 +185,13 @@
     .item-1OdjEX[id*="copy"]::before {
         --icon: #{svg-url(#{map-get($icon-pack, "copy")})};
     }
-    .item-1OdjEX[id*="copy"][id*="devmode"]::before {
-        --icon: #{svg-url(#{map-get($icon-pack, "id")})};
+    .item-1OdjEX[id*="copy"][id*="devmode"] {
+        @include reverseOrder();
+        &::before {
+            display: none;
+        }
+        // --icon: #{svg-url(#{map-get($icon-pack, "id")})};
+        
     }
 
     .item-1OdjEX[id|="user-settings-cog-Experiments-"][id$="-clear-override"] {
@@ -222,6 +227,7 @@
     @include contextIcon("textarea-context-copy", "copy", $icon-pack);
     @include contextIcon("textarea-context-cut", "cut", $icon-pack);
     @include contextIcon("textarea-context-paste", "paste", $icon-pack);
+    @include contextIcon("textarea-context-suggestions", "suggestion", $icon-pack);
 
     // User right click	
     @include contextIcon("user-context-mark-channel-read", "mark_read", $icon-pack);
@@ -311,6 +317,21 @@
     @include contextIcon("channel-context-mute-channel", "mute", $icon-pack);
     @include contextIcon("channel-context-unmute-channel", "unmute", $icon-pack);
     @include contextIcon("channel-context-channel-notifications", "notifications", $icon-pack);
+
+    // favourites
+    @include contextIcon("channel-context-go-to-original-guild", "go_to", $icon-pack);
+    @include contextIcon("user-context-set-channel-nickname", "edit", $icon-pack);
+    @include contextIcon("channel-context-set-channel-nickname", "edit", $icon-pack);
+    // Un-favourite
+    .item-1OdjEX#user-context-favorite-channel::before,
+    .item-1OdjEX#channel-context-favorite-channel::before {
+        --icon: #{svg-url(#{map-get($icon-pack, "unfavorite")})};
+    }
+    // Favourite
+    .item-1OdjEX#user-context-favorite-channel[aria-haspopup="true"]::before,
+    .item-1OdjEX#channel-context-favorite-channel[aria-haspopup="true"]::before {
+        --icon: #{svg-url(#{map-get($icon-pack,"favorite")})};
+    }
 
     @include contextIcon("channel-context-edit-channel", "settings", $icon-pack);
     @include contextIcon("channel-context-invite-people", "invite", $icon-pack);

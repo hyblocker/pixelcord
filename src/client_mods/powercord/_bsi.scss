@@ -9,3 +9,19 @@
 		fill: var(--red);
 	}
 }
+
+// it brokey, so lets fixey
+.message-2CShn3 .wrapper-1VLyxH {
+	&[data-bsi-status="online"] rect {
+		fill: var(--green);
+	}
+	&[data-bsi-status="idle"] rect {
+		fill: var(--yellow);
+	}
+	&[data-bsi-status="dnd"] rect {
+		fill: var(--red);
+	}
+	&[data-bsi-status="streaming"] rect {
+		fill: var(--purple);
+	}
+}

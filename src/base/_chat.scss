@@ -167,3 +167,8 @@ html:not(.app-focused) {
 		opacity: 0.7;
 	}
 }
+
+// enable notifications nag which you CANT FUCKING HIDE WHY
+.chatHeaderBar-qygUNT {
+	display: none;
+}

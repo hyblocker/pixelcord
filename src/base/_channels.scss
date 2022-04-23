@@ -40,10 +40,8 @@
 	border-radius: calc(0.5 * var(--channel-height));
 }
 // Members list
-.selected-1-Z6gm.container-1oeRFJ {
+.selected-1-Z6gm .layout-1qmrhw  {
 	background-color: var(--accent-transparent);
-}
-.selected-1-Z6gm .layout-1qmrhw {
 	color: var(--accent);
 }
 .container-1oeRFJ {
@@ -51,6 +49,12 @@
 	border-radius: calc(0.5 * var(--member-height));
 }
 .modeSelected-3DmyhH .channelName-3KPsGw,
+[class*="privateChannelsHeaderContainer"] + [class*="channel"] [class*="selected"] [class*="name"] ,
 .selected-1-Z6gm .name-3Vmqxm {
 	font-weight: var(--weight-header);
+}
+// DMs list
+[class*="privateChannels"] [class*="channel"] [class*="selected"] {
+	background-color: var(--accent-transparent);
+	color: var(--accent);
 }

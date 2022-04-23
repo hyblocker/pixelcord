@@ -5,17 +5,19 @@
 .inner-2pOSmK,
 .bd-search-wrapper,
 .inputWrapper-1YNMmM,
-.searchBar-zdmu7v,
-.searchBar-1YE5UV,
-.searchBar-2M9mRP,
-.searchBar-gJe8lY,
-.searchBar-1UNSCg,
+div[class*="searchBar"]:not(.searchBar-3TnChZ),
+// .searchBar-zdmu7v,
+// .searchBar-1YE5UV,
+// .searchBar-2M9mRP,
+// .searchBar-gJe8lY,
+// .searchBar-1UNSCg,
 .searchBox-pyIJJj,
 .wrapper-1cBijl,
 .game-3x3aDt .gameName-Uw4dbt:not(input),
 .phoneField-3NAPDv,
 .popoutListInput-1w4TxY,
-.searchBar-14YqL- .searchBarComponent-18D6hD,
+// .searchBar-14YqL- .searchBarComponent-18D6hD,
+.searchBar-3TnChZ .searchBarComponent-18D6hD,
 .searchContainer-2kJ46v,
 .container-2oNtJn.medium-2NClDM {
 	// Fixes textboxes literally everywhere what the fuck
@@ -59,7 +61,7 @@
 .textArea-2CLwUE {
 	@extend .inner-2pOSmK;
 	// wtf this is all we need to do to fix textboxes for slate container now!!!
-	position: unset;
+	// position: unset;
 }
 
 // The slate textbox overrides the caret a div deeper
@@ -74,11 +76,11 @@
 
 // Fix placeholder padding
 .attachWrapper-3slhXI + .textArea-2CLwUE > .placeholder-1_mJY1 {
-	margin-left: 44px;
+	margin-left: 54px;
 }
 
 .slateTextArea-27tjG0 {
-	position: relative;
+	// position: relative;
 }
 
 // So that the line at the bottom is clean on the chat message box
@@ -87,15 +89,14 @@
 	& .scrollableContainer-15eg7h {
 		background: transparent;
 	}
-
+	
 	& .textArea-2CLwUE {
 		&::after {
 			content: none;
 		}
 	}
 
-	& .inner-NQg18Y {
-
+	& .scrollableContainer-15eg7h {
 		&::before {
 			position: absolute;
 			content: "";
@@ -105,12 +106,16 @@
 			background-color: var(--textbox-color);
 			border-radius: 24px;
 		}
+
+		&[class*="hasConnectedBar"]::before {
+			height: calc(100% - 43px);
+		}
 		
 		& > .buttons-uaqb-5 {
 			margin-right: 4px;
 		}
 	}
-
+	
 	// Status emoji button gets covered
 	.emojiButtonContainer-1cdx-p {
 		z-index: 1;
@@ -182,16 +187,16 @@
 }
 
 // Emoji name textbox breaks: fix it!
-.emojiRow-zIc7ZX {
+div[class*="emojiRow"] {
 	&:hover,
 	&:focus-within {
-		& .emojiAliasInput-1y-NBz + .emojiAliasPlaceholder-3H_iZA {
+		& div[class*="emojiAliasInput"] + div[class*="emojiAliasPlaceholder"] {
 			// z-index: unset;
 			opacity: 0;
 		}
 	}
 	// & .emojiAliasInput-1y-NBz .emojiInput-1aLNse {
-	& .emojiAliasInput-1y-NBz + .emojiAliasPlaceholder-3H_iZA {
+	& div[class*="emojiAliasInput"] + div[class*="emojiAliasPlaceholder"] {
 		z-index: 1;
 		opacity: 1;
 		transition: opacity .1s ease-in-out;

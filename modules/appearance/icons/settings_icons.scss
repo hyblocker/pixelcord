@@ -64,7 +64,12 @@ $dummy: $icons-outline;
 	
 	// Hide default nitro icon
 	.serverBoostTabItem-3QwA3W svg,
-	.premiumLabel-V52REm svg {
+	.premiumLabel-3HPvdB svg {
+		display: none;
+	}
+	
+	// Hide default logout icon
+	.item-3XjbnG[aria-controls="logout-tab"] svg {
 		display: none;
 	}
 
@@ -177,6 +182,7 @@ $dummy: $icons-outline;
 
 	// Cumcord
 	@include settingsIcon("cumcord_plugins-tab", "cumcord", $icon-pack);
+	@include settingsIcon("ysink_stain_cumstain-tab", "themes", $icon-pack);
 	@include settingsIcon("cumcord_quickcss-tab", "css_editor", $icon-pack);
 
 	// Better Discord
@@ -196,8 +202,8 @@ $dummy: $icons-outline;
 	@include settingsIcon("customcss-tab", "css_editor", $icon-pack);
 	@include settingsIcon("plugins-tab", "plugins", $icon-pack);
 	@include settingsIcon("themes-tab", "themes", $icon-pack);
-	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
-	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
+	@include settingsIcon("kernel-packages-tab", "plugins", $icon-pack);
+	@include settingsIcon("kernel-updates-tab", "updater", $icon-pack);
 
 	// Goosemod
 	@include settingsIcon("gm-settings-tab", "goosemod", $icon-pack);

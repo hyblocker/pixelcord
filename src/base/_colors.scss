@@ -64,7 +64,7 @@ $purple-color: "hsl(262, ";
 
 // pings
 .baseShapeRound-3epLEv {
-	&[style*='background-color: #{$red-color}'] {
+	&[style*='background-color: var(--status-danger)'] {
 		background-color: var(--red) !important;
 		color: var(--red-text);
 	}
