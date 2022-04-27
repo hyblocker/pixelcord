@@ -74,10 +74,10 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 	background-color: var(--accent-transparent) !important;
 	color: var(--accent) !important;
 }
-.selectedBackground-1qyzak {
+div[class*="selectedBackground"] {
 	background-color: transparent;
 }
-.selected-2m-n75 {
+div[class*="selected"] {
 	color: inherit;
 }
 

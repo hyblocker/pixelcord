@@ -113,6 +113,17 @@
 	display: none;
 }
 
+// I hate the gifts
+form div[class*="buttons"] > button[class*="button"][class*="lookBlank"][class*="colorBrand"][class*="grow"] {
+	display: none;
+}
+
+// Hide the new activity button
+form div[class*="buttons"] > div[class*="buttonContainer"] > button[class*="activityButton" i] {
+	display: none;
+}
+
+
 // Stream just start is misaligned in spanish (and likely other languages)
 .emptyPreviewText-3Xt6XE {
 	text-align: center;
@@ -121,4 +132,13 @@
 // color picker is fucked on things which arent english bruh
 .dropperIconButton-15Dl5X {
 	width: 69px;
+}
+
+// WHY ARE PFPS ON TOP OF FUCKING ROLE POPUPS ON VANILLA
+// DISCORD WHAT THE ACTUAL LITERAL FUCK
+.animatorTop-3ltI52 > .container-2O1UgZ[role="dialog"][aria-modal="true"] {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
 }
