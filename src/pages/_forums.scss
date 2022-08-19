@@ -1,0 +1,110 @@
+// Colours
+.stepStatus-3oAHkt[style*="background-color: var(--status-positive-background)"] {
+    background-color: var(--green) !important;
+    color: var(--green-text);
+}
+
+.discordIcon-2-SnKe {
+    background-color: var(--accent);
+    color: var(--accent-text);
+}
+.pinIcon-zVODC5 {
+    background-color: var(--accent);
+    & > svg > path {
+        fill: var(--accent-text);
+    }
+}
+
+.stepContainer-SaPPyG {
+
+    &:hover {
+        background-color: var(--accent-transparent);
+        color: var(--accent);
+    }
+}
+
+// Tags
+.tags-3s41VI {
+    & .pill-3pRQlO {
+
+        color: var(--text-normal);
+        background-color: transparent;
+        border-color: transparent;
+
+        &.selected-24z1Ou {
+            color: var(--accent-text);
+            background-color: var(--accent);
+        }
+
+        &.clickable-3YTfAq:not(.disabled-3Rezaw):hover {
+            color: var(--accent);
+            background-color: var(--accent-transparent);
+            border-color: transparent;
+        }
+
+        & .defaultColor-24IHKz {
+            color: inherit;
+        }
+    }
+}
+.addTags-2AjBTc {
+    background-color: var(--accent);
+    color: var(--accent-text);
+    & > svg > path {
+        fill: currentColor;
+    }
+}
+.container-2qVG6q:hover {
+    background-color: var(--accent-transparent);
+}
+.mainCard-3KBsBI.isOpen-2OXbFs {
+    background-color: var(--accent-transparent);
+    color: var(--accent);
+    & .channelNameSpan-2CGJt7 {
+        color: var(--accent);
+    }
+}
+
+// textbox is oversized by default
+.content-1jQy2l .titleContainer-2YK93J {
+    & .inputWrapper-1YNMmM {
+        height: 100%;
+        margin-right: 12px;
+
+        &.title-1v5ZfI input,
+        &.title-1v5ZfI input::placeholder {
+            font-size: 16px;
+        }
+
+        
+        & .loaderContainer-u6LK5n,
+        & .closeIcon-3xe5xL,
+        & .searchIcon-2Nw0OL {
+            margin-left: 0.25em;
+        }
+    }
+}
+
+.loader-9SdUOa {
+	border-color: var(--accent-transparent);
+	border-left-color: var(--accent);
+}
+
+.rolePill-3OtAM1 div {
+    font-size: 14px;
+    padding-left: 1.25em;
+}
+
+.optionPillItem-3sx4uB {
+    .theme-dark & .optionPillBtn-3r5nCw,
+    .theme-light & .optionPillBtn-3r5nCw {
+        &, &:hover, &:active, &:enabled:hover {
+            background-color: transparent;
+            color: var(--accent);
+        }
+    }
+    & .optionPill-3_uSHD {
+        background-color: var(--accent-transparent);
+        color: var(--accent);
+    }
+}

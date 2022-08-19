@@ -114,7 +114,7 @@ $status_typing: (
 	}
 
 	// VCs
-	.avatar-3TrM7c,
+	.avatar-3FKimL,
 	.listDefault-2F-w65 .avatarContainer-3FF_Km {
 		@include maskImage($hoverShape);
 		box-shadow: none;
@@ -183,6 +183,7 @@ $status_typing: (
 	// Remove from wrappers
 	.avatar-3QF_VA,
 	.avatar-2Vndt_,
+	.avatar-2OC07D,
 	.avatar-3mTjvZ {
 		&.wrapper-1VLyxH {
 			border-radius: 0;
@@ -191,12 +192,15 @@ $status_typing: (
 		}
 	}
 
+	.avatarContainerMasked-13fYnN,
 	.folderIconWrapper-1_bOZe,
 	.wrapperSimple-Js2rIO,
 	.wrapper-1VLyxH {
 		border-radius: 0;	
 	}
 	
+	.avatarHint-2g3Mcd > foreignObject[mask="url(#svg-mask-avatar-status-round-80)"],
+	.avatarContainerMasked-13fYnN > foreignObject[mask="url(#svg-mask-voice-user-summary-item)"],
 	.mask-1FEkla > foreignObject[mask="url(#svg-mask-avatar-default)"] {
 		-webkit-mask: var(--avatar-shape);
 		mask: none;
@@ -231,5 +235,10 @@ $status_typing: (
 	.partyMember-YLjOa7 {
 		mask: none;
 		-webkit-mask: none;
+	}
+
+	// Fix for feature messages
+	.avatar-2e8lTP::before {
+		content: none;
 	}
 }

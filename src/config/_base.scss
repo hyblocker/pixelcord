@@ -21,6 +21,7 @@
 
 	// Textboxes
 	--textbox-radius: 4px;
+	--emote-size: 20px;
 	
 	// Buttons
 	--button-height: 48px;
@@ -33,6 +34,11 @@
 	--settings-item-height: 38px;
 	--sidebar-left-padding: 24px;
 	--sidebar-right-padding: 16px;
+	--sidebar-top-padding: 32px;
+	--sidebar-bottom-padding: 32px;
+
+	// Search
+	--search-tab-height: 24px;
 	
 	// Collapsing settings
 	--collapse-settings-padding: 8px;
@@ -44,6 +50,7 @@
 	// Roles
 	--role-chip-weight: 500;
 	--role-chip-padding: 4px;
+	--role-chip-height: 24px;
 	
 	// Date picker
 	--date-picker-circle-thickness: 2px;
@@ -81,28 +88,28 @@
 	--accent: rgb(52, 164, 255);
 	--accent-text: white;
 	--accent-transparent: rgba(52, 164, 255, 12%);
-	--accent-selected: rgb(141, 202, 255);
+	--accent-selected: rgb(118, 175, 229);
 
 	// Colors
-	--green: #43b581;
+	--green: rgb(67, 181, 129);
 	--green-text: white;
 	--green-transparent: rgba(67, 181, 129, 12%);
-	--green-selected: #66c296;
+	--green-selected: rgb(102, 194, 150);
 	
-	--red: #cf6679;
+	--red: rgb(207, 102, 121);
 	--red-text: white;
 	--red-transparent: rgba(207, 102, 121, 12%);
-	--red-selected: #ff7676;
+	--red-selected: rgb(255, 118, 118);
 	
-	--yellow: #fbec52;
+	--yellow: rgb(251, 236, 82);
 	--yellow-text: black;
 	--yellow-transparent: rgba(251, 236, 82, 12%);
-	--yellow-selected: #fff68f;
+	--yellow-selected: rgb(255, 246, 143);
 	
-	--gray: #868d96;
+	--gray: rgb(134, 141, 150);
 	--gray-text: white;
 	--gray-transparent: rgba(134, 141, 150, 12%);
-	--gray-selected: #96999c;
+	--gray-selected: rgb(150, 153, 156);
 
 	--purple: #9176c1;
 	--purple-text: white;
@@ -127,6 +134,10 @@
 
 	// Roles
 	--role-chip-bg: var(--accent-transparent);
+
+	// Random Badges
+	--aka-chip-bg: var(--accent-transparent);
+	--aka-chip-text: var(--accent-transparent);
 	
 	// Tooltips
 	--tooltip-bg: #1f1f1f;

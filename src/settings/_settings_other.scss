@@ -49,3 +49,13 @@
 .container-1zDvAE > .note-2C4pGr {
 	display: none;
 }
+
+// Server templates colours
+.descriptionIcon-3nDZrK {
+	& circle[r="5"][fill*="hsl(0, "] {
+		fill: var(--green-text);
+		& + g path[fill*="hsl(139, "] {
+			fill: var(--green);
+		}
+	}
+}

@@ -26,6 +26,10 @@
 	}
 }
 
+.powercord-toast[data-toast-type=danger] .icon {
+	color: var(--red);
+}
+
 #app-mount {
 	// Red should be our red
 	& .powercord-settings-item .description-30xx7u strong strong {

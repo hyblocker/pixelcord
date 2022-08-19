@@ -1,0 +1,10 @@
+.container-JMJRDf {
+    background-color: var(--accent);
+    color: var(--accent-text);
+
+    & .lookFilled-yCfaCM.colorBrand-I6CyqQ {
+        --accent: var(--green);
+        --accent-text: var(--green-text);
+        --accent-selected: var(--green-selected);
+    }
+}

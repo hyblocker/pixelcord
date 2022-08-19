@@ -25,3 +25,16 @@
 		fill: var(--purple);
 	}
 }
+
+// Radial status
+#better-status-indicators-tab > div > .bsi-settings-module-card {
+	& > div:last-child > div:last-child {
+		margin: 0 10px;
+		& > div[style*="padding:"] {
+			padding-left: 0 !important;
+		}
+		& > button {
+			margin-left: auto;
+		}
+	}
+}

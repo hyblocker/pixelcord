@@ -45,7 +45,7 @@ $backButtonPadding: calc(0.5 * (var(--settings-header-height) - 18px));
 }
 // sidebar padding
 .sidebar-nqHbhN {
-	padding: 60px var(--sidebar-right-padding) 60px var(--sidebar-left-padding);
+	padding: var(--sidebar-top-padding) var(--sidebar-right-padding) var(--sidebar-bottom-padding) var(--sidebar-left-padding);
 }
 
 .theme-dark .header-145e10 .tabBar-1qdMr5 .tab-TRrPC8.active-1grPyy,
@@ -127,6 +127,10 @@ div[class*="selected"] {
 		line-height: 24px;
 		font-weight: var(--weight-header);
 		text-transform: none;
+
+		& .guildFeatureAvailabilityIndicator-1-B8Jv {
+			margin-left: 8px;
+		}
 	}
 }
 .ysink_zone_ticker {
@@ -210,7 +214,7 @@ div[class*="selected"] {
 // Make space for the blue bar
 .layer-86YKbF:not(.baseLayer-W6S8cY) .standardSidebarView-E9Pc3j,
 .layer-86YKbF:not(.baseLayer-W6S8cY) .standardSidebarView-E9Pc3j {
-	top: calc(var(--settings-header-height) - 24px);;
+	top: var(--settings-header-height);
 
 	// Create the headerbar
 	&::before {
@@ -313,4 +317,10 @@ div[class*="selected"] {
 		transition: var(--tooltip-animation);
 		pointer-events: none;
 	}
+}
+
+// Make logout button red
+.side-2ur1Qk > .item-3XjbnG[aria-controls="logout-tab" i]:not(.role-3pGE29) {
+	--background-modifier-hover: var(--red-transparent);
+	color: var(--red);
 }

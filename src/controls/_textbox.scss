@@ -202,3 +202,8 @@ div[class*="emojiRow"] {
 		transition: opacity .1s ease-in-out;
 	}
 }
+
+// The emoji button is usually beneath the textbox, this brings it back up so that it's visible
+.emojiButtonContainer-2HweDK {
+	z-index: 1;
+}

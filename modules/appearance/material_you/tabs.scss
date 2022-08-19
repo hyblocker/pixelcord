@@ -49,14 +49,14 @@
 }
 
 .top-K_jibn .themed-2-lozF.item-3XjbnG:hover {
-	--iconColor: var(--accent-text);
-	--iconBgColor: var(--accent);
-	color: var(--accent-text);
+	--iconColor: var(--accent);
+	--iconBgColor: var(--accent-transparent);
+	color: var(--accent);
 }
 .top-K_jibn .selected-g-kMVV.themed-2-lozF.item-3XjbnG,
 .top-K_jibn .themed-2-lozF.item-3XjbnG:active {
 	--iconColor: var(--accent-text);
-	--iconBgColor: var(--accent-selected);
+	--iconBgColor: var(--accent);
 	color: var(--accent-text);
 }
 // remove bottom line

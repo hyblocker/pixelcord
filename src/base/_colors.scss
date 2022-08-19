@@ -10,6 +10,12 @@ $purple-color: "hsl(262, ";
 	--text-positive: var(--green);
 	--text-warning: var(--yellow);
 	--text-danger: var(--red);
+
+	--status-danger: var(--red);
+	--status-positive-background: var(--green);
+	--info-positive-foreground: var(--green);
+	--info-warning-foreground: var(--yellow);
+	--info-danger-foreground: var(--red);
 }
 
 // status indicators
@@ -156,12 +162,12 @@ $purple-color: "hsl(262, ";
 
 // Online / Offline dots
 .statusOnline-Iw3r2o,
-.dotOnline-j08lOY {
+div[class*="dotOnline"] {
 	background-color: var(--green);
 }
 
 .statusOffline-2R-ArP,
-.dotOffline-38lJFn {
+div[class*="dotOffline"] {
 	background-color: var(--gray);
 }
 
@@ -210,4 +216,20 @@ $purple-color: "hsl(262, ";
 }
 .deny-1GO6vI {
 	@include permissionSwitch("red");
+}
+
+// Beta shit
+.textBadge-1fdDPJ.base-3IDx3L.baseShapeRound-3epLEv,
+div[class*="betaBadge"] {
+	background-color: var(--accent) !important;
+	color: var(--accent-text) !important;
+}
+.textBadge-1fdDPJ.base-3IDx3L.baseShapeRound-3epLEv[class*="akaBadge"] {
+	background-color: var(--chips-bg) !important;
+	color: var(--accent-text) !important;
+}
+
+// PROTIP: Double-click user to watch
+.pro-3GwLMX {
+	color: var(--green) !important;
 }

@@ -10,6 +10,32 @@
 	color: var(--accent-text);
 }
 
+// Mutual guilds
+.listScroller-entkMk.fade-1R6FHN {
+	counter-reset: mutuals;
+	position: relative;
+
+	& .listRow-2nO1T6 {
+		counter-increment: mutuals;
+		&:first-child {
+			margin-top: 24px;
+		}
+	}
+
+	& > div[aria-hidden="true"]:last-child {
+		position: unset !important;
+		&::before {
+			
+			// TODO:
+			position: absolute;
+			content: "Total: " counter(mutuals);
+			color: var(--text-normal);
+			top: 8px;
+			left: 12px;
+		}
+	}
+}
+
 // fuck the bottom bar ~~its bloat~~
 .noTabBar-2Q-iE_,
 .tabBarContainer-sCZC4w {

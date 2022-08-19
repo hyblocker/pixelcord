@@ -114,6 +114,10 @@ html:not(.app-focused) {
 	top: 0px;
 	width: 100%;
 }
+.cozy-VmLDNB.hasThread-3h-KJV.mentioned-Tre-dv::before {
+	border-color: var(--info-warning-foreground);
+	background-color: transparent;
+}
 .messagesWrapper-RpOMA3::after {
 	content: "";
 	width: 100%;

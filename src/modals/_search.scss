@@ -257,3 +257,9 @@
 		stroke: var(--accent);
 	}
 }
+
+// Search height should be different
+.searchHeader-1r_ZSh .side-2ur1Qk .item-3XjbnG {
+	height: var(--search-tab-height);
+	border-radius: calc(0.5 * var(--search-tab-height));
+}

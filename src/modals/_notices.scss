@@ -1,0 +1,14 @@
+.notice-2HEN-u {
+
+    &.colorBrand-2hgZSE {
+        background-color: var(--accent);
+        color: var(--accent-text);
+    }
+
+    &.colorWarning-3oV0Ge {
+        background-color: var(--yellow);
+        &, & .button-1iHNQ2 {
+            color: var(--yellow-text);
+        }
+    }
+}

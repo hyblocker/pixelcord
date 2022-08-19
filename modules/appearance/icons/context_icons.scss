@@ -104,6 +104,12 @@
             @include removeIcon();
         }
 
+        // Hide in message actions (the ... button on a message)
+        .menu-1QACrS#message-actions & {
+            @include removeIcon();
+            @include reverseOrder();
+        }
+
         // Hide in status picker
         .menu-1QACrS#status-picker & {
             @include removeIcon();
@@ -112,12 +118,6 @@
         // Hide in channel attach dialog
         .menu-1QACrS#channel-attach & {
             @include removeIcon();
-        }
-
-        // Hide in message actions (the buttons)
-        .menu-1QACrS#message & {
-            @include removeIcon();
-            @include reverseOrder();
         }
 
         // Hide in guild actions (clicking guild header)
@@ -217,6 +217,21 @@
     @include contextIcon("message-report", "report", $icon-pack);
     @include contextIcon("message-remove-reactions", "remove_reactions", $icon-pack);
     @include contextIcon("message-delete", "delete", $icon-pack);
+    @include contextIcon("message-guild-feed-feature", "feature_item", $icon-pack);
+
+    // Remove defaults as Discord now has native icons
+    .item-1OdjEX#message-edit,
+    .item-1OdjEX#message-reactions,
+    .item-1OdjEX#message-pin,
+    .item-1OdjEX#message-reply,
+    .item-1OdjEX#message-thread,
+    .item-1OdjEX#message-mark-unread,
+    .item-1OdjEX#message-copy-link,
+    .item-1OdjEX#message-tts,
+    .item-1OdjEX#message-delete {
+        @include removeIcon();
+        @include reverseOrder();
+    }
     
     // Message action special case
     @include contextIcon("message-actions-apps", "apps", $icon-pack);
@@ -228,6 +243,9 @@
     @include contextIcon("textarea-context-cut", "cut", $icon-pack);
     @include contextIcon("textarea-context-paste", "paste", $icon-pack);
     @include contextIcon("textarea-context-suggestions", "suggestion", $icon-pack);
+    .item-1OdjEX[id*="textarea-context-correction" i] {
+        @include removeIcon();
+    }
 
     // User right click	
     @include contextIcon("user-context-mark-channel-read", "mark_read", $icon-pack);
@@ -311,8 +329,12 @@
     @include contextIcon("guild-context-join", "join", $icon-pack);
     @include contextIcon("guild-context-create", "create_guild", $icon-pack);
 
+    @include contextIcon("user-context-home-feedback", "feedback", $icon-pack);
+    @include contextIcon("user-context-mark-events-read", "mark_read", $icon-pack);
+
     // Channel right click
     @include contextIcon("channel-context-mark-channel-read", "mark_read", $icon-pack);
+    @include contextIcon("channel-context-open-chat", "chat", $icon-pack);
 
     @include contextIcon("channel-context-mute-channel", "mute", $icon-pack);
     @include contextIcon("channel-context-unmute-channel", "unmute", $icon-pack);
@@ -331,6 +353,11 @@
     .item-1OdjEX#user-context-favorite-channel[aria-haspopup="true"]::before,
     .item-1OdjEX#channel-context-favorite-channel[aria-haspopup="true"]::before {
         --icon: #{svg-url(#{map-get($icon-pack,"favorite")})};
+    }
+    // "Favourites" special guild
+    .item-1OdjEX#favorites-header-popout-create-category {
+        @include removeIcon();
+        @include reverseOrder();
     }
 
     @include contextIcon("channel-context-edit-channel", "settings", $icon-pack);
@@ -388,6 +415,15 @@
 
     @include contextIcon("thread-context-delete-channel", "delete", $icon-pack);
 
+    // These items here are for forum posts ; we can determine if this is a forum post context menu by checking how many items are in the edit posts container
+    .item-1OdjEX#thread-context-edit-thread:not(:only-child)::before {
+        --icon: #{svg-url(#{map-get($icon-pack, "edit")})};
+    }
+    @include contextIcon("thread-context-pin-thread", "pin", $icon-pack);
+    @include contextIcon("thread-context-unpin-thread", "unpin", $icon-pack);
+    @include contextIcon("thread-context-edit-tags", "tag", $icon-pack);
+    @include contextIcon("thread-context-guild-feed-feature", "feature_item", $icon-pack);
+
     // Image
     @include contextIcon("image-context-save-image", "save_file", $icon-pack);
     @include contextIcon("image-context-copy-native-link", "copy_link", $icon-pack);
@@ -424,7 +460,9 @@
     @include contextIcon("user-settings-cog-Profile_Customization", "user_profile_settings", $icon-pack);
     @include contextIcon("user-settings-cog-Privacy___Safety", "shield", $icon-pack);
     @include contextIcon("user-settings-cog-Authorized_Apps", "apps", $icon-pack);
+    @include contextIcon("user-settings-cog-Sessions", "devices", $icon-pack);
     @include contextIcon("user-settings-cog-Connections", "connections", $icon-pack);
+    @include contextIcon("user-settings-cog-Friend_Requests", "friends", $icon-pack);
 
     @include contextIcon("user-settings-cog-Subscriptions", "subscriptions", $icon-pack);
     @include contextIcon("user-settings-cog-Discord_Nitro", "nitro", $icon-pack);
@@ -443,6 +481,7 @@
     @include contextIcon("user-settings-cog-Streamer_Mode", "stream", $icon-pack);
     @include contextIcon("user-settings-cog-Advanced", "advanced", $icon-pack);
 
+    @include contextIcon("user-settings-cog-Activity_Privacy", "game_privacy", $icon-pack);
     @include contextIcon("user-settings-cog-Game_Activity", "game_activity", $icon-pack);
     @include contextIcon("user-settings-cog-Overlay", "game", $icon-pack);
 
@@ -451,6 +490,8 @@
     @include contextIcon("user-settings-cog-Experiments", "experiment", $icon-pack);
     @include contextIcon("user-settings-cog-Developer_Options", "developer", $icon-pack);
     @include contextIcon("user-settings-cog-Hotspot_Options", "cta", $icon-pack);
+    @include contextIcon("user-settings-cog-Dismissible_Content_Options", "dismissable_contents", $icon-pack);
+    @include contextIcon("user-settings-cog-Payment_Flow_Modals", "payment_flows", $icon-pack);
 
     // Spotify
     @include contextIcon("spotify-toggle-no-accounts", "spotify", $icon-pack); // TODO: No accounts icon rather than shotify
@@ -473,7 +514,7 @@
     }
     
     // Guild profile
-    @include contextIcon("edit-profile-popout-edit-server-profile", "guild", $icon-pack);
+    @include contextIcon("edit-profile-popout-edit-server-profile", "guild_profile", $icon-pack);
     @include contextIcon("edit-profile-popout-edit-default-profile", "user_profile_settings", $icon-pack);
     
     // Account switcher

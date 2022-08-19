@@ -45,6 +45,7 @@ $dummy: $icons-outline;
 
 	// Hide new discord icons
 	.item-3XjbnG {
+		& .tabBarItemContainer-2HdIlr > svg,
 		& .icon-3Povsy,
 		& .icon-Zc-uZZ {
 			display: none;
@@ -107,7 +108,9 @@ $dummy: $icons-outline;
 	@include settingsIcon("privacy-&-safety-tab", "shield", $icon-pack);
 	@include settingsIcon("moderation-tab", "shield", $icon-pack);
 	@include settingsIcon("authorized-apps-tab", "apps", $icon-pack);
+	@include settingsIcon("sessions-tab", "devices", $icon-pack);
 	@include settingsIcon("connections-tab", "connections", $icon-pack);
+	@include settingsIcon("friend-requests-tab", "friends", $icon-pack);
 
 	@include settingsIcon("subscriptions-tab", "subscriptions", $icon-pack);
 	@include settingsIcon("discord-nitro-tab", "nitro", $icon-pack);
@@ -128,6 +131,7 @@ $dummy: $icons-outline;
 	@include settingsIcon("streamer-mode-tab", "stream", $icon-pack);
 	@include settingsIcon("advanced-tab", "advanced", $icon-pack);
 
+	@include settingsIcon("activity-privacy-tab", "game_privacy", $icon-pack);
 	@include settingsIcon("game-activity-tab", "game_activity", $icon-pack);
 	@include settingsIcon("overlay-tab", "overlay", $icon-pack);
 
@@ -136,6 +140,8 @@ $dummy: $icons-outline;
 	@include settingsIcon("experiments-tab", "experiment", $icon-pack);
 	@include settingsIcon("developer-options-tab", "developer", $icon-pack);
 	@include settingsIcon("hotspot-options-tab", "cta", $icon-pack);
+	@include settingsIcon("dismissible-content-options-tab", "dismissable_contents", $icon-pack);
+	@include settingsIcon("payment-flow-modals-tab", "payment_flows", $icon-pack);
 
 	@include settingsIcon("logout-tab", "logout", $icon-pack);
 
@@ -214,6 +220,7 @@ $dummy: $icons-outline;
 	@include settingsIcon("pc-modulemanager-plugins-tab", "plugins", $icon-pack);
 	@include settingsIcon("pc-modulemanager-themes-tab", "themes", $icon-pack);
 	@include settingsIcon("pc-updater-tab", "updater", $icon-pack);
+	@include settingsIcon("pc-modulemanager-css-tab", "css_editor", $icon-pack);
 	
 	// Kernel
 	@include settingsIcon("kernelsettings-tab", "plugins", $icon-pack);

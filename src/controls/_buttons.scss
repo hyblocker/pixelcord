@@ -36,6 +36,7 @@
 		.lookOutlined-3yKVGo#{$class} {
 			color: var(--#{$color});
 			border-color: var(--#{$color});
+			&:hover,
 			&:active {
 				background-color: var(--#{$color}-transparent);
 			}
@@ -93,6 +94,7 @@
 // context menu buttons
 
 // Default focused
+.selectorButtonSelected-3cQUnj,
 .colorDefault-CDqZdO.focused-3qFvc8,
 .colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
 	background-color: var(--accent);

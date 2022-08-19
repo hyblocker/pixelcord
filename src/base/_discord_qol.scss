@@ -104,7 +104,7 @@
 }
 
 // Hide the help button; if you know how to install a discord mod AND a theme, you dont need help on how to use discord as a platform lol
-.iconWrapper-2awDjA + .anchor-1MIwyf[href="https://support.discord.com"] {
+.anchor-1MIwyf[href="https://support.discord.com"] {
 	display: none;
 }
 
@@ -141,4 +141,12 @@ form div[class*="buttons"] > div[class*="buttonContainer"] > button[class*="acti
 	bottom: 0;
 	left: 0;
 	z-index: 2;
+}
+
+// For some reason, emote previews only have a max height
+.caret-2MOQD6, .image-21g2ca {
+	width: var(--emote-size);
+	height: unset;
+	max-width: var(--emote-size);
+	max-height: var(--emote-size);
 }
